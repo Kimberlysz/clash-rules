@@ -37658,8 +37658,7 @@ rules:
     GEOIP, CN, direct
 
  # MATCH rules
-    FINAL,PROXY
-
+    FINAL, PROXY
 
 [URL Rewrite]
 ^http://(www.)?google.cn https://www.google.com 302
