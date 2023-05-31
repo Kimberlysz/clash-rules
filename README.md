@@ -19,3 +19,7 @@
   ## shadowrocket
   ### Shadowrocket配置文件下载链接:
     https://tinyurl.com/shadowrocketBlacklistAlpha
+
+# reference sources
+  ## reference url:
+    https://github.com/v2fly/domain-list-community
