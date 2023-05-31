@@ -5,8 +5,8 @@
   
   This is the domain rules for the applications mentioned above above.  Start date: 2023-05-30; Close date: still undergoing.
 
-  ## shadowrocket
-  ### shadowrocket config download url: 
+  ### shadowrocket
+  #### shadowrocket config download url: 
       https://tinyurl.com/shadowrocketBlacklistAlpha
 
 # domainRules-xray:
@@ -16,10 +16,10 @@
   
   这是上述应用程序的域名规则。开始日期：2023年5月30日；关闭日期：仍在进行中。
   
-  ## shadowrocket
-  ### Shadowrocket配置文件下载链接:
+  ### shadowrocket
+  #### Shadowrocket配置文件下载链接:
     https://tinyurl.com/shadowrocketBlacklistAlpha
 
 # reference sources
-  ## reference url:
+  ### reference url:
     https://github.com/v2fly/domain-list-community
