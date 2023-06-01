@@ -32,7 +32,7 @@
   #### Shadowrocket配置文件下载链接:
     https://tinyurl.com/shadowrocketBlacklistAlpha
 
-# reference sources
+  ## reference sources
   here are some of the resources that we use when building up this config repository
   ### reference url:
     https://github.com/v2fly/domain-list-community
