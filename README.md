@@ -7,11 +7,12 @@
 
   ### clash
   this is the config contents for clash core based applications
-  ### clash client config download url: https://tinyurl.com/clashBlacklistAlpha
+  #### clash client config download url: 
+    https://tinyurl.com/clashBlacklistAlpha
 
   ### shadowrocket
   #### shadowrocket config download url: 
-      https://tinyurl.com/shadowrocketBlacklistAlpha
+    https://tinyurl.com/shadowrocketBlacklistAlpha
 
 
 
@@ -24,7 +25,8 @@
       
   ### clash
   这是基于 Clash 核心的应用程序的配置内容。
-  ### clash 客户端配置下载链接：https://tinyurl.com/clashBlacklistAlpha
+  #### clash 客户端配置下载链接：
+    https://tinyurl.com/clashBlacklistAlpha
     
   ### shadowrocket
   #### Shadowrocket配置文件下载链接:
