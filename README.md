@@ -14,6 +14,8 @@
   #### shadowrocket config download url: 
     https://tinyurl.com/shadowrocketBlacklistAlpha
 
+  ### reference sources
+    https://github.com/v2fly/domain-list-community
 
 
 # domainRules-xray:
@@ -32,7 +34,5 @@
   #### Shadowrocket配置文件下载链接:
     https://tinyurl.com/shadowrocketBlacklistAlpha
 
-  ## reference sources
-  here are some of the resources that we use when building up this config repository
-  ### reference url:
+  ### 参考来源
     https://github.com/v2fly/domain-list-community
