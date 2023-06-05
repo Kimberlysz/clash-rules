@@ -427,99 +427,99 @@ proxies:
 
   # - name: userAccount1
     # type: vmess
-    # server: your_domain
+    # server: your_server1
     # port: 443
-    # uuid: your_UUID
+    # uuid: your_UUID1
     # alterId: 0
     # cipher: auto
     # udp: true
     # tls: true
     # skip-cert-verify: false
-    # servername: your_domain
+    # servername: your_server1
     # network: ws
     # ws-opts:
       # path: /x
       # headers:
-        # Host: your_domain
+        # Host: your_server1
 # 
   # - name: userAccount2
     # type: vmess
-    # server: your_domain
+    # server: your_server1
     # port: 443
-    # uuid: your_UUID
+    # uuid: your_UUID1
     # alterId: 0
     # cipher: auto
     # udp: true
     # tls: true
     # skip-cert-verify: false
-    # servername: your_domain
+    # servername: your_server1
     # network: ws
     # ws-opts:
       # path: /x
       # headers:
-        # Host: your_domain
+        # Host: your_server1
 # 
   # - name: userAccount3
     # type: vmess
-    # server: your_domain
+    # server: your_server1
     # port: 443
-    # uuid: your_UUID
+    # uuid: your_UUID1
     # alterId: 0
     # cipher: auto
     # udp: true
     # tls: true
     # skip-cert-verify: false
-    # servername: your_domain
+    # servername: your_server1
     # network: ws
     # ws-opts:
       # path: /x
       # headers:
-        # Host: your_domain
+        # Host: your_server1
 
   # - name: userAccount1
     # type: vmess
-    # server: your_domain
+    # server: your_server2
     # port: 443
-    # uuid: your_UUID
+    # uuid: your_UUID2
     # alterId: 0
     # cipher: auto
     # udp: true
     # tls: true
     # skip-cert-verify: false
-    # servername: your_domain
+    # servername: your_server2
     # network: tcp
 # 
   # - name: userAccount2
     # type: vmess
-    # server: your_domain
+    # server: your_server2
     # port: 443
-    # uuid: your_UUID
+    # uuid: your_UUID2
     # alterId: 0
     # cipher: auto
     # udp: true
     # tls: true
     # skip-cert-verify: false
-    # servername: your_domain
+    # servername: your_server2
     # network: tcp
 # 
   # - name: userAccount3
     # type: vmess
-    # server: your_domain
+    # server: your_server2
     # port: 443
-    # uuid: your_UUID
+    # uuid: your_UUID2
     # alterId: 0
     # cipher: auto
     # udp: true
     # tls: true
     # skip-cert-verify: false
-    # servername: your_domain
+    # servername: your_server2
     # network: tcp
 
   - name: userAccount1
     type: vless
-    server: your_domain
+    server: your_server3
     port: 443
-    uuid: your_UUID
+    uuid: your_UUID3
     network: tcp
     tls: true
     udp: true
@@ -528,9 +528,9 @@ proxies:
 
   - name: userAccount2
     type: vless
-    server: your_domain
+    server: your_server3
     port: 443
-    uuid: your_UUID
+    uuid: your_UUID3
     network: tcp
     tls: true
     udp: true
@@ -539,9 +539,9 @@ proxies:
 
   - name: userAccount3
     type: vless
-    server: your_domain
+    server: your_server3
     port: 443
-    uuid: your_UUID
+    uuid: your_UUID3
     network: tcp
     tls: true
     udp: true
@@ -36576,6 +36576,8 @@ rules:
     # - DOMAIN-SUFFIX, api.recaptcha.net, PROXY
     # - DOMAIN-SUFFIX, recaptcha.net, PROXY
 
+   # resi
+
    # roblox
     - DOMAIN-SUFFIX, roblox.com, PROXY
 
@@ -36607,6 +36609,10 @@ rules:
 
     - DOMAIN-KEYWORD, .simplemining, PROXY
     - DOMAIN-SUFFIX, simplemining.net, PROXY
+
+   # smartiptv.dnsco.xyz
+    - DOMAIN-SUFFIX, smartiptv.dnsco.xyz, PROXY
+    - DOMAIN-SUFFIX, more-itv.com, PROXY
 
    # sms-activate
     - DOMAIN-SUFFIX, sms-activate.org, PROXY
@@ -36874,6 +36880,9 @@ rules:
    # wakenbakery
     - DOMAIN-KEYWORD, .wakenbakery, PROXY
     - DOMAIN-SUFFIX, wakenbakery.net, PROXY
+
+   # wd.bible
+    - DOMAIN-SUFFIX, wd.bible, PROXY
 
    # whatsapp
     # - DOMAIN-KEYWORD, .whatsapp, PROXY
@@ -37911,6 +37920,9 @@ rules:
     # USER-AGENT, WeChat*, DIRECT
 
   # r
+   # resi
+    - DOMAIN-SUFFIX, resi.io, DIRECT
+    - DOMAIN-SUFFIX, resi.media, DIRECT
  
   # s
  
@@ -38283,4 +38295,3 @@ rules:
 
  # MATCH rules
     - MATCH, 🐟 Webs not included (漏网之鱼)
-
