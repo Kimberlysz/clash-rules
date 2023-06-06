@@ -35788,9 +35788,6 @@ rules:
     - DOMAIN-SUFFIX, elementor.cloud, PROXY
     - DOMAIN-SUFFIX, elementor.com, PROXY
 
-   # elitebabes.com
-    - DOMAIN-SUFFIX, elitebabes.com, PROXY
-
    # esty
     - DOMAIN-SUFFIX, esty.com, PROXY
     - DOMAIN-KEYWORD, .esty, PROXY, no-resolve
