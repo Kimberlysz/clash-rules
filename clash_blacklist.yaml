@@ -33927,6 +33927,13 @@ rules:
     - DOMAIN, request.eprotect.vantivcnp.com, PROXY
     - DOMAIN, vs-js.bn-web.com, PROXY
 
+   # beats saber
+    - DOMAIN-SUFFIX, beatsaver.com, PROXY
+    - DOMAIN-SUFFIX, bsaber.com, PROXY
+    - DOMAIN-SUFFIX, scoresaber.com, PROXY
+    - DOMAIN-SUFFIX, skystudioapps.com, PROXY
+    - DOMAIN-SUFFIX, e-hentai.org, PROXY
+
    # beetalk
     # - DOMAIN-KEYWORD, .beetalk, PROXY
 
@@ -35788,6 +35795,9 @@ rules:
     - DOMAIN-SUFFIX, elementor.cloud, PROXY
     - DOMAIN-SUFFIX, elementor.com, PROXY
 
+   # engadget.com
+    - DOMAIN-SUFFIX, engadget.com, PROXY
+
    # esty
     - DOMAIN-SUFFIX, esty.com, PROXY
     - DOMAIN-KEYWORD, .esty, PROXY, no-resolve
@@ -36544,6 +36554,18 @@ rules:
   # p
    # paramount Plus
     # - DOMAIN-SUFFIX, pplusstatic.com, PROXY
+
+   # pokemon
+    - DOMAIN-SUFFIX, pokemon-unitepgame.com, PROXY
+
+   # pokerstarsVR
+    - DOMAIN, api-01.luckyvr.net, PROXY
+    - DOMAIN-SUFFIX, luckyvr.net, PROXY
+    - DOMAIN, events.backtrace.io, PROXY
+    - DOMAIN-SUFFIX, backtrace.io, PROXY
+    - DOMAIN-SUFFIX, pokerstars.com, PROXY
+    - DOMAIN-SUFFIX, pokerstars.net, PROXY
+    - DOMAIN-SUFFIX, pokerstrategy.com, PROXY
 
    # pool.space
      # tag: crypto
