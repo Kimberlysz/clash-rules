@@ -36577,6 +36577,10 @@ rules:
     - DOMAIN-SUFFIX, proshkola18.ru, PROXY
 
   # q
+   # quantfury
+    - DOMAIN-SUFFIX, quantfury.com, PROXY
+    - DOMAIN-SUFFIX, trdngbcknd.com, PROXY
+    - DOMAIN-SUFFIX, appsflyersdk.com, PROXY
 
   # r
    # raspberrypi.org
