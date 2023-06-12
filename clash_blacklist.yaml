@@ -34081,8 +34081,22 @@ rules:
 
    # coingecko
      # tag: crypto
-
+    - DOMAIN-SUFFIX, 3lift.com, PROXY
+    - DOMAIN-SUFFIX, adform.net, PROXY
+    - DOMAIN-SUFFIX, adroll.com, PROXY
+    - DOMAIN-SUFFIX, appsflyer.com, PROXY
+    - DOMAIN-SUFFIX, buysellads.net, PROXY
+    - DOMAIN-SUFFIX, checkout.com, PROXY
     - DOMAIN-SUFFIX, coingecko.com, PROXY
+    - DOMAIN-SUFFIX, js.datadome.co, PROXY
+    - DOMAIN-SUFFIX, o855950.ingest.sentry.io, PROXY
+    - DOMAIN-SUFFIX, rlcdn.com, PROXY
+    - DOMAIN-SUFFIX, rubiconproject.com, PROXY
+    - DOMAIN-SUFFIX, sc-static.net, PROXY
+    - DOMAIN-SUFFIX, servedby-buysellads.com, PROXY
+    - DOMAIN-SUFFIX, static.ads-twitter.com, PROXY
+    - DOMAIN-SUFFIX, static.geetest.com, PROXY
+    - DOMAIN-SUFFIX, sync.outbrain.com, PROXY
 
    # coinmarketcap.com
     - DOMAIN-SUFFIX, coinwarz.com, PROXY
@@ -36756,6 +36770,9 @@ rules:
    # travelerdoor.com
     - DOMAIN-KEYWORD, .travelerdoor, PROXY
     - DOMAIN-SUFFIX, travelerdoor.com, PROXY
+
+   # trustwallet
+    - DOMAIN-SUFFIX, trustwallet.com, PROXY
 
    # tuya
     - DOMAIN-SUFFIX, tuya.com, PROXY
