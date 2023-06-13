@@ -36455,7 +36455,6 @@ rules:
    # pancakeswap.finance
     - DOMAIN-SUFFIX, axiom.co, PROXY
     - DOMAIN-SUFFIX, coins.llama.fi, PROXY
-    - DOMAIN-SUFFIX, hub.snapshot.org, PROXY
     - DOMAIN-SUFFIX, o1092725.ingest.sentry.io, PROXY
     - DOMAIN-SUFFIX, pancake.run, PROXY
     - DOMAIN-SUFFIX, pancakeswap.com, PROXY
@@ -36464,10 +36463,8 @@ rules:
     - DOMAIN-SUFFIX, polygon-rpc.com, PROXY
     - DOMAIN-SUFFIX, snapshot.org, PROXY
     - DOMAIN-SUFFIX, thegraph.com, PROXY
-    - DOMAIN-SUFFIX, thegraph.com, PROXY
     - DOMAIN-SUFFIX, vercel-insights.com, PROXY
     - DOMAIN-SUFFIX, walletconnect.org, PROXY
-    - DOMAIN-SUFFIX, workers.dev, PROXY
 
    # paramount plus
     # - DOMAIN-SUFFIX, pplusstatic.com, PROXY
