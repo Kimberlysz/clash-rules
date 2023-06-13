@@ -33967,7 +33967,7 @@ rules:
     - DOMAIN-SUFFIX, buysellads.net, PROXY
     - DOMAIN-SUFFIX, checkout.com, PROXY
     - DOMAIN-SUFFIX, coingecko.com, PROXY
-    - DOMAIN-SUFFIX, js.datadome.co, PROXY
+    - DOMAIN-SUFFIX, datadome.co, PROXY
     - DOMAIN-SUFFIX, rlcdn.com, PROXY
     - DOMAIN-SUFFIX, rubiconproject.com, PROXY
     - DOMAIN-SUFFIX, sc-static.net, PROXY
