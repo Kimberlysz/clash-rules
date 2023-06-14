@@ -36098,6 +36098,29 @@ rules:
      # tag: financial
     - DOMAIN-SUFFIX, larrainvial.com, PROXY
 
+   # ledger live
+    - DOMAIN-SUFFIX, 360yield.com, PROXY
+    - DOMAIN-SUFFIX, contentsquare.net, PROXY
+    - DOMAIN-SUFFIX, criteo.com, PROXY
+    - DOMAIN-SUFFIX, criteo.net, PROXY
+    - DOMAIN-SUFFIX, dwin1.com, PROXY
+    - DOMAIN-SUFFIX, impactcdn.com, PROXY
+    - DOMAIN-SUFFIX, ivitrack.com, PROXY
+    - DOMAIN-SUFFIX, ledger.com, PROXY
+    - DOMAIN-SUFFIX, mediavine.com, PROXY
+    - DOMAIN-SUFFIX, mediawallahscript.com, PROXY
+    - DOMAIN-SUFFIX, omnitagjs.com, PROXY
+    - DOMAIN-SUFFIX, onetrust.com, PROXY
+    - DOMAIN-SUFFIX, outbrain.com, PROXY
+    - DOMAIN-SUFFIX, postrelease.com, PROXY
+    - DOMAIN-SUFFIX, revcontent.com, PROXY
+    - DOMAIN-SUFFIX, sharethrough.com, PROXY
+    - DOMAIN-SUFFIX, smaato.net, PROXY
+    - DOMAIN-SUFFIX, smartadserver.com, PROXY
+    - DOMAIN-SUFFIX, stickyadstv.com, PROXY
+    - DOMAIN-SUFFIX, teads.tv, PROXY
+    - DOMAIN-SUFFIX, zemanta.com, PROXY
+
    # legkierody.ru
     - DOMAIN-SUFFIX, legkierody.ru, PROXY
 
