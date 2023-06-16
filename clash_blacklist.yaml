@@ -2539,8 +2539,6 @@ rules:
     # include:swift
 
     # All .apple domains
-    - DOMAIN-KEYWORD, .apple, PROXY
-    
     - DOMAIN-SUFFIX, apple.ae, PROXY
     - DOMAIN-SUFFIX, apple.at, PROXY
     - DOMAIN-SUFFIX, apple.be, PROXY
@@ -2629,6 +2627,9 @@ rules:
     - DOMAIN-SUFFIX, apple.tw, PROXY
     - DOMAIN-SUFFIX, apple.uk, PROXY
     - DOMAIN-SUFFIX, apple.us, PROXY
+    
+    - DOMAIN-KEYWORD, .apple, PROXY
+    
     # apple.商标
     - DOMAIN-SUFFIX, apple.xn--czr694b, PROXY
     
