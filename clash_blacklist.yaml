@@ -1551,180 +1551,6 @@ rules:
     - DOMAIN-SUFFIX, zynga.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, zyngaplayersupport.com, 🛑 AdBlock rules
 
- # 🛑 AdBlock added manually
-  # a
-  
-  # b
-  
-  # c
-  
-  # d
-  
-  # e
-  
-  # f
-  
-  # g
-  
-  # h
-  
-  # i
-
-  # j
-  
-  # k
-  
-  # l
-  
-  # m
-  
-  # n
-  
-  # o
-  
-  # p
-  
-  # q
-  
-  # r
-  
-  # s
-  
-  # t
-  
-  # u
-  
-  # v
-  
-  # w
-  
-  # x
-  
-  # y
-  
-  # z
-
-
-   # Google
-    # google adblock
-    # - DOMAIN-SUFFIX, ads.google.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, afd.l.google.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, badad.googleplex.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, doubleclickbygoogle.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, googleadsserving.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, googlecommerce.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, googlesierai.xyz, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mail-ads.google.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mobileads.google.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pagead-tpc.l.google.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pagead.google.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pagead.l.google.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, s1.dugoogle.com, 🛑 AdBlock rules
-
-    # google doubleclick
-    # - DOMAIN-KEYWORD, ad.doubleclick.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, doubleclick-net.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ff.doubleclick.net, 🛑 AdBlock rules
-    # - DOMAIN, 11321879.fls.doubleclick.net, 🛑 AdBlock rules
-    # - DOMAIN, stats.g.doubleclick.net, 🛑 AdBlock rules
-
-    # googlesyndication.com
-    # - DOMAIN-SUFFIX, tpc.googlesyndication.com, 🛑 AdBlock rules
-
-    # urchin.com
-    # - DOMAIN-SUFFIX, service.urchin.com, 🛑 AdBlock rules
-
-   # Highlight word: "apple"
-    # - DOMAIN-SUFFIX, apple.www.letv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, applequan.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, fpb1.apple886.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, luggagetumbledapple.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mediaappletree.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, orisapple.top, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pineapplesiblingerotic.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, shackapple.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sub.powerapple.com, 🛑 AdBlock rules
-
-   # Microsoft
-    # - DOMAIN-SUFFIX, nrb.footprintdns.com, 🛑 AdBlock rules
-    # - DOMAIN-KEYWORD, footprintdns, 🛑 AdBlock rules
-    
-    # microsoft rules originates from this yaml file
-    # - DOMAIN-SUFFIX, microsoftaffiliates.net, 🛑 AdBlock rules
-
-    # msn
-    # - DOMAIN-SUFFIX, c-5uwzmx78pmca09x24aiux2euavx2ekwu.g00.msn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mobileads.msn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, rad.msn.com, 🛑 AdBlock rules
-
-   # tencent
-    # plus qq rules
-    # - DOMAIN-SUFFIX, act.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adsrich.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adss.video.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, btrace.video.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, bugly.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, buluo.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, c.l.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dp3.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gdt.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, isdspeed.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, l.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, livep.l.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, lives.l.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, livew.l.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mcgi.v.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mdevstat.qqlive.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, monitor.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, omgmta1.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, p.l.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pingma.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pingtcss.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, rcgi.video.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, report.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, rh.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, t.l.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tajs.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, taobao.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tcss.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, u.l.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, uu.qq.com, 🛑 AdBlock rules
-    # - DOMAIN, adsmind.apdcdn.tc.qq.com, 🛑 AdBlock rules
-    # - DOMAIN, adsmind.tc.qq.com, 🛑 AdBlock rules
-    # - DOMAIN, wxsnsdy.wxs.qq.com, 🛑 AdBlock rules
-    # - DOMAIN, wxsnsdythumb.wxs.qq.com, 🛑 AdBlock rules
-
-   # Toutiao
-    # - DOMAIN-SUFFIX, ad.toutiao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dsp.toutiao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, nativeapp.toutiao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, partner.toutiao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sm.toutiao.com, 🛑 AdBlock rules
-
-   # Yahoo ads
-    # - DOMAIN-SUFFIX, adserver.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adss.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, analytics.query.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, analytics.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ane.yahoo.co.jp, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ard.yahoo.co.jp, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, beap-bc.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, beap.gemini.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, clicks.beap.bc.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, comet.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, doubleplay-conf-yql.media.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, geo.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, im.ov.yahoo.co.jp, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, js-apac-ss.ysm.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, locdrop.query.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, onepush.query.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, p3p.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, partnerads.ysm.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ws.progrss.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, yads.yahoo.co.jp, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ybp.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, yeas.yahoo.co.jp, 🛑 AdBlock rules
-
  # PROXY (domain-list-community)
   # #
    # 0x0
@@ -2627,9 +2453,9 @@ rules:
     - DOMAIN-SUFFIX, apple.tw, PROXY
     - DOMAIN-SUFFIX, apple.uk, PROXY
     - DOMAIN-SUFFIX, apple.us, PROXY
-    
+
     - DOMAIN-KEYWORD, .apple, PROXY
-    
+
     # apple.商标
     - DOMAIN-SUFFIX, apple.xn--czr694b, PROXY
     
@@ -33730,6 +33556,180 @@ rules:
     - DOMAIN-SUFFIX, zuoyebang.com, DIRECT
     - DOMAIN-SUFFIX, zybang.com, DIRECT
 
+ # 🛑 AdBlock added manually
+  # a
+  
+  # b
+  
+  # c
+  
+  # d
+  
+  # e
+  
+  # f
+  
+  # g
+  
+  # h
+  
+  # i
+
+  # j
+  
+  # k
+  
+  # l
+  
+  # m
+  
+  # n
+  
+  # o
+  
+  # p
+  
+  # q
+  
+  # r
+  
+  # s
+  
+  # t
+  
+  # u
+  
+  # v
+  
+  # w
+  
+  # x
+  
+  # y
+  
+  # z
+
+
+   # Google
+    # google adblock
+    # - DOMAIN-SUFFIX, ads.google.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, afd.l.google.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, badad.googleplex.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, doubleclickbygoogle.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, googleadsserving.cn, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, googlecommerce.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, googlesierai.xyz, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, mail-ads.google.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, mobileads.google.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, pagead-tpc.l.google.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, pagead.google.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, pagead.l.google.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, s1.dugoogle.com, 🛑 AdBlock rules
+
+    # google doubleclick
+    # - DOMAIN-KEYWORD, ad.doubleclick.net, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, doubleclick-net.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, ff.doubleclick.net, 🛑 AdBlock rules
+    # - DOMAIN, 11321879.fls.doubleclick.net, 🛑 AdBlock rules
+    # - DOMAIN, stats.g.doubleclick.net, 🛑 AdBlock rules
+
+    # googlesyndication.com
+    # - DOMAIN-SUFFIX, tpc.googlesyndication.com, 🛑 AdBlock rules
+
+    # urchin.com
+    # - DOMAIN-SUFFIX, service.urchin.com, 🛑 AdBlock rules
+
+   # Highlight word: "apple"
+    # - DOMAIN-SUFFIX, apple.www.letv.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, applequan.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, fpb1.apple886.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, luggagetumbledapple.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, mediaappletree.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, orisapple.top, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, pineapplesiblingerotic.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, shackapple.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, sub.powerapple.com, 🛑 AdBlock rules
+
+   # Microsoft
+    # - DOMAIN-SUFFIX, nrb.footprintdns.com, 🛑 AdBlock rules
+    # - DOMAIN-KEYWORD, footprintdns, 🛑 AdBlock rules
+    
+    # microsoft rules originates from this yaml file
+    # - DOMAIN-SUFFIX, microsoftaffiliates.net, 🛑 AdBlock rules
+
+    # msn
+    # - DOMAIN-SUFFIX, c-5uwzmx78pmca09x24aiux2euavx2ekwu.g00.msn.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, mobileads.msn.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, rad.msn.com, 🛑 AdBlock rules
+
+   # tencent
+    # plus qq rules
+    # - DOMAIN-SUFFIX, act.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, adsrich.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, adss.video.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, btrace.video.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, bugly.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, buluo.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, c.l.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, dp3.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, gdt.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, isdspeed.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, l.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, livep.l.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, lives.l.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, livew.l.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, mcgi.v.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, mdevstat.qqlive.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, monitor.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, omgmta1.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, p.l.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, pingma.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, pingtcss.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, rcgi.video.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, report.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, rh.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, t.l.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, tajs.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, taobao.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, tcss.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, u.l.qq.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, uu.qq.com, 🛑 AdBlock rules
+    # - DOMAIN, adsmind.apdcdn.tc.qq.com, 🛑 AdBlock rules
+    # - DOMAIN, adsmind.tc.qq.com, 🛑 AdBlock rules
+    # - DOMAIN, wxsnsdy.wxs.qq.com, 🛑 AdBlock rules
+    # - DOMAIN, wxsnsdythumb.wxs.qq.com, 🛑 AdBlock rules
+
+   # Toutiao
+    # - DOMAIN-SUFFIX, ad.toutiao.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, dsp.toutiao.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, nativeapp.toutiao.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, partner.toutiao.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, sm.toutiao.com, 🛑 AdBlock rules
+
+   # Yahoo ads
+    # - DOMAIN-SUFFIX, adserver.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, adss.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, analytics.query.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, analytics.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, ane.yahoo.co.jp, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, ard.yahoo.co.jp, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, beap-bc.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, beap.gemini.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, clicks.beap.bc.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, comet.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, doubleplay-conf-yql.media.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, geo.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, im.ov.yahoo.co.jp, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, js-apac-ss.ysm.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, locdrop.query.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, onepush.query.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, p3p.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, partnerads.ysm.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, ws.progrss.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, yads.yahoo.co.jp, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, ybp.yahoo.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, yeas.yahoo.co.jp, 🛑 AdBlock rules
+
  # PROXY added manually
 
   # #
@@ -38573,5 +38573,3 @@ rules:
 
  # MATCH rules
     - MATCH, 🐟 Webs not included (漏网之鱼)
-
-
