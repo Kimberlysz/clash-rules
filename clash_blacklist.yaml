@@ -33881,7 +33881,6 @@ rules:
     - DOMAIN, col.surfside.io, PROXY
     - DOMAIN, dpm.demdex.net, PROXY
     - DOMAIN, drta3gpwmg66h.cloudfront.net, PROXY
-    - DOMAIN, dsum-sec.casalemedia.com, PROXY
     - DOMAIN, edge.surfside.io, PROXY
     - DOMAIN, i.liadm.com, PROXY
     - DOMAIN, ib.adnxs.com, PROXY
@@ -33906,7 +33905,6 @@ rules:
     - DOMAIN, tracking.lqm.io, PROXY
     - DOMAIN, vue.comm100.com, PROXY
     - DOMAIN, widget.reviews.io, PROXY
-    - DOMAIN, x.bidswitch.net, PROXY
     - DOMAIN, z.omappapi.com, PROXY
 
    # cedexis
@@ -33959,7 +33957,6 @@ rules:
     - DOMAIN-KEYWORD, .coinbase, PROXY
 
    # coingecko
-     # tag: crypto
     - DOMAIN-SUFFIX, 3lift.com, PROXY
     - DOMAIN-SUFFIX, adform.net, PROXY
     - DOMAIN-SUFFIX, adroll.com, PROXY
@@ -35688,6 +35685,12 @@ rules:
     - DOMAIN-SUFFIX, elementor.cloud, PROXY
     - DOMAIN-SUFFIX, elementor.com, PROXY
 
+   # elitebabes.com
+    - DOMAIN-SUFFIX, afcdn.net, PROXY
+    # - DOMAIN-SUFFIX, elitebabes.com, PROXY
+    - DOMAIN-SUFFIX, exdynsrv.com, PROXY
+    - DOMAIN-SUFFIX, hwcdn.net, PROXY
+
    # engadget.com
     - DOMAIN-SUFFIX, engadget.com, PROXY
 
@@ -36838,6 +36841,9 @@ rules:
 
    # viber
     - DOMAIN-SUFFIX, viber.com, PROXY
+
+   # vista.com
+    - DOMAIN-SUFFIX, vista.com, PROXY
 
    # volumio
     - DOMAIN-SUFFIX, volumio.com, PROXY
@@ -38566,4 +38572,5 @@ rules:
 
  # MATCH rules
     - MATCH, 🐟 Webs not included (漏网之鱼)
+
 
