@@ -1,4 +1,4 @@
-# domainRules-xray:
+## domainRules-xray:
   note: this repository is mainly for people who use clash core related application, example: clash for windows, clash verge, clashX, clashX.meta etc.
   note: this repository is also for people who use shadowrocket
   note: this repo is mainly for domain rules.
@@ -18,7 +18,7 @@
     https://github.com/v2fly/domain-list-community
 
 
-# domainRules-xray:
+## domainRules-xray:
   请注意：此存储库主要面向使用Clash核心相关应用程序的用户，例如：Clash for Windows、Clash Verge、ClashX、ClashX.meta等。
   请注意：此存储库也适用于使用Shadowrocket的用户。
   请注意：此存储库主要用于域名规则。
