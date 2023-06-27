@@ -36161,6 +36161,9 @@ rules:
     - DOMAIN-SUFFIX, lookah.com, PROXY
     - DOMAIN, www.lookah.com, PROXY
 
+   # luxor.tech
+    - DOMAIN-SUFFIX, luxor.tech, PROXY
+
   # m
    # matrix.one
     - DOMAIN-SUFFIX, matrix.one, PROXY
@@ -36532,6 +36535,9 @@ rules:
     # - DOMAIN-SUFFIX, api-verify.recaptcha.net, PROXY
     # - DOMAIN-SUFFIX, api.recaptcha.net, PROXY
     # - DOMAIN-SUFFIX, recaptcha.net, PROXY
+
+   # remove.bg
+    - DOMAIN-SUFFIX, remove.bg, PROXY
 
    # resi
 
