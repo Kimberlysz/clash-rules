@@ -15,7 +15,7 @@
     https://github.com/v2fly/domain-list-community
 
 
-## domainRules-xray:
+# domainRules-xray:
   该存储库主要针对使用Clash核心相关应用程序的用户，例如：Clash for Windows、Clash Verge、ClashX、ClashX.meta等，以及使用Shadowrocket的用户。这是一个域名规则存储库。
   开始日期：2023年5月30日；关闭日期：仍在进行中。
       
