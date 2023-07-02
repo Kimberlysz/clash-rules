@@ -515,11 +515,44 @@ proxies:
     # servername: your_server2
     # network: tcp
 
+  # - name: userAccount1
+    # type: vless
+    # server: your_server3
+    # port: 443
+    # uuid: your_UUID3
+    # network: tcp
+    # tls: true
+    # udp: true
+    # flow: xtls-rprx-vision
+    # client-fingerprint: chrome
+# 
+  # - name: userAccount2
+    # type: vless
+    # server: your_server3
+    # port: 443
+    # uuid: your_UUID3
+    # network: tcp
+    # tls: true
+    # udp: true
+    # flow: xtls-rprx-vision
+    # client-fingerprint: chrome
+# 
+  # - name: userAccount3
+    # type: vless
+    # server: your_server3
+    # port: 443
+    # uuid: your_UUID3
+    # network: tcp
+    # tls: true
+    # udp: true
+    # flow: xtls-rprx-vision
+    # client-fingerprint: chrome
+
   - name: userAccount1
     type: vless
-    server: your_server3
+    server: v.douyinstreamingservices.com
     port: 443
-    uuid: your_UUID3
+    uuid: b6c53b78-8f4d-44ee-9cb1-d170c727bff7
     network: tcp
     tls: true
     udp: true
@@ -528,9 +561,9 @@ proxies:
 
   - name: userAccount2
     type: vless
-    server: your_server3
+    server: v.douyinstreamingservices.com
     port: 443
-    uuid: your_UUID3
+    uuid: b6c53b78-8f4d-44ee-9cb1-d170c727bff7
     network: tcp
     tls: true
     udp: true
@@ -539,9 +572,9 @@ proxies:
 
   - name: userAccount3
     type: vless
-    server: your_server3
+    server: v.douyinstreamingservices.com
     port: 443
-    uuid: your_UUID3
+    uuid: b6c53b78-8f4d-44ee-9cb1-d170c727bff7
     network: tcp
     tls: true
     udp: true
@@ -636,6 +669,7 @@ proxy-groups:
       - failure switch (故障切换)
 
 rules:
+
  # 🛑 AdBlock (domain-list-community)
   # #
    # 36Kr
@@ -33557,6 +33591,8 @@ rules:
     - DOMAIN-SUFFIX, zybang.com, DIRECT
 
  # 🛑 AdBlock added manually
+  # #
+
   # a
   
   # b
@@ -33574,6 +33610,10 @@ rules:
   # h
   
   # i
+    # itv.com
+    - DOMAIN-SUFFIX, 2cnt.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, doubleverify.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, flashtalking.com, 🛑 AdBlock rules
 
   # j
   
@@ -33843,72 +33883,7 @@ rules:
   # c
    # caliva
      # tag: electronic cigarettes
-    - DOMAIN-KEYWORD, .caliva, PROXY
-    - DOMAIN-SUFFIX, 1e100cdn.net, PROXY
-    - DOMAIN-SUFFIX, bidswitch.net, PROXY
     - DOMAIN-SUFFIX, caliva.com, PROXY
-    - DOMAIN-SUFFIX, caliva.io, PROXY
-    - DOMAIN-SUFFIX, clientstream.launchdarkly.com, PROXY
-    - DOMAIN-SUFFIX, cloudinary.com, PROXY
-    - DOMAIN-SUFFIX, cnna.io, PROXY
-    - DOMAIN-SUFFIX, comm100.io, PROXY
-    - DOMAIN-SUFFIX, compute-pipe.com, PROXY
-    - DOMAIN-SUFFIX, datadoghq.com, PROXY
-    - DOMAIN-SUFFIX, edge.surfside.io, PROXY
-    - DOMAIN-SUFFIX, eyeota.net, PROXY
-    - DOMAIN-SUFFIX, fullstory.com, PROXY
-    - DOMAIN-SUFFIX, hotjar.com, PROXY
-    - DOMAIN-SUFFIX, krxd.net, PROXY
-    - DOMAIN-SUFFIX, launchdarkly.com, PROXY
-    - DOMAIN-SUFFIX, liadm.com, PROXY
-    - DOMAIN-SUFFIX, lqm.io, PROXY
-    - DOMAIN-SUFFIX, luckyorange.com, PROXY
-    - DOMAIN-SUFFIX, media.net, PROXY
-    - DOMAIN-SUFFIX, omappapi.com, PROXY
-    - DOMAIN-SUFFIX, pippio.com, PROXY
-    - DOMAIN-SUFFIX, prismic.io, PROXY
-    - DOMAIN-SUFFIX, reviews.io, PROXY
-    - DOMAIN-SUFFIX, rezync.com, PROXY
-    - DOMAIN-SUFFIX, rfihub.com, PROXY
-    - DOMAIN-SUFFIX, rokt.com, PROXY
-    - DOMAIN-SUFFIX, rtactivate.com, PROXY
-    - DOMAIN-SUFFIX, spotxchange.com, PROXY
-    - DOMAIN-SUFFIX, surfside.io, PROXY
-    - DOMAIN-SUFFIX, tapad.com, PROXY
-    - DOMAIN-SUFFIX, tracking.lqm.io, PROXY
-    - DOMAIN-SUFFIX, tremorhub.com, PROXY
-    - DOMAIN-SUFFIX, unpkg.com, PROXY
-    - DOMAIN-SUFFIX, widget.reviews.io, PROXY
-    - DOMAIN-SUFFIX, yodlee.com, PROXY
-    - DOMAIN, clientstream.launchdarkly.com, PROXY
-    - DOMAIN, col.surfside.io, PROXY
-    - DOMAIN, dpm.demdex.net, PROXY
-    - DOMAIN, drta3gpwmg66h.cloudfront.net, PROXY
-    - DOMAIN, edge.surfside.io, PROXY
-    - DOMAIN, i.liadm.com, PROXY
-    - DOMAIN, ib.adnxs.com, PROXY
-    - DOMAIN, launchdarkly.com, PROXY
-    - DOMAIN, live.rezync.com, PROXY
-    - DOMAIN, lqm.io, PROXY
-    - DOMAIN, match.adsrvr.org, PROXY
-    - DOMAIN, pixel.sitescout.com, PROXY
-    - DOMAIN, pixel.tapad.com, PROXY
-    - DOMAIN, ps.eyeota.net, PROXY
-    - DOMAIN, res.cloudinary.com, PROXY
-    - DOMAIN, reviews.io, PROXY
-    - DOMAIN, rs.fullstory.com, PROXY
-    - DOMAIN, ssl.luckyorange.com, PROXY
-    - DOMAIN, static.cdn.prismic.io, PROXY
-    - DOMAIN, static.hotjar.com, PROXY
-    - DOMAIN, surfside.io, PROXY
-    - DOMAIN, sync-tm.everesttech.net, PROXY
-    - DOMAIN, sync.dmp.cnna.io, PROXY
-    - DOMAIN, sync.search.spotxchange.com, PROXY
-    - DOMAIN, sync.smartadserver.com, PROXY
-    - DOMAIN, tracking.lqm.io, PROXY
-    - DOMAIN, vue.comm100.com, PROXY
-    - DOMAIN, widget.reviews.io, PROXY
-    - DOMAIN, z.omappapi.com, PROXY
 
    # cedexis
     - DOMAIN-SUFFIX, cedexis-test.com, PROXY
@@ -34118,7 +34093,6 @@ rules:
 
     # - DOMAIN-SUFFIX, bam.nr-data.net, PROXY
     # - DOMAIN-SUFFIX, cdn.registerdisney.go.com, PROXY
-    # - DOMAIN-SUFFIX, cws.conviva.com, PROXY
     # - DOMAIN-SUFFIX, d9.flashtalking.com, PROXY
     # - DOMAIN-SUFFIX, dssott.com.akamaized.net, PROXY
     # - DOMAIN-SUFFIX, js-agent.newrelic.com, PROXY
@@ -36015,6 +35989,9 @@ rules:
     - DOMAIN-SUFFIX, hpanel.hostinger.com, PROXY
     - DOMAIN-SUFFIX, hostinger.com.hk, PROXY
 
+   # hotjar.com
+    - DOMAIN-SUFFIX, hotjar.com, PROXY
+
    # hubspot
     - DOMAIN-SUFFIX, hubspot.com, PROXY
 
@@ -36050,6 +36027,26 @@ rules:
 
    # ipinfo
     - DOMAIN-SUFFIX, ipinfo.io, PROXY
+
+   # itv.com
+    - DOMAIN-SUFFIX, cassiecloud.com, PROXY
+    - DOMAIN-SUFFIX, conviva.com, PROXY
+    - DOMAIN-SUFFIX, cws.conviva.com, PROXY
+    - DOMAIN-SUFFIX, itv.com, PROXY
+    - DOMAIN-SUFFIX, launchdarkly.com, PROXY
+    - DOMAIN-SUFFIX, splunkcloud.com, PROXY
+    - DOMAIN-SUFFIX, syrenis.com, PROXY
+    - DOMAIN, clientstream.launchdarkly.com, PROXY
+    - DOMAIN, cscript-cdn-irl.cassiecloud.com, PROXY
+    - DOMAIN, cscript-irl.cassiecloud.com, PROXY
+    - DOMAIN, europe-west1-itv-ds-prd.cloudfunctions.net, PROXY
+    - DOMAIN, http-inputs-itv.splunkcloud.com, PROXY
+    - DOMAIN, identityservice.syrenis.com, PROXY
+    - DOMAIN, itvdotcom.2cnt.net, PROXY
+    - DOMAIN, itvpnp.live.ott.irdeto.com, PROXY
+    - DOMAIN, servedby.flashtalking.com, PROXY
+    - DOMAIN, toots-a.akamaihd.net, PROXY
+    - DOMAIN, tpsc-video.doubleverify.com, PROXY
 
   # j
    # jordandistrict.org
@@ -36513,6 +36510,9 @@ rules:
     - DOMAIN-KEYWORD, .proshkola18, PROXY
     - DOMAIN-SUFFIX, proshkola18.ru, PROXY
 
+   # psi.org
+    - DOMAIN-SUFFIX, psi.org, PROXY
+
   # q
    # quantfury
     - DOMAIN-SUFFIX, quantfury.com, PROXY
@@ -36579,6 +36579,9 @@ rules:
 
    # sms-activate
     - DOMAIN-SUFFIX, sms-activate.org, PROXY
+
+   # social-viral.com
+    - DOMAIN-SUFFIX, social-viral.com, PROXY
 
    # stremio.com
     - DOMAIN-KEYWORD, .stremio, PROXY
@@ -37043,11 +37046,8 @@ rules:
     - DOMAIN-SUFFIX, footprint.net, PROXY
     - DOMAIN-SUFFIX, fireside.fm, PROXY
     - DOMAIN-SUFFIX, express.co.uk, PROXY
-    - DOMAIN-SUFFIX, doubleverify.com, PROXY
     - DOMAIN-SUFFIX, cwtv.com, PROXY
     - DOMAIN-SUFFIX, crwdcntrl.net, PROXY
-    - DOMAIN-SUFFIX, conviva.com, PROXY
-    - DOMAIN-SUFFIX, conviva.com, PROXY
     - DOMAIN-SUFFIX, codec-cluster.org, PROXY
     - DOMAIN-SUFFIX, cebupacificair.com, PROXY
     - DOMAIN-SUFFIX, beinsportsconnect.tv, PROXY
@@ -39829,4 +39829,3 @@ rules:
 
  # MATCH rules
     - MATCH, 🐟 Webs not included (漏网之鱼)
-
