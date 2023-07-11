@@ -33824,6 +33824,8 @@ rules:
     - DOMAIN-SUFFIX, api.spreaker.com, PROXY
     - DOMAIN-SUFFIX, dts.podtrac.com, PROXY
     - DOMAIN-SUFFIX, pdst.fm, PROXY
+    - DOMAIN-SUFFIX, podcasts.apple.com, PROXY
+    - DOMAIN-SUFFIX, podtrac.com, PROXY
 
    # appledaily.tw
     - DOMAIN-SUFFIX, appledaily.tw, PROXY
