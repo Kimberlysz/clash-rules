@@ -33822,6 +33822,7 @@ rules:
    # apple
     - DOMAIN-SUFFIX, amp-api.podcasts.apple.com, PROXY
     - DOMAIN-SUFFIX, api.spreaker.com, PROXY
+    - DOMAIN-SUFFIX, chrt.fm, PROXY
     - DOMAIN-SUFFIX, dts.podtrac.com, PROXY
     - DOMAIN-SUFFIX, pdst.fm, PROXY
     - DOMAIN-SUFFIX, podcasts.apple.com, PROXY
