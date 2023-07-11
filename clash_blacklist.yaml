@@ -1,3 +1,6 @@
+#: state the content
+##: code written down
+
 # Port of SOCKS5 proxy server on the local end
 socks-port: 7890
 
@@ -129,13 +132,15 @@ profile:
 dns:
   enable: true
   listen: 0.0.0.0:53
-  enhanced-mode: fake-ip # or redir-host
-  # enhanced-mode: redir-host # or fake-ip
-  ipv6: false # when the false, response to AAAA questions will be empty
+  # enhanced-mode: fake-ip or redir-host
+    ## enhanced-mode: redir-host
+  enhanced-mode: fake-ip
 
-  # clash meta rule
-  # 开启 DoH 支持 HTTP/3，将并发尝试
-  # prefer-h3: true
+  # when ipv6 is false, response to AAAA questions will be empty
+  ipv6: false
+
+  # clash meta rule: 开启 DoH 支持 HTTP/3，将并发尝试
+    ## prefer-h3: true
 
   # These nameservers are used to resolve the DNS nameserver hostnames below.
   # Specify IP addresses only
@@ -3185,7 +3190,7 @@ rules:
     - DOMAIN-SUFFIX, swscan.apple.com, PROXY
     - DOMAIN-SUFFIX, updates-http.cdn-apple.com, PROXY
     - DOMAIN-SUFFIX, updates.cdn-apple.com, PROXY
-    # - DOMAIN-SUFFIX, xp.apple.com, PROXY
+    - DOMAIN-SUFFIX, xp.apple.com, PROXY
 
    # appledaily
     # Reference: https://zh.wikipedia.org/wiki/%E5%A3%B9%E5%82%B3%E5%AA%92
@@ -33815,6 +33820,10 @@ rules:
     - IP-CIDR, 54.230.156.0/22, PROXY, no-resolve
 
    # apple
+    - DOMAIN-SUFFIX, amp-api.podcasts.apple.com, PROXY
+    - DOMAIN-SUFFIX, api.spreaker.com, PROXY
+    - DOMAIN-SUFFIX, dts.podtrac.com, PROXY
+    - DOMAIN-SUFFIX, pdst.fm, PROXY
 
    # appledaily.tw
     - DOMAIN-SUFFIX, appledaily.tw, PROXY
@@ -33825,7 +33834,6 @@ rules:
     # - DOMAIN-SUFFIX, sc-analytics.appspot.com, PROXY
 
    # ashleymadison
-
     - DOMAIN-SUFFIX, ashleymadison.com, PROXY
 
   # b
@@ -36683,6 +36691,9 @@ rules:
     - DOMAIN-SUFFIX, tibetoffice.org, PROXY
     - DOMAIN-SUFFIX, tibetoffice.com.au, PROXY
 
+   # tiktok
+    - DOMAIN-SUFFIX, tiktokcdn-us.com, PROXY
+
    # tlsfingerprint
     - DOMAIN-SUFFIX, tlsfingerprint.io, PROXY
     - DOMAIN-KEYWORD, .tlsfingerprint, PROXY
@@ -38913,6 +38924,8 @@ rules:
   # b
 
   # c
+   # chicago.china-consulate.gov.cn
+    - DOMAIN-SUFFIX, qy.net, DIRECT
 
   # d
 
@@ -39803,6 +39816,7 @@ rules:
 
  # statement: the following keyword might conflict with relevant websites
   # conflicts
+
   # a
    # aliyun
     # .al
@@ -39811,12 +39825,11 @@ rules:
    # pingan bank
     # .cl
     # .sd
-    # .organe
+    # .orange
 
   # t
-   # tld-!cn
-
-   # tld-opennic
+   # geosite: # tld-!cn
+   # geosite # tld-opennic
 
  # GEOIP LAN
    # - GEOIP, LAN, DIRECT
