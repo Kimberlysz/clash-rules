@@ -553,39 +553,6 @@ proxies:
     # flow: xtls-rprx-vision
     # client-fingerprint: chrome
 
-  - name: userAccount1
-    type: vless
-    server: v.douyinstreamingservices.com
-    port: 443
-    uuid: b6c53b78-8f4d-44ee-9cb1-d170c727bff7
-    network: tcp
-    tls: true
-    udp: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-
-  - name: userAccount2
-    type: vless
-    server: v.douyinstreamingservices.com
-    port: 443
-    uuid: b6c53b78-8f4d-44ee-9cb1-d170c727bff7
-    network: tcp
-    tls: true
-    udp: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-
-  - name: userAccount3
-    type: vless
-    server: v.douyinstreamingservices.com
-    port: 443
-    uuid: b6c53b78-8f4d-44ee-9cb1-d170c727bff7
-    network: tcp
-    tls: true
-    udp: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-
 proxy-groups:
   - name: 🎯 General Mode (总模式)
     type: select
@@ -674,7 +641,6 @@ proxy-groups:
       - failure switch (故障切换)
 
 rules:
-
  # 🛑 AdBlock (domain-list-community)
   # #
    # 36Kr
@@ -16925,6 +16891,7 @@ rules:
     - DOMAIN-SUFFIX, hbo.com.c.footprint.net, PROXY
     - DOMAIN-SUFFIX, hbo.com.edgesuite.net, PROXY
     - DOMAIN-SUFFIX, hbo.map.fastly.net, PROXY
+    - DOMAIN-SUFFIX, hbomax-images.warnermediacdn.com, PROXY
     - DOMAIN-SUFFIX, hbomaxdash.s.llnwi.net, PROXY
 
    # hcaptcha
@@ -33776,6 +33743,7 @@ rules:
     # - DOMAIN-SUFFIX, yeas.yahoo.co.jp, 🛑 AdBlock rules
 
  # PROXY added manually
+
   # ## general ruels for multiple websites
     - DOMAIN-SUFFIX, cookielaw.org, PROXY
 
@@ -33840,6 +33808,9 @@ rules:
 
    # ashleymadison
     - DOMAIN-SUFFIX, ashleymadison.com, PROXY
+
+   # astrill.com
+    - DOMAIN-SUFFIX, astrill.com, PROXY
 
   # b
    # badoo
@@ -33945,6 +33916,9 @@ rules:
    # coinbase
      # tag: crypto
     - DOMAIN-KEYWORD, .coinbase, PROXY
+
+   # coindesk
+    - DOMAIN-SUFFIX, coindesk.com, PROXY
 
    # coingecko
     - DOMAIN-SUFFIX, 3lift.com, PROXY
@@ -36719,6 +36693,9 @@ rules:
     - DOMAIN-SUFFIX, whalestonpool.com, PROXY
     - DOMAIN-SUFFIX, ondigitalocean.app, PROXY
     - DOMAIN-SUFFIX, tonwhales.com, PROXY
+
+   # tradestockfund.com
+    - DOMAIN-SUFFIX, tradestockfund.com, PROXY
 
    # travelerdoor.com
     - DOMAIN-KEYWORD, .travelerdoor, PROXY
