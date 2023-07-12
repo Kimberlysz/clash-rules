@@ -33776,7 +33776,8 @@ rules:
     # - DOMAIN-SUFFIX, yeas.yahoo.co.jp, 🛑 AdBlock rules
 
  # PROXY added manually
-
+  # ## general ruels for multiple websites
+    - DOMAIN-SUFFIX, cookielaw.org, PROXY
   # #
    # 1-apple.com.tw
     - DOMAIN-SUFFIX, 1-apple.com.tw, PROXY
@@ -33846,7 +33847,6 @@ rules:
    # barnesandnoble
     - DOMAIN-KEYWORD, .barnesandnoble, PROXY
     - DOMAIN-SUFFIX, bn-web.com, PROXY
-    - DOMAIN-SUFFIX, cookielaw.org, PROXY
     - DOMAIN-SUFFIX, css-bn.com, PROXY
     - DOMAIN-SUFFIX, images-bn.com, PROXY
     - DOMAIN-SUFFIX, js-bn.com, PROXY
