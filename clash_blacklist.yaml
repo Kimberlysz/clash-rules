@@ -33778,6 +33778,7 @@ rules:
  # PROXY added manually
   # ## general ruels for multiple websites
     - DOMAIN-SUFFIX, cookielaw.org, PROXY
+
   # #
    # 1-apple.com.tw
     - DOMAIN-SUFFIX, 1-apple.com.tw, PROXY
@@ -35978,6 +35979,9 @@ rules:
     - DOMAIN-SUFFIX, hashrate.to, PROXY
 
    # hbomax
+    - DOMAIN-SUFFIX, max.com, PROXY
+    - DOMAIN-SUFFIX, warnermediacdn.com, PROXY
+
     # AS393808 – HBO Latin America Production Services L.C.
     - IP-CIDR, 135.84.231.0/24, PROXY, no-resolve
     - IP-CIDR, 192.124.156.0/24, PROXY, no-resolve
