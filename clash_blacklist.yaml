@@ -340,11 +340,11 @@ dns:
   # The answers from fallback servers are used when the GEOIP country
   # is not `CN`.
 
-  fallback:
-    - https://dns11.quad9.net/dns-query
-    - https://dns.cloudflare.com/dns-query
-    - tls://dns.google
-    - tcp://208.67.222.222:443
+  # fallback:
+    # - https://dns11.quad9.net/dns-query
+    # - https://dns.cloudflare.com/dns-query
+    # - tls://dns.google
+    # - tcp://208.67.222.222:443
 
     # - tcp://1.1.1.1
     # 指定 DNS 过代理查询，ProxyGroupName 为策略组名或节点名，过代理配置优先于配置出口网卡，当找不到策略组或节点名则设置为出口网卡
