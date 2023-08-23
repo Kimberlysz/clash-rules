@@ -1,6 +1,3 @@
-#: state the content
-##: code written down
-
 # Port of SOCKS5 proxy server on the local end
 socks-port: 7890
 
@@ -132,15 +129,13 @@ profile:
 dns:
   enable: true
   listen: 0.0.0.0:53
-  # enhanced-mode: fake-ip or redir-host
-    ## enhanced-mode: redir-host
-  enhanced-mode: fake-ip
+  enhanced-mode: fake-ip # or redir-host
+  # enhanced-mode: redir-host # or fake-ip
+  ipv6: false # when the false, response to AAAA questions will be empty
 
-  # when ipv6 is false, response to AAAA questions will be empty
-  ipv6: false
-
-  # clash meta rule: 开启 DoH 支持 HTTP/3，将并发尝试
-    ## prefer-h3: true
+  # clash meta rule
+  # 开启 DoH 支持 HTTP/3，将并发尝试
+  # prefer-h3: true
 
   # These nameservers are used to resolve the DNS nameserver hostnames below.
   # Specify IP addresses only
@@ -299,6 +294,7 @@ dns:
     - 233.5.5.5
     - 119.29.29.29
     - 114.114.114.114
+    # - 180.76.76.76
     # - 8.8.8.8
     # - 9.9.9.11
     # - 149.112.112.11
@@ -432,126 +428,126 @@ proxies:
 
   # - name: userAccount1
     # type: vmess
-    # server: your_server1
+    # server: your_domain
     # port: 443
-    # uuid: your_UUID1
+    # uuid: your_UUID
     # alterId: 0
     # cipher: auto
     # udp: true
     # tls: true
     # skip-cert-verify: false
-    # servername: your_server1
+    # servername: your_domain
     # network: ws
     # ws-opts:
       # path: /x
       # headers:
-        # Host: your_server1
+        # Host: your_domain
 # 
   # - name: userAccount2
     # type: vmess
-    # server: your_server1
+    # server: your_domain
     # port: 443
-    # uuid: your_UUID1
+    # uuid: your_UUID
     # alterId: 0
     # cipher: auto
     # udp: true
     # tls: true
     # skip-cert-verify: false
-    # servername: your_server1
+    # servername: your_domain
     # network: ws
     # ws-opts:
       # path: /x
       # headers:
-        # Host: your_server1
+        # Host: your_domain
 # 
   # - name: userAccount3
     # type: vmess
-    # server: your_server1
+    # server: your_domain
     # port: 443
-    # uuid: your_UUID1
+    # uuid: your_UUID
     # alterId: 0
     # cipher: auto
     # udp: true
     # tls: true
     # skip-cert-verify: false
-    # servername: your_server1
+    # servername: your_domain
     # network: ws
     # ws-opts:
       # path: /x
       # headers:
-        # Host: your_server1
+        # Host: your_domain
 
   # - name: userAccount1
     # type: vmess
-    # server: your_server2
+    # server: your_domain
     # port: 443
-    # uuid: your_UUID2
+    # uuid: your_UUID
     # alterId: 0
     # cipher: auto
     # udp: true
     # tls: true
     # skip-cert-verify: false
-    # servername: your_server2
+    # servername: your_domain
     # network: tcp
 # 
   # - name: userAccount2
     # type: vmess
-    # server: your_server2
+    # server: your_domain
     # port: 443
-    # uuid: your_UUID2
+    # uuid: your_UUID
     # alterId: 0
     # cipher: auto
     # udp: true
     # tls: true
     # skip-cert-verify: false
-    # servername: your_server2
+    # servername: your_domain
     # network: tcp
 # 
   # - name: userAccount3
     # type: vmess
-    # server: your_server2
+    # server: your_domain
     # port: 443
-    # uuid: your_UUID2
+    # uuid: your_UUID
     # alterId: 0
     # cipher: auto
     # udp: true
     # tls: true
     # skip-cert-verify: false
-    # servername: your_server2
+    # servername: your_domain
     # network: tcp
 
-  # - name: userAccount1
-    # type: vless
-    # server: your_server3
-    # port: 443
-    # uuid: your_UUID3
-    # network: tcp
-    # tls: true
-    # udp: true
-    # flow: xtls-rprx-vision
-    # client-fingerprint: chrome
-# 
-  # - name: userAccount2
-    # type: vless
-    # server: your_server3
-    # port: 443
-    # uuid: your_UUID3
-    # network: tcp
-    # tls: true
-    # udp: true
-    # flow: xtls-rprx-vision
-    # client-fingerprint: chrome
-# 
-  # - name: userAccount3
-    # type: vless
-    # server: your_server3
-    # port: 443
-    # uuid: your_UUID3
-    # network: tcp
-    # tls: true
-    # udp: true
-    # flow: xtls-rprx-vision
-    # client-fingerprint: chrome
+  - name: userAccount1
+    type: vless
+    server: your_domain
+    port: 443
+    uuid: your_UUID
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+
+  - name: userAccount2
+    type: vless
+    server: your_domain
+    port: 443
+    uuid: your_UUID
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+
+  - name: userAccount3
+    type: vless
+    server: your_domain
+    port: 443
+    uuid: your_UUID
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
 
 proxy-groups:
   - name: 🎯 General Mode (总模式)
@@ -9055,6 +9051,7 @@ rules:
     - DOMAIN-SUFFIX, javxxx.me, PROXY
     - DOMAIN-SUFFIX, javynow.com, PROXY
     - DOMAIN-SUFFIX, jayspov.net, PROXY
+    - DOMAIN-SUFFIX, jbk005.com, PROXY
     - DOMAIN-SUFFIX, jdavsp.asia, PROXY
     - DOMAIN-SUFFIX, jdavsp.pw, PROXY
     - DOMAIN-SUFFIX, jdforum.net, PROXY
@@ -33744,9 +33741,6 @@ rules:
 
  # PROXY added manually
 
-  # ## general ruels for multiple websites
-    - DOMAIN-SUFFIX, cookielaw.org, PROXY
-
   # #
    # 1-apple.com.tw
     - DOMAIN-SUFFIX, 1-apple.com.tw, PROXY
@@ -33761,6 +33755,12 @@ rules:
     - DOMAIN-SUFFIX, 2miners.com, PROXY
 
   # a
+   # aaos.org
+    - DOMAIN-SUFFIX, aaos.org, PROXY
+
+   # agoda.com
+    - DOMAIN-SUFFIX, agoda.com, PROXY
+
    # ai art
     - DOMAIN-SUFFIX, craiyon.com, PROXY
     - DOMAIN-SUFFIX, hotpot.ai, PROXY
@@ -33846,8 +33846,9 @@ rules:
      # tag: financial
     - DOMAIN-SUFFIX, betterplan.cl, PROXY
 
-   # blogspot others
-    # - DOMAIN-KEYWORD, .blogspot, PROXY
+   # bice.cl
+    - DOMAIN-SUFFIX, bice.cl, PROXY
+    - DOMAIN-SUFFIX, modyocdn.com, PROXY
 
    # bing
     # Bing rules originates from this yaml file
@@ -33857,6 +33858,9 @@ rules:
      # tag: crypto
 
     - DOMAIN-SUFFIX, bitmain.com, PROXY
+
+   # blogspot others
+    # - DOMAIN-KEYWORD, .blogspot, PROXY
 
    # brazgovskaia
     - DOMAIN-KEYWORD, .brazgovskaia, PROXY
@@ -33942,6 +33946,9 @@ rules:
     - DOMAIN-SUFFIX, coinwarz.com, PROXY
     - DOMAIN-SUFFIX, coinmarketcap.com, PROXY
 
+   # cookielaw.org
+    - DOMAIN-SUFFIX, cookielaw.org, PROXY
+
    # crazypool
      # tag: crypto
 
@@ -33970,6 +33977,10 @@ rules:
      # tag: crypto
 
     - DOMAIN-SUFFIX, cryptocompare.com, PROXY
+
+   # curtin university
+    - DOMAIN-SUFFIX, curtin.edu.au, PROXY
+    - DOMAIN-SUFFIX, pcdn.co, PROXY
 
    # cvs
     - DOMAIN-SUFFIX, cvs.com, PROXY
@@ -35657,9 +35668,38 @@ rules:
    # engadget.com
     - DOMAIN-SUFFIX, engadget.com, PROXY
 
-   # esty
-    - DOMAIN-SUFFIX, esty.com, PROXY
-    - DOMAIN-KEYWORD, .esty, PROXY, no-resolve
+   # etsy
+    - DOMAIN-SUFFIX, bat.bing.com, PROXY
+    - DOMAIN-SUFFIX, cdn.granify.com, PROXY
+    - DOMAIN-SUFFIX, cdn.honey.io, PROXY
+    - DOMAIN-SUFFIX, cdn.pdst.fm, PROXY
+    - DOMAIN-SUFFIX, d.agkn.com, PROXY
+    - DOMAIN-SUFFIX, dsum-sec.casalemedia.com, PROXY
+    - DOMAIN-SUFFIX, etsy.com, PROXY
+    - DOMAIN-SUFFIX, fonts.gstatic.com, PROXY
+    - DOMAIN-SUFFIX, i.etsystatic.com, PROXY
+    - DOMAIN-SUFFIX, ib.adnxs.com, PROXY
+    - DOMAIN-SUFFIX, insight.adsrvr.org, PROXY
+    - DOMAIN-SUFFIX, js.adsrvr.org, PROXY
+    - DOMAIN-SUFFIX, js.sentry-cdn.com, PROXY
+    - DOMAIN-SUFFIX, match.adsrvr.org, PROXY
+    - DOMAIN-SUFFIX, matching.granify.com, PROXY
+    - DOMAIN-SUFFIX, pixel.rubiconproject.com, PROXY
+    - DOMAIN-SUFFIX, pixel.streetmetrics.io, PROXY
+    - DOMAIN-SUFFIX, pt.ispot.tv, PROXY
+    - DOMAIN-SUFFIX, resources.xg4ken.com, PROXY
+    - DOMAIN-SUFFIX, s.joinhoney.com, PROXY
+    - DOMAIN-SUFFIX, s.pinimg.com, PROXY
+    - DOMAIN-SUFFIX, simage2.pubmatic.com, PROXY
+    - DOMAIN-SUFFIX, tags.w55c.net, PROXY
+    - DOMAIN-SUFFIX, trkn.us, PROXY
+    - DOMAIN-SUFFIX, ups.analytics.yahoo.com, PROXY
+    - DOMAIN-SUFFIX, v.etsystatic.com, PROXY
+    - DOMAIN-SUFFIX, web.btncdn.com, PROXY
+    - DOMAIN-SUFFIX, x.bidswitch.net, PROXY
+
+    - DOMAIN, sync.search.spotxchange.com, PROXY
+    - DOMAIN, us-central1-adaptive-growth.cloudfunctions.net, PROXY
 
    # etherfair
      # tag: crypto
@@ -36443,6 +36483,9 @@ rules:
     # - DOMAIN-SUFFIX, storage.msn.com, PROXY
     # - DOMAIN, oneclient.sfx.ms, PROXY
 
+   # onlineaccount.net
+    - DOMAIN-SUFFIX, onlineaccount.net, PROXY
+
    # openai
     - DOMAIN-KEYWORD, .openai, PROXY
     - IP-CIDR, 23.98.142.176/28, PROXY, no-resolve
@@ -36454,8 +36497,9 @@ rules:
     - DOMAIN-SUFFIX, opensea.io, PROXY
 
    # ottcst.com
+    - DOMAIN-KEYWORD, .ottcst, PROXY
     - DOMAIN-SUFFIX, ottcst.com, PROXY
-    - DOMAIN, line.ottcst.com, PROXY
+    - DOMAIN-SUFFIX, line.ottcst.com, PROXY
 
    # outlookindia.com
     - DOMAIN-SUFFIX, outlookindia.com, PROXY
@@ -36507,6 +36551,9 @@ rules:
     - DOMAIN-SUFFIX, quantfury.com, PROXY
     - DOMAIN-SUFFIX, trdngbcknd.com, PROXY
     - DOMAIN-SUFFIX, appsflyersdk.com, PROXY
+
+   # qsi
+    - DOMAIN-SUFFIX, qsishenzhen.org, PROXY
 
   # r
    # raspberrypi.org
@@ -36563,8 +36610,9 @@ rules:
     - DOMAIN-SUFFIX, simplemining.net, PROXY
 
    # smartiptv.dnsco.xyz
-    - DOMAIN-SUFFIX, smartiptv.dnsco.xyz, PROXY
     - DOMAIN-SUFFIX, more-itv.com, PROXY
+    - DOMAIN-SUFFIX, more-itv.net, PROXY
+    - DOMAIN-SUFFIX, smartiptv.dnsco.xyz, PROXY
 
    # sms-activate
     - DOMAIN-SUFFIX, sms-activate.org, PROXY
@@ -36654,6 +36702,9 @@ rules:
    # thedroidguy.com
     - DOMAIN-KEYWORD, .thedroidguy, PROXY
     - DOMAIN-SUFFIX, thedroidguy.com, PROXY
+
+   # thetatoken.org
+    - DOMAIN-SUFFIX, thetatoken.org, PROXY
 
    # threatcrowd.org
     - DOMAIN-KEYWORD, .threatcrowd, PROXY
@@ -36875,6 +36926,9 @@ rules:
     - IP-CIDR, 75.126.150.0/16, PROXY, no-resolve
     - IP-CIDR, 69.171.235.0/16, PROXY, no-resolve
 
+   # wisconsinregisteredagent.net
+    - DOMAIN-SUFFIX, wisconsinregisteredagent.net, PROXY
+
   # x
    # xbox
     - DOMAIN-SUFFIX, xboxab.net, PROXY
@@ -37080,7 +37134,10 @@ rules:
   # which means the domain rules are blocking those domains
 
   # a
-   # Akamai
+   # agoda.cn
+    - DOMAIN-SUFFIX, agoda.cn, DIRECT
+
+   # akamai
     # - DOMAIN-SUFFIX, akadns.net, DIRECT
     # # - DOMAIN-SUFFIX, akamai.net, DIRECT
     # - DOMAIN-SUFFIX, akamaiedge.net, DIRECT
