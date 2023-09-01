@@ -36648,6 +36648,9 @@ rules:
    # jsdelivr
     - DOMAIN, testingcf.jsdelivr.net, PROXY
 
+   # justanswer.com
+    - DOMAIN-SUFFIX, justanswer.com, PROXY
+
   # k
    # kagyuoffice
     - DOMAIN-SUFFIX, kagyuoffice.org, PROXY
@@ -36845,61 +36848,99 @@ rules:
     - DOMAIN-SUFFIX, newcannabisventures.com, PROXY
 
    # netflix
-    # AS2906 – Netflix Streaming Services Inc.
-    - IP-CIDR, 108.175.32.0/20, PROXY, no-resolve
-    - IP-CIDR, 185.2.220.0/22, PROXY, no-resolve
-    - IP-CIDR, 185.9.188.0/22, PROXY, no-resolve
-    - IP-CIDR, 192.173.100.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.101.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.102.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.104.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.105.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.108.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.109.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.64.0/18, PROXY, no-resolve
-    - IP-CIDR, 192.173.65.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.66.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.67.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.68.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.70.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.74.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.75.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.77.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.78.0/24, PROXY, no-resolve
+
+    # AS55095 Netflix Inc
+    - IP-CIDR, 69.53.247.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.248.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.249.0/24, PROXY, no-resolve
     - IP-CIDR, 192.173.80.0/24, PROXY, no-resolve
     - IP-CIDR, 192.173.82.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.83.0/24, PROXY, no-resolve
     - IP-CIDR, 192.173.84.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.86.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.87.0/24, PROXY, no-resolve
     - IP-CIDR, 192.173.88.0/24, PROXY, no-resolve
     - IP-CIDR, 192.173.89.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.92.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.94.0/24, PROXY, no-resolve
     - IP-CIDR, 192.173.95.0/24, PROXY, no-resolve
     - IP-CIDR, 192.173.98.0/24, PROXY, no-resolve
     - IP-CIDR, 192.173.99.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.38.108.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.38.109.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.38.110.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.38.111.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.38.112.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.38.113.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.38.114.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.38.115.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.38.120.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.38.121.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.38.122.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.38.96.0/19, PROXY, no-resolve
-    - IP-CIDR, 198.38.98.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.38.99.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.45.48.0/20, PROXY, no-resolve
-    - IP-CIDR, 198.45.48.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.45.49.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.45.50.0/24, PROXY, no-resolve
-    - IP-CIDR, 198.45.56.0/24, PROXY, no-resolve
-    - IP-CIDR, 208.75.76.0/22, PROXY, no-resolve
+    - IP-CIDR, 192.173.100.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.101.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.102.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.105.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.108.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.109.0/24, PROXY, no-resolve
+
+    - IP-CIDR6, 2607:fb10:2011::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2012::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2014::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2015::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2023::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2024::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2033::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2034::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2042::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2052::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2071::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2072::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5013::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5014::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5015::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5016::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5039::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5040::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5042::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5052::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5053::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5062::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5063::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5072::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5082::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5083::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5092::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5093::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5096::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5097::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:50a2::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:50a3::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:50b2::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:50b3::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:50c2::/48, PROXY, no-resolve
+
+    # AS40027 Netflix Streaming Services Inc.
+    - IP-CIDR, 45.57.8.0/23, PROXY, no-resolve
+    - IP-CIDR, 45.57.8.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.9.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.40.0/23, PROXY, no-resolve
+    - IP-CIDR, 45.57.40.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.41.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.86.0/23, PROXY, no-resolve
+    - IP-CIDR, 45.57.86.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.87.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.90.0/23, PROXY, no-resolve
+    - IP-CIDR, 45.57.90.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.91.0/24, PROXY, no-resolve
+
+    - IP-CIDR6, 2a00:86c0:2008::/47, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2008::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2009::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2040::/47, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2040::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2041::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2086::/47, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2086::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2087::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2090::/47, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2090::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2091::/48, PROXY, no-resolve
+
+    # AS394406 Netflix, Inc
+    - IP-CIDR, 207.45.72.0/22, PROXY, no-resolve
+    - IP-CIDR, 207.45.73.0/24, PROXY, no-resolve
+
+    # AS2906 Netflix Streaming Services Inc.
     - IP-CIDR, 23.246.0.0/18, PROXY, no-resolve
+    - IP-CIDR, 23.246.2.0/24, PROXY, no-resolve
+    - IP-CIDR, 23.246.3.0/24, PROXY, no-resolve
+    - IP-CIDR, 23.246.6.0/24, PROXY, no-resolve
+    - IP-CIDR, 23.246.7.0/24, PROXY, no-resolve
     - IP-CIDR, 23.246.10.0/24, PROXY, no-resolve
     - IP-CIDR, 23.246.11.0/24, PROXY, no-resolve
     - IP-CIDR, 23.246.12.0/24, PROXY, no-resolve
@@ -36909,12 +36950,10 @@ rules:
     - IP-CIDR, 23.246.16.0/24, PROXY, no-resolve
     - IP-CIDR, 23.246.17.0/24, PROXY, no-resolve
     - IP-CIDR, 23.246.20.0/24, PROXY, no-resolve
-    - IP-CIDR, 23.246.2.0/24, PROXY, no-resolve
     - IP-CIDR, 23.246.21.0/24, PROXY, no-resolve
     - IP-CIDR, 23.246.26.0/24, PROXY, no-resolve
     - IP-CIDR, 23.246.27.0/24, PROXY, no-resolve
     - IP-CIDR, 23.246.30.0/24, PROXY, no-resolve
-    - IP-CIDR, 23.246.3.0/24, PROXY, no-resolve
     - IP-CIDR, 23.246.31.0/24, PROXY, no-resolve
     - IP-CIDR, 23.246.36.0/24, PROXY, no-resolve
     - IP-CIDR, 23.246.37.0/24, PROXY, no-resolve
@@ -36935,8 +36974,6 @@ rules:
     - IP-CIDR, 23.246.57.0/24, PROXY, no-resolve
     - IP-CIDR, 23.246.58.0/24, PROXY, no-resolve
     - IP-CIDR, 23.246.59.0/24, PROXY, no-resolve
-    - IP-CIDR, 23.246.6.0/24, PROXY, no-resolve
-    - IP-CIDR, 23.246.7.0/24, PROXY, no-resolve
     - IP-CIDR, 37.77.184.0/21, PROXY, no-resolve
     - IP-CIDR, 37.77.186.0/24, PROXY, no-resolve
     - IP-CIDR, 37.77.187.0/24, PROXY, no-resolve
@@ -36944,90 +36981,497 @@ rules:
     - IP-CIDR, 37.77.189.0/24, PROXY, no-resolve
     - IP-CIDR, 45.57.0.0/17, PROXY, no-resolve
     - IP-CIDR, 45.57.0.0/24, PROXY, no-resolve
-    - IP-CIDR, 45.57.100.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.1.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.2.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.3.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.4.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.5.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.6.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.7.0/24, PROXY, no-resolve
     - IP-CIDR, 45.57.10.0/24, PROXY, no-resolve
-
-    # AS2906 – Netflix Streaming Services Inc.
-    - IP-CIDR, 2607:fb10:16::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2011::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2012::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2014::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2015::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2023::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2024::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2033::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2034::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2042::/48, PROXY, no-resolve
-
-    # AS40027 – Netflix Streaming Services Inc.
-    - IP-CIDR, 45.57.40.0/23, PROXY, no-resolve
-    - IP-CIDR, 45.57.40.0/24, PROXY, no-resolve
-    - IP-CIDR, 45.57.41.0/24, PROXY, no-resolve
-    - IP-CIDR, 45.57.76.0/23, PROXY, no-resolve
-    - IP-CIDR, 45.57.76.0/24, PROXY, no-resolve
-    - IP-CIDR, 45.57.8.0/23, PROXY, no-resolve
-    - IP-CIDR, 45.57.8.0/24, PROXY, no-resolve
-    - IP-CIDR, 45.57.86.0/23, PROXY, no-resolve
-    - IP-CIDR, 45.57.86.0/24, PROXY, no-resolve
-    - IP-CIDR, 45.57.87.0/24, PROXY, no-resolve
-    - IP-CIDR, 45.57.90.0/23, PROXY, no-resolve
-    - IP-CIDR, 45.57.90.0/24, PROXY, no-resolve
-    - IP-CIDR, 45.57.9.0/24, PROXY, no-resolve
-    - IP-CIDR, 45.57.91.0/24, PROXY, no-resolve
-
-    # AS40027 – Netflix Streaming Services Inc.
-    - IP-CIDR, 2a00:86c0:2008::/47, PROXY, no-resolve
-    - IP-CIDR, 2a00:86c0:2008::/48, PROXY, no-resolve
-    - IP-CIDR, 2a00:86c0:2009::/48, PROXY, no-resolve
-    - IP-CIDR, 2a00:86c0:2040::/47, PROXY, no-resolve
-    - IP-CIDR, 2a00:86c0:2040::/48, PROXY, no-resolve
-    - IP-CIDR, 2a00:86c0:2041::/48, PROXY, no-resolve
-    - IP-CIDR, 2a00:86c0:2076::/47, PROXY, no-resolve
-    - IP-CIDR, 2a00:86c0:2076::/48, PROXY, no-resolve
-    - IP-CIDR, 2a00:86c0:2086::/47, PROXY, no-resolve
-    - IP-CIDR, 2a00:86c0:2086::/48, PROXY, no-resolve
-
-    # AS55095 – Netflix Inc
-    - IP-CIDR, 192.173.100.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.101.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.102.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.105.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.108.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.109.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.80.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.82.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.84.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.88.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.89.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.95.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.98.0/24, PROXY, no-resolve
-    - IP-CIDR, 192.173.99.0/24, PROXY, no-resolve
-    - IP-CIDR, 69.53.229.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.11.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.12.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.13.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.14.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.15.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.16.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.17.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.18.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.19.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.20.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.21.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.22.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.23.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.24.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.25.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.28.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.29.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.36.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.37.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.44.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.45.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.48.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.49.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.50.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.51.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.54.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.55.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.56.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.58.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.59.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.60.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.62.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.63.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.64.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.65.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.68.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.69.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.70.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.71.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.72.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.73.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.74.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.75.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.78.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.79.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.80.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.81.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.82.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.83.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.84.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.85.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.88.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.89.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.92.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.93.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.94.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.95.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.96.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.97.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.98.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.99.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.100.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.101.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.102.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.103.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.104.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.105.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.106.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.107.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.114.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.115.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.116.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.117.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.120.0/24, PROXY, no-resolve
+    - IP-CIDR, 45.57.121.0/24, PROXY, no-resolve
+    - IP-CIDR, 64.120.128.0/17, PROXY, no-resolve
+    - IP-CIDR, 66.197.128.0/17, PROXY, no-resolve
+    - IP-CIDR, 66.197.192.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.193.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.194.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.195.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.196.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.197.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.198.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.199.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.201.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.202.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.203.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.204.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.205.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.206.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.207.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.208.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.209.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.210.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.211.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.212.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.213.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.214.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.215.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.216.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.217.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.218.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.219.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.221.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.223.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.224.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.225.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.226.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.227.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.228.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.229.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.231.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.232.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.235.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.236.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.241.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.242.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.243.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.244.0/24, PROXY, no-resolve
+    - IP-CIDR, 66.197.246.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.224.0/19, PROXY, no-resolve
+    - IP-CIDR, 69.53.231.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.233.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.235.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.236.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.237.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.238.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.240.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.241.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.243.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.244.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.245.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.246.0/24, PROXY, no-resolve
     - IP-CIDR, 69.53.247.0/24, PROXY, no-resolve
     - IP-CIDR, 69.53.248.0/24, PROXY, no-resolve
     - IP-CIDR, 69.53.249.0/24, PROXY, no-resolve
+    - IP-CIDR, 69.53.254.0/24, PROXY, no-resolve
+    - IP-CIDR, 108.175.32.0/20, PROXY, no-resolve
+    - IP-CIDR, 185.2.220.0/22, PROXY, no-resolve
+    - IP-CIDR, 185.9.188.0/22, PROXY, no-resolve
+    - IP-CIDR, 192.173.64.0/18, PROXY, no-resolve
+    - IP-CIDR, 192.173.65.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.66.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.67.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.68.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.69.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.74.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.75.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.77.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.78.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.80.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.82.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.83.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.84.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.86.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.87.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.88.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.89.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.91.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.92.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.94.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.95.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.98.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.99.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.100.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.101.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.102.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.104.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.105.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.108.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.109.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.173.110.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.38.96.0/19, PROXY, no-resolve
+    - IP-CIDR, 198.38.98.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.38.99.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.38.100.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.38.108.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.38.109.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.38.110.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.38.111.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.38.112.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.38.113.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.38.114.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.38.115.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.38.120.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.38.121.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.38.122.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.45.48.0/20, PROXY, no-resolve
+    - IP-CIDR, 198.45.48.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.45.49.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.45.50.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.45.56.0/24, PROXY, no-resolve
+    - IP-CIDR, 208.75.76.0/22, PROXY, no-resolve
 
-    # AS55095 – Netflix Inc
-    - IP-CIDR, 2607:fb10:2011::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2012::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2014::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2015::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2023::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2024::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2033::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2034::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2042::/48, PROXY, no-resolve
-    - IP-CIDR, 2607:fb10:2052::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10::/32, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:16::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:31::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:45::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:46::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2011::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2012::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2014::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2015::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2023::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2024::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2033::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2034::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2042::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2052::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2071::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:2072::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5013::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5014::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5015::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5016::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5039::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5040::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5042::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5052::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5053::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5062::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5063::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5072::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5082::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5083::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5092::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5093::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5096::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:5097::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:50a2::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:50a3::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:50b2::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:50b3::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:50c2::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7011::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7020::/44, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7035::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7038::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7040::/44, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7050::/44, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7051::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7061::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7085::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7086::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:70e1::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:70e3::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:70e4::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:70e5::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:70e6::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:70e7::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7110::/44, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7131::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7132::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7141::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7146::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7147::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7171::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7172::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7181::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7182::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7191::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7194::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7195::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:71b1::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:71b2::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:71e2::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:71f1::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:71f2::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7202::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7221::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7222::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7231::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7252::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7261::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7271::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7281::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7282::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7291::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7301::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7302::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7311::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7312::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:7321::/48, PROXY, no-resolve
+    - IP-CIDR6, 2607:fb10:9015::/48, PROXY, no-resolve
+    - IP-CIDR6, 2620:10c:7000::/44, PROXY, no-resolve
+    - IP-CIDR6, 2620:10c:7008::/48, PROXY, no-resolve
+    - IP-CIDR6, 2620:10c:700d::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0::/32, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:4::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:5::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:21::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:98::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:99::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:100::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:108::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:109::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:110::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:111::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:112::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:113::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:114::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:115::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:120::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:121::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:122::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:124::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:125::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:126::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:127::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:262::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1000::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1001::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1002::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1003::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1004::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1005::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1008::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1009::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1012::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1013::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1014::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1015::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1018::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1021::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1026::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1027::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1034::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1041::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1042::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1044::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1045::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1046::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1047::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1048::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1049::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1050::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1051::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1052::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1054::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1055::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1056::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:1057::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2000::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2001::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2002::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2003::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2004::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2005::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2006::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2007::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2010::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2011::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2012::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2013::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2014::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2015::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2016::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2017::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2018::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2019::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2020::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2021::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2022::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2023::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2036::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2037::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2044::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2045::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2048::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2049::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2050::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2051::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2054::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2055::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2056::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2058::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2059::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2060::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2062::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2063::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2064::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2065::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2068::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2069::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2070::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2071::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2072::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2073::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2074::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2075::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2078::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2079::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2080::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2081::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2082::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2083::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2084::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2085::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2088::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2089::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2092::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2093::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2094::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2095::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2096::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2097::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2098::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2099::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2100::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2101::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2102::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2103::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2104::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2105::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2106::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2107::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2114::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2115::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2116::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:2117::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:39bc::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:39bd::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8000::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8001::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8002::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8003::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8004::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8005::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8006::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8007::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8009::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:800a::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:800b::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:800c::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:800d::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:800e::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:800f::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8010::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8011::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8012::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8013::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8014::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8015::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8016::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8017::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8018::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8019::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:801a::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:801b::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:801e::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:801f::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8020::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8021::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8022::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8023::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8024::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8025::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8028::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:802e::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:802f::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8031::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8032::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8033::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8034::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:8036::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a00:86c0:ff0a::/48, PROXY, no-resolve
+    - IP-CIDR6, 2a03:5640::/32, PROXY, no-resolve
 
-    # AS394406 – Netflix, Inc
-    - IP-CIDR, 207.45.72.0/22, PROXY, no-resolve
-    - IP-CIDR, 207.45.73.0/24, PROXY, no-resolve
+    # AS136292 Netflix Durga Webtech Pvt Ltd
+    - IP-CIDR, 103.87.204.0/24, PROXY, no-resolve
+    - IP-CIDR, 103.87.205.0/24, PROXY, no-resolve
+    - IP-CIDR, 103.87.206.0/24, PROXY, no-resolve
+    - IP-CIDR, 103.87.207.0/24, PROXY, no-resolve
 
     # USER-AGENT, Argo*, PROXY
     
     # - DOMAIN-KEYWORD, dualstack.apiproxy-, PROXY
     # - DOMAIN-KEYWORD, dualstack.ichnaea-web-, PROXY
     # - DOMAIN-SUFFIX, netflixdnstest0.com, PROXY
+
+   # northwest
+    - DOMAIN-SUFFIX, onlinebanking.northwest.bank, PROXY
 
    # notepad++
     - DOMAIN-SUFFIX, notepad-plus-plus.org, PROXY
@@ -37100,6 +37544,9 @@ rules:
 
    # paramount plus
     # - DOMAIN-SUFFIX, pplusstatic.com, PROXY
+
+   # pbskids.org
+    - DOMAIN-SUFFIX, pbskids.org, PROXY
 
    # pokerstarsVR
     - DOMAIN, api-01.luckyvr.net, PROXY
@@ -37308,6 +37755,20 @@ rules:
    # tlsfingerprint
     - DOMAIN-SUFFIX, tlsfingerprint.io, PROXY
     - DOMAIN-KEYWORD, .tlsfingerprint, PROXY
+
+   # t-mobile.com
+    - DOMAIN-SUFFIX, go-mpulse.net, PROXY
+    - DOMAIN-SUFFIX, invoca.net, PROXY
+    - DOMAIN-SUFFIX, liveperson.net, PROXY
+    - DOMAIN-SUFFIX, lpsnmedia.net, PROXY
+    - DOMAIN-SUFFIX, mpeasylink.com, PROXY
+    - DOMAIN-SUFFIX, quantummetric.com, PROXY
+    - DOMAIN-SUFFIX, t-mobile.com, PROXY
+
+    - DOMAIN, tmobile.tt.omtrdc.net, PROXY
+    - DOMAIN, solutions.invocacdn.com, PROXY
+    - DOMAIN, 17de4c0e.akstat.io, PROXY
+    - DOMAIN, cdn.cookielaw.org, PROXY
 
    # TON
      # tag: crypto
