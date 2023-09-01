@@ -37588,6 +37588,9 @@ rules:
     - DOMAIN-KEYWORD, .rbfcu, PROXY
     - DOMAIN-SUFFIX, rbfcu.org, PROXY
 
+   # rblbank.com
+    - DOMAIN-SUFFIX, rblbank.com, PROXY
+
    # recaptcha
     # - DOMAIN-SUFFIX, admin.recaptcha.net, PROXY
     # - DOMAIN-SUFFIX, api-secure.recaptcha.net, PROXY
