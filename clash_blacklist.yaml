@@ -1,18 +1,20 @@
+
 #: state the content
 ##: code written down
-
-# Port of SOCKS5 proxy server on the local end
-socks-port: 7890
+# anchor
+  ## anchorA: clash meta rules
 
 # Port of HTTP(S) proxy server on the local end
-port: 7891
+port: 7890
+
+# Port of SOCKS5 proxy server on the local end
+socks-port: 7891
 
 # Transparent proxy server port for Linux and macOS (Redirect TCP and TProxy UDP)
-redir-port: 7892
+# redir-port: 7892
 
 # Transparent proxy server port for Linux (TProxy TCP and TProxy UDP)
-tproxy: true
-tproxy-port: 7893
+# tproxy-port: 7893
 
 # HTTP(S) and SOCKS4(A)/SOCKS5 server on the same port
 mixed-port: 1080
@@ -32,37 +34,18 @@ allow-lan: false
 # "[aaaa::a8aa:ff:fe09:57d8]": bind a single IPv6 address
 bind-address: '*'
 
-# clash meta rule
-#  find-process-mode has 3 values:always, strict, off
-#  - always, 开启，强制匹配所有进程
-#  - strict, 默认，由 clash 判断是否开启
-#  - off, 不匹配进程，推荐在路由器上使用此模式
-# find-process-mode: strict
-
 # Clash router working mode
 # rule: rule-based packet routing
 # global: all packets will be forwarded to a single endpoint
 # direct: directly forward the packets to the Internet
 mode: rule
 
-# clash meta rule
-#自定义 geodata url
-# geox-url:
-  # geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
-  # geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
-  # mmdb: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country.mmdb"
-
 # Clash by default prints logs to STDOUT
 # info / warning / error / debug / silent
 log-level: info
 
 # When set to false, resolver won't translate hostnames to IPv6 addresses
-ipv6: false
-
-# clash meta rule
-# tls:
-  # certificate: string # 证书 PEM 格式，或者 证书的路径
-  # private-key: string # 证书对应的私钥 PEM 格式，或者私钥路径
+# ipv6: false
 
 # RESTful web API listening address
 external-controller: 127.0.0.1:9090
@@ -78,21 +61,13 @@ external-controller: 127.0.0.1:9090
 # secret: ""
 
 # Outbound interface name
-  # might be en1
-# interface-name: en0
-
-# clash meta rule
-# 全局 TLS 指纹，优先低于 proxy 内的 client-fingerprint
-# 可选： "chrome","firefox","safari","ios","random","none" options.
-# Utls is currently support TLS transport in TCP/grpc/WS/HTTP for VLESS/Vmess and trojan.
-# global-client-fingerprint: chrome
+# interface-name: en0 # might be en1
 
 # fwmark on Linux only
-routing-mark: 6666
+# routing-mark: 6666
 
 experimental:
-  # 忽略 DNS 解析失败，默认值为true
-  ignore-resolve-fail: true
+  ignore-resolve-fail: true # 忽略 DNS 解析失败，默认值为true
 
 # Static hosts for DNS server and connection establishment (like /etc/hosts)
 #
@@ -100,31 +75,38 @@ experimental:
 # Non-wildcard domain names have a higher priority than wildcard domain names
 # e.g. foo.example.com > *.example.com > .example.com
 # P.S. +.foo.com equals to .foo.com and foo.com
-hosts:
+# hosts:
   # '*.clash.dev': 127.0.0.1
   # '.dev': 127.0.0.1
   # 'alpha.clash.dev': '::1'
-  'router.asus.com': 10.0.0.1
-  'time.android.com': 203.107.6.88
-  'ipv6.msftconnecttest.com': 2a01:111:2003::52
-  'www.msftconnecttest.com': 13.107.4.52
-  'cloudflare-dns.com': 1.0.0.1
-  'dns.alidns.com': 233.5.5.5
-  'doh.pub': 119.29.29.29
-  'dns.google': 8.8.8.8
-  
+
+# hosts:
+  # 'localhost': 127.0.0.1
+  # 'router.asus.com': 10.0.0.1
+  # 'time.android.com': 203.107.6.88
+  # 'ipv6.msftconnecttest.com': '2a01:111:2003::52'
+  # 'www.msftconnecttest.com': 13.107.4.52
+  # 'cloudflare-dns.com': 1.0.0.1
+  # 'dns.alidns.com': 233.5.5.5
+  # 'doh.pub': 119.29.29.29
+  # 'dns.google': 8.8.8.8
+
   # qqmail
   # 'ssl.ptlogin2.mail.qq.com': 220.194.117.167
   # 'dns167.online.tj.cn': 220.194.117.167
   # 'sz.btfs.mail.ftn.qq.com': 112.90.80.187
 
-profile:
+# profile:
   # Store the `select` results in $HOME/.config/clash/.cache
   # set false If you don't want this behavior
   # when two different configurations have groups with the same name, the selected values are shared
+  # store-selected: true
+
   store-selected: false
 
   # persistence fakeip
+  # store-fake-ip: false
+
   store-fake-ip: true
 
 # DNS server settings
@@ -132,47 +114,32 @@ profile:
 dns:
   enable: true
   listen: 0.0.0.0:53
-  # enhanced-mode: fake-ip or redir-host
-    ## enhanced-mode: redir-host
-  enhanced-mode: fake-ip
-
-  # when ipv6 is false, response to AAAA questions will be empty
+  # ipv6: false # when the false, response to AAAA questions will be empty
   ipv6: false
-
-  # clash meta rule: 开启 DoH 支持 HTTP/3，将并发尝试
-    ## prefer-h3: true
 
   # These nameservers are used to resolve the DNS nameserver hostnames below.
   # Specify IP addresses only
   default-nameserver:
-    - 233.5.5.5
+    - 114.114.114.114
     - 8.8.8.8
-
     # - tls://1.12.12.12:853
     # - tls://223.5.5.5:853
 
+  # enhanced-mode: fake-ip
+  enhanced-mode: fake-ip # enhanced-mode: fake-ip or redir-host
   fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
-  
-  use-hosts: true # lookup hosts and return IP record
+  # use-hosts: true # lookup hosts and return IP record
+  use-hosts: true
 
-  # Lookup domains via specific nameservers
-  # clash meta rule
-  # 配置查询域名使用的 DNS 服务器
-  # nameserver-policy 可以使用 geosite 分流 DNS 解析。
-  # 将国内域名指定为国内 DOH 进行解析，其余 DNS 使用境外 DOH 解析
-  # Clash.Meta core support 
-  # nameserver-policy:
-    # "geosite:cn": 
-      # - https://doh.pub/dns-query
-      # - https://dns.alidns.com/dns-query
-
-    # "geosite:cn": [https://doh.pub/dns-query,https://dns.alidns.com/dns-query]
-    # 'www.baidu.com':'114.114.114.114'
-    # '+.internal.crop.com':'10.0.0.1'
+  # search-domains: [local] # search domains for A/AAAA record
 
   # Hostnames in this list will not be resolved with fake IPs
   # i.e. questions to these domain names will always be answered with their
   # real IP addresses
+  # fake-ip-filter:
+  #   - '*.lan'
+  #   - localhost.ptlogin2.qq.com
+
   fake-ip-filter:
    # - "+.* " // return back to redir-host mode
     - '*.lan'
@@ -293,6 +260,14 @@ dns:
   # Supports UDP, TCP, DoT, DoH. You can specify the port to connect to.
   # All DNS questions are sent directly to the nameserver, without proxies
   # involved. Clash answers the DNS question with the first result gathered.
+  # nameserver:
+    # - 114.114.114.114 # default value
+    # - 8.8.8.8 # default value
+    # - tls://dns.rubyfish.cn:853 # DNS over TLS
+    # - https://1.1.1.1/dns-query # DNS over HTTPS
+    # - dhcp://en0 # dns from dhcp
+    # # - '8.8.8.8#en0'
+
   # DNS 主要域名配置
   # 支持 UDP，TCP，DoT，DoH，DoQ
   nameserver:
@@ -300,6 +275,12 @@ dns:
     - 119.29.29.29
     - 114.114.114.114
     - 180.76.76.76
+
+    - 8.8.8.8 # default value
+    - tls://dns.rubyfish.cn:853 # DNS over TLS
+    - https://1.1.1.1/dns-query # DNS over HTTPS
+    - dhcp://en0 # dns from dhcp
+
     # - 8.8.8.8
     # - 9.9.9.11
     # - 149.112.112.11
@@ -313,37 +294,23 @@ dns:
     # - https://[2001:4860:4860::6464]/dns-query
     # - https://[2001:4860:4860::64]/dns-query
 
-    # default value
-    # - 114.114.114.114
-    
-    # default value
-    # - 8.8.8.8
-
-    # DNS over TLS
-    # - tls://223.5.5.5:853
-    
-    # DNS over HTTPS
-    # - https://doh.pub/dns-query
-
-    # 强制 HTTP/3，与 perfer-h3 无关，强制开启 DoH 的 HTTP/3 支持，若不支持将无法使用
-    # - https://dns.alidns.com/dns-query#h3=true
-
-    # 指定策略组和使用 HTTP/3
-    # - https://mozilla.cloudflare-dns.com/dns-query#DNS&h3=true
-
-    # dns from dhcp
-    # - dhcp://en0
-
-    # DNS over QUIC
-    # - quic://dns.adguard.com:784
-
-    # 兼容指定 DNS 出口网卡
-    # - '8.8.8.8#en0'
+    # - 114.114.114.114 # default value
+    # - 8.8.8.8 # default value
+    # - tls://223.5.5.5:853 # DNS over TLS
+    # - https://doh.pub/dns-query # DNS over HTTPS
+    # - https://dns.alidns.com/dns-query#h3=true # 强制 HTTP/3，与 perfer-h3 无关，强制开启 DoH 的 HTTP/3 支持，若不支持将无法使用
+    # - https://mozilla.cloudflare-dns.com/dns-query#DNS&h3=true # 指定策略组和使用 HTTP/3
+    # - dhcp://en0 # dns from dhcp
+    # - quic://dns.adguard.com:784 # DNS over QUIC
+    # - '8.8.8.8#en0' # 兼容指定 DNS 出口网卡
 
   # When `fallback` is present, the DNS server will send concurrent requests
   # to the servers in this section along with servers in `nameservers`.
   # The answers from fallback servers are used when the GEOIP country
   # is not `CN`.
+  # fallback:
+  #   - tcp://1.1.1.1
+  #   - 'tcp://1.1.1.1#en0'
 
   # fallback:
     # - https://dns11.quad9.net/dns-query
@@ -366,61 +333,130 @@ dns:
   # are always used if not match `fallback-filter.ipcidr`.
   #
   # This is a countermeasure against DNS pollution attacks.
-
   # fallback-filter:
-  #   geoip: true # 配置是否使用 geoip
-  # # geoip-code: CN # 当 nameserver 域名的 IP 查询 geoip 库为 CN 时，不使用 fallback 中的 DNS 查询结果
-  
-  #   配置强制 fallback，优先于 IP 判断，具体分类自行查看 geosite 库
-  #   geosite:
-  #     - "geolocation-!cn"
-  
-  #   如果不匹配 ipcidr 则使用 nameservers 中的结果
+  #   geoip: true
+  #   geoip-code: CN
   #   ipcidr:
   #     - 240.0.0.0/4
-  
   #   domain:
+  #     - '+.google.com'
+  #     - '+.facebook.com'
+  #     - '+.youtube.com'
+  
+  # Lookup domains via specific nameservers
+  # nameserver-policy:
+  #   'www.baidu.com': '114.114.114.114'
+  #   '+.internal.crop.com': '10.0.0.1'
 
-  #     # linkedin
-  #     - '+.linkedin.com'
-  #     - '+.licdn.com'
+  #   fallback-filter:
+    #   geoip: true # 配置是否使用 geoip
+    #   geoip-code: CN # 当 nameserver 域名的 IP 查询 geoip 库为 CN 时，不使用 fallback 中的 DNS 查询结果
 
-  #     # netFlix
-  #     - '+.netflix.com.edgesuite.net'
-  #     - '+.fast.com'
-  #     - '+.netflix.com'
-  #     - '+.netflix.net'
-  #     - '+.netflixdnstest0.com'
-  #     - '+.netflixdnstest1.com'
-  #     - '+.netflixdnstest2.com'
-  #     - '+.netflixdnstest3.com'
-  #     - '+.netflixdnstest4.com'
-  #     - '+.netflixdnstest5.com'
-  #     - '+.netflixdnstest6.com'
-  #     - '+.netflixdnstest7.com'
-  #     - '+.netflixdnstest8.com'
-  #     - '+.netflixdnstest9.com'
-  #     - '+.netflixdnstest10.com'
-  #     - '+.nflxext.com'
-  #     - '+.nflximg.com'
-  #     - '+.nflximg.net'
-  #     - '+.nflxso.net'
-  #     - '+.nflxvideo.net'
+    #   # 配置强制 fallback，优先于 IP 判断，具体分类自行查看 geosite 库
+    #   geosite:
+      #   - "geolocation-!cn"
 
-  #     # proxy
-  #     - '+.renzhe.cloud'
-  #     - '+.lookah.com'
+    #   # 如果不匹配 ipcidr 则使用 nameservers 中的结果
+    #   ipcidr:
+      #   - 240.0.0.0/4
 
-  #     # qq
-  #     # - '+.ptlogin2.mail.qq.com'
-  #     # - '+.ptlogin2.qq.com'
-  #     # - 'localhost.ptlogin2.qq.com'
-  #     # - 'ssl.ptlogin2.mail.qq.com'
+    #   domain:
+      #   # linkedin
+      #   - '+.linkedin.com'
+      #   - '+.licdn.com'
 
-  #     # youtube
-  #     # - '+.google.com'
-  #     # - '+.facebook.com'
-  #     # - '+.youtube.com'
+      #   # netFlix
+      #   - '+.netflix.com.edgesuite.net'
+      #   - '+.fast.com'
+      #   - '+.netflix.com'
+      #   - '+.netflix.net'
+      #   - '+.netflixdnstest0.com'
+      #   - '+.netflixdnstest1.com'
+      #   - '+.netflixdnstest2.com'
+      #   - '+.netflixdnstest3.com'
+      #   - '+.netflixdnstest4.com'
+      #   - '+.netflixdnstest5.com'
+      #   - '+.netflixdnstest6.com'
+      #   - '+.netflixdnstest7.com'
+      #   - '+.netflixdnstest8.com'
+      #   - '+.netflixdnstest9.com'
+      #   - '+.netflixdnstest10.com'
+      #   - '+.nflxext.com'
+      #   - '+.nflximg.com'
+      #   - '+.nflximg.net'
+      #   - '+.nflxso.net'
+      #   - '+.nflxvideo.net'
+
+      #   # proxy
+      #   - '+.renzhe.cloud'
+      #   - '+.lookah.com'
+
+      #   # qq
+      #   - '+.ptlogin2.mail.qq.com'
+      #   - '+.ptlogin2.qq.com'
+      #   - 'localhost.ptlogin2.qq.com'
+      #   - 'ssl.ptlogin2.mail.qq.com'
+
+      #   # youtube
+      #   - '+.google.com'
+      #   - '+.facebook.com'
+      #   - '+.youtube.com'
+
+
+
+ # anchorA: clash meta rules
+  # 开启 DoH 支持 HTTP/3，将并发尝试
+    ## prefer-h3: true
+
+  # 配置查询域名使用的 DNS 服务器
+  #   nameserver-policy:
+    #   #   'www.baidu.com': '114.114.114.114'
+    #   #   '+.internal.crop.com': '10.0.0.1'
+    #   "geosite:cn,private,apple":
+      #   - https://doh.pub/dns-query
+      #   - https://dns.alidns.com/dns-query
+    #   "geosite:category-ads-all": rcode://success
+    #   "www.baidu.com,+.google.cn": [223.5.5.5, https://dns.alidns.com/dns-query]
+    #   ## global，dns 为 rule-providers 中的名为 global 和 dns 规则订阅，
+    #   ## 且 behavior 必须为 domain/classical，当为 classical 时仅会生效域名类规则
+    #   # "rule-set:global,dns": 8.8.8.8
+
+hosts:
+  'localhost': 127.0.0.1
+  'router.asus.com': 10.0.0.1
+  'time.android.com': 203.107.6.88
+  'ipv6.msftconnecttest.com': '2a01:111:2003::52'
+  'www.msftconnecttest.com': 13.107.4.52
+  'cloudflare-dns.com': 1.0.0.1
+  'dns.alidns.com': 233.5.5.5
+  'doh.pub': 119.29.29.29
+  'dns.google': 8.8.8.8
+
+
+
+# anchorA: clash meta rules
+  # following contetns are based on clash meta rules
+
+#  find-process-mode has 3 values:always, strict, off
+#  - always, 开启，强制匹配所有进程
+#  - strict, 默认，由 clash 判断是否开启
+#  - off, 不匹配进程，推荐在路由器上使用此模式
+find-process-mode: strict
+
+#自定义 geodata url
+geox-url:
+  geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+  geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+  mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
+
+# tls:
+  # certificate: string # 证书 PEM 格式，或者 证书的路径
+  # private-key: string # 证书对应的私钥 PEM 格式，或者私钥路径
+
+# 全局 TLS 指纹，优先低于 proxy 内的 client-fingerprint
+# 可选： "chrome","firefox","safari","ios","random","none" options.
+# Utls is currently support TLS transport in TCP/grpc/WS/HTTP for VLESS/Vmess and trojan.
+# global-client-fingerprint: chrome
 
 proxies:
   # cipher 支持：
@@ -34313,6 +34349,9 @@ rules:
    # aaos.org
     - DOMAIN-SUFFIX, aaos.org, PROXY
 
+   # acipayonline.com
+    - DOMAIN-SUFFIX, cipayonline.com, PROXY
+
    # agoda.com
     - DOMAIN-SUFFIX, agoda.com, PROXY
 
@@ -34439,6 +34478,10 @@ rules:
     - DOMAIN-SUFFIX, celsius.network, PROXY
     - DOMAIN, g9zdov47b9.execute-api.us-east-1.amazonaws.com, PROXY
 
+   # cengage
+    - DOMAIN-SUFFIX, cengage.com, PROXY
+    - DOMAIN-SUFFIX, gateway.cengage.com, PROXY
+
    # chia
      # tag: crypto
 
@@ -34550,6 +34593,9 @@ rules:
     - DOMAIN-KEYWORD, .cvs, PROXY
 
   # d
+   # dfas.mil
+    - DOMAIN-SUFFIX, mypay.dfas.mil, PROXY
+
    # disneyplus
     # AS11251 – Disney Streaming Services
     - IP-CIDR, 139.104.125.0/24, PROXY, no-resolve
@@ -36217,6 +36263,10 @@ rules:
     - DOMAIN-SUFFIX, drsmoke.com, PROXY
 
   # e
+
+   # ed.gov
+    - DOMAIN-SUFFIX, eric.ed.gov, PROXY
+
    # elementor
     - DOMAIN-KEYWORD, .elementor, PROXY
     - DOMAIN-SUFFIX, elementor.cloud, PROXY
@@ -36288,6 +36338,10 @@ rules:
      # tag: crypto
 
     - DOMAIN-SUFFIX, ethwscan.com, PROXY
+
+   # express-scripts.com
+    - DOMAIN-SUFFIX, express-scripts.com, PROXY
+    - DOMAIN-SUFFIX, militaryrx.express-scripts.com, PROXY
 
   # f
    # f2pool
@@ -36592,6 +36646,9 @@ rules:
     - DOMAIN-KEYWORD, hurawatch, PROXY
 
   # i
+   # id.me
+    - DOMAIN-SUFFIX, id.me, PROXY
+
    # ign
     - DOMAIN-KEYWORD,.ign.com, PROXY
     - DOMAIN-SUFFIX,ign.com, PROXY
@@ -36708,6 +36765,9 @@ rules:
 
    # legkierody.ru
     - DOMAIN-SUFFIX, legkierody.ru, PROXY
+
+   # liberty.edu
+    - DOMAIN-SUFFIX, liberty.edu, PROXY
 
    # lido
      # tag: crypto
@@ -36827,6 +36887,7 @@ rules:
     - DOMAIN-SUFFIX, myfinanceservice.com, PROXY
 
   # n
+
    # nanopool
      # tag: crypto
 
@@ -36834,6 +36895,9 @@ rules:
 
    # napster.com
     - DOMAIN-SUFFIX, napster.com, PROXY
+
+   # nationsreportcard.gov
+    - DOMAIN-SUFFIX, nationsreportcard.gov, PROXY
 
    # navyfederal
     - DOMAIN-KEYWORD, navyfederal, PROXY
@@ -37545,6 +37609,12 @@ rules:
    # paramount plus
     # - DOMAIN-SUFFIX, pplusstatic.com, PROXY
 
+   # pay1040.com
+    - DOMAIN-SUFFIX, pay1040.com, PROXY
+
+   # payusatax.com
+    - DOMAIN-SUFFIX, payusatax.com, PROXY
+
    # pbskids.org
     - DOMAIN-SUFFIX, pbskids.org, PROXY
 
@@ -37591,6 +37661,9 @@ rules:
    # rblbank.com
     - DOMAIN-SUFFIX, rblbank.com, PROXY
 
+   # reelshort.com
+    - DOMAIN-SUFFIX, reelshort.com, PROXY
+
    # recaptcha
     # - DOMAIN-SUFFIX, admin.recaptcha.net, PROXY
     # - DOMAIN-SUFFIX, api-secure.recaptcha.net, PROXY
@@ -37624,6 +37697,9 @@ rules:
 
     - DOMAIN-SUFFIX, sandbox.game, PROXY
 
+   # sedl.org
+    - DOMAIN-SUFFIX, sedl.org, PROXY
+
    # sharepoint
     # - DOMAIN-SUFFIX, blog.pathtosharepoint.com, PROXY
     # - DOMAIN-SUFFIX, pathtosharepoint.com, PROXY
@@ -37649,9 +37725,11 @@ rules:
    # stremio.com
     - DOMAIN-SUFFIX, api.strem.io, PROXY
     - DOMAIN-SUFFIX, blog.stremio.com, PROXY
+    - DOMAIN-SUFFIX, metahub.space, PROXY
     - DOMAIN-SUFFIX, strem.fun, PROXY
     - DOMAIN-SUFFIX, strem.io, PROXY
     - DOMAIN-SUFFIX, stremio.com, PROXY
+    - DOMAIN-SUFFIX, stremio.net, PROXY
 
    # sugarfreemom.com
     - DOMAIN-KEYWORD, .sugarfreemom, PROXY
@@ -37972,6 +38050,9 @@ rules:
 
    # wisconsinregisteredagent.net
     - DOMAIN-SUFFIX, wisconsinregisteredagent.net, PROXY
+
+   # worldcat.org
+    - DOMAIN-SUFFIX, worldcat.org, PROXY
 
   # x
    # xbox
@@ -40029,6 +40110,9 @@ rules:
   # i
    # iCloud
     # - DOMAIN-SUFFIX, *.icloud.com.cn, DIRECT
+
+   # ikea
+    # - DOMAIN-SUFFIX, srv.app.ikea.cn, DIRECT
 
    # IP-CIDR, iCloud
     - IP-CIDR, 103.44.56.0/22, DIRECT, no-resolve
