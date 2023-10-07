@@ -34349,6 +34349,9 @@ rules:
    # aaos.org
     - DOMAIN-SUFFIX, aaos.org, PROXY
 
+   # aaro.mil
+    - DOMAIN-SUFFIX, aaro.mil, PROXY
+
    # acipayonline.com
     - DOMAIN-SUFFIX, cipayonline.com, PROXY
 
@@ -38053,6 +38056,9 @@ rules:
 
    # worldcat.org
     - DOMAIN-SUFFIX, worldcat.org, PROXY
+
+   # worldwidephotowalk.com
+    - DOMAIN-SUFFIX, worldwidephotowalk.com, PROXY
 
   # x
    # xbox
