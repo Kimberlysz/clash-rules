@@ -1,3 +1,4 @@
+
 #: state the content
 ##: code written down
 # anchor
@@ -34449,6 +34450,12 @@ rules:
      # tag: financial
     - DOMAIN-SUFFIX, betterplan.cl, PROXY
 
+   # bible.com
+    - DOMAIN-SUFFIX, app.link, PROXY
+    - DOMAIN-SUFFIX, bible.com, PROXY
+    - DOMAIN-SUFFIX, branch.io, PROXY
+    - DOMAIN-SUFFIX, youversion.com, PROXY
+
    # bice.cl
     - DOMAIN-SUFFIX, bice.cl, PROXY
     - DOMAIN-SUFFIX, modyocdn.com, PROXY
@@ -36658,6 +36665,9 @@ rules:
     - DOMAIN-KEYWORD,.ign.com, PROXY
     - DOMAIN-SUFFIX,ign.com, PROXY
 
+   # indiatoday.in
+    - DOMAIN-SUFFIX, indiatoday.in, PROXY
+
    # intuit.com
      # tag: financial
     - DOMAIN-SUFFIX, intuit.com, PROXY
@@ -37623,14 +37633,18 @@ rules:
    # pbskids.org
     - DOMAIN-SUFFIX, pbskids.org, PROXY
 
+   # pmpmanage
+    - DOMAIN-SUFFIX, pmpmanage.com, PROXY
+    - DOMAIN-SUFFIX, pmprollc.com, PROXY
+
    # pokerstarsVR
-    - DOMAIN, api-01.luckyvr.net, PROXY
-    - DOMAIN-SUFFIX, luckyvr.net, PROXY
-    - DOMAIN, events.backtrace.io, PROXY
     - DOMAIN-SUFFIX, backtrace.io, PROXY
+    - DOMAIN-SUFFIX, luckyvr.net, PROXY
     - DOMAIN-SUFFIX, pokerstars.com, PROXY
     - DOMAIN-SUFFIX, pokerstars.net, PROXY
     - DOMAIN-SUFFIX, pokerstrategy.com, PROXY
+    - DOMAIN, api-01.luckyvr.net, PROXY
+    - DOMAIN, events.backtrace.io, PROXY
 
    # pool.space
      # tag: crypto
@@ -37701,6 +37715,9 @@ rules:
      # tag: crypto
 
     - DOMAIN-SUFFIX, sandbox.game, PROXY
+
+   # screenrant.com
+    - DOMAIN-SUFFIX, screenrant.com, PROXY
 
    # sedl.org
     - DOMAIN-SUFFIX, sedl.org, PROXY
@@ -38032,8 +38049,13 @@ rules:
     - DOMAIN-SUFFIX, wakenbakery.net, PROXY
 
    # wd.bible
-    - DOMAIN-SUFFIX, wd.bible, PROXY
+    - DOMAIN-SUFFIX, endao.app, PROXY
     - DOMAIN-SUFFIX, sentry.yetell.net, PROXY
+    - DOMAIN-SUFFIX, wd.bible, PROXY
+
+   # westernalliancebancorporation.com
+    - DOMAIN-SUFFIX, liadm.com, PROXY
+    - DOMAIN-SUFFIX, westernalliancebancorporation.com, PROXY
 
    # whatsapp
     # - DOMAIN-KEYWORD, .whatsapp, PROXY
