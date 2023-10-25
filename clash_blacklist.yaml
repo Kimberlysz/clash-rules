@@ -36641,6 +36641,9 @@ rules:
     - DOMAIN-KEYWORD, .hiveos, PROXY
     - DOMAIN-SUFFIX, hiveos.farm, PROXY
 
+   # homegoods.com
+    - DOMAIN-SUFFIX, homegoods.com, PROXY
+
    # hostinger
     - DOMAIN-KEYWORD, .hostinger, PROXY
     - DOMAIN-SUFFIX, hostinger.com, PROXY
@@ -37549,6 +37552,9 @@ rules:
     # - DOMAIN-KEYWORD, dualstack.ichnaea-web-, PROXY
     # - DOMAIN-SUFFIX, netflixdnstest0.com, PROXY
 
+   # nolej.io
+    - DOMAIN-SUFFIX, nolej.io, PROXY
+
    # northwest
     - DOMAIN-SUFFIX, onlinebanking.northwest.bank, PROXY
 
@@ -37711,6 +37717,9 @@ rules:
     - DOMAIN-SUFFIX, rustylake.com, PROXY
 
   # s
+   # salesforce
+    - DOMAIN-SUFFIX, trailhead.salesforce.com, PROXY
+
    # sandbox.game
      # tag: crypto
 
