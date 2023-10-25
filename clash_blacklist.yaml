@@ -36401,7 +36401,11 @@ rules:
 
    # freedesktop.timedate1
     - DOMAIN-SUFFIX, org.freedesktop.timedate1, PROXY
+
     - DOMAIN, org.freedesktop.timedate1, PROXY
+
+   # freemacsoft.net
+    - DOMAIN-SUFFIX, freemacsoft.net, PROXY
 
    # fullcompass
     - DOMAIN-SUFFIX, fullcompass.com, PROXY
