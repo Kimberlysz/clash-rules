@@ -10581,7 +10581,7 @@ rules:
     - DOMAIN-SUFFIX, apple.co.nz, PROXY
     - DOMAIN-SUFFIX, apple.co.th, PROXY
     - DOMAIN-SUFFIX, apple.co.uk, PROXY
-    # - DOMAIN-SUFFIX, apple.com, PROXY
+    - DOMAIN-SUFFIX, apple.com, PROXY
     - DOMAIN-SUFFIX, apple.com.af, PROXY
     - DOMAIN-SUFFIX, apple.com.au, PROXY
     - DOMAIN-SUFFIX, apple.com.bo, PROXY
@@ -10652,7 +10652,7 @@ rules:
     - DOMAIN-SUFFIX, apple.uk, PROXY
     - DOMAIN-SUFFIX, apple.us, PROXY
 
-    # - DOMAIN-KEYWORD, .apple, PROXY
+    - DOMAIN-KEYWORD, .apple, PROXY
 
     # apple.商标
     - DOMAIN-SUFFIX, apple.xn--czr694b, PROXY
@@ -37854,6 +37854,9 @@ rules:
     - DOMAIN-SUFFIX, pmpmanage.com, PROXY
     - DOMAIN-SUFFIX, pmprollc.com, PROXY
 
+   # podbean.com
+    - DOMAIN-SUFFIX, podbean.com, PROXY
+
    # pokerstarsVR
     - DOMAIN-SUFFIX, backtrace.io, PROXY
     - DOMAIN-SUFFIX, luckyvr.net, PROXY
@@ -38082,8 +38085,10 @@ rules:
 
     # # Used by U.S. federal government
     # - DOMAIN-KEYWORD, gov, PROXY
+
     # # Used by U.S. DoD.
     # - DOMAIN-KEYWORD, mil, PROXY
+    
     # # Used by U.S. Higher Education.
     # - DOMAIN-KEYWORD, edu, PROXY
 
