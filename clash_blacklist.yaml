@@ -34740,6 +34740,9 @@ rules:
     # - DOMAIN, dfp6rglgjqszk.cloudfront.net, PROXY
     # - DOMAIN, dmqdd6hw24ucf.cloudfront.net, PROXY
 
+   # cnn
+    - DOMAIN-SUFFIX, edition.cnn.com, PROXY
+
    # coinbase
      # tag: crypto
     - DOMAIN-KEYWORD, .coinbase, PROXY
@@ -38107,1179 +38110,1179 @@ rules:
     # https://www.101domain.com/branded_domains.htm
 
     # # Used by U.S. federal government
-    - DOMAIN-KEYWORD, .gov, PROXY
+    # - DOMAIN-KEYWORD, .gov, PROXY
     # # Used by U.S. DoD.
-    - DOMAIN-KEYWORD, .mil, PROXY
+    # - DOMAIN-KEYWORD, .mil, PROXY
     # # Used by U.S. Higher Education.
-    - DOMAIN-KEYWORD, .edu, PROXY
+    # - DOMAIN-KEYWORD, .edu, PROXY
 
     # ccTLD
-    - DOMAIN-KEYWORD, .ac, PROXY # Ascension Island
-    - DOMAIN-KEYWORD, .ad, PROXY # Andorra
-    - DOMAIN-KEYWORD, .ae, PROXY # United Arab Emirates (UAE)
-    - DOMAIN-KEYWORD, .af, PROXY # Afghanistan
-    - DOMAIN-KEYWORD, .ag, PROXY # Antigua and Barbuda
-    - DOMAIN-KEYWORD, .ai, PROXY # Anguilla
-    - DOMAIN-KEYWORD, .al, PROXY # Albania
-    - DOMAIN-KEYWORD, .am, PROXY # Armenia
-    - DOMAIN-KEYWORD, .ao, PROXY # Angola
-    - DOMAIN-KEYWORD, .aq, PROXY # Antarctica
-    - DOMAIN-KEYWORD, .ar, PROXY # Argentina
-    - DOMAIN-KEYWORD, .as, PROXY # American Samoa
-    - DOMAIN-KEYWORD, .at, PROXY # Austria
-    - DOMAIN-KEYWORD, .au, PROXY # Australia
-    - DOMAIN-KEYWORD, .aw, PROXY # Aruba
-    - DOMAIN-KEYWORD, .ax, PROXY # Aland Islands
-    - DOMAIN-KEYWORD, .az, PROXY # Azerbaijan
-    - DOMAIN-KEYWORD, .ba, PROXY # Bosnia and Herzegovina
-    - DOMAIN-KEYWORD, .bb, PROXY # Barbados
-    - DOMAIN-KEYWORD, .bd, PROXY # Bangladesh
-    - DOMAIN-KEYWORD, .be, PROXY # Belgium
-    - DOMAIN-KEYWORD, .bf, PROXY # Burkina Faso
-    - DOMAIN-KEYWORD, .bg, PROXY # Bulgaria
-    - DOMAIN-KEYWORD, .bh, PROXY # Bahrain
-    - DOMAIN-KEYWORD, .bi, PROXY # Burundi
-    - DOMAIN-KEYWORD, .bj, PROXY # Benin
-    - DOMAIN-KEYWORD, .bl, PROXY # Saint Barthélemy (informally also referred to as Saint Barth’s or Saint Barts)
-    - DOMAIN-KEYWORD, .bm, PROXY # Bermuda
-    - DOMAIN-KEYWORD, .bn, PROXY # Brunei
-    - DOMAIN-KEYWORD, .bo, PROXY # Bolivia
-    - DOMAIN-KEYWORD, .br, PROXY # Brazil
-    - DOMAIN-KEYWORD, .bs, PROXY # Bahamas
-    - DOMAIN-KEYWORD, .bt, PROXY # Bhutan
-    - DOMAIN-KEYWORD, .bv, PROXY # Bouvet Island
-    - DOMAIN-KEYWORD, .bw, PROXY # Botswana
-    - DOMAIN-KEYWORD, .by, PROXY # Belarus
-    - DOMAIN-KEYWORD, .bz, PROXY # Belize
-    - DOMAIN-KEYWORD, .ca, PROXY # Canada
-    - DOMAIN-KEYWORD, .cd, PROXY # Congo, Democratic Republic of the (Congo-Kinshasa)
-    - DOMAIN-KEYWORD, .cf, PROXY # Central African Republic
-    - DOMAIN-KEYWORD, .cg, PROXY # Congo, Republic of the (Congo-Brazzaville)
-    - DOMAIN-KEYWORD, .ch, PROXY # Switzerland
-    - DOMAIN-KEYWORD, .ci, PROXY # Côte d’Ivoire (Ivory Coast)
-    - DOMAIN-KEYWORD, .ck, PROXY # Cook Islands
-    - DOMAIN-KEYWORD, .cl, PROXY # Chile
-    - DOMAIN-KEYWORD, .cm, PROXY # Cameroon
-    - DOMAIN-KEYWORD, .cr, PROXY # Costa Rica
-    - DOMAIN-KEYWORD, .cu, PROXY # Cuba
-    - DOMAIN-KEYWORD, .cv, PROXY # Cape Verde (Cabo Verde)
-    - DOMAIN-KEYWORD, .cw, PROXY # Curaçao
-    - DOMAIN-KEYWORD, .cx, PROXY # Christmas Island
-    - DOMAIN-KEYWORD, .cy, PROXY # Cyprus
-    - DOMAIN-KEYWORD, .cz, PROXY # Czechia (Czech Republic)
-    - DOMAIN-KEYWORD, .de, PROXY # Germany
-    - DOMAIN-KEYWORD, .dj, PROXY # Djibouti
-    - DOMAIN-KEYWORD, .dk, PROXY # Denmark
-    - DOMAIN-KEYWORD, .dm, PROXY # Dominica
-    - DOMAIN-KEYWORD, .do, PROXY # Dominican Republic
-    - DOMAIN-KEYWORD, .dz, PROXY # Algeria
-    - DOMAIN-KEYWORD, .ec, PROXY # Ecuador
-    - DOMAIN-KEYWORD, .ee, PROXY # Estonia
-    - DOMAIN-KEYWORD, .eg, PROXY # Egypt
-    - DOMAIN-KEYWORD, .eh, PROXY # Western Sahara
-    - DOMAIN-KEYWORD, .er, PROXY # Eritrea
-    - DOMAIN-KEYWORD, .es, PROXY # Spain
-    - DOMAIN-KEYWORD, .et, PROXY # Ethiopia
-    - DOMAIN-KEYWORD, .eu, PROXY # European Union
-    - DOMAIN-KEYWORD, .fi, PROXY # Finland
-    - DOMAIN-KEYWORD, .fj, PROXY # Fiji
-    - DOMAIN-KEYWORD, .fk, PROXY # Falkland Islands
-    - DOMAIN-KEYWORD, .fm, PROXY # Federated States of Micronesia
-    - DOMAIN-KEYWORD, .fo, PROXY # Faeroe Islands
-    - DOMAIN-KEYWORD, .fr, PROXY # France
-    - DOMAIN-KEYWORD, .ga, PROXY # Gabon (Gabonese Republic)
-    - DOMAIN-KEYWORD, .gb, PROXY # The United Kingdom of Great Britain and Northern Ireland
-    - DOMAIN-KEYWORD, .gd, PROXY # Grenada
-    - DOMAIN-KEYWORD, .ge, PROXY # Georgia
-    - DOMAIN-KEYWORD, .gf, PROXY # French Guiana
-    - DOMAIN-KEYWORD, .gg, PROXY # Guernsey
-    - DOMAIN-KEYWORD, .gh, PROXY # Ghana
-    - DOMAIN-KEYWORD, .gi, PROXY # Gibraltar
-    - DOMAIN-KEYWORD, .gl, PROXY # Greenland
-    - DOMAIN-KEYWORD, .gm, PROXY # Gambia
-    - DOMAIN-KEYWORD, .gn, PROXY # Guinea
-    - DOMAIN-KEYWORD, .gp, PROXY # Guadeloupe
-    - DOMAIN-KEYWORD, .gr, PROXY # Greece
-    - DOMAIN-KEYWORD, .gs, PROXY # South Georgia and the South Sandwich Islands
-    - DOMAIN-KEYWORD, .gt, PROXY # Guatemala
-    - DOMAIN-KEYWORD, .gu, PROXY # Guam
-    - DOMAIN-KEYWORD, .gw, PROXY # Guinea-Bissau
-    - DOMAIN-KEYWORD, .gy, PROXY # Guyana
-    - DOMAIN-KEYWORD, .hk, PROXY # Hong Kong
-    - DOMAIN-KEYWORD, .hm, PROXY # Heard Island and McDonald Islands
-    - DOMAIN-KEYWORD, .hn, PROXY # Honduras
-    - DOMAIN-KEYWORD, .hr, PROXY # Croatia
-    - DOMAIN-KEYWORD, .ht, PROXY # Haiti
-    - DOMAIN-KEYWORD, .hu, PROXY # Hungary
-    - DOMAIN-KEYWORD, .id, PROXY # Indonesia
-    - DOMAIN-KEYWORD, .ie, PROXY # Ireland
-    - DOMAIN-KEYWORD, .il, PROXY # Israel
-    - DOMAIN-KEYWORD, .im, PROXY # Isle of Man
-    - DOMAIN-KEYWORD, .in, PROXY # India
-    - DOMAIN-KEYWORD, .io, PROXY # British Indian Ocean Territory
-    - DOMAIN-KEYWORD, .iq, PROXY # Iraq
-    - DOMAIN-KEYWORD, .ir, PROXY # Iran
-    - DOMAIN-KEYWORD, .is, PROXY # Iceland
-    - DOMAIN-KEYWORD, .it, PROXY # Italy
-    - DOMAIN-KEYWORD, .je, PROXY # Jersey
-    - DOMAIN-KEYWORD, .jm, PROXY # Jamaica
-    - DOMAIN-KEYWORD, .jo, PROXY # Jordan
-    - DOMAIN-KEYWORD, .jp, PROXY # Japan
-    - DOMAIN-KEYWORD, .ke, PROXY # Kenya
-    - DOMAIN-KEYWORD, .kg, PROXY # Kyrgyzstan
-    - DOMAIN-KEYWORD, .kh, PROXY # Cambodia
-    - DOMAIN-KEYWORD, .ki, PROXY # Kiribati
-    - DOMAIN-KEYWORD, .km, PROXY # Comoros
-    - DOMAIN-KEYWORD, .kn, PROXY # Saint Kitts and Nevis
-    - DOMAIN-KEYWORD, .kp, PROXY # Democratic People's Republic of Korea
-    - DOMAIN-KEYWORD, .kr, PROXY # Republic of Korea
-    - DOMAIN-KEYWORD, .kw, PROXY # Kuwait
-    - DOMAIN-KEYWORD, .ky, PROXY # Cayman Islands
-    - DOMAIN-KEYWORD, .kz, PROXY # Kazakhstan
-    - DOMAIN-KEYWORD, .la, PROXY # Laos
-    - DOMAIN-KEYWORD, .lb, PROXY # Lebanon
-    - DOMAIN-KEYWORD, .lc, PROXY # Saint Lucia
-    - DOMAIN-KEYWORD, .li, PROXY # Liechtenstein
-    - DOMAIN-KEYWORD, .lk, PROXY # Sri Lanka
-    - DOMAIN-KEYWORD, .lr, PROXY # Liberia
-    - DOMAIN-KEYWORD, .ls, PROXY # Lesotho
-    - DOMAIN-KEYWORD, .lt, PROXY # Lithuania
-    - DOMAIN-KEYWORD, .lu, PROXY # Luxembourg
-    - DOMAIN-KEYWORD, .lv, PROXY # Latvia
-    - DOMAIN-KEYWORD, .ly, PROXY # Libya
-    - DOMAIN-KEYWORD, .ma, PROXY # Morocco
-    - DOMAIN-KEYWORD, .mc, PROXY # Monaco
-    - DOMAIN-KEYWORD, .md, PROXY # Moldova
-    - DOMAIN-KEYWORD, .mf, PROXY # Saint Martin (officially the Collectivity of Saint Martin)
-    - DOMAIN-KEYWORD, .mg, PROXY # Madagascar
-    - DOMAIN-KEYWORD, .mh, PROXY # Marshall Islands
-    - DOMAIN-KEYWORD, .mk, PROXY # Macedonia, Republic of
-    - DOMAIN-KEYWORD, .ml, PROXY # Mali
-    - DOMAIN-KEYWORD, .mm, PROXY # Myanmar
-    - DOMAIN-KEYWORD, .mn, PROXY # Mongolia
-    - DOMAIN-KEYWORD, .mo, PROXY # Macau
-    - DOMAIN-KEYWORD, .mp, PROXY # Northern Mariana Islands
-    - DOMAIN-KEYWORD, .mq, PROXY # Martinique
-    - DOMAIN-KEYWORD, .mr, PROXY # Mauritania
-    - DOMAIN-KEYWORD, .ms, PROXY # Montserrat
-    - DOMAIN-KEYWORD, .mt, PROXY # Malta
-    - DOMAIN-KEYWORD, .mu, PROXY # Mauritius
-    - DOMAIN-KEYWORD, .mv, PROXY # Maldives
-    - DOMAIN-KEYWORD, .mw, PROXY # Malawi
-    - DOMAIN-KEYWORD, .mx, PROXY # Mexico
-    - DOMAIN-KEYWORD, .my, PROXY # Malaysia
-    - DOMAIN-KEYWORD, .mz, PROXY # Mozambique
-    - DOMAIN-KEYWORD, .na, PROXY # Namibia
-    - DOMAIN-KEYWORD, .nc, PROXY # New Caledonia
-    - DOMAIN-KEYWORD, .ne, PROXY # Niger
-    - DOMAIN-KEYWORD, .nf, PROXY # Norfolk Island
-    - DOMAIN-KEYWORD, .ng, PROXY # Nigeria
-    - DOMAIN-KEYWORD, .ni, PROXY # Nicaragua
-    - DOMAIN-KEYWORD, .nl, PROXY # Netherlands
-    - DOMAIN-KEYWORD, .no, PROXY # Norway
-    - DOMAIN-KEYWORD, .np, PROXY # Nepal
-    - DOMAIN-KEYWORD, .nr, PROXY # Nauru
-    - DOMAIN-KEYWORD, .nu, PROXY # Niue
-    - DOMAIN-KEYWORD, .nz, PROXY # New Zealand
-    - DOMAIN-KEYWORD, .om, PROXY # Oman
-    - DOMAIN-KEYWORD, .pa, PROXY # Panama
-    - DOMAIN-KEYWORD, .pe, PROXY # Peru
-    - DOMAIN-KEYWORD, .pf, PROXY # French Polynesia
-    - DOMAIN-KEYWORD, .pg, PROXY # Papua New Guinea
-    - DOMAIN-KEYWORD, .ph, PROXY # Philippines
-    - DOMAIN-KEYWORD, .pk, PROXY # Pakistan
-    - DOMAIN-KEYWORD, .pl, PROXY # Poland
-    - DOMAIN-KEYWORD, .pm, PROXY # Saint-Pierre and Miquelon
-    - DOMAIN-KEYWORD, .pn, PROXY # Pitcairn Islands
-    - DOMAIN-KEYWORD, .pr, PROXY # Puerto Rico
-    - DOMAIN-KEYWORD, .ps, PROXY # Gaza Strip (Gaza)
-    - DOMAIN-KEYWORD, .ps, PROXY # Palestine
-    - DOMAIN-KEYWORD, .pt, PROXY # Portugal
-    - DOMAIN-KEYWORD, .py, PROXY # Paraguay
-    - DOMAIN-KEYWORD, .qa, PROXY # Qatar
-    - DOMAIN-KEYWORD, .re, PROXY # Réunion Island
-    - DOMAIN-KEYWORD, .ro, PROXY # Romania
-    - DOMAIN-KEYWORD, .rs, PROXY # Serbia
-    - DOMAIN-KEYWORD, .ru, PROXY # Russia
-    - DOMAIN-KEYWORD, .rw, PROXY # Rwanda
-    - DOMAIN-KEYWORD, .sa, PROXY # Saudi Arabia
-    - DOMAIN-KEYWORD, .sb, PROXY # Solomon Islands
-    - DOMAIN-KEYWORD, .sc, PROXY # Seychelles
-    - DOMAIN-KEYWORD, .sd, PROXY # Sudan
-    - DOMAIN-KEYWORD, .se, PROXY # Sweden
-    - DOMAIN-KEYWORD, .sg, PROXY # Singapore
-    - DOMAIN-KEYWORD, .sh, PROXY # Saint Helena
-    - DOMAIN-KEYWORD, .si, PROXY # Slovenia
-    - DOMAIN-KEYWORD, .sj, PROXY # Svalbard and Jan Mayen Islands
-    - DOMAIN-KEYWORD, .sk, PROXY # Slovakia
-    - DOMAIN-KEYWORD, .sl, PROXY # Sierra Leone
-    - DOMAIN-KEYWORD, .sm, PROXY # San Marino
-    - DOMAIN-KEYWORD, .sn, PROXY # Senegal
-    - DOMAIN-KEYWORD, .so, PROXY # Somalia
-    - DOMAIN-KEYWORD, .so, PROXY # Somaliland
-    - DOMAIN-KEYWORD, .sr, PROXY # Suriname
-    - DOMAIN-KEYWORD, .ss, PROXY # South Sudan
-    - DOMAIN-KEYWORD, .st, PROXY # São Tomé and Príncipe
-    - DOMAIN-KEYWORD, .su, PROXY # The Union of Soviet Socialist Republic
-    - DOMAIN-KEYWORD, .sv, PROXY # El Salvador
-    - DOMAIN-KEYWORD, .sx, PROXY # Sint Maarten
-    - DOMAIN-KEYWORD, .sy, PROXY # Syria
-    - DOMAIN-KEYWORD, .sz, PROXY # Swaziland
-    - DOMAIN-KEYWORD, .tc, PROXY # Turks and Caicos Islands
-    - DOMAIN-KEYWORD, .td, PROXY # Chad
-    - DOMAIN-KEYWORD, .tf, PROXY # French Southern and Antarctic Lands
-    - DOMAIN-KEYWORD, .tg, PROXY # Togo
-    - DOMAIN-KEYWORD, .th, PROXY # Thailand
-    - DOMAIN-KEYWORD, .tj, PROXY # Tajikistan
-    - DOMAIN-KEYWORD, .tk, PROXY # Tokelau
-    - DOMAIN-KEYWORD, .tl, PROXY # East Timor (Timor-Leste)
-    - DOMAIN-KEYWORD, .tm, PROXY # Turkmenistan
-    - DOMAIN-KEYWORD, .tn, PROXY # Tunisia
-    - DOMAIN-KEYWORD, .to, PROXY # Tonga
-    - DOMAIN-KEYWORD, .tr, PROXY # Turkey
-    - DOMAIN-KEYWORD, .tt, PROXY # Trinidad & Tobago
-    - DOMAIN-KEYWORD, .tv, PROXY # Tuvalu
-    - DOMAIN-KEYWORD, .tw, PROXY # Taiwan (Republic of China)
-    - DOMAIN-KEYWORD, .tz, PROXY # Tanzania
-    - DOMAIN-KEYWORD, .ua, PROXY # Ukraine
-    - DOMAIN-KEYWORD, .ug, PROXY # Uganda
-    - DOMAIN-KEYWORD, .uk, PROXY # United Kingdom (UK)
-    - DOMAIN-KEYWORD, .us, PROXY # United States of America (USA)
-    - DOMAIN-KEYWORD, .uy, PROXY # Uruguay
-    - DOMAIN-KEYWORD, .uz, PROXY # Uzbekistan
-    - DOMAIN-KEYWORD, .va, PROXY # Vatican City
-    - DOMAIN-KEYWORD, .vc, PROXY # Saint Vincent and the Grenadines
-    - DOMAIN-KEYWORD, .ve, PROXY # Venezuela
-    - DOMAIN-KEYWORD, .vg, PROXY # British Virgin Islands
-    - DOMAIN-KEYWORD, .vi, PROXY # United States Virgin Islands
-    - DOMAIN-KEYWORD, .vn, PROXY # Vietnam
-    - DOMAIN-KEYWORD, .vu, PROXY # Vanuatu
-    - DOMAIN-KEYWORD, .wf, PROXY # Wallis and Futuna
-    - DOMAIN-KEYWORD, .ws, PROXY # Samoa
-    - DOMAIN-KEYWORD, .ye, PROXY # Yemen
-    - DOMAIN-KEYWORD, .yt, PROXY # Mayotte
-    - DOMAIN-KEYWORD, .za, PROXY # South Africa
-    - DOMAIN-KEYWORD, .zm, PROXY # Zambia
-    - DOMAIN-KEYWORD, .zw, PROXY # Zimbabwe
+    # - DOMAIN-KEYWORD, .ac, PROXY # Ascension Island
+    # - DOMAIN-KEYWORD, .ad, PROXY # Andorra
+    # - DOMAIN-KEYWORD, .ae, PROXY # United Arab Emirates (UAE)
+    # - DOMAIN-KEYWORD, .af, PROXY # Afghanistan
+    # - DOMAIN-KEYWORD, .ag, PROXY # Antigua and Barbuda
+    # - DOMAIN-KEYWORD, .ai, PROXY # Anguilla
+    # - DOMAIN-KEYWORD, .al, PROXY # Albania
+    # - DOMAIN-KEYWORD, .am, PROXY # Armenia
+    # - DOMAIN-KEYWORD, .ao, PROXY # Angola
+    # - DOMAIN-KEYWORD, .aq, PROXY # Antarctica
+    # - DOMAIN-KEYWORD, .ar, PROXY # Argentina
+    # - DOMAIN-KEYWORD, .as, PROXY # American Samoa
+    # - DOMAIN-KEYWORD, .at, PROXY # Austria
+    # - DOMAIN-KEYWORD, .au, PROXY # Australia
+    # - DOMAIN-KEYWORD, .aw, PROXY # Aruba
+    # - DOMAIN-KEYWORD, .ax, PROXY # Aland Islands
+    # - DOMAIN-KEYWORD, .az, PROXY # Azerbaijan
+    # - DOMAIN-KEYWORD, .ba, PROXY # Bosnia and Herzegovina
+    # - DOMAIN-KEYWORD, .bb, PROXY # Barbados
+    # - DOMAIN-KEYWORD, .bd, PROXY # Bangladesh
+    # - DOMAIN-KEYWORD, .be, PROXY # Belgium
+    # - DOMAIN-KEYWORD, .bf, PROXY # Burkina Faso
+    # - DOMAIN-KEYWORD, .bg, PROXY # Bulgaria
+    # - DOMAIN-KEYWORD, .bh, PROXY # Bahrain
+    # - DOMAIN-KEYWORD, .bi, PROXY # Burundi
+    # - DOMAIN-KEYWORD, .bj, PROXY # Benin
+    # - DOMAIN-KEYWORD, .bl, PROXY # Saint Barthélemy (informally also referred to as Saint Barth’s or Saint Barts)
+    # - DOMAIN-KEYWORD, .bm, PROXY # Bermuda
+    # - DOMAIN-KEYWORD, .bn, PROXY # Brunei
+    # - DOMAIN-KEYWORD, .bo, PROXY # Bolivia
+    # - DOMAIN-KEYWORD, .br, PROXY # Brazil
+    # - DOMAIN-KEYWORD, .bs, PROXY # Bahamas
+    # - DOMAIN-KEYWORD, .bt, PROXY # Bhutan
+    # - DOMAIN-KEYWORD, .bv, PROXY # Bouvet Island
+    # - DOMAIN-KEYWORD, .bw, PROXY # Botswana
+    # - DOMAIN-KEYWORD, .by, PROXY # Belarus
+    # - DOMAIN-KEYWORD, .bz, PROXY # Belize
+    # - DOMAIN-KEYWORD, .ca, PROXY # Canada
+    # - DOMAIN-KEYWORD, .cd, PROXY # Congo, Democratic Republic of the (Congo-Kinshasa)
+    # - DOMAIN-KEYWORD, .cf, PROXY # Central African Republic
+    # - DOMAIN-KEYWORD, .cg, PROXY # Congo, Republic of the (Congo-Brazzaville)
+    # - DOMAIN-KEYWORD, .ch, PROXY # Switzerland
+    # - DOMAIN-KEYWORD, .ci, PROXY # Côte d’Ivoire (Ivory Coast)
+    # - DOMAIN-KEYWORD, .ck, PROXY # Cook Islands
+    # - DOMAIN-KEYWORD, .cl, PROXY # Chile
+    # - DOMAIN-KEYWORD, .cm, PROXY # Cameroon
+    # - DOMAIN-KEYWORD, .cr, PROXY # Costa Rica
+    # - DOMAIN-KEYWORD, .cu, PROXY # Cuba
+    # - DOMAIN-KEYWORD, .cv, PROXY # Cape Verde (Cabo Verde)
+    # - DOMAIN-KEYWORD, .cw, PROXY # Curaçao
+    # - DOMAIN-KEYWORD, .cx, PROXY # Christmas Island
+    # - DOMAIN-KEYWORD, .cy, PROXY # Cyprus
+    # - DOMAIN-KEYWORD, .cz, PROXY # Czechia (Czech Republic)
+    # - DOMAIN-KEYWORD, .de, PROXY # Germany
+    # - DOMAIN-KEYWORD, .dj, PROXY # Djibouti
+    # - DOMAIN-KEYWORD, .dk, PROXY # Denmark
+    # - DOMAIN-KEYWORD, .dm, PROXY # Dominica
+    # - DOMAIN-KEYWORD, .do, PROXY # Dominican Republic
+    # - DOMAIN-KEYWORD, .dz, PROXY # Algeria
+    # - DOMAIN-KEYWORD, .ec, PROXY # Ecuador
+    # - DOMAIN-KEYWORD, .ee, PROXY # Estonia
+    # - DOMAIN-KEYWORD, .eg, PROXY # Egypt
+    # - DOMAIN-KEYWORD, .eh, PROXY # Western Sahara
+    # - DOMAIN-KEYWORD, .er, PROXY # Eritrea
+    # - DOMAIN-KEYWORD, .es, PROXY # Spain
+    # - DOMAIN-KEYWORD, .et, PROXY # Ethiopia
+    # - DOMAIN-KEYWORD, .eu, PROXY # European Union
+    # - DOMAIN-KEYWORD, .fi, PROXY # Finland
+    # - DOMAIN-KEYWORD, .fj, PROXY # Fiji
+    # - DOMAIN-KEYWORD, .fk, PROXY # Falkland Islands
+    # - DOMAIN-KEYWORD, .fm, PROXY # Federated States of Micronesia
+    # - DOMAIN-KEYWORD, .fo, PROXY # Faeroe Islands
+    # - DOMAIN-KEYWORD, .fr, PROXY # France
+    # - DOMAIN-KEYWORD, .ga, PROXY # Gabon (Gabonese Republic)
+    # - DOMAIN-KEYWORD, .gb, PROXY # The United Kingdom of Great Britain and Northern Ireland
+    # - DOMAIN-KEYWORD, .gd, PROXY # Grenada
+    # - DOMAIN-KEYWORD, .ge, PROXY # Georgia
+    # - DOMAIN-KEYWORD, .gf, PROXY # French Guiana
+    # - DOMAIN-KEYWORD, .gg, PROXY # Guernsey
+    # - DOMAIN-KEYWORD, .gh, PROXY # Ghana
+    # - DOMAIN-KEYWORD, .gi, PROXY # Gibraltar
+    # - DOMAIN-KEYWORD, .gl, PROXY # Greenland
+    # - DOMAIN-KEYWORD, .gm, PROXY # Gambia
+    # - DOMAIN-KEYWORD, .gn, PROXY # Guinea
+    # - DOMAIN-KEYWORD, .gp, PROXY # Guadeloupe
+    # - DOMAIN-KEYWORD, .gr, PROXY # Greece
+    # - DOMAIN-KEYWORD, .gs, PROXY # South Georgia and the South Sandwich Islands
+    # - DOMAIN-KEYWORD, .gt, PROXY # Guatemala
+    # - DOMAIN-KEYWORD, .gu, PROXY # Guam
+    # - DOMAIN-KEYWORD, .gw, PROXY # Guinea-Bissau
+    # - DOMAIN-KEYWORD, .gy, PROXY # Guyana
+    # - DOMAIN-KEYWORD, .hk, PROXY # Hong Kong
+    # - DOMAIN-KEYWORD, .hm, PROXY # Heard Island and McDonald Islands
+    # - DOMAIN-KEYWORD, .hn, PROXY # Honduras
+    # - DOMAIN-KEYWORD, .hr, PROXY # Croatia
+    # - DOMAIN-KEYWORD, .ht, PROXY # Haiti
+    # - DOMAIN-KEYWORD, .hu, PROXY # Hungary
+    # - DOMAIN-KEYWORD, .id, PROXY # Indonesia
+    # - DOMAIN-KEYWORD, .ie, PROXY # Ireland
+    # - DOMAIN-KEYWORD, .il, PROXY # Israel
+    # - DOMAIN-KEYWORD, .im, PROXY # Isle of Man
+    # - DOMAIN-KEYWORD, .in, PROXY # India
+    # - DOMAIN-KEYWORD, .io, PROXY # British Indian Ocean Territory
+    # - DOMAIN-KEYWORD, .iq, PROXY # Iraq
+    # - DOMAIN-KEYWORD, .ir, PROXY # Iran
+    # - DOMAIN-KEYWORD, .is, PROXY # Iceland
+    # - DOMAIN-KEYWORD, .it, PROXY # Italy
+    # - DOMAIN-KEYWORD, .je, PROXY # Jersey
+    # - DOMAIN-KEYWORD, .jm, PROXY # Jamaica
+    # - DOMAIN-KEYWORD, .jo, PROXY # Jordan
+    # - DOMAIN-KEYWORD, .jp, PROXY # Japan
+    # - DOMAIN-KEYWORD, .ke, PROXY # Kenya
+    # - DOMAIN-KEYWORD, .kg, PROXY # Kyrgyzstan
+    # - DOMAIN-KEYWORD, .kh, PROXY # Cambodia
+    # - DOMAIN-KEYWORD, .ki, PROXY # Kiribati
+    # - DOMAIN-KEYWORD, .km, PROXY # Comoros
+    # - DOMAIN-KEYWORD, .kn, PROXY # Saint Kitts and Nevis
+    # - DOMAIN-KEYWORD, .kp, PROXY # Democratic People's Republic of Korea
+    # - DOMAIN-KEYWORD, .kr, PROXY # Republic of Korea
+    # - DOMAIN-KEYWORD, .kw, PROXY # Kuwait
+    # - DOMAIN-KEYWORD, .ky, PROXY # Cayman Islands
+    # - DOMAIN-KEYWORD, .kz, PROXY # Kazakhstan
+    # - DOMAIN-KEYWORD, .la, PROXY # Laos
+    # - DOMAIN-KEYWORD, .lb, PROXY # Lebanon
+    # - DOMAIN-KEYWORD, .lc, PROXY # Saint Lucia
+    # - DOMAIN-KEYWORD, .li, PROXY # Liechtenstein
+    # - DOMAIN-KEYWORD, .lk, PROXY # Sri Lanka
+    # - DOMAIN-KEYWORD, .lr, PROXY # Liberia
+    # - DOMAIN-KEYWORD, .ls, PROXY # Lesotho
+    # - DOMAIN-KEYWORD, .lt, PROXY # Lithuania
+    # - DOMAIN-KEYWORD, .lu, PROXY # Luxembourg
+    # - DOMAIN-KEYWORD, .lv, PROXY # Latvia
+    # - DOMAIN-KEYWORD, .ly, PROXY # Libya
+    # - DOMAIN-KEYWORD, .ma, PROXY # Morocco
+    # - DOMAIN-KEYWORD, .mc, PROXY # Monaco
+    # - DOMAIN-KEYWORD, .md, PROXY # Moldova
+    # - DOMAIN-KEYWORD, .mf, PROXY # Saint Martin (officially the Collectivity of Saint Martin)
+    # - DOMAIN-KEYWORD, .mg, PROXY # Madagascar
+    # - DOMAIN-KEYWORD, .mh, PROXY # Marshall Islands
+    # - DOMAIN-KEYWORD, .mk, PROXY # Macedonia, Republic of
+    # - DOMAIN-KEYWORD, .ml, PROXY # Mali
+    # - DOMAIN-KEYWORD, .mm, PROXY # Myanmar
+    # - DOMAIN-KEYWORD, .mn, PROXY # Mongolia
+    # - DOMAIN-KEYWORD, .mo, PROXY # Macau
+    # - DOMAIN-KEYWORD, .mp, PROXY # Northern Mariana Islands
+    # - DOMAIN-KEYWORD, .mq, PROXY # Martinique
+    # - DOMAIN-KEYWORD, .mr, PROXY # Mauritania
+    # - DOMAIN-KEYWORD, .ms, PROXY # Montserrat
+    # - DOMAIN-KEYWORD, .mt, PROXY # Malta
+    # - DOMAIN-KEYWORD, .mu, PROXY # Mauritius
+    # - DOMAIN-KEYWORD, .mv, PROXY # Maldives
+    # - DOMAIN-KEYWORD, .mw, PROXY # Malawi
+    # - DOMAIN-KEYWORD, .mx, PROXY # Mexico
+    # - DOMAIN-KEYWORD, .my, PROXY # Malaysia
+    # - DOMAIN-KEYWORD, .mz, PROXY # Mozambique
+    # - DOMAIN-KEYWORD, .na, PROXY # Namibia
+    # - DOMAIN-KEYWORD, .nc, PROXY # New Caledonia
+    # - DOMAIN-KEYWORD, .ne, PROXY # Niger
+    # - DOMAIN-KEYWORD, .nf, PROXY # Norfolk Island
+    # - DOMAIN-KEYWORD, .ng, PROXY # Nigeria
+    # - DOMAIN-KEYWORD, .ni, PROXY # Nicaragua
+    # - DOMAIN-KEYWORD, .nl, PROXY # Netherlands
+    # - DOMAIN-KEYWORD, .no, PROXY # Norway
+    # - DOMAIN-KEYWORD, .np, PROXY # Nepal
+    # - DOMAIN-KEYWORD, .nr, PROXY # Nauru
+    # - DOMAIN-KEYWORD, .nu, PROXY # Niue
+    # - DOMAIN-KEYWORD, .nz, PROXY # New Zealand
+    # - DOMAIN-KEYWORD, .om, PROXY # Oman
+    # - DOMAIN-KEYWORD, .pa, PROXY # Panama
+    # - DOMAIN-KEYWORD, .pe, PROXY # Peru
+    # - DOMAIN-KEYWORD, .pf, PROXY # French Polynesia
+    # - DOMAIN-KEYWORD, .pg, PROXY # Papua New Guinea
+    # - DOMAIN-KEYWORD, .ph, PROXY # Philippines
+    # - DOMAIN-KEYWORD, .pk, PROXY # Pakistan
+    # - DOMAIN-KEYWORD, .pl, PROXY # Poland
+    # - DOMAIN-KEYWORD, .pm, PROXY # Saint-Pierre and Miquelon
+    # - DOMAIN-KEYWORD, .pn, PROXY # Pitcairn Islands
+    # - DOMAIN-KEYWORD, .pr, PROXY # Puerto Rico
+    # - DOMAIN-KEYWORD, .ps, PROXY # Gaza Strip (Gaza)
+    # - DOMAIN-KEYWORD, .ps, PROXY # Palestine
+    # - DOMAIN-KEYWORD, .pt, PROXY # Portugal
+    # - DOMAIN-KEYWORD, .py, PROXY # Paraguay
+    # - DOMAIN-KEYWORD, .qa, PROXY # Qatar
+    # - DOMAIN-KEYWORD, .re, PROXY # Réunion Island
+    # - DOMAIN-KEYWORD, .ro, PROXY # Romania
+    # - DOMAIN-KEYWORD, .rs, PROXY # Serbia
+    # - DOMAIN-KEYWORD, .ru, PROXY # Russia
+    # - DOMAIN-KEYWORD, .rw, PROXY # Rwanda
+    # - DOMAIN-KEYWORD, .sa, PROXY # Saudi Arabia
+    # - DOMAIN-KEYWORD, .sb, PROXY # Solomon Islands
+    # - DOMAIN-KEYWORD, .sc, PROXY # Seychelles
+    # - DOMAIN-KEYWORD, .sd, PROXY # Sudan
+    # - DOMAIN-KEYWORD, .se, PROXY # Sweden
+    # - DOMAIN-KEYWORD, .sg, PROXY # Singapore
+    # - DOMAIN-KEYWORD, .sh, PROXY # Saint Helena
+    # - DOMAIN-KEYWORD, .si, PROXY # Slovenia
+    # - DOMAIN-KEYWORD, .sj, PROXY # Svalbard and Jan Mayen Islands
+    # - DOMAIN-KEYWORD, .sk, PROXY # Slovakia
+    # - DOMAIN-KEYWORD, .sl, PROXY # Sierra Leone
+    # - DOMAIN-KEYWORD, .sm, PROXY # San Marino
+    # - DOMAIN-KEYWORD, .sn, PROXY # Senegal
+    # - DOMAIN-KEYWORD, .so, PROXY # Somalia
+    # - DOMAIN-KEYWORD, .so, PROXY # Somaliland
+    # - DOMAIN-KEYWORD, .sr, PROXY # Suriname
+    # - DOMAIN-KEYWORD, .ss, PROXY # South Sudan
+    # - DOMAIN-KEYWORD, .st, PROXY # São Tomé and Príncipe
+    # - DOMAIN-KEYWORD, .su, PROXY # The Union of Soviet Socialist Republic
+    # - DOMAIN-KEYWORD, .sv, PROXY # El Salvador
+    # - DOMAIN-KEYWORD, .sx, PROXY # Sint Maarten
+    # - DOMAIN-KEYWORD, .sy, PROXY # Syria
+    # - DOMAIN-KEYWORD, .sz, PROXY # Swaziland
+    # - DOMAIN-KEYWORD, .tc, PROXY # Turks and Caicos Islands
+    # - DOMAIN-KEYWORD, .td, PROXY # Chad
+    # - DOMAIN-KEYWORD, .tf, PROXY # French Southern and Antarctic Lands
+    # - DOMAIN-KEYWORD, .tg, PROXY # Togo
+    # - DOMAIN-KEYWORD, .th, PROXY # Thailand
+    # - DOMAIN-KEYWORD, .tj, PROXY # Tajikistan
+    # - DOMAIN-KEYWORD, .tk, PROXY # Tokelau
+    # - DOMAIN-KEYWORD, .tl, PROXY # East Timor (Timor-Leste)
+    # - DOMAIN-KEYWORD, .tm, PROXY # Turkmenistan
+    # - DOMAIN-KEYWORD, .tn, PROXY # Tunisia
+    # - DOMAIN-KEYWORD, .to, PROXY # Tonga
+    # - DOMAIN-KEYWORD, .tr, PROXY # Turkey
+    # - DOMAIN-KEYWORD, .tt, PROXY # Trinidad & Tobago
+    # - DOMAIN-KEYWORD, .tv, PROXY # Tuvalu
+    # - DOMAIN-KEYWORD, .tw, PROXY # Taiwan (Republic of China)
+    # - DOMAIN-KEYWORD, .tz, PROXY # Tanzania
+    # - DOMAIN-KEYWORD, .ua, PROXY # Ukraine
+    # - DOMAIN-KEYWORD, .ug, PROXY # Uganda
+    # - DOMAIN-KEYWORD, .uk, PROXY # United Kingdom (UK)
+    # - DOMAIN-KEYWORD, .us, PROXY # United States of America (USA)
+    # - DOMAIN-KEYWORD, .uy, PROXY # Uruguay
+    # - DOMAIN-KEYWORD, .uz, PROXY # Uzbekistan
+    # - DOMAIN-KEYWORD, .va, PROXY # Vatican City
+    # - DOMAIN-KEYWORD, .vc, PROXY # Saint Vincent and the Grenadines
+    # - DOMAIN-KEYWORD, .ve, PROXY # Venezuela
+    # - DOMAIN-KEYWORD, .vg, PROXY # British Virgin Islands
+    # - DOMAIN-KEYWORD, .vi, PROXY # United States Virgin Islands
+    # - DOMAIN-KEYWORD, .vn, PROXY # Vietnam
+    # - DOMAIN-KEYWORD, .vu, PROXY # Vanuatu
+    # - DOMAIN-KEYWORD, .wf, PROXY # Wallis and Futuna
+    # - DOMAIN-KEYWORD, .ws, PROXY # Samoa
+    # - DOMAIN-KEYWORD, .ye, PROXY # Yemen
+    # - DOMAIN-KEYWORD, .yt, PROXY # Mayotte
+    # - DOMAIN-KEYWORD, .za, PROXY # South Africa
+    # - DOMAIN-KEYWORD, .zm, PROXY # Zambia
+    # - DOMAIN-KEYWORD, .zw, PROXY # Zimbabwe
 
     # Athletics Domains
-    - DOMAIN-KEYWORD, afl, PROXY # Australian Football League
-    - DOMAIN-KEYWORD, mlb, PROXY # MLB Advanced Media DH, LLC
-    - DOMAIN-KEYWORD, nba, PROXY # National Basketball Association
-    - DOMAIN-KEYWORD, nfl, PROXY # National Football League
-    - DOMAIN-KEYWORD, nra, PROXY # National Rifle Association
+    # - DOMAIN-KEYWORD, afl, PROXY # Australian Football League
+    # - DOMAIN-KEYWORD, mlb, PROXY # MLB Advanced Media DH, LLC
+    # - DOMAIN-KEYWORD, nba, PROXY # National Basketball Association
+    # - DOMAIN-KEYWORD, nfl, PROXY # National Football League
+    # - DOMAIN-KEYWORD, nra, PROXY # National Rifle Association
 
     # Business Products & Services Domains
-    - DOMAIN-KEYWORD, avery, PROXY # Avery Dennison Corporation
-    - DOMAIN-KEYWORD, bbb, PROXY # Council of Better Business Bureaus, Inc.
-    - DOMAIN-KEYWORD, bcg, PROXY # The Boston Consulting Group, Inc.
-    - DOMAIN-KEYWORD, ceb, PROXY # The Corporate Executive Board Company
-    - DOMAIN-KEYWORD, crs, PROXY # Federated Co operatives Limited
-    - DOMAIN-KEYWORD, dnb, PROXY # The Dun & Bradstreet Corporation
-    - DOMAIN-KEYWORD, dnp, PROXY # Dai Nippon Printing Co., Ltd.
-    - DOMAIN-KEYWORD, duns, PROXY # The Dun & Bradstreet Corporation
-    - DOMAIN-KEYWORD, dvag, PROXY # Deutsche Vermögensberatung Aktiengesellschaft DVAG
-    - DOMAIN-KEYWORD, erni, PROXY # ERNI Group Holding AG
-    - DOMAIN-KEYWORD, globalx, PROXY # GlobalX Information Services Pty Limited
-    - DOMAIN-KEYWORD, ice, PROXY # IntercontinentalExchange, Inc.
-    - DOMAIN-KEYWORD, locus, PROXY # Locus Analytics LLC
-    - DOMAIN-KEYWORD, mckinsey, PROXY # McKinsey Holdings, Inc.
-    - DOMAIN-KEYWORD, olayangroup, PROXY # Olayan Investments Company Establishment
-    - DOMAIN-KEYWORD, olayan, PROXY # Olayan Investments Company Establishment
-    - DOMAIN-KEYWORD, praxi, PROXY # Praxi S.p.A.
-    - DOMAIN-KEYWORD, sap, PROXY # SAP AG
-    - DOMAIN-KEYWORD, seek, PROXY # Seek Limited
-    - DOMAIN-KEYWORD, vistaprint, PROXY # Vistaprint Limited
-    - DOMAIN-KEYWORD, vista, PROXY # Vistaprint Limited
-    - DOMAIN-KEYWORD, wtc, PROXY # World Trade Centers Association, Inc.
-    - DOMAIN-KEYWORD, xerox, PROXY # Business Products Services Domains
+    # - DOMAIN-KEYWORD, avery, PROXY # Avery Dennison Corporation
+    # - DOMAIN-KEYWORD, bbb, PROXY # Council of Better Business Bureaus, Inc.
+    # - DOMAIN-KEYWORD, bcg, PROXY # The Boston Consulting Group, Inc.
+    # - DOMAIN-KEYWORD, ceb, PROXY # The Corporate Executive Board Company
+    # - DOMAIN-KEYWORD, crs, PROXY # Federated Co operatives Limited
+    # - DOMAIN-KEYWORD, dnb, PROXY # The Dun & Bradstreet Corporation
+    # - DOMAIN-KEYWORD, dnp, PROXY # Dai Nippon Printing Co., Ltd.
+    # - DOMAIN-KEYWORD, duns, PROXY # The Dun & Bradstreet Corporation
+    # - DOMAIN-KEYWORD, dvag, PROXY # Deutsche Vermögensberatung Aktiengesellschaft DVAG
+    # - DOMAIN-KEYWORD, erni, PROXY # ERNI Group Holding AG
+    # - DOMAIN-KEYWORD, globalx, PROXY # GlobalX Information Services Pty Limited
+    # - DOMAIN-KEYWORD, ice, PROXY # IntercontinentalExchange, Inc.
+    # - DOMAIN-KEYWORD, locus, PROXY # Locus Analytics LLC
+    # - DOMAIN-KEYWORD, mckinsey, PROXY # McKinsey Holdings, Inc.
+    # - DOMAIN-KEYWORD, olayangroup, PROXY # Olayan Investments Company Establishment
+    # - DOMAIN-KEYWORD, olayan, PROXY # Olayan Investments Company Establishment
+    # - DOMAIN-KEYWORD, praxi, PROXY # Praxi S.p.A.
+    # - DOMAIN-KEYWORD, sap, PROXY # SAP AG
+    # - DOMAIN-KEYWORD, seek, PROXY # Seek Limited
+    # - DOMAIN-KEYWORD, vistaprint, PROXY # Vistaprint Limited
+    # - DOMAIN-KEYWORD, vista, PROXY # Vistaprint Limited
+    # - DOMAIN-KEYWORD, wtc, PROXY # World Trade Centers Association, Inc.
+    # - DOMAIN-KEYWORD, xerox, PROXY # Business Products Services Domains
 
     # Fashion Domains
-    - DOMAIN-KEYWORD, athleta, PROXY # The Gap, Inc.
-    - DOMAIN-KEYWORD, bananarepublic, PROXY # The Gap, Inc.
-    - DOMAIN-KEYWORD, bloomberg, PROXY # Bloomberg IP Holdings LLC
-    - DOMAIN-KEYWORD, boots, PROXY # The Boots Company PLC
-    - DOMAIN-KEYWORD, calvinklein, PROXY # Calvin Klein
-    - DOMAIN-KEYWORD, cartier, PROXY # Richemont DNS Inc.
-    - DOMAIN-KEYWORD, chloe, PROXY # Richemont DNS Inc.
-    - DOMAIN-KEYWORD, gap, PROXY # The Gap, Inc.
-    - DOMAIN-KEYWORD, gucci, PROXY # Guccio Gucci S.p.a.
-    - DOMAIN-KEYWORD, hermes, PROXY # Hermes Internatinoal
-    - DOMAIN-KEYWORD, iwc, PROXY # Richemont DNS Inc.
-    - DOMAIN-KEYWORD, jlc, PROXY # Richemont DNS Inc.
-    - DOMAIN-KEYWORD, lancaster, PROXY # Fashion Domains
-    - DOMAIN-KEYWORD, lipsy, PROXY # Lipsy Ltd
-    - DOMAIN-KEYWORD, loft, PROXY # Annco, Inc.
-    - DOMAIN-KEYWORD, mango, PROXY # Fashion Domains
-    - DOMAIN-KEYWORD, montblanc, PROXY # Richemont DNS Inc.
-    - DOMAIN-KEYWORD, mrporter, PROXY # Richemont DNS Inc.
-    - DOMAIN-KEYWORD, netaporter, PROXY # Richemont DNS Inc.
-    - DOMAIN-KEYWORD, nextdirect, PROXY # Next PLC
-    - DOMAIN-KEYWORD, next, PROXY # Next PLC
-    - DOMAIN-KEYWORD, nike, PROXY # Nike, Inc.
-    - DOMAIN-KEYWORD, oldnavy, PROXY # The Gap, Inc.
-    - DOMAIN-KEYWORD, omega, PROXY # The Swatch Group Ltd
-    - DOMAIN-KEYWORD, panerai, PROXY # Richemont DNS Inc.
-    - DOMAIN-KEYWORD, patagonia, PROXY # Patagonia, Inc.
-    - DOMAIN-KEYWORD, piaget, PROXY # Richemont DNS Inc.
-    - DOMAIN-KEYWORD, piperlime, PROXY # The Gap, Inc.
-    - DOMAIN-KEYWORD, polo, PROXY # Ralph Lauren Corporation
-    - DOMAIN-KEYWORD, redstone, PROXY # Redstone Haute Couture Co., Ltd.
-    - DOMAIN-KEYWORD, swatch, PROXY # The Swatch Group Ltd
+    # - DOMAIN-KEYWORD, athleta, PROXY # The Gap, Inc.
+    # - DOMAIN-KEYWORD, bananarepublic, PROXY # The Gap, Inc.
+    # - DOMAIN-KEYWORD, bloomberg, PROXY # Bloomberg IP Holdings LLC
+    # - DOMAIN-KEYWORD, boots, PROXY # The Boots Company PLC
+    # - DOMAIN-KEYWORD, calvinklein, PROXY # Calvin Klein
+    # - DOMAIN-KEYWORD, cartier, PROXY # Richemont DNS Inc.
+    # - DOMAIN-KEYWORD, chloe, PROXY # Richemont DNS Inc.
+    # - DOMAIN-KEYWORD, gap, PROXY # The Gap, Inc.
+    # - DOMAIN-KEYWORD, gucci, PROXY # Guccio Gucci S.p.a.
+    # - DOMAIN-KEYWORD, hermes, PROXY # Hermes Internatinoal
+    # - DOMAIN-KEYWORD, iwc, PROXY # Richemont DNS Inc.
+    # - DOMAIN-KEYWORD, jlc, PROXY # Richemont DNS Inc.
+    # - DOMAIN-KEYWORD, lancaster, PROXY # Fashion Domains
+    # - DOMAIN-KEYWORD, lipsy, PROXY # Lipsy Ltd
+    # - DOMAIN-KEYWORD, loft, PROXY # Annco, Inc.
+    # - DOMAIN-KEYWORD, mango, PROXY # Fashion Domains
+    # - DOMAIN-KEYWORD, montblanc, PROXY # Richemont DNS Inc.
+    # - DOMAIN-KEYWORD, mrporter, PROXY # Richemont DNS Inc.
+    # - DOMAIN-KEYWORD, netaporter, PROXY # Richemont DNS Inc.
+    # - DOMAIN-KEYWORD, nextdirect, PROXY # Next PLC
+    # - DOMAIN-KEYWORD, next, PROXY # Next PLC
+    # - DOMAIN-KEYWORD, nike, PROXY # Nike, Inc.
+    # - DOMAIN-KEYWORD, oldnavy, PROXY # The Gap, Inc.
+    # - DOMAIN-KEYWORD, omega, PROXY # The Swatch Group Ltd
+    # - DOMAIN-KEYWORD, panerai, PROXY # Richemont DNS Inc.
+    # - DOMAIN-KEYWORD, patagonia, PROXY # Patagonia, Inc.
+    # - DOMAIN-KEYWORD, piaget, PROXY # Richemont DNS Inc.
+    # - DOMAIN-KEYWORD, piperlime, PROXY # The Gap, Inc.
+    # - DOMAIN-KEYWORD, polo, PROXY # Ralph Lauren Corporation
+    # - DOMAIN-KEYWORD, redstone, PROXY # Redstone Haute Couture Co., Ltd.
+    # - DOMAIN-KEYWORD, swatch, PROXY # The Swatch Group Ltd
 
     # Geographic top-level domains
 
     ## Africa
-    - DOMAIN-KEYWORD, africa, PROXY     # Africa
-    - DOMAIN-KEYWORD, capetown, PROXY   # Cape Town, South Africa
-    - DOMAIN-KEYWORD, durban, PROXY     # Durban, South Africa
-    - DOMAIN-KEYWORD, joburg, PROXY     # Johannesburg, South Africa
+    # - DOMAIN-KEYWORD, africa, PROXY     # Africa
+    # - DOMAIN-KEYWORD, capetown, PROXY   # Cape Town, South Africa
+    # - DOMAIN-KEYWORD, durban, PROXY     # Durban, South Africa
+    # - DOMAIN-KEYWORD, joburg, PROXY     # Johannesburg, South Africa
 
     ## Asia
-    - DOMAIN-KEYWORD, abudhabi, PROXY   # Abu Dhabi
-    - DOMAIN-KEYWORD, arab, PROXY       # Leagueof Arab States
-    - DOMAIN-KEYWORD, asia, PROXY       # Asia-Pacific region
-    - DOMAIN-KEYWORD, doha, PROXY       # Doha
-    - DOMAIN-KEYWORD, dubai, PROXY      # Dubai
-    - DOMAIN-KEYWORD, krd, PROXY        # Kurdistan
-    - DOMAIN-KEYWORD, kyoto, PROXY      # Kyoto, Japan
-    - DOMAIN-KEYWORD, nagoya, PROXY     # Nagoya, Japan
-    - DOMAIN-KEYWORD, okinawa, PROXY    # Okinawa, Japan
-    - DOMAIN-KEYWORD, osaka, PROXY      # Osaka, Japan
-    - DOMAIN-KEYWORD, ryukyu, PROXY     # Ryukyu Islands, Japan
-    - DOMAIN-KEYWORD, taipei, PROXY     # Taipei, Republic of China (Taiwan)
-    - DOMAIN-KEYWORD, tatar, PROXY      # Tatar peoples and places
-    - DOMAIN-KEYWORD, tokyo, PROXY      # Tokyo, Japan
-    - DOMAIN-KEYWORD, yokohama, PROXY   # Yokohama, Japan
+    # - DOMAIN-KEYWORD, abudhabi, PROXY   # Abu Dhabi
+    # - DOMAIN-KEYWORD, arab, PROXY       # Leagueof Arab States
+    # - DOMAIN-KEYWORD, asia, PROXY       # Asia-Pacific region
+    # - DOMAIN-KEYWORD, doha, PROXY       # Doha
+    # - DOMAIN-KEYWORD, dubai, PROXY      # Dubai
+    # - DOMAIN-KEYWORD, krd, PROXY        # Kurdistan
+    # - DOMAIN-KEYWORD, kyoto, PROXY      # Kyoto, Japan
+    # - DOMAIN-KEYWORD, nagoya, PROXY     # Nagoya, Japan
+    # - DOMAIN-KEYWORD, okinawa, PROXY    # Okinawa, Japan
+    # - DOMAIN-KEYWORD, osaka, PROXY      # Osaka, Japan
+    # - DOMAIN-KEYWORD, ryukyu, PROXY     # Ryukyu Islands, Japan
+    # - DOMAIN-KEYWORD, taipei, PROXY     # Taipei, Republic of China (Taiwan)
+    # - DOMAIN-KEYWORD, tatar, PROXY      # Tatar peoples and places
+    # - DOMAIN-KEYWORD, tokyo, PROXY      # Tokyo, Japan
+    # - DOMAIN-KEYWORD, yokohama, PROXY   # Yokohama, Japan
 
     ## Europe
-    - DOMAIN-KEYWORD, alsace, PROXY     # Alsace, France
-    - DOMAIN-KEYWORD, amsterdam, PROXY  # Amsterdam, Netherlands
-    - DOMAIN-KEYWORD, bar, PROXY        # Bar, Montenegro
-    - DOMAIN-KEYWORD, barcelona, PROXY  # Barcelona, Spain
-    - DOMAIN-KEYWORD, bayern, PROXY     # Bavaria, Germany
-    - DOMAIN-KEYWORD, bcn, PROXY        # Barcelona, Spain
-    - DOMAIN-KEYWORD, berlin, PROXY     # Berlin, Germany
-    - DOMAIN-KEYWORD, brussels, PROXY   # Brussels, Belgium
-    - DOMAIN-KEYWORD, budapest, PROXY   # Budapest, Hungary
-    - DOMAIN-KEYWORD, bzh, PROXY        # Brittany, France
-    - DOMAIN-KEYWORD, cat, PROXY        # Catalonia, Spain
-    - DOMAIN-KEYWORD, conlogne, PROXY   # Cologne, Germany
-    - DOMAIN-KEYWORD, corsica, PROXY    # Corsica, France
-    - DOMAIN-KEYWORD, cymru, PROXY      # Wales, United Kingdom
-    - DOMAIN-KEYWORD, eus, PROXY        # Basque
-    - DOMAIN-KEYWORD, frl, PROXY        # Friesland, Netherlands
-    - DOMAIN-KEYWORD, gal, PROXY        # Galicia, Spain
-    - DOMAIN-KEYWORD, gent, PROXY       # Ghent, Belgium
-    - DOMAIN-KEYWORD, hamburg, PROXY    # Hamburg, Germany
-    - DOMAIN-KEYWORD, helsinki, PROXY   # Helsinki, Finland
-    - DOMAIN-KEYWORD, irish, PROXY      # Ireland
-    - DOMAIN-KEYWORD, ist, PROXY        # İstanbul, Turkey
-    - DOMAIN-KEYWORD, istanbul, PROXY   # İstanbul, Turkey
-    - DOMAIN-KEYWORD, koeln, PROXY      # Cologne, Germany
-    - DOMAIN-KEYWORD, london, PROXY     # London, United Kingdom
-    - DOMAIN-KEYWORD, madrid, PROXY     # Madrid, Spain
-    - DOMAIN-KEYWORD, moscow, PROXY     # Moscow, Russia
-    - DOMAIN-KEYWORD, nrw, PROXY        # North Rhine-Westphalia, Germany
-    - DOMAIN-KEYWORD, paris, PROXY      # Paris, France
-    - DOMAIN-KEYWORD, ruhr, PROXY       # Ruhr, Germany
-    - DOMAIN-KEYWORD, saarland, PROXY   # Saarland, Germany
-    - DOMAIN-KEYWORD, scot, PROXY       # Scotland, United Kingdom
-    - DOMAIN-KEYWORD, stockholm, PROXY  # Stockholm, Sweden
-    - DOMAIN-KEYWORD, swiss, PROXY      # Switzerland
-    - DOMAIN-KEYWORD, tirol, PROXY      # Tyrol, Austria
-    - DOMAIN-KEYWORD, vlaanderen, PROXY # Flanders, Belgium
-    - DOMAIN-KEYWORD, wales, PROXY      # Wales, United Kingdom
-    - DOMAIN-KEYWORD, wien, PROXY       # Vienna, Austria
-    - DOMAIN-KEYWORD, zuerich, PROXY    # Zurich, Switzerland
+    # - DOMAIN-KEYWORD, alsace, PROXY     # Alsace, France
+    # - DOMAIN-KEYWORD, amsterdam, PROXY  # Amsterdam, Netherlands
+    # - DOMAIN-KEYWORD, bar, PROXY        # Bar, Montenegro
+    # - DOMAIN-KEYWORD, barcelona, PROXY  # Barcelona, Spain
+    # - DOMAIN-KEYWORD, bayern, PROXY     # Bavaria, Germany
+    # - DOMAIN-KEYWORD, bcn, PROXY        # Barcelona, Spain
+    # - DOMAIN-KEYWORD, berlin, PROXY     # Berlin, Germany
+    # - DOMAIN-KEYWORD, brussels, PROXY   # Brussels, Belgium
+    # - DOMAIN-KEYWORD, budapest, PROXY   # Budapest, Hungary
+    # - DOMAIN-KEYWORD, bzh, PROXY        # Brittany, France
+    # - DOMAIN-KEYWORD, cat, PROXY        # Catalonia, Spain
+    # - DOMAIN-KEYWORD, conlogne, PROXY   # Cologne, Germany
+    # - DOMAIN-KEYWORD, corsica, PROXY    # Corsica, France
+    # - DOMAIN-KEYWORD, cymru, PROXY      # Wales, United Kingdom
+    # - DOMAIN-KEYWORD, eus, PROXY        # Basque
+    # - DOMAIN-KEYWORD, frl, PROXY        # Friesland, Netherlands
+    # - DOMAIN-KEYWORD, gal, PROXY        # Galicia, Spain
+    # - DOMAIN-KEYWORD, gent, PROXY       # Ghent, Belgium
+    # - DOMAIN-KEYWORD, hamburg, PROXY    # Hamburg, Germany
+    # - DOMAIN-KEYWORD, helsinki, PROXY   # Helsinki, Finland
+    # - DOMAIN-KEYWORD, irish, PROXY      # Ireland
+    # - DOMAIN-KEYWORD, ist, PROXY        # İstanbul, Turkey
+    # - DOMAIN-KEYWORD, istanbul, PROXY   # İstanbul, Turkey
+    # - DOMAIN-KEYWORD, koeln, PROXY      # Cologne, Germany
+    # - DOMAIN-KEYWORD, london, PROXY     # London, United Kingdom
+    # - DOMAIN-KEYWORD, madrid, PROXY     # Madrid, Spain
+    # - DOMAIN-KEYWORD, moscow, PROXY     # Moscow, Russia
+    # - DOMAIN-KEYWORD, nrw, PROXY        # North Rhine-Westphalia, Germany
+    # - DOMAIN-KEYWORD, paris, PROXY      # Paris, France
+    # - DOMAIN-KEYWORD, ruhr, PROXY       # Ruhr, Germany
+    # - DOMAIN-KEYWORD, saarland, PROXY   # Saarland, Germany
+    # - DOMAIN-KEYWORD, scot, PROXY       # Scotland, United Kingdom
+    # - DOMAIN-KEYWORD, stockholm, PROXY  # Stockholm, Sweden
+    # - DOMAIN-KEYWORD, swiss, PROXY      # Switzerland
+    # - DOMAIN-KEYWORD, tirol, PROXY      # Tyrol, Austria
+    # - DOMAIN-KEYWORD, vlaanderen, PROXY # Flanders, Belgium
+    # - DOMAIN-KEYWORD, wales, PROXY      # Wales, United Kingdom
+    # - DOMAIN-KEYWORD, wien, PROXY       # Vienna, Austria
+    # - DOMAIN-KEYWORD, zuerich, PROXY    # Zurich, Switzerland
 
     ## North America
-    - DOMAIN-KEYWORD, boston, PROXY     # Boston, Massachusetts, United States of America
-    - DOMAIN-KEYWORD, miami, PROXY      # Miami, Florida, United States of America
-    - DOMAIN-KEYWORD, nyc, PROXY        # New York City, New York, United States of America
-    - DOMAIN-KEYWORD, quebec, PROXY     # Quebec, Canada
-    - DOMAIN-KEYWORD, vegas, PROXY      # Las Vegas, Nevada, United States of America
+    # - DOMAIN-KEYWORD, boston, PROXY     # Boston, Massachusetts, United States of America
+    # - DOMAIN-KEYWORD, miami, PROXY      # Miami, Florida, United States of America
+    # - DOMAIN-KEYWORD, nyc, PROXY        # New York City, New York, United States of America
+    # - DOMAIN-KEYWORD, quebec, PROXY     # Quebec, Canada
+    # - DOMAIN-KEYWORD, vegas, PROXY      # Las Vegas, Nevada, United States of America
 
     ## Oceania
-    - DOMAIN-KEYWORD, kiwi, PROXY       # New Zealanders
-    - DOMAIN-KEYWORD, melbourne, PROXY  # Melbourne, Australia
-    - DOMAIN-KEYWORD, sydney, PROXY     # Sydney, Australia
+    # - DOMAIN-KEYWORD, kiwi, PROXY       # New Zealanders
+    # - DOMAIN-KEYWORD, melbourne, PROXY  # Melbourne, Australia
+    # - DOMAIN-KEYWORD, sydney, PROXY     # Sydney, Australia
 
     ## South America
-    - DOMAIN-KEYWORD, lat, PROXY        # Latin America
-    - DOMAIN-KEYWORD, rio, PROXY        # Rio de Janeiro, Brazil
+    # - DOMAIN-KEYWORD, lat, PROXY        # Latin America
+    # - DOMAIN-KEYWORD, rio, PROXY        # Rio de Janeiro, Brazil
 
     # Health & Wellness Domains
-    - DOMAIN-KEYWORD, aarp, PROXY # Health Wellness Domains
-    - DOMAIN-KEYWORD, abbott, PROXY # Abbott Laboratories
-    - DOMAIN-KEYWORD, abbvie, PROXY # Abbott Laboratories
-    - DOMAIN-KEYWORD, aetna, PROXY # Aetna Life Insurance Company
-    - DOMAIN-KEYWORD, alcon, PROXY # Alcon Laboratories, Inc.
-    - DOMAIN-KEYWORD, anthem, PROXY # WellPoint, Inc.
-    - DOMAIN-KEYWORD, bms, PROXY # Bristol-Myers Squibb Company
-    - DOMAIN-KEYWORD, boehringer, PROXY # Boehringer Ingelheim Pharma GmbH & Co. KG
-    - DOMAIN-KEYWORD, caremore, PROXY # WellPoint, Inc.
-    - DOMAIN-KEYWORD, cialis, PROXY # Eli Lilly and Company
-    - DOMAIN-KEYWORD, dabur, PROXY # Dabur India Limited
-    - DOMAIN-KEYWORD, fresenius, PROXY # Fresenius Immobilien-Verwaltungs-GmbH
-    - DOMAIN-KEYWORD, jnj, PROXY # Johnson & Johnson Services, Inc.
-    - DOMAIN-KEYWORD, merck, PROXY # Merck KGaA
-    - DOMAIN-KEYWORD, mutuelle, PROXY # Fédération Nationale de la Mutualité Française
-    - DOMAIN-KEYWORD, sanofi, PROXY # Health Wellness Domains
+    # - DOMAIN-KEYWORD, aarp, PROXY # Health Wellness Domains
+    # - DOMAIN-KEYWORD, abbott, PROXY # Abbott Laboratories
+    # - DOMAIN-KEYWORD, abbvie, PROXY # Abbott Laboratories
+    # - DOMAIN-KEYWORD, aetna, PROXY # Aetna Life Insurance Company
+    # - DOMAIN-KEYWORD, alcon, PROXY # Alcon Laboratories, Inc.
+    # - DOMAIN-KEYWORD, anthem, PROXY # WellPoint, Inc.
+    # - DOMAIN-KEYWORD, bms, PROXY # Bristol-Myers Squibb Company
+    # - DOMAIN-KEYWORD, boehringer, PROXY # Boehringer Ingelheim Pharma GmbH & Co. KG
+    # - DOMAIN-KEYWORD, caremore, PROXY # WellPoint, Inc.
+    # - DOMAIN-KEYWORD, cialis, PROXY # Eli Lilly and Company
+    # - DOMAIN-KEYWORD, dabur, PROXY # Dabur India Limited
+    # - DOMAIN-KEYWORD, fresenius, PROXY # Fresenius Immobilien-Verwaltungs-GmbH
+    # - DOMAIN-KEYWORD, jnj, PROXY # Johnson & Johnson Services, Inc.
+    # - DOMAIN-KEYWORD, merck, PROXY # Merck KGaA
+    # - DOMAIN-KEYWORD, mutuelle, PROXY # Fédération Nationale de la Mutualité Française
+    # - DOMAIN-KEYWORD, sanofi, PROXY # Health Wellness Domains
 
     # Industrial Domains
-    - DOMAIN-KEYWORD, aeg, PROXY # Aktiebolaget Electrolux
-    - DOMAIN-KEYWORD, airbus, PROXY # Airbus S.A.S.
-    - DOMAIN-KEYWORD, alstom, PROXY # Industrial Domains
-    - DOMAIN-KEYWORD, aramco, PROXY # Aramco Services Company
-    - DOMAIN-KEYWORD, blanco, PROXY # Blanco GmbH & Co
-    - DOMAIN-KEYWORD, bosch, PROXY # Robert Bosch GMBH
-    - DOMAIN-KEYWORD, bostik, PROXY # Bostik SA
-    - DOMAIN-KEYWORD, chesapeake, PROXY # Chesapeake Energy Corporation
-    - DOMAIN-KEYWORD, chk, PROXY # Chesapeake Energy Corporation
-    - DOMAIN-KEYWORD, crown, PROXY # Crown Equipment Corporation
-    - DOMAIN-KEYWORD, doosan, PROXY # Doosan Corporation
-    - DOMAIN-KEYWORD, dupont, PROXY # E.I. du Pont de Nemours and Company
-    - DOMAIN-KEYWORD, flir, PROXY # FLIR Systems, Inc.
-    - DOMAIN-KEYWORD, fls, PROXY # FLSmidth A/S
-    - DOMAIN-KEYWORD, flsmidth, PROXY # FLSmidth A/S
-    - DOMAIN-KEYWORD, gecompany, PROXY # General Electric Company
-    - DOMAIN-KEYWORD, grainger, PROXY # Industrial Domains
-    - DOMAIN-KEYWORD, hitachi, PROXY # Hitachi Ltd.
-    - DOMAIN-KEYWORD, honeywell, PROXY # Honeywell GTLD LLC
-    - DOMAIN-KEYWORD, ifm, PROXY # Ifm Electronic gmbh
-    - DOMAIN-KEYWORD, ipiranga, PROXY # Ipiranga Produtos de Petroleo S.A.
-    - DOMAIN-KEYWORD, jio, PROXY # Reliance Industries Limited
-    - DOMAIN-KEYWORD, komatsu, PROXY # Komatsu Ltd.
-    - DOMAIN-KEYWORD, kone, PROXY # Kone Corporation
-    - DOMAIN-KEYWORD, ksb, PROXY # KSB Aktiengesellschaft
-    - DOMAIN-KEYWORD, kuokgroup, PROXY # Kerry Trading Co. Limited
-    - DOMAIN-KEYWORD, leclerc, PROXY # Industrial Domains
-    - DOMAIN-KEYWORD, lidl, PROXY # Schwarzs und Services GmbH & Co. KG
-    - DOMAIN-KEYWORD, linde, PROXY # Linde Aktiengesellschaft
-    - DOMAIN-KEYWORD, lotte, PROXY # Lotte Holdings Co., Ltd.
-    - DOMAIN-KEYWORD, man, PROXY # Man SE
-    - DOMAIN-KEYWORD, mtr, PROXY # MTR Corporation Limited
-    - DOMAIN-KEYWORD, reliance, PROXY # Reliance Industries Limited
-    - DOMAIN-KEYWORD, rexroth, PROXY # Bosch Rexroth AG
-    - DOMAIN-KEYWORD, ril, PROXY # Reliance Industries Limited
-    - DOMAIN-KEYWORD, rockwool, PROXY # Rockwool International A/S
-    - DOMAIN-KEYWORD, rwe, PROXY # Rwe AG
-    - DOMAIN-KEYWORD, sandvikcoromant, PROXY # Sandvik AB
-    - DOMAIN-KEYWORD, sandvik, PROXY # Sandvik AB
-    - DOMAIN-KEYWORD, sapphire, PROXY # MiTek USA, Inc.
-    - DOMAIN-KEYWORD, sca, PROXY # Svenska Cellulosa Aktiebolaget SCA
-    - DOMAIN-KEYWORD, schaeffler, PROXY # Schaeffler Technologies AG & Co. KG
-    - DOMAIN-KEYWORD, schmidt, PROXY # SALM S.A.S.
-    - DOMAIN-KEYWORD, schwarzgroup, PROXY # Schwarzs und Services GmbH & Co. KG
-    - DOMAIN-KEYWORD, schwarz, PROXY # Schwarzs und Services GmbH & Co. KG
-    - DOMAIN-KEYWORD, sener, PROXY # Sener Ingeniería y Sistemas, S.A.
-    - DOMAIN-KEYWORD, sew, PROXY # Sew Eurodrive
-    - DOMAIN-KEYWORD, sncf, PROXY # Société Nationale des Chemins de fer Francais S N C F
-    - DOMAIN-KEYWORD, statoil, PROXY # Statoil ASA
-    - DOMAIN-KEYWORD, total, PROXY # Total SA
-    - DOMAIN-KEYWORD, vanish, PROXY # Reckitt Benckiser N.V.
-    - DOMAIN-KEYWORD, walter, PROXY # Sandvik AB
-    - DOMAIN-KEYWORD, warman, PROXY # Weir Group IP Limited
-    - DOMAIN-KEYWORD, weber, PROXY # Saint-Gobain Weber SA
-    - DOMAIN-KEYWORD, weir, PROXY # Weir Group IP Limited
-    - DOMAIN-KEYWORD, woodside, PROXY # Woodside Petroleum Limited
-    - DOMAIN-KEYWORD, zara, PROXY # Inditex, SA
-    - DOMAIN-KEYWORD, zippo, PROXY # Zadco Company
+    # - DOMAIN-KEYWORD, aeg, PROXY # Aktiebolaget Electrolux
+    # - DOMAIN-KEYWORD, airbus, PROXY # Airbus S.A.S.
+    # - DOMAIN-KEYWORD, alstom, PROXY # Industrial Domains
+    # - DOMAIN-KEYWORD, aramco, PROXY # Aramco Services Company
+    # - DOMAIN-KEYWORD, blanco, PROXY # Blanco GmbH & Co
+    # - DOMAIN-KEYWORD, bosch, PROXY # Robert Bosch GMBH
+    # - DOMAIN-KEYWORD, bostik, PROXY # Bostik SA
+    # - DOMAIN-KEYWORD, chesapeake, PROXY # Chesapeake Energy Corporation
+    # - DOMAIN-KEYWORD, chk, PROXY # Chesapeake Energy Corporation
+    # - DOMAIN-KEYWORD, crown, PROXY # Crown Equipment Corporation
+    # - DOMAIN-KEYWORD, doosan, PROXY # Doosan Corporation
+    # - DOMAIN-KEYWORD, dupont, PROXY # E.I. du Pont de Nemours and Company
+    # - DOMAIN-KEYWORD, flir, PROXY # FLIR Systems, Inc.
+    # - DOMAIN-KEYWORD, fls, PROXY # FLSmidth A/S
+    # - DOMAIN-KEYWORD, flsmidth, PROXY # FLSmidth A/S
+    # - DOMAIN-KEYWORD, gecompany, PROXY # General Electric Company
+    # - DOMAIN-KEYWORD, grainger, PROXY # Industrial Domains
+    # - DOMAIN-KEYWORD, hitachi, PROXY # Hitachi Ltd.
+    # - DOMAIN-KEYWORD, honeywell, PROXY # Honeywell GTLD LLC
+    # - DOMAIN-KEYWORD, ifm, PROXY # Ifm Electronic gmbh
+    # - DOMAIN-KEYWORD, ipiranga, PROXY # Ipiranga Produtos de Petroleo S.A.
+    # - DOMAIN-KEYWORD, jio, PROXY # Reliance Industries Limited
+    # - DOMAIN-KEYWORD, komatsu, PROXY # Komatsu Ltd.
+    # - DOMAIN-KEYWORD, kone, PROXY # Kone Corporation
+    # - DOMAIN-KEYWORD, ksb, PROXY # KSB Aktiengesellschaft
+    # - DOMAIN-KEYWORD, kuokgroup, PROXY # Kerry Trading Co. Limited
+    # - DOMAIN-KEYWORD, leclerc, PROXY # Industrial Domains
+    # - DOMAIN-KEYWORD, lidl, PROXY # Schwarzs und Services GmbH & Co. KG
+    # - DOMAIN-KEYWORD, linde, PROXY # Linde Aktiengesellschaft
+    # - DOMAIN-KEYWORD, lotte, PROXY # Lotte Holdings Co., Ltd.
+    # - DOMAIN-KEYWORD, man, PROXY # Man SE
+    # - DOMAIN-KEYWORD, mtr, PROXY # MTR Corporation Limited
+    # - DOMAIN-KEYWORD, reliance, PROXY # Reliance Industries Limited
+    # - DOMAIN-KEYWORD, rexroth, PROXY # Bosch Rexroth AG
+    # - DOMAIN-KEYWORD, ril, PROXY # Reliance Industries Limited
+    # - DOMAIN-KEYWORD, rockwool, PROXY # Rockwool International A/S
+    # - DOMAIN-KEYWORD, rwe, PROXY # Rwe AG
+    # - DOMAIN-KEYWORD, sandvikcoromant, PROXY # Sandvik AB
+    # - DOMAIN-KEYWORD, sandvik, PROXY # Sandvik AB
+    # - DOMAIN-KEYWORD, sapphire, PROXY # MiTek USA, Inc.
+    # - DOMAIN-KEYWORD, sca, PROXY # Svenska Cellulosa Aktiebolaget SCA
+    # - DOMAIN-KEYWORD, schaeffler, PROXY # Schaeffler Technologies AG & Co. KG
+    # - DOMAIN-KEYWORD, schmidt, PROXY # SALM S.A.S.
+    # - DOMAIN-KEYWORD, schwarzgroup, PROXY # Schwarzs und Services GmbH & Co. KG
+    # - DOMAIN-KEYWORD, schwarz, PROXY # Schwarzs und Services GmbH & Co. KG
+    # - DOMAIN-KEYWORD, sener, PROXY # Sener Ingeniería y Sistemas, S.A.
+    # - DOMAIN-KEYWORD, sew, PROXY # Sew Eurodrive
+    # - DOMAIN-KEYWORD, sncf, PROXY # Société Nationale des Chemins de fer Francais S N C F
+    # - DOMAIN-KEYWORD, statoil, PROXY # Statoil ASA
+    # - DOMAIN-KEYWORD, total, PROXY # Total SA
+    # - DOMAIN-KEYWORD, vanish, PROXY # Reckitt Benckiser N.V.
+    # - DOMAIN-KEYWORD, walter, PROXY # Sandvik AB
+    # - DOMAIN-KEYWORD, warman, PROXY # Weir Group IP Limited
+    # - DOMAIN-KEYWORD, weber, PROXY # Saint-Gobain Weber SA
+    # - DOMAIN-KEYWORD, weir, PROXY # Weir Group IP Limited
+    # - DOMAIN-KEYWORD, woodside, PROXY # Woodside Petroleum Limited
+    # - DOMAIN-KEYWORD, zara, PROXY # Inditex, SA
+    # - DOMAIN-KEYWORD, zippo, PROXY # Zadco Company
 
     # Miscellaneous Domains
-    - DOMAIN-KEYWORD, africamagic, PROXY # Electronic Media Network Limited
-    - DOMAIN-KEYWORD, agakhan, PROXY # Aga Khan Foundation
-    - DOMAIN-KEYWORD, akdn, PROXY # Aga Khan Foundation
-    - DOMAIN-KEYWORD, ansons, PROXY # CBM Creative Brands Marken GmbH
-    - DOMAIN-KEYWORD, baby, PROXY # Baby
-    - DOMAIN-KEYWORD, bar, PROXY # A place which provide liquor
-    - DOMAIN-KEYWORD, bharti, PROXY # Bharti Enterprises
-    - DOMAIN-KEYWORD, bingo, PROXY # Bingo
-    - DOMAIN-KEYWORD, casa, PROXY # Casa (Home)
-    - DOMAIN-KEYWORD, casino, PROXY # Online Casino
-    - DOMAIN-KEYWORD, chat, PROXY # Chat
-    - DOMAIN-KEYWORD, dating, PROXY # Dating
-    - DOMAIN-KEYWORD, domains, PROXY # Domain Name Register
-    - DOMAIN-KEYWORD, extraspace, PROXY # Extra Space Storage LLC
-    - DOMAIN-KEYWORD, gay, PROXY # Homosexuality
-    - DOMAIN-KEYWORD, gcc, PROXY # short for Gulf Cooperation Council
-    - DOMAIN-KEYWORD, genting, PROXY # Resorts World Inc Pte. Ltd.
-    - DOMAIN-KEYWORD, glean, PROXY # Scripps Networks Interactive, Inc.
-    - DOMAIN-KEYWORD, hot, PROXY # No specific purpose
-    - DOMAIN-KEYWORD, ikano, PROXY # Ikano S.A.
-    - DOMAIN-KEYWORD, imamat, PROXY # Aga Khan Foundation
-    - DOMAIN-KEYWORD, ladbrokes, PROXY # Ladbrokes International PLC
-    - DOMAIN-KEYWORD, lgbt, PROXY # Lesbian, Gay, Bisexual, Transgender
-    - DOMAIN-KEYWORD, livestrong, PROXY # Lance Armstrong Foundation
-    - DOMAIN-KEYWORD, maif, PROXY # Mutuelle Assurance Instituteur France (MAIF)
-    - DOMAIN-KEYWORD, mattel, PROXY # Mattel Sites, Inc.
-    - DOMAIN-KEYWORD, persiangulf, PROXY # persian gulf
-    - DOMAIN-KEYWORD, poker, PROXY # Poker
-    - DOMAIN-KEYWORD, sas, PROXY # SAS institute
-    - DOMAIN-KEYWORD, shell, PROXY # Shell Information Technology International Inc
-    - DOMAIN-KEYWORD, shia, PROXY # Shia Muslim community
-    - DOMAIN-KEYWORD, style, PROXY # though the comment actually seems to be about .tattoo
-    - DOMAIN-KEYWORD, sucks, PROXY # Vox Populi Registry
-    - DOMAIN-KEYWORD, tatar, PROXY # Limited Liability Company "Coordination Center of Regional Domain of Tatarstan Republic"
-    - DOMAIN-KEYWORD, tattoo, PROXY # Tattoo
-    - DOMAIN-KEYWORD, tennic, PROXY # Tennis
-    - DOMAIN-KEYWORD, transformers, PROXY # Hasbro International, Inc.
-    - DOMAIN-KEYWORD, vana, PROXY # Scripps Networks Interactive, Inc.
-    - DOMAIN-KEYWORD, virgin, PROXY # Virgin Enterprises Limited
-    - DOMAIN-KEYWORD, vodka, PROXY # Alcohol
-    - DOMAIN-KEYWORD, wine, PROXY # Alcohol
-    - DOMAIN-KEYWORD, wme, PROXY # William Morris Endeavor Entertainment, LLC
-    - DOMAIN-KEYWORD, wtf, PROXY # What the fuck
+    # - DOMAIN-KEYWORD, africamagic, PROXY # Electronic Media Network Limited
+    # - DOMAIN-KEYWORD, agakhan, PROXY # Aga Khan Foundation
+    # - DOMAIN-KEYWORD, akdn, PROXY # Aga Khan Foundation
+    # - DOMAIN-KEYWORD, ansons, PROXY # CBM Creative Brands Marken GmbH
+    # - DOMAIN-KEYWORD, baby, PROXY # Baby
+    # - DOMAIN-KEYWORD, bar, PROXY # A place which provide liquor
+    # - DOMAIN-KEYWORD, bharti, PROXY # Bharti Enterprises
+    # - DOMAIN-KEYWORD, bingo, PROXY # Bingo
+    # - DOMAIN-KEYWORD, casa, PROXY # Casa (Home)
+    # - DOMAIN-KEYWORD, casino, PROXY # Online Casino
+    # - DOMAIN-KEYWORD, chat, PROXY # Chat
+    # - DOMAIN-KEYWORD, dating, PROXY # Dating
+    # - DOMAIN-KEYWORD, domains, PROXY # Domain Name Register
+    # - DOMAIN-KEYWORD, extraspace, PROXY # Extra Space Storage LLC
+    # - DOMAIN-KEYWORD, gay, PROXY # Homosexuality
+    # - DOMAIN-KEYWORD, gcc, PROXY # short for Gulf Cooperation Council
+    # - DOMAIN-KEYWORD, genting, PROXY # Resorts World Inc Pte. Ltd.
+    # - DOMAIN-KEYWORD, glean, PROXY # Scripps Networks Interactive, Inc.
+    # - DOMAIN-KEYWORD, hot, PROXY # No specific purpose
+    # - DOMAIN-KEYWORD, ikano, PROXY # Ikano S.A.
+    # - DOMAIN-KEYWORD, imamat, PROXY # Aga Khan Foundation
+    # - DOMAIN-KEYWORD, ladbrokes, PROXY # Ladbrokes International PLC
+    # - DOMAIN-KEYWORD, lgbt, PROXY # Lesbian, Gay, Bisexual, Transgender
+    # - DOMAIN-KEYWORD, livestrong, PROXY # Lance Armstrong Foundation
+    # - DOMAIN-KEYWORD, maif, PROXY # Mutuelle Assurance Instituteur France (MAIF)
+    # - DOMAIN-KEYWORD, mattel, PROXY # Mattel Sites, Inc.
+    # - DOMAIN-KEYWORD, persiangulf, PROXY # persian gulf
+    # - DOMAIN-KEYWORD, poker, PROXY # Poker
+    # - DOMAIN-KEYWORD, sas, PROXY # SAS institute
+    # - DOMAIN-KEYWORD, shell, PROXY # Shell Information Technology International Inc
+    # - DOMAIN-KEYWORD, shia, PROXY # Shia Muslim community
+    # - DOMAIN-KEYWORD, style, PROXY # though the comment actually seems to be about .tattoo
+    # - DOMAIN-KEYWORD, sucks, PROXY # Vox Populi Registry
+    # - DOMAIN-KEYWORD, tatar, PROXY # Limited Liability Company "Coordination Center of Regional Domain of Tatarstan Republic"
+    # - DOMAIN-KEYWORD, tattoo, PROXY # Tattoo
+    # - DOMAIN-KEYWORD, tennic, PROXY # Tennis
+    # - DOMAIN-KEYWORD, transformers, PROXY # Hasbro International, Inc.
+    # - DOMAIN-KEYWORD, vana, PROXY # Scripps Networks Interactive, Inc.
+    # - DOMAIN-KEYWORD, virgin, PROXY # Virgin Enterprises Limited
+    # - DOMAIN-KEYWORD, vodka, PROXY # Alcohol
+    # - DOMAIN-KEYWORD, wine, PROXY # Alcohol
+    # - DOMAIN-KEYWORD, wme, PROXY # William Morris Endeavor Entertainment, LLC
+    # - DOMAIN-KEYWORD, wtf, PROXY # What the fuck
 
     # Religion
-    - DOMAIN-KEYWORD, bible, PROXY # Bible
-    - DOMAIN-KEYWORD, catholic, PROXY # Catholic
-    - DOMAIN-KEYWORD, halal, PROXY # It means lawful (food and service) in Arabic.
-    - DOMAIN-KEYWORD, islam, PROXY # Muslim
-    - DOMAIN-KEYWORD, ismaili, PROXY # a Shiite sect
-    - DOMAIN-KEYWORD, ummah, PROXY # An Arabic word meaning "community"
-    - DOMAIN-KEYWORD, xn--mgbi4ecexp, PROXY # Arabic for Catholic
+    # - DOMAIN-KEYWORD, bible, PROXY # Bible
+    # - DOMAIN-KEYWORD, catholic, PROXY # Catholic
+    # - DOMAIN-KEYWORD, halal, PROXY # It means lawful (food and service) in Arabic.
+    # - DOMAIN-KEYWORD, islam, PROXY # Muslim
+    # - DOMAIN-KEYWORD, ismaili, PROXY # a Shiite sect
+    # - DOMAIN-KEYWORD, ummah, PROXY # An Arabic word meaning "community"
+    # - DOMAIN-KEYWORD, xn--mgbi4ecexp, PROXY # Arabic for Catholic
 
     # Research & Science Domains
-    - DOMAIN-KEYWORD, astrium, PROXY # Astrium SAS
-    - DOMAIN-KEYWORD, cern, PROXY # European Organization for Nuclear Research
-    - DOMAIN-KEYWORD, emerck, PROXY # Merck
-    - DOMAIN-KEYWORD, hisamitsu, PROXY # Hisamitsu Pharmaceutical Co., Inc.
-    - DOMAIN-KEYWORD, lilly, PROXY # Eli Lilly and Company
-    - DOMAIN-KEYWORD, lundbeck, PROXY # H. Lundbeck A/S
-    - DOMAIN-KEYWORD, lupin, PROXY # Lupin Limited
-    - DOMAIN-KEYWORD, merckmsd, PROXY # Merck
-    - DOMAIN-KEYWORD, msd, PROXY # Merck
-    - DOMAIN-KEYWORD, mtpc, PROXY # Mitsubishi Tanabe Pharma Corporation
-    - DOMAIN-KEYWORD, otsuka, PROXY # Otsuka Holdings Co., Ltd.
-    - DOMAIN-KEYWORD, pfizer, PROXY # Pfizer Inc.
-    - DOMAIN-KEYWORD, stada, PROXY # STADA Arzneimittel AG
-    - DOMAIN-KEYWORD, teva, PROXY # Teva Pharmaceutical Industries Limited
-    - DOMAIN-KEYWORD, toray, PROXY # Toray Industries, Inc.
-    - DOMAIN-KEYWORD, weather, PROXY # The Weather Channel LLC
+    # - DOMAIN-KEYWORD, astrium, PROXY # Astrium SAS
+    # - DOMAIN-KEYWORD, cern, PROXY # European Organization for Nuclear Research
+    # - DOMAIN-KEYWORD, emerck, PROXY # Merck
+    # - DOMAIN-KEYWORD, hisamitsu, PROXY # Hisamitsu Pharmaceutical Co., Inc.
+    # - DOMAIN-KEYWORD, lilly, PROXY # Eli Lilly and Company
+    # - DOMAIN-KEYWORD, lundbeck, PROXY # H. Lundbeck A/S
+    # - DOMAIN-KEYWORD, lupin, PROXY # Lupin Limited
+    # - DOMAIN-KEYWORD, merckmsd, PROXY # Merck
+    # - DOMAIN-KEYWORD, msd, PROXY # Merck
+    # - DOMAIN-KEYWORD, mtpc, PROXY # Mitsubishi Tanabe Pharma Corporation
+    # - DOMAIN-KEYWORD, otsuka, PROXY # Otsuka Holdings Co., Ltd.
+    # - DOMAIN-KEYWORD, pfizer, PROXY # Pfizer Inc.
+    # - DOMAIN-KEYWORD, stada, PROXY # STADA Arzneimittel AG
+    # - DOMAIN-KEYWORD, teva, PROXY # Teva Pharmaceutical Industries Limited
+    # - DOMAIN-KEYWORD, toray, PROXY # Toray Industries, Inc.
+    # - DOMAIN-KEYWORD, weather, PROXY # The Weather Channel LLC
 
     # Sex & Porn
-    - DOMAIN-KEYWORD, adult, PROXY # Adult content
-    - DOMAIN-KEYWORD, porn, PROXY # Pornographic website
-    - DOMAIN-KEYWORD, sex, PROXY # Sex
-    - DOMAIN-KEYWORD, sexy, PROXY # Sexy
-    - DOMAIN-KEYWORD, xxx, PROXY # Pornographic website
+    # - DOMAIN-KEYWORD, adult, PROXY # Adult content
+    # - DOMAIN-KEYWORD, porn, PROXY # Pornographic website
+    # - DOMAIN-KEYWORD, sex, PROXY # Sex
+    # - DOMAIN-KEYWORD, sexy, PROXY # Sexy
+    # - DOMAIN-KEYWORD, xxx, PROXY # Pornographic website
 
     # Shipping & Delivery Domains
-    - DOMAIN-KEYWORD, auspost, PROXY # Australian Postal Corporation
-    - DOMAIN-KEYWORD, deutschepost, PROXY # Deutsche Post AG
-    - DOMAIN-KEYWORD, dhl, PROXY # Deutsche Post AG
-    - DOMAIN-KEYWORD, epost, PROXY # Deutsche Post AG
-    - DOMAIN-KEYWORD, fedex, PROXY # Federal Express Corporation
-    - DOMAIN-KEYWORD, pitney, PROXY # Pitney Bowe Inc.#ups # UPS Market Driver, Inc.
+    # - DOMAIN-KEYWORD, auspost, PROXY # Australian Postal Corporation
+    # - DOMAIN-KEYWORD, deutschepost, PROXY # Deutsche Post AG
+    # - DOMAIN-KEYWORD, dhl, PROXY # Deutsche Post AG
+    # - DOMAIN-KEYWORD, epost, PROXY # Deutsche Post AG
+    # - DOMAIN-KEYWORD, fedex, PROXY # Federal Express Corporation
+    # - DOMAIN-KEYWORD, pitney, PROXY # Pitney Bowe Inc.#ups # UPS Market Driver, Inc.
 
     # Top domain of Country or Region (Internationalized Domain Name)
 
-    - DOMAIN-KEYWORD, xn--lgbbat1ad8j, PROXY  #  الجزائر Algeria
-    - DOMAIN-KEYWORD, xn--y9a3aq, PROXY  #  հայ Armenia
-    - DOMAIN-KEYWORD, xn--mgbcpq6gpa1a, PROXY  #  البحرين Bahrain
-    - DOMAIN-KEYWORD, xn--54b7fta0cc, PROXY  #  বাংলা Bangladesh
-    - DOMAIN-KEYWORD, xn--90ais, PROXY  #  бел Belarus
-    - DOMAIN-KEYWORD, xn--90ae, PROXY  #  бг Bulgaria
-    - DOMAIN-KEYWORD, xn--wgbh1c, PROXY  #  مصر Egypt
-    - DOMAIN-KEYWORD, xn--e1a4c, PROXY  #  ею European Union
-    - DOMAIN-KEYWORD, xn--qxa6a, PROXY  #  ευ European Union
-    - DOMAIN-KEYWORD, xn--node, PROXY  #  გე Georgia
-    - DOMAIN-KEYWORD, xn--qxam, PROXY  #  ελ Greece
-    - DOMAIN-KEYWORD, xn--j6w193g, PROXY  #  香港 Hong Kong SAR, People's Republic of China
-    - DOMAIN-KEYWORD, xn--4dbrk0ce, PROXY  #  ישראל Israel
-    - DOMAIN-KEYWORD, xn--h2brj9c, PROXY  #  भारत India
-    - DOMAIN-KEYWORD, xn--mgbbh1a71e, PROXY  #  بھارت India
-    - DOMAIN-KEYWORD, xn--fpcrj9c3d, PROXY  #  భారత్ India
-    - DOMAIN-KEYWORD, xn--gecrj9c, PROXY  #  ભારત India
-    - DOMAIN-KEYWORD, xn--s9brj9c, PROXY  #  ਭਾਰਤ India
-    - DOMAIN-KEYWORD, xn--45brj9c, PROXY  #  ভারত India
-    - DOMAIN-KEYWORD, xn--xkc2dl3a5ee0h, PROXY  #  இந்தியா India
-    - DOMAIN-KEYWORD, xn--2scrj9c, PROXY  #  ಭಾರತ India
-    - DOMAIN-KEYWORD, xn--rvc1e0am3e, PROXY  #  ഭാരതം India
-    - DOMAIN-KEYWORD, xn--45br5cyl, PROXY  #  ভাৰত India
-    - DOMAIN-KEYWORD, xn--3hcrj9c, PROXY  #  ଭାରତ India
-    - DOMAIN-KEYWORD, xn--mgbbh1a, PROXY  #  بارت India
-    - DOMAIN-KEYWORD, xn--h2breg3eve, PROXY  #  भारतम् India
-    - DOMAIN-KEYWORD, xn--h2brj9c8c, PROXY  #  भारोत India
-    - DOMAIN-KEYWORD, xn--mgbgu82a, PROXY  #  ڀارت India
-    - DOMAIN-KEYWORD, xn--mgba3a4f16a, PROXY  #  ایران Iran
-    - DOMAIN-KEYWORD, xn--mgba3a4fra, PROXY  #  ايران Iran
-    - DOMAIN-KEYWORD, xn--mgbtx2b, PROXY  #  عراق Iran
-    - DOMAIN-KEYWORD, xn--mgbayh7gpa, PROXY  #  الاردن Jordan
-    - DOMAIN-KEYWORD, xn--80ao21a, PROXY  #  қаз Kazakhstan
-    - DOMAIN-KEYWORD, xn--3e0b707e, PROXY  #  한국 Korea
-    - DOMAIN-KEYWORD, xn--q7ce6a, PROXY  #  ລາວ Laos
-    - DOMAIN-KEYWORD, xn--mix891f, PROXY  #  澳門 Macao SAR, People's Republic of China
-    - DOMAIN-KEYWORD, xn--mix082f, PROXY  #  澳门 Macao SAR, People's Republic of China
-    - DOMAIN-KEYWORD, xn--d1alf, PROXY  #  мкд North Macedonia
-    - DOMAIN-KEYWORD, xn--mgbx4cd0ab, PROXY  #  مليسيا. Malaysia
-    - DOMAIN-KEYWORD, xn--mgbah1a3hjkrd, PROXY  #  موريتانيا Mauritania
-    - DOMAIN-KEYWORD, xn--l1acc, PROXY  #  мон Mongolia
-    - DOMAIN-KEYWORD, xn--mgbc0a9azcg, PROXY  #  المغرب Morocco
-    - DOMAIN-KEYWORD, xn--mgb9awbf, PROXY  #  عمان Oman
-    - DOMAIN-KEYWORD, xn--mgbai9azgqp6j, PROXY  #  پاکستان Pakistan
-    - DOMAIN-KEYWORD, xn--mgbai9a5eva00b, PROXY  #  پاكستان Pakistan
-    - DOMAIN-KEYWORD, xn--ygbi2ammx, PROXY  #  فلسطين Palestine
-    - DOMAIN-KEYWORD, xn--wgbl6a, PROXY  #  قطر Qatar
-    - DOMAIN-KEYWORD, xn--p1ai, PROXY  #  рф Russian Federation
-    - DOMAIN-KEYWORD, xn--mgberp4a5d4ar, PROXY  #  السعودية Saudi Arabia
-    - DOMAIN-KEYWORD, xn--mgberp4a5d4a87g, PROXY  #  السعودیة Saudi Arabia
-    - DOMAIN-KEYWORD, xn--mgbqly7c0a67fbc, PROXY  #  السعودیۃ Saudi Arabia
-    - DOMAIN-KEYWORD, xn--mgbqly7cvafr, PROXY  #  السعوديه Saudi Arabia
-    - DOMAIN-KEYWORD, xn--90a3ac, PROXY  #  срб Serbia
-    - DOMAIN-KEYWORD, xn--yfro4i67o, PROXY  #  新加坡 Singapore
-    - DOMAIN-KEYWORD, xn--fzc2c9e2c, PROXY  #  ලංකා Sri Lanka
-    - DOMAIN-KEYWORD, xn--mgbpl2fh, PROXY  #  سودان Sudan
-    - DOMAIN-KEYWORD, xn--ogbpf8fl, PROXY  #  سورية Syrian Arab Republic
-    - DOMAIN-KEYWORD, xn--mgbtf8fl, PROXY  #  سوريا Syrian Arab Republic
-    - DOMAIN-KEYWORD, xn--kpry57d, PROXY  #  台灣 Taiwan Province, Republic of China
-    - DOMAIN-KEYWORD, xn--kprw13d, PROXY  #  台湾 Taiwan Province, Republic of China
-    - DOMAIN-KEYWORD, xn--nnx388a, PROXY  #  臺灣 Taiwan Province, Republic of China
-    - DOMAIN-KEYWORD, xn--o3cw4h, PROXY  #  ไทย Thailand
-    - DOMAIN-KEYWORD, xn--pgbs0dh, PROXY  #  تونس Tunisia
-    - DOMAIN-KEYWORD, xn--j1amh, PROXY  #  укр Ukraine
-    - DOMAIN-KEYWORD, xn--mgbaam7a8h, PROXY  #  امارات United Arab Emirates
-    - DOMAIN-KEYWORD, xn--mgb2ddes, PROXY  #  اليمن Yemen
+    # - DOMAIN-KEYWORD, xn--lgbbat1ad8j, PROXY  #  الجزائر Algeria
+    # - DOMAIN-KEYWORD, xn--y9a3aq, PROXY  #  հայ Armenia
+    # - DOMAIN-KEYWORD, xn--mgbcpq6gpa1a, PROXY  #  البحرين Bahrain
+    # - DOMAIN-KEYWORD, xn--54b7fta0cc, PROXY  #  বাংলা Bangladesh
+    # - DOMAIN-KEYWORD, xn--90ais, PROXY  #  бел Belarus
+    # - DOMAIN-KEYWORD, xn--90ae, PROXY  #  бг Bulgaria
+    # - DOMAIN-KEYWORD, xn--wgbh1c, PROXY  #  مصر Egypt
+    # - DOMAIN-KEYWORD, xn--e1a4c, PROXY  #  ею European Union
+    # - DOMAIN-KEYWORD, xn--qxa6a, PROXY  #  ευ European Union
+    # - DOMAIN-KEYWORD, xn--node, PROXY  #  გე Georgia
+    # - DOMAIN-KEYWORD, xn--qxam, PROXY  #  ελ Greece
+    # - DOMAIN-KEYWORD, xn--j6w193g, PROXY  #  香港 Hong Kong SAR, People's Republic of China
+    # - DOMAIN-KEYWORD, xn--4dbrk0ce, PROXY  #  ישראל Israel
+    # - DOMAIN-KEYWORD, xn--h2brj9c, PROXY  #  भारत India
+    # - DOMAIN-KEYWORD, xn--mgbbh1a71e, PROXY  #  بھارت India
+    # - DOMAIN-KEYWORD, xn--fpcrj9c3d, PROXY  #  భారత్ India
+    # - DOMAIN-KEYWORD, xn--gecrj9c, PROXY  #  ભારત India
+    # - DOMAIN-KEYWORD, xn--s9brj9c, PROXY  #  ਭਾਰਤ India
+    # - DOMAIN-KEYWORD, xn--45brj9c, PROXY  #  ভারত India
+    # - DOMAIN-KEYWORD, xn--xkc2dl3a5ee0h, PROXY  #  இந்தியா India
+    # - DOMAIN-KEYWORD, xn--2scrj9c, PROXY  #  ಭಾರತ India
+    # - DOMAIN-KEYWORD, xn--rvc1e0am3e, PROXY  #  ഭാരതം India
+    # - DOMAIN-KEYWORD, xn--45br5cyl, PROXY  #  ভাৰত India
+    # - DOMAIN-KEYWORD, xn--3hcrj9c, PROXY  #  ଭାରତ India
+    # - DOMAIN-KEYWORD, xn--mgbbh1a, PROXY  #  بارت India
+    # - DOMAIN-KEYWORD, xn--h2breg3eve, PROXY  #  भारतम् India
+    # - DOMAIN-KEYWORD, xn--h2brj9c8c, PROXY  #  भारोत India
+    # - DOMAIN-KEYWORD, xn--mgbgu82a, PROXY  #  ڀارت India
+    # - DOMAIN-KEYWORD, xn--mgba3a4f16a, PROXY  #  ایران Iran
+    # - DOMAIN-KEYWORD, xn--mgba3a4fra, PROXY  #  ايران Iran
+    # - DOMAIN-KEYWORD, xn--mgbtx2b, PROXY  #  عراق Iran
+    # - DOMAIN-KEYWORD, xn--mgbayh7gpa, PROXY  #  الاردن Jordan
+    # - DOMAIN-KEYWORD, xn--80ao21a, PROXY  #  қаз Kazakhstan
+    # - DOMAIN-KEYWORD, xn--3e0b707e, PROXY  #  한국 Korea
+    # - DOMAIN-KEYWORD, xn--q7ce6a, PROXY  #  ລາວ Laos
+    # - DOMAIN-KEYWORD, xn--mix891f, PROXY  #  澳門 Macao SAR, People's Republic of China
+    # - DOMAIN-KEYWORD, xn--mix082f, PROXY  #  澳门 Macao SAR, People's Republic of China
+    # - DOMAIN-KEYWORD, xn--d1alf, PROXY  #  мкд North Macedonia
+    # - DOMAIN-KEYWORD, xn--mgbx4cd0ab, PROXY  #  مليسيا. Malaysia
+    # - DOMAIN-KEYWORD, xn--mgbah1a3hjkrd, PROXY  #  موريتانيا Mauritania
+    # - DOMAIN-KEYWORD, xn--l1acc, PROXY  #  мон Mongolia
+    # - DOMAIN-KEYWORD, xn--mgbc0a9azcg, PROXY  #  المغرب Morocco
+    # - DOMAIN-KEYWORD, xn--mgb9awbf, PROXY  #  عمان Oman
+    # - DOMAIN-KEYWORD, xn--mgbai9azgqp6j, PROXY  #  پاکستان Pakistan
+    # - DOMAIN-KEYWORD, xn--mgbai9a5eva00b, PROXY  #  پاكستان Pakistan
+    # - DOMAIN-KEYWORD, xn--ygbi2ammx, PROXY  #  فلسطين Palestine
+    # - DOMAIN-KEYWORD, xn--wgbl6a, PROXY  #  قطر Qatar
+    # - DOMAIN-KEYWORD, xn--p1ai, PROXY  #  рф Russian Federation
+    # - DOMAIN-KEYWORD, xn--mgberp4a5d4ar, PROXY  #  السعودية Saudi Arabia
+    # - DOMAIN-KEYWORD, xn--mgberp4a5d4a87g, PROXY  #  السعودیة Saudi Arabia
+    # - DOMAIN-KEYWORD, xn--mgbqly7c0a67fbc, PROXY  #  السعودیۃ Saudi Arabia
+    # - DOMAIN-KEYWORD, xn--mgbqly7cvafr, PROXY  #  السعوديه Saudi Arabia
+    # - DOMAIN-KEYWORD, xn--90a3ac, PROXY  #  срб Serbia
+    # - DOMAIN-KEYWORD, xn--yfro4i67o, PROXY  #  新加坡 Singapore
+    # - DOMAIN-KEYWORD, xn--fzc2c9e2c, PROXY  #  ලංකා Sri Lanka
+    # - DOMAIN-KEYWORD, xn--mgbpl2fh, PROXY  #  سودان Sudan
+    # - DOMAIN-KEYWORD, xn--ogbpf8fl, PROXY  #  سورية Syrian Arab Republic
+    # - DOMAIN-KEYWORD, xn--mgbtf8fl, PROXY  #  سوريا Syrian Arab Republic
+    # - DOMAIN-KEYWORD, xn--kpry57d, PROXY  #  台灣 Taiwan Province, Republic of China
+    # - DOMAIN-KEYWORD, xn--kprw13d, PROXY  #  台湾 Taiwan Province, Republic of China
+    # - DOMAIN-KEYWORD, xn--nnx388a, PROXY  #  臺灣 Taiwan Province, Republic of China
+    # - DOMAIN-KEYWORD, xn--o3cw4h, PROXY  #  ไทย Thailand
+    # - DOMAIN-KEYWORD, xn--pgbs0dh, PROXY  #  تونس Tunisia
+    # - DOMAIN-KEYWORD, xn--j1amh, PROXY  #  укр Ukraine
+    # - DOMAIN-KEYWORD, xn--mgbaam7a8h, PROXY  #  امارات United Arab Emirates
+    # - DOMAIN-KEYWORD, xn--mgb2ddes, PROXY  #  اليمن Yemen
 
     # Automotive Domains
-    - DOMAIN-KEYWORD, aaa, PROXY # American Automobile Association
-    - DOMAIN-KEYWORD, abarth, PROXY # Fiat Industrial S.p.A
-    - DOMAIN-KEYWORD, adac, PROXY # Allgemeiner Deutscher Automobil-Club e.V.
-    - DOMAIN-KEYWORD, alfaromeo, PROXY # Fiat Industrial S.p.A
-    - DOMAIN-KEYWORD, audi, PROXY # Automotive Domains
-    - DOMAIN-KEYWORD, bentley, PROXY # Bentley Motors Limited
-    - DOMAIN-KEYWORD, bmw, PROXY # Bayerische Motoren Werke AG
-    - DOMAIN-KEYWORD, bridgestone, PROXY # Bridgestone Corporation
-    - DOMAIN-KEYWORD, bugatti, PROXY # Bugatti International SA
-    - DOMAIN-KEYWORD, buick, PROXY # General Motors
-    - DOMAIN-KEYWORD, cadillac, PROXY # General Motors
-    - DOMAIN-KEYWORD, case, PROXY # Fiat Industrial S.p.A
-    - DOMAIN-KEYWORD, caseih, PROXY # Fiat Industrial S.p.A
-    - DOMAIN-KEYWORD, chevrolet, PROXY # General Motors
-    - DOMAIN-KEYWORD, chevy, PROXY # General Motors
-    - DOMAIN-KEYWORD, chrysler, PROXY # Chrysler Group LLC.
-    - DOMAIN-KEYWORD, datsun, PROXY # Nissan Motor Company
-    - DOMAIN-KEYWORD, dodge, PROXY # Chrysler Group LLC.
-    - DOMAIN-KEYWORD, dunlop, PROXY # The Goodyear Tire & Rubber Company
-    - DOMAIN-KEYWORD, ferrari, PROXY # Fiat Industrial S.p.A
-    - DOMAIN-KEYWORD, fiat, PROXY # Fiat Industrial S.p.A
-    - DOMAIN-KEYWORD, firestone, PROXY # Bridgestone Corporation
-    - DOMAIN-KEYWORD, ford, PROXY # Ford Motor Company
-    - DOMAIN-KEYWORD, gmc, PROXY # General Motors
-    - DOMAIN-KEYWORD, goodyear, PROXY # The Goodyear Tire & Rubber Company
-    - DOMAIN-KEYWORD, honda, PROXY # Honda Motor Co., Ltd.
-    - DOMAIN-KEYWORD, hyundai, PROXY # Hyundai Motor Company
-    - DOMAIN-KEYWORD, infiniti, PROXY # Nissan Motor Company
-    - DOMAIN-KEYWORD, iveco, PROXY # Fiat Industrial S.p.A
-    - DOMAIN-KEYWORD, jaguar, PROXY # Jaguar Cars Limited
-    - DOMAIN-KEYWORD, jeep, PROXY # Chrysler Group LLC.
-    - DOMAIN-KEYWORD, kia, PROXY # Kia Motors Corporation
-    - DOMAIN-KEYWORD, lamborghini, PROXY # Automobili Lamborghini S.p.A.
-    - DOMAIN-KEYWORD, lancia, PROXY # Fiat Industrial S.p.A
-    - DOMAIN-KEYWORD, landrover, PROXY # Land Rover
-    - DOMAIN-KEYWORD, lexus, PROXY # Toyota
-    - DOMAIN-KEYWORD, lincoln, PROXY # Ford Motor Company
-    - DOMAIN-KEYWORD, maserati, PROXY # Fiat Industrial S.p.A
-    - DOMAIN-KEYWORD, mini, PROXY # Bayerische Motoren Werke Aktiengesellschaft
-    - DOMAIN-KEYWORD, mitsubishi, PROXY # Mitsubishi Corporation
-    - DOMAIN-KEYWORD, mopar, PROXY # Chrysler Group LLC.
-    - DOMAIN-KEYWORD, newholland, PROXY # Fiat Industrial S.p.A
-    - DOMAIN-KEYWORD, nissan, PROXY # Nissan Motor Company
-    - DOMAIN-KEYWORD, ram, PROXY # Chrysler Group LLC.
-    - DOMAIN-KEYWORD, seat, PROXY # SEAT, S.A. (Sociedad Unipersonal)
-    - DOMAIN-KEYWORD, srt, PROXY # Generic Domains
-    - DOMAIN-KEYWORD, suzuki, PROXY # Suzuki Motor Corporation
-    - DOMAIN-KEYWORD, tatamotors, PROXY # Tata Motors Ltd
-    - DOMAIN-KEYWORD, toyota, PROXY # Automotive Domains
-    - DOMAIN-KEYWORD, tvs, PROXY # T V Sundram Iyengar & Sons Limited
-    - DOMAIN-KEYWORD, uconnect, PROXY # Chrysler Group LLC.
-    - DOMAIN-KEYWORD, volkswagen, PROXY # Volkswagen Group of America Inc.
-    - DOMAIN-KEYWORD, volvo, PROXY # Volvo Cars
+    # - DOMAIN-KEYWORD, aaa, PROXY # American Automobile Association
+    # - DOMAIN-KEYWORD, abarth, PROXY # Fiat Industrial S.p.A
+    # - DOMAIN-KEYWORD, adac, PROXY # Allgemeiner Deutscher Automobil-Club e.V.
+    # - DOMAIN-KEYWORD, alfaromeo, PROXY # Fiat Industrial S.p.A
+    # - DOMAIN-KEYWORD, audi, PROXY # Automotive Domains
+    # - DOMAIN-KEYWORD, bentley, PROXY # Bentley Motors Limited
+    # - DOMAIN-KEYWORD, bmw, PROXY # Bayerische Motoren Werke AG
+    # - DOMAIN-KEYWORD, bridgestone, PROXY # Bridgestone Corporation
+    # - DOMAIN-KEYWORD, bugatti, PROXY # Bugatti International SA
+    # - DOMAIN-KEYWORD, buick, PROXY # General Motors
+    # - DOMAIN-KEYWORD, cadillac, PROXY # General Motors
+    # - DOMAIN-KEYWORD, case, PROXY # Fiat Industrial S.p.A
+    # - DOMAIN-KEYWORD, caseih, PROXY # Fiat Industrial S.p.A
+    # - DOMAIN-KEYWORD, chevrolet, PROXY # General Motors
+    # - DOMAIN-KEYWORD, chevy, PROXY # General Motors
+    # - DOMAIN-KEYWORD, chrysler, PROXY # Chrysler Group LLC.
+    # - DOMAIN-KEYWORD, datsun, PROXY # Nissan Motor Company
+    # - DOMAIN-KEYWORD, dodge, PROXY # Chrysler Group LLC.
+    # - DOMAIN-KEYWORD, dunlop, PROXY # The Goodyear Tire & Rubber Company
+    # - DOMAIN-KEYWORD, ferrari, PROXY # Fiat Industrial S.p.A
+    # - DOMAIN-KEYWORD, fiat, PROXY # Fiat Industrial S.p.A
+    # - DOMAIN-KEYWORD, firestone, PROXY # Bridgestone Corporation
+    # - DOMAIN-KEYWORD, ford, PROXY # Ford Motor Company
+    # - DOMAIN-KEYWORD, gmc, PROXY # General Motors
+    # - DOMAIN-KEYWORD, goodyear, PROXY # The Goodyear Tire & Rubber Company
+    # - DOMAIN-KEYWORD, honda, PROXY # Honda Motor Co., Ltd.
+    # - DOMAIN-KEYWORD, hyundai, PROXY # Hyundai Motor Company
+    # - DOMAIN-KEYWORD, infiniti, PROXY # Nissan Motor Company
+    # - DOMAIN-KEYWORD, iveco, PROXY # Fiat Industrial S.p.A
+    # - DOMAIN-KEYWORD, jaguar, PROXY # Jaguar Cars Limited
+    # - DOMAIN-KEYWORD, jeep, PROXY # Chrysler Group LLC.
+    # - DOMAIN-KEYWORD, kia, PROXY # Kia Motors Corporation
+    # - DOMAIN-KEYWORD, lamborghini, PROXY # Automobili Lamborghini S.p.A.
+    # - DOMAIN-KEYWORD, lancia, PROXY # Fiat Industrial S.p.A
+    # - DOMAIN-KEYWORD, landrover, PROXY # Land Rover
+    # - DOMAIN-KEYWORD, lexus, PROXY # Toyota
+    # - DOMAIN-KEYWORD, lincoln, PROXY # Ford Motor Company
+    # - DOMAIN-KEYWORD, maserati, PROXY # Fiat Industrial S.p.A
+    # - DOMAIN-KEYWORD, mini, PROXY # Bayerische Motoren Werke Aktiengesellschaft
+    # - DOMAIN-KEYWORD, mitsubishi, PROXY # Mitsubishi Corporation
+    # - DOMAIN-KEYWORD, mopar, PROXY # Chrysler Group LLC.
+    # - DOMAIN-KEYWORD, newholland, PROXY # Fiat Industrial S.p.A
+    # - DOMAIN-KEYWORD, nissan, PROXY # Nissan Motor Company
+    # - DOMAIN-KEYWORD, ram, PROXY # Chrysler Group LLC.
+    # - DOMAIN-KEYWORD, seat, PROXY # SEAT, S.A. (Sociedad Unipersonal)
+    # - DOMAIN-KEYWORD, srt, PROXY # Generic Domains
+    # - DOMAIN-KEYWORD, suzuki, PROXY # Suzuki Motor Corporation
+    # - DOMAIN-KEYWORD, tatamotors, PROXY # Tata Motors Ltd
+    # - DOMAIN-KEYWORD, toyota, PROXY # Automotive Domains
+    # - DOMAIN-KEYWORD, tvs, PROXY # T V Sundram Iyengar & Sons Limited
+    # - DOMAIN-KEYWORD, uconnect, PROXY # Chrysler Group LLC.
+    # - DOMAIN-KEYWORD, volkswagen, PROXY # Volkswagen Group of America Inc.
+    # - DOMAIN-KEYWORD, volvo, PROXY # Volvo Cars
 
     # Computers & Electronics Domains
-    - DOMAIN-KEYWORD, aigo, PROXY # aigo Digital Technology
-    - DOMAIN-KEYWORD, android, PROXY # Google
-    - DOMAIN-KEYWORD, apple, PROXY # Apple Inc.
-    - DOMAIN-KEYWORD, bestbuy, PROXY # BBY Solutions, Inc.
-    - DOMAIN-KEYWORD, brother, PROXY # Brother Industries, Ltd.
-    - DOMAIN-KEYWORD, canon, PROXY # Computers Electronics Domains
-    - DOMAIN-KEYWORD, dell, PROXY # Dell Inc.
-    - DOMAIN-KEYWORD, digikey, PROXY # Digi-Key Corporation
-    - DOMAIN-KEYWORD, fujitsu, PROXY # Fujitsu Limited
-    - DOMAIN-KEYWORD, fujixerox, PROXY # Xerox DNHC LLC
-    - DOMAIN-KEYWORD, goldpoint, PROXY # Yodobashi Camera Co., LTD
-    - DOMAIN-KEYWORD, ibm, PROXY # International Business Machines Corporation
-    - DOMAIN-KEYWORD, nikon, PROXY # Nikon Corporation
-    - DOMAIN-KEYWORD, nokia, PROXY # Nokia Corporation
-    - DOMAIN-KEYWORD, olympus, PROXY # Olympus Corporation
-    - DOMAIN-KEYWORD, panasonic, PROXY # Panasonic Corporation
-    - DOMAIN-KEYWORD, philips, PROXY # Koninklijke Philips Electronics N.V.
-    - DOMAIN-KEYWORD, pioneer, PROXY # Pioneer Corporation
-    - DOMAIN-KEYWORD, samsung, PROXY # Samsung SDS Co., LTD
-    - DOMAIN-KEYWORD, sharp, PROXY # Sharp Corporation
-    - DOMAIN-KEYWORD, sony, PROXY # Computers Electronics Domains
-    - DOMAIN-KEYWORD, toshiba, PROXY # Toshiba Corporation
-    - DOMAIN-KEYWORD, yodobashi, PROXY # Yodobashi Camera Co., LTD
+    # - DOMAIN-KEYWORD, aigo, PROXY # aigo Digital Technology
+    # - DOMAIN-KEYWORD, android, PROXY # Google
+    # - DOMAIN-KEYWORD, apple, PROXY # Apple Inc.
+    # - DOMAIN-KEYWORD, bestbuy, PROXY # BBY Solutions, Inc.
+    # - DOMAIN-KEYWORD, brother, PROXY # Brother Industries, Ltd.
+    # - DOMAIN-KEYWORD, canon, PROXY # Computers Electronics Domains
+    # - DOMAIN-KEYWORD, dell, PROXY # Dell Inc.
+    # - DOMAIN-KEYWORD, digikey, PROXY # Digi-Key Corporation
+    # - DOMAIN-KEYWORD, fujitsu, PROXY # Fujitsu Limited
+    # - DOMAIN-KEYWORD, fujixerox, PROXY # Xerox DNHC LLC
+    # - DOMAIN-KEYWORD, goldpoint, PROXY # Yodobashi Camera Co., LTD
+    # - DOMAIN-KEYWORD, ibm, PROXY # International Business Machines Corporation
+    # - DOMAIN-KEYWORD, nikon, PROXY # Nikon Corporation
+    # - DOMAIN-KEYWORD, nokia, PROXY # Nokia Corporation
+    # - DOMAIN-KEYWORD, olympus, PROXY # Olympus Corporation
+    # - DOMAIN-KEYWORD, panasonic, PROXY # Panasonic Corporation
+    # - DOMAIN-KEYWORD, philips, PROXY # Koninklijke Philips Electronics N.V.
+    # - DOMAIN-KEYWORD, pioneer, PROXY # Pioneer Corporation
+    # - DOMAIN-KEYWORD, samsung, PROXY # Samsung SDS Co., LTD
+    # - DOMAIN-KEYWORD, sharp, PROXY # Sharp Corporation
+    # - DOMAIN-KEYWORD, sony, PROXY # Computers Electronics Domains
+    # - DOMAIN-KEYWORD, toshiba, PROXY # Toshiba Corporation
+    # - DOMAIN-KEYWORD, yodobashi, PROXY # Yodobashi Camera Co., LTD
 
     # Financial Services Domains
-    - DOMAIN-KEYWORD, allfinanz, PROXY # Allfinanz Deutsche Vermögensberatung Aktiengesellschaft
-    - DOMAIN-KEYWORD, allfinanzberater, PROXY # Allfinanz Deutsche Vermögensberatung Aktiengesellschaft
-    - DOMAIN-KEYWORD, allfinanzberatung, PROXY # Allfinanz Deutsche Vermögensberatung Aktiengesellschaft
-    - DOMAIN-KEYWORD, ally, PROXY # Ally Financial Inc.
-    - DOMAIN-KEYWORD, americanexpress, PROXY # American Express
-    - DOMAIN-KEYWORD, amex, PROXY # American Express
-    - DOMAIN-KEYWORD, amp, PROXY # AMP Limited
-    - DOMAIN-KEYWORD, anz, PROXY # Australia and New Zealand Banking Group Limited
-    - DOMAIN-KEYWORD, banamex, PROXY # Citigroup, Inc.
-    - DOMAIN-KEYWORD, barclaycard, PROXY # Barclays Bank
-    - DOMAIN-KEYWORD, barclays, PROXY # Barclays Bank
-    - DOMAIN-KEYWORD, bbt, PROXY # BB&T Corporation
-    - DOMAIN-KEYWORD, bbva, PROXY # Banco Bilbao Vizcaya Argentaria, S.A.
-    - DOMAIN-KEYWORD, bnl, PROXY # Banca Nazionale del Lavoro
-    - DOMAIN-KEYWORD, bnpparibas, PROXY # BNP Paribas
-    - DOMAIN-KEYWORD, bofa, PROXY # NMS Services, Inc.
-    - DOMAIN-KEYWORD, bradesco, PROXY # Banco Bradesco S.A.
-    - DOMAIN-KEYWORD, capitalone, PROXY # Capital One Financial Corporation
-    - DOMAIN-KEYWORD, cashbackbonus, PROXY # Discover Financial Services
-    - DOMAIN-KEYWORD, cba, PROXY # Commonwealth Bank of Australia
-    - DOMAIN-KEYWORD, cfa, PROXY # CFA Institute
-    - DOMAIN-KEYWORD, chase, PROXY # JPMorgan Chase & Co.
-    - DOMAIN-KEYWORD, cimb, PROXY # CIMB Group Sdn Bhd
-    - DOMAIN-KEYWORD, citadel, PROXY # Citadel, LLC
-    - DOMAIN-KEYWORD, citi, PROXY # Citigroup Inc.
-    - DOMAIN-KEYWORD, commbank, PROXY # Commonwealth Bank of Australia
-    - DOMAIN-KEYWORD, deloitte, PROXY # Financial Services Domains
-    - DOMAIN-KEYWORD, discover, PROXY # Discover Financial Services
-    - DOMAIN-KEYWORD, everbank, PROXY # Financial Services Domains
-    - DOMAIN-KEYWORD, fidelity, PROXY # Fidelity Brokerage Services, LLC
-    - DOMAIN-KEYWORD, hdfcbank, PROXY # HDFC Bank Limited
-    - DOMAIN-KEYWORD, hdfc, PROXY # Housing Development Finance Corporation Limited
-    - DOMAIN-KEYWORD, hsbc, PROXY # HSBC Bank
-    - DOMAIN-KEYWORD, itau, PROXY # Itau Unibanco Holding S.A.
-    - DOMAIN-KEYWORD, jcb, PROXY # JCB Co., Ltd.
-    - DOMAIN-KEYWORD, jll, PROXY # Jones Lang LaSalle Incorporated
-    - DOMAIN-KEYWORD, jpmorganchase, PROXY # JPMorgan Chase & Co.
-    - DOMAIN-KEYWORD, jpmorgan, PROXY # JPMorgan Chase & Co.
-    - DOMAIN-KEYWORD, kfh, PROXY # Kuwait Finance House
-    - DOMAIN-KEYWORD, kpmg, PROXY # KPMG International Cooperative
-    - DOMAIN-KEYWORD, lacaixa, PROXY # La Caixa
-    - DOMAIN-KEYWORD, lasalle, PROXY # Jones Lang LaSalle Incorporated
-    - DOMAIN-KEYWORD, lixil, PROXY # JS Group Corporation
-    - DOMAIN-KEYWORD, lplfinancial, PROXY # LPL Financial
-    - DOMAIN-KEYWORD, lpl, PROXY # LPL Financial
-    - DOMAIN-KEYWORD, nab, PROXY # National Australia Bank Limited
-    - DOMAIN-KEYWORD, nadex, PROXY # IG Group Holdings PLC
-    - DOMAIN-KEYWORD, netbank, PROXY # Commonwealth Bank of Australia
-    - DOMAIN-KEYWORD, northwesternmutual, PROXY # Northwestern Mutual Registry, LLC
-    - DOMAIN-KEYWORD, open, PROXY # American Express Travel Related Services Company, Inc.
-    - DOMAIN-KEYWORD, pictet, PROXY # Pictet Europe S.A.
-    - DOMAIN-KEYWORD, pnc, PROXY # PNC Financial Services
-    - DOMAIN-KEYWORD, pohl, PROXY # Deutsche Vermögensberatung Aktiengesellschaft DVAG
-    - DOMAIN-KEYWORD, pramerica, PROXY # Prudential Financial, Inc.
-    - DOMAIN-KEYWORD, prudential, PROXY # Prudential Financial, Inc.
-    - DOMAIN-KEYWORD, pru, PROXY # Prudential Financial, Inc.
-    - DOMAIN-KEYWORD, pwc, PROXY # PwC Business Trust
-    - DOMAIN-KEYWORD, saxo, PROXY # Saxo Bank A/S
-    - DOMAIN-KEYWORD, sbi, PROXY # State Bank of India
-    - DOMAIN-KEYWORD, scb, PROXY # The Siam Commercial Bank Public Company Limited
-    - DOMAIN-KEYWORD, scor, PROXY # SCOR Global
-    - DOMAIN-KEYWORD, shriram, PROXY # Shriram Capital Ltd.
-    - DOMAIN-KEYWORD, softbank, PROXY # Softbank Corporation
-    - DOMAIN-KEYWORD, statebank, PROXY # State Bank of India
-    - DOMAIN-KEYWORD, temasek, PROXY # Temasek Holdings Limtied
-    - DOMAIN-KEYWORD, transunion, PROXY # Trans Union, LLC
-    - DOMAIN-KEYWORD, ubank, PROXY # National Australia Bank Limited
-    - DOMAIN-KEYWORD, ubs, PROXY # UBS AG
-    - DOMAIN-KEYWORD, vanguard, PROXY # The Vanguard Group, Inc.
-    - DOMAIN-KEYWORD, visa, PROXY # Visa International Service Association
-    - DOMAIN-KEYWORD, wolterskluwer, PROXY # Wolters Kluwer N.V.
+    # - DOMAIN-KEYWORD, allfinanz, PROXY # Allfinanz Deutsche Vermögensberatung Aktiengesellschaft
+    # - DOMAIN-KEYWORD, allfinanzberater, PROXY # Allfinanz Deutsche Vermögensberatung Aktiengesellschaft
+    # - DOMAIN-KEYWORD, allfinanzberatung, PROXY # Allfinanz Deutsche Vermögensberatung Aktiengesellschaft
+    # - DOMAIN-KEYWORD, ally, PROXY # Ally Financial Inc.
+    # - DOMAIN-KEYWORD, americanexpress, PROXY # American Express
+    # - DOMAIN-KEYWORD, amex, PROXY # American Express
+    # - DOMAIN-KEYWORD, amp, PROXY # AMP Limited
+    # - DOMAIN-KEYWORD, anz, PROXY # Australia and New Zealand Banking Group Limited
+    # - DOMAIN-KEYWORD, banamex, PROXY # Citigroup, Inc.
+    # - DOMAIN-KEYWORD, barclaycard, PROXY # Barclays Bank
+    # - DOMAIN-KEYWORD, barclays, PROXY # Barclays Bank
+    # - DOMAIN-KEYWORD, bbt, PROXY # BB&T Corporation
+    # - DOMAIN-KEYWORD, bbva, PROXY # Banco Bilbao Vizcaya Argentaria, S.A.
+    # - DOMAIN-KEYWORD, bnl, PROXY # Banca Nazionale del Lavoro
+    # - DOMAIN-KEYWORD, bnpparibas, PROXY # BNP Paribas
+    # - DOMAIN-KEYWORD, bofa, PROXY # NMS Services, Inc.
+    # - DOMAIN-KEYWORD, bradesco, PROXY # Banco Bradesco S.A.
+    # - DOMAIN-KEYWORD, capitalone, PROXY # Capital One Financial Corporation
+    # - DOMAIN-KEYWORD, cashbackbonus, PROXY # Discover Financial Services
+    # - DOMAIN-KEYWORD, cba, PROXY # Commonwealth Bank of Australia
+    # - DOMAIN-KEYWORD, cfa, PROXY # CFA Institute
+    # - DOMAIN-KEYWORD, chase, PROXY # JPMorgan Chase & Co.
+    # - DOMAIN-KEYWORD, cimb, PROXY # CIMB Group Sdn Bhd
+    # - DOMAIN-KEYWORD, citadel, PROXY # Citadel, LLC
+    # - DOMAIN-KEYWORD, citi, PROXY # Citigroup Inc.
+    # - DOMAIN-KEYWORD, commbank, PROXY # Commonwealth Bank of Australia
+    # - DOMAIN-KEYWORD, deloitte, PROXY # Financial Services Domains
+    # - DOMAIN-KEYWORD, discover, PROXY # Discover Financial Services
+    # - DOMAIN-KEYWORD, everbank, PROXY # Financial Services Domains
+    # - DOMAIN-KEYWORD, fidelity, PROXY # Fidelity Brokerage Services, LLC
+    # - DOMAIN-KEYWORD, hdfcbank, PROXY # HDFC Bank Limited
+    # - DOMAIN-KEYWORD, hdfc, PROXY # Housing Development Finance Corporation Limited
+    # - DOMAIN-KEYWORD, hsbc, PROXY # HSBC Bank
+    # - DOMAIN-KEYWORD, itau, PROXY # Itau Unibanco Holding S.A.
+    # - DOMAIN-KEYWORD, jcb, PROXY # JCB Co., Ltd.
+    # - DOMAIN-KEYWORD, jll, PROXY # Jones Lang LaSalle Incorporated
+    # - DOMAIN-KEYWORD, jpmorganchase, PROXY # JPMorgan Chase & Co.
+    # - DOMAIN-KEYWORD, jpmorgan, PROXY # JPMorgan Chase & Co.
+    # - DOMAIN-KEYWORD, kfh, PROXY # Kuwait Finance House
+    # - DOMAIN-KEYWORD, kpmg, PROXY # KPMG International Cooperative
+    # - DOMAIN-KEYWORD, lacaixa, PROXY # La Caixa
+    # - DOMAIN-KEYWORD, lasalle, PROXY # Jones Lang LaSalle Incorporated
+    # - DOMAIN-KEYWORD, lixil, PROXY # JS Group Corporation
+    # - DOMAIN-KEYWORD, lplfinancial, PROXY # LPL Financial
+    # - DOMAIN-KEYWORD, lpl, PROXY # LPL Financial
+    # - DOMAIN-KEYWORD, nab, PROXY # National Australia Bank Limited
+    # - DOMAIN-KEYWORD, nadex, PROXY # IG Group Holdings PLC
+    # - DOMAIN-KEYWORD, netbank, PROXY # Commonwealth Bank of Australia
+    # - DOMAIN-KEYWORD, northwesternmutual, PROXY # Northwestern Mutual Registry, LLC
+    # - DOMAIN-KEYWORD, open, PROXY # American Express Travel Related Services Company, Inc.
+    # - DOMAIN-KEYWORD, pictet, PROXY # Pictet Europe S.A.
+    # - DOMAIN-KEYWORD, pnc, PROXY # PNC Financial Services
+    # - DOMAIN-KEYWORD, pohl, PROXY # Deutsche Vermögensberatung Aktiengesellschaft DVAG
+    # - DOMAIN-KEYWORD, pramerica, PROXY # Prudential Financial, Inc.
+    # - DOMAIN-KEYWORD, prudential, PROXY # Prudential Financial, Inc.
+    # - DOMAIN-KEYWORD, pru, PROXY # Prudential Financial, Inc.
+    # - DOMAIN-KEYWORD, pwc, PROXY # PwC Business Trust
+    # - DOMAIN-KEYWORD, saxo, PROXY # Saxo Bank A/S
+    # - DOMAIN-KEYWORD, sbi, PROXY # State Bank of India
+    # - DOMAIN-KEYWORD, scb, PROXY # The Siam Commercial Bank Public Company Limited
+    # - DOMAIN-KEYWORD, scor, PROXY # SCOR Global
+    # - DOMAIN-KEYWORD, shriram, PROXY # Shriram Capital Ltd.
+    # - DOMAIN-KEYWORD, softbank, PROXY # Softbank Corporation
+    # - DOMAIN-KEYWORD, statebank, PROXY # State Bank of India
+    # - DOMAIN-KEYWORD, temasek, PROXY # Temasek Holdings Limtied
+    # - DOMAIN-KEYWORD, transunion, PROXY # Trans Union, LLC
+    # - DOMAIN-KEYWORD, ubank, PROXY # National Australia Bank Limited
+    # - DOMAIN-KEYWORD, ubs, PROXY # UBS AG
+    # - DOMAIN-KEYWORD, vanguard, PROXY # The Vanguard Group, Inc.
+    # - DOMAIN-KEYWORD, visa, PROXY # Visa International Service Association
+    # - DOMAIN-KEYWORD, wolterskluwer, PROXY # Wolters Kluwer N.V.
 
     # Home & Garden Domains
-    - DOMAIN-KEYWORD, afamilycompany, PROXY # Johnson Shareholdings, Inc.
-    - DOMAIN-KEYWORD, aquarelle, PROXY # Aquarelle.com
-    - DOMAIN-KEYWORD, diy, PROXY # Lifestyle Domain Holdings, Inc
-    - DOMAIN-KEYWORD, duck, PROXY # Johnson Shareholdings, Inc.
-    - DOMAIN-KEYWORD, finish, PROXY # Home Garden Domains
-    - DOMAIN-KEYWORD, glade, PROXY # Johnson Shareholdings, Inc.
-    - DOMAIN-KEYWORD, homedepot, PROXY # Homer TLC, Inc.
-    - DOMAIN-KEYWORD, homegoods, PROXY # The TJX Companies, Inc.
-    - DOMAIN-KEYWORD, mrmuscle, PROXY # Johnson Shareholdings, Inc.
-    - DOMAIN-KEYWORD, off, PROXY # Johnson Shareholdings, Inc.
-    - DOMAIN-KEYWORD, raid, PROXY # Johnson Shareholdings, Inc.
-    - DOMAIN-KEYWORD, rightathome, PROXY # Johnson Shareholdings, Inc.
-    - DOMAIN-KEYWORD, scjohnson, PROXY # Johnson Shareholdings, Inc.
+    # - DOMAIN-KEYWORD, afamilycompany, PROXY # Johnson Shareholdings, Inc.
+    # - DOMAIN-KEYWORD, aquarelle, PROXY # Aquarelle.com
+    # - DOMAIN-KEYWORD, diy, PROXY # Lifestyle Domain Holdings, Inc
+    # - DOMAIN-KEYWORD, duck, PROXY # Johnson Shareholdings, Inc.
+    # - DOMAIN-KEYWORD, finish, PROXY # Home Garden Domains
+    # - DOMAIN-KEYWORD, glade, PROXY # Johnson Shareholdings, Inc.
+    # - DOMAIN-KEYWORD, homedepot, PROXY # Homer TLC, Inc.
+    # - DOMAIN-KEYWORD, homegoods, PROXY # The TJX Companies, Inc.
+    # - DOMAIN-KEYWORD, mrmuscle, PROXY # Johnson Shareholdings, Inc.
+    # - DOMAIN-KEYWORD, off, PROXY # Johnson Shareholdings, Inc.
+    # - DOMAIN-KEYWORD, raid, PROXY # Johnson Shareholdings, Inc.
+    # - DOMAIN-KEYWORD, rightathome, PROXY # Johnson Shareholdings, Inc.
+    # - DOMAIN-KEYWORD, scjohnson, PROXY # Johnson Shareholdings, Inc.
 
     # Insurance Domains
-    - DOMAIN-KEYWORD, aig, PROXY # American International Group, Inc.
-    - DOMAIN-KEYWORD, allstate, PROXY # Allstate Fire and Casualty Insurance Company
-    - DOMAIN-KEYWORD, americanfamily, PROXY # AmFam, Inc.
-    - DOMAIN-KEYWORD, amfam, PROXY # AmFam, Inc.
-    - DOMAIN-KEYWORD, amica, PROXY # Amica Mutual Insurance Company
-    - DOMAIN-KEYWORD, axa, PROXY # AXA SA
-    - DOMAIN-KEYWORD, chartis, PROXY # American International Group, Inc.
-    - DOMAIN-KEYWORD, esurance, PROXY # Esurance Insurance Company
-    - DOMAIN-KEYWORD, farmers, PROXY # Farmers Insurance Exchange
-    - DOMAIN-KEYWORD, goodhands, PROXY # Allstate Fire and Casualty Insurance Company
-    - DOMAIN-KEYWORD, guardian, PROXY # Guardian News and Media Limited
-    - DOMAIN-KEYWORD, guardianlife, PROXY # The Guardian Life Insurance Company of America
-    - DOMAIN-KEYWORD, iselect, PROXY # iSelect Ltd
-    - DOMAIN-KEYWORD, metlife, PROXY # MetLife Services and Solutions, LLC
-    - DOMAIN-KEYWORD, mma, PROXY # MMA Cooperations
-    - DOMAIN-KEYWORD, mutual, PROXY # Northwestern Mutual MU TLD Registry, LLC
-    - DOMAIN-KEYWORD, nationwide, PROXY # Nationwide Mutual Insurance Company
-    - DOMAIN-KEYWORD, nissay, PROXY # Nippon Life Insurance Company
-    - DOMAIN-KEYWORD, northlandinsurance, PROXY # Travelers TLD, LLC
-    - DOMAIN-KEYWORD, onyourside, PROXY # Nationwide Mutual Insurance Company
-    - DOMAIN-KEYWORD, progressive, PROXY # Progressive Casualty Insurance Company
-    - DOMAIN-KEYWORD, redumbrella, PROXY # Travelers TLD, LLC
-    - DOMAIN-KEYWORD, statefarm, PROXY # State Farm Mutual Automobile Insurance Company
-    - DOMAIN-KEYWORD, swiftcover, PROXY # Swiftcover Insurance Services Limited
-    - DOMAIN-KEYWORD, thehartford, PROXY # Hartford Fire Insurance Company
-    - DOMAIN-KEYWORD, tiaa, PROXY # Teachers Insurance and Annuity Association of America
-    - DOMAIN-KEYWORD, travelersinsurance, PROXY # Travelers TLD, LLC
-    - DOMAIN-KEYWORD, travelers, PROXY # Travelers TLD, LLC
-    - DOMAIN-KEYWORD, travelguard, PROXY # American International Group, Inc.
-    - DOMAIN-KEYWORD, trv, PROXY # Travelers TLD, LLC
-    - DOMAIN-KEYWORD, vig, PROXY # Vienna Insurance Group
+    # - DOMAIN-KEYWORD, aig, PROXY # American International Group, Inc.
+    # - DOMAIN-KEYWORD, allstate, PROXY # Allstate Fire and Casualty Insurance Company
+    # - DOMAIN-KEYWORD, americanfamily, PROXY # AmFam, Inc.
+    # - DOMAIN-KEYWORD, amfam, PROXY # AmFam, Inc.
+    # - DOMAIN-KEYWORD, amica, PROXY # Amica Mutual Insurance Company
+    # - DOMAIN-KEYWORD, axa, PROXY # AXA SA
+    # - DOMAIN-KEYWORD, chartis, PROXY # American International Group, Inc.
+    # - DOMAIN-KEYWORD, esurance, PROXY # Esurance Insurance Company
+    # - DOMAIN-KEYWORD, farmers, PROXY # Farmers Insurance Exchange
+    # - DOMAIN-KEYWORD, goodhands, PROXY # Allstate Fire and Casualty Insurance Company
+    # - DOMAIN-KEYWORD, guardian, PROXY # Guardian News and Media Limited
+    # - DOMAIN-KEYWORD, guardianlife, PROXY # The Guardian Life Insurance Company of America
+    # - DOMAIN-KEYWORD, iselect, PROXY # iSelect Ltd
+    # - DOMAIN-KEYWORD, metlife, PROXY # MetLife Services and Solutions, LLC
+    # - DOMAIN-KEYWORD, mma, PROXY # MMA Cooperations
+    # - DOMAIN-KEYWORD, mutual, PROXY # Northwestern Mutual MU TLD Registry, LLC
+    # - DOMAIN-KEYWORD, nationwide, PROXY # Nationwide Mutual Insurance Company
+    # - DOMAIN-KEYWORD, nissay, PROXY # Nippon Life Insurance Company
+    # - DOMAIN-KEYWORD, northlandinsurance, PROXY # Travelers TLD, LLC
+    # - DOMAIN-KEYWORD, onyourside, PROXY # Nationwide Mutual Insurance Company
+    # - DOMAIN-KEYWORD, progressive, PROXY # Progressive Casualty Insurance Company
+    # - DOMAIN-KEYWORD, redumbrella, PROXY # Travelers TLD, LLC
+    # - DOMAIN-KEYWORD, statefarm, PROXY # State Farm Mutual Automobile Insurance Company
+    # - DOMAIN-KEYWORD, swiftcover, PROXY # Swiftcover Insurance Services Limited
+    # - DOMAIN-KEYWORD, thehartford, PROXY # Hartford Fire Insurance Company
+    # - DOMAIN-KEYWORD, tiaa, PROXY # Teachers Insurance and Annuity Association of America
+    # - DOMAIN-KEYWORD, travelersinsurance, PROXY # Travelers TLD, LLC
+    # - DOMAIN-KEYWORD, travelers, PROXY # Travelers TLD, LLC
+    # - DOMAIN-KEYWORD, travelguard, PROXY # American International Group, Inc.
+    # - DOMAIN-KEYWORD, trv, PROXY # Travelers TLD, LLC
+    # - DOMAIN-KEYWORD, vig, PROXY # Vienna Insurance Group
 
     # Music & Entertainment Domains
-    - DOMAIN-KEYWORD, beats, PROXY # Beats Electronics, LLC
-    - DOMAIN-KEYWORD, blockbuster, PROXY # Dish DBS Corporation
-    - DOMAIN-KEYWORD, bway, PROXY # Key GTLD Holding Inc
-    - DOMAIN-KEYWORD, netflix, PROXY # Netflix, Inc.
-    - DOMAIN-KEYWORD, playstation, PROXY # Sony
-    - DOMAIN-KEYWORD, showtime, PROXY # CBS Corporation
-    - DOMAIN-KEYWORD, tab, PROXY # Tabcorp Holdings Limited
-    - DOMAIN-KEYWORD, williamhill, PROXY # William Hill Organization Limited
-    - DOMAIN-KEYWORD, xbox, PROXY # Microsoft
+    # - DOMAIN-KEYWORD, beats, PROXY # Beats Electronics, LLC
+    # - DOMAIN-KEYWORD, blockbuster, PROXY # Dish DBS Corporation
+    # - DOMAIN-KEYWORD, bway, PROXY # Key GTLD Holding Inc
+    # - DOMAIN-KEYWORD, netflix, PROXY # Netflix, Inc.
+    # - DOMAIN-KEYWORD, playstation, PROXY # Sony
+    # - DOMAIN-KEYWORD, showtime, PROXY # CBS Corporation
+    # - DOMAIN-KEYWORD, tab, PROXY # Tabcorp Holdings Limited
+    # - DOMAIN-KEYWORD, williamhill, PROXY # William Hill Organization Limited
+    # - DOMAIN-KEYWORD, xbox, PROXY # Microsoft
 
     # Retail Domains
-    - DOMAIN-KEYWORD, asda, PROXY # Wal-Mart Stores, Inc.
-    - DOMAIN-KEYWORD, bloomingdales, PROXY # Macys, Inc.
-    - DOMAIN-KEYWORD, george, PROXY # Wal-Mart Stores, Inc.
-    - DOMAIN-KEYWORD, homesense, PROXY # The TJX Companies, Inc.
-    - DOMAIN-KEYWORD, justforu, PROXY # Safeway Inc.
-    - DOMAIN-KEYWORD, lego, PROXY # LEGO Juris A/S
-    - DOMAIN-KEYWORD, macys, PROXY # Macys, Inc.
-    - DOMAIN-KEYWORD, marshalls, PROXY # The TJX Companies, Inc.
-    - DOMAIN-KEYWORD, obi, PROXY # OBI Group Holding GmbH
-    - DOMAIN-KEYWORD, qvc, PROXY # QVC, Inc.
-    - DOMAIN-KEYWORD, safeway, PROXY # Safeway Inc.
-    - DOMAIN-KEYWORD, samsclub, PROXY # Wal-Mart Stores, Inc.
-    - DOMAIN-KEYWORD, shopyourway, PROXY # Shop Your Way, Inc.
-    - DOMAIN-KEYWORD, staples, PROXY # Staples, Inc.
-    - DOMAIN-KEYWORD, target, PROXY # Target Holdings, LLC
-    - DOMAIN-KEYWORD, thd, PROXY # Homer TLC, Inc.
-    - DOMAIN-KEYWORD, tiffany, PROXY # Tiffany and Company
-    - DOMAIN-KEYWORD, tjmaxx, PROXY # The TJX Companies, Inc.
-    - DOMAIN-KEYWORD, tjx, PROXY # The TJX Companies, Inc.
-    - DOMAIN-KEYWORD, tkmaxx, PROXY # The TJX Companies, Inc.
-    - DOMAIN-KEYWORD, vons, PROXY # Safeway Inc.
-    - DOMAIN-KEYWORD, walmart, PROXY # Wal-Mart Stores, Inc.
+    # - DOMAIN-KEYWORD, asda, PROXY # Wal-Mart Stores, Inc.
+    # - DOMAIN-KEYWORD, bloomingdales, PROXY # Macys, Inc.
+    # - DOMAIN-KEYWORD, george, PROXY # Wal-Mart Stores, Inc.
+    # - DOMAIN-KEYWORD, homesense, PROXY # The TJX Companies, Inc.
+    # - DOMAIN-KEYWORD, justforu, PROXY # Safeway Inc.
+    # - DOMAIN-KEYWORD, lego, PROXY # LEGO Juris A/S
+    # - DOMAIN-KEYWORD, macys, PROXY # Macys, Inc.
+    # - DOMAIN-KEYWORD, marshalls, PROXY # The TJX Companies, Inc.
+    # - DOMAIN-KEYWORD, obi, PROXY # OBI Group Holding GmbH
+    # - DOMAIN-KEYWORD, qvc, PROXY # QVC, Inc.
+    # - DOMAIN-KEYWORD, safeway, PROXY # Safeway Inc.
+    # - DOMAIN-KEYWORD, samsclub, PROXY # Wal-Mart Stores, Inc.
+    # - DOMAIN-KEYWORD, shopyourway, PROXY # Shop Your Way, Inc.
+    # - DOMAIN-KEYWORD, staples, PROXY # Staples, Inc.
+    # - DOMAIN-KEYWORD, target, PROXY # Target Holdings, LLC
+    # - DOMAIN-KEYWORD, thd, PROXY # Homer TLC, Inc.
+    # - DOMAIN-KEYWORD, tiffany, PROXY # Tiffany and Company
+    # - DOMAIN-KEYWORD, tjmaxx, PROXY # The TJX Companies, Inc.
+    # - DOMAIN-KEYWORD, tjx, PROXY # The TJX Companies, Inc.
+    # - DOMAIN-KEYWORD, tkmaxx, PROXY # The TJX Companies, Inc.
+    # - DOMAIN-KEYWORD, vons, PROXY # Safeway Inc.
+    # - DOMAIN-KEYWORD, walmart, PROXY # Wal-Mart Stores, Inc.
 
     # Tech Domains
-    - DOMAIN-KEYWORD, abb, PROXY # ABB Ltd.
-    - DOMAIN-KEYWORD, accenture, PROXY # Accenture Global Services Limited
-    - DOMAIN-KEYWORD, acer, PROXY # Acer Incorporated
-    - DOMAIN-KEYWORD, aco, PROXY # ACO Severin Ahlmann GmbH & Co. KG
-    - DOMAIN-KEYWORD, active, PROXY # The Active Network, Inc.
-    - DOMAIN-KEYWORD, airtel, PROXY # Bharti Airtel Limited
-    - DOMAIN-KEYWORD, amazon, PROXY # Technology Domains
-    - DOMAIN-KEYWORD, and, PROXY # Google
-    - DOMAIN-KEYWORD, aol, PROXY # AOL Inc.
-    - DOMAIN-KEYWORD, aws, PROXY # Amazon
-    - DOMAIN-KEYWORD, axis, PROXY # Saudi Telecom Company
-    - DOMAIN-KEYWORD, azure, PROXY # Microsoft
-    - DOMAIN-KEYWORD, chatr, PROXY # Rogers Communications Partnership
-    - DOMAIN-KEYWORD, chrome, PROXY # Google
-    - DOMAIN-KEYWORD, cisco, PROXY # Cisco Technology, Inc.
-    - DOMAIN-KEYWORD, comcast, PROXY # Technology Domains
-    - DOMAIN-KEYWORD, connectors, PROXY # MiTek USA, Inc
-    - DOMAIN-KEYWORD, csc, PROXY # Alliance-One Services, Inc.
-    - DOMAIN-KEYWORD, dclk, PROXY # Google
-    - DOMAIN-KEYWORD, dish, PROXY # Dish DBS Corporation
-    - DOMAIN-KEYWORD, docomo, PROXY # NTT DOCOMO, INC.
-    - DOMAIN-KEYWORD, dtv, PROXY # Dish DBS Corporation
-    - DOMAIN-KEYWORD, dwg, PROXY # Autodesk, Inc.
-    - DOMAIN-KEYWORD, emerson, PROXY # Emerson Electric Co.
-    - DOMAIN-KEYWORD, epson, PROXY # Seiko Epson Corporation
-    - DOMAIN-KEYWORD, ericsson, PROXY # Telefonaktiebolaget L M Ericsson
-    - DOMAIN-KEYWORD, etisalat, PROXY # Emirates Telecommunications Corporation
-    - DOMAIN-KEYWORD, fairwinds, PROXY # FairWinds Partners, LLC
-    - DOMAIN-KEYWORD, fido, PROXY # Rogers Communications Partnership
-    - DOMAIN-KEYWORD, flickr, PROXY # Yahoo
-    - DOMAIN-KEYWORD, frogans, PROXY # Technology Domains
-    - DOMAIN-KEYWORD, frontier, PROXY # Frontier Communications Corporation
-    - DOMAIN-KEYWORD, ftr, PROXY # Frontier Communications Corporation
-    - DOMAIN-KEYWORD, gbiz, PROXY # Google
-    - DOMAIN-KEYWORD, gea, PROXY # GEA Group Aktiengesellschaft
-    - DOMAIN-KEYWORD, ggee, PROXY # G-Gee
-    - DOMAIN-KEYWORD, gle, PROXY # Google
-    - DOMAIN-KEYWORD, gmail, PROXY # Google
-    - DOMAIN-KEYWORD, gmo, PROXY # GMO Internet
-    - DOMAIN-KEYWORD, gmx, PROXY # 1&1 Mail & Media GmbH
-    - DOMAIN-KEYWORD, godaddy, PROXY # GoDaddy
-    - DOMAIN-KEYWORD, goog, PROXY # Google
-    - DOMAIN-KEYWORD, google, PROXY # Google
-    - DOMAIN-KEYWORD, goo, PROXY # Google
-    - DOMAIN-KEYWORD, gree, PROXY # GREE, Inc.
-    - DOMAIN-KEYWORD, guge, PROXY # Google
-    - DOMAIN-KEYWORD, hangout, PROXY # Google
-    - DOMAIN-KEYWORD, hkt, PROXY # PCCW-HKT DataCom Services Limited
-    - DOMAIN-KEYWORD, hotmail, PROXY # Microsoft
-    - DOMAIN-KEYWORD, htc, PROXY # HTC corporation
-    - DOMAIN-KEYWORD, hughes, PROXY # Hughes Satellite Systems Corporation
-    - DOMAIN-KEYWORD, ieee, PROXY # .IEEE Global LLC
-    - DOMAIN-KEYWORD, iinet, PROXY # Connect West Pty. Ltd. (iiNET)
-    - DOMAIN-KEYWORD, infosys, PROXY # Infosys Limited
-    - DOMAIN-KEYWORD, infy, PROXY # Infosys Limited
-    - DOMAIN-KEYWORD, intel, PROXY # Intel Corporation
-    - DOMAIN-KEYWORD, intuit, PROXY # Intuit Administrative Services, Inc.
-    - DOMAIN-KEYWORD, java, PROXY # Oracle Corporation
-    - DOMAIN-KEYWORD, jcp, PROXY # JCP Media, Inc.
-    - DOMAIN-KEYWORD, jmp, PROXY # Matrix IP LLC
-    - DOMAIN-KEYWORD, jprs, PROXY # Japan Registry Services Co., Ltd.
-    - DOMAIN-KEYWORD, juniper, PROXY # Juniper Networks, Inc.
-    - DOMAIN-KEYWORD, kddi, PROXY # Kddi Corporation
-    - DOMAIN-KEYWORD, kindle, PROXY # Amazon
-    - DOMAIN-KEYWORD, konami, PROXY # Konomi Corporation
-    - DOMAIN-KEYWORD, kpn, PROXY # Technology Domains
-    - DOMAIN-KEYWORD, lanxess, PROXY # LANXESS Corporation
-    - DOMAIN-KEYWORD, liaison, PROXY # Liaison Technologies, Incorporated
-    - DOMAIN-KEYWORD, locker, PROXY # Dish DBS Corporation
-    - DOMAIN-KEYWORD, meo, PROXY # PT Comunicacoes S.A.
-    - DOMAIN-KEYWORD, microsoft, PROXY # Microsoft
-    - DOMAIN-KEYWORD, mih, PROXY # Myriad International Holdings B.V.
-    - DOMAIN-KEYWORD, mii, PROXY # MiTek USA, Inc.
-    - DOMAIN-KEYWORD, mint, PROXY # Intuit Administrative Services, Inc.
-    - DOMAIN-KEYWORD, mitek, PROXY # MiTek USA, Inc.
-    - DOMAIN-KEYWORD, mit, PROXY # Massachusetts Institute of Technology
-    - DOMAIN-KEYWORD, mobily, PROXY # GreenTech Consultancy Company W.L.L.
-    - DOMAIN-KEYWORD, mozaic, PROXY # Qatar Telecom
-    - DOMAIN-KEYWORD, mtn, PROXY # MTN Dubai Limited
-    - DOMAIN-KEYWORD, multichoice, PROXY # MultiChoice Africa
-    - DOMAIN-KEYWORD, naspers, PROXY # Intelprop Limited
-    - DOMAIN-KEYWORD, nec, PROXY # NEC Corporation
-    - DOMAIN-KEYWORD, neustar, PROXY # Technology Domains
-    - DOMAIN-KEYWORD, nexus, PROXY # Google
-    - DOMAIN-KEYWORD, nico, PROXY # Dwango Co., Ltd.
-    - DOMAIN-KEYWORD, norton, PROXY # Symantec Corporation
-    - DOMAIN-KEYWORD, ntt, PROXY # Nippon Telegraph and Telephone Corporation
-    - DOMAIN-KEYWORD, office, PROXY # Microsoft
-    - DOMAIN-KEYWORD, ollo, PROXY # Dish DBS Corporation
-    - DOMAIN-KEYWORD, oracle, PROXY # Oracle Corporation
-    - DOMAIN-KEYWORD, orange, PROXY # Orange Brand Services Limited
-    - DOMAIN-KEYWORD, ovh, PROXY # OVH SAS
-    - DOMAIN-KEYWORD, patch, PROXY # AOL Inc.
-    - DOMAIN-KEYWORD, payu, PROXY # MIH PayU B.V.
-    - DOMAIN-KEYWORD, pccw, PROXY # PCCW Enterprises Limited
-    - DOMAIN-KEYWORD, qtel, PROXY # Qatar Telecom
-    - DOMAIN-KEYWORD, quest, PROXY # Quest ION Limited
-    - DOMAIN-KEYWORD, richardli, PROXY # Pacific Century Asset Management (HK) Limited
-    - DOMAIN-KEYWORD, ricoh, PROXY # Ricoh Company, Ltd.
-    - DOMAIN-KEYWORD, rogers, PROXY # Rogers Communications Partnership
-    - DOMAIN-KEYWORD, sakura, PROXY # Sakura Internet Inc.
-    - DOMAIN-KEYWORD, sapo, PROXY # PT Comunicacoes S.A.
-    - DOMAIN-KEYWORD, sas, PROXY # Scandinavian Airlines System Group
-    - DOMAIN-KEYWORD, ses, PROXY # Technology Domains
-    - DOMAIN-KEYWORD, sfr, PROXY # Societe Francaise du Radiotelephone
-    - DOMAIN-KEYWORD, shaw, PROXY # Shaw Cablesystems G.P.
-    - DOMAIN-KEYWORD, skolkovo, PROXY # Technology Domains
-    - DOMAIN-KEYWORD, skydrive, PROXY # Microsoft
-    - DOMAIN-KEYWORD, skype, PROXY # Microsoft
-    - DOMAIN-KEYWORD, sling, PROXY # Hughes Satellite Systems Corporation
-    - DOMAIN-KEYWORD, smart, PROXY # Smart Communications, Inc.
-    - DOMAIN-KEYWORD, stcgroup, PROXY # Saudi Telecom Company
-    - DOMAIN-KEYWORD, stc, PROXY # Saudi Telecom Company
-    - DOMAIN-KEYWORD, symantec, PROXY # Symantec Corporation
-    - DOMAIN-KEYWORD, tata, PROXY # Tata Sons Limited
-    - DOMAIN-KEYWORD, tci, PROXY # Asia Green IT System Bilgisayar San. ve Tic.
-    - DOMAIN-KEYWORD, tdk, PROXY # TDK Corporation
-    - DOMAIN-KEYWORD, telecity, PROXY # TelecityGroup International Limited
-    - DOMAIN-KEYWORD, telefonica, PROXY # Telefónica S.A.
-    - DOMAIN-KEYWORD, terra, PROXY # Telefónica S.A.
-    - DOMAIN-KEYWORD, translations, PROXY # Translations S.A.R.L.
-    - DOMAIN-KEYWORD, ultrabook, PROXY # Intel Corporation
-    - DOMAIN-KEYWORD, unicorn, PROXY # Unicorn a.s.
-    - DOMAIN-KEYWORD, uol, PROXY # UBN Internet
-    - DOMAIN-KEYWORD, verisign, PROXY # Technology Domains
-    - DOMAIN-KEYWORD, viva, PROXY # Saudi Telecom Company
-    - DOMAIN-KEYWORD, vivo, PROXY # Telefonica Brasil S.A.
-    - DOMAIN-KEYWORD, windows, PROXY # Microsoft
-    - DOMAIN-KEYWORD, xfinity, PROXY # Comcast
-    - DOMAIN-KEYWORD, xperia, PROXY # Sony
-    - DOMAIN-KEYWORD, yahoo, PROXY # Yahoo!
-    - DOMAIN-KEYWORD, yamaxun, PROXY # Amazon
-    - DOMAIN-KEYWORD, yandex, PROXY # Yandex, LLC
-    - DOMAIN-KEYWORD, yellowpages, PROXY # Technology Domains
-    - DOMAIN-KEYWORD, youtube, PROXY # Google
-    - DOMAIN-KEYWORD, zappos, PROXY # Amazon
+    # - DOMAIN-KEYWORD, abb, PROXY # ABB Ltd.
+    # - DOMAIN-KEYWORD, accenture, PROXY # Accenture Global Services Limited
+    # - DOMAIN-KEYWORD, acer, PROXY # Acer Incorporated
+    # - DOMAIN-KEYWORD, aco, PROXY # ACO Severin Ahlmann GmbH & Co. KG
+    # - DOMAIN-KEYWORD, active, PROXY # The Active Network, Inc.
+    # - DOMAIN-KEYWORD, airtel, PROXY # Bharti Airtel Limited
+    # - DOMAIN-KEYWORD, amazon, PROXY # Technology Domains
+    # - DOMAIN-KEYWORD, and, PROXY # Google
+    # - DOMAIN-KEYWORD, aol, PROXY # AOL Inc.
+    # - DOMAIN-KEYWORD, aws, PROXY # Amazon
+    # - DOMAIN-KEYWORD, axis, PROXY # Saudi Telecom Company
+    # - DOMAIN-KEYWORD, azure, PROXY # Microsoft
+    # - DOMAIN-KEYWORD, chatr, PROXY # Rogers Communications Partnership
+    # - DOMAIN-KEYWORD, chrome, PROXY # Google
+    # - DOMAIN-KEYWORD, cisco, PROXY # Cisco Technology, Inc.
+    # - DOMAIN-KEYWORD, comcast, PROXY # Technology Domains
+    # - DOMAIN-KEYWORD, connectors, PROXY # MiTek USA, Inc
+    # - DOMAIN-KEYWORD, csc, PROXY # Alliance-One Services, Inc.
+    # - DOMAIN-KEYWORD, dclk, PROXY # Google
+    # - DOMAIN-KEYWORD, dish, PROXY # Dish DBS Corporation
+    # - DOMAIN-KEYWORD, docomo, PROXY # NTT DOCOMO, INC.
+    # - DOMAIN-KEYWORD, dtv, PROXY # Dish DBS Corporation
+    # - DOMAIN-KEYWORD, dwg, PROXY # Autodesk, Inc.
+    # - DOMAIN-KEYWORD, emerson, PROXY # Emerson Electric Co.
+    # - DOMAIN-KEYWORD, epson, PROXY # Seiko Epson Corporation
+    # - DOMAIN-KEYWORD, ericsson, PROXY # Telefonaktiebolaget L M Ericsson
+    # - DOMAIN-KEYWORD, etisalat, PROXY # Emirates Telecommunications Corporation
+    # - DOMAIN-KEYWORD, fairwinds, PROXY # FairWinds Partners, LLC
+    # - DOMAIN-KEYWORD, fido, PROXY # Rogers Communications Partnership
+    # - DOMAIN-KEYWORD, flickr, PROXY # Yahoo
+    # - DOMAIN-KEYWORD, frogans, PROXY # Technology Domains
+    # - DOMAIN-KEYWORD, frontier, PROXY # Frontier Communications Corporation
+    # - DOMAIN-KEYWORD, ftr, PROXY # Frontier Communications Corporation
+    # - DOMAIN-KEYWORD, gbiz, PROXY # Google
+    # - DOMAIN-KEYWORD, gea, PROXY # GEA Group Aktiengesellschaft
+    # - DOMAIN-KEYWORD, ggee, PROXY # G-Gee
+    # - DOMAIN-KEYWORD, gle, PROXY # Google
+    # - DOMAIN-KEYWORD, gmail, PROXY # Google
+    # - DOMAIN-KEYWORD, gmo, PROXY # GMO Internet
+    # - DOMAIN-KEYWORD, gmx, PROXY # 1&1 Mail & Media GmbH
+    # - DOMAIN-KEYWORD, godaddy, PROXY # GoDaddy
+    # - DOMAIN-KEYWORD, goog, PROXY # Google
+    # - DOMAIN-KEYWORD, google, PROXY # Google
+    # - DOMAIN-KEYWORD, goo, PROXY # Google
+    # - DOMAIN-KEYWORD, gree, PROXY # GREE, Inc.
+    # - DOMAIN-KEYWORD, guge, PROXY # Google
+    # - DOMAIN-KEYWORD, hangout, PROXY # Google
+    # - DOMAIN-KEYWORD, hkt, PROXY # PCCW-HKT DataCom Services Limited
+    # - DOMAIN-KEYWORD, hotmail, PROXY # Microsoft
+    # - DOMAIN-KEYWORD, htc, PROXY # HTC corporation
+    # - DOMAIN-KEYWORD, hughes, PROXY # Hughes Satellite Systems Corporation
+    # - DOMAIN-KEYWORD, ieee, PROXY # .IEEE Global LLC
+    # - DOMAIN-KEYWORD, iinet, PROXY # Connect West Pty. Ltd. (iiNET)
+    # - DOMAIN-KEYWORD, infosys, PROXY # Infosys Limited
+    # - DOMAIN-KEYWORD, infy, PROXY # Infosys Limited
+    # - DOMAIN-KEYWORD, intel, PROXY # Intel Corporation
+    # - DOMAIN-KEYWORD, intuit, PROXY # Intuit Administrative Services, Inc.
+    # - DOMAIN-KEYWORD, java, PROXY # Oracle Corporation
+    # - DOMAIN-KEYWORD, jcp, PROXY # JCP Media, Inc.
+    # - DOMAIN-KEYWORD, jmp, PROXY # Matrix IP LLC
+    # - DOMAIN-KEYWORD, jprs, PROXY # Japan Registry Services Co., Ltd.
+    # - DOMAIN-KEYWORD, juniper, PROXY # Juniper Networks, Inc.
+    # - DOMAIN-KEYWORD, kddi, PROXY # Kddi Corporation
+    # - DOMAIN-KEYWORD, kindle, PROXY # Amazon
+    # - DOMAIN-KEYWORD, konami, PROXY # Konomi Corporation
+    # - DOMAIN-KEYWORD, kpn, PROXY # Technology Domains
+    # - DOMAIN-KEYWORD, lanxess, PROXY # LANXESS Corporation
+    # - DOMAIN-KEYWORD, liaison, PROXY # Liaison Technologies, Incorporated
+    # - DOMAIN-KEYWORD, locker, PROXY # Dish DBS Corporation
+    # - DOMAIN-KEYWORD, meo, PROXY # PT Comunicacoes S.A.
+    # - DOMAIN-KEYWORD, microsoft, PROXY # Microsoft
+    # - DOMAIN-KEYWORD, mih, PROXY # Myriad International Holdings B.V.
+    # - DOMAIN-KEYWORD, mii, PROXY # MiTek USA, Inc.
+    # - DOMAIN-KEYWORD, mint, PROXY # Intuit Administrative Services, Inc.
+    # - DOMAIN-KEYWORD, mitek, PROXY # MiTek USA, Inc.
+    # - DOMAIN-KEYWORD, mit, PROXY # Massachusetts Institute of Technology
+    # - DOMAIN-KEYWORD, mobily, PROXY # GreenTech Consultancy Company W.L.L.
+    # - DOMAIN-KEYWORD, mozaic, PROXY # Qatar Telecom
+    # - DOMAIN-KEYWORD, mtn, PROXY # MTN Dubai Limited
+    # - DOMAIN-KEYWORD, multichoice, PROXY # MultiChoice Africa
+    # - DOMAIN-KEYWORD, naspers, PROXY # Intelprop Limited
+    # - DOMAIN-KEYWORD, nec, PROXY # NEC Corporation
+    # - DOMAIN-KEYWORD, neustar, PROXY # Technology Domains
+    # - DOMAIN-KEYWORD, nexus, PROXY # Google
+    # - DOMAIN-KEYWORD, nico, PROXY # Dwango Co., Ltd.
+    # - DOMAIN-KEYWORD, norton, PROXY # Symantec Corporation
+    # - DOMAIN-KEYWORD, ntt, PROXY # Nippon Telegraph and Telephone Corporation
+    # - DOMAIN-KEYWORD, office, PROXY # Microsoft
+    # - DOMAIN-KEYWORD, ollo, PROXY # Dish DBS Corporation
+    # - DOMAIN-KEYWORD, oracle, PROXY # Oracle Corporation
+    # - DOMAIN-KEYWORD, orange, PROXY # Orange Brand Services Limited
+    # - DOMAIN-KEYWORD, ovh, PROXY # OVH SAS
+    # - DOMAIN-KEYWORD, patch, PROXY # AOL Inc.
+    # - DOMAIN-KEYWORD, payu, PROXY # MIH PayU B.V.
+    # - DOMAIN-KEYWORD, pccw, PROXY # PCCW Enterprises Limited
+    # - DOMAIN-KEYWORD, qtel, PROXY # Qatar Telecom
+    # - DOMAIN-KEYWORD, quest, PROXY # Quest ION Limited
+    # - DOMAIN-KEYWORD, richardli, PROXY # Pacific Century Asset Management (HK) Limited
+    # - DOMAIN-KEYWORD, ricoh, PROXY # Ricoh Company, Ltd.
+    # - DOMAIN-KEYWORD, rogers, PROXY # Rogers Communications Partnership
+    # - DOMAIN-KEYWORD, sakura, PROXY # Sakura Internet Inc.
+    # - DOMAIN-KEYWORD, sapo, PROXY # PT Comunicacoes S.A.
+    # - DOMAIN-KEYWORD, sas, PROXY # Scandinavian Airlines System Group
+    # - DOMAIN-KEYWORD, ses, PROXY # Technology Domains
+    # - DOMAIN-KEYWORD, sfr, PROXY # Societe Francaise du Radiotelephone
+    # - DOMAIN-KEYWORD, shaw, PROXY # Shaw Cablesystems G.P.
+    # - DOMAIN-KEYWORD, skolkovo, PROXY # Technology Domains
+    # - DOMAIN-KEYWORD, skydrive, PROXY # Microsoft
+    # - DOMAIN-KEYWORD, skype, PROXY # Microsoft
+    # - DOMAIN-KEYWORD, sling, PROXY # Hughes Satellite Systems Corporation
+    # - DOMAIN-KEYWORD, smart, PROXY # Smart Communications, Inc.
+    # - DOMAIN-KEYWORD, stcgroup, PROXY # Saudi Telecom Company
+    # - DOMAIN-KEYWORD, stc, PROXY # Saudi Telecom Company
+    # - DOMAIN-KEYWORD, symantec, PROXY # Symantec Corporation
+    # - DOMAIN-KEYWORD, tata, PROXY # Tata Sons Limited
+    # - DOMAIN-KEYWORD, tci, PROXY # Asia Green IT System Bilgisayar San. ve Tic.
+    # - DOMAIN-KEYWORD, tdk, PROXY # TDK Corporation
+    # - DOMAIN-KEYWORD, telecity, PROXY # TelecityGroup International Limited
+    # - DOMAIN-KEYWORD, telefonica, PROXY # Telefónica S.A.
+    # - DOMAIN-KEYWORD, terra, PROXY # Telefónica S.A.
+    # - DOMAIN-KEYWORD, translations, PROXY # Translations S.A.R.L.
+    # - DOMAIN-KEYWORD, ultrabook, PROXY # Intel Corporation
+    # - DOMAIN-KEYWORD, unicorn, PROXY # Unicorn a.s.
+    # - DOMAIN-KEYWORD, uol, PROXY # UBN Internet
+    # - DOMAIN-KEYWORD, verisign, PROXY # Technology Domains
+    # - DOMAIN-KEYWORD, viva, PROXY # Saudi Telecom Company
+    # - DOMAIN-KEYWORD, vivo, PROXY # Telefonica Brasil S.A.
+    # - DOMAIN-KEYWORD, windows, PROXY # Microsoft
+    # - DOMAIN-KEYWORD, xfinity, PROXY # Comcast
+    # - DOMAIN-KEYWORD, xperia, PROXY # Sony
+    # - DOMAIN-KEYWORD, yahoo, PROXY # Yahoo!
+    # - DOMAIN-KEYWORD, yamaxun, PROXY # Amazon
+    # - DOMAIN-KEYWORD, yandex, PROXY # Yandex, LLC
+    # - DOMAIN-KEYWORD, yellowpages, PROXY # Technology Domains
+    # - DOMAIN-KEYWORD, youtube, PROXY # Google
+    # - DOMAIN-KEYWORD, zappos, PROXY # Amazon
 
     # Beauty Domains
-    - DOMAIN-KEYWORD, chanel, PROXY # Chanel International B.V.
-    - DOMAIN-KEYWORD, clinique, PROXY # ELC Online Inc.
-    - DOMAIN-KEYWORD, garnier, PROXY # L'Oréal
-    - DOMAIN-KEYWORD, kerastase, PROXY # L'Oréal
-    - DOMAIN-KEYWORD, kiehls, PROXY # L'Oréal
-    - DOMAIN-KEYWORD, lamer, PROXY # ELC Online Inc.
-    - DOMAIN-KEYWORD, lancome, PROXY # L'Oréal
-    - DOMAIN-KEYWORD, loreal, PROXY # L'Oréal
-    - DOMAIN-KEYWORD, matrix, PROXY # L'Oréal
-    - DOMAIN-KEYWORD, maybelline, PROXY # L'Oréal
-    - DOMAIN-KEYWORD, natura, PROXY # Natura Cosmeticos S.A.
-    - DOMAIN-KEYWORD, origins, PROXY # ELC Online Inc.
-    - DOMAIN-KEYWORD, redken, PROXY # L'Oréal
-    - DOMAIN-KEYWORD, svr, PROXY # SVR Group
+    # - DOMAIN-KEYWORD, chanel, PROXY # Chanel International B.V.
+    # - DOMAIN-KEYWORD, clinique, PROXY # ELC Online Inc.
+    # - DOMAIN-KEYWORD, garnier, PROXY # L'Oréal
+    # - DOMAIN-KEYWORD, kerastase, PROXY # L'Oréal
+    # - DOMAIN-KEYWORD, kiehls, PROXY # L'Oréal
+    # - DOMAIN-KEYWORD, lamer, PROXY # ELC Online Inc.
+    # - DOMAIN-KEYWORD, lancome, PROXY # L'Oréal
+    # - DOMAIN-KEYWORD, loreal, PROXY # L'Oréal
+    # - DOMAIN-KEYWORD, matrix, PROXY # L'Oréal
+    # - DOMAIN-KEYWORD, maybelline, PROXY # L'Oréal
+    # - DOMAIN-KEYWORD, natura, PROXY # Natura Cosmeticos S.A.
+    # - DOMAIN-KEYWORD, origins, PROXY # ELC Online Inc.
+    # - DOMAIN-KEYWORD, redken, PROXY # L'Oréal
+    # - DOMAIN-KEYWORD, svr, PROXY # SVR Group
 
     # Consumables Domains
-    - DOMAIN-KEYWORD, barefoot, PROXY # Gallo Vineyards, Inc.
-    - DOMAIN-KEYWORD, beknown, PROXY # Monster Worldwide, Inc.
-    - DOMAIN-KEYWORD, cityeats, PROXY # Scripps Networks Interactive, Inc.
-    - DOMAIN-KEYWORD, cookingchannel, PROXY # Scripps Networks Interactive, Inc.
-    - DOMAIN-KEYWORD, cuisinella, PROXY # SALM S.A.S.
-    - DOMAIN-KEYWORD, delmonte, PROXY # Del Monte International GmbH
-    - DOMAIN-KEYWORD, edeka, PROXY # EDEKA Verband kaufmännischer Genossenschaften e.V.
-    - DOMAIN-KEYWORD, fage, PROXY # FAGE Dairy Industry S.A.
-    - DOMAIN-KEYWORD, ferrero, PROXY # Ferrero Trading Lux S.A.
-    - DOMAIN-KEYWORD, foodnetwork, PROXY # Scripps Networks Interactive, Inc.
-    - DOMAIN-KEYWORD, food, PROXY # Scripps Networks Interactive, Inc
-    - DOMAIN-KEYWORD, gallo, PROXY # Gallo Vineyards, Inc.
-    - DOMAIN-KEYWORD, heinz, PROXY # H.J Heinz Company
-    - DOMAIN-KEYWORD, kinder, PROXY # Ferrero Trading Lux S.A.
-    - DOMAIN-KEYWORD, mcd, PROXY # McDonald’s Corporation
-    - DOMAIN-KEYWORD, mcdonalds, PROXY # McDonald’s Corporation
-    - DOMAIN-KEYWORD, pamperedchef, PROXY # The Pampered Chef, Ltd.
-    - DOMAIN-KEYWORD, rocher, PROXY # Ferrero Trading Lux S.A.
-    - DOMAIN-KEYWORD, wilmar, PROXY # Wilmar International Limited
+    # - DOMAIN-KEYWORD, barefoot, PROXY # Gallo Vineyards, Inc.
+    # - DOMAIN-KEYWORD, beknown, PROXY # Monster Worldwide, Inc.
+    # - DOMAIN-KEYWORD, cityeats, PROXY # Scripps Networks Interactive, Inc.
+    # - DOMAIN-KEYWORD, cookingchannel, PROXY # Scripps Networks Interactive, Inc.
+    # - DOMAIN-KEYWORD, cuisinella, PROXY # SALM S.A.S.
+    # - DOMAIN-KEYWORD, delmonte, PROXY # Del Monte International GmbH
+    # - DOMAIN-KEYWORD, edeka, PROXY # EDEKA Verband kaufmännischer Genossenschaften e.V.
+    # - DOMAIN-KEYWORD, fage, PROXY # FAGE Dairy Industry S.A.
+    # - DOMAIN-KEYWORD, ferrero, PROXY # Ferrero Trading Lux S.A.
+    # - DOMAIN-KEYWORD, foodnetwork, PROXY # Scripps Networks Interactive, Inc.
+    # - DOMAIN-KEYWORD, food, PROXY # Scripps Networks Interactive, Inc
+    # - DOMAIN-KEYWORD, gallo, PROXY # Gallo Vineyards, Inc.
+    # - DOMAIN-KEYWORD, heinz, PROXY # H.J Heinz Company
+    # - DOMAIN-KEYWORD, kinder, PROXY # Ferrero Trading Lux S.A.
+    # - DOMAIN-KEYWORD, mcd, PROXY # McDonald’s Corporation
+    # - DOMAIN-KEYWORD, mcdonalds, PROXY # McDonald’s Corporation
+    # - DOMAIN-KEYWORD, pamperedchef, PROXY # The Pampered Chef, Ltd.
+    # - DOMAIN-KEYWORD, rocher, PROXY # Ferrero Trading Lux S.A.
+    # - DOMAIN-KEYWORD, wilmar, PROXY # Wilmar International Limited
 
     # Full - IDN Domains
-    - DOMAIN-KEYWORD, xn--3oq18vl8pn36a, PROXY # .大众汽车 Volkswagen Investment Co., Ltd.
-    - DOMAIN-KEYWORD, xn--55qx5d8y0buji4b870u, PROXY # .通用电气公司 GE GTLD Holdings LLC
-    - DOMAIN-KEYWORD, xn--5su34j936bgsg, PROXY # .香格里拉 Shangri-La International Hotel Management Limited
-    - DOMAIN-KEYWORD, xn--b4w605ferd, PROXY # .淡马锡 Temasek Holdings Limtied
-    - DOMAIN-KEYWORD, xn--cckwcxetd, PROXY # .アマゾン Amazon
-    - DOMAIN-KEYWORD, xn--cg4bki, PROXY # .삼성 Samsung SDS Co., LTD
-    - DOMAIN-KEYWORD, xn--dkwm73cwpn, PROXY # .欧莱雅 L'Oréal
-    - DOMAIN-KEYWORD, xn--flw351e, PROXY # .谷歌 Google
-    - DOMAIN-KEYWORD, xn--fzys8d69uvgm, PROXY # .電訊盈科 PCCW Enterprises Limited
-    - DOMAIN-KEYWORD, xn--hxt035cmppuel, PROXY # .盛貿飯店 Shangri-La International Hotel Management Limited
-    - DOMAIN-KEYWORD, xn--hxt035czzpffl, PROXY # .盛贸饭店 Shangri-La International Hotel Management Limited
-    - DOMAIN-KEYWORD, xn--j6w470d71issc, PROXY # .香港電訊 PCCW-HKT DataCom Services Limited
-    - DOMAIN-KEYWORD, xn--jlq480n2rg, PROXY # .亚马逊 Amazon
-    - DOMAIN-KEYWORD, xn--jlq61u9w7b, PROXY # .诺基亚 Nokia Corporation
-    - DOMAIN-KEYWORD, xn--kcrx77d1x4a, PROXY # .飞利浦 Koninklijke Philips Electronics N.V.
-    - DOMAIN-KEYWORD, xn--kcrx7bb75ajk3b, PROXY # .普利司通 Bridgestone Corporation
-    - DOMAIN-KEYWORD, xn--mgba3a3ejt, PROXY # .ارامكو Aramco Services Company
-    - DOMAIN-KEYWORD, xn--mgba7c0bbn0a, PROXY # .العليان Olayan Investments Company Establishment
-    - DOMAIN-KEYWORD, xn--mgbaakc7dvf, PROXY # .اتصالات Emirates Telecommunications Corporation
-    - DOMAIN-KEYWORD, xn--mgbb9fbpob, PROXY # .موبايلي GreenTech Consultancy Company W.L.L.
-    - DOMAIN-KEYWORD, xn--ngbe9e0a, PROXY # .بيتك Kuwait Finance House
-    - DOMAIN-KEYWORD, xn--pgb3ceoj, PROXY # .كيوتل Qatar Telecom
-    - DOMAIN-KEYWORD, xn--qcka1pmc, PROXY # .グーグル Google
-    - DOMAIN-KEYWORD, xn--w4r85el8fhu5dnra, PROXY # .嘉里大酒店 Kerry Trading Co. Limited
-    - DOMAIN-KEYWORD, xn--w4rs40l, PROXY # .嘉里 Kerry Trading Co. Limited
+    # - DOMAIN-KEYWORD, xn--3oq18vl8pn36a, PROXY # .大众汽车 Volkswagen Investment Co., Ltd.
+    # - DOMAIN-KEYWORD, xn--55qx5d8y0buji4b870u, PROXY # .通用电气公司 GE GTLD Holdings LLC
+    # - DOMAIN-KEYWORD, xn--5su34j936bgsg, PROXY # .香格里拉 Shangri-La International Hotel Management Limited
+    # - DOMAIN-KEYWORD, xn--b4w605ferd, PROXY # .淡马锡 Temasek Holdings Limtied
+    # - DOMAIN-KEYWORD, xn--cckwcxetd, PROXY # .アマゾン Amazon
+    # - DOMAIN-KEYWORD, xn--cg4bki, PROXY # .삼성 Samsung SDS Co., LTD
+    # - DOMAIN-KEYWORD, xn--dkwm73cwpn, PROXY # .欧莱雅 L'Oréal
+    # - DOMAIN-KEYWORD, xn--flw351e, PROXY # .谷歌 Google
+    # - DOMAIN-KEYWORD, xn--fzys8d69uvgm, PROXY # .電訊盈科 PCCW Enterprises Limited
+    # - DOMAIN-KEYWORD, xn--hxt035cmppuel, PROXY # .盛貿飯店 Shangri-La International Hotel Management Limited
+    # - DOMAIN-KEYWORD, xn--hxt035czzpffl, PROXY # .盛贸饭店 Shangri-La International Hotel Management Limited
+    # - DOMAIN-KEYWORD, xn--j6w470d71issc, PROXY # .香港電訊 PCCW-HKT DataCom Services Limited
+    # - DOMAIN-KEYWORD, xn--jlq480n2rg, PROXY # .亚马逊 Amazon
+    # - DOMAIN-KEYWORD, xn--jlq61u9w7b, PROXY # .诺基亚 Nokia Corporation
+    # - DOMAIN-KEYWORD, xn--kcrx77d1x4a, PROXY # .飞利浦 Koninklijke Philips Electronics N.V.
+    # - DOMAIN-KEYWORD, xn--kcrx7bb75ajk3b, PROXY # .普利司通 Bridgestone Corporation
+    # - DOMAIN-KEYWORD, xn--mgba3a3ejt, PROXY # .ارامكو Aramco Services Company
+    # - DOMAIN-KEYWORD, xn--mgba7c0bbn0a, PROXY # .العليان Olayan Investments Company Establishment
+    # - DOMAIN-KEYWORD, xn--mgbaakc7dvf, PROXY # .اتصالات Emirates Telecommunications Corporation
+    # - DOMAIN-KEYWORD, xn--mgbb9fbpob, PROXY # .موبايلي GreenTech Consultancy Company W.L.L.
+    # - DOMAIN-KEYWORD, xn--ngbe9e0a, PROXY # .بيتك Kuwait Finance House
+    # - DOMAIN-KEYWORD, xn--pgb3ceoj, PROXY # .كيوتل Qatar Telecom
+    # - DOMAIN-KEYWORD, xn--qcka1pmc, PROXY # .グーグル Google
+    # - DOMAIN-KEYWORD, xn--w4r85el8fhu5dnra, PROXY # .嘉里大酒店 Kerry Trading Co. Limited
+    # - DOMAIN-KEYWORD, xn--w4rs40l, PROXY # .嘉里 Kerry Trading Co. Limited
 
     # Hotel & Travel Domains
-    - DOMAIN-KEYWORD, avianca, PROXY # Aerovias del Continente Americano S.A. Avianca
-    - DOMAIN-KEYWORD, caravan, PROXY # Caravan International, Inc.
-    - DOMAIN-KEYWORD, changiairport, PROXY # Changi Airport Group Pte. Ltd
-    - DOMAIN-KEYWORD, cipriani, PROXY # Hotel Cipriani
-    - DOMAIN-KEYWORD, clubmed, PROXY # Club Méditerranée S.A.
-    - DOMAIN-KEYWORD, delta, PROXY # Delta Air Lines, Inc.
-    - DOMAIN-KEYWORD, firmdale, PROXY # Firmdale Holdings Limited
-    - DOMAIN-KEYWORD, hilton, PROXY # HLT Stakis IP Limited
-    - DOMAIN-KEYWORD, hyatt, PROXY # Hyatt Hotels Corporation
-    - DOMAIN-KEYWORD, kerryhotels, PROXY # Kerry Trading Co. Limited
-    - DOMAIN-KEYWORD, kerrylogisitics, PROXY # Kerry Trading Co. Limited
-    - DOMAIN-KEYWORD, kerryproperties, PROXY # Kerry Trading Co. Limited
-    - DOMAIN-KEYWORD, marriott, PROXY # Marriott Worldwide Corporation
-    - DOMAIN-KEYWORD, orientexpress, PROXY # Orient-Express Hotels Ltd.
-    - DOMAIN-KEYWORD, shangrila, PROXY # Shangri-La International Hotel Management Limited
-    - DOMAIN-KEYWORD, tradershotels, PROXY # Shangri-La International Hotel Management Limited
-    - DOMAIN-KEYWORD, tui, PROXY # TUI AG
-    - DOMAIN-KEYWORD, viking, PROXY # Viking River Cruises
-    - DOMAIN-KEYWORD, virgin, PROXY # Virgin Enterprises Limited
-    - DOMAIN-KEYWORD, webjet, PROXY # Webjet Limited
+    # - DOMAIN-KEYWORD, avianca, PROXY # Aerovias del Continente Americano S.A. Avianca
+    # - DOMAIN-KEYWORD, caravan, PROXY # Caravan International, Inc.
+    # - DOMAIN-KEYWORD, changiairport, PROXY # Changi Airport Group Pte. Ltd
+    # - DOMAIN-KEYWORD, cipriani, PROXY # Hotel Cipriani
+    # - DOMAIN-KEYWORD, clubmed, PROXY # Club Méditerranée S.A.
+    # - DOMAIN-KEYWORD, delta, PROXY # Delta Air Lines, Inc.
+    # - DOMAIN-KEYWORD, firmdale, PROXY # Firmdale Holdings Limited
+    # - DOMAIN-KEYWORD, hilton, PROXY # HLT Stakis IP Limited
+    # - DOMAIN-KEYWORD, hyatt, PROXY # Hyatt Hotels Corporation
+    # - DOMAIN-KEYWORD, kerryhotels, PROXY # Kerry Trading Co. Limited
+    # - DOMAIN-KEYWORD, kerrylogisitics, PROXY # Kerry Trading Co. Limited
+    # - DOMAIN-KEYWORD, kerryproperties, PROXY # Kerry Trading Co. Limited
+    # - DOMAIN-KEYWORD, marriott, PROXY # Marriott Worldwide Corporation
+    # - DOMAIN-KEYWORD, orientexpress, PROXY # Orient-Express Hotels Ltd.
+    # - DOMAIN-KEYWORD, shangrila, PROXY # Shangri-La International Hotel Management Limited
+    # - DOMAIN-KEYWORD, tradershotels, PROXY # Shangri-La International Hotel Management Limited
+    # - DOMAIN-KEYWORD, tui, PROXY # TUI AG
+    # - DOMAIN-KEYWORD, viking, PROXY # Viking River Cruises
+    # - DOMAIN-KEYWORD, virgin, PROXY # Virgin Enterprises Limited
+    # - DOMAIN-KEYWORD, webjet, PROXY # Webjet Limited
 
     # Land & Buildings Domains
-    - DOMAIN-KEYWORD, able, PROXY # Able Inc.
-    - DOMAIN-KEYWORD, cbre, PROXY # CBRE, Inc.
-    - DOMAIN-KEYWORD, chintai, PROXY # Chintai Corporation
-    - DOMAIN-KEYWORD, frontdoor, PROXY # Scripps Networks Interactive, Inc.
-    - DOMAIN-KEYWORD, lefrak, PROXY # LeFrak Organization, Inc.
+    # - DOMAIN-KEYWORD, able, PROXY # Able Inc.
+    # - DOMAIN-KEYWORD, cbre, PROXY # CBRE, Inc.
+    # - DOMAIN-KEYWORD, chintai, PROXY # Chintai Corporation
+    # - DOMAIN-KEYWORD, frontdoor, PROXY # Scripps Networks Interactive, Inc.
+    # - DOMAIN-KEYWORD, lefrak, PROXY # LeFrak Organization, Inc.
 
     # News & Media Domains
-    - DOMAIN-KEYWORD, abc, PROXY #  American Broadcasting Companies, Inc.
-    - DOMAIN-KEYWORD, africamagic, PROXY #  Electronic Media Network Limited (M-Net)
-    - DOMAIN-KEYWORD, arte, PROXY #  Association Relative à la Télévision Européenne
-    - DOMAIN-KEYWORD, bbc, PROXY #  British Broadcasting Corporation
-    - DOMAIN-KEYWORD, canalplus, PROXY #  Canal Plus
-    - DOMAIN-KEYWORD, cbn, PROXY #  The Christian Broadcasting Network, Inc.
-    - DOMAIN-KEYWORD, cbs, PROXY #  CBS Corporation
-    - DOMAIN-KEYWORD, dstv, PROXY #  MultiChoice Africa
-    - DOMAIN-KEYWORD, eurovision, PROXY #  European Broadcasting Union
-    - DOMAIN-KEYWORD, fox, PROXY #  FOX Businesses
-    - DOMAIN-KEYWORD, gallup, PROXY #  Gallup, Inc.
-    - DOMAIN-KEYWORD, globo, PROXY #  Globo Comunicação e Participações S.A
-    - DOMAIN-KEYWORD, gotv, PROXY #  MultiChoice Africa
-    - DOMAIN-KEYWORD, guardianmedia, PROXY #  Guardian News and Media Limited
-    - DOMAIN-KEYWORD, hbo, PROXY #  Home Box Office, Inc
-    - DOMAIN-KEYWORD, hgtv, PROXY #  Media Domains
-    - DOMAIN-KEYWORD, imdb, PROXY #  Amazon
-    - DOMAIN-KEYWORD, itv, PROXY #  ITV Services Limited
-    - DOMAIN-KEYWORD, kyknet, PROXY #  Electronic Media Network Limited (M-Net)
-    - DOMAIN-KEYWORD, mnet, PROXY #  Electronic Media Network Limited (M-Net)
-    - DOMAIN-KEYWORD, movistar, PROXY #  Telefonica Group
-    - DOMAIN-KEYWORD, mzansimagic, PROXY #  Electronic Media Network Limited (M-Net)
-    - DOMAIN-KEYWORD, nhk, PROXY #  Japan Broadcasting Corporation (NHK)
-    - DOMAIN-KEYWORD, nowtv, PROXY #  Starbucks (HK) Limited
-    - DOMAIN-KEYWORD, sbs, PROXY #  Special Broadcasting Service Corporation
-    - DOMAIN-KEYWORD, seven, PROXY #  Seven West Media Ltd
-    - DOMAIN-KEYWORD, sky, PROXY #  Sky IP International Ltd
-    - DOMAIN-KEYWORD, spiegel, PROXY #  Media Domains
-    - DOMAIN-KEYWORD, starhub, PROXY #  Media Domains
-    - DOMAIN-KEYWORD, supersport, PROXY #  SuperSport International Holdings Limited
-    - DOMAIN-KEYWORD, theguardian, PROXY #  Guardian News and Media Limited
-    - DOMAIN-KEYWORD, travelchannel, PROXY #  Lifestyle Holdings, Inc.
-    - DOMAIN-KEYWORD, weatherchannel, PROXY #  The Weather Channel, LLC
+    # - DOMAIN-KEYWORD, abc, PROXY #  American Broadcasting Companies, Inc.
+    # - DOMAIN-KEYWORD, africamagic, PROXY #  Electronic Media Network Limited (M-Net)
+    # - DOMAIN-KEYWORD, arte, PROXY #  Association Relative à la Télévision Européenne
+    # - DOMAIN-KEYWORD, bbc, PROXY #  British Broadcasting Corporation
+    # - DOMAIN-KEYWORD, canalplus, PROXY #  Canal Plus
+    # - DOMAIN-KEYWORD, cbn, PROXY #  The Christian Broadcasting Network, Inc.
+    # - DOMAIN-KEYWORD, cbs, PROXY #  CBS Corporation
+    # - DOMAIN-KEYWORD, dstv, PROXY #  MultiChoice Africa
+    # - DOMAIN-KEYWORD, eurovision, PROXY #  European Broadcasting Union
+    # - DOMAIN-KEYWORD, fox, PROXY #  FOX Businesses
+    # - DOMAIN-KEYWORD, gallup, PROXY #  Gallup, Inc.
+    # - DOMAIN-KEYWORD, globo, PROXY #  Globo Comunicação e Participações S.A
+    # - DOMAIN-KEYWORD, gotv, PROXY #  MultiChoice Africa
+    # - DOMAIN-KEYWORD, guardianmedia, PROXY #  Guardian News and Media Limited
+    # - DOMAIN-KEYWORD, hbo, PROXY #  Home Box Office, Inc
+    # - DOMAIN-KEYWORD, hgtv, PROXY #  Media Domains
+    # - DOMAIN-KEYWORD, imdb, PROXY #  Amazon
+    # - DOMAIN-KEYWORD, itv, PROXY #  ITV Services Limited
+    # - DOMAIN-KEYWORD, kyknet, PROXY #  Electronic Media Network Limited (M-Net)
+    # - DOMAIN-KEYWORD, mnet, PROXY #  Electronic Media Network Limited (M-Net)
+    # - DOMAIN-KEYWORD, movistar, PROXY #  Telefonica Group
+    # - DOMAIN-KEYWORD, mzansimagic, PROXY #  Electronic Media Network Limited (M-Net)
+    # - DOMAIN-KEYWORD, nhk, PROXY #  Japan Broadcasting Corporation (NHK)
+    # - DOMAIN-KEYWORD, nowtv, PROXY #  Starbucks (HK) Limited
+    # - DOMAIN-KEYWORD, sbs, PROXY #  Special Broadcasting Service Corporation
+    # - DOMAIN-KEYWORD, seven, PROXY #  Seven West Media Ltd
+    # - DOMAIN-KEYWORD, sky, PROXY #  Sky IP International Ltd
+    # - DOMAIN-KEYWORD, spiegel, PROXY #  Media Domains
+    # - DOMAIN-KEYWORD, starhub, PROXY #  Media Domains
+    # - DOMAIN-KEYWORD, supersport, PROXY #  SuperSport International Holdings Limited
+    # - DOMAIN-KEYWORD, theguardian, PROXY #  Guardian News and Media Limited
+    # - DOMAIN-KEYWORD, travelchannel, PROXY #  Lifestyle Holdings, Inc.
+    # - DOMAIN-KEYWORD, weatherchannel, PROXY #  The Weather Channel, LLC
 
     # School & Training Domains
-    - DOMAIN-KEYWORD, bauhaus, PROXY # Werkhaus GmbH
-    - DOMAIN-KEYWORD, latrobe, PROXY # La Trobe University
-    - DOMAIN-KEYWORD, monash, PROXY # Monash University
-    - DOMAIN-KEYWORD, rmit, PROXY # Royal Melbourne Institute of Technology
+    # - DOMAIN-KEYWORD, bauhaus, PROXY # Werkhaus GmbH
+    # - DOMAIN-KEYWORD, latrobe, PROXY # La Trobe University
+    # - DOMAIN-KEYWORD, monash, PROXY # Monash University
+    # - DOMAIN-KEYWORD, rmit, PROXY # Royal Melbourne Institute of Technology
 
    # tld-opennic
-    - DOMAIN-KEYWORD, .bazar, PROXY
-    - DOMAIN-KEYWORD, .bbs, PROXY
-    - DOMAIN-KEYWORD, .chan, PROXY
-    - DOMAIN-KEYWORD, .coin, PROXY
-    - DOMAIN-KEYWORD, .cyb, PROXY
-    - DOMAIN-KEYWORD, .dyn, PROXY
-    - DOMAIN-KEYWORD, .emc, PROXY
-    - DOMAIN-KEYWORD, .epic, PROXY
-    - DOMAIN-KEYWORD, .free, PROXY
-    - DOMAIN-KEYWORD, .fur, PROXY
-    - DOMAIN-KEYWORD, .geek, PROXY
-    - DOMAIN-KEYWORD, .gopher, PROXY
-    - DOMAIN-KEYWORD, .indy, PROXY
-    - DOMAIN-KEYWORD, .ko, PROXY
-    - DOMAIN-KEYWORD, .ku, PROXY
-    - DOMAIN-KEYWORD, .lib, PROXY
-    - DOMAIN-KEYWORD, .libre, PROXY
-    - DOMAIN-KEYWORD, .neo, PROXY
-    - DOMAIN-KEYWORD, .null, PROXY
-    - DOMAIN-KEYWORD, .o, PROXY
-    - DOMAIN-KEYWORD, .oss, PROXY
-    - DOMAIN-KEYWORD, .oz, PROXY
-    - DOMAIN-KEYWORD, .parody, PROXY
-    - DOMAIN-KEYWORD, .pirate, PROXY
-    - DOMAIN-KEYWORD, .rm, PROXY
-    - DOMAIN-KEYWORD, .te, PROXY
-    - DOMAIN-KEYWORD, .ti, PROXY
-    - DOMAIN-KEYWORD, .uu, PROXY
+    # - DOMAIN-KEYWORD, .bazar, PROXY
+    # - DOMAIN-KEYWORD, .bbs, PROXY
+    # - DOMAIN-KEYWORD, .chan, PROXY
+    # - DOMAIN-KEYWORD, .coin, PROXY
+    # - DOMAIN-KEYWORD, .cyb, PROXY
+    # - DOMAIN-KEYWORD, .dyn, PROXY
+    # - DOMAIN-KEYWORD, .emc, PROXY
+    # - DOMAIN-KEYWORD, .epic, PROXY
+    # - DOMAIN-KEYWORD, .free, PROXY
+    # - DOMAIN-KEYWORD, .fur, PROXY
+    # - DOMAIN-KEYWORD, .geek, PROXY
+    # - DOMAIN-KEYWORD, .gopher, PROXY
+    # - DOMAIN-KEYWORD, .indy, PROXY
+    # - DOMAIN-KEYWORD, .ko, PROXY
+    # - DOMAIN-KEYWORD, .ku, PROXY
+    # - DOMAIN-KEYWORD, .lib, PROXY
+    # - DOMAIN-KEYWORD, .libre, PROXY
+    # - DOMAIN-KEYWORD, .neo, PROXY
+    # - DOMAIN-KEYWORD, .null, PROXY
+    # - DOMAIN-KEYWORD, .o, PROXY
+    # - DOMAIN-KEYWORD, .oss, PROXY
+    # - DOMAIN-KEYWORD, .oz, PROXY
+    # - DOMAIN-KEYWORD, .parody, PROXY
+    # - DOMAIN-KEYWORD, .pirate, PROXY
+    # - DOMAIN-KEYWORD, .rm, PROXY
+    # - DOMAIN-KEYWORD, .te, PROXY
+    # - DOMAIN-KEYWORD, .ti, PROXY
+    # - DOMAIN-KEYWORD, .uu, PROXY
 
    # tlsfingerprint
     - DOMAIN-SUFFIX, tlsfingerprint.io, PROXY
