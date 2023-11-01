@@ -36877,6 +36877,9 @@ rules:
     - DOMAIN-KEYWORD,.ign.com, PROXY
     - DOMAIN-SUFFIX,ign.com, PROXY
 
+   # indiatimes.com
+    - DOMAIN-SUFFIX, indiatimes.com, PROXY
+
    # indiatoday.in
     - DOMAIN-SUFFIX, indiatoday.in, PROXY
 
@@ -37149,7 +37152,11 @@ rules:
    # newcannabisventures
      # tag: electronic cigarettes
     - DOMAIN-KEYWORD, .newcannabisventures, PROXY
+
     - DOMAIN-SUFFIX, newcannabisventures.com, PROXY
+
+   # news18.com
+    - DOMAIN-SUFFIX, news18.com, PROXY
 
    # netflix
 
@@ -37769,7 +37776,7 @@ rules:
     - IP-CIDR, 103.87.207.0/24, PROXY, no-resolve
 
     # USER-AGENT, Argo*, PROXY
-    
+
     # - DOMAIN-KEYWORD, dualstack.apiproxy-, PROXY
     # - DOMAIN-KEYWORD, dualstack.ichnaea-web-, PROXY
     # - DOMAIN-SUFFIX, netflixdnstest0.com, PROXY
@@ -37911,6 +37918,9 @@ rules:
    # rblbank.com
     - DOMAIN-SUFFIX, rblbank.com, PROXY
 
+   # rcrwireless.com
+    - DOMAIN-SUFFIX, rcrwireless.com, PROXY
+
    # reelshort.com
     - DOMAIN-SUFFIX, reelshort.com, PROXY
 
@@ -37949,6 +37959,9 @@ rules:
      # tag: crypto
 
     - DOMAIN-SUFFIX, sandbox.game, PROXY
+
+   # satelles.com
+    - DOMAIN-SUFFIX, satelles.com, PROXY
 
    # screenrant.com
     - DOMAIN-SUFFIX, screenrant.com, PROXY
