@@ -10583,7 +10583,7 @@ rules:
     - DOMAIN-SUFFIX, apple.co.nz, PROXY
     - DOMAIN-SUFFIX, apple.co.th, PROXY
     - DOMAIN-SUFFIX, apple.co.uk, PROXY
-    - DOMAIN-SUFFIX, apple.com, PROXY
+    # - DOMAIN-SUFFIX, apple.com, PROXY
     - DOMAIN-SUFFIX, apple.com.af, PROXY
     - DOMAIN-SUFFIX, apple.com.au, PROXY
     - DOMAIN-SUFFIX, apple.com.bo, PROXY
@@ -10654,7 +10654,7 @@ rules:
     - DOMAIN-SUFFIX, apple.uk, PROXY
     - DOMAIN-SUFFIX, apple.us, PROXY
 
-    - DOMAIN-KEYWORD, .apple, PROXY
+    # - DOMAIN-KEYWORD, .apple, PROXY
 
     # apple.商标
     - DOMAIN-SUFFIX, apple.xn--czr694b, PROXY
@@ -36867,6 +36867,15 @@ rules:
 
    # hubspot
     - DOMAIN-SUFFIX, hubspot.com, PROXY
+  
+   # hulu IP-CIDR
+    - IP-CIDR, 8.28.124.0/24, PROXY, no-resolve
+    - IP-CIDR, 8.28.125.0/24, PROXY, no-resolve
+    - IP-CIDR, 199.60.116.0/24, PROXY, no-resolve
+    - IP-CIDR, 199.200.48.0/24, PROXY, no-resolve
+    - IP-CIDR, 199.200.50.0/23, PROXY, no-resolve
+    - IP-CIDR, 208.91.156.0/23, PROXY, no-resolve
+    - IP-CIDR, 208.91.158.0/23, PROXY, no-resolve
 
    # huraWatch
     - DOMAIN-SUFFIX, hurawatch.at, PROXY
