@@ -1,3 +1,4 @@
+
 #: state the content
 ##: code written down
 # anchor
@@ -1836,6 +1837,16 @@ rules:
     - DOMAIN-SUFFIX, passport.aliyun.com, DIRECT
 
    # apple
+    - DOMAIN-SUFFIX, comm-cohort.ess.apple.com, DIRECT
+    - DOMAIN-SUFFIX, comm-main.ess.apple.com, DIRECT
+    - DOMAIN-SUFFIX, ess.apple.com, DIRECT
+    - DOMAIN-SUFFIX, guzzoni.apple.com, DIRECT # the other rule is "- DOMAIN"
+    - DOMAIN-SUFFIX, inappcheck.itunes.apple.com, DIRECT  # the other rule is "- DOMAIN"
+    - DOMAIN-SUFFIX, invitation.ess.apple.com, DIRECT
+    - DOMAIN-SUFFIX, iphone-ld.apple.com, DIRECT  # the other rule is "- DOMAIN"
+    - DOMAIN-SUFFIX, is1-ssl.mzstatic.com, DIRECT  # the other rule is "- DOMAIN"
+    - DOMAIN-SUFFIX, smp-device-content.apple.com, DIRECT  # the other rule is "- DOMAIN"
+
     # - DOMAIN, 17-courier.push.apple.com, DIRECT
     # - DOMAIN, 20-courier.push.apple.com, DIRECT
     # - DOMAIN, 24-courier.push.apple.com, DIRECT
@@ -1844,7 +1855,6 @@ rules:
     # - DOMAIN, 38-courier.push.apple.com, DIRECT
     # - DOMAIN, 39.courier-push-apple.com.akadns.net, DIRECT
     # - DOMAIN, gateway-asset.icloud-content.com, DIRECT
-    # - DOMAIN, inappcheck.itunes.apple.com, DIRECT
     # - DOMAIN, ioshost.qtlcdn.com, DIRECT
     # - DOMAIN, kt-prod.ess.apple.com, DIRECT
     # - DOMAIN, p140-fmfmobile.icloud.com, DIRECT
@@ -37717,6 +37727,11 @@ rules:
 
     - DOMAIN-SUFFIX, kraken.com, PROXY
 
+   # kucoin
+    - DOMAIN-SUFFIX, kucoin.com, PROXY
+    - DOMAIN-SUFFIX, kucoin.plus, PROXY
+    - DOMAIN-SUFFIX, staticimg.com, PROXY
+
   # l
    # larrainvial.com
      # tag: financial
@@ -38731,6 +38746,9 @@ rules:
 
     - DOMAIN-KEYWORD, .simplemining, PROXY
     - DOMAIN-SUFFIX, simplemining.net, PROXY
+
+   # smartdnsproxy.com
+    - DOMAIN-SUFFIX, smartdnsproxy.com, PROXY
 
    # smartiptv.dnsco.xyz
     - DOMAIN-SUFFIX, more-itv.com, PROXY
