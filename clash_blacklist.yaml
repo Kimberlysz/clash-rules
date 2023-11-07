@@ -37775,47 +37775,53 @@ rules:
     - DOMAIN-SUFFIX, hubspot.com, PROXY
 
    # hulu
+    - DOMAIN-SUFFIX, 3797690.fls.doubleclick.net, PROXY
+    - DOMAIN-SUFFIX, ad.doubleclick.net, PROXY
+    - DOMAIN-SUFFIX, alb.reddit.com, PROXY
     - DOMAIN-SUFFIX, analytics.tiktok.com, PROXY
+    - DOMAIN-SUFFIX, analytics.twitter.com, PROXY
     - DOMAIN-SUFFIX, assetshuluimcom-a.akamaihd.net, PROXY
     - DOMAIN-SUFFIX, c.evidon.com, PROXY
-    - DOMAIN-SUFFIX, cdn-gl.imrworldwide.com, PROXY
     - DOMAIN-SUFFIX, cdn.cookielaw.org, PROXY
     - DOMAIN-SUFFIX, cdn.polyfill.io, PROXY
     - DOMAIN-SUFFIX, cnbl-cdn.bamgrid.com, PROXY
     - DOMAIN-SUFFIX, collect.tealiumiq.com, PROXY
     - DOMAIN-SUFFIX, collector-1564.tvsquared.com, PROXY
-    - DOMAIN-SUFFIX, conviva.com, PROXY
-    - DOMAIN-SUFFIX, cws.conviva.com, PROXY
     - DOMAIN-SUFFIX, di.rlcdn.com, PROXY
     - DOMAIN-SUFFIX, disney.my.sentry.io, PROXY
-    - DOMAIN-SUFFIX, dpm.demdex.net, PROXY
     - DOMAIN-SUFFIX, geolocation.onetrust.com, PROXY
-    - DOMAIN-SUFFIX, http-fa-darwin.hulustream.com, PROXY
-    - DOMAIN-SUFFIX, hulu.hb.omtrdc.net, PROXY
+    - DOMAIN-SUFFIX, idsync.rlcdn.com, PROXY
     - DOMAIN-SUFFIX, insight.adsrvr.org, PROXY
     - DOMAIN-SUFFIX, intljs.rmtag.com, PROXY
-    - DOMAIN-SUFFIX, ipv4.cws.conviva.com, PROXY
-    - DOMAIN-SUFFIX, ipv6.cws.conviva.com, PROXY
     - DOMAIN-SUFFIX, js.adsrvr.org, PROXY
+    - DOMAIN-SUFFIX, metcon.hulu.com, PROXY
     - DOMAIN-SUFFIX, s.yimg.com, PROXY
     - DOMAIN-SUFFIX, sanalytics.disneyplus.com, PROXY
     - DOMAIN-SUFFIX, sc-static.net, PROXY
+    - DOMAIN-SUFFIX, sp.analytics.yahoo.com, PROXY
+    - DOMAIN-SUFFIX, static.ads-twitter.com, PROXY
+    - DOMAIN-SUFFIX, t.co, PROXY
     - DOMAIN-SUFFIX, tags.tiqcdn.com, PROXY
+    - DOMAIN-SUFFIX, td.doubleclick.net, PROXY
+    - DOMAIN-SUFFIX, tr.snapchat.com, PROXY
     - DOMAIN-SUFFIX, ut.rd.linksynergy.com, PROXY
-
-    - DOMAIN, glgcgdqq8miswr3crquuqomzdh6ha1699279081.darnuid.imrworldwide.com, PROXY
+    - DOMAIN-SUFFIX, vortex.hulu.com, PROXY
+    - DOMAIN-SUFFIX, www.facebook.com, PROXY
+    - DOMAIN-SUFFIX, www.googletagmanager.com, PROXY
+    - DOMAIN-SUFFIX, www.hulu.com, PROXY
+    - DOMAIN-SUFFIX, www.redditstatic.com, PROXY
 
    # hulu IP-CIDR
-    - IP-CIDR, 103.148.17.0/24, PROXY, no-resolve
-    - IP-CIDR, 103.149.164.0/24, PROXY, no-resolve
-    - IP-CIDR, 199.200.48.0/24, PROXY, no-resolve
-    - IP-CIDR, 199.200.50.0/23, PROXY, no-resolve
-    - IP-CIDR, 199.60.116.0/24, PROXY, no-resolve
-    - IP-CIDR, 202.52.132.0/24, PROXY, no-resolve
-    - IP-CIDR, 208.91.156.0/23, PROXY, no-resolve
-    - IP-CIDR, 208.91.158.0/23, PROXY, no-resolve
-    - IP-CIDR, 8.28.124.0/24, PROXY, no-resolve
-    - IP-CIDR, 8.28.125.0/24, PROXY, no-resolve 
+    # - IP-CIDR, 103.148.17.0/24, PROXY, no-resolve
+    # - IP-CIDR, 103.149.164.0/24, PROXY, no-resolve
+    # - IP-CIDR, 199.200.48.0/24, PROXY, no-resolve
+    # - IP-CIDR, 199.200.50.0/23, PROXY, no-resolve
+    # - IP-CIDR, 199.60.116.0/24, PROXY, no-resolve
+    # - IP-CIDR, 202.52.132.0/24, PROXY, no-resolve
+    # - IP-CIDR, 208.91.156.0/23, PROXY, no-resolve
+    # - IP-CIDR, 208.91.158.0/23, PROXY, no-resolve
+    # - IP-CIDR, 8.28.124.0/24, PROXY, no-resolve
+    # - IP-CIDR, 8.28.125.0/24, PROXY, no-resolve 
 
    # huraWatch
     - DOMAIN-SUFFIX, hurawatch.at, PROXY
