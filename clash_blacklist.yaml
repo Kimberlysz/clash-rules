@@ -1,4 +1,3 @@
-
 #: state the content
 ##: code written down
 # anchor
@@ -35491,7 +35490,164 @@ rules:
     # - DOMAIN, dmqdd6hw24ucf.cloudfront.net, PROXY
 
    # cnn
+    - DOMAIN-SUFFIX, 30dd9ead345d5de88fbf369520e8fce2.safeframe.googlesyndication.com, PROXY
+    - DOMAIN-SUFFIX, a1068.casalemedia.com, PROXY
+    - DOMAIN-SUFFIX, a125375509.cdn.optimizely.com, PROXY
+    - DOMAIN-SUFFIX, a2058.casalemedia.com, PROXY
+    - DOMAIN-SUFFIX, a2454.casalemedia.com, PROXY
+    - DOMAIN-SUFFIX, a6709203f34992a5095d2bc7ceaf2ec504f651a8.cws.conviva.com, PROXY
+    - DOMAIN-SUFFIX, aa.agkn.com, PROXY
+    - DOMAIN-SUFFIX, aax-us-pdx.amazon-adsystem.com, PROXY
+    - DOMAIN-SUFFIX, aax.amazon-adsystem.com, PROXY
+    - DOMAIN-SUFFIX, acdn.adnxs.com, PROXY
+    - DOMAIN-SUFFIX, ad-us-west.ipredictive.com, PROXY
+    - DOMAIN-SUFFIX, ad.360yield.com, PROXY
+    - DOMAIN-SUFFIX, ads.pubmatic.com, PROXY
+    - DOMAIN-SUFFIX, ads.stickyadstv.com, PROXY
+    - DOMAIN-SUFFIX, ads.us.criteo.com, PROXY
+    - DOMAIN-SUFFIX, ap.lijit.com, PROXY
+    - DOMAIN-SUFFIX, api.zetaglobal.net, PROXY
+    - DOMAIN-SUFFIX, assets.bounceexchange.com, PROXY
+    - DOMAIN-SUFFIX, aux.fqtag.com, PROXY
+    - DOMAIN-SUFFIX, b1sync.zemanta.com, PROXY
+    - DOMAIN-SUFFIX, bh-xandr.contextweb.com, PROXY
+    - DOMAIN-SUFFIX, bidder.criteo.com, PROXY
+    - DOMAIN-SUFFIX, bis5.vidazoo.com, PROXY
+    - DOMAIN-SUFFIX, bpi.rtactivate.com, PROXY
+    - DOMAIN-SUFFIX, btlr.sharethrough.com, PROXY
+    - DOMAIN-SUFFIX, c.amazon-adsystem.com, PROXY
+    - DOMAIN-SUFFIX, c.betrad.com, PROXY
+    - DOMAIN-SUFFIX, c.bing.com, PROXY
+    - DOMAIN-SUFFIX, c.evidon.com, PROXY
+    - DOMAIN-SUFFIX, cadmus.script.ac, PROXY
+    - DOMAIN-SUFFIX, cat.va.us.criteo.com, PROXY
+    - DOMAIN-SUFFIX, cdn.adsafeprotected.com, PROXY
+    - DOMAIN-SUFFIX, cdn.boomtrain.com, PROXY
+    - DOMAIN-SUFFIX, cdn.cookielaw.org, PROXY
+    - DOMAIN-SUFFIX, cdn.doubleverify.com, PROXY
+    - DOMAIN-SUFFIX, cdn.fqtag.com, PROXY
+    - DOMAIN-SUFFIX, cdn.indexww.com, PROXY
+    - DOMAIN-SUFFIX, cdn.jsdelivr.net, PROXY
+    - DOMAIN-SUFFIX, cdn.optimizely.com, PROXY
+    - DOMAIN-SUFFIX, cdn3.optimizely.com, PROXY
+    - DOMAIN-SUFFIX, cdnjs.cloudflare.com, PROXY
+    - DOMAIN-SUFFIX, ce.lijit.com, PROXY
+    - DOMAIN-SUFFIX, cm.adgrx.com, PROXY
+    - DOMAIN-SUFFIX, cm.g.doubleclick.net, PROXY
+    - DOMAIN-SUFFIX, cnn.bounceexchange.com, PROXY
+    - DOMAIN-SUFFIX, collector.cdp.cnn.com, PROXY
+    - DOMAIN-SUFFIX, config.aps.amazon-adsystem.com, PROXY
+    - DOMAIN-SUFFIX, connect-metrics-collector.s-onetag.com, PROXY
+    - DOMAIN-SUFFIX, contextual-analytics.wunderkind.co, PROXY
+    - DOMAIN-SUFFIX, cookies.andbeyond.media, PROXY
+    - DOMAIN-SUFFIX, csm.us.criteo.net, PROXY
+    - DOMAIN-SUFFIX, d.adroll.com, PROXY
+    - DOMAIN-SUFFIX, d.agkn.com, PROXY
+    - DOMAIN-SUFFIX, dpm.demdex.net, PROXY
+    - DOMAIN-SUFFIX, ds.reson8.com, PROXY
+    - DOMAIN-SUFFIX, dsp-uswest.adkernel.com, PROXY
+    - DOMAIN-SUFFIX, dsum-sec.casalemedia.com, PROXY
     - DOMAIN-SUFFIX, edition.cnn.com, PROXY
+    - DOMAIN-SUFFIX, eus.rubiconproject.com, PROXY
+    - DOMAIN-SUFFIX, events.bouncex.net, PROXY
+    - DOMAIN-SUFFIX, events.brightline.tv, PROXY
+    - DOMAIN-SUFFIX, fqtag.com, PROXY
+    - DOMAIN-SUFFIX, geo.ngtv.io, PROXY
+    - DOMAIN-SUFFIX, get.s-onetag.com, PROXY
+    - DOMAIN-SUFFIX, googleads.g.doubleclick.net, PROXY
+    - DOMAIN-SUFFIX, gum.criteo.com, PROXY
+    - DOMAIN-SUFFIX, hbopenbid.pubmatic.com, PROXY
+    - DOMAIN-SUFFIX, htlb.casalemedia.com, PROXY
+    - DOMAIN-SUFFIX, i.clean.gg, PROXY
+    - DOMAIN-SUFFIX, i.liadm.com, PROXY
+    - DOMAIN-SUFFIX, ib.adnxs.com, PROXY
+    - DOMAIN-SUFFIX, id5-sync.com, PROXY
+    - DOMAIN-SUFFIX, imageproxy.us.criteo.net, PROXY
+    - DOMAIN-SUFFIX, images.outbrainimg.com, PROXY
+    - DOMAIN-SUFFIX, inventory.vidazoo.com, PROXY
+    - DOMAIN-SUFFIX, js-sec.indexww.com, PROXY
+    - DOMAIN-SUFFIX, l.betrad.com, PROXY
+    - DOMAIN-SUFFIX, lb.eu-1-id5-sync.com, PROXY
+    - DOMAIN-SUFFIX, libs.outbrain.com, PROXY
+    - DOMAIN-SUFFIX, licensing.bitmovin.com, PROXY
+    - DOMAIN-SUFFIX, lightning.cnn.com, PROXY
+    - DOMAIN-SUFFIX, lightning.warnermediacdn.com, PROXY
+    - DOMAIN-SUFFIX, live-manifests-aka.warnermediacdn.com, PROXY
+    - DOMAIN-SUFFIX, live.rezync.com, PROXY
+    - DOMAIN-SUFFIX, loadus.exelator.com, PROXY
+    - DOMAIN-SUFFIX, log.outbrainimg.com, PROXY
+    - DOMAIN-SUFFIX, logs.browser-intake-datadoghq.com, PROXY
+    - DOMAIN-SUFFIX, logx.optimizely.com, PROXY
+    - DOMAIN-SUFFIX, mab.chartbeat.com, PROXY
+    - DOMAIN-SUFFIX, match.adsrvr.org, PROXY
+    - DOMAIN-SUFFIX, match.prod.bidr.io, PROXY
+    - DOMAIN-SUFFIX, match.sharethrough.com, PROXY
+    - DOMAIN-SUFFIX, mcdp-sadc1.outbrain.com, PROXY
+    - DOMAIN-SUFFIX, measurement-api.criteo.com, PROXY
+    - DOMAIN-SUFFIX, media-cdn.ipredictive.com, PROXY
+    - DOMAIN-SUFFIX, media.cnn.com, PROXY
+    - DOMAIN-SUFFIX, medium.ngtv.io, PROXY
+    - DOMAIN-SUFFIX, mv.outbrain.com, PROXY
+    - DOMAIN-SUFFIX, observe.aniview.com, PROXY
+    - DOMAIN-SUFFIX, onsiterecs.api.boomtrain.com, PROXY
+    - DOMAIN-SUFFIX, outbrain-d.openx.net, PROXY
+    - DOMAIN-SUFFIX, p.rfihub.com, PROXY
+    - DOMAIN-SUFFIX, pagead2.googlesyndication.com, PROXY
+    - DOMAIN-SUFFIX, ping.chartbeat.net, PROXY
+    - DOMAIN-SUFFIX, pixel-sync.sitescout.com, PROXY
+    - DOMAIN-SUFFIX, pixel.adsafeprotected.com, PROXY
+    - DOMAIN-SUFFIX, pixel.rubiconproject.com, PROXY
+    - DOMAIN-SUFFIX, player.aniview.com, PROXY
+    - DOMAIN-SUFFIX, pr-bh.ybp.yahoo.com, PROXY
+    - DOMAIN-SUFFIX, prebid-server.rubiconproject.com, PROXY
+    - DOMAIN-SUFFIX, prebid.ad.smaato.net, PROXY
+    - DOMAIN-SUFFIX, pubads.g.doubleclick.net, PROXY
+    - DOMAIN-SUFFIX, receive.wmcdp.io, PROXY
+    - DOMAIN-SUFFIX, registry.api.cnn.io, PROXY
+    - DOMAIN-SUFFIX, rtb.da.us.criteo.com, PROXY
+    - DOMAIN-SUFFIX, rtb.openx.net, PROXY
+    - DOMAIN-SUFFIX, rtb2-tag.marketiq.com, PROXY
+    - DOMAIN-SUFFIX, s.amazon-adsystem.com, PROXY
+    - DOMAIN-SUFFIX, s.cdn.turner.com, PROXY
+    - DOMAIN-SUFFIX, script.4dex.io, PROXY
+    - DOMAIN-SUFFIX, securepubads.g.doubleclick.net, PROXY
+    - DOMAIN-SUFFIX, segment-data-us-east.zqtk.net, PROXY
+    - DOMAIN-SUFFIX, server7.vidazoo.com, PROXY
+    - DOMAIN-SUFFIX, services.brightline.tv, PROXY
+    - DOMAIN-SUFFIX, sid.storygize.net, PROXY
+    - DOMAIN-SUFFIX, signal-beacon.s-onetag.com, PROXY
+    - DOMAIN-SUFFIX, signal-metrics-collector-beta.s-onetag, PROXY
+    - DOMAIN-SUFFIX, sq-tungsten-ts.amazon-adsystem.com, PROXY
+    - DOMAIN-SUFFIX, ssp-sync.criteo.com, PROXY
+    - DOMAIN-SUFFIX, ssum-sec.casalemedia.com, PROXY
+    - DOMAIN-SUFFIX, stags.bluekai.com, PROXY
+    - DOMAIN-SUFFIX, static.adsafeprotected.com, PROXY
+    - DOMAIN-SUFFIX, static.chartbeat.com, PROXY
+    - DOMAIN-SUFFIX, static.criteo.net, PROXY
+    - DOMAIN-SUFFIX, static.vidazoo.com, PROXY
+    - DOMAIN-SUFFIX, sync-dmp.mobtrakk.com, PROXY
+    - DOMAIN-SUFFIX, tag.bounceexchange.com, PROXY
+    - DOMAIN-SUFFIX, targeting.unrulymedia.com, PROXY
+    - DOMAIN-SUFFIX, token.rubiconproject.com, PROXY
+    - DOMAIN-SUFFIX, tpc.googlesyndication.com, PROXY
+    - DOMAIN-SUFFIX, tps.doubleverify.com, PROXY
+    - DOMAIN-SUFFIX, track1.aniview.com, PROXY
+    - DOMAIN-SUFFIX, track4.aniview.com, PROXY
+    - DOMAIN-SUFFIX, turnip.cdn.turner.com, PROXY
+    - DOMAIN-SUFFIX, um.simpli.fi, PROXY
+    - DOMAIN-SUFFIX, ums.acuityplatform.com, PROXY
+    - DOMAIN-SUFFIX, ups.analytics.yahoo.com, PROXY
+    - DOMAIN-SUFFIX, us-u.openx.net, PROXY
+    - DOMAIN-SUFFIX, videoevents.outbrain.com, PROXY
+    - DOMAIN-SUFFIX, widget-pixels.outbrain.com, PROXY
+    - DOMAIN-SUFFIX, widgets.outbrain.com, PROXY
+    - DOMAIN-SUFFIX, www.google.com, PROXY
+    - DOMAIN-SUFFIX, www.googletagservices.com, PROXY
+    - DOMAIN-SUFFIX, www.i.cdn.cnn.com, PROXY
+    - DOMAIN-SUFFIX, www.me.back, PROXY
+    - DOMAIN-SUFFIX, www.ugdturner.com, PROXY
+    - DOMAIN-SUFFIX, x.bidswitch.net, PROXY
+    - DOMAIN-SUFFIX, z.cdp-dev.cnn.com, PROXY
 
    # coinbase
      # tag: crypto
@@ -37617,15 +37773,49 @@ rules:
 
    # hubspot
     - DOMAIN-SUFFIX, hubspot.com, PROXY
-  
+
+   # hulu
+    - DOMAIN-SUFFIX, analytics.tiktok.com, PROXY
+    - DOMAIN-SUFFIX, assetshuluimcom-a.akamaihd.net, PROXY
+    - DOMAIN-SUFFIX, c.evidon.com, PROXY
+    - DOMAIN-SUFFIX, cdn-gl.imrworldwide.com, PROXY
+    - DOMAIN-SUFFIX, cdn.cookielaw.org, PROXY
+    - DOMAIN-SUFFIX, cdn.polyfill.io, PROXY
+    - DOMAIN-SUFFIX, cnbl-cdn.bamgrid.com, PROXY
+    - DOMAIN-SUFFIX, collect.tealiumiq.com, PROXY
+    - DOMAIN-SUFFIX, collector-1564.tvsquared.com, PROXY
+    - DOMAIN-SUFFIX, conviva.com, PROXY
+    - DOMAIN-SUFFIX, cws.conviva.com, PROXY
+    - DOMAIN-SUFFIX, di.rlcdn.com, PROXY
+    - DOMAIN-SUFFIX, disney.my.sentry.io, PROXY
+    - DOMAIN-SUFFIX, dpm.demdex.net, PROXY
+    - DOMAIN-SUFFIX, geolocation.onetrust.com, PROXY
+    - DOMAIN-SUFFIX, http-fa-darwin.hulustream.com, PROXY
+    - DOMAIN-SUFFIX, hulu.hb.omtrdc.net, PROXY
+    - DOMAIN-SUFFIX, insight.adsrvr.org, PROXY
+    - DOMAIN-SUFFIX, intljs.rmtag.com, PROXY
+    - DOMAIN-SUFFIX, ipv4.cws.conviva.com, PROXY
+    - DOMAIN-SUFFIX, ipv6.cws.conviva.com, PROXY
+    - DOMAIN-SUFFIX, js.adsrvr.org, PROXY
+    - DOMAIN-SUFFIX, s.yimg.com, PROXY
+    - DOMAIN-SUFFIX, sanalytics.disneyplus.com, PROXY
+    - DOMAIN-SUFFIX, sc-static.net, PROXY
+    - DOMAIN-SUFFIX, tags.tiqcdn.com, PROXY
+    - DOMAIN-SUFFIX, ut.rd.linksynergy.com, PROXY
+
+    - DOMAIN, glgcgdqq8miswr3crquuqomzdh6ha1699279081.darnuid.imrworldwide.com, PROXY
+
    # hulu IP-CIDR
-    - IP-CIDR, 8.28.124.0/24, PROXY, no-resolve
-    - IP-CIDR, 8.28.125.0/24, PROXY, no-resolve
-    - IP-CIDR, 199.60.116.0/24, PROXY, no-resolve
+    - IP-CIDR, 103.148.17.0/24, PROXY, no-resolve
+    - IP-CIDR, 103.149.164.0/24, PROXY, no-resolve
     - IP-CIDR, 199.200.48.0/24, PROXY, no-resolve
     - IP-CIDR, 199.200.50.0/23, PROXY, no-resolve
+    - IP-CIDR, 199.60.116.0/24, PROXY, no-resolve
+    - IP-CIDR, 202.52.132.0/24, PROXY, no-resolve
     - IP-CIDR, 208.91.156.0/23, PROXY, no-resolve
     - IP-CIDR, 208.91.158.0/23, PROXY, no-resolve
+    - IP-CIDR, 8.28.124.0/24, PROXY, no-resolve
+    - IP-CIDR, 8.28.125.0/24, PROXY, no-resolve 
 
    # huraWatch
     - DOMAIN-SUFFIX, hurawatch.at, PROXY
@@ -37671,8 +37861,6 @@ rules:
 
    # itv.com
     - DOMAIN-SUFFIX, cassiecloud.com, PROXY
-    - DOMAIN-SUFFIX, conviva.com, PROXY
-    - DOMAIN-SUFFIX, cws.conviva.com, PROXY
     - DOMAIN-SUFFIX, itv.com, PROXY
     - DOMAIN-SUFFIX, launchdarkly.com, PROXY
     - DOMAIN-SUFFIX, splunkcloud.com, PROXY
@@ -40443,7 +40631,6 @@ rules:
     - DOMAIN-SUFFIX, keepsolid.com, PROXY
     - DOMAIN-SUFFIX, ip2location.com, PROXY
     - DOMAIN-SUFFIX, inq.com, PROXY
-    - DOMAIN-SUFFIX, imrworldwide.com, PROXY
     - DOMAIN-SUFFIX, imrworldwide.com, PROXY
     - DOMAIN-SUFFIX, ifconfig.co, PROXY
     - DOMAIN-SUFFIX, hostloc.com, PROXY
