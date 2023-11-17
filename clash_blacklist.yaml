@@ -1824,6 +1824,7 @@ rules:
     # 高德地图
     - DOMAIN-SUFFIX, a.amap.com, DIRECT
     - DOMAIN-SUFFIX, ditu.amap.com, DIRECT
+    - DOMAIN-SUFFIX, m.amap.com, DIRECT
 
    # aliyun
     - DOMAIN-KEYWORD, .aliyun, DIRECT
@@ -1866,7 +1867,7 @@ rules:
     # - DOMAIN-KEYWORD, -fmip.icloud.com, DIRECT
     # - DOMAIN-KEYWORD, -fmipmobile.icloud.com, DIRECT
 
-    # - DOMAIN-SUFFIX, gateway.icloud.com, DIRECT
+    - DOMAIN-SUFFIX, gateway.icloud.com, DIRECT
     # - DOMAIN-SUFFIX, push.apple.com, DIRECT
     # - DOMAIN-SUFFIX, icloud-content.com, DIRECT
     # - DOMAIN-SUFFIX, courier-push-apple.com.akadns.net, DIRECT
@@ -35296,6 +35297,9 @@ rules:
 
     - DOMAIN-SUFFIX, 2miners.com, PROXY
 
+   # 1password.com
+    - DOMAIN-SUFFIX, 1password.com, PROXY
+
   # a
    # aaos.org
     - DOMAIN-SUFFIX, aaos.org, PROXY
@@ -35305,6 +35309,15 @@ rules:
 
    # acipayonline.com
     - DOMAIN-SUFFIX, cipayonline.com, PROXY
+
+   # adtdp.com
+    - DOMAIN, dynalyst-sync.adtdp.com, PROXY
+
+   # agkn.com
+    - DOMAIN-SUFFIX, agkn.com, PROXY
+
+    - DOMAIN, aa.agkn.com, PROXY
+    - DOMAIN, d.agkn.com, PROXY
 
    # agoda.com
     - DOMAIN-SUFFIX, agoda.com, PROXY
@@ -35336,6 +35349,9 @@ rules:
     - IP-CIDR, 54.156.0.0/14, PROXY, no-resolve
     - IP-CIDR, 54.226.0.0/15, PROXY, no-resolve
     - IP-CIDR, 54.230.156.0/22, PROXY, no-resolve
+
+   # amazon-adsystem.com
+    - DOMAIN, aax.amazon-adsystem.com, PROXY
 
    # annas-archive.org
     - DOMAIN-SUFFIX, annas-archive.org, PROXY
@@ -35371,13 +35387,267 @@ rules:
    # badoo
     - DOMAIN-SUFFIX, badoo.com, PROXY
 
+   # bandwagonhost IP-CIDR
+    # - IP-CIDR, 98.142.140.0/22, PROXY
+    # - IP-CIDR, 98.142.138.0/23, PROXY
+    # - IP-CIDR, 98.142.137.0/24, PROXY
+    # - IP-CIDR, 98.142.136.0/24, PROXY
+    # - IP-CIDR, 98.142.132.0/22, PROXY
+    # - IP-CIDR, 98.142.128.0/22, PROXY
+    # - IP-CIDR, 97.64.80.0/22, PROXY
+    # - IP-CIDR, 97.64.44.0/22, PROXY
+    # - IP-CIDR, 97.64.40.0/22, PROXY
+    # - IP-CIDR, 97.64.36.0/22, PROXY
+    # - IP-CIDR, 97.64.32.0/22, PROXY
+    # - IP-CIDR, 97.64.28.0/22, PROXY
+    # - IP-CIDR, 97.64.24.0/22, PROXY
+    # - IP-CIDR, 97.64.20.0/22, PROXY
+    # - IP-CIDR, 97.64.16.0/22, PROXY
+    # - IP-CIDR, 97.64.124.0/22, PROXY
+    # - IP-CIDR, 97.64.120.0/22, PROXY
+    # - IP-CIDR, 97.64.108.0/22, PROXY
+    # - IP-CIDR, 97.64.104.0/22, PROXY
+    # - IP-CIDR, 96.45.176.0/20, PROXY
+    # - IP-CIDR, 95.181.188.0/22, PROXY
+    # - IP-CIDR, 95.169.26.0/24, PROXY
+    # - IP-CIDR, 95.169.25.0/24, PROXY
+    # - IP-CIDR, 95.169.24.0/24, PROXY
+    # - IP-CIDR, 95.169.24.0/22, PROXY
+    # - IP-CIDR, 95.169.0.0/19, PROXY
+    # - IP-CIDR, 95.163.192.0/20, PROXY
+    # - IP-CIDR, 94.103.7.0/24, PROXY
+    # - IP-CIDR, 94.103.6.0/24, PROXY
+    # - IP-CIDR, 94.103.5.0/24, PROXY
+    # - IP-CIDR, 94.103.4.0/24, PROXY
+    # - IP-CIDR, 94.103.4.0/22, PROXY
+    # - IP-CIDR, 93.179.96.0/21, PROXY
+    # - IP-CIDR, 93.179.127.0/24, PROXY
+    # - IP-CIDR, 93.179.126.0/24, PROXY
+    # - IP-CIDR, 93.179.125.0/24, PROXY
+    # - IP-CIDR, 93.179.124.0/24, PROXY
+    # - IP-CIDR, 93.179.116.0/22, PROXY
+    # - IP-CIDR, 93.179.112.0/22, PROXY
+    # - IP-CIDR, 89.208.248.0/21, PROXY
+    # - IP-CIDR, 89.208.240.0/21, PROXY
+    # - IP-CIDR, 89.208.240.0/20, PROXY
+    # - IP-CIDR, 80.251.208.0/20, PROXY
+    # - IP-CIDR, 74.82.192.0/19, PROXY
+    # - IP-CIDR, 74.211.96.0/21, PROXY
+    # - IP-CIDR, 74.211.104.0/21, PROXY
+    # - IP-CIDR, 74.121.148.0/22, PROXY
+    # - IP-CIDR, 74.120.168.0/21, PROXY
+    # - IP-CIDR, 69.194.8.0/22, PROXY
+    # - IP-CIDR, 69.194.14.0/23, PROXY
+    # - IP-CIDR, 69.194.13.0/24, PROXY
+    # - IP-CIDR, 69.194.12.0/24, PROXY
+    # - IP-CIDR, 69.171.76.0/22, PROXY
+    # - IP-CIDR, 69.171.72.0/22, PROXY
+    # - IP-CIDR, 69.171.68.0/22, PROXY
+    # - IP-CIDR, 69.171.67.0/24, PROXY
+    # - IP-CIDR, 69.171.66.0/24, PROXY
+    # - IP-CIDR, 69.171.64.0/24, PROXY
+    # - IP-CIDR, 68.168.128.0/20, PROXY
+    # - IP-CIDR, 67.230.176.0/20, PROXY
+    # - IP-CIDR, 67.230.160.0/20, PROXY
+    # - IP-CIDR, 67.218.128.0/19, PROXY
+    # - IP-CIDR, 67.216.192.0/19, PROXY
+    # - IP-CIDR, 67.209.176.0/20, PROXY
+    # - IP-CIDR, 66.98.112.0/20, PROXY
+    # - IP-CIDR, 66.112.208.0/20, PROXY
+    # - IP-CIDR, 65.49.236.0/22, PROXY
+    # - IP-CIDR, 65.49.232.0/22, PROXY
+    # - IP-CIDR, 65.49.228.0/22, PROXY
+    # - IP-CIDR, 65.49.224.0/22, PROXY
+    # - IP-CIDR, 65.49.208.0/20, PROXY
+    # - IP-CIDR, 65.49.192.0/20, PROXY
+    # - IP-CIDR, 65.49.132.0/22, PROXY
+    # - IP-CIDR, 65.49.131.0/24, PROXY
+    # - IP-CIDR, 64.64.252.0/22, PROXY
+    # - IP-CIDR, 64.64.248.0/22, PROXY
+    # - IP-CIDR, 64.64.244.0/22, PROXY
+    # - IP-CIDR, 64.64.240.0/22, PROXY
+    # - IP-CIDR, 64.64.236.0/22, PROXY
+    # - IP-CIDR, 64.64.232.0/22, PROXY
+    # - IP-CIDR, 64.64.228.0/22, PROXY
+    # - IP-CIDR, 64.64.224.0/22, PROXY
+    # - IP-CIDR, 46.254.88.0/22, PROXY
+    # - IP-CIDR, 45.78.64.0/20, PROXY
+    # - IP-CIDR, 45.78.60.0/22, PROXY
+    # - IP-CIDR, 45.78.56.0/22, PROXY
+    # - IP-CIDR, 45.78.52.0/22, PROXY
+    # - IP-CIDR, 45.78.48.0/22, PROXY
+    # - IP-CIDR, 45.78.0.0/24, PROXY
+    # - IP-CIDR, 45.78.0.0/20, PROXY
+    # - IP-CIDR, 45.62.96.0/22, PROXY
+    # - IP-CIDR, 45.62.124.0/22, PROXY
+    # - IP-CIDR, 45.62.120.0/22, PROXY
+    # - IP-CIDR, 45.62.116.0/22, PROXY
+    # - IP-CIDR, 45.62.112.0/22, PROXY
+    # - IP-CIDR, 45.62.108.0/22, PROXY
+    # - IP-CIDR, 45.62.104.0/22, PROXY
+    # - IP-CIDR, 45.62.100.0/22, PROXY
+    # - IP-CIDR, 43.243.84.0/22, PROXY
+    # - IP-CIDR, 23.83.252.0/22, PROXY
+    # - IP-CIDR, 23.83.248.0/22, PROXY
+    # - IP-CIDR, 23.83.244.0/22, PROXY
+    # - IP-CIDR, 23.83.240.0/22, PROXY
+    # - IP-CIDR, 23.83.236.0/22, PROXY
+    # - IP-CIDR, 23.83.232.0/22, PROXY
+    # - IP-CIDR, 23.83.228.0/22, PROXY
+    # - IP-CIDR, 23.83.224.0/22, PROXY
+    # - IP-CIDR, 23.252.99.0/24, PROXY
+    # - IP-CIDR, 23.252.96.0/24, PROXY
+    # - IP-CIDR, 23.252.104.0/21, PROXY
+    # - IP-CIDR, 23.252.101.0/24, PROXY
+    # - IP-CIDR, 23.252.100.0/24, PROXY
+    # - IP-CIDR, 23.106.152.0/21, PROXY
+    # - IP-CIDR, 23.106.148.0/22, PROXY
+    # - IP-CIDR, 23.106.144.0/22, PROXY
+    # - IP-CIDR, 23.106.140.0/22, PROXY
+    # - IP-CIDR, 23.106.136.0/22, PROXY
+    # - IP-CIDR, 23.106.132.0/22, PROXY
+    # - IP-CIDR, 23.106.128.0/22, PROXY
+    # - IP-CIDR, 23.105.192.0/19, PROXY
+    # - IP-CIDR, 216.24.188.0/22, PROXY
+    # - IP-CIDR, 216.24.184.0/22, PROXY
+    # - IP-CIDR, 216.24.180.0/22, PROXY
+    # - IP-CIDR, 216.24.176.0/22, PROXY
+    # - IP-CIDR, 212.50.252.0/22, PROXY
+    # - IP-CIDR, 212.50.248.0/22, PROXY
+    # - IP-CIDR, 212.50.244.0/22, PROXY
+    # - IP-CIDR, 212.50.232.0/22, PROXY
+    # - IP-CIDR, 212.50.228.0/22, PROXY
+    # - IP-CIDR, 212.50.224.0/22, PROXY
+    # - IP-CIDR, 206.190.232.0/21, PROXY
+    # - IP-CIDR, 199.193.124.0/22, PROXY
+    # - IP-CIDR, 199.19.104.0/21, PROXY
+    # - IP-CIDR, 199.180.112.0/21, PROXY
+    # - IP-CIDR, 199.168.140.0/22, PROXY
+    # - IP-CIDR, 199.168.136.0/22, PROXY
+    # - IP-CIDR, 199.115.228.0/22, PROXY
+    # - IP-CIDR, 198.35.44.0/22, PROXY
+    # - IP-CIDR, 198.181.56.0/22, PROXY
+    # - IP-CIDR, 198.181.44.0/22, PROXY
+    # - IP-CIDR, 198.181.40.0/22, PROXY
+    # - IP-CIDR, 198.181.36.0/22, PROXY
+    # - IP-CIDR, 198.181.32.0/22, PROXY
+    # - IP-CIDR, 192.69.92.0/22, PROXY
+    # - IP-CIDR, 192.69.88.0/22, PROXY
+    # - IP-CIDR, 192.243.124.0/22, PROXY
+    # - IP-CIDR, 192.243.120.0/22, PROXY
+    # - IP-CIDR, 192.243.116.0/22, PROXY
+    # - IP-CIDR, 192.243.112.0/22, PROXY
+    # - IP-CIDR, 185.239.68.0/22, PROXY
+    # - IP-CIDR, 185.212.56.0/22, PROXY
+    # - IP-CIDR, 185.199.243.0/24, PROXY
+    # - IP-CIDR, 185.199.242.0/24, PROXY
+    # - IP-CIDR, 185.199.241.0/24, PROXY
+    # - IP-CIDR, 185.199.240.0/24, PROXY
+    # - IP-CIDR, 184.170.208.0/20, PROXY
+    # - IP-CIDR, 178.157.60.0/22, PROXY
+    # - IP-CIDR, 178.157.56.0/22, PROXY
+    # - IP-CIDR, 178.157.48.0/22, PROXY
+    # - IP-CIDR, 176.122.160.0/19, PROXY
+    # - IP-CIDR, 176.122.128.0/19, PROXY
+    # - IP-CIDR, 174.137.60.0/22, PROXY
+    # - IP-CIDR, 174.137.56.0/22, PROXY
+    # - IP-CIDR, 174.137.52.0/22, PROXY
+    # - IP-CIDR, 174.137.48.0/22, PROXY
+    # - IP-CIDR, 173.242.124.0/22, PROXY
+    # - IP-CIDR, 173.242.120.0/22, PROXY
+    # - IP-CIDR, 173.242.116.0/22, PROXY
+    # - IP-CIDR, 173.242.112.0/22, PROXY
+    # - IP-CIDR, 172.96.252.0/22, PROXY
+    # - IP-CIDR, 172.96.248.0/22, PROXY
+    # - IP-CIDR, 172.96.244.0/22, PROXY
+    # - IP-CIDR, 172.96.240.0/22, PROXY
+    # - IP-CIDR, 172.96.236.0/22, PROXY
+    # - IP-CIDR, 172.96.232.0/22, PROXY
+    # - IP-CIDR, 172.96.228.0/22, PROXY
+    # - IP-CIDR, 172.96.224.0/22, PROXY
+    # - IP-CIDR, 172.96.220.0/22, PROXY
+    # - IP-CIDR, 172.96.216.0/22, PROXY
+    # - IP-CIDR, 172.96.212.0/22, PROXY
+    # - IP-CIDR, 172.96.208.0/22, PROXY
+    # - IP-CIDR, 172.96.204.0/22, PROXY
+    # - IP-CIDR, 172.96.200.0/22, PROXY
+    # - IP-CIDR, 172.96.196.0/22, PROXY
+    # - IP-CIDR, 172.96.192.0/22, PROXY
+    # - IP-CIDR, 172.96.192.0/18, PROXY
+    # - IP-CIDR, 172.96.16.0/22, PROXY
+    # - IP-CIDR, 172.93.40.0/21, PROXY
+    # - IP-CIDR, 172.93.36.0/22, PROXY
+    # - IP-CIDR, 172.93.35.0/24, PROXY
+    # - IP-CIDR, 172.93.34.0/24, PROXY
+    # - IP-CIDR, 172.93.33.0/24, PROXY
+    # - IP-CIDR, 172.93.32.0/24, PROXY
+    # - IP-CIDR, 162.244.243.0/24, PROXY
+    # - IP-CIDR, 162.244.242.0/24, PROXY
+    # - IP-CIDR, 162.244.241.0/24, PROXY
+    # - IP-CIDR, 162.244.240.0/24, PROXY
+    # - IP-CIDR, 162.219.120.0/21, PROXY
+    # - IP-CIDR, 162.211.230.0/23, PROXY
+    # - IP-CIDR, 162.211.228.0/23, PROXY
+    # - IP-CIDR, 162.211.224.0/22, PROXY
+    # - IP-CIDR, 162.211.220.0/22, PROXY
+    # - IP-CIDR, 150.242.89.0/24, PROXY
+    # - IP-CIDR, 150.242.88.0/24, PROXY
+    # - IP-CIDR, 144.34.224.0/19, PROXY
+    # - IP-CIDR, 144.34.192.0/19, PROXY
+    # - IP-CIDR, 144.34.160.0/19, PROXY
+    # - IP-CIDR, 144.34.128.0/19, PROXY
+    # - IP-CIDR, 144.168.56.0/21, PROXY
+    # - IP-CIDR, 138.128.220.0/22, PROXY
+    # - IP-CIDR, 138.128.216.0/22, PROXY
+    # - IP-CIDR, 138.128.212.0/22, PROXY
+    # - IP-CIDR, 138.128.208.0/22, PROXY
+    # - IP-CIDR, 138.128.192.0/20, PROXY
+    # - IP-CIDR, 107.182.184.0/21, PROXY
+    # - IP-CIDR, 107.182.180.0/22, PROXY
+    # - IP-CIDR, 107.182.176.0/22, PROXY
+    # - IP-CIDR, 107.182.16.0/20, PROXY
+    # - IP-CIDR, 104.36.64.0/21, PROXY
+    # - IP-CIDR, 104.36.186.0/24, PROXY
+    # - IP-CIDR, 104.36.185.0/24, PROXY
+    # - IP-CIDR, 104.245.188.0/22, PROXY
+    # - IP-CIDR, 104.244.88.0/21, PROXY
+    # - IP-CIDR, 104.243.16.0/20, PROXY
+    # - IP-CIDR, 104.225.232.0/21, PROXY
+    # - IP-CIDR, 104.225.144.0/20, PROXY
+    # - IP-CIDR, 104.224.176.0/20, PROXY
+    # - IP-CIDR, 104.224.172.0/22, PROXY
+    # - IP-CIDR, 104.224.168.0/22, PROXY
+    # - IP-CIDR, 104.224.160.0/21, PROXY
+    # - IP-CIDR, 104.224.152.0/21, PROXY
+    # - IP-CIDR, 104.224.148.0/22, PROXY
+    # - IP-CIDR, 104.224.144.0/22, PROXY
+    # - IP-CIDR, 104.224.140.0/22, PROXY
+    # - IP-CIDR, 104.224.136.0/22, PROXY
+    # - IP-CIDR, 104.224.128.0/21, PROXY
+    # - IP-CIDR, 104.194.80.0/20, PROXY
+    # - IP-CIDR, 104.194.78.0/23, PROXY
+    # - IP-CIDR, 104.194.77.0/24, PROXY
+    # - IP-CIDR, 104.194.76.0/24, PROXY
+    # - IP-CIDR, 104.194.72.0/22, PROXY
+    # - IP-CIDR, 104.194.68.0/22, PROXY
+    # - IP-CIDR, 104.194.64.0/22, PROXY
+    # - IP-CIDR, 104.194.64.0/19, PROXY
+    # - IP-CIDR, 104.160.40.0/21, PROXY
+    # - IP-CIDR, 104.160.36.0/22, PROXY
+    # - IP-CIDR, 104.160.32.0/22, PROXY
+    # - IP-CIDR, 104.153.96.0/21, PROXY
+    # - IP-CIDR, 104.129.184.0/22, PROXY
+    # - IP-CIDR, 104.129.180.0/22, PROXY
+    # - IP-CIDR, 104.128.88.0/21, PROXY
+    # - IP-CIDR, 104.128.84.0/22, PROXY
+    # - IP-CIDR, 104.128.80.0/22, PROXY
+
    # barnesandnoble
     - DOMAIN-KEYWORD, .barnesandnoble, PROXY
     - DOMAIN-SUFFIX, bn-web.com, PROXY
     - DOMAIN-SUFFIX, css-bn.com, PROXY
     - DOMAIN-SUFFIX, images-bn.com, PROXY
     - DOMAIN-SUFFIX, js-bn.com, PROXY
-    - DOMAIN-SUFFIX, optimizely.com, PROXY
     - DOMAIN-SUFFIX, vantivcnp.com, PROXY
     - DOMAIN-SUFFIX,barnesandnoble.com, PROXY
 
@@ -35433,6 +35703,10 @@ rules:
      # tag: electronic cigarettes
     - DOMAIN-SUFFIX, caliva.com, PROXY
 
+   # casalemedia.com
+    - DOMAIN, dsum-sec.casalemedia.com, PROXY
+    - DOMAIN, htlb.casalemedia.com, PROXY
+
    # cedexis
     - DOMAIN-SUFFIX, cedexis-test.com, PROXY
     - DOMAIN, p29.cedexis-test.com, PROXY
@@ -35444,6 +35718,9 @@ rules:
    # cengage
     - DOMAIN-SUFFIX, cengage.com, PROXY
     - DOMAIN-SUFFIX, gateway.cengage.com, PROXY
+
+   # chartbeat.com
+    - DOMAIN, mab.chartbeat.com, PROXY
 
    # chia
      # tag: crypto
@@ -35458,12 +35735,13 @@ rules:
     - DOMAIN-SUFFIX, clash.la, PROXY
 
    # cloudflare
-    # AS13335 - Cloudflare, Inc.
-
-    # - DOMAIN-SUFFIX, a.nel.cloudflare.com, PROXY
+    - DOMAIN, a.nel.cloudflare.com, PROXY
     # - DOMAIN-SUFFIX, ajax.cloudflare.com, PROXY
     # - DOMAIN-SUFFIX, api.ip.sb.cdn.cloudflare.net, PROXY
     # - DOMAIN-SUFFIX, cdnjs.cloudflare.com, PROXY
+
+    # cloudflare IP-CIDR
+    # AS13335 - Cloudflare, Inc.
 
    # cloudfront
 
@@ -35490,164 +35768,25 @@ rules:
     # - DOMAIN, dmqdd6hw24ucf.cloudfront.net, PROXY
 
    # cnn
-    - DOMAIN-SUFFIX, 30dd9ead345d5de88fbf369520e8fce2.safeframe.googlesyndication.com, PROXY
-    - DOMAIN-SUFFIX, a1068.casalemedia.com, PROXY
-    - DOMAIN-SUFFIX, a125375509.cdn.optimizely.com, PROXY
-    - DOMAIN-SUFFIX, a2058.casalemedia.com, PROXY
-    - DOMAIN-SUFFIX, a2454.casalemedia.com, PROXY
-    - DOMAIN-SUFFIX, a6709203f34992a5095d2bc7ceaf2ec504f651a8.cws.conviva.com, PROXY
-    - DOMAIN-SUFFIX, aa.agkn.com, PROXY
-    - DOMAIN-SUFFIX, aax-us-pdx.amazon-adsystem.com, PROXY
-    - DOMAIN-SUFFIX, aax.amazon-adsystem.com, PROXY
-    - DOMAIN-SUFFIX, acdn.adnxs.com, PROXY
-    - DOMAIN-SUFFIX, ad-us-west.ipredictive.com, PROXY
-    - DOMAIN-SUFFIX, ad.360yield.com, PROXY
-    - DOMAIN-SUFFIX, ads.pubmatic.com, PROXY
-    - DOMAIN-SUFFIX, ads.stickyadstv.com, PROXY
-    - DOMAIN-SUFFIX, ads.us.criteo.com, PROXY
-    - DOMAIN-SUFFIX, ap.lijit.com, PROXY
-    - DOMAIN-SUFFIX, api.zetaglobal.net, PROXY
-    - DOMAIN-SUFFIX, assets.bounceexchange.com, PROXY
-    - DOMAIN-SUFFIX, aux.fqtag.com, PROXY
-    - DOMAIN-SUFFIX, b1sync.zemanta.com, PROXY
-    - DOMAIN-SUFFIX, bh-xandr.contextweb.com, PROXY
-    - DOMAIN-SUFFIX, bidder.criteo.com, PROXY
-    - DOMAIN-SUFFIX, bis5.vidazoo.com, PROXY
-    - DOMAIN-SUFFIX, bpi.rtactivate.com, PROXY
-    - DOMAIN-SUFFIX, btlr.sharethrough.com, PROXY
-    - DOMAIN-SUFFIX, c.amazon-adsystem.com, PROXY
-    - DOMAIN-SUFFIX, c.betrad.com, PROXY
-    - DOMAIN-SUFFIX, c.bing.com, PROXY
-    - DOMAIN-SUFFIX, c.evidon.com, PROXY
-    - DOMAIN-SUFFIX, cadmus.script.ac, PROXY
-    - DOMAIN-SUFFIX, cat.va.us.criteo.com, PROXY
-    - DOMAIN-SUFFIX, cdn.adsafeprotected.com, PROXY
-    - DOMAIN-SUFFIX, cdn.boomtrain.com, PROXY
-    - DOMAIN-SUFFIX, cdn.cookielaw.org, PROXY
-    - DOMAIN-SUFFIX, cdn.doubleverify.com, PROXY
-    - DOMAIN-SUFFIX, cdn.fqtag.com, PROXY
-    - DOMAIN-SUFFIX, cdn.indexww.com, PROXY
-    - DOMAIN-SUFFIX, cdn.jsdelivr.net, PROXY
-    - DOMAIN-SUFFIX, cdn.optimizely.com, PROXY
-    - DOMAIN-SUFFIX, cdn3.optimizely.com, PROXY
-    - DOMAIN-SUFFIX, cdnjs.cloudflare.com, PROXY
-    - DOMAIN-SUFFIX, ce.lijit.com, PROXY
-    - DOMAIN-SUFFIX, cm.adgrx.com, PROXY
-    - DOMAIN-SUFFIX, cm.g.doubleclick.net, PROXY
-    - DOMAIN-SUFFIX, cnn.bounceexchange.com, PROXY
+    - DOMAIN-KEYWORD, .cnn, PROXY
+
     - DOMAIN-SUFFIX, collector.cdp.cnn.com, PROXY
-    - DOMAIN-SUFFIX, config.aps.amazon-adsystem.com, PROXY
-    - DOMAIN-SUFFIX, connect-metrics-collector.s-onetag.com, PROXY
-    - DOMAIN-SUFFIX, contextual-analytics.wunderkind.co, PROXY
-    - DOMAIN-SUFFIX, cookies.andbeyond.media, PROXY
-    - DOMAIN-SUFFIX, csm.us.criteo.net, PROXY
-    - DOMAIN-SUFFIX, d.adroll.com, PROXY
-    - DOMAIN-SUFFIX, d.agkn.com, PROXY
-    - DOMAIN-SUFFIX, dpm.demdex.net, PROXY
-    - DOMAIN-SUFFIX, ds.reson8.com, PROXY
-    - DOMAIN-SUFFIX, dsp-uswest.adkernel.com, PROXY
-    - DOMAIN-SUFFIX, dsum-sec.casalemedia.com, PROXY
     - DOMAIN-SUFFIX, edition.cnn.com, PROXY
-    - DOMAIN-SUFFIX, eus.rubiconproject.com, PROXY
-    - DOMAIN-SUFFIX, events.bouncex.net, PROXY
-    - DOMAIN-SUFFIX, events.brightline.tv, PROXY
-    - DOMAIN-SUFFIX, fqtag.com, PROXY
-    - DOMAIN-SUFFIX, geo.ngtv.io, PROXY
-    - DOMAIN-SUFFIX, get.s-onetag.com, PROXY
-    - DOMAIN-SUFFIX, googleads.g.doubleclick.net, PROXY
-    - DOMAIN-SUFFIX, gum.criteo.com, PROXY
-    - DOMAIN-SUFFIX, hbopenbid.pubmatic.com, PROXY
-    - DOMAIN-SUFFIX, htlb.casalemedia.com, PROXY
-    - DOMAIN-SUFFIX, i.clean.gg, PROXY
-    - DOMAIN-SUFFIX, i.liadm.com, PROXY
-    - DOMAIN-SUFFIX, ib.adnxs.com, PROXY
-    - DOMAIN-SUFFIX, id5-sync.com, PROXY
-    - DOMAIN-SUFFIX, imageproxy.us.criteo.net, PROXY
-    - DOMAIN-SUFFIX, images.outbrainimg.com, PROXY
-    - DOMAIN-SUFFIX, inventory.vidazoo.com, PROXY
-    - DOMAIN-SUFFIX, js-sec.indexww.com, PROXY
-    - DOMAIN-SUFFIX, l.betrad.com, PROXY
-    - DOMAIN-SUFFIX, lb.eu-1-id5-sync.com, PROXY
-    - DOMAIN-SUFFIX, libs.outbrain.com, PROXY
-    - DOMAIN-SUFFIX, licensing.bitmovin.com, PROXY
     - DOMAIN-SUFFIX, lightning.cnn.com, PROXY
-    - DOMAIN-SUFFIX, lightning.warnermediacdn.com, PROXY
-    - DOMAIN-SUFFIX, live-manifests-aka.warnermediacdn.com, PROXY
-    - DOMAIN-SUFFIX, live.rezync.com, PROXY
-    - DOMAIN-SUFFIX, loadus.exelator.com, PROXY
-    - DOMAIN-SUFFIX, log.outbrainimg.com, PROXY
-    - DOMAIN-SUFFIX, logs.browser-intake-datadoghq.com, PROXY
-    - DOMAIN-SUFFIX, logx.optimizely.com, PROXY
-    - DOMAIN-SUFFIX, mab.chartbeat.com, PROXY
-    - DOMAIN-SUFFIX, match.adsrvr.org, PROXY
-    - DOMAIN-SUFFIX, match.prod.bidr.io, PROXY
-    - DOMAIN-SUFFIX, match.sharethrough.com, PROXY
-    - DOMAIN-SUFFIX, mcdp-sadc1.outbrain.com, PROXY
-    - DOMAIN-SUFFIX, measurement-api.criteo.com, PROXY
-    - DOMAIN-SUFFIX, media-cdn.ipredictive.com, PROXY
     - DOMAIN-SUFFIX, media.cnn.com, PROXY
-    - DOMAIN-SUFFIX, medium.ngtv.io, PROXY
-    - DOMAIN-SUFFIX, mv.outbrain.com, PROXY
-    - DOMAIN-SUFFIX, observe.aniview.com, PROXY
-    - DOMAIN-SUFFIX, onsiterecs.api.boomtrain.com, PROXY
-    - DOMAIN-SUFFIX, outbrain-d.openx.net, PROXY
-    - DOMAIN-SUFFIX, p.rfihub.com, PROXY
-    - DOMAIN-SUFFIX, pagead2.googlesyndication.com, PROXY
-    - DOMAIN-SUFFIX, ping.chartbeat.net, PROXY
-    - DOMAIN-SUFFIX, pixel-sync.sitescout.com, PROXY
-    - DOMAIN-SUFFIX, pixel.adsafeprotected.com, PROXY
-    - DOMAIN-SUFFIX, pixel.rubiconproject.com, PROXY
-    - DOMAIN-SUFFIX, player.aniview.com, PROXY
-    - DOMAIN-SUFFIX, pr-bh.ybp.yahoo.com, PROXY
-    - DOMAIN-SUFFIX, prebid-server.rubiconproject.com, PROXY
-    - DOMAIN-SUFFIX, prebid.ad.smaato.net, PROXY
-    - DOMAIN-SUFFIX, pubads.g.doubleclick.net, PROXY
-    - DOMAIN-SUFFIX, receive.wmcdp.io, PROXY
     - DOMAIN-SUFFIX, registry.api.cnn.io, PROXY
-    - DOMAIN-SUFFIX, rtb.da.us.criteo.com, PROXY
-    - DOMAIN-SUFFIX, rtb.openx.net, PROXY
-    - DOMAIN-SUFFIX, rtb2-tag.marketiq.com, PROXY
-    - DOMAIN-SUFFIX, s.amazon-adsystem.com, PROXY
-    - DOMAIN-SUFFIX, s.cdn.turner.com, PROXY
-    - DOMAIN-SUFFIX, script.4dex.io, PROXY
-    - DOMAIN-SUFFIX, securepubads.g.doubleclick.net, PROXY
-    - DOMAIN-SUFFIX, segment-data-us-east.zqtk.net, PROXY
-    - DOMAIN-SUFFIX, server7.vidazoo.com, PROXY
-    - DOMAIN-SUFFIX, services.brightline.tv, PROXY
-    - DOMAIN-SUFFIX, sid.storygize.net, PROXY
-    - DOMAIN-SUFFIX, signal-beacon.s-onetag.com, PROXY
-    - DOMAIN-SUFFIX, signal-metrics-collector-beta.s-onetag, PROXY
-    - DOMAIN-SUFFIX, sq-tungsten-ts.amazon-adsystem.com, PROXY
-    - DOMAIN-SUFFIX, ssp-sync.criteo.com, PROXY
-    - DOMAIN-SUFFIX, ssum-sec.casalemedia.com, PROXY
-    - DOMAIN-SUFFIX, stags.bluekai.com, PROXY
-    - DOMAIN-SUFFIX, static.adsafeprotected.com, PROXY
-    - DOMAIN-SUFFIX, static.chartbeat.com, PROXY
-    - DOMAIN-SUFFIX, static.criteo.net, PROXY
-    - DOMAIN-SUFFIX, static.vidazoo.com, PROXY
-    - DOMAIN-SUFFIX, sync-dmp.mobtrakk.com, PROXY
-    - DOMAIN-SUFFIX, tag.bounceexchange.com, PROXY
-    - DOMAIN-SUFFIX, targeting.unrulymedia.com, PROXY
-    - DOMAIN-SUFFIX, token.rubiconproject.com, PROXY
-    - DOMAIN-SUFFIX, tpc.googlesyndication.com, PROXY
-    - DOMAIN-SUFFIX, tps.doubleverify.com, PROXY
-    - DOMAIN-SUFFIX, track1.aniview.com, PROXY
-    - DOMAIN-SUFFIX, track4.aniview.com, PROXY
-    - DOMAIN-SUFFIX, turnip.cdn.turner.com, PROXY
-    - DOMAIN-SUFFIX, um.simpli.fi, PROXY
-    - DOMAIN-SUFFIX, ums.acuityplatform.com, PROXY
-    - DOMAIN-SUFFIX, ups.analytics.yahoo.com, PROXY
-    - DOMAIN-SUFFIX, us-u.openx.net, PROXY
-    - DOMAIN-SUFFIX, videoevents.outbrain.com, PROXY
-    - DOMAIN-SUFFIX, widget-pixels.outbrain.com, PROXY
-    - DOMAIN-SUFFIX, widgets.outbrain.com, PROXY
-    - DOMAIN-SUFFIX, www.google.com, PROXY
-    - DOMAIN-SUFFIX, www.googletagservices.com, PROXY
+    - DOMAIN-SUFFIX, smetrics.cnn.com, PROXY
     - DOMAIN-SUFFIX, www.i.cdn.cnn.com, PROXY
-    - DOMAIN-SUFFIX, www.me.back, PROXY
-    - DOMAIN-SUFFIX, www.ugdturner.com, PROXY
-    - DOMAIN-SUFFIX, x.bidswitch.net, PROXY
     - DOMAIN-SUFFIX, z.cdp-dev.cnn.com, PROXY
+
+    - DOMAIN, collector.cdp.cnn.com, PROXY
+    - DOMAIN, edition.cnn.com, PROXY
+    - DOMAIN, lightning.cnn.com, PROXY
+    - DOMAIN, media.cnn.com, PROXY
+    - DOMAIN, registry.api.cnn.io, PROXY
+    - DOMAIN, smetrics.cnn.com, PROXY
+    - DOMAIN, www.i.cdn.cnn.com, PROXY
+    - DOMAIN, z.cdp-dev.cnn.com, PROXY
 
    # coinbase
      # tag: crypto
@@ -35666,12 +35805,10 @@ rules:
     - DOMAIN-SUFFIX, coingecko.com, PROXY
     - DOMAIN-SUFFIX, datadome.co, PROXY
     - DOMAIN-SUFFIX, rlcdn.com, PROXY
-    - DOMAIN-SUFFIX, rubiconproject.com, PROXY
     - DOMAIN-SUFFIX, sc-static.net, PROXY
     - DOMAIN-SUFFIX, servedby-buysellads.com, PROXY
-    - DOMAIN-SUFFIX, static.ads-twitter.com, PROXY
     - DOMAIN-SUFFIX, static.geetest.com, PROXY
-    - DOMAIN-SUFFIX, sync.outbrain.com, PROXY
+
     - DOMAIN, o855950.ingest.sentry.io, PROXY
 
    # coinmarketcap.com
@@ -35680,6 +35817,8 @@ rules:
 
    # cookielaw.org
     - DOMAIN-SUFFIX, cookielaw.org, PROXY
+
+    - DOMAIN, cdn.cookielaw.org, PROXY
 
    # crazypool
      # tag: crypto
@@ -35698,6 +35837,12 @@ rules:
      # tag: financial
     - DOMAIN-KEYWORD, .creditonebanks, PROXY
     - DOMAIN-SUFFIX, creditonebank.com, PROXY
+
+   # criteo.com
+    - DOMAIN, bidder.criteo.com, PROXY
+    - DOMAIN, gum.criteo.com, PROXY
+    - DOMAIN, privacy.criteo.com, PROXY
+    - DOMAIN, static.criteo.net, PROXY
 
    # crockblock
      # tag: crypto
@@ -37412,32 +37557,26 @@ rules:
     - DOMAIN-SUFFIX, cdn.granify.com, PROXY
     - DOMAIN-SUFFIX, cdn.honey.io, PROXY
     - DOMAIN-SUFFIX, cdn.pdst.fm, PROXY
-    - DOMAIN-SUFFIX, d.agkn.com, PROXY
-    - DOMAIN-SUFFIX, dsum-sec.casalemedia.com, PROXY
     - DOMAIN-SUFFIX, etsy.com, PROXY
     - DOMAIN-SUFFIX, fonts.gstatic.com, PROXY
     - DOMAIN-SUFFIX, i.etsystatic.com, PROXY
     - DOMAIN-SUFFIX, ib.adnxs.com, PROXY
+    - DOMAIN-SUFFIX, image2.pubmatic.com, PROXY
     - DOMAIN-SUFFIX, insight.adsrvr.org, PROXY
     - DOMAIN-SUFFIX, js.adsrvr.org, PROXY
     - DOMAIN-SUFFIX, js.sentry-cdn.com, PROXY
     - DOMAIN-SUFFIX, match.adsrvr.org, PROXY
     - DOMAIN-SUFFIX, matching.granify.com, PROXY
-    - DOMAIN-SUFFIX, pixel.rubiconproject.com, PROXY
     - DOMAIN-SUFFIX, pixel.streetmetrics.io, PROXY
     - DOMAIN-SUFFIX, pt.ispot.tv, PROXY
     - DOMAIN-SUFFIX, resources.xg4ken.com, PROXY
     - DOMAIN-SUFFIX, s.joinhoney.com, PROXY
     - DOMAIN-SUFFIX, s.pinimg.com, PROXY
-    - DOMAIN-SUFFIX, simage2.pubmatic.com, PROXY
     - DOMAIN-SUFFIX, tags.w55c.net, PROXY
     - DOMAIN-SUFFIX, trkn.us, PROXY
-    - DOMAIN-SUFFIX, ups.analytics.yahoo.com, PROXY
     - DOMAIN-SUFFIX, v.etsystatic.com, PROXY
     - DOMAIN-SUFFIX, web.btncdn.com, PROXY
-    - DOMAIN-SUFFIX, x.bidswitch.net, PROXY
 
-    - DOMAIN, sync.search.spotxchange.com, PROXY
     - DOMAIN, us-central1-adaptive-growth.cloudfunctions.net, PROXY
 
    # etherfair
@@ -37464,6 +37603,9 @@ rules:
      # tag: crypto
 
     - DOMAIN-SUFFIX, ethwscan.com, PROXY
+
+   # eu-1-id5-sync.com
+    - DOMAIN, lb.eu-1-id5-sync.com, PROXY
 
    # express-scripts.com
     - DOMAIN-SUFFIX, express-scripts.com, PROXY
@@ -37525,6 +37667,9 @@ rules:
     - DOMAIN-SUFFIX, fullcompass.com, PROXY
 
   # g
+   # gammaplatform.com
+    - DOMAIN, cm-supply-web.gammaplatform.com, PROXY
+
    # genius.com
     - DOMAIN-SUFFIX, genius.com, PROXY
 
@@ -37775,14 +37920,10 @@ rules:
     - DOMAIN-SUFFIX, hubspot.com, PROXY
 
    # hulu
-    - DOMAIN-SUFFIX, 3797690.fls.doubleclick.net, PROXY
-    - DOMAIN-SUFFIX, ad.doubleclick.net, PROXY
     - DOMAIN-SUFFIX, alb.reddit.com, PROXY
     - DOMAIN-SUFFIX, analytics.tiktok.com, PROXY
-    - DOMAIN-SUFFIX, analytics.twitter.com, PROXY
     - DOMAIN-SUFFIX, assetshuluimcom-a.akamaihd.net, PROXY
     - DOMAIN-SUFFIX, c.evidon.com, PROXY
-    - DOMAIN-SUFFIX, cdn.cookielaw.org, PROXY
     - DOMAIN-SUFFIX, cdn.polyfill.io, PROXY
     - DOMAIN-SUFFIX, cnbl-cdn.bamgrid.com, PROXY
     - DOMAIN-SUFFIX, collect.tealiumiq.com, PROXY
@@ -37790,6 +37931,7 @@ rules:
     - DOMAIN-SUFFIX, di.rlcdn.com, PROXY
     - DOMAIN-SUFFIX, disney.my.sentry.io, PROXY
     - DOMAIN-SUFFIX, geolocation.onetrust.com, PROXY
+    - DOMAIN-SUFFIX, hulu.com, PROXY
     - DOMAIN-SUFFIX, idsync.rlcdn.com, PROXY
     - DOMAIN-SUFFIX, insight.adsrvr.org, PROXY
     - DOMAIN-SUFFIX, intljs.rmtag.com, PROXY
@@ -37799,29 +37941,23 @@ rules:
     - DOMAIN-SUFFIX, sanalytics.disneyplus.com, PROXY
     - DOMAIN-SUFFIX, sc-static.net, PROXY
     - DOMAIN-SUFFIX, sp.analytics.yahoo.com, PROXY
-    - DOMAIN-SUFFIX, static.ads-twitter.com, PROXY
     - DOMAIN-SUFFIX, t.co, PROXY
     - DOMAIN-SUFFIX, tags.tiqcdn.com, PROXY
-    - DOMAIN-SUFFIX, td.doubleclick.net, PROXY
     - DOMAIN-SUFFIX, tr.snapchat.com, PROXY
     - DOMAIN-SUFFIX, ut.rd.linksynergy.com, PROXY
     - DOMAIN-SUFFIX, vortex.hulu.com, PROXY
-    - DOMAIN-SUFFIX, www.facebook.com, PROXY
-    - DOMAIN-SUFFIX, www.googletagmanager.com, PROXY
-    - DOMAIN-SUFFIX, www.hulu.com, PROXY
-    - DOMAIN-SUFFIX, www.redditstatic.com, PROXY
 
    # hulu IP-CIDR
-    # - IP-CIDR, 103.148.17.0/24, PROXY, no-resolve
-    # - IP-CIDR, 103.149.164.0/24, PROXY, no-resolve
-    # - IP-CIDR, 199.200.48.0/24, PROXY, no-resolve
-    # - IP-CIDR, 199.200.50.0/23, PROXY, no-resolve
-    # - IP-CIDR, 199.60.116.0/24, PROXY, no-resolve
-    # - IP-CIDR, 202.52.132.0/24, PROXY, no-resolve
-    # - IP-CIDR, 208.91.156.0/23, PROXY, no-resolve
-    # - IP-CIDR, 208.91.158.0/23, PROXY, no-resolve
-    # - IP-CIDR, 8.28.124.0/24, PROXY, no-resolve
-    # - IP-CIDR, 8.28.125.0/24, PROXY, no-resolve 
+    - IP-CIDR, 103.148.17.0/24, PROXY, no-resolve
+    - IP-CIDR, 103.149.164.0/24, PROXY, no-resolve
+    - IP-CIDR, 199.200.48.0/24, PROXY, no-resolve
+    - IP-CIDR, 199.200.50.0/23, PROXY, no-resolve
+    - IP-CIDR, 199.60.116.0/24, PROXY, no-resolve
+    - IP-CIDR, 202.52.132.0/24, PROXY, no-resolve
+    - IP-CIDR, 208.91.156.0/23, PROXY, no-resolve
+    - IP-CIDR, 208.91.158.0/23, PROXY, no-resolve
+    - IP-CIDR, 8.28.124.0/24, PROXY, no-resolve
+    - IP-CIDR, 8.28.125.0/24, PROXY, no-resolve
 
    # huraWatch
     - DOMAIN-SUFFIX, hurawatch.at, PROXY
@@ -37840,6 +37976,9 @@ rules:
 
    # indiatoday.in
     - DOMAIN-SUFFIX, indiatoday.in, PROXY
+
+   # intentiq.com
+    - DOMAIN, sync.intentiq.com, PROXY
 
    # intuit.com
      # tag: financial
@@ -37922,8 +38061,14 @@ rules:
     - DOMAIN-SUFFIX, kraken.com, PROXY
 
    # kucoin
+    - DOMAIN-SUFFIX, ab.kucoin.plus, PROXY
+    - DOMAIN-SUFFIX, assets.staticimg.com, PROXY
+    - DOMAIN-SUFFIX, assets3.staticimg.com, PROXY
+    - DOMAIN-SUFFIX, bigdata-scfx-push.kucoin.plus, PROXY
     - DOMAIN-SUFFIX, kucoin.com, PROXY
     - DOMAIN-SUFFIX, kucoin.plus, PROXY
+    - DOMAIN-SUFFIX, sentry-v2.staticimg.co, PROXY
+    - DOMAIN-SUFFIX, staticimg.co, PROXY
     - DOMAIN-SUFFIX, staticimg.com, PROXY
 
   # l
@@ -37934,7 +38079,6 @@ rules:
    # ledger live
     - DOMAIN-SUFFIX, 360yield.com, PROXY
     - DOMAIN-SUFFIX, contentsquare.net, PROXY
-    - DOMAIN-SUFFIX, criteo.com, PROXY
     - DOMAIN-SUFFIX, criteo.net, PROXY
     - DOMAIN-SUFFIX, dwin1.com, PROXY
     - DOMAIN-SUFFIX, impactcdn.com, PROXY
@@ -37944,15 +38088,11 @@ rules:
     - DOMAIN-SUFFIX, mediawallahscript.com, PROXY
     - DOMAIN-SUFFIX, omnitagjs.com, PROXY
     - DOMAIN-SUFFIX, onetrust.com, PROXY
-    - DOMAIN-SUFFIX, outbrain.com, PROXY
     - DOMAIN-SUFFIX, postrelease.com, PROXY
     - DOMAIN-SUFFIX, revcontent.com, PROXY
-    - DOMAIN-SUFFIX, sharethrough.com, PROXY
     - DOMAIN-SUFFIX, smaato.net, PROXY
     - DOMAIN-SUFFIX, smartadserver.com, PROXY
-    - DOMAIN-SUFFIX, stickyadstv.com, PROXY
     - DOMAIN-SUFFIX, teads.tv, PROXY
-    - DOMAIN-SUFFIX, zemanta.com, PROXY
 
    # legkierody.ru
     - DOMAIN-SUFFIX, legkierody.ru, PROXY
@@ -37967,6 +38107,9 @@ rules:
 
    # lifemission.church
     - DOMAIN-SUFFIX, lifemission.church, PROXY
+
+   # lijit.com
+    - DOMAIN, ce.lijit.com, PROXY
 
    # line
     - DOMAIN-SUFFIX, line-apps.com, PROXY
@@ -38006,16 +38149,19 @@ rules:
 
    # lookah
      # tag: electronic cigarettes
-    - DOMAIN-SUFFIX, mccdn.me, PROXY
     - DOMAIN-SUFFIX, clarity.ms, PROXY
-    - DOMAIN-SUFFIX, manychat.com, PROXY
     - DOMAIN-SUFFIX, lookah.com, PROXY
-    - DOMAIN, www.lookah.com, PROXY
+    - DOMAIN-SUFFIX, manychat.com, PROXY
+    - DOMAIN-SUFFIX, mccdn.me, PROXY
 
    # luxor.tech
     - DOMAIN-SUFFIX, luxor.tech, PROXY
 
   # m
+   # ml314.com
+    - DOMAIN, cdn.ml314.com, PROXY
+    - DOMAIN, vi.ml314.com, PROXY
+
    # matrix.one
     - DOMAIN-SUFFIX, matrix.one, PROXY
 
@@ -38077,6 +38223,9 @@ rules:
 
    # mullvad
     - DOMAIN-SUFFIX, mullvad.net, PROXY
+
+   # mxptint.net
+    - DOMAIN, rbp.mxptint.net, PROXY
 
    # myccpay
      # tag: financial
@@ -38794,10 +38943,30 @@ rules:
 
     - DOMAIN-SUFFIX, opensea.io, PROXY
 
+   # optimizely.com
+    - DOMAIN-SUFFIX, optimizely.com, PROXY
+
+    - DOMAIN, a125375509.cdn.optimizely.com, PROXY
+    - DOMAIN, cdn.optimizely.com, PROXY
+    - DOMAIN, cdn3.optimizely.com, PROXY
+    - DOMAIN, logx.optimizely.com, PROXY
+
    # ottcst.com
     - DOMAIN-KEYWORD, .ottcst, PROXY
     - DOMAIN-SUFFIX, ottcst.com, PROXY
     - DOMAIN-SUFFIX, line.ottcst.com, PROXY
+
+   # outbrain.com
+    - DOMAIN-SUFFIX, outbrain.com, PROXY
+
+    - DOMAIN, libs.outbrain.com, PROXY
+    - DOMAIN, mcdp-sadc1.outbrain.com, PROXY
+    - DOMAIN, mcdp-sadc1.outbrain.com, PROXY
+    - DOMAIN, mcdp-sadc1.outbrain.com, PROXY
+    - DOMAIN, odb.outbrain.com, PROXY
+    - DOMAIN, sync.outbrain.com, PROXY
+    - DOMAIN, videoevents.outbrain.com, PROXY
+    - DOMAIN, widgets.outbrain.com, PROXY
 
    # outlookindia.com
     - DOMAIN-SUFFIX, outlookindia.com, PROXY
@@ -38867,6 +39036,10 @@ rules:
     - DOMAIN-SUFFIX, qsishenzhen.org, PROXY
 
   # r
+   # rask.ai
+    - DOMAIN-SUFFIX, rask.ai, PROXY
+    - DOMAIN, dev.visualwebsiteoptimizer.com, PROXY
+
    # raspberrypi.org
     - DOMAIN-SUFFIX, raspberrypi.org, PROXY
     - DOMAIN-SUFFIX, raspbian.org, PROXY
@@ -38897,12 +39070,23 @@ rules:
 
    # resi
 
+   # rfihub.com
+    - DOMAIN, p.rfihub.com, PROXY
+
    # roblox
     - DOMAIN-SUFFIX, roblox.com, PROXY
 
    # rocketgirls
     - DOMAIN-KEYWORD, .rocketgirls, PROXY
     - DOMAIN-SUFFIX, rocketgirls.space, PROXY
+
+   # rubiconproject.com
+    - DOMAIN-SUFFIX, rubiconproject.com, PROXY
+
+    - DOMAIN, eus.rubiconproject.com, PROXY
+    - DOMAIN, pixel.rubiconproject.com, PROXY
+    - DOMAIN, prebid-server.rubiconproject.com, PROXY
+    - DOMAIN, token.rubiconproject.com, PROXY
 
    # runescape
     - DOMAIN-KEYWORD, .runescape, PROXY
@@ -38913,6 +39097,14 @@ rules:
     - DOMAIN-SUFFIX, rustylake.com, PROXY
 
   # s
+   # s-onetag.com
+    - DOMAIN-SUFFIX, s-onetag.com, PROXY
+
+    - DOMAIN, connect-metrics-collector.s-onetag.com, PROXY
+    - DOMAIN, get.s-onetag.com, PROXY
+    - DOMAIN, signal-beacon.s-onetag.com, PROXY
+    - DOMAIN, signal-metrics-collector-beta.s-onetag.com, PROXY
+
    # salesforce
     - DOMAIN-SUFFIX, trailhead.salesforce.com, PROXY
 
@@ -38935,6 +39127,11 @@ rules:
     # - DOMAIN-SUFFIX, pathtosharepoint.com, PROXY
     # - DOMAIN-SUFFIX, skqsi-my.sharepoint.com, PROXY
 
+   # sharethrough.com
+    - DOMAIN-SUFFIX, sharethrough.com, PROXY
+
+    - DOMAIN, btlr.sharethrough.com, PROXY
+
    # simplemining
      # tag: crypto
 
@@ -38952,8 +39149,20 @@ rules:
    # sms-activate
     - DOMAIN-SUFFIX, sms-activate.org, PROXY
 
+   # socdm.com
+    - DOMAIN, tg.socdm.com, PROXY
+
    # social-viral.com
     - DOMAIN-SUFFIX, social-viral.com, PROXY
+
+   # spotxchange.com
+    - DOMAIN-SUFFIX, spotxchange.com, PROXY
+
+    - DOMAIN, sync.search.spotxchange.com, PROXY
+
+   # stickyadstv.com
+    - DOMAIN-SUFFIX, stickyadstv.com, PROXY
+    - DOMAIN, ads.stickyadstv.com, PROXY
 
    # stremio.com
     - DOMAIN-SUFFIX, api.strem.io, PROXY
@@ -39038,6 +39247,9 @@ rules:
    # thedroidguy.com
     - DOMAIN-KEYWORD, .thedroidguy, PROXY
     - DOMAIN-SUFFIX, thedroidguy.com, PROXY
+
+   # theseedsnetwork.com
+    - DOMAIN-SUFFIX, theseedsnetwork.com, PROXY
 
    # thetatoken.org
     - DOMAIN-SUFFIX, thetatoken.org, PROXY
@@ -40261,7 +40473,6 @@ rules:
     - DOMAIN, tmobile.tt.omtrdc.net, PROXY
     - DOMAIN, solutions.invocacdn.com, PROXY
     - DOMAIN, 17de4c0e.akstat.io, PROXY
-    - DOMAIN, cdn.cookielaw.org, PROXY
 
    # TON
      # tag: crypto
@@ -40281,6 +40492,18 @@ rules:
    # tradestockfund.com
     - DOMAIN-SUFFIX, tradestockfund.com, PROXY
 
+   # trainingpeaks
+    - DOMAIN-SUFFIX, api.segment.io, PROXY
+    - DOMAIN-SUFFIX, assets.trainingpeaks.com, PROXY
+    - DOMAIN-SUFFIX, eb2.3lift.com, PROXY
+    - DOMAIN-SUFFIX, s.adroll.com, PROXY
+    - DOMAIN-SUFFIX, script.hotjar.com, PROXY
+    - DOMAIN-SUFFIX, sync.taboola.com, PROXY
+    - DOMAIN-SUFFIX, tp-front-end.trainingpeaks.com, PROXY
+    - DOMAIN-SUFFIX, tpapi.trainingpeaks.com, PROXY
+    - DOMAIN-SUFFIX, wpassets.trainingpeaks.com, PROXY
+    - DOMAIN-SUFFIX, trainingpeaks.com, PROXY
+
    # transbank.cl
     - DOMAIN-SUFFIX, transbank.cl, PROXY
 
@@ -40291,6 +40514,12 @@ rules:
 
    # trustwallet
     - DOMAIN-SUFFIX, trustwallet.com, PROXY
+
+   # turn.com
+    - DOMAIN, ad.turn.com, PROXY
+
+   # turner.com
+    - DOMAIN, s.cdn.turner.com, PROXY
 
    # tuya
     - DOMAIN-SUFFIX, tuya.com, PROXY
@@ -40411,6 +40640,9 @@ rules:
     - IP-CIDR, 192.48.237.0/24, PROXY, no-resolve
 
   # u
+   # unrulymedia.com
+    - DOMAIN, sync.targeting.unrulymedia.com, PROXY
+
    # updraftplus
     - DOMAIN-SUFFIX, updraftplus.com, PROXY
 
@@ -40445,6 +40677,9 @@ rules:
     - DOMAIN-KEYWORD, .wakenbakery, PROXY
 
     - DOMAIN-SUFFIX, wakenbakery.net, PROXY
+
+   # warnermediacdn.com
+    - DOMAIN, live-manifests-aka.warnermediacdn.com, PROXY
 
    # wd.bible
     - DOMAIN-SUFFIX, endao.app, PROXY
@@ -40595,6 +40830,9 @@ rules:
     # - USER-AGENT, YouTubeMusic*, PROXY
 
   # z
+   # zemanta.com
+    - DOMAIN, b1sync.zemanta.com, PROXY
+
    # zillow
     - DOMAIN-SUFFIX, zillow.com, PROXY
 
