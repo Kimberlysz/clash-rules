@@ -670,7 +670,7 @@ proxy-groups:
       - DIRECT
       - REJECT
 
-  # - name: 🛑 AdBlock rules
+  - name: 🛑 AdBlock rules
     type: select
     proxies:
       - DIRECT
@@ -727,6 +727,1082 @@ rules:
   # t
    # tld-!cn (geosite, clash with)
    # tld-opennic (geosite, clash with)
+
+ # 🛑 AdBlock added manually
+  # #
+
+  # a
+  
+  # b
+  
+  # c
+  
+  # d
+  
+  # e
+  
+  # f
+  
+  # g
+  
+  # h
+  
+  # i
+    # itv.com
+    - DOMAIN-SUFFIX, 2cnt.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, doubleverify.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, flashtalking.com, 🛑 AdBlock rules
+
+  # j
+  
+  # k
+  
+  # l
+  
+  # m
+  
+  # n
+  
+  # o
+  
+  # p
+  
+  # q
+  
+  # r
+  
+  # s
+  
+  # t
+  
+  # u
+  
+  # v
+  
+  # w
+  
+  # x
+  
+  # y
+  
+  # z
+
+ # 🛑 AdBlock (domain-list-community)
+  # #
+   # 36Kr
+    - DOMAIN-SUFFIX, adx.36kr.com, 🛑 AdBlock rules
+
+   # 58
+    - DOMAIN-SUFFIX, tracklog.58.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, track.58.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, jing.58.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, brandshow.58.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mshow.fang.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, countpvn.light.fang.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, clickn.fang.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, clickm.fang.com, 🛑 AdBlock rules
+
+  # a
+   # acfun-ads
+    - DOMAIN, apilog-web.acfun.cn, 🛑 AdBlock rules
+
+   # adcolony-ads
+    - DOMAIN-SUFFIX, adcolony.com, 🛑 AdBlock rules
+
+   # adjust-ads
+    - DOMAIN-SUFFIX, adjust.com, 🛑 AdBlock rules
+
+   # adobe-ads
+    - DOMAIN-SUFFIX, advertising.adobe.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tubemogul.com, 🛑 AdBlock rules
+
+   # ali213
+    - DOMAIN-SUFFIX, click.ali213.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pbmp.ali213.net, 🛑 AdBlock rules
+
+   # alibaba-ads
+    - DOMAIN-SUFFIX, a.alimama.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, acjs.aliyun.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adash.m.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adashbc.m.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adashbc.ut.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adash-c.ut.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adashx.m.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adashx4ae.ut.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adashx4yt.m.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adashxgc.ut.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adsh.m.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, afp.adchina.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, afp.alicdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, agoodm.m.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, agoodm.wapa.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, alipaylog.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, amdc.alipay.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, amdc.m.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, api.wapa.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, api.waptest.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, apoll.m.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, appdownload.alicdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, atanx.alicdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, atanx2.alicdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cdn0.mobmore.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, click.aliyun.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, click.mz.simba.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cm.ipinyou.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cm.mlt01.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dsp.simba.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, err.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ex.mobmore.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ex.puata.info, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, fav.simba.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, feedback.whalecloud.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ff.win.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, fm.p0y.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, g.click.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, g.tbcdn.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gma.alicdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gtms01.alicdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gtms02.alicdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gtms03.alicdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gtms04.alicdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, hydra.alibaba.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, hz.pre.tbusergw.taobao.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, hz.tbusergw.taobao.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, i.ipinyou.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, init.phpwind.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, intl.wapa.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, intl.waptest.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, jxlog.istreamsche.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, log.umtrack.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, m.intl.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, m.simba.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, match.p4p.1688.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, material.istreamsche.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mlt01.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, nbsdk-baichuan.alicdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, nbsdk-baichuan.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, osfota.cdn.aliyun.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, osupdate.aliyun.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, osupdateservice.yunos.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pindao.huoban.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, push.wandoujia.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, re.m.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, re.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, redirect.simba.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, rj.m.taobao.co, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, rj.m.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sdkinit.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, show.re.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, simaba.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, simba.m.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, srd.simba.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, stats.ipinyou.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, strip.taobaocdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tanxlog.istreamsche.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tejia.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, temai.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tns.simba.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tongji.linezing.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tvupgrade.yunos.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tyh.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, userimg.qunar.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, w.m.taobao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, yiliao.hupan.com, 🛑 AdBlock rules
+
+   # amazon-ads
+    - DOMAIN-SUFFIX, amazon-adsystem.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, serving-sys.com, 🛑 AdBlock rules
+
+   # apple-ads
+    - DOMAIN-SUFFIX, iad.apple.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, iadsdk.apple.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, qwapi.com, 🛑 AdBlock rules
+
+   # applovin-ads
+    - DOMAIN-SUFFIX, applovin.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, applvn.com, 🛑 AdBlock rules
+
+   # atom-data-ads
+    - DOMAIN-SUFFIX, atom-data.io, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, analytics-data.io, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ironbeast.io, 🛑 AdBlock rules
+
+  # b
+   # baidu-ads
+    - DOMAIN-SUFFIX, a.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad.duapps.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad.player.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adm.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adscdn.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adx.xiaodutv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ae.bdstatic.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, afd.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, als.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, api.mobula.sdk.duapps.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, api.tuisong.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, appc.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, b.bdstatic.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, baichuan.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, baidustatic.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, baidutv.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, banlv.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, bar.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, bdimg.share.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, bdplus.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, bj.bcebos.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, btlaunch.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, c.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cb.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cbjs.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cjhq.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cleaner.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, click.bes.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, click.hm.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, click.qianqian.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cm.baichuan.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cm.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cm.pos.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cpro.baidu.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cpro.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cpro.baidustatic.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cpro.tieba.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cpro.zhidao.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cpro2.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cpro2.baidustatic.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, crs.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, datax.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dd713.bj.bcebos.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dl.client.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dl.ops.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dl1sw.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dl2.bav.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dlsw.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dlsw.br.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dl-vip.bav.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dl-vip.pcfaster.baidu.co.th, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, download.bav.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, download.sd.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, drmcmm.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dup.baidustatic.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dxp.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dzl.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, e.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, eclick.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ecma.bdimg.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ecmb.bdimg.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ecmc.bdimg.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, eiv.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, em.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, entry.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ers.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, f10.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, fc-feed.cdn.bcebos.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, fclick.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, feed.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, fexclick.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, g.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gimg.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, guanjia.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, hc.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, hm.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, hmma.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, hpd.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, idm.bce.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, idm-su.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, iebar.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ikcode.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, img.taotaosou.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, img01.taotaosou.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, j.br.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, kstj.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, log.music.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, m1.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ma.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mobads.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mobads-logs.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mpro.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, msite.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, neirong.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, nsclick.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, nsclickvideo.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, openrcv.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pc.videoclick.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pos.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pups.bdimg.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, push.zhanzhang.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, qianclick.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, release.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, res.mi.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, rigel.baidustatic.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, river.zhidao.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, rj.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, rplog.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, s.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, s.cpro.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sa.tuisong.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sclick.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sestat.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, shadu.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, share.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, snippet.pos.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sobar.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sobartop.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, spcode.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, stat.v.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, su.bdimg.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, su.bdstatic.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tk.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tkweb.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tob-cms.bj.bcebos.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tongji.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, toolbar.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tracker.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tuijian.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, uat1.bfsspadserver.8le8le.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ubmcmm.baidustatic.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ucstat.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ulic.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ulog.imap.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, union.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, unionimage.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, utility.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, utk.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, videopush.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, vv84.bj.bcebos.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, w.gdown.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, w.x.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, wangmeng.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, weishi.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, wenku-cms.bj.bcebos.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, wisepush.video.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, wm.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, wn.pos.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, znsv.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, zz.bdstatic.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, zzy1.quyaoya.com, 🛑 AdBlock rules
+
+   # bytedance-ads
+    - DOMAIN-SUFFIX, bds.snssdk.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ctobsnssdk.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dig.bdurl.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, extlog.snssdk.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, i.snssdk.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, is.snssdk.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mcs.snssdk.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pangolin.snssdk.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pangolin-sdk-toutiao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pglstatp-toutiao.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sf3-ttcdn-tos.pstatp.com, 🛑 AdBlock rules
+
+  # c
+   # category-ads
+    # This file contains domains that clearly serving ads
+    
+    # include:acfun-ads
+    # include:adcolony-ads
+    # include:adjust-ads
+    # include:adobe-ads
+    # include:alibaba-ads
+    # include:amazon-ads
+    # include:apple-ads
+    # include:applovin-ads
+    # include:atom-data-ads
+    # include:baidu-ads
+    # include:bytedance-ads
+    # include:category-ads-ir
+    # include:clearbitjs-ads
+    # include:dmm-ads
+    # include:emogi-ads
+    # include:flurry-ads
+    # include:google-ads
+    # include:growingio-ads
+    # include:hiido-ads
+    # include:hotjar-ads
+    # include:hunantv-ads
+    # include:inner-active-ads
+    # include:iqiyi-ads
+    # include:jd-ads
+    # include:kuaishou-ads
+    # include:kugou-ads
+    # include:leanplum-ads
+    # include:letv-ads
+    # include:mixpanel-ads
+    # include:mopub-ads
+    # include:mxplayer-ads
+    # include:netease-ads
+    # include:newrelic-ads
+    # include:ogury-ads
+    # include:onesignal-ads
+    # include:ookla-speedtest-ads
+    # include:openx-ads
+    # include:pocoiq-ads
+    # include:pubmatic-ads
+    # include:segment-ads
+    # include:sensorsdata-ads
+    # include:sina-ads
+    # include:sohu-ads
+    # include:spotify-ads
+    # include:supersonic-ads
+    # include:tagtic-ads
+    # include:tappx-ads
+    # include:tencent-ads
+    # include:uberads-ads
+    # include:umeng-ads
+    # include:unity-ads
+    # include:wteam-ads
+    # include:xhamster-ads
+    # include:xiaomitv-ads
+    # include:ximalaya-ads
+    # include:yahoo-ads
+    # include:youku-ads
+    # include:zynga-ads
+
+    # Other domains for ads serving
+    - DOMAIN-SUFFIX, 51y5.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, a.adtng.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, aaxads.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad-srv.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad.api.moji.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad.wang502.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adbutter.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, addthisedge.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ads.trafficjunky.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adtechus.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adtrue.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adxprtz.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cdn.advertserve.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cdn.banclip.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cfts1tifqr.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, contentabc.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cretgate.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ero-advertising.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, eroadvertising.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, exoclick.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, exosrv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, go2.global, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gozendata.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gzads.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gz-data.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, img-bss.csdn.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, imglnkc.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, imglnkd.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, innovid.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ja2.gamersky.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, jads.co, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, jl3.yjaxa.top, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, juicyads.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, kepler-37b.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, lqc006.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, moat.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, moatads.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mobwithad.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, realsrv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, s4yxaqyq95.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, shhs-ydd8x2.yjrmss.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, static.javhd.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tm-banners.gamingadult.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, trafficfactory.biz, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tsyndicate.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, wwads.cn, 🛑 AdBlock rules
+
+    # 36Kr
+    - DOMAIN-SUFFIX, adx.36kr.com, 🛑 AdBlock rules
+    
+    # ali213
+    - DOMAIN-SUFFIX, click.ali213.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pbmp.ali213.net, 🛑 AdBlock rules
+    
+    # Caixin
+    # regexp:^pinggai\d\.caixin\.com$
+    
+    # Chinaso
+    - DOMAIN-SUFFIX, adq.chinaso.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, stat.chinaso.com, 🛑 AdBlock rules
+    
+    # Httpool
+    - DOMAIN-SUFFIX, toboads.com, 🛑 AdBlock rules
+    
+    # Qiniu
+    - DOMAIN-SUFFIX, dn-growing.qbox.me, 🛑 AdBlock rules
+    
+    # UNI Marketing
+    - DOMAIN-SUFFIX, ad.unimhk.com, 🛑 AdBlock rules
+    
+    # UCloud
+    - DOMAIN-SUFFIX, das-rpt-log.ucloud.cn, 🛑 AdBlock rules
+    
+   # category-ads-all
+    # This file contains domains of all ads providers, including both the domains that serves ads, and the domains of providers themselves.
+
+    - DOMAIN-SUFFIX, 7box.vip, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad-delivery.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adinplay.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adnxs.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ads.trafficjunky.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, advertserve.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, casalemedia.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, contextual.media.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cpmstar.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, demdex.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpool.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, lijit.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, 1rx.io, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mfadsrvr.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mgid.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ns1p.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pubmatic.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, snapads.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, spotxchange.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, unimhk.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, upapi.net, 🛑 AdBlock rules
+
+    # include:taboola
+    # include:category-ads
+
+   # category-ads-ir
+    # Iranian Advertising websites
+    - DOMAIN-SUFFIX, adivery.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adivery.ir, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, kaprila.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, najva.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sabavision.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tapsell.ir, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, yektanet.com, 🛑 AdBlock rules
+
+   # clearbitjs-ads
+    - DOMAIN-SUFFIX, x.clearbitjs.com, 🛑 AdBlock rules
+
+  # d
+   # dmm-ads
+    # Refer: https://tonahazana.com/kancolle-2nd-weight-saving
+    # If you use support tools to play DMM games(such as playing Kantai Collection by poi), this list maybe useful.
+
+    - DOMAIN-SUFFIX, ad.games.dmm.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, bluekai.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, fout.jp, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gmossp-sp.jp, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, i-mobile.co.jp, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, im-apps.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, impact-ad.jp, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ladsp.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, microad.co.jp, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, microad.jp, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, socdm.com, 🛑 AdBlock rules
+
+  # e
+   # emogi-ads
+    - DOMAIN-SUFFIX, emogi.com, 🛑 AdBlock rules
+
+  # f
+   # flurry-ads
+    - DOMAIN-SUFFIX, data.flurry.com, 🛑 AdBlock rules
+
+   # fqnovel
+    - DOMAIN, ads3-normal-hl.zijieapi.com, 🛑 AdBlock rules
+    - DOMAIN, ads5-normal-hl.zijieapi.com, 🛑 AdBlock rules
+    - DOMAIN, log3-applog-hl.fqnovel.com, 🛑 AdBlock rules
+    - DOMAIN, log5-applog-hl.fqnovel.com, 🛑 AdBlock rules
+    - DOMAIN, p3-ad-sign.byteimg.com, 🛑 AdBlock rules
+    - DOMAIN, p6-ad-sign.byteimg.com, 🛑 AdBlock rules
+    - DOMAIN, p9-ad-sign.byteimg.com, 🛑 AdBlock rules
+    - DOMAIN, rtlog3-applog-hl.fqnovel.com, 🛑 AdBlock rules
+    - DOMAIN, rtlog5-applog-hl.fqnovel.com, 🛑 AdBlock rules
+
+  # g
+   # google-ads
+    - DOMAIN-SUFFIX, 2mdn.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, admob.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ads.youtube.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adsense.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adsensecustomsearchads.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adsenseformobileapps.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adservice.google.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, advertisercommunity.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, advertiserscommunity.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adwords-community.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adwords.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adwordsexpress.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, app-measurement.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, clickserver.googleads.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, doubleclick.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, doubleclick.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, google-analytics.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, googleadapis.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, googleadservices.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, googleanalytics.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, googleoptimize.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, googlesyndication.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, googletagmanager.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, googletagservices.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, googletraveladservices.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, marketingplatform.google.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, urchin.com, 🛑 AdBlock rules
+
+    - DOMAIN, analytics.google.com, 🛑 AdBlock rules
+
+    # regexp:^adservice\.google\.([a-z]{2}|com?)(\.[a-z]{2})?$, 🛑 AdBlock rules
+
+   # growingio-ads
+    - DOMAIN-SUFFIX, assets.growingio.com, 🛑 AdBlock rules
+
+  # h
+   # hiido-ads
+    - DOMAIN-SUFFIX, mlog.hiido.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ylog.hiido.com, 🛑 AdBlock rules
+
+   # hotjar-ads
+    - DOMAIN-SUFFIX, static.hotjar.com, 🛑 AdBlock rules
+
+   # hunantv-ads
+    - DOMAIN-SUFFIX, click.hunantv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, da.hunantv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, da.mgtv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, log.hunantv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, log.v2.hunantv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, res.hunantv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, v2.log.hunantv.com, 🛑 AdBlock rules
+
+  # i
+   # inner-active-ads
+    - DOMAIN-SUFFIX, inner-active.mobi, 🛑 AdBlock rules
+
+   # iqiyi-ads
+    - DOMAIN-SUFFIX, a.ckm.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad.m.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, afp.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, c.uaa.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cloudpush.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cm.passport.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cupid.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, emoticon.sns.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gamecenter.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, hotchat-im.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ifacelog.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mbdlog.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, msg.71.am, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, msg.video.qiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, msg2.video.qiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, policy.video.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, yuedu.iqiyi.com, 🛑 AdBlock rules
+
+  # j
+   # jd-ads
+    - DOMAIN-SUFFIX, ads.union.jd.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, c-nfa.jd.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cps.360buy.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, jzt.jd.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, stat.m.jd.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, img-x.jd.com, 🛑 AdBlock rules
+
+  # k
+   # kuaishou-ads
+    - DOMAIN, log-sdk.gifshow.com, 🛑 AdBlock rules
+    - DOMAIN, wlog.kuaishou.com, 🛑 AdBlock rules
+
+   # kugou-ads
+    - DOMAIN-SUFFIX, ads.service.kugou.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adserviceretry.kglink.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adserviceretry.kugou.com, 🛑 AdBlock rules
+
+  # l
+   # leanplum-ads
+    - DOMAIN-SUFFIX, leanplum.com, 🛑 AdBlock rules
+
+   # letv-ads
+    - DOMAIN-SUFFIX, api.game.letvstore.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ark.letv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dc.letv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dev.dc.letv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, fz.letv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, g3.letv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, letv.allyes.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, minisite.letv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, msg.m.letv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, n.mark.letv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, plog.dc.letv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pro.hoye.letv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pro.letv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, stat.letv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, static.app.m.letv.com, 🛑 AdBlock rules
+
+  # m
+   # mixpanel-ads
+    - DOMAIN-SUFFIX, decide.mixpanel.com, 🛑 AdBlock rules
+
+   # mopub-ads
+    - DOMAIN-SUFFIX, mopub.com, 🛑 AdBlock rules
+
+   # mxplayer-ads
+    - DOMAIN-SUFFIX, evt.mxplay.com, 🛑 AdBlock rules
+
+  # n
+   # netease-ads
+    - DOMAIN-SUFFIX, analytics.163.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, crash.163.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, crashlytics.163.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, g.163.com, 🛑 AdBlock rules
+
+   # newrelic-ads
+    - DOMAIN-SUFFIX, js-agent.newrelic.com, 🛑 AdBlock rules
+
+  # o
+   # ogury-ads
+    - DOMAIN-SUFFIX, ogury.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, presage.io, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ogury.co, 🛑 AdBlock rules
+
+   # onesignal-ads
+    - DOMAIN-SUFFIX, onesignal.com, 🛑 AdBlock rules
+
+   # ookla-speedtest-ads
+    # regexp:^speed\.(coe|open)\.ad\.[a-z]{2,6}\.prod\.hosts\.ooklaserver\.net$ @ads
+
+   # openai
+    # tracking
+    - DOMAIN, o33249.ingest.sentry.io, 🛑 AdBlock rules
+    - DOMAIN, openaicom.imgix.net, 🛑 AdBlock rules
+
+   # openx-ads
+    - DOMAIN-SUFFIX, openx.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, openxadexchange.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, openxcdn.net, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, openxenterprise.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, openxmarket.asia, 🛑 AdBlock rules
+
+  # p
+   # pikpak
+    # tracking
+    - DOMAIN, o4504926511693824.ingest.sentry.io, 🛑 AdBlock rules
+
+   # pixiv
+    - DOMAIN-SUFFIX, ads-pixiv.net, 🛑 AdBlock rules
+
+   # pocoiq-ads
+    - DOMAIN-SUFFIX, cdn.pocoiq.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, oct.pocoiq.cn, 🛑 AdBlock rules
+
+   # pubmatic-ads
+    - DOMAIN-SUFFIX, ads.pubmatic.com, 🛑 AdBlock rules
+
+  # s
+   # segment-ads
+    - DOMAIN-SUFFIX, cdn.segment.com, 🛑 AdBlock rules
+
+   # sensorsdata-ads
+    - DOMAIN-SUFFIX, static.sensorsdata.cn, 🛑 AdBlock rules
+
+   # sina-ads
+    - DOMAIN-SUFFIX, 2016.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adbox.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adimages.sina.com.hk, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adimg.mobile.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adimg.uve.weibo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adm.leju.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ads.sina.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, alitui.weibo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, api.apps.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, appgift.sinaapp.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, appsupdate.sinaapp.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, atm.sina.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, beacon.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, biz.weibo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, c.biz.weibo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, c.wcpt.biz.weibo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, click.uve.mobile.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, click.uve.weibo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cm.dmp.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, contentrecommend-out.mobile.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, count.video.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, counter.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cre.dp.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cre-dp.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, d00.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dcads.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dl.kjava.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dmp.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dp.im.weibo.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, game.weibo.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, game.weibo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gw5.push.mcp.weibo.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gw6.push.mcp.weibo.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, img.adbox.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, img.amp.ad.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, int.dpool.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, interest.mix.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, log.interest.mix.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, log.mix.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, log.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, m.beacon.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, m.game.weibo.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mg.games.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, motu.p4p.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, newspush.sinajs.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, oascentral.sina.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, oascentral.sina.com.hk, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, p4p.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, palmnews.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pay.mobile.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pfp.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pfpip.sina.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, promote.biz.weibo.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, r.dmp.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, rm.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, rs.sinajs.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, s.alitui.weibo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, s.img.mix.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sapi.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sax.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sax.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, saxn.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, saxs.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sbeacon.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sdkapp.mobile.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sdkapp.uve.weibo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sdkclick.mobile.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, slog.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, slog.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, staticadm.leju.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tjs.sjs.sinajs.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, trends.mobile.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, u1.img.mobile.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, wapwbclick.mobile.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, wbapp.mobile.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, wbapp.uve.weibo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, wbclick.mobile.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, wbpctips.mobile.sina.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, widget.weibo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, woocall.sina.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, zc.biz.weibo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, zymo.mps.weibo.com, 🛑 AdBlock rules
+
+   # snap
+
+   # sohu-ads
+    - DOMAIN-SUFFIX, adnet.sohu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ads.sohu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adv-sv-show.focus.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, aty.sohu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, data.vod.itc.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, epro.sogou.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, go.sohu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, golden1.sogou.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, imp.optaim.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, inte.sogou.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, inte.sogoucdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, lu.sogoucdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pv.sohu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, theta.sogoucdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, track.sohu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, uranus.sogou.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, v2.reachmax.cn, 🛑 AdBlock rules
+
+    - DOMAIN, e8aeb8bbdbbd7.cdn.sohucs.com, 🛑 AdBlock rules
+    - DOMAIN, 643108e7617ef.cdn.sohucs.com, 🛑 AdBlock rules
+
+   # spotify-ads
+    - DOMAIN, adeventtracker.spotify.com, 🛑 AdBlock rules
+    - DOMAIN, adstudio-assets.scdn.co, 🛑 AdBlock rules
+    - DOMAIN, bloodhound.spotify.com, 🛑 AdBlock rules
+
+   # supersonic-ads
+    - DOMAIN-SUFFIX, supersonic.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, supersonicads.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ssacdn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, supersonicads-a.akamaihd.net, 🛑 AdBlock rules
+
+  # t
+   # tagtic-ads
+    - DOMAIN-SUFFIX, g1.tagtic.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, xy-log.tagtic.cn, 🛑 AdBlock rules
+
+   # tappx-ads
+    - DOMAIN-SUFFIX, ssp.api.tappx.com, 🛑 AdBlock rules
+
+   # tencent-ads
+    - DOMAIN-SUFFIX, ad.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad.qun.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adfilter.imtt.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adping.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adpm.app.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adsclick.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adsfile.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adshmmsg.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adslvfile.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adslvseed.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adsmind.apdcdn.tc.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adsqqclick.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adstestview.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adsview.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adsview2.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adv.app.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adver.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, btrace.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, e.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, log.tbs.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mpush.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mtrace.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, push.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pgdt.gtimg.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ugdtimg.com, 🛑 AdBlock rules
+
+  # u
+   # uberads-ads
+    - DOMAIN-SUFFIX, uberads.com, 🛑 AdBlock rules
+
+   # umeng-ads
+    - DOMAIN-SUFFIX, alog.umeng.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, alog.umengcloud.com, 🛑 AdBlock rules
+
+    # CNZZ
+    - DOMAIN-SUFFIX, w.cnzz.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, z.gds.cnzz.com, 🛑 AdBlock rules
+
+   # unity-ads
+    - DOMAIN-SUFFIX, unityads.unity3d.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, unityads.unitychina.cn, 🛑 AdBlock rules
+
+  # w
+   # wteam-ads
+    - DOMAIN-SUFFIX, ads.wteam.xyz, 🛑 AdBlock rules
+
+  # x
+   # xhamster-ads
+    - DOMAIN-SUFFIX, collector.xhamster.com, 🛑 AdBlock rules
+
+   # xiaomitv-ads
+    - DOMAIN-SUFFIX, ad.intl.xiaomi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad.mi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad.xiaomi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad1.xiaomi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, admob.xiaomi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adv.sec.intl.miui.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adv.sec.miui.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, misc.in.duokanbox.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mistat.xiaomi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tjqonline.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tracking.miui.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad.hpplay.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adeng.hpplay.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, kuyun.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, umeng.com, 🛑 AdBlock rules
+
+   # ximalaya-ads
+    - DOMAIN-SUFFIX, adbehavior.ximalaya.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adse.wsa.ximalaya.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, adse.ximalaya.com, 🛑 AdBlock rules
+
+  # y
+   # yahoo-ads
+    - DOMAIN-SUFFIX, ads.yahoo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gemini.yahoo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ysm.yahoo.com, 🛑 AdBlock rules
+
+   # youku-ads
+    - DOMAIN-SUFFIX, actives.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad.api.3g.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad.api.mobile.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ad.mobile.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, a-dxk.play.api.3g.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, atm.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, b.smartvideo.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, c.yes.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, das.api.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, das.mobile.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dev-push.m.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dl.g.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dmapp.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, e.stat.ykimg.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gamex.mobile.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, guanggaoad.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, hudong.pl.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, huodong.pl.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, huodong.vip.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, hz.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, iyes.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, l.ykimg.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, lstat.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mobilemsg.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, msg.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, myes.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, p.l.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pl.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, passport-log.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, p-log.ykimg.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, push.m.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, r.l.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, s.p.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sdk.m.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, stat.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, statis.api.3g.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, store.tv.api.3g.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, store.xl.api.3g.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tdrec.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, test.ott.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, test.sdk.m.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, v.l.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, val.api.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, wan.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ykatr.youku.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, ykrec.youku.com, 🛑 AdBlock rules
+
+  # z
+   # zynga-ads
+    - DOMAIN-SUFFIX, zynga.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, zyngaplayersupport.com, 🛑 AdBlock rules
+
+ # REJECT added manually
+  # a
+   
+  # b
+   
+  # c
+   
+  # d
+  
+  # e
+  
+  # f
+   
+  # g
+   
+  # h
+   
+  # i
+
+  # j
+   
+  # k
+   
+  # l
+   
+  # m
+   
+  # n
+   
+  # o
+   
+  # p
+
+  # q
+   
+  # r
+   
+  # s
+   
+  # t
+   
+  # u
+   
+  # v
+   
+  # w
+   
+  # x
+   
+  # y
+   
+  # z
 
  # DIRECT added manually
   # WARNING: Private, ISP have rules with "PRIVATE", 
@@ -893,26 +1969,27 @@ rules:
     # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
 
     # 本地/局域网地址
-    - DOMAIN-SUFFIX, ip6-localhost, private
-    - DOMAIN-SUFFIX, ip6-loopback, private
-    - DOMAIN-SUFFIX, local, private
-    - DOMAIN-SUFFIX, localhost, private
-    - IP-CIDR, 10.0.0.0/8, private, no-resolve
-    - IP-CIDR, 100.64.0.0/10, private, no-resolve
-    - IP-CIDR, 127.0.0.0/8, private, no-resolve
-    - IP-CIDR, 172.16.0.0/12, private, no-resolve
-    - IP-CIDR, 192.168.0.0/16, private, no-resolve
+    # - DOMAIN-SUFFIX, ip6-localhost, private
+    # - DOMAIN-SUFFIX, ip6-loopback, private
+    # - DOMAIN-SUFFIX, local, private
+    # - DOMAIN-SUFFIX, localhost, private
+
+    # - IP-CIDR, 10.0.0.0/8, private, no-resolve
+    # - IP-CIDR, 100.64.0.0/10, private, no-resolve
+    # - IP-CIDR, 127.0.0.0/8, private, no-resolve
+    # - IP-CIDR, 172.16.0.0/12, private, no-resolve
+    # - IP-CIDR, 192.168.0.0/16, private, no-resolve
     
    # IP-CIDR compared results
-    - IP-CIDR, 198.18.0.0/16, DIRECT, no-resolve
+    # - IP-CIDR, 198.18.0.0/16, DIRECT, no-resolve
 
-    - IP-CIDR6, ::1/128, private, no-resolve
-    - IP-CIDR6, fc00::/7, private, no-resolve
-    - IP-CIDR6, fe80::/10, private, no-resolve
-    - IP-CIDR6, fd00::/8, private, no-resolve
+    # - IP-CIDR6, ::1/128, private, no-resolve
+    # - IP-CIDR6, fc00::/7, private, no-resolve
+    # - IP-CIDR6, fe80::/10, private, no-resolve
+    # - IP-CIDR6, fd00::/8, private, no-resolve
     
    # Router managed 路由器管理域名
-    - DOMAIN-SUFFIX, p.to, private
+    # - DOMAIN-SUFFIX, p.to, private
 
   # q
    # tencent qq
@@ -39842,1082 +40919,6 @@ rules:
     - DOMAIN-KEYWORD, .express.co, PROXY
     - DOMAIN-KEYWORD, .cebupacificair, PROXY
     - DOMAIN-KEYWORD, .14news, PROXY
-
- # 🛑 AdBlock added manually
-  # #
-
-  # a
-  
-  # b
-  
-  # c
-  
-  # d
-  
-  # e
-  
-  # f
-  
-  # g
-  
-  # h
-  
-  # i
-    # itv.com
-    # - DOMAIN-SUFFIX, 2cnt.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, doubleverify.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, flashtalking.com, 🛑 AdBlock rules
-
-  # j
-  
-  # k
-  
-  # l
-  
-  # m
-  
-  # n
-  
-  # o
-  
-  # p
-  
-  # q
-  
-  # r
-  
-  # s
-  
-  # t
-  
-  # u
-  
-  # v
-  
-  # w
-  
-  # x
-  
-  # y
-  
-  # z
-
- # 🛑 AdBlock (domain-list-community)
-  # #
-   # 36Kr
-    # - DOMAIN-SUFFIX, adx.36kr.com, 🛑 AdBlock rules
-
-   # 58
-    # - DOMAIN-SUFFIX, tracklog.58.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, track.58.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, jing.58.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, brandshow.58.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mshow.fang.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, countpvn.light.fang.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, clickn.fang.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, clickm.fang.com, 🛑 AdBlock rules
-
-  # a
-   # acfun-ads
-    # - DOMAIN, apilog-web.acfun.cn, 🛑 AdBlock rules
-
-   # adcolony-ads
-    # - DOMAIN-SUFFIX, adcolony.com, 🛑 AdBlock rules
-
-   # adjust-ads
-    # - DOMAIN-SUFFIX, adjust.com, 🛑 AdBlock rules
-
-   # adobe-ads
-    # - DOMAIN-SUFFIX, advertising.adobe.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tubemogul.com, 🛑 AdBlock rules
-
-   # ali213
-    # - DOMAIN-SUFFIX, click.ali213.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pbmp.ali213.net, 🛑 AdBlock rules
-
-   # alibaba-ads
-    # - DOMAIN-SUFFIX, a.alimama.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, acjs.aliyun.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adash.m.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adashbc.m.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adashbc.ut.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adash-c.ut.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adashx.m.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adashx4ae.ut.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adashx4yt.m.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adashxgc.ut.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adsh.m.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, afp.adchina.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, afp.alicdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, agoodm.m.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, agoodm.wapa.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, alipaylog.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, amdc.alipay.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, amdc.m.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, api.wapa.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, api.waptest.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, apoll.m.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, appdownload.alicdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, atanx.alicdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, atanx2.alicdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cdn0.mobmore.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, click.aliyun.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, click.mz.simba.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cm.ipinyou.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cm.mlt01.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dsp.simba.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, err.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ex.mobmore.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ex.puata.info, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, fav.simba.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, feedback.whalecloud.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ff.win.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, fm.p0y.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, g.click.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, g.tbcdn.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gma.alicdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gtms01.alicdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gtms02.alicdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gtms03.alicdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gtms04.alicdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, hydra.alibaba.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, hz.pre.tbusergw.taobao.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, hz.tbusergw.taobao.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, i.ipinyou.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, init.phpwind.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, intl.wapa.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, intl.waptest.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, jxlog.istreamsche.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, log.umtrack.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, m.intl.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, m.simba.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, match.p4p.1688.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, material.istreamsche.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mlt01.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, nbsdk-baichuan.alicdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, nbsdk-baichuan.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, osfota.cdn.aliyun.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, osupdate.aliyun.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, osupdateservice.yunos.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pindao.huoban.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, push.wandoujia.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, re.m.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, re.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, redirect.simba.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, rj.m.taobao.co, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, rj.m.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sdkinit.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, show.re.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, simaba.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, simba.m.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, srd.simba.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, stats.ipinyou.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, strip.taobaocdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tanxlog.istreamsche.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tejia.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, temai.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tns.simba.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tongji.linezing.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tvupgrade.yunos.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tyh.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, userimg.qunar.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, w.m.taobao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, yiliao.hupan.com, 🛑 AdBlock rules
-
-   # amazon-ads
-    # - DOMAIN-SUFFIX, amazon-adsystem.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, serving-sys.com, 🛑 AdBlock rules
-
-   # apple-ads
-    # - DOMAIN-SUFFIX, iad.apple.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, iadsdk.apple.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, qwapi.com, 🛑 AdBlock rules
-
-   # applovin-ads
-    # - DOMAIN-SUFFIX, applovin.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, applvn.com, 🛑 AdBlock rules
-
-   # atom-data-ads
-    # - DOMAIN-SUFFIX, atom-data.io, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, analytics-data.io, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ironbeast.io, 🛑 AdBlock rules
-
-  # b
-   # baidu-ads
-    # - DOMAIN-SUFFIX, a.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad.duapps.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad.player.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adm.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adscdn.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adx.xiaodutv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ae.bdstatic.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, afd.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, als.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, api.mobula.sdk.duapps.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, api.tuisong.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, appc.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, b.bdstatic.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, baichuan.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, baidustatic.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, baidutv.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, banlv.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, bar.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, bdimg.share.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, bdplus.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, bj.bcebos.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, btlaunch.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, c.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cb.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cbjs.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cjhq.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cleaner.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, click.bes.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, click.hm.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, click.qianqian.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cm.baichuan.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cm.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cm.pos.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cpro.baidu.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cpro.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cpro.baidustatic.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cpro.tieba.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cpro.zhidao.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cpro2.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cpro2.baidustatic.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, crs.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, datax.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dd713.bj.bcebos.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dl.client.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dl.ops.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dl1sw.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dl2.bav.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dlsw.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dlsw.br.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dl-vip.bav.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dl-vip.pcfaster.baidu.co.th, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, download.bav.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, download.sd.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, drmcmm.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dup.baidustatic.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dxp.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dzl.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, e.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, eclick.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ecma.bdimg.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ecmb.bdimg.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ecmc.bdimg.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, eiv.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, em.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, entry.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ers.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, f10.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, fc-feed.cdn.bcebos.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, fclick.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, feed.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, fexclick.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, g.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gimg.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, guanjia.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, hc.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, hm.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, hmma.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, hpd.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, idm.bce.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, idm-su.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, iebar.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ikcode.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, img.taotaosou.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, img01.taotaosou.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, j.br.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, kstj.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, log.music.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, m1.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ma.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mobads.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mobads-logs.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mpro.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, msite.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, neirong.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, nsclick.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, nsclickvideo.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, openrcv.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pc.videoclick.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pos.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pups.bdimg.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, push.zhanzhang.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, qianclick.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, release.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, res.mi.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, rigel.baidustatic.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, river.zhidao.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, rj.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, rplog.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, s.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, s.cpro.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sa.tuisong.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sclick.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sestat.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, shadu.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, share.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, snippet.pos.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sobar.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sobartop.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, spcode.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, stat.v.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, su.bdimg.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, su.bdstatic.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tk.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tkweb.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tob-cms.bj.bcebos.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tongji.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, toolbar.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tracker.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tuijian.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, uat1.bfsspadserver.8le8le.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ubmcmm.baidustatic.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ucstat.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ulic.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ulog.imap.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, union.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, unionimage.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, utility.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, utk.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, videopush.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, vv84.bj.bcebos.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, w.gdown.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, w.x.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, wangmeng.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, weishi.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, wenku-cms.bj.bcebos.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, wisepush.video.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, wm.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, wn.pos.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, znsv.baidu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, zz.bdstatic.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, zzy1.quyaoya.com, 🛑 AdBlock rules
-
-   # bytedance-ads
-    # - DOMAIN-SUFFIX, bds.snssdk.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ctobsnssdk.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dig.bdurl.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, extlog.snssdk.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, i.snssdk.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, is.snssdk.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mcs.snssdk.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pangolin.snssdk.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pangolin-sdk-toutiao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pglstatp-toutiao.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sf3-ttcdn-tos.pstatp.com, 🛑 AdBlock rules
-
-  # c
-   # category-ads
-    # This file contains domains that clearly serving ads
-    
-    # include:acfun-ads
-    # include:adcolony-ads
-    # include:adjust-ads
-    # include:adobe-ads
-    # include:alibaba-ads
-    # include:amazon-ads
-    # include:apple-ads
-    # include:applovin-ads
-    # include:atom-data-ads
-    # include:baidu-ads
-    # include:bytedance-ads
-    # include:category-ads-ir
-    # include:clearbitjs-ads
-    # include:dmm-ads
-    # include:emogi-ads
-    # include:flurry-ads
-    # include:google-ads
-    # include:growingio-ads
-    # include:hiido-ads
-    # include:hotjar-ads
-    # include:hunantv-ads
-    # include:inner-active-ads
-    # include:iqiyi-ads
-    # include:jd-ads
-    # include:kuaishou-ads
-    # include:kugou-ads
-    # include:leanplum-ads
-    # include:letv-ads
-    # include:mixpanel-ads
-    # include:mopub-ads
-    # include:mxplayer-ads
-    # include:netease-ads
-    # include:newrelic-ads
-    # include:ogury-ads
-    # include:onesignal-ads
-    # include:ookla-speedtest-ads
-    # include:openx-ads
-    # include:pocoiq-ads
-    # include:pubmatic-ads
-    # include:segment-ads
-    # include:sensorsdata-ads
-    # include:sina-ads
-    # include:sohu-ads
-    # include:spotify-ads
-    # include:supersonic-ads
-    # include:tagtic-ads
-    # include:tappx-ads
-    # include:tencent-ads
-    # include:uberads-ads
-    # include:umeng-ads
-    # include:unity-ads
-    # include:wteam-ads
-    # include:xhamster-ads
-    # include:xiaomitv-ads
-    # include:ximalaya-ads
-    # include:yahoo-ads
-    # include:youku-ads
-    # include:zynga-ads
-
-    # Other domains for ads serving
-    # - DOMAIN-SUFFIX, 51y5.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, a.adtng.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, aaxads.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad-srv.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad.api.moji.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad.wang502.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adbutter.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, addthisedge.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ads.trafficjunky.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adtechus.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adtrue.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adxprtz.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cdn.advertserve.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cdn.banclip.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cfts1tifqr.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, contentabc.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cretgate.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ero-advertising.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, eroadvertising.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, exoclick.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, exosrv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, go2.global, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gozendata.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gzads.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gz-data.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, img-bss.csdn.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, imglnkc.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, imglnkd.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, innovid.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ja2.gamersky.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, jads.co, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, jl3.yjaxa.top, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, juicyads.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, kepler-37b.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, lqc006.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, moat.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, moatads.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mobwithad.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, realsrv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, s4yxaqyq95.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, shhs-ydd8x2.yjrmss.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, static.javhd.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tm-banners.gamingadult.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, trafficfactory.biz, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tsyndicate.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, wwads.cn, 🛑 AdBlock rules
-
-    # 36Kr
-    # - DOMAIN-SUFFIX, adx.36kr.com, 🛑 AdBlock rules
-    
-    # ali213
-    # - DOMAIN-SUFFIX, click.ali213.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pbmp.ali213.net, 🛑 AdBlock rules
-    
-    # Caixin
-    # regexp:^pinggai\d\.caixin\.com$
-    
-    # Chinaso
-    # - DOMAIN-SUFFIX, adq.chinaso.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, stat.chinaso.com, 🛑 AdBlock rules
-    
-    # Httpool
-    # - DOMAIN-SUFFIX, toboads.com, 🛑 AdBlock rules
-    
-    # Qiniu
-    # - DOMAIN-SUFFIX, dn-growing.qbox.me, 🛑 AdBlock rules
-    
-    # UNI Marketing
-    # - DOMAIN-SUFFIX, ad.unimhk.com, 🛑 AdBlock rules
-    
-    # UCloud
-    # - DOMAIN-SUFFIX, das-rpt-log.ucloud.cn, 🛑 AdBlock rules
-    
-   # category-ads-all
-    # This file contains domains of all ads providers, including both the domains that serves ads, and the domains of providers themselves.
-
-    # - DOMAIN-SUFFIX, 7box.vip, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad-delivery.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adinplay.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adnxs.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ads.trafficjunky.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, advertserve.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, casalemedia.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, contextual.media.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cpmstar.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, demdex.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, httpool.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, lijit.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, 1rx.io, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mfadsrvr.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mgid.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ns1p.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pubmatic.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, snapads.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, spotxchange.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, unimhk.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, upapi.net, 🛑 AdBlock rules
-
-    # include:taboola
-    # include:category-ads
-
-   # category-ads-ir
-    # Iranian Advertising websites
-    # - DOMAIN-SUFFIX, adivery.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adivery.ir, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, kaprila.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, najva.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sabavision.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tapsell.ir, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, yektanet.com, 🛑 AdBlock rules
-
-   # clearbitjs-ads
-    # - DOMAIN-SUFFIX, x.clearbitjs.com, 🛑 AdBlock rules
-
-  # d
-   # dmm-ads
-    # Refer: https://tonahazana.com/kancolle-2nd-weight-saving
-    # If you use support tools to play DMM games(such as playing Kantai Collection by poi), this list maybe useful.
-
-    # - DOMAIN-SUFFIX, ad.games.dmm.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, bluekai.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, fout.jp, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gmossp-sp.jp, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, i-mobile.co.jp, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, im-apps.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, impact-ad.jp, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ladsp.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, microad.co.jp, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, microad.jp, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, socdm.com, 🛑 AdBlock rules
-
-  # e
-   # emogi-ads
-    # - DOMAIN-SUFFIX, emogi.com, 🛑 AdBlock rules
-
-  # f
-   # flurry-ads
-    # - DOMAIN-SUFFIX, data.flurry.com, 🛑 AdBlock rules
-
-   # fqnovel
-    # - DOMAIN, ads3-normal-hl.zijieapi.com, 🛑 AdBlock rules
-    # - DOMAIN, ads5-normal-hl.zijieapi.com, 🛑 AdBlock rules
-    # - DOMAIN, log3-applog-hl.fqnovel.com, 🛑 AdBlock rules
-    # - DOMAIN, log5-applog-hl.fqnovel.com, 🛑 AdBlock rules
-    # - DOMAIN, p3-ad-sign.byteimg.com, 🛑 AdBlock rules
-    # - DOMAIN, p6-ad-sign.byteimg.com, 🛑 AdBlock rules
-    # - DOMAIN, p9-ad-sign.byteimg.com, 🛑 AdBlock rules
-    # - DOMAIN, rtlog3-applog-hl.fqnovel.com, 🛑 AdBlock rules
-    # - DOMAIN, rtlog5-applog-hl.fqnovel.com, 🛑 AdBlock rules
-
-  # g
-   # google-ads
-    # - DOMAIN-SUFFIX, 2mdn.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, admob.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ads.youtube.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adsense.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adsensecustomsearchads.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adsenseformobileapps.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adservice.google.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, advertisercommunity.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, advertiserscommunity.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adwords-community.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adwords.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adwordsexpress.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, app-measurement.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, clickserver.googleads.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, doubleclick.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, doubleclick.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, google-analytics.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, googleadapis.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, googleadservices.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, googleanalytics.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, googleoptimize.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, googlesyndication.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, googletagmanager.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, googletagservices.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, googletraveladservices.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, marketingplatform.google.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, urchin.com, 🛑 AdBlock rules
-
-    # - DOMAIN, analytics.google.com, 🛑 AdBlock rules
-
-    # # regexp:^adservice\.google\.([a-z]{2}|com?)(\.[a-z]{2})?$, 🛑 AdBlock rules
-
-   # growingio-ads
-    # - DOMAIN-SUFFIX, assets.growingio.com, 🛑 AdBlock rules
-
-  # h
-   # hiido-ads
-    # - DOMAIN-SUFFIX, mlog.hiido.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ylog.hiido.com, 🛑 AdBlock rules
-
-   # hotjar-ads
-    # - DOMAIN-SUFFIX, static.hotjar.com, 🛑 AdBlock rules
-
-   # hunantv-ads
-    # - DOMAIN-SUFFIX, click.hunantv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, da.hunantv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, da.mgtv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, log.hunantv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, log.v2.hunantv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, res.hunantv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, v2.log.hunantv.com, 🛑 AdBlock rules
-
-  # i
-   # inner-active-ads
-    # - DOMAIN-SUFFIX, inner-active.mobi, 🛑 AdBlock rules
-
-   # iqiyi-ads
-    # - DOMAIN-SUFFIX, a.ckm.iqiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad.m.iqiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, afp.iqiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, c.uaa.iqiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cloudpush.iqiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cm.passport.iqiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cupid.iqiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, emoticon.sns.iqiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gamecenter.iqiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, hotchat-im.iqiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ifacelog.iqiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mbdlog.iqiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, msg.71.am, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, msg.video.qiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, msg2.video.qiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, policy.video.iqiyi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, yuedu.iqiyi.com, 🛑 AdBlock rules
-
-  # j
-   # jd-ads
-    # - DOMAIN-SUFFIX, ads.union.jd.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, c-nfa.jd.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cps.360buy.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, jzt.jd.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, stat.m.jd.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, img-x.jd.com, 🛑 AdBlock rules
-
-  # k
-   # kuaishou-ads
-    # - DOMAIN, log-sdk.gifshow.com, 🛑 AdBlock rules
-    # - DOMAIN, wlog.kuaishou.com, 🛑 AdBlock rules
-
-   # kugou-ads
-    # - DOMAIN-SUFFIX, ads.service.kugou.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adserviceretry.kglink.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adserviceretry.kugou.com, 🛑 AdBlock rules
-
-  # l
-   # leanplum-ads
-    # - DOMAIN-SUFFIX, leanplum.com, 🛑 AdBlock rules
-
-   # letv-ads
-    # - DOMAIN-SUFFIX, api.game.letvstore.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ark.letv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dc.letv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dev.dc.letv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, fz.letv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, g3.letv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, letv.allyes.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, minisite.letv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, msg.m.letv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, n.mark.letv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, plog.dc.letv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pro.hoye.letv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pro.letv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, stat.letv.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, static.app.m.letv.com, 🛑 AdBlock rules
-
-  # m
-   # mixpanel-ads
-    # - DOMAIN-SUFFIX, decide.mixpanel.com, 🛑 AdBlock rules
-
-   # mopub-ads
-    # - DOMAIN-SUFFIX, mopub.com, 🛑 AdBlock rules
-
-   # mxplayer-ads
-    # - DOMAIN-SUFFIX, evt.mxplay.com, 🛑 AdBlock rules
-
-  # n
-   # netease-ads
-    # - DOMAIN-SUFFIX, analytics.163.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, crash.163.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, crashlytics.163.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, g.163.com, 🛑 AdBlock rules
-
-   # newrelic-ads
-    # - DOMAIN-SUFFIX, js-agent.newrelic.com, 🛑 AdBlock rules
-
-  # o
-   # ogury-ads
-    # - DOMAIN-SUFFIX, ogury.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, presage.io, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ogury.co, 🛑 AdBlock rules
-
-   # onesignal-ads
-    # - DOMAIN-SUFFIX, onesignal.com, 🛑 AdBlock rules
-
-   # ookla-speedtest-ads
-    # regexp:^speed\.(coe|open)\.ad\.[a-z]{2,6}\.prod\.hosts\.ooklaserver\.net$ @ads
-
-   # openai
-    # tracking
-    # - DOMAIN, o33249.ingest.sentry.io, 🛑 AdBlock rules
-    # - DOMAIN, openaicom.imgix.net, 🛑 AdBlock rules
-
-   # openx-ads
-    # - DOMAIN-SUFFIX, openx.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, openxadexchange.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, openxcdn.net, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, openxenterprise.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, openxmarket.asia, 🛑 AdBlock rules
-
-  # p
-   # pikpak
-    # tracking
-    # - DOMAIN, o4504926511693824.ingest.sentry.io, 🛑 AdBlock rules
-
-   # pixiv
-    # - DOMAIN-SUFFIX, ads-pixiv.net, 🛑 AdBlock rules
-
-   # pocoiq-ads
-    # - DOMAIN-SUFFIX, cdn.pocoiq.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, oct.pocoiq.cn, 🛑 AdBlock rules
-
-   # pubmatic-ads
-    # - DOMAIN-SUFFIX, ads.pubmatic.com, 🛑 AdBlock rules
-
-  # s
-   # segment-ads
-    # - DOMAIN-SUFFIX, cdn.segment.com, 🛑 AdBlock rules
-
-   # sensorsdata-ads
-    # - DOMAIN-SUFFIX, static.sensorsdata.cn, 🛑 AdBlock rules
-
-   # sina-ads
-    # - DOMAIN-SUFFIX, 2016.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adbox.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adimages.sina.com.hk, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adimg.mobile.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adimg.uve.weibo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adm.leju.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ads.sina.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, alitui.weibo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, api.apps.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, appgift.sinaapp.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, appsupdate.sinaapp.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, atm.sina.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, beacon.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, biz.weibo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, c.biz.weibo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, c.wcpt.biz.weibo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, click.uve.mobile.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, click.uve.weibo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cm.dmp.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, contentrecommend-out.mobile.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, count.video.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, counter.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cre.dp.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, cre-dp.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, d00.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dcads.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dl.kjava.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dmp.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dp.im.weibo.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, game.weibo.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, game.weibo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gw5.push.mcp.weibo.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gw6.push.mcp.weibo.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, img.adbox.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, img.amp.ad.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, int.dpool.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, interest.mix.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, log.interest.mix.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, log.mix.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, log.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, m.beacon.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, m.game.weibo.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mg.games.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, motu.p4p.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, newspush.sinajs.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, oascentral.sina.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, oascentral.sina.com.hk, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, p4p.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, palmnews.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pay.mobile.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pfp.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pfpip.sina.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, promote.biz.weibo.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, r.dmp.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, rm.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, rs.sinajs.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, s.alitui.weibo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, s.img.mix.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sapi.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sax.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sax.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, saxn.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, saxs.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sbeacon.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sdkapp.mobile.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sdkapp.uve.weibo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sdkclick.mobile.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, slog.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, slog.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, staticadm.leju.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tjs.sjs.sinajs.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, trends.mobile.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, u1.img.mobile.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, wapwbclick.mobile.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, wbapp.mobile.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, wbapp.uve.weibo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, wbclick.mobile.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, wbpctips.mobile.sina.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, widget.weibo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, woocall.sina.com.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, zc.biz.weibo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, zymo.mps.weibo.com, 🛑 AdBlock rules
-
-   # snap
-
-   # sohu-ads
-    # - DOMAIN-SUFFIX, adnet.sohu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ads.sohu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adv-sv-show.focus.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, aty.sohu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, data.vod.itc.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, epro.sogou.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, go.sohu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, golden1.sogou.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, imp.optaim.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, inte.sogou.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, inte.sogoucdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, lu.sogoucdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pv.sohu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, theta.sogoucdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, track.sohu.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, uranus.sogou.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, v2.reachmax.cn, 🛑 AdBlock rules
-
-    # - DOMAIN, e8aeb8bbdbbd7.cdn.sohucs.com, 🛑 AdBlock rules
-    # - DOMAIN, 643108e7617ef.cdn.sohucs.com, 🛑 AdBlock rules
-
-   # spotify-ads
-    # - DOMAIN, adeventtracker.spotify.com, 🛑 AdBlock rules
-    # - DOMAIN, adstudio-assets.scdn.co, 🛑 AdBlock rules
-    # - DOMAIN, bloodhound.spotify.com, 🛑 AdBlock rules
-
-   # supersonic-ads
-    # - DOMAIN-SUFFIX, supersonic.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, supersonicads.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ssacdn.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, supersonicads-a.akamaihd.net, 🛑 AdBlock rules
-
-  # t
-   # tagtic-ads
-    # - DOMAIN-SUFFIX, g1.tagtic.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, xy-log.tagtic.cn, 🛑 AdBlock rules
-
-   # tappx-ads
-    # - DOMAIN-SUFFIX, ssp.api.tappx.com, 🛑 AdBlock rules
-
-   # tencent-ads
-    # - DOMAIN-SUFFIX, ad.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad.qun.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adfilter.imtt.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adping.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adpm.app.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adsclick.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adsfile.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adshmmsg.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adslvfile.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adslvseed.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adsmind.apdcdn.tc.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adsqqclick.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adstestview.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adsview.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adsview2.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adv.app.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adver.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, btrace.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, e.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, log.tbs.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mpush.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mtrace.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, push.qq.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pgdt.gtimg.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ugdtimg.com, 🛑 AdBlock rules
-
-  # u
-   # uberads-ads
-    # - DOMAIN-SUFFIX, uberads.com, 🛑 AdBlock rules
-
-   # umeng-ads
-    # - DOMAIN-SUFFIX, alog.umeng.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, alog.umengcloud.com, 🛑 AdBlock rules
-
-    # CNZZ
-    # - DOMAIN-SUFFIX, w.cnzz.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, z.gds.cnzz.com, 🛑 AdBlock rules
-
-   # unity-ads
-    # - DOMAIN-SUFFIX, unityads.unity3d.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, unityads.unitychina.cn, 🛑 AdBlock rules
-
-  # w
-   # wteam-ads
-    # - DOMAIN-SUFFIX, ads.wteam.xyz, 🛑 AdBlock rules
-
-  # x
-   # xhamster-ads
-    # - DOMAIN-SUFFIX, collector.xhamster.com, 🛑 AdBlock rules
-
-   # xiaomitv-ads
-    # - DOMAIN-SUFFIX, ad.intl.xiaomi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad.mi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad.xiaomi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad1.xiaomi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, admob.xiaomi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adv.sec.intl.miui.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adv.sec.miui.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, misc.in.duokanbox.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mistat.xiaomi.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tjqonline.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tracking.miui.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad.hpplay.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adeng.hpplay.cn, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, kuyun.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, umeng.com, 🛑 AdBlock rules
-
-   # ximalaya-ads
-    # - DOMAIN-SUFFIX, adbehavior.ximalaya.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adse.wsa.ximalaya.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, adse.ximalaya.com, 🛑 AdBlock rules
-
-  # y
-   # yahoo-ads
-    # - DOMAIN-SUFFIX, ads.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gemini.yahoo.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ysm.yahoo.com, 🛑 AdBlock rules
-
-   # youku-ads
-    # - DOMAIN-SUFFIX, actives.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad.api.3g.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad.api.mobile.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ad.mobile.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, a-dxk.play.api.3g.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, atm.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, b.smartvideo.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, c.yes.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, das.api.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, das.mobile.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dev-push.m.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dl.g.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, dmapp.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, e.stat.ykimg.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, gamex.mobile.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, guanggaoad.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, hudong.pl.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, huodong.pl.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, huodong.vip.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, hz.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, iyes.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, l.ykimg.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, lstat.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, mobilemsg.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, msg.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, myes.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, p.l.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, pl.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, passport-log.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, p-log.ykimg.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, push.m.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, r.l.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, s.p.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, sdk.m.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, stat.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, statis.api.3g.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, store.tv.api.3g.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, store.xl.api.3g.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, tdrec.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, test.ott.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, test.sdk.m.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, v.l.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, val.api.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, wan.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ykatr.youku.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, ykrec.youku.com, 🛑 AdBlock rules
-
-  # z
-   # zynga-ads
-    # - DOMAIN-SUFFIX, zynga.com, 🛑 AdBlock rules
-    # - DOMAIN-SUFFIX, zyngaplayersupport.com, 🛑 AdBlock rules
-
- # REJECT added manually
-  # a
-   
-  # b
-   
-  # c
-   
-  # d
-  
-  # e
-  
-  # f
-   
-  # g
-   
-  # h
-   
-  # i
-
-  # j
-   
-  # k
-   
-  # l
-   
-  # m
-   
-  # n
-   
-  # o
-   
-  # p
-
-  # q
-   
-  # r
-   
-  # s
-   
-  # t
-   
-  # u
-   
-  # v
-   
-  # w
-   
-  # x
-   
-  # y
-   
-  # z
 
  # GEOIP LAN
    # - GEOIP, LAN, DIRECT
