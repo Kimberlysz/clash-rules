@@ -8,8 +8,11 @@
     https://tinyurl.com/clashBlacklistAlpha
 
   ### shadowrocket
-  #### shadowrocket config download url: 
+  #### shadowrocket config with ads blockeddownload url: 
     https://tinyurl.com/shadowrocketBlacklistAlpha
+
+  #### shadowrocket config with ads not blocked download url: 
+    https://tinyurl.com/shadowrocketBlacklistBeta
 
   ### reference sources
     https://github.com/v2fly/domain-list-community
@@ -27,6 +30,9 @@
   ### shadowrocket
   #### Shadowrocket配置文件下载链接:
     https://tinyurl.com/shadowrocketBlacklistAlpha
+
+  #### shadowrocket config with ads not blocked download url: 
+    https://tinyurl.com/shadowrocketBlacklistBeta
 
   ### 参考来源
     https://github.com/v2fly/domain-list-community
