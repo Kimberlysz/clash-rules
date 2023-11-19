@@ -3849,6 +3849,11 @@ rules:
   # v
  
   # w
+   # walmart
+    - DOMAIN-SUFFIX, walmartmobile.cn, DIRECT
+
+    - DOMAIN, api-sams.walmartmobile.cn, DIRECT
+
    # wechat
     # - USER-AGENT, MicroMessenger*, DIRECT
     # - USER-AGENT, WeChat*, DIRECT
