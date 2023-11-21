@@ -31,7 +31,7 @@
   #### Shadowrocket配置文件下载链接:
     https://tinyurl.com/shadowrocketBlacklistAlpha
 
-  #### shadowrocket config with ads not blocked download url: 
+  #### Shadowrocket配置文件下载链接（未屏蔽广告版本）: 
     https://tinyurl.com/shadowrocketBlacklistBeta
 
   ### 参考来源
