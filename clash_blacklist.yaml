@@ -734,6 +734,9 @@ rules:
     - DOMAIN, script.4dex.io, PROXY
     - DOMAIN, mp.4dex.io, PROXY
 
+   # 60sec.site
+    - DOMAIN-SUFFIX, 60sec.site, PROXY
+
    # 6sc.co
     - DOMAIN, j.6sc.co, PROXY
     - DOMAIN, b.6sc.co, PROXY
@@ -742,9 +745,28 @@ rules:
    # a-mo.net
     - DOMAIN, prebid.a-mo.net, PROXY
 
+   # aaro.mil
+    - DOMAIN-SUFFIX, aaro.mil, PROXY
+
+   # abcmouse.com
+    - DOMAIN, ai.abcmouse.com, PROXY
+
    # abtasty.com
     - DOMAIN, try.abtasty.com, PROXY
     - DOMAIN, ariane.abtasty.com, PROXY
+
+   # acast.com
+    - DOMAIN-SUFFIX, acast.com, PROXY
+
+    - DOMAIN, wordpress.prod.website.acast.cloud, PROXY
+
+   # acsbap.com
+    - DOMAIN-SUFFIX, acsbap.com, PROXY
+
+   # acsbapp.com
+    - DOMAIN, cdn.acsbapp.com, PROXY
+
+    - DOMAIN-SUFFIX, acsbapp.com, PROXY
 
    # ad.gt
     - DOMAIN, pixels.ad.gt, PROXY
@@ -773,7 +795,9 @@ rules:
     - DOMAIN, static.addtoany.com, PROXY
 
    # adentifi.com
-    - DOMAIN, adentifi.com, PROXY
+    - DOMAIN-SUFFIX, adentifi.com, PROXY
+
+    - DOMAIN, rtb.adentifi.com, PROXY
 
    # adform.net
     - DOMAIN, track.adform.net, PROXY
@@ -818,13 +842,14 @@ rules:
    # adobedtm.com
     - DOMAIN, assets.adobedtm.com, PROXY
 
+   # adotmob.com
+    - DOMAIN, sync.adotmob.com, PROXY
+
    # adroll.com
     - DOMAIN-SUFFIX, adroll.com, PROXY
 
+    - DOMAIN, s.adroll.com, PROXY
     - DOMAIN, d.adroll.com, PROXY
-
-   # adotmob.com
-    - DOMAIN, sync.adotmob.com, PROXY
 
    # ads-twitter.com
     - DOMAIN, static.ads-twitter.com, PROXY
@@ -847,6 +872,9 @@ rules:
     - DOMAIN, synchrobox.adswizz.com, PROXY
     - DOMAIN, delivery-cdn-cf.adswizz.com, PROXY
 
+   # adtdp.com
+    - DOMAIN, dynalyst-sync.adtdp.com, PROXY
+
    # advertising.com
     - DOMAIN, pixel.advertising.com, PROXY
 
@@ -866,8 +894,17 @@ rules:
     - DOMAIN, d.agkn.com, PROXY
     - DOMAIN, aa.agkn.com, PROXY
 
+   # ahalogy.com
+    - DOMAIN, w.ahalogy.com, PROXY
+
+   # aimcarclicks.com
+    - DOMAIN, cars.aimcarclicks.com, PROXY
+
    # akamaihd.net
     - DOMAIN, qsearch-a.akamaihd.net, PROXY
+
+   # algolianet.com
+    - DOMAIN, vfm4x0n23a-2.algolianet.com, PROXY
 
    # amazon-ads
     # amazon
@@ -878,6 +915,7 @@ rules:
     - DOMAIN, aax-eu.amazon-adsystem.com, PROXY
 
    # amazonaws.com
+    - DOMAIN, z183sf0c32.execute-api.us-west-1.amazonaws.com, PROXY
     - DOMAIN, s3.amazonaws.com, PROXY
     - DOMAIN, qualified-production.s3.us-east-1.amazonaws.com, PROXY
 
@@ -935,7 +973,14 @@ rules:
    # authorize.net
     - DOMAIN, verify.authorize.net, PROXY
 
+   # autohub.io
+    - DOMAIN-SUFFIX, autohub.io, PROXY
+
+   # azure.com
+    - DOMAIN, js.monitor.azure.com, PROXY
+
    # azurewebsites.net
+    - DOMAIN, mtafunctionapp.azurewebsites.net, PROXY
     - DOMAIN, lightboxapi.azurewebsites.net, PROXY
 
   # b
@@ -994,8 +1039,8 @@ rules:
     - DOMAIN, sdk.iad-01.braze.com, PROXY
 
    # brazgovskaia
-    - DOMAIN-SUFFIX, brazgovskaia.com, PROXY
     - DOMAIN-SUFFIX, brazgovskaia.ru, PROXY
+    - DOMAIN-SUFFIX, brazgovskaia.com, PROXY
 
    # browser-intake-datadoghq.com
     - DOMAIN-SUFFIX, browser-intake-datadoghq.com, PROXY
@@ -1026,11 +1071,20 @@ rules:
    # calltouch.ru
     - DOMAIN, mod.calltouch.ru, PROXY
 
+   # carnow.com
+    - DOMAIN, app.carnow.com, PROXY
+
    # casalemedia.com
     - DOMAIN, ssum-sec.casalemedia.com, PROXY
+    - DOMAIN, r.casalemedia.com, PROXY
     - DOMAIN, htlb.casalemedia.com, PROXY
     - DOMAIN, dsum.casalemedia.com, PROXY
     - DOMAIN, dsum-sec.casalemedia.com, PROXY
+
+   # cdnbasket.net
+    - DOMAIN, view.cdnbasket.net, PROXY
+    - DOMAIN, page.cdnbasket.net, PROXY
+    - DOMAIN, data.cdnbasket.net, PROXY
 
    # cdnwidget.com
     - DOMAIN, pd.cdnwidget.com, PROXY
@@ -1058,6 +1112,10 @@ rules:
    # chimpstatic.com
     - DOMAIN-SUFFIX, chimpstatic.com, PROXY
 
+   # chtbl.com
+    - DOMAIN, web.chtbl.com, PROXY
+    - DOMAIN, ext.chtbl.com, PROXY
+
    # clarity.ms
     - DOMAIN, v.clarity.ms, PROXY
     - DOMAIN-SUFFIX, clarity.ms, PROXY
@@ -1083,13 +1141,34 @@ rules:
     - DOMAIN, static.cloudflareinsights.com, PROXY
 
    # cloudfront.net
+    - DOMAIN, server-108-138-106-37.jfk50.r.cloudfront.net, PROXY
+    - DOMAIN, server-108-138-106-125.jfk50.r.cloudfront.net, PROXY
+    - DOMAIN, dmqdd6hw24ucf.cloudfront.net, PROXY
+    - DOMAIN, dfp6rglgjqszk.cloudfront.net, PROXY
+    - DOMAIN, dai3fd1oh325y.cloudfront.net, PROXY
+    - DOMAIN, d3c7rimkq79yfu.cloudfront.net, PROXY
+    - DOMAIN, d349g9zuie06uo.cloudfront.net, PROXY
+    - DOMAIN, d33j40olg1p4iv.cloudfront.net, PROXY
     - DOMAIN, d2hrivdxn8ekm8.cloudfront.net, PROXY
+    - DOMAIN, d2dhoetkfll74o.cloudfront.net, PROXY
+    - DOMAIN, d2dhakgqu1upap.cloudfront.net, PROXY
+    - DOMAIN, d2anahhhmp1ffz.cloudfront.net, PROXY
+    - DOMAIN, d29f71cuc8ityh.cloudfront.net, PROXY
+    - DOMAIN, d25xi40x97liuc.cloudfront.net, PROXY
+    - DOMAIN, d22qjgkvxw22r6.cloudfront.net, PROXY
+    - DOMAIN, d1v5ir2lpwr8os.cloudfront.net, PROXY
     - DOMAIN, d1n00d49gkbray.cloudfront.net, PROXY
     - DOMAIN, d1lu3pmaz2ilpx.cloudfront.net, PROXY
+    - DOMAIN, d1k2us671qcoau.cloudfront.net, PROXY
+    - DOMAIN, d151l6v8er5bdm.cloudfront.net, PROXY
+    - DOMAIN, d11k2jsyq7ur0b.cloudfront.net, PROXY
     - DOMAIN, d10lpsik1i8c69.cloudfront.net, PROXY
 
    # cloudfunctions.net
     - DOMAIN, us-central1-adaptive-growth.cloudfunctions.net, PROXY
+
+   # clickguard.com
+    - DOMAIN, pulse.clickguard.com, PROXY
 
    # cnnx.link
     - DOMAIN, js.cnnx.link, PROXY
@@ -1100,6 +1179,10 @@ rules:
    # company-target.com
     - DOMAIN, s.company-target.com, PROXY
     - DOMAIN, api.company-target.com, PROXY
+
+   # complyauto.com
+    - DOMAIN, privacy-public.complyauto.com, PROXY
+    - DOMAIN, cdn.complyauto.com, PROXY
 
    # connatix.com
     - DOMAIN, capi.connatix.com, PROXY
@@ -1116,6 +1199,9 @@ rules:
 
    # conversionsapigateway.com
     - DOMAIN, gw.conversionsapigateway.com, PROXY
+
+   # convurt.io
+    - DOMAIN-SUFFIX, convurt.io, PROXY
 
    # cookiebot.com
     - DOMAIN, consentcdn.cookiebot.com, PROXY
@@ -1139,7 +1225,10 @@ rules:
     - DOMAIN, static.criteo.net, PROXY
     - DOMAIN, sslwidget.criteo.com, PROXY
     - DOMAIN, privacy.criteo.com, PROXY
+    - DOMAIN, measurement-api.criteo.com, PROXY
     - DOMAIN, gum.criteo.com, PROXY
+    - DOMAIN, fledge.us.criteo.com, PROXY
+    - DOMAIN, dynamic.criteo.com, PROXY
     - DOMAIN, dis.criteo.com, PROXY
     - DOMAIN, bidder.criteo.com, PROXY
 
@@ -1165,6 +1254,9 @@ rules:
    # d3js.org
     - DOMAIN-SUFFIX, d3js.org, PROXY
 
+   # datadoghq-browser-agent.com
+    - DOMAIN, datadoghq-browser-agent.com, PROXY
+
    # datadome.co
     - DOMAIN-SUFFIX, datadome.co, PROXY
 
@@ -1174,6 +1266,17 @@ rules:
 
    # de17a.com
     - DOMAIN, d5p.de17a.com, PROXY
+
+   # dealer.com
+    - DOMAIN, assets.prod.analytics.dealer.com, PROXY
+
+   # dealeron.com
+    - DOMAIN, taggbaa.dealeron.com, PROXY
+    - DOMAIN, cdn.dealeron.com, PROXY
+
+   # dealervision.com
+    - DOMAIN, videoplayer.dealervision.com, PROXY
+    - DOMAIN, scripts.dealervision.com, PROXY
 
    # debugbear.com
     - DOMAIN, cdn.debugbear.com, PROXY
@@ -1191,11 +1294,17 @@ rules:
    # digital-services.solutions
     - DOMAIN, yandex.digital-services.solutions, PROXY
 
+   # digitaladvertisingalliance.org
+    - DOMAIN-SUFFIX, digitaladvertisingalliance.org, PROXY
+
    # digitaleast.mobi
     - DOMAIN, rubiconcm.digitaleast.mobi, PROXY
 
    # digitaloceanspaces.com
     - DOMAIN, sgp1.digitaloceanspaces.com, PROXY
+
+   # dlron.us
+    - DOMAIN, cdn.dlron.us, PROXY
 
    # dmm-ads
     - DOMAIN, tg.socdm.com, PROXY
@@ -1207,6 +1316,10 @@ rules:
    # dotomi.com
     - DOMAIN, prebid-match.dotomi.com, PROXY
     - DOMAIN, amazon-tam-match.dotomi.com, PROXY
+    - DOMAIN, yahoo-match.dotomi.com, PROXY
+    - DOMAIN, match.sync.ad.cpe.dotomi.com, PROXY
+    - DOMAIN, login.dotomi.com, PROXY
+    - DOMAIN, login-ds.dotomi.com, PROXY
 
    # drsmoke.com
     - DOMAIN-SUFFIX, drsmoke.com, PROXY
@@ -1216,12 +1329,22 @@ rules:
    # ebxcdn.com
     - DOMAIN, applets.ebxcdn.com, PROXY
 
+   # eclipsed.tech
+    - DOMAIN-SUFFIX, eclipsed.tech, PROXY
+
    # editmysite.com
     - DOMAIN, cdn5.editmysite.com, PROXY
     - DOMAIN, cdn3.editmysite.com, PROXY
     - DOMAIN, cdn2.editmysite.com, PROXY
     - DOMAIN, 9e1e700f5e5aa4883a49.cdn6.editmysite.com, PROXY
     - DOMAIN, 147218471.cdn6.editmysite.com, PROXY
+
+   # edmunds.com
+    - DOMAIN, edw.edmunds.com, PROXY
+    - DOMAIN, edmunds.com, PROXY
+    - DOMAIN, content-container.edmunds.com, PROXY
+    - DOMAIN, cas-assets.edmunds.com, PROXY
+    - DOMAIN, api.edmunds.com, PROXY
 
    # emxdgt.com
     - DOMAIN, e1.emxdgt.com, PROXY
@@ -1232,6 +1355,10 @@ rules:
    # eoscity.com
     - DOMAIN, helpcenter.eoscity.com, PROXY
 
+   # esm1.net
+    - DOMAIN, pixall.esm1.net, PROXY
+    - DOMAIN, cs.esm1.net, PROXY
+
    # esputnik.com
     - DOMAIN, script.esputnik.com, PROXY
     - DOMAIN, push.esputnik.com, PROXY
@@ -1239,6 +1366,10 @@ rules:
 
    # everesttech.net
     - DOMAIN, sync-tm.everesttech.net, PROXY
+    - DOMAIN, pixel.everesttech.net, PROXY
+
+   # evn.tools
+    - DOMAIN, play.evn.tool, PROXY
 
    # exelator.com
     - DOMAIN, loadus.exelator.com, PROXY
@@ -1257,6 +1388,9 @@ rules:
    # fastclick.net
     - DOMAIN, secure.cdn.fastclick.net, PROXY
 
+   # fdcampaignstudio.com
+    - DOMAIN-SUFFIX, fdcampaignstudio.com, PROXY
+
    # featuregates.org
     - DOMAIN, featuregates.org, PROXY
 
@@ -1266,6 +1400,9 @@ rules:
    # fontawesome.com
     - DOMAIN, use.fontawesome.com, PROXY
     - DOMAIN, kit.fontawesome.com, PROXY
+
+   # fpcdn.io
+    - DOMAIN-SUFFIX, fpcdn.io, PROXY
 
    # fullstory.com
     - DOMAIN, rs.fullstory.com, PROXY
@@ -1300,8 +1437,8 @@ rules:
     - DOMAIN, fundingchoicesmessages.google.com, PROXY
     - DOMAIN, fcmatch.google.com, PROXY
     - DOMAIN, cse.google.com, PROXY
-    - DOMAIN, analytics.google.com, PROXY
-    - DOMAIN, adservice.google.com, PROXY
+    # - DOMAIN, analytics.google.com, PROXY
+    # - DOMAIN, adservice.google.com, PROXY
     - DOMAIN, accounts.google.comcode.tidio.co, PROXY
     - DOMAIN, accounts.google.com, PROXY
 
@@ -1319,13 +1456,17 @@ rules:
     - DOMAIN, 8496125.fls.doubleclick.net, PROXY
     - DOMAIN, 8479206.fls.doubleclick.net, PROXY
     - DOMAIN, 8175776.fls.doubleclick.net, PROXY
+    - DOMAIN, 690327.fls.doubleclick.net, PROXY
     - DOMAIN, 4480452.fls.doubleclick.net, PROXY
+    - DOMAIN, 3864313.fls.doubleclick.net, PROXY
     - DOMAIN, 3810813.fls.doubleclick.net, PROXY
+    - DOMAIN, 3525648.fls.doubleclick.net, PROXY
     - DOMAIN, 3071236.fls.doubleclick.net, PROXY
     - DOMAIN, 13820011.fls.doubleclick.net, PROXY
+    - DOMAIN, 11200397.fls.doubleclick.net, PROXY
+    - DOMAIN, 10873292.fls.doubleclick.net, PROXY
     - DOMAIN, 10270662.fls.doubleclick.net, PROXY
     - DOMAIN, 10258401.fls.doubleclick.net, PROXY
-    - DOMAIN, 3864313.fls.doubleclick.net, PROXY
 
     - DOMAIN, tpc.googlesyndication.com, PROXY
     - DOMAIN, pagead2.googlesyndication.com, PROXY
@@ -1337,12 +1478,18 @@ rules:
     - DOMAIN, d18ac341e03a0c90adf9a7a550cde6eb.safeframe.googlesyndication.com, PROXY
     - DOMAIN, ade.googlesyndication.com, PROXY
     - DOMAIN, 8d908d16faa91f0438489fe1ebd534de.safeframe.googlesyndication.com, PROXY
+    - DOMAIN, 8c3c01014019dd2de612d38fa9484e86.safeframe.googlesyndication.com, PROXY
     - DOMAIN, 0512438caca8d1ad3d907dedee9c65bf.safeframe.googlesyndication.com, PROXY
+
+
+   # google-analytics.com
+    # - DOMAIN-SUFFIX, google-analytics.com, PROXY
 
    # googleadsserving.cn
     - DOMAIN, static.googleadsserving.cn, DIRECT
 
    # googleadservices.com
+    - DOMAIN, googleadservices.com, PROXY
 
    # googleapis.com
     - DOMAIN, tenor.googleapis.com, PROXY
@@ -1350,19 +1497,29 @@ rules:
     - DOMAIN, jnn-pa.googleapis.com, PROXY
     - DOMAIN, imasdk.googleapis.com, PROXY
     - DOMAIN, fonts.googleapis.com, PROXY
+    - DOMAIN, ajax.googleapis.com, PROXY
   
+   # googletagmanager.com
+    # - DOMAIN-SUFFIX, googletagmanager.com, PROXY
+
    # googleoptimize.com
+    - DOMAIN-SUFFIX, googleoptimize.com, PROXY
+
     - DOMAIN, fs16.getcourse.ru, PROXY
     - DOMAIN, fs-thb02.getcourse.ru, PROXY
 
    # googletagservices.com
-    - DOMAIN-SUFFIX, googletagservices.com, PROXY
+    # - DOMAIN-SUFFIX, googletagservices.com, PROXY
 
    # googleusercontent.com
+    - DOMAIN, lh3.googleusercontent.com, PROXY
     - DOMAIN, themes.googleusercontent.com, PROXY
 
    # googlevideo.com
     - DOMAIN, rr4---sn-a5mekn6l.googlevideo.com, PROXY
+
+   # gstatic.com
+    - DOMAIN-SUFFIX, gstatic.com, PROXY
 
    # gray.tv
     - DOMAIN, webpubcontent.gray.tv, PROXY
@@ -1397,8 +1554,14 @@ rules:
 
     - DOMAIN, cdn.heapanalytics.com, PROXY
 
+   # herokuapp.com
+    - DOMAIN, docs-search-ccf5913b41d3.herokuapp.com, PROXY
+
    # hextom.com
     - DOMAIN, tms.hextom.com, PROXY
+
+   # hicloud.com
+    - DOMAIN, dtm-dre.platform.hicloud.com, PROXY
 
    # honey.io
     - DOMAIN, cdn.honey.io, PROXY
@@ -1455,6 +1618,9 @@ rules:
    # impactradius-event.com
     - DOMAIN, d.impactradius-event.com, PROXY
 
+   # impel.io
+    - DOMAIN, cdn.impel.io, PROXY
+
    # imrworldwide.com
     - DOMAIN, secure-gl.imrworldwide.com, PROXY
 
@@ -1468,6 +1634,10 @@ rules:
    # intentiq.com
     - DOMAIN, sync1.intentiq.com, PROXY
     - DOMAIN, sync.intentiq.com, PROXY
+
+   # intercom.io
+    - DOMAIN, widget.intercom.io, PROXY
+    - DOMAIN, api-iam.intercom.io, PROXY
 
    # intercomcdn.com
     - DOMAIN, js.intercomcdn.com, PROXY
@@ -1581,6 +1751,11 @@ rules:
    # linkedin.com
     - DOMAIN, px.ads.linkedin.com, PROXY
 
+   # listrakbi.com
+    - DOMAIN, s1.listrakbi.com, PROXY
+    - DOMAIN, cdn.listrakbi.com, PROXY
+    - DOMAIN, at1.listrakbi.com, PROXY
+
    # loopme.me
     - DOMAIN, csync.loopme.me, PROXY
 
@@ -1605,6 +1780,11 @@ rules:
 
    # mailchimp.com
     - DOMAIN, cdn-images.mailchimp.com, PROXY
+
+   # marchex.io
+    - DOMAIN, snc.marchex.io, PROXY
+    - DOMAIN, rw.marchex.io, PROXY
+    - DOMAIN, px.marchex.io, PROXY
 
    # marphezis.com
     - DOMAIN, rt.marphezis.com, PROXY
@@ -1646,6 +1826,7 @@ rules:
 
    # media.net
     - DOMAIN, prebid.media.net, PROXY
+    - DOMAIN, contextual.media.net, PROXY
 
    # mediago.io
     - DOMAIN, trace.mediago.io, PROXY
@@ -1655,6 +1836,9 @@ rules:
     - DOMAIN, scripts.mediavine.com, PROXY
     - DOMAIN, keywords.mediavine.com, PROXY
     - DOMAIN, exchange.mediavine.com, PROXY
+
+   # mediawallahscript.com
+    - DOMAIN, partner.mediawallahscript.com, PROXY
 
    # mfadsrvr.com
     - DOMAIN, rtb.mfadsrvr.com, PROXY
@@ -1697,6 +1881,10 @@ rules:
     - DOMAIN, px.mountain.com, PROXY
     - DOMAIN, dx.mountain.com, PROXY
 
+   # movio.la
+    - DOMAIN, static.movio.la, PROXY
+    - DOMAIN, files.movio.la, PROXY
+
    # mparticle.com
     - DOMAIN, jssdks.mparticle.com, PROXY
     - DOMAIN, jssdkcdns.mparticle.com, PROXY
@@ -1721,7 +1909,8 @@ rules:
    # network-n.com
     - DOMAIN, kumo.network-n.com, PROXY
 
-   # newrelic.com
+   # newrelic-ads
+    # - DOMAIN-SUFFIX, js-agent.newrelic.com, PROXY
 
    # npttech.com
     - DOMAIN-SUFFIX, npttech.com, PROXY
@@ -1738,6 +1927,12 @@ rules:
   # o
    # oaistatic.com
     - DOMAIN, cdn.oaistatic.com, PROXY
+
+   # oaiusercontent.com
+    - DOMAIN, files.oaiusercontent.com, PROXY
+
+   # omnitagjs.com
+    - DOMAIN, visitor.omnitagjs.com, PROXY
 
    # omtrdc.net
     - DOMAIN, sbmwmotor.sc.omtrdc.net, PROXY
@@ -1844,6 +2039,10 @@ rules:
    # primis.tech
     - DOMAIN, live.primis.tech, PROXY
 
+   # prismic.io
+    - DOMAIN, tpco.cdn.prismic.io, PROXY
+    - DOMAIN, images.prismic.io, PROXY
+
    # privacy-mgmt.com
     - DOMAIN, cdn.privacy-mgmt.com, PROXY
 
@@ -1872,6 +2071,7 @@ rules:
     - DOMAIN, image2.pubmatic.com, PROXY
     - DOMAIN, hbopenbid.pubmatic.com, PROXY
     - DOMAIN, ads.pubmatic.com, PROXY
+    - DOMAIN, image6.pubmatic.com, PROXY
 
   # q
    # qualified.com
@@ -1887,7 +2087,9 @@ rules:
     - DOMAIN, cmp.quantcast.com, PROXY
 
    # quantcount.com
-    - DOMAIN, quantcount.com, PROXY
+    - DOMAIN-SUFFIX, quantcount.com, PROXY
+
+    - DOMAIN, rules.quantcount.com, PROXY
 
    # quantserve.com
     - DOMAIN, secure.quantserve.com, PROXY
@@ -1926,8 +2128,19 @@ rules:
    # redditstatic.com
     - DOMAIN-SUFFIX, redditstatic.com, PROXY
 
+   # redefined.cloud
+    - DOMAIN, plugin.redefined.cloud, PROXY
+
+   # revcontent.com
+    - DOMAIN, trends.revcontent.com, PROXY
+
    # rezync.com
     - DOMAIN, live.rezync.com, PROXY
+
+   # rfihub.com
+    - DOMAIN, p.rfihub.com, PROXY
+    - DOMAIN, 20843995p.rfihub.com, PROXY
+    - DOMAIN, 20823298p.rfihub.com, PROXY
 
    # rfihub.net
     - DOMAIN, c1.rfihub.net, PROXY
@@ -1947,7 +2160,21 @@ rules:
 
    # rqtrk.eu
     - DOMAIN, wt.rqtrk.eu, PROXY
-  
+    - DOMAIN, ws.rqtrk.eu, PROXY
+
+   # rubiconproject.com
+    - DOMAIN-SUFFIX, rubiconproject.com, PROXY
+
+    - DOMAIN, video-ads.rubiconproject.com, PROXY
+    - DOMAIN, token.rubiconproject.com, PROXY
+    - DOMAIN, secure-assets.rubiconproject.com, PROXY
+    - DOMAIN, prebid-server.rubiconproject.com, PROXY
+    - DOMAIN, pixel.rubiconproject.com, PROXY
+    - DOMAIN, pixel-eu.rubiconproject.com, PROXY
+    - DOMAIN, optimized-by.rubiconproject.com, PROXY
+    - DOMAIN, fastlane.rubiconproject.com, PROXY
+    - DOMAIN, eus.rubiconproject.com, PROXY
+
   # s
    # s-onetag.com
     - DOMAIN-SUFFIX, s-onetag.com, PROXY
@@ -1991,8 +2218,11 @@ rules:
    # secureserver.net
     - DOMAIN, events.api.secureserver.net, PROXY
 
+   # segment-ads
+    - DOMAIN-SUFFIX, cdn.segment.com, PROXY
+
    # segment.io
-    - DOMAIN, sapi.segment.io, PROXY
+    - DOMAIN, api.segment.io, PROXY
 
    # segmint.net
     - DOMAIN, maprtb.segmint.net, PROXY
@@ -2048,6 +2278,8 @@ rules:
    # smaato.net
     - DOMAIN, smaato.net, PROXY
 
+    - DOMAIN, s.ad.smaato.net, PROXY
+
    # smartadserver.com
     - DOMAIN, sync.smartadserver.com, PROXY
     - DOMAIN, ssbsync.smartadserver.com, PROXY
@@ -2070,6 +2302,9 @@ rules:
    # softcube.com
     - DOMAIN, tracker.softcube.com, PROXY
 
+   # sojern.com
+    - DOMAIN, beacon.sojern.com, PROXY
+
    # sonobi.com
     - DOMAIN, sync.go.sonobi.com, PROXY
 
@@ -2077,11 +2312,17 @@ rules:
     - DOMAIN, lux.speedcurve.com, PROXY
     - DOMAIN, cdn.speedcurve.com, PROXY
 
+   # sprig.com
+    - DOMAIN, api.sprig.com, PROXY
+
    # shopify.com
     - DOMAIN, cdn.shopify.com, PROXY
 
    # spotxchange.com
     - DOMAIN, sync.search.spotxchange.com, PROXY
+
+   # squarecdn.com
+    - DOMAIN, web.squarecdn.com, PROXY
 
    # squareup.com
     - DOMAIN, pci-connect.squareup.com, PROXY
@@ -2094,6 +2335,9 @@ rules:
 
    # statsigapi.net
     - DOMAIN, events.statsigapi.net, PROXY
+
+   # streamtheworld.com
+    - DOMAIN, idsync.live.streamtheworld.com, PROXY
 
    # stickyadstv.com
     - DOMAIN-SUFFIX, stickyadstv.com, PROXY
@@ -2108,8 +2352,18 @@ rules:
    # stripe.network
     - DOMAIN, m.stripe.network, PROXY
 
+   # surfside.io
+    - DOMAIN-SUFFIX, surfside.io, PROXY
+
+    - DOMAIN, edge.surfside.io, PROXY
+    - DOMAIN, col.surfside.io, PROXY
+    - DOMAIN, cdn.surfside.io, PROXY
+
    # survata.com
     - DOMAIN, ir.surveywall-api.survata.com, PROXY
+
+   # swipetospin.com
+    - DOMAIN, integrator.swipetospin.com, PROXY
 
   # t
    # t-mobile.com
@@ -2118,7 +2372,33 @@ rules:
     - DOMAIN, 17de4c0f.akstat.io, PROXY
     - DOMAIN, 17de4c0e.akstat.io, PROXY
 
+   # taboola.com
+    - DOMAIN, wf.taboola.com, PROXY
+    - DOMAIN, vidstatb.taboola.com, PROXY
+    - DOMAIN, vidstat.taboola.com, PROXY
+    - DOMAIN, videos.taboola.com, PROXY
+    - DOMAIN, trc.taboola.com, PROXY
+    - DOMAIN, trc-events.taboola.com, PROXY
+    - DOMAIN, sync.taboola.com, PROXY
+    - DOMAIN, sync-t1.taboola.com, PROXY
+    - DOMAIN, pm-widget.taboola.com, PROXY
+    - DOMAIN, pips.taboola.com, PROXY
+    - DOMAIN, nr-events.taboola.com, PROXY
+    - DOMAIN, match.taboola.com, PROXY
+    - DOMAIN, la-wf.taboola.com, PROXY
+    - DOMAIN, la-vid-events.taboola.com, PROXY
+    - DOMAIN, la-trc-events.taboola.com, PROXY
+    - DOMAIN, la-match.taboola.com, PROXY
+    - DOMAIN, imprlatbmp.taboola.com, PROXY
+    - DOMAIN, images.taboola.com, PROXY
+    - DOMAIN, hp.taboola.com, PROXY
+    - DOMAIN, ch-trc-events.taboola.com, PROXY
+    - DOMAIN, cds.taboola.com, PROXY
+    - DOMAIN, cdn.taboola.com, PROXY
+    - DOMAIN, c2.taboola.com, PROXY
+
    # tapad.com
+    - DOMAIN, tapestry.tapad.com, PROXY
     - DOMAIN, pixel.tapad.com, PROXY
     - DOMAIN, pandg.tapad.com, PROXY
 
@@ -2126,6 +2406,7 @@ rules:
     - DOMAIN, t.teads.tv, PROXY
     - DOMAIN, p.teads.tv, PROXY
     - DOMAIN, fledge.teads.tv, PROXY
+    - DOMAIN, criteo-sync.teads.tv, PROXY
     - DOMAIN, cm.teads.tv, PROXY
 
    # tealiumiq.com
@@ -2147,6 +2428,9 @@ rules:
 
    # tidio.co
     - DOMAIN, code.tidio.co, PROXY
+
+   # tidiochat.com
+    - DOMAIN, widget-v4.tidiochat.com, PROXY
 
    # tiktok
     - DOMAIN, analytics.tiktok.com, PROXY
@@ -2216,8 +2500,13 @@ rules:
     - DOMAIN, targeting.unrulymedia.com, PROXY
     - DOMAIN, sync.targeting.unrulymedia.com, PROXY
 
+   # uptracs.com
+    - DOMAIN, static.uptracs.com, PROXY
+
    # useinsider.com
     - DOMAIN, segment.api.useinsider.com, PROXY
+    - DOMAIN, log.api.useinsider.com, PROXY
+    - DOMAIN, locationv2.api.useinsider.com, PROXY
     - DOMAIN, image.useinsider.com, PROXY
     - DOMAIN, hit.api.useinsider.com, PROXY
     - DOMAIN, eitri.api.useinsider.com, PROXY
@@ -2232,6 +2521,10 @@ rules:
    # vercel-insights.com
     - DOMAIN, vitals.vercel-insights.com, PROXY
 
+   # vesta.io
+    - DOMAIN, platform.apac.vesta.io, PROXY
+    - DOMAIN, js.dc.apac.vesta.io, PROXY
+
    # videohub.tv
     - DOMAIN, pixel.videohub.tv, PROXY
     - DOMAIN, l0.videohub.tv, PROXY
@@ -2245,6 +2538,9 @@ rules:
 
    # vrtcal.com
     - DOMAIN, usync.vrtcal.com, PROXY
+
+   # vynalezce.com
+    - DOMAIN, abcaudio.vynalezce.com, PROXY
 
   # w
    # w55c.net
@@ -2267,12 +2563,22 @@ rules:
    # webcontentassessor.com
     - DOMAIN, scripts.webcontentassessor.com, PROXY
 
+   # weebly.com
+    - DOMAIN, weebly.com, PROXY
+
+   # windows.net
+    - DOMAIN, creativesham.queue.core.windows.net, PROXY
+    - DOMAIN, creativesham.blob.core.windows.net, PROXY
+
    # wp.com
     - DOMAIN, i2.wp.com, PROXY
 
   # x
 
   # y
+   # yahoo
+    - DOMAIN, web.ssp.yahoo.com, PROXY
+
    # yandex.com
     - DOMAIN, mc.yandex.com, PROXY
 
@@ -2301,6 +2607,12 @@ rules:
    # yimg.jp
     - DOMAIN, s.yimg.jp, PROXY
 
+   # yotpo.com
+    - DOMAIN, w2.yotpo.com, PROXY
+    - DOMAIN, staticw2.yotpo.com, PROXY
+    - DOMAIN, p.yotpo.com, PROXY
+    - DOMAIN, cdn-widgetsrepository.yotpo.com, PROXY
+
    # youtube.com
     - DOMAIN, fcmatch.youtube.com, PROXY
 
@@ -2319,6 +2631,11 @@ rules:
 
    # zeotap.com
     - DOMAIN, mwzeom.zeotap.com, PROXY
+
+   # zoominfo
+    - DOMAIN-SUFFIX, zoominfo.com, PROXY
+
+    - DOMAIN, ws.zoominfo.com, PROXY
 
    # zqtk.net
     - DOMAIN, aps.zqtk.net, PROXY
@@ -3340,6 +3657,248 @@ rules:
 
   # z
 
+ # DIRECT added manually
+  # WARNING: Private, ISP have rules with "PRIVATE", 
+  # which means the domain rules are blocking those domains
+
+  # a
+   # agoda.cn
+    - DOMAIN-SUFFIX, agoda.cn, DIRECT
+
+   # akamai
+    # - DOMAIN-SUFFIX, akadns.net, DIRECT
+    # # - DOMAIN-SUFFIX, akamai.net, DIRECT
+    # - DOMAIN-SUFFIX, akamaiedge.net, DIRECT
+    # # - DOMAIN-SUFFIX, akamaihd.net, DIRECT
+    # - DOMAIN-SUFFIX, akamaistream.net, DIRECT
+    # # - DOMAIN-SUFFIX, akamaized.net, DIRECT
+
+   # alibaba
+    # 高德地图
+    - DOMAIN-SUFFIX, a.amap.com, DIRECT
+    - DOMAIN-SUFFIX, ditu.amap.com, DIRECT
+    - DOMAIN-SUFFIX, m.amap.com, DIRECT
+
+   # aliyun
+    - DOMAIN, aliyun-web-tracker.cn-zhangjiakou.log.aliyuncs.com:443, DIRECT
+    - DOMAIN, aliyuncs.com, DIRECT
+    - DOMAIN, arms-retcode.aliyuncs.com, DIRECT
+    - DOMAIN, cn.aliyun.com, DIRECT
+    - DOMAIN, passport.aliyun.com, DIRECT
+
+   # apple
+    - DOMAIN-SUFFIX, comm-cohort.ess.apple.com, DIRECT
+    - DOMAIN-SUFFIX, comm-main.ess.apple.com, DIRECT
+    - DOMAIN-SUFFIX, ess.apple.com, DIRECT
+    - DOMAIN-SUFFIX, guzzoni.apple.com, DIRECT # the other rule is "- DOMAIN"
+    - DOMAIN-SUFFIX, inappcheck.itunes.apple.com, DIRECT  # the other rule is "- DOMAIN"
+    - DOMAIN-SUFFIX, invitation.ess.apple.com, DIRECT
+    - DOMAIN-SUFFIX, iphone-ld.apple.com, DIRECT  # the other rule is "- DOMAIN"
+    - DOMAIN-SUFFIX, is1-ssl.mzstatic.com, DIRECT  # the other rule is "- DOMAIN"
+    - DOMAIN-SUFFIX, smp-device-content.apple.com, DIRECT  # the other rule is "- DOMAIN"
+
+    - DOMAIN, 17-courier.push.apple.com, DIRECT
+    - DOMAIN, 20-courier.push.apple.com, DIRECT
+    - DOMAIN, 24-courier.push.apple.com, DIRECT
+    - DOMAIN, 25-courier.push.apple.com, DIRECT
+    - DOMAIN, 35-courier.push.apple.com, DIRECT
+    - DOMAIN, 38-courier.push.apple.com, DIRECT
+    - DOMAIN, 39.courier-push-apple.com.akadns.net, DIRECT
+    - DOMAIN, gateway-asset.icloud-content.com, DIRECT
+    - DOMAIN, ioshost.qtlcdn.com, DIRECT
+    - DOMAIN, kt-prod.ess.apple.com, DIRECT
+    - DOMAIN, p140-fmfmobile.icloud.com, DIRECT
+    - DOMAIN, p147-fmfmobile.icloud.com, DIRECT
+    - DOMAIN, p147-fmip.icloud.com, DIRECT
+    - DOMAIN, p147-fmipmobile.icloud.com, DIRECT
+    - DOMAIN, query.ess.apple.com, DIRECT
+
+    # - DOMAIN-KEYWORD, -fmfmobile.icloud.com, DIRECT
+    # - DOMAIN-KEYWORD, -fmip.icloud.com, DIRECT
+    # - DOMAIN-KEYWORD, -fmipmobile.icloud.com, DIRECT
+
+    - DOMAIN-SUFFIX, gateway.icloud.com, DIRECT
+    # - DOMAIN-SUFFIX, push.apple.com, DIRECT
+    # - DOMAIN-SUFFIX, icloud-content.com, DIRECT
+    # - DOMAIN-SUFFIX, courier-push-apple.com.akadns.net, DIRECT
+
+    # testing rules
+
+    # - DOMAIN-SUFFIX, aaplimg.com, DIRECT
+    # - DOMAIN-SUFFIX, appstore.com, DIRECT
+    # - DOMAIN-SUFFIX, tv.apple.com, DIRECT
+    # - DOMAIN, gspe1-ssl.ls.apple.com, DIRECT
+    # - DOMAIN, np-edge.itunes.apple.com, DIRECT
+    # - DOMAIN, play-edge.itunes.apple.com, DIRECT
+
+  # b
+
+  # c
+   # chicago.china-consulate.gov.cn
+
+  # d
+
+  # e
+
+  # f
+ 
+  # g
+   # github
+    # - DOMAIN-SUFFIX, github.com, DIRECT
+    # - DOMAIN-SUFFIX, github.io, DIRECT
+    # - DOMAIN-SUFFIX, raw.githubusercontent.com, DIRECT
+
+   # goodwe.com
+    - DOMAIN-SUFFIX, goodwe.com, DIRECT
+
+  # h
+
+  # i
+   # iCloud
+    # - DOMAIN-SUFFIX, *.icloud.com.cn, DIRECT
+
+   # ikea
+    # - DOMAIN-SUFFIX, srv.app.ikea.cn, DIRECT
+
+   # IP-CIDR, iCloud
+    # - IP-CIDR, 103.44.56.0/22, DIRECT, no-resolve
+    # - IP-CIDR, 118.26.120.0/24, DIRECT, no-resolve
+    # - IP-CIDR, 118.26.32.0/23, DIRECT, no-resolve
+    # - IP-CIDR, 172.16.102.56/32, DIRECT, no-resolve
+    # - IP-CIDR, 185.188.32.1/28, DIRECT, no-resolve
+    # - IP-CIDR, 221.226.128.146/32, DIRECT, no-resolve
+    # - IP-CIDR, 223.119.62.225/28, DIRECT, no-resolve
+    # - IP-CIDR, 23.40.241.251/32, DIRECT, no-resolve
+    # - IP-CIDR, 23.40.242.10/32, DIRECT, no-resolve
+
+   # dns: dnsPod
+    # - IP-CIDR, 119.28.28.28/32, DIRECT
+
+   # iqiyi
+
+  # j
+   # jd
+
+  # k
+ 
+  # l
+
+  # m
+   # microsoft
+    # - DOMAIN-SUFFIX, msn.cn, DIRECT
+    # - DOMAIN, microsoft.com, DIRECT
+
+  # n
+
+  # o
+   # okcis
+    # - DOMAIN-SUFFIX, okcis.cn, DIRECT
+    # - DOMAIN-KEYWORD, .okcis, DIRECT
+
+  # p
+   # pingan bank
+    - DOMAIN, auth.orangebank.com.cn, DIRECT
+    - DOMAIN, cdn.sdb.com.cn, DIRECT
+
+   # private
+    # 本地/局域网地址
+    # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
+
+    # 本地/局域网地址
+    # - DOMAIN-SUFFIX, ip6-localhost, private
+    # - DOMAIN-SUFFIX, ip6-loopback, private
+    # - DOMAIN-SUFFIX, local, private
+    # - DOMAIN-SUFFIX, localhost, private
+
+    # - IP-CIDR, 10.0.0.0/8, private, no-resolve
+    # - IP-CIDR, 100.64.0.0/10, private, no-resolve
+    # - IP-CIDR, 127.0.0.0/8, private, no-resolve
+    # - IP-CIDR, 172.16.0.0/12, private, no-resolve
+    # - IP-CIDR, 192.168.0.0/16, private, no-resolve
+    
+   # IP-CIDR compared results
+    # - IP-CIDR, 198.18.0.0/16, DIRECT, no-resolve
+
+    # - IP-CIDR6, ::1/128, private, no-resolve
+    # - IP-CIDR6, fc00::/7, private, no-resolve
+    # - IP-CIDR6, fe80::/10, private, no-resolve
+    # - IP-CIDR6, fd00::/8, private, no-resolve
+
+   # Router managed 路由器管理域名
+    # - DOMAIN-SUFFIX, p.to, private
+
+  # q
+   # tencent qq
+    # - DOMAIN, xui.ptlogin2.qq.com, DIRECT
+    # - DOMAIN, weixin.qq.com, DIRECT
+    # - DOMAIN, vv.video.qq.com, DIRECT
+    # - DOMAIN, vd.l.qq.com, DIRECT
+    # - DOMAIN, ui.ptlogin2.qq.com, DIRECT
+    # - DOMAIN, tencentmind.com, DIRECT
+    # - DOMAIN, sz.btfs.mail.ftn.qq.com, DIRECT
+    # - DOMAIN, ssl.ptlogin2.mail.qq.com, DIRECT
+    # - DOMAIN, ptlogin2.qq.com, DIRECT
+    # - DOMAIN, ptlogin2.mail.qq.com, DIRECT
+    # - DOMAIN, mail.qq.com, DIRECT
+    # - DOMAIN, mail.ftn.qq.com, DIRECT
+    # - DOMAIN, localhost.ptlogin2.mail.qq.com, DIRECT
+    # - DOMAIN, livew.l.qq.com, DIRECT
+    # - DOMAIN, igamecj.com, DIRECT
+    # - DOMAIN, ftn.qq.com, DIRECT
+    # - DOMAIN, file-igamecj.akamaized.net, DIRECT
+    # - DOMAIN, fairplay.l.qq.com, DIRECT
+    # - DOMAIN, btfs.mail.ftn.qq.com, DIRECT
+
+    # - IP-CIDR, 182.254.116.0/24, DIRECT, no-resolve
+    # - IP-CIDR, 203.205.252.0/23, DIRECT, no-resolve
+    # - IP-CIDR, 203.205.254.0/23, DIRECT, no-resolve
+
+    # USER-AGENT, %E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1*, DIRECT
+    # USER-AGENT, MicroMessenger%20Client, DIRECT
+    # USER-AGENT, WeChat*, DIRECT
+
+  # r
+   # resi
+    - DOMAIN-SUFFIX, resi.io, DIRECT
+    - DOMAIN-SUFFIX, resi.media, DIRECT
+ 
+  # s
+ 
+  # t
+
+  # u
+ 
+  # v
+ 
+  # w
+   # walmart
+    - DOMAIN-SUFFIX, walmartmobile.cn, DIRECT
+
+    - DOMAIN, api-sams.walmartmobile.cn, DIRECT
+
+   # wechat
+    # - USER-AGENT, MicroMessenger*, DIRECT
+    # - USER-AGENT, WeChat*, DIRECT
+
+    # - DOMAIN-SUFFIX, qlogo.cn, DIRECT
+    # - DOMAIN-SUFFIX, qpic.cn, DIRECT
+    # - DOMAIN-SUFFIX, weixin.qq.com, DIRECT
+    # - DOMAIN-SUFFIX, wxapp.tc.qq.com, DIRECT
+    # - DOMAIN-SUFFIX, servicewechat.com, DIRECT
+    # - DOMAIN-SUFFIX, tenpay.com, DIRECT
+    # - DOMAIN-SUFFIX, wechat.com, DIRECT
+    # - DOMAIN-SUFFIX, wechatlegal.net, DIRECT
+    # - DOMAIN-SUFFIX, wechatpay.com, DIRECT
+    # - DOMAIN-SUFFIX, weixin.com, DIRECT
+    # - DOMAIN-SUFFIX, weixinbridge.com, DIRECT
+    # - DOMAIN-SUFFIX, weixinsxy.com, DIRECT
+
+  # x
+ 
+  # y
+ 
+  # Z
+
  # PROXY added manually
 
   # #
@@ -3351,7 +3910,7 @@ rules:
     - DOMAIN, z1800flowers3276921z.btttag.com, PROXY
     - DOMAIN, zn8gre3bdrts5wjr3-1800flowers.siteintercept.qualtrics.com, PROXY
 
-   # 14news.com
+   # 14news
     - DOMAIN-SUFFIX, 14news.com, PROXY
   
     - DOMAIN, gray-wfie-prod.cdn.arcpublishing.com, PROXY
@@ -3359,40 +3918,43 @@ rules:
    # 2miners
     - DOMAIN-SUFFIX, 2miners.com, PROXY
 
-   # 1password.com
+   # 1password
     - DOMAIN-SUFFIX, 1password.com, PROXY
 
   # a
-   # aaos.org
+   # aaos
     - DOMAIN-SUFFIX, aaos.org, PROXY
 
-   # aaro.mil
-    - DOMAIN-SUFFIX, aaro.mil, PROXY
+   # aaro
 
-   # acast.com
-    - DOMAIN-SUFFIX, acast.com, PROXY
+   # acast
 
-    - DOMAIN, wordpress.prod.website.acast.cloud, PROXY
-
-   # acipayonline.com
+   # acipayonline
     - DOMAIN-SUFFIX, acipayonline.com, PROXY
 
-   # addepar.com
+   # addepar
+    - DOMAIN-SUFFIX, addepar.com, PROXY
+
     - DOMAIN, id.addepar.com, PROXY
     - DOMAIN, matrixpcg.addepar.com, PROXY
 
-   # adsrvr.org
+   # adsrvr
 
-   # adtdp.com
-    - DOMAIN, dynalyst-sync.adtdp.com, PROXY
+   # adtdp
 
-   # agkn.com
+   # agkn
 
-   # agoda.com
+   # agoda
     - DOMAIN-SUFFIX, agoda.com, PROXY
 
-   # ahalogy.com
-    - DOMAIN, w.ahalogy.com, PROXY
+    - DOMAIN, pix6.agoda.net, PROXY
+    - DOMAIN, mtagm.agoda.com, PROXY
+    - DOMAIN, img.agoda.net, PROXY
+    - DOMAIN, cdn6.agoda.net, PROXY
+    - DOMAIN, cdn0.agoda.net, PROXY
+    - DOMAIN, bento.agoda.com, PROXY
+
+   # ahalogy
 
    # ai art
     - DOMAIN-SUFFIX, craiyon.com, PROXY
@@ -3411,7 +3973,7 @@ rules:
     - DOMAIN-SUFFIX, amc.com, PROXY
     - DOMAIN-SUFFIX, amctv.com, PROXY    
 
-   # annas-archive.org
+   # annas-archive
     - DOMAIN-SUFFIX, annas-archive.org, PROXY
 
    # apple
@@ -3423,21 +3985,21 @@ rules:
     # - DOMAIN-SUFFIX, podcasts.apple.com, PROXY
     # - DOMAIN-SUFFIX, podtrac.com, PROXY
 
-   # appledaily.tw
+   # appledaily
     - DOMAIN-SUFFIX, appledaily.tw, PROXY
 
    # appspot, Others
-    # - DOMAIN-SUFFIX, feelinsonice-hrd.appspot.com, PROXY
-    # - DOMAIN-SUFFIX, feelinsonice.appspot.com, PROXY
-    # - DOMAIN-SUFFIX, sc-analytics.appspot.com, PROXY
+    # - DOMAIN, feelinsonice-hrd.appspot.com, PROXY
+    # - DOMAIN, feelinsonice.appspot.com, PROXY
+    # - DOMAIN, sc-analytics.appspot.com, PROXY
 
    # ashleymadison
     - DOMAIN-SUFFIX, ashleymadison.com, PROXY
 
-   # astrill.com
+   # astrill
     - DOMAIN-SUFFIX, astrill.com, PROXY
 
-   # avg.com
+   # avg
     - DOMAIN-SUFFIX, avcdn.com, PROXY
     - DOMAIN-SUFFIX, avg.com, PROXY
 
@@ -3460,18 +4022,20 @@ rules:
    # beetalk
     # - DOMAIN-KEYWORD, .beetalk, PROXY
 
-   # beinsports.com
+   # beinsports
     - DOMAIN, connect-us.beinsports.com, PROXY
 
-   # betterplan.cl
+    - DOMAIN-SUFFIX, beinsports.com, PROXY
+
+   # betterplan
     - DOMAIN-SUFFIX, betterplan.cl, PROXY
 
-   # bible.com
-    - DOMAIN-SUFFIX, app.link, PROXY
-    - DOMAIN-SUFFIX, bible.com, PROXY
+   # bible
     - DOMAIN-SUFFIX, youversion.com, PROXY
+    - DOMAIN-SUFFIX, bible.com, PROXY
+    - DOMAIN-SUFFIX, app.link, PROXY
 
-   # bice.cl
+   # bice
     - DOMAIN-SUFFIX, bice.cl, PROXY
     - DOMAIN-SUFFIX, modyocdn.com, PROXY
 
@@ -3482,8 +4046,10 @@ rules:
    # bitmain
     - DOMAIN-SUFFIX, bitmain.com, PROXY
 
-   # blogspot others
-    # - DOMAIN-KEYWORD, .blogspot, PROXY
+   # blogspot
+
+   # BMO
+    - DOMAIN-SUFFIX, bmo.com, PROXY
 
    # bmwusa
     - DOMAIN, idresgraph.bmwusa.com, PROXY
@@ -3494,12 +4060,9 @@ rules:
    # caliva
     - DOMAIN-SUFFIX, caliva.com, PROXY
 
-   # casalemedia.com
+   # casalemedia
 
-   # cdnbasket.net
-    - DOMAIN, view.cdnbasket.net, PROXY
-    - DOMAIN, page.cdnbasket.net, PROXY
-    - DOMAIN, data.cdnbasket.net, PROXY
+   # cdnbasket
 
    # cebupacificair.com
     - DOMAIN-SUFFIX, cebupacificair.com, PROXY
@@ -3514,6 +4077,9 @@ rules:
     - DOMAIN-SUFFIX, celsius.network, PROXY
     - DOMAIN, g9zdov47b9.execute-api.us-east-1.amazonaws.com, PROXY
 
+   # character.ai
+    - DOMAIN, beta.character.ai, PROXY
+
    # chartbeat.com
 
    # chia
@@ -3521,8 +4087,6 @@ rules:
     - DOMAIN-SUFFIX, chiacalculator.com, PROXY
 
    # chtbl.com
-    - DOMAIN, web.chtbl.com, PROXY
-    - DOMAIN, ext.chtbl.com, PROXY
 
    # civitai.com
     - DOMAIN-SUFFIX, civitai.com, PROXY
@@ -3541,28 +4105,6 @@ rules:
 
    # cloudfront
 
-    - DOMAIN, server-108-138-106-125.jfk50.r.cloudfront.net, PROXY
-    - DOMAIN, server-108-138-106-37.jfk50.r.cloudfront.net, PROXY
-
-    # - DOMAIN-SUFFIX, d151l6v8er5bdm.cloudfront.net, PROXY
-    # - DOMAIN-SUFFIX, d1b183sg0nvnuh.cloudfront.net, PROXY
-    # - DOMAIN-SUFFIX, d1c37gjwa26taa.cloudfront.net, PROXY
-    # - DOMAIN-SUFFIX, d1sgwhnao7452x.cloudfront.net, PROXY
-    # - DOMAIN-SUFFIX, d3c33hcgiwev3.cloudfront.net, PROXY
-    # - DOMAIN-SUFFIX, d3c7rimkq79yfu.cloudfront.net, PROXY
-    # - DOMAIN-SUFFIX, d3rhr7kgmtrq1v.cloudfront.net, PROXY
-
-    # - DOMAIN, d151l6v8er5bdm.cloudfront.net, PROXY
-    # - DOMAIN, d1k2us671qcoau.cloudfront.net, PROXY
-    # - DOMAIN, d1v5ir2lpwr8os.cloudfront.net, PROXY
-    # - DOMAIN, d22qjgkvxw22r6.cloudfront.net, PROXY
-    # - DOMAIN, d25xi40x97liuc.cloudfront.net, PROXY
-    # - DOMAIN, d2anahhhmp1ffz.cloudfront.net, PROXY
-    # - DOMAIN, d349g9zuie06uo.cloudfront.net, PROXY
-    # - DOMAIN, d3c7rimkq79yfu.cloudfront.net, PROXY
-    # - DOMAIN, dai3fd1oh325y.cloudfront.net, PROXY
-    # - DOMAIN, dfp6rglgjqszk.cloudfront.net, PROXY
-    # - DOMAIN, dmqdd6hw24ucf.cloudfront.net, PROXY
 
    # cnn
     - DOMAIN-SUFFIX, collector.cdp.cnn.com, PROXY
@@ -3584,12 +4126,13 @@ rules:
     - DOMAIN, z.cdp-dev.cnn.com, PROXY
 
    # coinbase
+    - DOMAIN-SUFFIX, coinbasecdn.net, PROXY
+
     - DOMAIN, as.coinbase.com, PROXY
     - DOMAIN, assets.coinbase.com, PROXY
     - DOMAIN, dynamic-assets.coinbase.com, PROXY
     - DOMAIN, sessions.coinbase.com, PROXY
     - DOMAIN, static-assets.coinbase.com, PROXY
-    - DOMAIN, coinbase.com, PROXY
 
    # coindesk
     - DOMAIN-SUFFIX, coindesk.com, PROXY
@@ -3883,6 +4426,9 @@ rules:
     # - DOMAIN, dl.google.com, PROXY
     # - DOMAIN, mtalk.google.com, PROXY
 
+   # gptstore.ai
+    - DOMAIN-SUFFIX, gptstore.ai, PROXY
+
   # h
    # hashrate
     - DOMAIN-SUFFIX, hashrate.to, PROXY
@@ -3892,6 +4438,13 @@ rules:
 
    # helloandroid.com
     - DOMAIN-SUFFIX, helloandroid.com, PROXY
+
+   # heygen.com
+    - DOMAIN-SUFFIX, heygen.com, PROXY
+
+    - DOMAIN, cdn.heygen.com, PROXY
+    - DOMAIN, app.heygen.com, PROXY
+    - DOMAIN, api2.heygen.com, PROXY
 
    # hhdcb3office
     - DOMAIN-SUFFIX, hhdcb3office.org, PROXY
@@ -3934,6 +4487,19 @@ rules:
     - DOMAIN, assets-prd.ignimgs.com, PROXY
     - DOMAIN, kraken.ignimgs.com, PROXY
 
+   # indeed.com
+    - DOMAIN, t.indeed.com, PROXY
+    - DOMAIN, secure.indeed.com, PROXY
+    - DOMAIN, pxl.indeed.com, PROXY
+    - DOMAIN, kimoyo.indeed.com, PROXY
+    - DOMAIN, c03.s3.indeed.com, PROXY
+    - DOMAIN, autocomplete.indeed.com, PROXY
+
+    - DOMAIN-SUFFIX, indeed.com, PROXY
+
+   # indexexchange
+    - DOMAIN-SUFFIX, indexexchange.com, PROXY
+
    # indiatimes.com
     - DOMAIN-SUFFIX, indiatimes.com, PROXY
 
@@ -3943,8 +4509,6 @@ rules:
    # instagram
 
    # intercom.io
-    - DOMAIN, widget.intercom.io, PROXY
-    - DOMAIN, api-iam.intercom.io, PROXY
 
    # intuit.com
     - DOMAIN-SUFFIX, intuit.com, PROXY
@@ -4060,9 +4624,8 @@ rules:
     - DOMAIN-SUFFIX, luxor.tech, PROXY
 
   # m
-   # ml314.com
 
-   # hu.ma.ne
+   # ma.ne
     - DOMAIN-SUFFIX, hu.ma.ne, PROXY
 
    # matrix.one
@@ -4070,6 +4633,9 @@ rules:
 
    # matrixpcg
     - DOMAIN-SUFFIX, matrixpcg.com, PROXY
+
+   # mbusa.com
+    - DOMAIN-SUFFIX, mbusa.com, PROXY
 
    # memberpress
      # url: memberpress.com
@@ -4117,6 +4683,8 @@ rules:
     # - DOMAIN-SUFFIX, windows-ppe.net, PROXY
     # - DOMAIN-SUFFIX, wunderlist.com, PROXY
     # - DOMAIN-SUFFIX, yammerusercontent.com, PROXY
+
+   # ml314.com
 
    # msn
     # msn rules originates from this yaml file
@@ -4192,6 +4760,7 @@ rules:
 
   # o
    # oculus
+    - DOMAIN, developer.oculus.com, PROXY
     - DOMAIN, graph.oculus.com, PROXY
     - DOMAIN, oculus.fbthirdpartypixel.com, PROXY
 
@@ -4348,25 +4917,11 @@ rules:
    # resi
 
    # rfihub.com
-    - DOMAIN, p.rfihub.com, PROXY
-    - DOMAIN, 20843995p.rfihub.com, PROXY
-    - DOMAIN, 20823298p.rfihub.com, PROXY
 
    # roblox
     - DOMAIN-SUFFIX, roblox.com, PROXY
 
    # rubiconproject.com
-    - DOMAIN-SUFFIX, rubiconproject.com, PROXY
-
-    - DOMAIN, video-ads.rubiconproject.com, PROXY
-    - DOMAIN, token.rubiconproject.com, PROXY
-    - DOMAIN, secure-assets.rubiconproject.com, PROXY
-    - DOMAIN, prebid-server.rubiconproject.com, PROXY
-    - DOMAIN, pixel.rubiconproject.com, PROXY
-    - DOMAIN, pixel-eu.rubiconproject.com, PROXY
-    - DOMAIN, optimized-by.rubiconproject.com, PROXY
-    - DOMAIN, fastlane.rubiconproject.com, PROXY
-    - DOMAIN, eus.rubiconproject.com, PROXY
 
    # runescape
     - DOMAIN, cdn.runescape.com, PROXY
@@ -4425,6 +4980,9 @@ rules:
 
    # SoftLayer Technologies
 
+   # special-ops.org
+    - DOMAIN-SUFFIX, special-ops.org, PROXY
+
    # spot.im
     - DOMAIN-SUFFIX, spot.im, PROXY
 
@@ -4434,8 +4992,18 @@ rules:
 
    # spotxchange.com
 
-   # web.squarecdn.com
-    - DOMAIN, web.squarecdn.com, PROXY
+   # squarecdn.com
+
+   # starford.com
+    - DOMAIN-SUFFIX, starford.com, PROXY
+    - DOMAIN-SUFFIX, ford.com, PROXY
+
+    - DOMAIN, smetrics.ford.com, PROXY
+    - DOMAIN, mtagateway.forddirectservices.com, PROXY
+    - DOMAIN, ford.tt.omtrdc.net, PROXY
+    - DOMAIN, ford.demdex.net, PROXY
+    - DOMAIN, fdccpaadaptor.forddirectservices.com, PROXY
+    - DOMAIN, api.pd01e.gcp.ford.com, PROXY
 
    # stickyadstv.com
 
@@ -4460,29 +5028,6 @@ rules:
 
   # t
    # taboola.com
-    - DOMAIN, wf.taboola.com, PROXY
-    - DOMAIN, vidstatb.taboola.com, PROXY
-    - DOMAIN, vidstat.taboola.com, PROXY
-    - DOMAIN, videos.taboola.com, PROXY
-    - DOMAIN, trc.taboola.com, PROXY
-    - DOMAIN, trc-events.taboola.com, PROXY
-    - DOMAIN, sync.taboola.com, PROXY
-    - DOMAIN, sync-t1.taboola.com, PROXY
-    - DOMAIN, pm-widget.taboola.com, PROXY
-    - DOMAIN, pips.taboola.com, PROXY
-    - DOMAIN, nr-events.taboola.com, PROXY
-    - DOMAIN, match.taboola.com, PROXY
-    - DOMAIN, la-wf.taboola.com, PROXY
-    - DOMAIN, la-vid-events.taboola.com, PROXY
-    - DOMAIN, la-trc-events.taboola.com, PROXY
-    - DOMAIN, la-match.taboola.com, PROXY
-    - DOMAIN, imprlatbmp.taboola.com, PROXY
-    - DOMAIN, images.taboola.com, PROXY
-    - DOMAIN, hp.taboola.com, PROXY
-    - DOMAIN, ch-trc-events.taboola.com, PROXY
-    - DOMAIN, cds.taboola.com, PROXY
-    - DOMAIN, cdn.taboola.com, PROXY
-    - DOMAIN, c2.taboola.com, PROXY
 
    # teamredminer
     - DOMAIN-SUFFIX, teamredminer.com, PROXY
@@ -4548,7 +5093,6 @@ rules:
     - DOMAIN-SUFFIX, tibetoffice.com.au, PROXY
 
    # tidiochat.com
-    - DOMAIN, widget-v4.tidiochat.com, PROXY
 
    # tiktok
     - DOMAIN-SUFFIX, tiktokcdn-us.com, PROXY
@@ -4564,7 +5108,12 @@ rules:
     - DOMAIN-SUFFIX, t-mobile.com, PROXY
 
     - DOMAIN, tmobile.tt.omtrdc.net, PROXY
-   
+  
+   # tokyo-hot
+    - DOMAIN-SUFFIX, tokyo-hot.com, PROXY
+
+    - DOMAIN, my.cdn.tokyo-hot.com, PROXY
+
    # tonkeeper.com
     - DOMAIN-SUFFIX, ton.app, PROXY
     - DOMAIN-SUFFIX, tonkeeper.com, PROXY
@@ -4685,7 +5234,6 @@ rules:
     - DOMAIN-SUFFIX, webassign.net, PROXY
 
    # weebly.com
-    - DOMAIN, weebly.com, PROXY
 
    # westernalliancebancorporation.com
     - DOMAIN-SUFFIX, westernalliancebancorporation.com, PROXY
@@ -4725,8 +5273,6 @@ rules:
     - DOMAIN, frontend.vh.yandex.ru, PROXY
 
    # yahoo
-    - DOMAIN, web.ssp.yahoo.com, PROXY
-
     # - DOMAIN-KEYWORD, .yahoo, PROXY
 
     # - DOMAIN-SUFFIX, blogs.yahoo.co.jp, PROXY
@@ -4758,10 +5304,6 @@ rules:
     # - DOMAIN-SUFFIX, video.yahoo.com, PROXY
 
    # yotpo.com
-    - DOMAIN, w2.yotpo.com, PROXY
-    - DOMAIN, staticw2.yotpo.com, PROXY
-    - DOMAIN, p.yotpo.com, PROXY
-    - DOMAIN, cdn-widgetsrepository.yotpo.com, PROXY
 
    # youtube
     # - DOMAIN-SUFFIX, studio.youtube.com, PROXY
@@ -4780,277 +5322,6 @@ rules:
     - DOMAIN-SUFFIX, zillow.com, PROXY
 
    # zoominfo
-    - DOMAIN-SUFFIX, zoominfo.com, PROXY
-
-    - DOMAIN, ws.zoominfo.com, PROXY
-
- # DIRECT added manually
-  # WARNING: Private, ISP have rules with "PRIVATE", 
-  # which means the domain rules are blocking those domains
-
-  # a
-   # agoda.cn
-    - DOMAIN-SUFFIX, agoda.cn, DIRECT
-
-   # akamai
-    # - DOMAIN-SUFFIX, akadns.net, DIRECT
-    # # - DOMAIN-SUFFIX, akamai.net, DIRECT
-    # - DOMAIN-SUFFIX, akamaiedge.net, DIRECT
-    # # - DOMAIN-SUFFIX, akamaihd.net, DIRECT
-    # - DOMAIN-SUFFIX, akamaistream.net, DIRECT
-    # # - DOMAIN-SUFFIX, akamaized.net, DIRECT
-
-   # alibaba
-    # 高德地图
-    - DOMAIN-SUFFIX, a.amap.com, DIRECT
-    - DOMAIN-SUFFIX, ditu.amap.com, DIRECT
-    - DOMAIN-SUFFIX, m.amap.com, DIRECT
-
-   # aliyun
-    - DOMAIN, aliyun-web-tracker.cn-zhangjiakou.log.aliyuncs.com:443, DIRECT
-    - DOMAIN, aliyuncs.com, DIRECT
-    - DOMAIN, arms-retcode.aliyuncs.com, DIRECT
-    - DOMAIN, cn.aliyun.com, DIRECT
-    - DOMAIN, passport.aliyun.com, DIRECT
-
-   # apple
-    - DOMAIN-SUFFIX, comm-cohort.ess.apple.com, DIRECT
-    - DOMAIN-SUFFIX, comm-main.ess.apple.com, DIRECT
-    - DOMAIN-SUFFIX, ess.apple.com, DIRECT
-    - DOMAIN-SUFFIX, guzzoni.apple.com, DIRECT # the other rule is "- DOMAIN"
-    - DOMAIN-SUFFIX, inappcheck.itunes.apple.com, DIRECT  # the other rule is "- DOMAIN"
-    - DOMAIN-SUFFIX, invitation.ess.apple.com, DIRECT
-    - DOMAIN-SUFFIX, iphone-ld.apple.com, DIRECT  # the other rule is "- DOMAIN"
-    - DOMAIN-SUFFIX, is1-ssl.mzstatic.com, DIRECT  # the other rule is "- DOMAIN"
-    - DOMAIN-SUFFIX, smp-device-content.apple.com, DIRECT  # the other rule is "- DOMAIN"
-
-    - DOMAIN, 17-courier.push.apple.com, DIRECT
-    - DOMAIN, 20-courier.push.apple.com, DIRECT
-    - DOMAIN, 24-courier.push.apple.com, DIRECT
-    - DOMAIN, 25-courier.push.apple.com, DIRECT
-    - DOMAIN, 35-courier.push.apple.com, DIRECT
-    - DOMAIN, 38-courier.push.apple.com, DIRECT
-    - DOMAIN, 39.courier-push-apple.com.akadns.net, DIRECT
-    - DOMAIN, gateway-asset.icloud-content.com, DIRECT
-    - DOMAIN, ioshost.qtlcdn.com, DIRECT
-    - DOMAIN, kt-prod.ess.apple.com, DIRECT
-    - DOMAIN, p140-fmfmobile.icloud.com, DIRECT
-    - DOMAIN, p147-fmfmobile.icloud.com, DIRECT
-    - DOMAIN, p147-fmip.icloud.com, DIRECT
-    - DOMAIN, p147-fmipmobile.icloud.com, DIRECT
-    - DOMAIN, query.ess.apple.com, DIRECT
-
-    # - DOMAIN-KEYWORD, -fmfmobile.icloud.com, DIRECT
-    # - DOMAIN-KEYWORD, -fmip.icloud.com, DIRECT
-    # - DOMAIN-KEYWORD, -fmipmobile.icloud.com, DIRECT
-
-    - DOMAIN-SUFFIX, gateway.icloud.com, DIRECT
-    # - DOMAIN-SUFFIX, push.apple.com, DIRECT
-    # - DOMAIN-SUFFIX, icloud-content.com, DIRECT
-    # - DOMAIN-SUFFIX, courier-push-apple.com.akadns.net, DIRECT
-
-    # testing rules
-
-    # - DOMAIN-SUFFIX, aaplimg.com, DIRECT
-    # - DOMAIN-SUFFIX, appstore.com, DIRECT
-    # - DOMAIN-SUFFIX, tv.apple.com, DIRECT
-    # - DOMAIN, gspe1-ssl.ls.apple.com, DIRECT
-    # - DOMAIN, np-edge.itunes.apple.com, DIRECT
-    # - DOMAIN, play-edge.itunes.apple.com, DIRECT
-
-  # b
-
-  # c
-   # chicago.china-consulate.gov.cn
-    - DOMAIN-SUFFIX, qy.net, DIRECT
-
-  # d
-
-  # e
-
-  # f
- 
-  # g
-   # github
-    # - DOMAIN-SUFFIX, github.com, DIRECT
-    # - DOMAIN-SUFFIX, github.io, DIRECT
-    # - DOMAIN-SUFFIX, raw.githubusercontent.com, DIRECT
-
-  # h
-
-  # i
-   # iCloud
-    # - DOMAIN-SUFFIX, *.icloud.com.cn, DIRECT
-
-   # ikea
-    # - DOMAIN-SUFFIX, srv.app.ikea.cn, DIRECT
-
-   # IP-CIDR, iCloud
-    # - IP-CIDR, 103.44.56.0/22, DIRECT, no-resolve
-    # - IP-CIDR, 118.26.120.0/24, DIRECT, no-resolve
-    # - IP-CIDR, 118.26.32.0/23, DIRECT, no-resolve
-    # - IP-CIDR, 172.16.102.56/32, DIRECT, no-resolve
-    # - IP-CIDR, 185.188.32.1/28, DIRECT, no-resolve
-    # - IP-CIDR, 221.226.128.146/32, DIRECT, no-resolve
-    # - IP-CIDR, 223.119.62.225/28, DIRECT, no-resolve
-    # - IP-CIDR, 23.40.241.251/32, DIRECT, no-resolve
-    # - IP-CIDR, 23.40.242.10/32, DIRECT, no-resolve
-
-   # dns: dnsPod
-    # - IP-CIDR, 119.28.28.28/32, DIRECT
-
-   # iQiyi 
-    # - USER-AGENT, QIYI*, DIRECT
-    # - USER-AGENT, iQiYi*, DIRECT
-
-    - DOMAIN-SUFFIX, qy.net, DIRECT
-
-    # - IP-CIDR, 101.224.0.0/13, DIRECT, no-resolve
-    # - IP-CIDR, 101.227.0.0/16, DIRECT, no-resolve
-    # - IP-CIDR, 119.176.0.0/12, DIRECT, no-resolve
-
-  # j
-   # jd
-    # - IP-CIDR, 2402:dfc0:50::/44, DIRECT, no-resolve
-    # - IP-CIDR, 2402:dfc0:40::/44, DIRECT, no-resolve
-    # - IP-CIDR, 2402:dfc0::/44, DIRECT, no-resolve
-
-  # k
- 
-  # l
-
-  # m
-   # microsoft
-    # - DOMAIN-SUFFIX, msn.cn, DIRECT
-    # - DOMAIN, microsoft.com, DIRECT
-
-  # n
-
-  # o
-   # okcis
-    # - DOMAIN-SUFFIX, okcis.cn, DIRECT
-    # - DOMAIN-KEYWORD, .okcis, DIRECT
-
-  # p
-   # pingan bank
-    - DOMAIN, iprotect.cloudcore.cn, DIRECT
-    - DOMAIN, auth.orangebank.com.cn, DIRECT
-    - DOMAIN, cdn.sdb.com.cn, DIRECT
-    - DOMAIN-SUFFIX, iprotect.cloudcore.cn, DIRECT
-    - DOMAIN-SUFFIX, auth.orangebank.com.cn, DIRECT
-    - DOMAIN-SUFFIX, cdn.sdb.com.cn, DIRECT
-
-   # private
-    # 本地/局域网地址
-    # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
-
-    # 本地/局域网地址
-    # - DOMAIN-SUFFIX, ip6-localhost, private
-    # - DOMAIN-SUFFIX, ip6-loopback, private
-    # - DOMAIN-SUFFIX, local, private
-    # - DOMAIN-SUFFIX, localhost, private
-
-    # - IP-CIDR, 10.0.0.0/8, private, no-resolve
-    # - IP-CIDR, 100.64.0.0/10, private, no-resolve
-    # - IP-CIDR, 127.0.0.0/8, private, no-resolve
-    # - IP-CIDR, 172.16.0.0/12, private, no-resolve
-    # - IP-CIDR, 192.168.0.0/16, private, no-resolve
-    
-   # IP-CIDR compared results
-    # - IP-CIDR, 198.18.0.0/16, DIRECT, no-resolve
-
-    # - IP-CIDR6, ::1/128, private, no-resolve
-    # - IP-CIDR6, fc00::/7, private, no-resolve
-    # - IP-CIDR6, fe80::/10, private, no-resolve
-    # - IP-CIDR6, fd00::/8, private, no-resolve
-
-   # Router managed 路由器管理域名
-    # - DOMAIN-SUFFIX, p.to, private
-
-  # q
-   # tencent qq
-    # - DOMAIN-SUFFIX, btfs.mail.ftn.qq.com, DIRECT
-    # - DOMAIN-SUFFIX, ftn.qq.com, DIRECT
-    # - DOMAIN-SUFFIX, igamecj.com, DIRECT
-    # - DOMAIN-SUFFIX, localhost.ptlogin2.mail.qq.com, DIRECT
-    # - DOMAIN-SUFFIX, mail.ftn.qq.com, DIRECT
-    # - DOMAIN-SUFFIX, mail.qq.com, DIRECT
-    # - DOMAIN-SUFFIX, ptlogin2.mail.qq.com, DIRECT
-    # - DOMAIN-SUFFIX, ptlogin2.qq.com, DIRECT
-    # - DOMAIN-SUFFIX, ssl.ptlogin2.mail.qq.com, DIRECT
-    # - DOMAIN-SUFFIX, tencentmind.com, DIRECT
-    # - DOMAIN-SUFFIX, vv.video.qq.com, DIRECT
-    # - DOMAIN-SUFFIX, weixin.qq.com, DIRECT
-    # - DOMAIN-SUFFIX, xui.ptlogin2.qq.com, DIRECT
-    # - DOMAIN, fairplay.l.qq.com, DIRECT
-    # - DOMAIN, file-igamecj.akamaized.net, DIRECT
-    # - DOMAIN, livew.l.qq.com, DIRECT
-    # - DOMAIN, localhost.ptlogin2.mail.qq.com, DIRECT
-    # - DOMAIN, ssl.ptlogin2.mail.qq.com, DIRECT
-    # - DOMAIN, sz.btfs.mail.ftn.qq.com, DIRECT
-    # - DOMAIN, ui.ptlogin2.qq.com, DIRECT
-    # - DOMAIN, vd.l.qq.com, DIRECT
-    # - DOMAIN, xui.ptlogin2.qq.com, DIRECT
-
-    # - IP-CIDR, 182.254.116.0/24, DIRECT, no-resolve
-    # - IP-CIDR, 203.205.252.0/23, DIRECT, no-resolve
-    # - IP-CIDR, 203.205.254.0/23, DIRECT, no-resolve
-
-    # USER-AGENT, %E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1*, DIRECT
-    # USER-AGENT, MicroMessenger%20Client, DIRECT
-    # USER-AGENT, WeChat*, DIRECT
-
-  # r
-   # resi
-    - DOMAIN-SUFFIX, resi.io, DIRECT
-    - DOMAIN-SUFFIX, resi.media, DIRECT
- 
-  # s
- 
-  # t
-
-  # u
- 
-  # v
- 
-  # w
-   # walmart
-    - DOMAIN-SUFFIX, walmartmobile.cn, DIRECT
-
-    - DOMAIN, api-sams.walmartmobile.cn, DIRECT
-
-   # wechat
-    # - USER-AGENT, MicroMessenger*, DIRECT
-    # - USER-AGENT, WeChat*, DIRECT
-
-    - DOMAIN-SUFFIX, qlogo.cn, DIRECT
-    - DOMAIN-SUFFIX, qpic.cn, DIRECT
-    - DOMAIN-SUFFIX, weixin.qq.com, DIRECT
-    - DOMAIN-SUFFIX, wxapp.tc.qq.com, DIRECT
-    - DOMAIN-SUFFIX, servicewechat.com, DIRECT
-    - DOMAIN-SUFFIX, tenpay.com, DIRECT
-    - DOMAIN-SUFFIX, wechat.com, DIRECT
-    - DOMAIN-SUFFIX, wechatlegal.net, DIRECT
-    - DOMAIN-SUFFIX, wechatpay.com, DIRECT
-    - DOMAIN-SUFFIX, weixin.com, DIRECT
-    - DOMAIN-SUFFIX, weixinbridge.com, DIRECT
-    - DOMAIN-SUFFIX, weixinsxy.com, DIRECT
-
-    # - IP-CIDR, 101.32.104.4/32, DIRECT, no-resolve
-    # - IP-CIDR, 101.32.104.41/32, DIRECT, no-resolve
-    # - IP-CIDR, 101.32.104.56/32, DIRECT, no-resolve
-    # - IP-CIDR, 101.32.118.25/32, DIRECT, no-resolve
-    # - IP-CIDR, 101.32.133.16/32, DIRECT, no-resolve
-    # - IP-CIDR, 101.32.133.53/32, DIRECT, no-resolve
-    # - IP-CIDR, 101.32.133.209/32, DIRECT, no-resolve
-    # - IP-CIDR, 129.226.3.47/32, DIRECT, no-resolve
-    # - IP-CIDR, 129.226.107.244/32, DIRECT, no-resolve
-
-  # x
- 
-  # y
- 
-  # Z
 
  # DIRECT (domain-list-community)
   # #
@@ -10523,6 +10794,23 @@ rules:
 
    # intel-dev
     - DOMAIN-SUFFIX, clearlinux.cn, DIRECT
+   
+   # intercom
+
+   # ipip
+
+   # iqiyi
+    - DOMAIN-SUFFIX, 71.am, DIRECT
+    - DOMAIN-SUFFIX, iqiyi.com, DIRECT
+    - DOMAIN-SUFFIX, iqiyipic.com, DIRECT
+    - DOMAIN-SUFFIX, pps.tv, DIRECT
+    - DOMAIN-SUFFIX, ppsimg.com, DIRECT
+    - DOMAIN-SUFFIX, qiyi.com, DIRECT
+    - DOMAIN-SUFFIX, qiyipic.com, DIRECT
+    - DOMAIN-SUFFIX, qy.net, DIRECT
+
+    # CDN used by iqiyi
+    - DOMAIN-SUFFIX, 71edge.com, DIRECT
 
    # itunes
     - DOMAIN-SUFFIX, apple-itunes.cn, DIRECT
@@ -14758,6 +15046,7 @@ rules:
     # Reference: https://zh.wikipedia.org/wiki/%E5%A3%B9%E5%82%B3%E5%AA%92
 
     - DOMAIN-KEYWORD, .appledaily, PROXY
+
     - DOMAIN-SUFFIX, appledaily.com, PROXY
     - DOMAIN-SUFFIX, appledaily.com.hk, PROXY
     - DOMAIN-SUFFIX, appledaily.com.tw, PROXY
@@ -30028,19 +30317,7 @@ rules:
     - DOMAIN-SUFFIX, ipip.net, PROXY
 
    # iqiyi
-    - DOMAIN-SUFFIX, 71.am, PROXY
-    - DOMAIN-SUFFIX, iqiyi.com, PROXY
-    - DOMAIN-SUFFIX, iqiyipic.com, PROXY
-    - DOMAIN-SUFFIX, pps.tv, PROXY
-    - DOMAIN-SUFFIX, ppsimg.com, PROXY
-    - DOMAIN-SUFFIX, qiyi.com, PROXY
-    - DOMAIN-SUFFIX, qiyipic.com, PROXY
-    - DOMAIN-SUFFIX, qy.net, PROXY
-
-    # CDN used by iqiyi
-    - DOMAIN-SUFFIX, 71edge.com, PROXY
-
-    # include:iqiyi-ads
+    - DOMAIN-SUFFIX, iq.com, PROXY
 
    # isgd
     - DOMAIN-SUFFIX, is.gd, PROXY
