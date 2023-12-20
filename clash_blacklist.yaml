@@ -4005,6 +4005,7 @@ rules:
 
   # b
    # badoo
+    - DOMAIN-SUFFIX, badoo.app, PROXY
     - DOMAIN-SUFFIX, badoo.com, PROXY
 
    # bandwagonhost
