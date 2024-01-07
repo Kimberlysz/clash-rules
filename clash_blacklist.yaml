@@ -3466,6 +3466,7 @@ rules:
 
    # zillow
     - DOMAIN-SUFFIX, zillow.com, PROXY
+    - DOMAIN-SUFFIX, zillowstatic.com, PROXY
 
    # zoominfo
 
