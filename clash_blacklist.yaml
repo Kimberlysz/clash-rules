@@ -707,57 +707,997 @@ proxy-groups:
 rules:
 
  # 🛑 AdBlock added manually
+  # #
+   # 18f-cloud.com
+  
+   # 2mdn.net
+  
+   # 3lift.com
+  
+   # 33across.com
+  
+   # 360yield.com
+  
+   # 4dex.io
+  
+   # 60sec.site
+  
+   # 6sc.co
+  
   # a
-
+   # a-mo.net
+  
+   # aaro.mil
+  
+   # abcmouse.com
+  
+   # abtasty.com
+  
+   # acast.com
+  
+   # acsbap.com
+  
+   # acsbapp.com
+  
+   # ad.gt
+  
+   # ad-m.asia
+  
+   # ad-stir.com
+  
+   # ada.support
+  
+   # addthis.com
+  
+   # addtoany
+  
+   # adentifi.com
+  
+   # adform.net
+  
+   # adgrx.com
+  
+   # adingo.jp
+  
+   # adition.com
+  
+   # adkernel.com
+  
+   # admixer.net
+  
+   # adn.cloud
+  
+   # adnami.io
+  
+   # adnxs.com
+  
+   # adobe.com
+  
+   # adobedtm.com
+  
+   # adotmob.com
+  
+   # adroll.com
+  
+   # ads-twitter.com
+  
+   # adsafeprotected.com
+  
+   # adsrvr.org
+  
+   # adswizz.com
+  
+   # adtdp.com
+  
+   # advertising.com
+  
+   # adxcel-ec2.com, PROXY
+  
+   # affiliatly.com
+  
+   # afterpay.com
+  
+   # agkn.com
+  
+   # ahalogy.com
+  
+   # aimcarclicks.com
+  
+   # akamaihd.net
+  
+   # algolianet.com
+  
+   # amazon-ads
+    # amazon
+  
+   # amazonaws.com
+  
+   # amcn.com
+  
+   # amcnetworks.com
+  
+   # ampproject.org
+  
+   # aniview.com
+  
+   # app.link
+  
+   # appboycdn.com
+  
+   # appcues.com
+  
+   # appier.net
+  
+   # appsflyer.com
+  
+   # arttrk.com
+  
+   # aswpsdkus.com
+  
+   # arcpublishing.com
+  
+   # atemda.com
+  
+   # attentivemobile.com
+  
+   # attn.tv
+  
+   # authorize.net
+  
+   # autohub.io
+  
+   # azure.com
+  
+   # azurewebsites.net
+  
   # b
-
+   # bazaarvoice.com
+  
+   # beiniz.biz
+  
+   # betweendigital.com
+  
+   # bidr.io
+  
+   # bidswitch.net
+  
+   # bing.com
+  
+   # bluekai.com
+  
+   # bluevoox.com
+  
+   # boomtrain.com
+  
+   # bootstrapcdn.com
+  
+   # bounceexchange.com
+  
+   # bouncex.net
+  
+   # branch.io
+  
+   # brand-display.com
+  
+   # braze.com
+  
+   # brazgovskaia
+  
+   # browser-intake-datadoghq.com
+  
+   # btloader.com
+  
+   # bttrack.com
+  
+   # burst.com
+  
+   # buysellads.com
+  
+   # buysellads.net
+  
   # c
-
+   # calltouch.ru
+  
+   # carnow.com
+  
+   # casalemedia.com
+  
+   # cdnbasket.net
+  
+   # cdnwidget.com
+  
+   # celebrations.com
+  
+   # cengage
+  
+   # chartbeat.com
+  
+   # chartbeat.net
+  
+   # checkout.com
+  
+   # chimpstatic.com
+  
+   # chtbl.com
+  
+   # clarity.ms
+  
+   # clean.gg
+  
+   # clearbitjs.com
+  
+   # cleverwebserver.com
+  
+   # clickagy.com
+  
+   # cloudflare
+  
+   # cloudflareinsights.com
+  
+   # cloudfront.net
+  
+   # cloudfunctions.net
+  
+   # clickguard.com
+  
+   # cnnx.link
+  
+   # colossusssp.com
+  
+   # company-target.com
+  
+   # complyauto.com
+  
+   # connatix.com
+  
+   # connexity.net
+  
+   # contentstack.io
+  
+   # contextweb.com
+  
+   # conversionsapigateway.com
+  
+   # convurt.io
+  
+   # cookiebot.com
+  
+   # cookielaw.org
+  
+   # crazyegg.com
+  
+   # createjs.com
+  
+   # creditonebanks
+  
+   # criteo.com
+  
+   # crwdcntrl.net
+  
+   # creativecdn.com
+  
+   # ctfassets.net
+  
+   # ctraffic.io
+  
+   # czilladx.com
+  
   # d
+   # d3js.org
+  
+   # datadoghq-browser-agent.com
+  
+   # datadome.co
+  
+   # datas3ntinel.com
+  
+   # de17a.com
+  
+   # dealer.com
+  
+   # dealeron.com
+  
+   # dealervision.com
+  
+   # debugbear.com
+  
+   # deepintent.com
+  
+   # demandbase.com
+  
+   # demdex.net
+  
+   # digital-services.solutions
+  
+   # digitaladvertisingalliance.org
+  
+   # digitaleast.mobi
+  
+   # digitaloceanspaces.com
+  
+   # dlron.us
+  
+   # dmm-ads
+  
+   # dotmetrics.net
+  
+   # dotomi.com
+  
+   # drsmoke.com
   
   # e
   
+   # ebxcdn.com
+  
+   # eclipsed.tech
+  
+   # editmysite.com
+  
+   # edmunds.com
+  
+   # emxdgt.com
+  
+   # en25.com
+  
+   # eoscity.com
+  
+   # esm1.net
+  
+   # esputnik.com
+  
+   # everesttech.net
+  
+   # evn.tools
+  
+   # exelator.com
+  
+   # eyeota.net
+  
   # f
-
+   # facebook
+  
+   # fastclick.net
+  
+   # fdcampaignstudio.com
+  
+   # featuregates.org
+  
+   # flagcdn.com
+  
+   # fontawesome.com
+  
+   # fpcdn.io
+  
+   # fullstory.com
+  
   # g
-
+   # g2crowd.com
+  
+   # gcfiles.net
+  
+   # geetest.com
+  
+   # geojs.io
+  
+   # getcourse.ru
+  
+   # githubusercontent.com
+  
+   # go-mpulse.net
+  
+   # google
+  
+   # google-ads
+  
+   # google-analytics.com
+  
+   # googleadsserving.cn
+  
+   # googleadservices.com
+  
+   # googleapis.com
+  
+   # googletagmanager.com
+  
+   # googleoptimize.com
+  
+   # googletagservices.com
+  
+   # googleusercontent.com
+  
+   # googlevideo.com
+  
+   # gstatic.com
+  
+   # gray.tv
+  
+   # gravatar.com
+  
+   # grow.me
+  
+   # gstatic.com
+  
+   # gumgum.com
+  
   # h
-
+   # hadronid.net
+  
+   # heapanalytics.com
+  
+   # herokuapp.com
+  
+   # hextom.com
+  
+   # hicloud.com
+  
+   # honey.io
+  
+   # hotjar.com
+  
+   # hs-analytics.net
+  
+   # hs-banner.com
+  
+   # hs-scripts.com
+  
+   # hsadspixel.net
+  
+   # hscollectedforms.net
+  
+   # hsleadflows.net
+  
+   # hubapi.com
+  
+   # hubspot.com
+  
+   # hypelab.com
+  
   # i
-
+   # id5-sync.com
+  
+   # igodigital.com
+  
+   # impactcdn.com
+  
+   # impactradius-event.com
+  
+   # impel.io
+  
+   # imrworldwide.com
+  
+   # indexww.com
+  
+   # inmobi.com
+  
+   # intentiq.com
+  
+   # intercom.io
+  
+   # intercomcdn.com
+  
+   # invoca.net
+  
+   # invocacdn.com
+  
+   # iovation.com
+  
+   # ipapi.co
+  
+   # ipify.org
+  
+   # ipredictive.com
+  
+   # ispot.tv
+  
+   # itv.com
+  
   # j
-
+   # jagex.com
+  
+   # jivox.com
+  
+   # jquery.com
+  
+   # jsdelivr
+  
+   # justpremium.com
+  
+   # jwplayer.com
+  
   # k
-
+   # keywee.co
+  
+   # klarna.com
+  
+   # klarnacdn.net
+  
+   # klarnaservices.com
+  
+   # klaviyo.com
+  
+   # krxd.net
+  
   # l
-
+   # launchdarkly.com
+  
+   # leadmanagerfx.com
+  
+   # ledger live
+  
+   # liadm.com
+  
+   # licdn.com
+  
+   # lightboxcdn.com
+  
+   # lijit.com
+  
+   # linkedin.com
+  
+   # listrakbi.com
+  
+   # loopme.me
+  
+   # lpsnmedia.net
+   
+   # lrcontent.com
+  
+   # 1rx.io
+  
+   # luckyorange.com
+  
+   # luckyorange.net
+  
   # m
-
+   # mail.ru
+  
+   # mailchimp.com
+  
+   # marchex.io
+  
+   # marphezis.com
+  
+   # marketingcloudfx.com
+  
+   # marketo.net
+  
+   # mathtag.com
+  
+   # matomo.cloud
+  
+   # mbwwit.com
+  
+   # mdhv.io
+  
+   # media6degrees.com
+  
+   # mediamathrdrt.com
+  
+   # megpxs.com
+  
+   # metv.com
+  
+   # media.net
+  
+   # mediago.io
+  
+   # mediavine.com
+  
+   # mediawallahscript.com
+  
+   # mfadsrvr.com
+  
+   # mgid.com
+  
+   # micpn.com
+  
+   # minute.ly
+  
+   # minutemedia-prebid.com
+  
+   # mktoresp.com
+  
+   # ml314.com
+    - DOMAIN-SUFFIX, vi.ml314.com, PROXY
+  
+   # moatads.com
+  
+   # mobtrakk.com
+  
+   # mookie1.com
+  
+   # mountain.com
+  
+   # movio.la
+  
+   # mparticle.com
+  
+   # mpeasylink.com
+  
+   # mxpnl.com
+  
+   # mxptint.net
+  
+   # myccpay
+  
+   # myvisualiq.net
+  
   # n
-
+   # network-n.com
+  
+   # newrelic-ads
+  
+   # npttech.com
+  
+   # nr-data.net
+  
+   # nrich.ai
+  
+   # ns0.it
+  
   # o
-
+   # oaistatic.com
+  
+   # oaiusercontent.com
+  
+   # omnitagjs.com
+  
+   # omtrdc.net
+  
+   # onaudience.com
+  
+   # onetag-sys.com
+  
+   # onetrust.com
+  
+   # opecloud.com
+  
+   # openx-ads
+  
+   # openxcdn.net
+  
+   # opera.com
+  
+   # operationchicken.com
+  
+   # outbrain.com
+  
+   # owneriq.net
+  
   # p
+   # pangle-ads.com
+  
+   # paypal.com
+  
+   # paypalobjects.com
+  
+   # pbbl.co
+  
+   # pbstck.com
+  
+   # pdst.fm
+  
+   # perfdrive.com
+  
+   # pghub.io
+  
+   # piano.io
+  
+   # pinimg.com
+  
+   # pinterest.com
+  
+   # plusgrade.com
+  
+   # pointmediatracker.com
+  
+   # polyfill.io
+  
+   # postrelease.com
+  
+   # primis.tech
+  
+   # prismic.io
+  
+   # privacy-mgmt.com
+  
+   # privacymanager.io
+  
+   # programattik.com
+  
+   # proper.io
+  
+   # proshkola18.ru
+  
+   # pubmatic.com
 
+   # px-client.net
+    - DOMAIN-SUFFIX, collector-px8fcgygk4.px-client.net, PROXY
+
+   # px-cloud.net
+    - DOMAIN-SUFFIX, collector-px8fcgygk4.px-cloud.net, PROXY
+  
   # q
-
+   # qualified.com
+  
+   # qualtrics.com
+  
+   # quantcast.com
+  
+   # quantcount.com
+  
+   # quantserve.com
+  
+   # quantummetric.com
+  
+   # queryly.com
+  
+   # quotemedia.com
+  
+   # quora.com
+  
   # r
-
+   # radiotime.com
+  
+   # reachgeneric.co.uk
+  
+   # recombee.com
+  
+   # reconditerespect.com
+  
+   # reddit.com
+  
+   # redditstatic.com
+  
+   # redefined.cloud
+  
+   # revcontent.com
+  
+   # rezync.com
+  
+   # rfihub.com
+  
+   # rfihub.net
+  
+   # richaudience.com
+  
+   # rlcdn.com
+  
+   # rqtrk.eu
+  
+   # rubiconproject.com
+  
   # s
-
+   # s-onetag.com
+  
+   # salesloft.com
+  
+   # samplicio.us
+  
+   # sealsubscriptions.com
+  
+   # sc-static.net
+  
+   # scene7.com
+  
+   # scorecardresearch.com
+  
+   # script.ac
+  
+   # sda.fyi
+  
+   # securedvisit.com
+  
+   # secureserver.net
+  
+   # segment-ads
+  
+   # segment.io
+  
+   # segmint.net
+  
+   # sentry.io
+   
+  
+   # servedbyadbutler.com
+  
+   # shakegoldfish.com
+  
+   # sharethis.com
+  
+   # sharethrough.com
+  
+   # shopifycdn.com
+  
+   # shopifysvc.com
+  
+   # simpli.fi
+  
+   # simonsignal.com
+  
+   # sitescout.com
+  
+   # smaato.net
+  
+   # smartadserver.com
+  
+   # smartclip.net
+  
+   # snackly.co
+  
+   # snapchat.com
+  
+   # snapshot.org
+  
+   # softcube.com
+  
+   # sojern.com
+  
+   # sonobi.com
+  
+   # speedcurve.com
+  
+   # shopify.com
+  
+   # spotxchange.com
+  
+   # squarecdn.com
+  
+   # squareup.com
+  
+   # stackadapt.com
+  
+   # statsigapi.net
+  
+   # streamtheworld.com
+  
+   # stickyadstv.com
+  
+   # stripe.com
+  
+   # stripe.network
+  
+   # surfside.io
+  
+   # survata.com
+  
+   # swipetospin.com
+  
   # t
-
+   # t-mobile.com
+  
+   # taboola.com
+  
+   # tapad.com
+  
+   # teads.tv
+  
+   # tealiumiq.com
+  
+   # the-ozone-project.com
+  
+   # thebrighttag.com
+  
+   # theflywheel.app
+  
+   # thegraph.com
+  
+   # tidio.co
+  
+   # tidiochat.com
+  
+   # tiktok
+  
+   # tinypass.com
+  
+   # tiqcdn.com
+  
+   # tldw.me
+  
+   # tm-awx.com
+  
+   # tonhubapi.com
+  
+   # totalcardinc.com
+  
+   # tr.ee
+  
+   # tremorhub.com
+  
+   # trkn.us
+  
+   # truex.com
+  
+   # turn.com
+  
+   # tvpixel.com
+  
+   # tvsquared.com
+  
+   # twitter.com
+  
+   # typekit.net
+  
   # u
-
+   # unpkg.com
+  
+   # unrulymedia.com
+  
+   # uptracs.com
+  
+   # useinsider.com
+  
+   # usemessages.com
+  
   # v
-
+   # vercel-insights.com
+  
+   # vesta.io
+  
+   # videohub.tv
+  
+   # videoamp.com
+  
+   # vmmpxl.com
+  
+   # vrtcal.com
+  
+   # vynalezce.com
+  
   # w
-
+   # w55c.net
+  
+   # walletconnect.com
+  
+   # walletconnect.org
+  
+   # wayfair.com
+  
+   # wdfl.co
+  
+   # webcontentassessor.com
+  
+   # weebly.com
+  
+   # windows.net
+  
+   # wp.com
+  
   # x
-
+  
   # y
-
+   # yahoo
+  
+   # yandex.com
+  
+   # yandex.ru
+  
+   # yahoo
+  
+   # yellowblue.io
+  
+   # yimg.com
+  
+   # yimg.jp
+  
+   # yotpo.com
+  
+   # youtube.com
+  
+   # yt3.ggpht.com
+  
+   # ytimg.com
+  
   # z
+   # zeam.com
+  
+   # zemanta.com
+  
+   # zeotap.com
+  
+   # zoominfo
+  
+   # zqtk.net
 
  # 🛑 AdBlock (domain-list-community)
   # #
@@ -1784,6 +2724,10 @@ rules:
    # agoda.cn
     - DOMAIN-SUFFIX, agoda.cn, DIRECT
 
+   # afdian
+    - DOMAIN-SUFFIX, afdian.net, DIRECT
+    - DOMAIN-SUFFIX, afdiancdn.com, DIRECT
+
    # akamai
     # - DOMAIN-SUFFIX, akadns.net, DIRECT
     # # - DOMAIN-SUFFIX, akamai.net, DIRECT
@@ -2097,6 +3041,9 @@ rules:
    # annas-archive
     - DOMAIN-SUFFIX, annas-archive.org, PROXY
 
+   # apkpure
+    - DOMAIN-SUFFIX, apkpure.net, PROXY
+
    # apple
     # - DOMAIN-SUFFIX, amp-api.podcasts.apple.com, PROXY
     # - DOMAIN-SUFFIX, api.spreaker.com, PROXY
@@ -2171,6 +3118,15 @@ rules:
 
    # blogspot
 
+   # bloomberg
+    - DOMAIN-SUFFIX, bloom.bg, PROXY
+    - DOMAIN-SUFFIX, bloombergdfpcw4670778881.s.moatpixel.com, PROXY
+    - DOMAIN-SUFFIX, compass.bloomberg.com, PROXY
+    - DOMAIN-SUFFIX, coordinator.cm.bloomberg.com, PROXY
+    - DOMAIN-SUFFIX, login.bloomberg.com, PROXY
+    - DOMAIN-SUFFIX, personalization.bloomberg.com, PROXY
+    - DOMAIN-SUFFIX, sourcepointcmp.bloomberg.com, PROXY
+
    # BMO
     - DOMAIN-SUFFIX, bmo.com, PROXY
 
@@ -2182,6 +3138,9 @@ rules:
   # c
    # caliva
     - DOMAIN-SUFFIX, caliva.com, PROXY
+
+   # callannie.ai
+    - DOMAIN-SUFFIX, callannie.ai, PROXY
 
    # casalemedia
 
@@ -2971,6 +3930,9 @@ rules:
    # pbskids.org
     - DOMAIN-SUFFIX, pbskids.org, PROXY
 
+   # pexels.com
+    - DOMAIN-SUFFIX, pexels.com, PROXY
+
    # philippineairlines.com
     - DOMAIN-SUFFIX, philippineairlines.com, PROXY
 
@@ -3075,6 +4037,9 @@ rules:
 
    # sandbox.game
     - DOMAIN-SUFFIX, sandbox.game, PROXY
+
+   # sandiego.gov
+    - DOMAIN-SUFFIX, sandiego.gov, PROXY
 
    # satelles.com
     - DOMAIN-SUFFIX, satelles.com, PROXY
