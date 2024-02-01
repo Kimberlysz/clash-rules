@@ -2806,6 +2806,9 @@ rules:
   # f
  
   # g
+   # geetest
+    - DOMAIN-SUFFIX, geetest.com, DIRECT
+
    # github
     # - DOMAIN-SUFFIX, github.com, DIRECT
     # - DOMAIN-SUFFIX, github.io, DIRECT
@@ -3142,6 +3145,9 @@ rules:
    # callannie.ai
     - DOMAIN-SUFFIX, callannie.ai, PROXY
 
+   # carneysandoe.com
+    - DOMAIN-SUFFIX, carneysandoe.com, PROXY
+
    # casalemedia
 
    # cdnbasket
@@ -3272,6 +3278,7 @@ rules:
 
   # d
    # dfas.mil
+    - DOMAIN-SUFFIX, dfas.mil, PROXY
     - DOMAIN-SUFFIX, mypay.dfas.mil, PROXY
 
    # disneyplus
@@ -3341,6 +3348,9 @@ rules:
     - DOMAIN-SUFFIX, f2pool.com, PROXY
 
    # facebook
+
+   # farmers.com
+    - DOMAIN-SUFFIX, farmers.com, PROXY
 
    # fastly
     # AS54113 - Fastly, Inc.
@@ -3510,6 +3520,9 @@ rules:
     # - DOMAIN, dl.google.com, PROXY
     # - DOMAIN, mtalk.google.com, PROXY
 
+   # gov.ph
+    - DOMAIN-SUFFIX, gov.ph, PROXY
+
    # gov.tw
     - DOMAIN-SUFFIX, gov.tw, PROXY
 
@@ -3555,6 +3568,12 @@ rules:
     - DOMAIN-SUFFIX, hubspot.com, PROXY
 
    # hulu
+
+   # humana.com
+    - DOMAIN-SUFFIX, humana.com, PROXY
+
+   # humanamilitary.com
+    - DOMAIN-SUFFIX, humanamilitary.com, PROXY
 
    # huraWatch
     - DOMAIN-SUFFIX, hurawatch.at, PROXY
@@ -3718,6 +3737,9 @@ rules:
    # ma.ne
     - DOMAIN-SUFFIX, hu.ma.ne, PROXY
 
+   # maine.gov
+    - DOMAIN-SUFFIX, maine.gov, PROXY
+
    # makedreamwebsite.com
     - DOMAIN-SUFFIX, makedreamwebsite.com, PROXY
 
@@ -3778,6 +3800,9 @@ rules:
     # - DOMAIN-SUFFIX, yammerusercontent.com, PROXY
 
    # ml314.com
+
+   # mojim.com
+    - DOMAIN-SUFFIX, mojim.com, PROXY
 
    # msn
     # msn rules originates from this yaml file
@@ -3892,6 +3917,10 @@ rules:
     - DOMAIN, cdn.optimizely.com, PROXY
     - DOMAIN, cdn3.optimizely.com, PROXY
     - DOMAIN, logx.optimizely.com, PROXY
+
+   # osd.mil
+    - DOMAIN-SUFFIX, osd.mil, PROXY
+    - DOMAIN-SUFFIX, milconnect.dmdc.osd.mil, PROXY
 
    # ottcst.com
     - DOMAIN-SUFFIX, ottcast.net, PROXY
@@ -4077,6 +4106,9 @@ rules:
    # social-viral.com
     - DOMAIN-SUFFIX, social-viral.com, PROXY
 
+   # socratic.org
+    - DOMAIN-SUFFIX, socratic.org, PROXY
+
    # SoftLayer Technologies
 
    # special-ops.org
@@ -4161,6 +4193,9 @@ rules:
 
    # thepennyhoarder.com
     - DOMAIN-SUFFIX, thepennyhoarder.com, PROXY
+
+   # theplusaddons.com
+    - DOMAIN-SUFFIX, theplusaddons.com, PROXY
 
    # theseedsnetwork.com
     - DOMAIN-SUFFIX, theseedsnetwork.com, PROXY
