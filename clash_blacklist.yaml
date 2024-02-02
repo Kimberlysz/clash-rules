@@ -3846,6 +3846,9 @@ rules:
    # nces.ed.gov
     - DOMAIN-SUFFIX, nces.ed.gov, PROXY
 
+   # nelnet.com
+    - DOMAIN-SUFFIX, nelnet.com, PROXY
+
    # netflix
     # USER-AGENT, Argo*, PROXY
 
