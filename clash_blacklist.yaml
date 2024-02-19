@@ -3035,6 +3035,9 @@ rules:
    # akamai technologies
     # AS16625 - Akamai Technologies, Inc.
 
+   # alpineschools.org
+    - DOMAIN-SUFFIX, alpineschools.org, PROXY
+
    # amazon
 
    # amc
@@ -3058,6 +3061,9 @@ rules:
 
    # appledaily
     - DOMAIN-SUFFIX, appledaily.tw, PROXY
+
+   # applitrack.com
+    - DOMAIN-SUFFIX, applitrack.com, PROXY
 
    # appspot, Others
     # - DOMAIN, feelinsonice-hrd.appspot.com, PROXY
@@ -3371,6 +3377,9 @@ rules:
    # freemacsoft.net
     - DOMAIN-SUFFIX, freemacsoft.net, PROXY
 
+   # frontlineeducation.com
+    - DOMAIN-SUFFIX, frontlineeducation.com, PROXY
+
    # fullcompass
     - DOMAIN-SUFFIX, fullcompass.com, PROXY
 
@@ -3642,6 +3651,9 @@ rules:
     - DOMAIN-SUFFIX, justanswer.com, PROXY
 
   # k
+   # k12jobspot.com
+    - DOMAIN-SUFFIX, k12jobspot.com, PROXY
+
    # kagyuoffice
     - DOMAIN-SUFFIX, kagyuoffice.org, PROXY
     - DOMAIN-SUFFIX, kagyuoffice.org.tw, PROXY
@@ -3825,6 +3837,9 @@ rules:
 
     - DOMAIN, indigo.myfinanceservice.com, PROXY
 
+   # mymainecertification.com
+    - DOMAIN-SUFFIX, mymainecertification.com, PROXY
+
   # n
    # nanopool
     - DOMAIN-SUFFIX, nanopool.org, PROXY
@@ -3847,6 +3862,11 @@ rules:
     - DOMAIN-SUFFIX, nces.ed.gov, PROXY
 
    # nelnet.com
+    - DOMAIN, secure.nelnet.com, PROXY
+    - DOMAIN, extsvc.nelnet.net, PROXY
+    - DOMAIN, contentmma.guides.nelnet.com, PROXY
+    - DOMAIN, auth.nelnet.com, PROXY
+    - DOMAIN-SUFFIX, nelnet.net, PROXY
     - DOMAIN-SUFFIX, nelnet.com, PROXY
 
    # netflix
@@ -4081,6 +4101,9 @@ rules:
 
    # sedl.org
     - DOMAIN-SUFFIX, sedl.org, PROXY
+
+   # sdge.com
+    - DOMAIN-SUFFIX, sdge.com, PROXY
 
    # sharepoint
     # - DOMAIN-SUFFIX, blog.pathtosharepoint.com, PROXY
