@@ -3811,6 +3811,9 @@ rules:
     # - DOMAIN-SUFFIX, wunderlist.com, PROXY
     # - DOMAIN-SUFFIX, yammerusercontent.com, PROXY
 
+   # mintmobile.com
+    - DOMAIN-SUFFIX, mintmobile.com, PROXY
+
    # ml314.com
 
    # mojim.com
