@@ -2795,6 +2795,10 @@ rules:
     # - DOMAIN, play-edge.itunes.apple.com, DIRECT
 
   # b
+   # bluehost
+    # bluehost (extra)
+    - DOMAIN-SUFFIX, cn.bluehost.com, DIRECT
+    - DOMAIN-SUFFIX, bluehost.hk, DIRECT
 
   # c
    # chicago.china-consulate.gov.cn
@@ -3035,6 +3039,9 @@ rules:
    # akamai technologies
     # AS16625 - Akamai Technologies, Inc.
 
+   # alchemer.com
+    - DOMAIN-SUFFIX, alchemer.com, PROXY
+
    # alpineschools.org
     - DOMAIN-SUFFIX, alpineschools.org, PROXY
 
@@ -3106,6 +3113,9 @@ rules:
 
     - DOMAIN-SUFFIX, beinsports.com, PROXY
 
+   # besd.net
+    - DOMAIN-SUFFIX, besd.net, PROXY
+
    # betterplan
     - DOMAIN-SUFFIX, betterplan.cl, PROXY
 
@@ -3125,6 +3135,9 @@ rules:
    # bitmain
     - DOMAIN-SUFFIX, bitmain.com, PROXY
 
+   # blockscout
+    - DOMAIN-SUFFIX, blockscout.com, PROXY
+
    # blogspot
 
    # bloomberg
@@ -3136,6 +3149,10 @@ rules:
     - DOMAIN-SUFFIX, personalization.bloomberg.com, PROXY
     - DOMAIN-SUFFIX, sourcepointcmp.bloomberg.com, PROXY
 
+   # bluehost
+    # bluehost (extra)
+    - DOMAIN-SUFFIX, bluehost.com, PROXY
+
    # BMO
     - DOMAIN-SUFFIX, bmo.com, PROXY
 
@@ -3145,11 +3162,18 @@ rules:
    # brazgovskaia
 
   # c
+   # ca.gov
+    - DOMAIN-SUFFIX, dmv.ca.gov, PROXY
+    - DOMAIN-SUFFIX, sa.dmv.ca.gov, PROXY
+
    # caliva
     - DOMAIN-SUFFIX, caliva.com, PROXY
 
    # callannie.ai
     - DOMAIN-SUFFIX, callannie.ai, PROXY
+
+   # canyonsdistrict.org
+    - DOMAIN-SUFFIX, canyonsdistrict.org, PROXY
 
    # carneysandoe.com
     - DOMAIN-SUFFIX, carneysandoe.com, PROXY
@@ -3239,8 +3263,14 @@ rules:
    # coinmarketcap.com
     - DOMAIN-SUFFIX, coinwarz.com, PROXY
     - DOMAIN-SUFFIX, coinmarketcap.com, PROXY
+   
+   # complio.com
+    - DOMAIN-SUFFIX, complio.com, PROXY
 
    # cookielaw.org
+
+   # coze.com
+    - DOMAIN-SUFFIX, coze.com, PROXY
 
    # crazypool
     - DOMAIN-SUFFIX, crazypool.org, PROXY
@@ -3263,6 +3293,9 @@ rules:
 
    # cryptotools.net
     - DOMAIN-SUFFIX, cryptotools.net, PROXY
+
+   # culturalvistas.org
+    - DOMAIN-SUFFIX, culturalvistas.org, PROXY
 
    # curtin university
     - DOMAIN-SUFFIX, curtin.edu.au, PROXY
@@ -3291,6 +3324,9 @@ rules:
 
    # disney.demdex.net
     - DOMAIN-SUFFIX, disney.demdex.net, PROXY
+
+   # dpsk12.org
+    - DOMAIN-SUFFIX, dpsk12.org, PROXY
 
    # drsmoke
 
@@ -3337,6 +3373,9 @@ rules:
 
    # ethwscan
     - DOMAIN-SUFFIX, ethwscan.com, PROXY
+
+   # etoro.com
+    - DOMAIN-SUFFIX, etoro.com, PROXY
 
    # express-scripts.com
     - DOMAIN-SUFFIX, express-scripts.com, PROXY
@@ -3529,7 +3568,11 @@ rules:
     # - DOMAIN, dl.google.com, PROXY
     # - DOMAIN, mtalk.google.com, PROXY
 
+   # gov.in
+    - DOMAIN-SUFFIX, gov.in, PROXY
+
    # gov.ph
+    - DOMAIN, edoc.ipophil.gov.ph, PROXY
     - DOMAIN-SUFFIX, gov.ph, PROXY
 
    # gov.tw
@@ -3630,6 +3673,12 @@ rules:
 
    # ipinfo
     - DOMAIN-SUFFIX, ipinfo.io, PROXY
+
+   # isd622.org (extra)
+    - DOMAIN-SUFFIX, isd622.org, PROXY
+
+   # itesonline.com
+    - DOMAIN-SUFFIX, itesonline.com, PROXY
 
    # itv.com
     - DOMAIN-SUFFIX, itv.com, PROXY
@@ -3816,6 +3865,10 @@ rules:
 
    # ml314.com
 
+   # mo.gov
+    - DOMAIN-SUFFIX, dese.mo.gov, PROXY
+    - DOMAIN-SUFFIX, mo.gov, PROXY
+
    # mojim.com
     - DOMAIN-SUFFIX, mojim.com, PROXY
 
@@ -3892,6 +3945,9 @@ rules:
     - DOMAIN, staticdelivery.nexusmods.com, PROXY
     - DOMAIN, staticstats.nexusmods.com, PROXY
     - DOMAIN, unleash-edge.nexusmods.com, PROXY
+
+   # nh.gov
+    - DOMAIN-SUFFIX, nh.gov, PROXY
 
    # nolej.io
     - DOMAIN-SUFFIX, nolej.io, PROXY
@@ -3978,6 +4034,12 @@ rules:
 
    # pay1040.com
     - DOMAIN-SUFFIX, pay1040.com, PROXY
+
+   # paycom.com
+    - DOMAIN-SUFFIX, paycom.com, PROXY
+
+   # paycomonline.net
+    - DOMAIN-SUFFIX, paycomonline.net, PROXY
 
    # payusatax.com
     - DOMAIN-SUFFIX, payusatax.com, PROXY
@@ -4188,6 +4250,9 @@ rules:
 
   # t
    # taboola.com
+
+   # teachers-teachers.com
+    - DOMAIN-SUFFIX, teachers-teachers.com, PROXY
 
    # teamredminer
     - DOMAIN-SUFFIX, teamredminer.com, PROXY
