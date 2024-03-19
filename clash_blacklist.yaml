@@ -4164,6 +4164,10 @@ rules:
    # screenrant.com
     - DOMAIN-SUFFIX, screenrant.com, PROXY
 
+   # scribd.com
+    - DOMAIN-SUFFIX, scribd.com, PROXY
+    - DOMAIN, wa.scribd.com, PROXY
+
    # sedl.org
     - DOMAIN-SUFFIX, sedl.org, PROXY
 
@@ -4327,6 +4331,7 @@ rules:
 
    # tiktok
     - DOMAIN-SUFFIX, tiktokcdn-us.com, PROXY
+    - DOMAIN-SUFFIX, tiktokv.us, PROXY
 
    # tlsfingerprint
     - DOMAIN-SUFFIX, tlsfingerprint.io, PROXY
