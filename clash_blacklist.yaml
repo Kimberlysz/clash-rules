@@ -1055,6 +1055,7 @@ rules:
   
   # f
    # facebook
+    - DOMAIN-SUFFIX, graph.facebook.com, PROXY
   
    # fastclick.net
   
