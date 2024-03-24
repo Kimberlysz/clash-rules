@@ -1055,7 +1055,6 @@ rules:
   
   # f
    # facebook
-    - DOMAIN-SUFFIX, graph.facebook.com, PROXY
   
    # fastclick.net
   
@@ -2243,8 +2242,8 @@ rules:
     - DOMAIN-SUFFIX, b-graph-fallback.facebook.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, connect.facebook.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, connect.facebook.net, 🛑 AdBlock rules
-    - DOMAIN-SUFFIX, graph.facebook.com, 🛑 AdBlock rules
-    - DOMAIN-SUFFIX, graph-fallback.facebook.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, graph.facebook.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, graph-fallback.facebook.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, z-m-graph.facebook.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, graph.fbpigeon.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, mqtt-mini.facebook.com, 🛑 AdBlock rules
@@ -3346,6 +3345,8 @@ rules:
    # complio.com
     - DOMAIN-SUFFIX, complio.com, PROXY
 
+    - DOMAIN, liberty.complio.com, PROXY
+
    # cookielaw.org
 
    # coze.com
@@ -3667,6 +3668,9 @@ rules:
    # hbomax
     - DOMAIN-SUFFIX, max.com, PROXY
 
+   # healthline
+    - DOMAIN-SUFFIX, healthline.com, PROXY
+
    # helloandroid.com
     - DOMAIN-SUFFIX, helloandroid.com, PROXY
 
@@ -3767,6 +3771,9 @@ rules:
     - DOMAIN, cscript-cdn-irl.cassiecloud.com, PROXY
     - DOMAIN, http-inputs-itv.splunkcloud.com, PROXY
     - DOMAIN, tom.itv.com, PROXY
+
+   # ivpn.net
+    - DOMAIN-SUFFIX, ivpn.net, PROXY
 
   # j
    # jordandistrict.org
@@ -4245,6 +4252,8 @@ rules:
 
    # scribd.com
     - DOMAIN-SUFFIX, scribd.com, PROXY
+    - DOMAIN-SUFFIX, scribdassets.com, PROXY
+
     - DOMAIN, wa.scribd.com, PROXY
 
    # sedl.org
