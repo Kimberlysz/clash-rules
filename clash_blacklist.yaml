@@ -3405,6 +3405,9 @@ rules:
    # disney.demdex.net
     - DOMAIN-SUFFIX, disney.demdex.net, PROXY
 
+   # donacionesley21440.cl
+    - DOMAIN-SUFFIX, donacionesley21440.cl, PROXY
+
    # dpsk12.org
     - DOMAIN-SUFFIX, dpsk12.org, PROXY
 
@@ -3424,6 +3427,9 @@ rules:
     # - DOMAIN-SUFFIX, elitebabes.com, PROXY
     - DOMAIN-SUFFIX, exdynsrv.com, PROXY
     - DOMAIN-SUFFIX, hwcdn.net, PROXY
+
+   # emol.com
+    - DOMAIN-SUFFIX, emol.com, PROXY
 
    # engadget.com
     - DOMAIN-SUFFIX, engadget.com, PROXY
@@ -3662,6 +3668,9 @@ rules:
     - DOMAIN-SUFFIX, gptstore.ai, PROXY
 
   # h
+   # happyaddons.com
+    - DOMAIN-SUFFIX, happyaddons.com, PROXY
+
    # hashrate
     - DOMAIN-SUFFIX, hashrate.to, PROXY
 
@@ -4162,6 +4171,9 @@ rules:
    # pool.space
     - DOMAIN-SUFFIX, pool.space, PROXY
 
+   # powerpackelements.com
+    - DOMAIN-SUFFIX, powerpackelements.com, PROXY
+
    # proshkola
     - DOMAIN-SUFFIX, proshkola18.ru, PROXY
 
@@ -4171,6 +4183,9 @@ rules:
    # Psychz Networks
 
   # q
+   # qodeinteractive.com
+    - DOMAIN-SUFFIX, quantfury.com, PROXY
+
    # quantfury
     - DOMAIN-SUFFIX, quantfury.com, PROXY
     - DOMAIN-SUFFIX, trdngbcknd.com, PROXY
