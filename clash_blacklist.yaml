@@ -3349,6 +3349,9 @@ rules:
 
    # cookielaw.org
 
+   # corehighered.com
+    - DOMAIN-SUFFIX, corehighered.com, PROXY
+
    # coze.com
     - DOMAIN-SUFFIX, coze.com, PROXY
 
@@ -3433,6 +3436,9 @@ rules:
 
    # engadget.com
     - DOMAIN-SUFFIX, engadget.com, PROXY
+
+   # enterprise.com
+    - DOMAIN-SUFFIX, enterprise.com, PROXY
 
    # epicgames
     - DOMAIN, cdn2.unrealengine.com, PROXY
@@ -3768,6 +3774,9 @@ rules:
 
    # isd622.org (extra)
     - DOMAIN-SUFFIX, isd622.org, PROXY
+
+   # istockphoto.com
+    - DOMAIN-SUFFIX, istockphoto.com, PROXY
 
    # itesonline.com
     - DOMAIN-SUFFIX, itesonline.com, PROXY
@@ -4184,7 +4193,8 @@ rules:
 
   # q
    # qodeinteractive.com
-    - DOMAIN-SUFFIX, quantfury.com, PROXY
+    - DOMAIN-SUFFIX, qodeinteractive.com, PROXY
+    - DOMAIN-SUFFIX, qodethemes.com, PROXY
 
    # quantfury
     - DOMAIN-SUFFIX, quantfury.com, PROXY
