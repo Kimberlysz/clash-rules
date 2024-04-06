@@ -3403,6 +3403,9 @@ rules:
     - DOMAIN-SUFFIX, dfas.mil, PROXY
     - DOMAIN-SUFFIX, mypay.dfas.mil, PROXY
 
+   # discomax.com
+    - DOMAIN-SUFFIX, discomax.com, PROXY
+
    # disneyplus
 
    # disney.demdex.net
