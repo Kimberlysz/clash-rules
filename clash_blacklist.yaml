@@ -250,8 +250,8 @@ dns:
    # xbox
     - 'xncsi.xboxlive.com'
     - 'xncsi.xboxlive.cn'
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
+    # - '*.msftconnecttest.com'
+    # - '*.msftncsi.com'
     - 'xbox.ipv6.microsoft.com'
     - 'x1ds.xboxlive.com'
 
@@ -271,8 +271,22 @@ dns:
   nameserver:
     - 233.5.5.5
     - 119.29.29.29
-    - 114.114.114.114
     - 180.76.76.76
+    - 114.114.114.114
+
+  # When `fallback` is present, the DNS server will send concurrent requests
+  # to the servers in this section along with servers in `nameservers`.
+  # The answers from fallback servers are used when the GEOIP country
+  # is not `CN`.
+  # fallback:
+  #   - tcp://1.1.1.1
+  #   - 'tcp://1.1.1.1#en0'
+
+  # fallback:
+    # - https://dns11.quad9.net/dns-query
+    # - https://dns.cloudflare.com/dns-query
+    # - tls://dns.google
+    # - tcp://208.67.222.222:443
 
     # - 8.8.8.8 # default value
     # - tls://dns.rubyfish.cn:853 # DNS over TLS
@@ -301,20 +315,6 @@ dns:
     # - dhcp://en0 # dns from dhcp
     # - quic://dns.adguard.com:784 # DNS over QUIC
     # - '8.8.8.8#en0' # 兼容指定 DNS 出口网卡
-
-  # When `fallback` is present, the DNS server will send concurrent requests
-  # to the servers in this section along with servers in `nameservers`.
-  # The answers from fallback servers are used when the GEOIP country
-  # is not `CN`.
-  # fallback:
-  #   - tcp://1.1.1.1
-  #   - 'tcp://1.1.1.1#en0'
-
-  # fallback:
-    # - https://dns11.quad9.net/dns-query
-    # - https://dns.cloudflare.com/dns-query
-    # - tls://dns.google
-    # - tcp://208.67.222.222:443
 
     # - tcp://1.1.1.1
     # 指定 DNS 过代理查询，ProxyGroupName 为策略组名或节点名，过代理配置优先于配置出口网卡，当找不到策略组或节点名则设置为出口网卡
@@ -3278,11 +3278,17 @@ rules:
 
    # chartbeat.com
 
+   # chatgpt.com
+    - DOMAIN-SUFFIX, chatgpt.com, PROXY
+
    # chia
     - DOMAIN-SUFFIX, chia.net, PROXY
     - DOMAIN-SUFFIX, chiacalculator.com, PROXY
 
    # chtbl.com
+
+   # cipc.co.za
+    - DOMAIN-SUFFIX, cipc.co.za, PROXY
 
    # civitai.com
     - DOMAIN-SUFFIX, civitai.com, PROXY
@@ -3332,6 +3338,9 @@ rules:
    # coindesk
     - DOMAIN-SUFFIX, coindesk.com, PROXY
 
+   # coincodex.com
+    - DOMAIN-SUFFIX, coincodex.com, PROXY
+
    # coingecko
     - DOMAIN-SUFFIX, coingecko.com, PROXY
 
@@ -3341,13 +3350,20 @@ rules:
    # coinmarketcap.com
     - DOMAIN-SUFFIX, coinwarz.com, PROXY
     - DOMAIN-SUFFIX, coinmarketcap.com, PROXY
-   
+
    # complio.com
     - DOMAIN-SUFFIX, complio.com, PROXY
 
     - DOMAIN, liberty.complio.com, PROXY
 
+   # cookcountyclerkil.gov
+    - DOMAIN-SUFFIX, cookcountyclerkil.gov, PROXY
+
    # cookielaw.org
+
+   # copilot.microsoft.com
+    - DOMAIN-SUFFIX, copilot.microsoft.com, PROXY
+    - DOMAIN-SUFFIX, sydney.bing.com, PROXY
 
    # corehighered.com
     - DOMAIN-SUFFIX, corehighered.com, PROXY
@@ -3663,6 +3679,9 @@ rules:
     # - DOMAIN, dl.google.com, PROXY
     # - DOMAIN, mtalk.google.com, PROXY
 
+   # gov.co
+    - DOMAIN-SUFFIX, gov.co, PROXY
+
    # gov.in
     - DOMAIN-SUFFIX, gov.in, PROXY
 
@@ -3732,6 +3751,9 @@ rules:
     - DOMAIN-SUFFIX, hurawatch.at, PROXY
     - DOMAIN-SUFFIX, hurawatch.cc, PROXY
 
+   # hymnal.net
+    - DOMAIN-SUFFIX, hymnal.net, PROXY
+
   # i
    # id.me
     - DOMAIN-SUFFIX, id.me, PROXY
@@ -3775,6 +3797,9 @@ rules:
    # ipinfo
     - DOMAIN-SUFFIX, ipinfo.io, PROXY
 
+   # iscooterglobal.co.uk
+    - DOMAIN-SUFFIX, iscooterglobal.co.uk, PROXY
+
    # isd622.org (extra)
     - DOMAIN-SUFFIX, isd622.org, PROXY
 
@@ -3814,8 +3839,10 @@ rules:
     - DOMAIN-SUFFIX, kagyuoffice.org, PROXY
     - DOMAIN-SUFFIX, kagyuoffice.org.tw, PROXY
 
-   # kakao talk
-    # - DOMAIN-SUFFIX, kakao.co.kr, PROXY
+   # kakao
+    - DOMAIN-SUFFIX, daumkakao.io, PROXY
+    - DOMAIN-SUFFIX, kakao.co.kr, PROXY
+    - DOMAIN-SUFFIX, onkakao.net, PROXY
     # - DOMAIN-SUFFIX, kakao.com, PROXY
     # - DOMAIN-SUFFIX, kakaocdn.net, PROXY
 
@@ -3855,6 +3882,14 @@ rules:
     - DOMAIN-SUFFIX, legkierody.ru, PROXY
 
    # liadm.com
+
+   # libbyapp.com
+    - DOMAIN, ic.od-cdn.com, PROXY
+    - DOMAIN, ntc.api.overdrive.com, PROXY
+    - DOMAIN, thunder.api.overdrive.com, PROXY
+    - DOMAIN, thunder.cdn.overdrive.com, PROXY
+
+    - DOMAIN-SUFFIX, libbyapp.com, PROXY
 
    # liberty.edu
     - DOMAIN-SUFFIX, liberty.edu, PROXY
@@ -4065,6 +4100,9 @@ rules:
    # notepad++
     - DOMAIN-SUFFIX, notepad-plus-plus.org, PROXY
 
+   # noviosfalabella.com
+    - DOMAIN-SUFFIX, noviosfalabella.com, PROXY
+
   # o
    # oculus
     - DOMAIN, developer.oculus.com, PROXY
@@ -4086,6 +4124,9 @@ rules:
     # - DOMAIN-SUFFIX, blob.core.windows.net, PROXY
     # - DOMAIN-SUFFIX, storage.msn.com, PROXY
     # - DOMAIN, oneclient.sfx.ms, PROXY
+
+   # onenetglobal.com
+    - DOMAIN-SUFFIX, onenetglobal.com, PROXY
 
    # onetag-sys.com
     - DOMAIN-SUFFIX, onetag-sys.com, PROXY
@@ -4185,6 +4226,9 @@ rules:
 
    # powerpackelements.com
     - DOMAIN-SUFFIX, powerpackelements.com, PROXY
+
+   # printmailsystems.com
+    - DOMAIN-SUFFIX, printmailsystems.com, PROXY
 
    # proshkola
     - DOMAIN-SUFFIX, proshkola18.ru, PROXY
@@ -4358,6 +4402,9 @@ rules:
     - DOMAIN-SUFFIX, stremio.com, PROXY
     - DOMAIN-SUFFIX, stremio.net, PROXY
 
+   # studentclearinghouse.org
+    - DOMAIN-SUFFIX, studentclearinghouse.org, PROXY
+
    # sugarfreemom.com
     - DOMAIN-SUFFIX, sugarfreemom.com, PROXY
 
@@ -4501,6 +4548,9 @@ rules:
    # trimirror.com
     - DOMAIN-SUFFIX, trimirror.com, PROXY
 
+   # tritondigital.com
+    - DOMAIN-SUFFIX, tritondigital.com, PROXY
+
    # trustwallet
     - DOMAIN-SUFFIX, trustwallet.com, PROXY
 
@@ -4568,6 +4618,9 @@ rules:
 
    # vista.com
     - DOMAIN-SUFFIX, vista.com, PROXY
+
+   # vitalchek.com
+    - DOMAIN-SUFFIX, vitalchek.com, PROXY
 
    # vitalsource.com
     - DOMAIN-SUFFIX, vitalsource.com, PROXY
@@ -8765,7 +8818,6 @@ rules:
 
       ## 知藏（北京）数据技术有限公司 (京ICP备19038827号)
     - DOMAIN-SUFFIX, zzdtec.com, DIRECT
-
 
     # The following domains are carried over from geosite:cn.
     # TODO: Decide how to deal with these domains
@@ -35688,6 +35740,9 @@ rules:
     # Subscene image hosting site
     - DOMAIN, i.jeded.com, PROXY
 
+   # substack
+    - DOMAIN-SUFFIX, substack.com, PROXY
+
    # suishouji
 
    # sumkoo
@@ -51850,13 +51905,13 @@ rules:
   # j
 
   # k
-   # kakao talk
-    # - IP-CIDR, 1.201.0.0/24, PROXY, no-resolve
-    # - IP-CIDR, 27.0.236.0/22, PROXY, no-resolve
-    # - IP-CIDR, 103.27.148.0/22, PROXY, no-resolve
-    # - IP-CIDR, 103.246.56.0/22, PROXY, no-resolve
-    # - IP-CIDR, 110.76.140.0/22, PROXY, no-resolve
-    # - IP-CIDR, 113.61.104.0/22, PROXY, no-resolve
+   # kakao
+    - IP-CIDR, 1.201.0.0/24, PROXY, no-resolve
+    - IP-CIDR, 27.0.236.0/22, PROXY, no-resolve
+    - IP-CIDR, 103.27.148.0/22, PROXY, no-resolve
+    - IP-CIDR, 103.246.56.0/22, PROXY, no-resolve
+    - IP-CIDR, 110.76.140.0/22, PROXY, no-resolve
+    - IP-CIDR, 113.61.104.0/22, PROXY, no-resolve
 
   # l
    # line
