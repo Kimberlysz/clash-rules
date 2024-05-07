@@ -791,7 +791,7 @@ rules:
   
    # advertising.com
   
-   # adxcel-ec2.com, PROXY
+   # adxcel-ec2.com
   
    # affiliatly.com
   
@@ -1497,8 +1497,7 @@ rules:
    # segmint.net
   
    # sentry.io
-   
-  
+
    # servedbyadbutler.com
   
    # shakegoldfish.com
@@ -3152,6 +3151,9 @@ rules:
     # - DOMAIN, feelinsonice.appspot.com, PROXY
     # - DOMAIN, sc-analytics.appspot.com, PROXY
 
+   # art19.com
+    - DOMAIN-SUFFIX, art19.com, PROXY
+
    # ashleymadison
     - DOMAIN-SUFFIX, ashleymadison.com, PROXY
 
@@ -3306,6 +3308,11 @@ rules:
     # AS13335 - Cloudflare, Inc.
 
    # cloudfront
+
+   # cnbeta
+    - DOMAIN-SUFFIX, cnbeta.com, PROXY
+    - DOMAIN-SUFFIX, cnbeta.com.tw, PROXY
+    - DOMAIN-SUFFIX, cnbetacdn.com, PROXY
 
    # cnn
     - DOMAIN-SUFFIX, collector.cdp.cnn.com, PROXY
@@ -3488,6 +3495,9 @@ rules:
    # etoro.com
     - DOMAIN-SUFFIX, etoro.com, PROXY
 
+   # experian.com
+    - DOMAIN-SUFFIX, experian.com, PROXY
+
    # express-scripts.com
     - DOMAIN-SUFFIX, express-scripts.com, PROXY
     - DOMAIN-SUFFIX, militaryrx.express-scripts.com, PROXY
@@ -3510,6 +3520,9 @@ rules:
 
    # fastly
     # AS54113 - Fastly, Inc.
+
+   # firebase
+    - DOMAIN, firebase-settings.crashlytics.com, PROXY
 
    # footystats
     - DOMAIN-SUFFIX, footystats.org, PROXY
@@ -4119,6 +4132,9 @@ rules:
 
     - DOMAIN, static.okx.com, PROXY
 
+   # omny.fm
+    - DOMAIN-SUFFIX, omny.fm, PROXY
+
    # onedrive
     # onedrive rules originates from this yaml file
     # - DOMAIN-SUFFIX, blob.core.windows.net, PROXY
@@ -4547,9 +4563,6 @@ rules:
 
    # trimirror.com
     - DOMAIN-SUFFIX, trimirror.com, PROXY
-
-   # tritondigital.com
-    - DOMAIN-SUFFIX, tritondigital.com, PROXY
 
    # trustwallet
     - DOMAIN-SUFFIX, trustwallet.com, PROXY
@@ -8026,9 +8039,6 @@ rules:
    # cnbc
 
    # cnbeta
-    - DOMAIN-SUFFIX, cnbeta.com, PROXY
-    - DOMAIN-SUFFIX, cnbeta.com.tw, PROXY
-    - DOMAIN-SUFFIX, cnbetacdn.com, PROXY
 
    # cnki
     - DOMAIN-SUFFIX, cnki.com.cn, DIRECT
@@ -8307,7 +8317,6 @@ rules:
     - DOMAIN-SUFFIX, finish.com.cn, DIRECT
 
    # firebase
-    - DOMAIN, firebase-settings.crashlytics.com, PROXY
 
    # flowus
     - DOMAIN-SUFFIX, allflow.cn, DIRECT
@@ -12676,10 +12685,10 @@ rules:
     - DOMAIN-SUFFIX, wechat.com, DIRECT
     - DOMAIN-SUFFIX, wechatpay.cn, DIRECT
     - DOMAIN-SUFFIX, weiyun.com, DIRECT
-    - DOMAIN-SUFFIX, wetv.vip, PROXY
-    - DOMAIN-SUFFIX, wetvinfo.com, PROXY
+    - DOMAIN-SUFFIX, wetv.vip, DIRECT
+    - DOMAIN-SUFFIX, wetvinfo.com, DIRECT
 
-    - DOMAIN, wetv.qq.com, PROXY
+    - DOMAIN, wetv.qq.com, DIRECT
 
     - DOMAIN-SUFFIX, alloyteam.com, DIRECT
     - DOMAIN-SUFFIX, imweb.io, DIRECT
