@@ -11,8 +11,8 @@
   #### shadowrocket config with ads blockeddownload url: 
     https://tinyurl.com/shadowrocketBlacklistAlpha
 
-  #### shadowrocket config with ads not blocked download url: 
-    https://tinyurl.com/shadowrocketBlacklistBeta
+  #### shadowrocket config with ads not blocked download url (deprecated): 
+    https://tinyurl.com/shadowrocketBlacklistBeta (deprecated)
 
   ### reference sources
     https://github.com/v2fly/domain-list-community
@@ -31,8 +31,8 @@
   #### Shadowrocket配置文件下载链接:
     https://tinyurl.com/shadowrocketBlacklistAlpha
 
-  #### Shadowrocket配置文件下载链接（未屏蔽广告版本）: 
-    https://tinyurl.com/shadowrocketBlacklistBeta
+  #### Shadowrocket配置文件下载链接（未屏蔽广告版本）(已弃用）: 
+    https://tinyurl.com/shadowrocketBlacklistBeta(已弃用）
 
   ### 参考来源
     https://github.com/v2fly/domain-list-community
