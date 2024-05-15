@@ -1112,7 +1112,7 @@ rules:
    # gray.tv
   
    # gravatar.com
-  
+
    # grow.me
   
    # gstatic.com
@@ -2808,9 +2808,6 @@ rules:
 
    # alibaba
     # 高德地图
-    - DOMAIN-SUFFIX, a.amap.com, DIRECT
-    - DOMAIN-SUFFIX, ditu.amap.com, DIRECT
-    - DOMAIN-SUFFIX, m.amap.com, DIRECT
 
    # aliyun
     - DOMAIN, aliyun-web-tracker.cn-zhangjiakou.log.aliyuncs.com:443, DIRECT
@@ -3042,6 +3039,8 @@ rules:
  
   # Z
 
+ # PROXY added manually (test)
+
  # PROXY added manually
 
   # #
@@ -3159,6 +3158,9 @@ rules:
 
    # astrill
     - DOMAIN-SUFFIX, astrill.com, PROXY
+
+   # atmeta.com
+    - DOMAIN-SUFFIX, atmeta.com, PROXY
 
    # avg
     - DOMAIN-SUFFIX, avcdn.com, PROXY
@@ -3426,6 +3428,8 @@ rules:
     - DOMAIN-SUFFIX, dfas.mil, PROXY
     - DOMAIN-SUFFIX, mypay.dfas.mil, PROXY
 
+   # dingdatech
+
    # discomax.com
     - DOMAIN-SUFFIX, discomax.com, PROXY
 
@@ -3441,6 +3445,9 @@ rules:
     - DOMAIN-SUFFIX, dpsk12.org, PROXY
 
    # drsmoke
+
+   # dt.gob.cl
+    - DOMAIN-SUFFIX, dt.gob.cl, PROXY
 
   # e
 
@@ -3473,6 +3480,9 @@ rules:
     - DOMAIN, media.graphassets.com, PROXY
     - DOMAIN, static-assets-prod.unrealengine.com, PROXY
     - DOMAIN, tracking.unrealengine.com, PROXY
+
+   # equifax.com
+    - DOMAIN-SUFFIX, equifax.com, PROXY
 
    # etsy
     - DOMAIN-SUFFIX, etsy.com, PROXY
@@ -3790,6 +3800,9 @@ rules:
     - DOMAIN, autocomplete.indeed.com, PROXY
 
     - DOMAIN-SUFFIX, indeed.com, PROXY
+
+   # indexa.cl
+    - DOMAIN-SUFFIX, indexa.cl, PROXY
 
    # indexexchange
     - DOMAIN-SUFFIX, indexexchange.com, PROXY
@@ -4303,6 +4316,9 @@ rules:
 
    # resi
 
+   # respondus.com (extra)
+    - DOMAIN-SUFFIX, respondus.com, PROXY
+
    # rfihub.com
 
    # roblox
@@ -4331,6 +4347,9 @@ rules:
 
    # sandiego.gov
     - DOMAIN-SUFFIX, sandiego.gov, PROXY
+
+   # sandyliang.info
+    - DOMAIN-SUFFIX, sandyliang.info, PROXY
 
    # satelles.com
     - DOMAIN-SUFFIX, satelles.com, PROXY
@@ -4380,7 +4399,10 @@ rules:
    # socratic.org
     - DOMAIN-SUFFIX, socratic.org, PROXY
 
-   # SoftLayer Technologies
+   # softLayer Technologies
+
+   # soundraw
+    - DOMAIN-SUFFIX, soundraw-storage.com, PROXY
 
    # special-ops.org
     - DOMAIN-SUFFIX, special-ops.org, PROXY
@@ -4443,6 +4465,9 @@ rules:
    # techcrunch
     # - DOMAIN-KEYWORD, .techcrunch, PROXY
     # - DOMAIN-SUFFIX, techcrunch.com, PROXY
+
+   # tel.meet
+    - DOMAIN-SUFFIX, tel.meet, PROXY
 
    # telegram
     # - DOMAIN-KEYWORD, .telegram, PROXY
@@ -4897,10 +4922,14 @@ rules:
     - DOMAIN-SUFFIX, airwick.com.cn, DIRECT
 
    # akamai
+
     - DOMAIN-SUFFIX, accdn.com.cn, DIRECT
+    - DOMAIN-SUFFIX, akadns88.net, DIRECT
+    - DOMAIN-SUFFIX, akadns99.net, DIRECT
     - DOMAIN-SUFFIX, akamai.com, DIRECT
     - DOMAIN-SUFFIX, akcdn.com.cn, DIRECT
     - DOMAIN-SUFFIX, aptdn.net, DIRECT
+    - DOMAIN-SUFFIX, edgekey88.net, DIRECT
     - DOMAIN-SUFFIX, janrain.biz, DIRECT
     - DOMAIN-SUFFIX, janrainservices.com, DIRECT
     - DOMAIN-SUFFIX, skycdn.com.cn, DIRECT
@@ -5094,10 +5123,7 @@ rules:
     - DOMAIN-SUFFIX, iuynfg.com, DIRECT
 
     # 高德地图
-    - DOMAIN-SUFFIX, amap.com, DIRECT
-    - DOMAIN-SUFFIX, amapauto.com, DIRECT
-    - DOMAIN-SUFFIX, autonavi.com, DIRECT
-    - DOMAIN-SUFFIX, gaode.com, DIRECT
+    # include:amap
 
     # 虾米音乐
     - DOMAIN-SUFFIX, xiami.com, DIRECT
@@ -5176,7 +5202,19 @@ rules:
     - DOMAIN, oss-cn-wulanchabu.aliyuncs.com, DIRECT
     - DOMAIN, oss-cn-zhangjiakou.aliyuncs.com, DIRECT
 
-   # Amazon
+   # amap
+    - DOMAIN-SUFFIX, a-map.cn, DIRECT
+    - DOMAIN-SUFFIX, a-map.co, DIRECT
+    - DOMAIN-SUFFIX, a-map.link, DIRECT
+    - DOMAIN-SUFFIX, a-map.vip, DIRECT
+    - DOMAIN-SUFFIX, acloudrender.com, DIRECT
+    - DOMAIN-SUFFIX, amap.com, DIRECT
+    - DOMAIN-SUFFIX, amapauto.com, DIRECT
+    - DOMAIN-SUFFIX, anav.com, DIRECT
+    - DOMAIN-SUFFIX, autonavi.com, DIRECT
+    - DOMAIN-SUFFIX, gaode.com, DIRECT
+
+   # amazon
     - DOMAIN-SUFFIX, amazonworkdocs.cn, DIRECT
     - DOMAIN-SUFFIX, amazonworkdocs.com.cn, DIRECT
 
@@ -5272,6 +5310,7 @@ rules:
     - DOMAIN-SUFFIX, insidear.cn, DIRECT
     - DOMAIN-SUFFIX, livephotos.cn, DIRECT
     - DOMAIN-SUFFIX, livephotos.com.cn, DIRECT
+    
     - DOMAIN-SUFFIX, xn--czrs0t4phtr3a.cn, DIRECT # 苹果商店.cn
     - DOMAIN-SUFFIX, xn--fiqs8sxootzz.cn, DIRECT # 苹果中国.cn
     - DOMAIN-SUFFIX, xn--ohq11k7pl25iyo8a.cn, DIRECT # 苹果专卖店.cn
@@ -5321,15 +5360,15 @@ rules:
     - DOMAIN, upp.itunes.apple.com, DIRECT
     
     # below are for match rules
-    # regexp:^a[1-5]\.mzstatic\.com$, DIRECT
-    # regexp:^cdn(-cn)?[1-4]?\.apple-mapkit\.com$, DIRECT
-    # regexp:^cl[1-5]-cdn\.origin-apple\.com\.akadns\.net$, DIRECT
-    # regexp:^cl[1-5]\.apple\.com$, DIRECT
-    # regexp:^is[1-5](-ssl)?\.mzstatic\.com$, DIRECT
-    # regexp:^s[1-5]?\.mzstatic\.com$, DIRECT
+    # regexp:^a[1-5]\.mzstatic\.com$ @cn
+    # regexp:^cdn(-cn)?[1-4]?\.apple-mapkit\.com$ @cn
+    # regexp:^cl[1-5]-cdn\.origin-apple\.com\.akadns\.net$ @cn
+    # regexp:^cl[1-5]\.apple\.com$ @cn
+    # regexp:^is[1-5](-ssl)?\.mzstatic\.com$ @cn
+    # regexp:^s[1-5]?\.mzstatic\.com$ @cn
 
     # The rules below are from https://github.com/felixonmars/dnsmasq-china-list/blob/master/apple.china.conf
-    # Revision: db49c15abc364a7a041aa95a8f763cf1a957b0de
+    # Revision: 8def8312efc8b0c22ca35658614fd63388ff56c7
     # Use in config file like this: "geosite:apple@cn"
     # According to the consensus in #503, do not include the domain name apps.apple.com directly.
     - DOMAIN, a1.mzstatic.com, DIRECT
@@ -5339,6 +5378,10 @@ rules:
     - DOMAIN, a5.mzstatic.com, DIRECT
     - DOMAIN, adcdownload.apple.com.akadns.net, DIRECT
     - DOMAIN, adcdownload.apple.com, DIRECT
+    - DOMAIN, amp-api.media.apple.com, DIRECT
+    - DOMAIN, api-p-ap-c.smoot.apple.com, DIRECT
+    - DOMAIN, api-p-ap-d.smoot.apple.com, DIRECT
+    - DOMAIN, api-p-ap-e.smoot.apple.com, DIRECT
     - DOMAIN, app-site-association.cdn-apple.com, DIRECT
     - DOMAIN, appldnld.apple.com, DIRECT
     - DOMAIN, appldnld.g.aaplimg.com, DIRECT
@@ -5370,41 +5413,50 @@ rules:
     - DOMAIN, cl5.apple.com, DIRECT
     - DOMAIN, clientflow.apple.com.akadns.net, DIRECT
     - DOMAIN, clientflow.apple.com, DIRECT
+    - DOMAIN, cn-smp-paymentservices.apple.com, DIRECT
     - DOMAIN, configuration.apple.com.akadns.net, DIRECT
     - DOMAIN, configuration.apple.com, DIRECT
     - DOMAIN, cstat.apple.com, DIRECT
     - DOMAIN, cstat.cdn-apple.com, DIRECT
     - DOMAIN, dd-cdn.origin-apple.com.akadns.net, DIRECT
+    - DOMAIN, dejavu.apple.com, DIRECT
     - DOMAIN, download.developer.apple.com, DIRECT
+    - DOMAIN, experiments.apple.com, DIRECT
     - DOMAIN, gs-loc-cn.apple.com, DIRECT
     - DOMAIN, gs-loc.apple.com, DIRECT
     - DOMAIN, gsp10-ssl-cn.ls.apple.com, DIRECT
+    - DOMAIN, gsp12-cn.ls.apple.com, DIRECT
     - DOMAIN, gsp13-cn.ls.apple.com, DIRECT
     - DOMAIN, gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net, DIRECT
     - DOMAIN, gsp4-cn.ls.apple.com.edgekey.net, DIRECT
     - DOMAIN, gsp4-cn.ls.apple.com, DIRECT
     - DOMAIN, gsp5-cn.ls.apple.com, DIRECT
     - DOMAIN, gsp85-cn-ssl.ls.apple.com, DIRECT
+    - DOMAIN, gspe19-2-cn-ssl.ls.apple.com, DIRECT
     - DOMAIN, gspe19-cn-ssl.ls.apple.com, DIRECT
     - DOMAIN, gspe19-cn.ls-apple.com.akadns.net, DIRECT
     - DOMAIN, gspe19-cn.ls.apple.com, DIRECT
     - DOMAIN, gspe21-ssl.ls.apple.com, DIRECT
     - DOMAIN, gspe21.ls.apple.com, DIRECT
     - DOMAIN, gspe35-ssl.ls.apple.com, DIRECT
+    - DOMAIN, gspe79-cn-ssl.ls.apple.com, DIRECT
     - DOMAIN, guzzoni-apple-com.v.aaplimg.com, DIRECT
     - DOMAIN, guzzoni.apple.com, DIRECT
+    - DOMAIN, guzzoni.smoot.apple.com, DIRECT
     - DOMAIN, iadsdk.apple.com, DIRECT
     - DOMAIN, icloud-cdn.icloud.com.akadns.net, DIRECT
     - DOMAIN, icloud.cdn-apple.com, DIRECT
     - DOMAIN, images.apple.com.akadns.net, DIRECT
     - DOMAIN, images.apple.com.edgekey.net.globalredir.akadns.net, DIRECT
     - DOMAIN, images.apple.com, DIRECT
+    - DOMAIN, init-kt.apple.com, DIRECT
     - DOMAIN, init-p01md-lb.push-apple.com.akadns.net, DIRECT
     - DOMAIN, init-p01md.apple.com, DIRECT
     - DOMAIN, init-p01st-lb.push-apple.com.akadns.net, DIRECT
     - DOMAIN, init-p01st.push.apple.com, DIRECT
     - DOMAIN, init-s01st-lb.push-apple.com.akadns.net, DIRECT
     - DOMAIN, init-s01st.push.apple.com, DIRECT
+    - DOMAIN, init.ess.apple.com, DIRECT
     - DOMAIN, iosapps.itunes.g.aaplimg.com, DIRECT
     - DOMAIN, ipcdn.apple.com, DIRECT
     - DOMAIN, iphone-ld.apple.com, DIRECT
@@ -5425,6 +5477,7 @@ rules:
     - DOMAIN, mesu-cdn.apple.com.akadns.net, DIRECT
     - DOMAIN, mesu-china.apple.com.akadns.net, DIRECT
     - DOMAIN, mesu.apple.com, DIRECT
+    - DOMAIN, ml.cdn-apple.com, DIRECT
     - DOMAIN, music.apple.com, DIRECT
     - DOMAIN, ocsp-lb.apple.com.akadns.net, DIRECT
     - DOMAIN, ocsp.apple.com, DIRECT
@@ -5434,11 +5487,20 @@ rules:
     - DOMAIN, osxapps.itunes.g.aaplimg.com, DIRECT
     - DOMAIN, pancake.apple.com, DIRECT
     - DOMAIN, pancake.cdn-apple.com.akadns.net, DIRECT
+    - DOMAIN, pba0.apple.com, DIRECT
+    - DOMAIN, probe.siri.apple.com, DIRECT
     - DOMAIN, prod-support.apple-support.akadns.net, DIRECT
     - DOMAIN, publicassets.cdn-apple.com, DIRECT
     - DOMAIN, reserve-prime.apple.com, DIRECT
     - DOMAIN, s.mzstatic.com, DIRECT
+    - DOMAIN, seed-sequoia.siri.apple.com, DIRECT
+    - DOMAIN, seed-swallow.siri.apple.com, DIRECT
+    - DOMAIN, seed.siri.apple.com, DIRECT
+    - DOMAIN, sequoia.apple.com, DIRECT
+    - DOMAIN, sh-pod2-smp-device.apple.com, DIRECT
+    - DOMAIN, shazam-insights.cdn-apple.com, DIRECT
     - DOMAIN, smp-device-content.apple.com, DIRECT
+    - DOMAIN, static.gc.apple.com, DIRECT
     - DOMAIN, stocks-sparkline-lb.apple.com.akadns.net, DIRECT
     - DOMAIN, stocks-sparkline.apple.com, DIRECT
     - DOMAIN, store.apple.com.edgekey.net.globalredir.akadns.net, DIRECT
@@ -5448,8 +5510,8 @@ rules:
     - DOMAIN, store.storeimages.cdn-apple.com, DIRECT
     - DOMAIN, support-china.apple-support.akadns.net, DIRECT
     - DOMAIN, support.apple.com, DIRECT
-    - DOMAIN, swallow.apple.com, DIRECT
     - DOMAIN, swallow-apple-com.v.aaplimg.com, DIRECT
+    - DOMAIN, swallow.apple.com, DIRECT
     - DOMAIN, swcatalog-cdn.apple.com.akadns.net, DIRECT
     - DOMAIN, swcatalog.apple.com, DIRECT
     - DOMAIN, swcdn.apple.com, DIRECT
@@ -5458,6 +5520,8 @@ rules:
     - DOMAIN, swdist.apple.com, DIRECT
     - DOMAIN, swscan-cdn.apple.com.akadns.net, DIRECT
     - DOMAIN, swscan.apple.com, DIRECT
+    - DOMAIN, sylvan.apple.com, DIRECT
+    - DOMAIN, tj-pod1-smp-device.apple.com, DIRECT
     - DOMAIN, updates-http.cdn-apple.com.akadns.net, DIRECT
     - DOMAIN, updates-http.cdn-apple.com, DIRECT
     - DOMAIN, updates.cdn-apple.com, DIRECT
@@ -5467,11 +5531,11 @@ rules:
     - DOMAIN, weather-data.apple.com, DIRECT
     - DOMAIN, weather-map.apple.com, DIRECT
     - DOMAIN, weather-map2.apple.com, DIRECT
+    - DOMAIN, weatherkit.apple.com, DIRECT
     - DOMAIN, www.apple.com.edgekey.net.globalredir.akadns.net, DIRECT
     - DOMAIN, www.apple.com.edgekey.net, DIRECT
     - DOMAIN, www.apple.com, DIRECT
     - DOMAIN, xp.apple.com, DIRECT
-    - DOMAIN, testflight.apple.com, DIRECT
 
    # apple-dev
     # swift China
@@ -5523,11 +5587,8 @@ rules:
     - DOMAIN-SUFFIX, sagemaker.com.cn, DIRECT
 
     # AWS CN DNS
-    # regexp:.+\.awsdns-cn-[0-9][0-9]\.biz$
+    # regexp:.+\.awsdns-cn-[0-9][0-9]\.(biz|com|net|top)$
     # regexp:.+\.awsdns-cn-[0-9][a-e0-9]\.cn$
-    # regexp:.+\.awsdns-cn-[0-9][0-9]\.com$
-    # regexp:.+\.awsdns-cn-[0-9][0-9]\.net$
-    # regexp:.+\.awsdns-cn-[0-9][0-9]\.top$
 
    # azure
     - DOMAIN-SUFFIX, 21vbc.com, DIRECT
@@ -5742,9 +5803,9 @@ rules:
 
    # bing
     - DOMAIN-SUFFIX, bing.com.cn, DIRECT
-
     - DOMAIN-SUFFIX, cn.bing.com, DIRECT
     - DOMAIN-SUFFIX, cn.bing.net, DIRECT
+    - DOMAIN-SUFFIX, cn.mm.bing.net, DIRECT
     - DOMAIN-SUFFIX, ditu.live.com, DIRECT
 
     - DOMAIN, bj1.api.bing.com, DIRECT
@@ -7035,7 +7096,6 @@ rules:
     # include:36kr
     # include:cctv
     # include:chinanews
-    # include:cnbeta
     # include:dgtle
     # include:geekpark
     # include:hupu
@@ -8133,6 +8193,13 @@ rules:
     - DOMAIN-SUFFIX, dcocsp.cn, DIRECT
     - DOMAIN-SUFFIX, digicert.cn, DIRECT
 
+   # dingdatech
+    - DOMAIN-SUFFIX, diiing.cn, DIRECT
+    - DOMAIN-SUFFIX, dingdachuxing.com, DIRECT
+    - DOMAIN-SUFFIX, dingdatech.com, DIRECT
+    - DOMAIN-SUFFIX, jintdev.com, DIRECT
+    - DOMAIN-SUFFIX, xiangbababus.com, DIRECT
+
    # dingtalk
     - DOMAIN-SUFFIX, ddurl.to, DIRECT
     - DOMAIN-SUFFIX, dingding.xin, DIRECT
@@ -8182,6 +8249,12 @@ rules:
    # docin
     - DOMAIN-SUFFIX, docin.com, DIRECT
     - DOMAIN-SUFFIX, douding.cn, DIRECT
+
+   # dongjiao
+    - DOMAIN-SUFFIX, anmo.com, DIRECT
+    - DOMAIN-SUFFIX, djdjapp.com, DIRECT
+    - DOMAIN-SUFFIX, dongjiao.cc, DIRECT
+    - DOMAIN-SUFFIX, dongjiaoapp.com, DIRECT
 
    # douban
     - DOMAIN-SUFFIX, douban.com, DIRECT
@@ -8276,9 +8349,14 @@ rules:
     - DOMAIN-SUFFIX, terapeak.cn, DIRECT
 
    # eleme
+    - DOMAIN-SUFFIX, doservice.com, DIRECT
     - DOMAIN-SUFFIX, ele.me, DIRECT
-    - DOMAIN-SUFFIX, elemecdn.com, DIRECT
+    - DOMAIN-SUFFIX, ele.to, DIRECT
     - DOMAIN-SUFFIX, eleme.cn, DIRECT
+    - DOMAIN-SUFFIX, eleme.io, DIRECT
+    - DOMAIN-SUFFIX, elemecdn.cn, DIRECT
+    - DOMAIN-SUFFIX, elemecdn.com, DIRECT
+    - DOMAIN-SUFFIX, elenet.me, DIRECT
 
    # erji
     - DOMAIN-SUFFIX, erji.net, DIRECT
@@ -8563,6 +8641,8 @@ rules:
     # 恩山论坛
     - DOMAIN-SUFFIX, right.com.cn, DIRECT
 
+    - DOMAIN-SUFFIX, pcbeta.com, DIRECT # 远景论坛
+
     # Fofa网站测绘
     - DOMAIN-SUFFIX, fofa.info, DIRECT
 
@@ -8706,6 +8786,9 @@ rules:
     # 沃丰科技
     - DOMAIN-SUFFIX, udesk.cn, DIRECT
 
+    # xEdge 苏州星汉云联网络技术有限公司 苏ICP备2022017953号-1
+    - DOMAIN-SUFFIX, xedge.cc, DIRECT
+
     # Social Media
       # include:category-social-media-cn
 
@@ -8734,9 +8817,11 @@ rules:
       # include:sina
       # include:sogou
       # include:tencent
+      # include:tongfang
       # include:vivo
       # include:xiaomi
       # include:xunlei
+      # include:zte
     
     # 小马路由
     - DOMAIN-SUFFIX, ezpro.pro, DIRECT
@@ -8827,6 +8912,15 @@ rules:
 
       ## 知藏（北京）数据技术有限公司 (京ICP备19038827号)
     - DOMAIN-SUFFIX, zzdtec.com, DIRECT
+
+    # 祐全科技
+    # include:youquan
+
+    # 叮哒出行(杭州金通互联科技有限公司)
+    # include:dingdatech
+
+    # 北京聚通宝科技有限公司
+    # include:jutongbao
 
     # The following domains are carried over from geosite:cn.
     # TODO: Decide how to deal with these domains
@@ -9561,7 +9655,6 @@ rules:
     - DOMAIN-SUFFIX, paipaibang.com, DIRECT
     - DOMAIN-SUFFIX, paopaoche.net, DIRECT
     - DOMAIN-SUFFIX, pc6.com, DIRECT
-    - DOMAIN-SUFFIX, pcbeta.com, DIRECT
     - DOMAIN-SUFFIX, pchome.net, DIRECT
     - DOMAIN-SUFFIX, pcpop.com, DIRECT
     - DOMAIN-SUFFIX, peccn.com, DIRECT
@@ -9984,6 +10077,17 @@ rules:
     # 酷家乐 杭州群核信息技术有限公司 浙ICP备12022366号-6
     - DOMAIN-SUFFIX, kujiale.com, DIRECT
 
+    # 文叔叔 成都字节星云科技有限公司 蜀ICP备19024011号
+    - DOMAIN-SUFFIX, wss.zone, DIRECT
+
+    - DOMAIN-SUFFIX, hisensehitachi.com, DIRECT #海信日立官网
+
+    # 仟寻招聘
+    - DOMAIN-SUFFIX, moseeker.com, DIRECT 
+
+    # 东郊到家
+    # include:dongjiao
+
    # gigabyte
     - DOMAIN-SUFFIX, aoruszone.cn, DIRECT
     - DOMAIN-SUFFIX, gigabyte.cn, DIRECT
@@ -10038,14 +10142,11 @@ rules:
     - DOMAIN, gstaticadssl.l.google.com, DIRECT
 
     # The rules below are from https://github.com/felixonmars/dnsmasq-china-list/blob/master/google.china.conf
-    # Revision: 72a0845284d0cba5545b610b2c601c2426fdb6ae
+    # Revision: 1cb04ffd38b040ccbe6f903db9d118e78a2d10d8
     # Use in config file like this: "geosite:google@cn"
     - DOMAIN, 265.com, DIRECT
     - DOMAIN, 2mdn-cn.net, DIRECT
     - DOMAIN, 2mdn.net, DIRECT
-    - DOMAIN, accounts.googlers.com, DIRECT
-    - DOMAIN, accounts.xn--9trs65b.com, DIRECT
-    - DOMAIN, accounts.xn--ggle-55da.com, DIRECT
     - DOMAIN, admob-cn.com, DIRECT
     - DOMAIN, adservice.google.com, DIRECT
     - DOMAIN, ai.ytimg.com, DIRECT
@@ -10053,7 +10154,6 @@ rules:
     - DOMAIN, app-measurement.com, DIRECT
     - DOMAIN, apps5.oingo.com, DIRECT
     - DOMAIN, avail.googleflights.net, DIRECT
-    - DOMAIN, beacons-handoff.gcp.gvt2.com, DIRECT
     - DOMAIN, beacons.gcp.gvt2.com, DIRECT
     - DOMAIN, beacons.gvt2.com, DIRECT
     - DOMAIN, beacons2.gvt2.com, DIRECT
@@ -10072,9 +10172,8 @@ rules:
     - DOMAIN, cnappinstall.googleadapis.com, DIRECT
     - DOMAIN, connectivitycheck.gstatic.com, DIRECT
     - DOMAIN, content.googleadapis.com, DIRECT
-    - DOMAIN, corp.google.com, DIRECT
-    - DOMAIN, corp.googleapis.com, DIRECT
     - DOMAIN, crashlyticsreports-pa.googleapis.com, DIRECT
+    - DOMAIN, crl.pki.goog, DIRECT
     - DOMAIN, csi.gstatic.com, DIRECT
     - DOMAIN, dartsearch-cn.net, DIRECT
     - DOMAIN, dg-meta.video.google.com, DIRECT
@@ -10090,6 +10189,7 @@ rules:
     - DOMAIN, download.qcpp1.net, DIRECT
     - DOMAIN, download.qpdp1.net, DIRECT
     - DOMAIN, download.tensorflow.google.com, DIRECT
+    - DOMAIN, emmapplecodevice.googleapis.com, DIRECT
     - DOMAIN, firebase-settings.crashlytics.com, DIRECT
     - DOMAIN, fontfiles.googleadapis.com, DIRECT
     - DOMAIN, fontfiles.googleapis.com, DIRECT
@@ -10100,7 +10200,6 @@ rules:
     - DOMAIN, g1.gstatic.com, DIRECT
     - DOMAIN, g2.gstatic.com, DIRECT
     - DOMAIN, g3.gstatic.com, DIRECT
-    - DOMAIN, gcpnode.com, DIRECT
     - DOMAIN, gonglchuangl.net, DIRECT
     - DOMAIN, gongyichuangyi.net, DIRECT
     - DOMAIN, google-analytics-cn.com, DIRECT
@@ -10133,8 +10232,10 @@ rules:
     - DOMAIN, monitoring.qatp1.net, DIRECT
     - DOMAIN, monitoring.qcpp1.net, DIRECT
     - DOMAIN, monitoring.qpdp1.net, DIRECT
+    - DOMAIN, ocsp.pki.goog, DIRECT
     - DOMAIN, pagead-googlehosted.l.google.com, DIRECT
     - DOMAIN, performanceparameters.googleapis.com, DIRECT
+    - DOMAIN, pki-goog.l.google.com, DIRECT
     - DOMAIN, play.1ucrs.com, DIRECT
     - DOMAIN, prod-controlbe.floonet.goog, DIRECT
     - DOMAIN, prod-databe.floonet.goog, DIRECT
@@ -10153,10 +10254,9 @@ rules:
     - DOMAIN, qualysguard.qcpp1.net, DIRECT
     - DOMAIN, qualysguard.qpdp1.net, DIRECT
     - DOMAIN, recaptcha.net, DIRECT
+    - DOMAIN, recaptcha-cn.net, DIRECT
     - DOMAIN, redirector.bdn.dev, DIRECT
     - DOMAIN, redirector.c.chat.google.com, DIRECT
-    - DOMAIN, redirector.c.docs.google.com, DIRECT
-    - DOMAIN, redirector.c.drive.google.com, DIRECT
     - DOMAIN, redirector.c.mail.google.com, DIRECT
     - DOMAIN, redirector.c.pack.google.com, DIRECT
     - DOMAIN, redirector.c.play.google.com, DIRECT
@@ -10185,8 +10285,6 @@ rules:
     - DOMAIN, test.gbugs-qa.chromium.org, DIRECT
     - DOMAIN, tools.google.com, DIRECT
     - DOMAIN, tools.l.google.com, DIRECT
-    - DOMAIN, up.corp.goog, DIRECT
-    - DOMAIN, up.gcp.googlers.com, DIRECT
     - DOMAIN, update.crashlytics.com, DIRECT
     - DOMAIN, update.googleapis.com, DIRECT
     - DOMAIN, wear.googleapis.com, DIRECT
@@ -10198,6 +10296,44 @@ rules:
     - DOMAIN, www.pxcc.com, DIRECT
     - DOMAIN, xn--9kr7l.com, DIRECT
     - DOMAIN, xn--flw351e.com, DIRECT
+    - DOMAIN, applemdm.corp.google.com, DIRECT
+    - DOMAIN, dns.corp.google.com, DIRECT
+    - DOMAIN, g3doc.corp.google.com, DIRECT
+    - DOMAIN, gmskiosk-ssl.corp.google.com, DIRECT
+    - DOMAIN, go.corp.google.com, DIRECT
+    - DOMAIN, gorom.corp.google.com, DIRECT
+    - DOMAIN, goto.corp.google.com, DIRECT
+    - DOMAIN, l2-uberproxy.corp.google.com, DIRECT
+    - DOMAIN, logger.corp.google.com, DIRECT
+    - DOMAIN, logger-dev.corp.google.com, DIRECT
+    - DOMAIN, login.corp.google.com, DIRECT
+    - DOMAIN, proxyconfig.corp.google.com, DIRECT
+    - DOMAIN, rapture-autopush.corp.google.com, DIRECT
+    - DOMAIN, rapture.corp.google.com, DIRECT
+    - DOMAIN, rapture-prod.corp.google.com, DIRECT
+    - DOMAIN, rapture-test.corp.google.com, DIRECT
+    - DOMAIN, r.cert.corp.google.com, DIRECT
+    - DOMAIN, ssh-relay.corp.google.com, DIRECT
+    - DOMAIN, sslredirect.corp.google.com, DIRECT
+    - DOMAIN, streaming-uberproxy.corp.google.com, DIRECT
+    - DOMAIN, streaming-uberproxy-rotation.corp.google.com, DIRECT
+    - DOMAIN, sup.corp.google.com, DIRECT
+    - DOMAIN, supportcenter.corp.google.com, DIRECT
+    - DOMAIN, sup-ssh-relay2.corp.google.com, DIRECT
+    - DOMAIN, sup-ssh-relay.corp.google.com, DIRECT
+    - DOMAIN, techstop.corp.google.com, DIRECT
+    - DOMAIN, uberproxy4.corp.google.com, DIRECT
+    - DOMAIN, uberproxy6.corp.google.com, DIRECT
+    - DOMAIN, uberproxy.corp.google.com, DIRECT
+    - DOMAIN, uberproxy-debug4.corp.google.com, DIRECT
+    - DOMAIN, uberproxy-debug.corp.google.com, DIRECT
+    - DOMAIN, uberproxy-pen-redirect.corp.google.com, DIRECT
+    - DOMAIN, vext.corp.google.com, DIRECT
+    - DOMAIN, sup.l.google.com, DIRECT
+    - DOMAIN, uberproxy-with-cn.l.google.com, DIRECT
+    - DOMAIN, uberproxy-with-cn4.l.google.com, DIRECT
+    - DOMAIN, uberproxy-with-cn6.l.google.com, DIRECT
+    - DOMAIN, qiao-cn.com, DIRECT
 
    # google-trust-services
     - DOMAIN, crl.pki.goog, DIRECT
@@ -11109,6 +11245,11 @@ rules:
     - DOMAIN-SUFFIX, sursung.cn, DIRECT
     - DOMAIN-SUFFIX, sursung.com, DIRECT
 
+   # jutongbao
+    - DOMAIN-SUFFIX, guanggaotongapp.cn, DIRECT
+    - DOMAIN-SUFFIX, jutongbao.online, DIRECT
+    - DOMAIN-SUFFIX, jutongbao.top, DIRECT
+
   # k
    # kechuang
     - DOMAIN-SUFFIX, kechuang.org, DIRECT
@@ -11219,6 +11360,178 @@ rules:
     - DOMAIN-SUFFIX, lanzouy.com, DIRECT
     - DOMAIN-SUFFIX, lanzov.com, DIRECT
     - DOMAIN-SUFFIX, woozooo.com, DIRECT
+
+   # lark
+    #京ICP备16045432号-56
+    - DOMAIN-SUFFIX, anycross.com, DIRECT
+    #京ICP备16045432号-79
+    - DOMAIN-SUFFIX, baseopendev.com, DIRECT
+    #京ICP备16045432号-76
+    - DOMAIN-SUFFIX, blmpb.com, DIRECT
+    #京ICP备16045432号-23
+    - DOMAIN-SUFFIX, bytecloud.com, DIRECT
+    #京ICP备16045432号-77
+    - DOMAIN-SUFFIX, bytedancehermestest.com, DIRECT
+    #京ICP备16045432号-41
+    - DOMAIN-SUFFIX, byteoc.com, DIRECT
+    #京ICP备16045432号-42
+    - DOMAIN-SUFFIX, bytewebservice.com, DIRECT
+    #京ICP备16045432号-20
+    - DOMAIN-SUFFIX, bytexns.cn, DIRECT
+    #京ICP备16045432号-21
+    - DOMAIN-SUFFIX, bytexns.com, DIRECT
+    #京ICP备16045432号-22
+    - DOMAIN-SUFFIX, bytexns.net, DIRECT
+    #京ICP备16045432号-43
+    - DOMAIN-SUFFIX, bytexopen.com, DIRECT
+    #京ICP备16045432号-44
+    - DOMAIN-SUFFIX, bytexservice.com, DIRECT
+    #京ICP备16045432号-78
+    - DOMAIN-SUFFIX, falconsending.com, DIRECT
+    #京ICP备16045432号-4
+    - DOMAIN-SUFFIX, feishu.cn, DIRECT
+    #京ICP备16045432号-9
+    - DOMAIN-SUFFIX, fei-shu.cn, DIRECT
+    #京ICP备16045432号-71
+    - DOMAIN-SUFFIX, feishu.net, DIRECT
+    #京ICP备16045432号-47
+    - DOMAIN-SUFFIX, feishu-3rd-party-services.com, DIRECT
+    #京ICP备16045432号-58
+    - DOMAIN-SUFFIX, feishuapp.cn, DIRECT
+    #京ICP备16045432号-68
+    - DOMAIN-SUFFIX, feishuapp.com, DIRECT
+    #京ICP备16045432号-67
+    - DOMAIN-SUFFIX, feishuapp-cdn.net, DIRECT
+    #京ICP备16045432号-74
+    - DOMAIN-SUFFIX, feishu-boe.net, DIRECT
+    #京ICP备16045432号-46
+    - DOMAIN-SUFFIX, feishucdn.com, DIRECT
+    #京ICP备16045432号-75
+    - DOMAIN-SUFFIX, feishu-customer.cn, DIRECT
+    #京ICP备16045432号-36
+    - DOMAIN-SUFFIX, feishudoc.cn, DIRECT
+    #京ICP备16045432号-40
+    - DOMAIN-SUFFIX, feishudoc.com, DIRECT
+    #京ICP备16045432号-26
+    - DOMAIN-SUFFIX, feishuhuiyi.cn, DIRECT
+    #京ICP备16045432号-27
+    - DOMAIN-SUFFIX, feishuhuiyi.com, DIRECT
+    #京ICP备16045432号-65
+    - DOMAIN-SUFFIX, feishuimg.com, DIRECT
+    #京ICP备16045432号-59
+    - DOMAIN-SUFFIX, feishuimg-boe.com, DIRECT
+    #京ICP备16045432号-60
+    - DOMAIN-SUFFIX, feishuimg-pre.com, DIRECT
+    #京ICP备16045432号-53
+    - DOMAIN-SUFFIX, feishukacdn.com, DIRECT
+    #京ICP备16045432号-28
+    - DOMAIN-SUFFIX, feishumeetings.cn, DIRECT
+    #京ICP备16045432号-29
+    - DOMAIN-SUFFIX, feishumeetings.com, DIRECT
+    #京ICP备16045432号-37
+    - DOMAIN-SUFFIX, feishuoffice.cn, DIRECT
+    #京ICP备16045432号-39
+    - DOMAIN-SUFFIX, feishuoffice.com, DIRECT
+    #京ICP备16045432号-146
+    - DOMAIN-SUFFIX, feishuopenplatformrecord.com, DIRECT
+    #京ICP备16045432号-66
+    - DOMAIN-SUFFIX, feishupkg.com, DIRECT
+    #京ICP备16045432号-13
+    - DOMAIN-SUFFIX, feishu-pre.cn, DIRECT
+    #京ICP备16045432号-72
+    - DOMAIN-SUFFIX, feishu-pre.net, DIRECT
+    #京ICP备16045432号-73
+    - DOMAIN-SUFFIX, feishu-psc.cn, DIRECT
+    #京ICP备16045432号-8
+    - DOMAIN-SUFFIX, feishu-staging.cn, DIRECT
+    #京ICP备16045432号-7
+    - DOMAIN-SUFFIX, feishustatus.cn, DIRECT
+    #京ICP备16045432号-34
+    - DOMAIN-SUFFIX, feishuvc.cn, DIRECT
+    #京ICP备16045432号-25
+    - DOMAIN-SUFFIX, feishuvc.com, DIRECT
+    #京ICP备16045432号-12
+    - DOMAIN-SUFFIX, getfeishu.cn, DIRECT
+    #京ICP备16045432号-6
+    - DOMAIN-SUFFIX, getfeishu.com, DIRECT
+    #京ICP备16045432号-48
+    - DOMAIN-SUFFIX, getsays.cn, DIRECT
+    #京ICP备16045432号-49
+    - DOMAIN-SUFFIX, getsays.com, DIRECT
+    #京ICP备16045432号-30
+    - DOMAIN-SUFFIX, lackvc.cn, DIRECT
+    #京ICP备16045432号-11
+    - DOMAIN-SUFFIX, lark.cn, DIRECT
+    #京ICP备16045432号-16
+    - DOMAIN-SUFFIX, larkcloud.com, DIRECT
+    #京ICP备16045432号-18
+    - DOMAIN-SUFFIX, larkcloud.net, DIRECT
+    #京ICP备16045432号-19
+    - DOMAIN-SUFFIX, larkfn.com, DIRECT
+    #京ICP备16045432号-24
+    - DOMAIN-SUFFIX, larkmeetings.cn, DIRECT
+    #京ICP备16045432号-35
+    - DOMAIN-SUFFIX, larkmeetings.com, DIRECT
+    #京ICP备16045432号-38
+    - DOMAIN-SUFFIX, larkoffice.com, DIRECT
+    #京ICP备16045432号-143
+    - DOMAIN-SUFFIX, larkofficeapp.com, DIRECT
+    #京ICP备16045432号-144
+    - DOMAIN-SUFFIX, larkofficeapp-boe.com, DIRECT
+    #京ICP备16045432号-145
+    - DOMAIN-SUFFIX, larkofficeapp-pre.com, DIRECT
+    #京ICP备16045432号-137
+    - DOMAIN-SUFFIX, larkofficeboe.com, DIRECT
+    #京ICP备16045432号-140
+    - DOMAIN-SUFFIX, larkofficecdn.com, DIRECT
+    #京ICP备16045432号-139
+    - DOMAIN-SUFFIX, larkofficeimg.com, DIRECT
+    #京ICP备16045432号-138
+    - DOMAIN-SUFFIX, larkofficepkg.com, DIRECT
+    #京ICP备16045432号-142
+    - DOMAIN-SUFFIX, larkofficepre.com, DIRECT
+    #京ICP备16045432号-69
+    - DOMAIN-SUFFIX, lark-passport-qa-sg.net, DIRECT
+    #京ICP备16045432号-33
+    - DOMAIN-SUFFIX, larkrooms.cn, DIRECT
+    #京ICP备16045432号-32
+    - DOMAIN-SUFFIX, larkrooms.com, DIRECT
+    #京ICP备16045432号-3
+    - DOMAIN-SUFFIX, larksuite.com, DIRECT
+    #京ICP备16045432号-45
+    - DOMAIN-SUFFIX, larksuitecdn.com, DIRECT
+    #京ICP备16045432号-61
+    - DOMAIN-SUFFIX, larksuiteimg.com, DIRECT
+    #京ICP备16045432号-62
+    - DOMAIN-SUFFIX, larksuiteimg-boe.com, DIRECT
+    #京ICP备16045432号-63
+    - DOMAIN-SUFFIX, larksuiteimg-pre.com, DIRECT
+    #京ICP备16045432号-64
+    - DOMAIN-SUFFIX, larksuite-pre.com, DIRECT
+    #京ICP备16045432号-31
+    - DOMAIN-SUFFIX, larkvc.com, DIRECT
+    #京ICP备16045432号-162
+    - DOMAIN-SUFFIX, meegobeta.com, DIRECT
+    #京ICP备16045432号-70
+    - DOMAIN-SUFFIX, oceancloudapi.com, DIRECT
+    #京ICP备16045432号-52
+    - DOMAIN-SUFFIX, okr.cn, DIRECT
+    #京ICP备16045432号-51
+    - DOMAIN-SUFFIX, okr.com, DIRECT
+    #京ICP备16045432号-50
+    - DOMAIN-SUFFIX, okr.com.cn, DIRECT
+    #京ICP备16045432号-55
+    - DOMAIN-SUFFIX, securityfeishu.cn, DIRECT
+    #京ICP备16045432号-54
+    - DOMAIN-SUFFIX, securityfs.cn, DIRECT
+    #京ICP备16045432号-10
+    - DOMAIN-SUFFIX, statusfeishu.cn, DIRECT
+    #京ICP备16045432号-141
+    - DOMAIN-SUFFIX, statuslarkoffice.com, DIRECT
+    #京ICP备16045432号-17
+    - DOMAIN-SUFFIX, thelarkcloud.com, DIRECT
+    #京ICP备16045432号-1
+    - DOMAIN-SUFFIX, vscenevideo.com, DIRECT
 
    # ldmnq
     - DOMAIN-SUFFIX, ldmnq.com, DIRECT
@@ -11383,6 +11696,7 @@ rules:
 
    # microsoft
     # Others
+    - DOMAIN-SUFFIX, dcg.microsoft.com, DIRECT
     - DOMAIN-SUFFIX, dynamics.cn, DIRECT
     - DOMAIN-SUFFIX, engkoo.com, DIRECT
     - DOMAIN-SUFFIX, lync.cn, DIRECT
@@ -11557,6 +11871,7 @@ rules:
   # n
    # narwal
     - DOMAIN-SUFFIX, narwal.com, DIRECT
+    - DOMAIN-SUFFIX, narwaltech.com, DIRECT
 
    # netease
     - DOMAIN-SUFFIX, 126.com, DIRECT
@@ -12348,6 +12663,7 @@ rules:
 
    # qingtingfm
     - DOMAIN-SUFFIX, qingting.fm, DIRECT
+    - DOMAIN-SUFFIX, qtfm.cn, DIRECT
 
    # qiniu
     # include:staticfile
@@ -12378,11 +12694,15 @@ rules:
     - DOMAIN-SUFFIX, qualcomm.cn.cdn.cloudflare.net, DIRECT
     - DOMAIN-SUFFIX, xtracloud.cn, DIRECT
 
-
    # qyyjt
     - DOMAIN-SUFFIX, qyyjt.cn, DIRECT
 
   # r
+   # razer
+    - DOMAIN-SUFFIX, razerapi.com, DIRECT
+    - DOMAIN-SUFFIX, razersynapse.com, DIRECT
+    - DOMAIN-SUFFIX, razerzone.com, DIRECT
+
    # rb
     - DOMAIN-SUFFIX, reckittbenckiser.cn, DIRECT
     - DOMAIN-SUFFIX, reckittbenckiser.com.cn, DIRECT
@@ -12500,10 +12820,38 @@ rules:
     - DOMAIN-SUFFIX, snodehome.cn, DIRECT
 
    # sogou
+    - DOMAIN-SUFFIX, binglianhuajianzhan.com, DIRECT
+    - DOMAIN-SUFFIX, ggoplay.com, DIRECT
+    - DOMAIN-SUFFIX, ggowan.com, DIRECT
     - DOMAIN-SUFFIX, go2map.com, DIRECT
+    - DOMAIN-SUFFIX, pinyin.cn, DIRECT
+    - DOMAIN-SUFFIX, qd.ink, DIRECT
+    - DOMAIN-SUFFIX, sg.cn, DIRECT
+    - DOMAIN-SUFFIX, sgtmos.com, DIRECT
+    - DOMAIN-SUFFIX, sgyeyou.com, DIRECT
+    - DOMAIN-SUFFIX, sgyouxi.com, DIRECT
     - DOMAIN-SUFFIX, sogo.com, DIRECT
+    - DOMAIN-SUFFIX, sogou.cn, DIRECT
     - DOMAIN-SUFFIX, sogou.com, DIRECT
+    - DOMAIN-SUFFIX, sogou.com.cn, DIRECT
+    - DOMAIN-SUFFIX, sogou.net, DIRECT
     - DOMAIN-SUFFIX, sogoucdn.com, DIRECT
+    - DOMAIN-SUFFIX, sogoucdndl.com, DIRECT
+    - DOMAIN-SUFFIX, sogouimecdn.com, DIRECT
+    - DOMAIN-SUFFIX, sogou-inc.com, DIRECT
+    - DOMAIN-SUFFIX, sogou-op.org, DIRECT
+    - DOMAIN-SUFFIX, soso.com, DIRECT
+    - DOMAIN-SUFFIX, soso.com.cn, DIRECT
+    - DOMAIN-SUFFIX, sososnap.com, DIRECT
+    - DOMAIN-SUFFIX, teemo.cn, DIRECT
+    - DOMAIN-SUFFIX, wannianqingjianzhan.com, DIRECT
+    - DOMAIN-SUFFIX, xiangrikuijianzhan.com, DIRECT
+    - DOMAIN-SUFFIX, xiangrikuisite.com, DIRECT
+    - DOMAIN-SUFFIX, xinyan.cn, DIRECT
+    - DOMAIN-SUFFIX, yeyousg.com, DIRECT
+    - DOMAIN-SUFFIX, yidianliulan.cn, DIRECT
+    - DOMAIN-SUFFIX, yidianliulan.com, DIRECT
+    - DOMAIN-SUFFIX, yuweikuijianzhan.com, DIRECT
 
    # sohu
     - DOMAIN-SUFFIX, sohu.com, DIRECT
@@ -12906,10 +13254,6 @@ rules:
     - DOMAIN-KEYWORD, .unicom, DIRECT
     - DOMAIN-KEYWORD, .sohu, DIRECT
 
-    # Reference: https://icannwiki.org/.%E5%B7%A5%E8%A1%8C
-    # .工行
-    - DOMAIN-KEYWORD, .xn--estv75g, DIRECT
-
     # Reference: https://icannwiki.org/.%E6%94%BF%E5%8A%A1
     # .政务
     - DOMAIN-KEYWORD, .xn--zfr164b, DIRECT
@@ -13007,6 +13351,14 @@ rules:
     - DOMAIN-SUFFIX, elong.com, DIRECT
     - DOMAIN-SUFFIX, elongstatic.com, DIRECT
     - DOMAIN-SUFFIX, ly.com, DIRECT
+
+   # tongfang
+    # 同方股份
+    - DOMAIN-SUFFIX, thtf.com.cn, DIRECT
+    # 同方商城
+    - DOMAIN-SUFFIX, tongfangpc.com, DIRECT
+    # 机械革命
+    - DOMAIN-SUFFIX, mechrevo.com, DIRECT
 
    # topcoder
  
@@ -13546,6 +13898,7 @@ rules:
     - DOMAIN-SUFFIX, xiaomi.com, DIRECT
     - DOMAIN-SUFFIX, xiaomi.net, DIRECT
     - DOMAIN-SUFFIX, xiaomiev.com, DIRECT
+    - DOMAIN-SUFFIX, xiaomimobile.com, DIRECT
 
     # Xiaomi YouPin
     - DOMAIN-SUFFIX, xiaomiyoupin.com, DIRECT
@@ -13665,6 +14018,18 @@ rules:
 
    # youporn
 
+   # youquan
+    - DOMAIN-SUFFIX, aitcfw.com, DIRECT
+    - DOMAIN-SUFFIX, aizgtc.com, DIRECT
+    - DOMAIN-SUFFIX, hangzhouyq.cn, DIRECT
+    - DOMAIN-SUFFIX, hangzhouyq.com, DIRECT
+    - DOMAIN-SUFFIX, zgxytc.com, DIRECT
+    - DOMAIN-SUFFIX, zgzsa.com, DIRECT
+    - DOMAIN-SUFFIX, zhonshian.cn, DIRECT
+    - DOMAIN-SUFFIX, zhonshian.com, DIRECT
+    - DOMAIN-SUFFIX, zhonshian.com.cn, DIRECT
+    - DOMAIN-SUFFIX, zjzsa.com, DIRECT
+
    # youtube
     - DOMAIN-SUFFIX, ggpht.cn, DIRECT
 
@@ -13774,6 +14139,17 @@ rules:
    # zoho
 
    # zoom
+
+   # zte
+    - DOMAIN-SUFFIX, nubia.cn, DIRECT
+    - DOMAIN-SUFFIX, nubia.com, DIRECT
+    - DOMAIN-SUFFIX, redmagic.com, DIRECT
+    - DOMAIN-SUFFIX, zte.com.cn, DIRECT
+    - DOMAIN-SUFFIX, ztemall.com, DIRECT
+    - DOMAIN-SUFFIX, ztems.com, DIRECT
+
+    - DOMAIN, bbs.ztedevices.com, DIRECT
+    - DOMAIN, www.ztedevices.com, DIRECT
 
    # zuoyebang
     - DOMAIN-SUFFIX, zuoyebang.cc, DIRECT
@@ -14314,8 +14690,6 @@ rules:
     - DOMAIN-SUFFIX, akadns.com, PROXY
     - DOMAIN-SUFFIX, akadns.net, PROXY
     - DOMAIN-SUFFIX, akadns6.net, PROXY
-    - DOMAIN-SUFFIX, akadns88.net, PROXY
-    - DOMAIN-SUFFIX, akadns99.net, PROXY
     - DOMAIN-SUFFIX, akaeai.com, PROXY
     - DOMAIN-SUFFIX, akafms.net, PROXY
     - DOMAIN-SUFFIX, akagtm.org, PROXY
@@ -14372,7 +14746,6 @@ rules:
     - DOMAIN-SUFFIX, akastream.net, PROXY
     - DOMAIN-SUFFIX, akatns.net, PROXY
     - DOMAIN-SUFFIX, edgekey.net, PROXY
-    - DOMAIN-SUFFIX, edgekey88.net, PROXY
     - DOMAIN-SUFFIX, edgesuite.net, PROXY
     - DOMAIN-SUFFIX, iamakamai.com, PROXY
     - DOMAIN-SUFFIX, iamakamai.net, PROXY
@@ -15686,7 +16059,564 @@ rules:
     - DOMAIN-SUFFIX, authy.com, PROXY
 
    # autodesk
+    - DOMAIN-SUFFIX, 123dapp.com, PROXY
+    - DOMAIN-SUFFIX, 123dappipad.com, PROXY
+    - DOMAIN-SUFFIX, 123dartisan.com, PROXY
+    - DOMAIN-SUFFIX, 123dcatch.com, PROXY
+    - DOMAIN-SUFFIX, 123dcircuits.com, PROXY
+    - DOMAIN-SUFFIX, 123dcreature.com, PROXY
+    - DOMAIN-SUFFIX, 123dcreaturenews.com, PROXY
+    - DOMAIN-SUFFIX, 123ddesign.com, PROXY
+    - DOMAIN-SUFFIX, 123ddoodler.com, PROXY
+    - DOMAIN-SUFFIX, 123dmake.com, PROXY
+    - DOMAIN-SUFFIX, 123dnews.com, PROXY
+    - DOMAIN-SUFFIX, 123dpro.com, PROXY
+    - DOMAIN-SUFFIX, 123dpro.net, PROXY
+    - DOMAIN-SUFFIX, 123dsculpt.com, PROXY
+    - DOMAIN-SUFFIX, 20yearsoffea.com, PROXY
+    - DOMAIN-SUFFIX, 360autodesk.com, PROXY
+    - DOMAIN-SUFFIX, 360nexus.com, PROXY
+    - DOMAIN-SUFFIX, 360nexus.net, PROXY
+    - DOMAIN-SUFFIX, 360plm.com, PROXY
+    - DOMAIN-SUFFIX, 360trailers.com, PROXY
+    - DOMAIN-SUFFIX, 3d-december.com, PROXY
+    - DOMAIN-SUFFIX, 3ddecember.com, PROXY
+    - DOMAIN-SUFFIX, 3december.com, PROXY
+    - DOMAIN-SUFFIX, 3decemberonline.com, PROXY
+    - DOMAIN-SUFFIX, 3drules.com, PROXY
+    - DOMAIN-SUFFIX, 3dstudio.com, PROXY
+    - DOMAIN-SUFFIX, 3dtin.com, PROXY
+    - DOMAIN-SUFFIX, 3dtin.net, PROXY
+    - DOMAIN-SUFFIX, 5-d.com, PROXY
+    - DOMAIN-SUFFIX, 51tuqiang.com, PROXY
+    - DOMAIN-SUFFIX, 5axis-machining.com, PROXY
+    - DOMAIN-SUFFIX, acdocs.com, PROXY
+    - DOMAIN-SUFFIX, adinst.com, PROXY
+    - DOMAIN-SUFFIX, adskcloud.com, PROXY
+    - DOMAIN-SUFFIX, adskcloud.net, PROXY
+    - DOMAIN-SUFFIX, adskeng.net, PROXY
+    - DOMAIN-SUFFIX, adskengineering.net, PROXY
+    - DOMAIN-SUFFIX, adskengpp.net, PROXY
+    - DOMAIN-SUFFIX, adskengpr.net, PROXY
+    - DOMAIN-SUFFIX, adtcc.com, PROXY
+    - DOMAIN-SUFFIX, aecexcellence.com, PROXY
+    - DOMAIN-SUFFIX, aerospace-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, aerospace-design.com, PROXY
+    - DOMAIN-SUFFIX, airgunstudio.com, PROXY
+    - DOMAIN-SUFFIX, alias.com, PROXY
+    - DOMAIN-SUFFIX, aliasadvantage.com, PROXY
+    - DOMAIN-SUFFIX, aliasimaginationsengine.com, PROXY
+    - DOMAIN-SUFFIX, aliasple.com, PROXY
+    - DOMAIN-SUFFIX, aliasshowcase.com, PROXY
+    - DOMAIN-SUFFIX, aliassketchbook.com, PROXY
+    - DOMAIN-SUFFIX, aliassketchbookpro.com, PROXY
+    - DOMAIN-SUFFIX, aliassystems.com, PROXY
+    - DOMAIN-SUFFIX, aliasvisualizationstudio.com, PROXY
+    - DOMAIN-SUFFIX, aliaswavefront.com, PROXY
+    - DOMAIN-SUFFIX, architectural-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, arnoldrenderer.com, PROXY
+    - DOMAIN-SUFFIX, artcam.com, PROXY
+    - DOMAIN-SUFFIX, artcamexpress.com, PROXY
+    - DOMAIN-SUFFIX, artcaminsignia.com, PROXY
+    - DOMAIN-SUFFIX, artcamjewelsmith.com, PROXY
+    - DOMAIN-SUFFIX, artcampro.com, PROXY
+    - DOMAIN-SUFFIX, assemblesystems.com, PROXY
+    - DOMAIN-SUFFIX, autocad-schulungen.com, PROXY
+    - DOMAIN-SUFFIX, autocad.com, PROXY
+    - DOMAIN-SUFFIX, autocad360.com, PROXY
+    - DOMAIN-SUFFIX, autocad3d.com, PROXY
+    - DOMAIN-SUFFIX, autocadarchitecturecc.com, PROXY
+    - DOMAIN-SUFFIX, autocadexpert.com, PROXY
+    - DOMAIN-SUFFIX, autocadformac.com, PROXY
+    - DOMAIN-SUFFIX, autocadfreestyle.com, PROXY
+    - DOMAIN-SUFFIX, autocadlt.com, PROXY
+    - DOMAIN-SUFFIX, autocadltbg.com, PROXY
+    - DOMAIN-SUFFIX, autocadmac.com, PROXY
+    - DOMAIN-SUFFIX, autocadmobile.com, PROXY
+    - DOMAIN-SUFFIX, autocadsucks.com, PROXY
+    - DOMAIN-SUFFIX, autocadsucks.net, PROXY
+    - DOMAIN-SUFFIX, autocadws.com, PROXY
+    - DOMAIN-SUFFIX, autocadws.net, PROXY
+    - DOMAIN-SUFFIX, autodesk-aia-me.com, PROXY
+    - DOMAIN-SUFFIX, autodesk-events.com, PROXY
+    - DOMAIN-SUFFIX, autodesk-kickoff.com, PROXY
+    - DOMAIN-SUFFIX, autodesk-mm.com, PROXY
+    - DOMAIN-SUFFIX, autodesk-news.com, PROXY
+    - DOMAIN-SUFFIX, autodesk-online.com, PROXY
+    - DOMAIN-SUFFIX, autodesk-service.com, PROXY
+    - DOMAIN-SUFFIX, autodesk-services.com, PROXY
+    - DOMAIN-SUFFIX, autodesk-support.com, PROXY
+    - DOMAIN-SUFFIX, autodesk-university.com, PROXY
+    - DOMAIN-SUFFIX, autodesk-usability.com, PROXY
     - DOMAIN-SUFFIX, autodesk.com, PROXY
+    - DOMAIN-SUFFIX, autodesk.dev, PROXY
+    - DOMAIN-SUFFIX, autodesk.net, PROXY
+    - DOMAIN-SUFFIX, autodesk123d.com, PROXY
+    - DOMAIN-SUFFIX, autodesk123dnews.com, PROXY
+    - DOMAIN-SUFFIX, autodesk360.com, PROXY
+    - DOMAIN-SUFFIX, autodesk360access.com, PROXY
+    - DOMAIN-SUFFIX, autodesk360beta.com, PROXY
+    - DOMAIN-SUFFIX, autodesk360bim.com, PROXY
+    - DOMAIN-SUFFIX, autodesk360express.com, PROXY
+    - DOMAIN-SUFFIX, autodesk360forbim.com, PROXY
+    - DOMAIN-SUFFIX, autodesk360forplm.com, PROXY
+    - DOMAIN-SUFFIX, autodesk360nexus.com, PROXY
+    - DOMAIN-SUFFIX, autodesk360nexus.net, PROXY
+    - DOMAIN-SUFFIX, autodesk360plm.com, PROXY
+    - DOMAIN-SUFFIX, autodesk360pro.com, PROXY
+    - DOMAIN-SUFFIX, autodesk360solutionforbim.com, PROXY
+    - DOMAIN-SUFFIX, autodesk360solutionforplm.com, PROXY
+    - DOMAIN-SUFFIX, autodesk360vault.com, PROXY
+    - DOMAIN-SUFFIX, autodeskaecfeed.com, PROXY
+    - DOMAIN-SUFFIX, autodeskandcitrix.com, PROXY
+    - DOMAIN-SUFFIX, autodeskarcade.com, PROXY
+    - DOMAIN-SUFFIX, autodeskautocadlt.com, PROXY
+    - DOMAIN-SUFFIX, autodeskautomotive.com, PROXY
+    - DOMAIN-SUFFIX, autodeskbim360.com, PROXY
+    - DOMAIN-SUFFIX, autodeskbookrequest.com, PROXY
+    - DOMAIN-SUFFIX, autodeskbuild.com, PROXY
+    - DOMAIN-SUFFIX, autodeskbuildingops.com, PROXY
+    - DOMAIN-SUFFIX, autodeskbuildspc.com, PROXY
+    - DOMAIN-SUFFIX, autodeskcave.com, PROXY
+    - DOMAIN-SUFFIX, autodeskchronicle.com, PROXY
+    - DOMAIN-SUFFIX, autodeskcommunications.com, PROXY
+    - DOMAIN-SUFFIX, autodeskcompetitions.com, PROXY
+    - DOMAIN-SUFFIX, autodeskdesigncompetition.com, PROXY
+    - DOMAIN-SUFFIX, autodeskdesigncompetitions.com, PROXY
+    - DOMAIN-SUFFIX, autodeskdiscussions.com, PROXY
+    - DOMAIN-SUFFIX, autodeskdocandmedia.com, PROXY
+    - DOMAIN-SUFFIX, autodeskdocandmediaamericas.com, PROXY
+    - DOMAIN-SUFFIX, autodeskdocandmediaasia.com, PROXY
+    - DOMAIN-SUFFIX, autodeskdocandmediaemea.com, PROXY
+    - DOMAIN-SUFFIX, autodeskdocandmediaeurope.com, PROXY
+    - DOMAIN-SUFFIX, autodeskegitimleri.com, PROXY
+    - DOMAIN-SUFFIX, autodeskenterprise.com, PROXY
+    - DOMAIN-SUFFIX, autodeskevents.com, PROXY
+    - DOMAIN-SUFFIX, autodeskfashionstyler.com, PROXY
+    - DOMAIN-SUFFIX, autodeskforgames.com, PROXY
+    - DOMAIN-SUFFIX, autodeskforge.com, PROXY
+    - DOMAIN-SUFFIX, autodeskformit.com, PROXY
+    - DOMAIN-SUFFIX, autodeskfoundation.com, PROXY
+    - DOMAIN-SUFFIX, autodeskfusionlifecycle.com, PROXY
+    - DOMAIN-SUFFIX, autodeskgovernment.net, PROXY
+    - DOMAIN-SUFFIX, autodeskgreenbuildingstudio.com, PROXY
+    - DOMAIN-SUFFIX, autodeskhelp.com, PROXY
+    - DOMAIN-SUFFIX, autodeskicpcouncil.com, PROXY
+    - DOMAIN-SUFFIX, autodeskimpression.com, PROXY
+    - DOMAIN-SUFFIX, autodeskinform.com, PROXY
+    - DOMAIN-SUFFIX, autodeskinstant.com, PROXY
+    - DOMAIN-SUFFIX, autodeskjournal.com, PROXY
+    - DOMAIN-SUFFIX, autodesklearning.com, PROXY
+    - DOMAIN-SUFFIX, autodesklistens.com, PROXY
+    - DOMAIN-SUFFIX, autodesklivedesign.com, PROXY
+    - DOMAIN-SUFFIX, autodesklms.com, PROXY
+    - DOMAIN-SUFFIX, autodeskmanufacturingacademy.com, PROXY
+    - DOMAIN-SUFFIX, autodeskmayaformotiongraphics.com, PROXY
+    - DOMAIN-SUFFIX, autodeskmedbookrequest.com, PROXY
+    - DOMAIN-SUFFIX, autodeskmedia.com, PROXY
+    - DOMAIN-SUFFIX, autodeskmediarequest.com, PROXY
+    - DOMAIN-SUFFIX, autodeskmeetings.com, PROXY
+    - DOMAIN-SUFFIX, autodeskmfg.com, PROXY
+    - DOMAIN-SUFFIX, autodeskmotiongraphicsandmore.com, PROXY
+    - DOMAIN-SUFFIX, autodesknews.com, PROXY
+    - DOMAIN-SUFFIX, autodeskonline.com, PROXY
+    - DOMAIN-SUFFIX, autodeskpartner.com, PROXY
+    - DOMAIN-SUFFIX, autodeskplm.com, PROXY
+    - DOMAIN-SUFFIX, autodeskplm360.com, PROXY
+    - DOMAIN-SUFFIX, autodeskplm360.net, PROXY
+    - DOMAIN-SUFFIX, autodeskproductreviews.com, PROXY
+    - DOMAIN-SUFFIX, autodeskprofiles.com, PROXY
+    - DOMAIN-SUFFIX, autodeskprograms.com, PROXY
+    - DOMAIN-SUFFIX, autodeskresearch.com, PROXY
+    - DOMAIN-SUFFIX, autodeskrevit.com, PROXY
+    - DOMAIN-SUFFIX, autodeskrevit.net, PROXY
+    - DOMAIN-SUFFIX, autodeskrevitsucks.com, PROXY
+    - DOMAIN-SUFFIX, autodeskrevitsucks.net, PROXY
+    - DOMAIN-SUFFIX, autodeskseek.com, PROXY
+    - DOMAIN-SUFFIX, autodesksketchbook.com, PROXY
+    - DOMAIN-SUFFIX, autodesksketchbookdesigner.com, PROXY
+    - DOMAIN-SUFFIX, autodeskstylebook.com, PROXY
+    - DOMAIN-SUFFIX, autodesksubscription.com, PROXY
+    - DOMAIN-SUFFIX, autodesksucks.com, PROXY
+    - DOMAIN-SUFFIX, autodesksucks.net, PROXY
+    - DOMAIN-SUFFIX, autodesktechdays.com, PROXY
+    - DOMAIN-SUFFIX, autodesktechx.com, PROXY
+    - DOMAIN-SUFFIX, autodesktinkerbox.com, PROXY
+    - DOMAIN-SUFFIX, autodesktravel.com, PROXY
+    - DOMAIN-SUFFIX, autodeskturkiye.com, PROXY
+    - DOMAIN-SUFFIX, autodeskuniversity.com, PROXY
+    - DOMAIN-SUFFIX, autodeskuniversity2013.com, PROXY
+    - DOMAIN-SUFFIX, autodeskvasari.com, PROXY
+    - DOMAIN-SUFFIX, autodeskvasari.net, PROXY
+    - DOMAIN-SUFFIX, autodeskvietnam.com, PROXY
+    - DOMAIN-SUFFIX, autodeskviewer.com, PROXY
+    - DOMAIN-SUFFIX, autodeskworkshop.com, PROXY
+    - DOMAIN-SUFFIX, autodeskworkshop.net, PROXY
+    - DOMAIN-SUFFIX, automotive-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, autosketch.com, PROXY
+    - DOMAIN-SUFFIX, auxdubai.com, PROXY
+    - DOMAIN-SUFFIX, avatara.com, PROXY
+    - DOMAIN-SUFFIX, behindthescreenz.com, PROXY
+    - DOMAIN-SUFFIX, best4bim.com, PROXY
+    - DOMAIN-SUFFIX, bestbim.com, PROXY
+    - DOMAIN-SUFFIX, betterbim.com, PROXY
+    - DOMAIN-SUFFIX, betterwithautodesk.com, PROXY
+    - DOMAIN-SUFFIX, bim-360.com, PROXY
+    - DOMAIN-SUFFIX, bim360.com, PROXY
+    - DOMAIN-SUFFIX, bim360.net, PROXY
+    - DOMAIN-SUFFIX, bim360field.com, PROXY
+    - DOMAIN-SUFFIX, bim360glue.com, PROXY
+    - DOMAIN-SUFFIX, bim360ops.com, PROXY
+    - DOMAIN-SUFFIX, bim3dcontent.com, PROXY
+    - DOMAIN-SUFFIX, bimadsk.com, PROXY
+    - DOMAIN-SUFFIX, bimglue.com, PROXY
+    - DOMAIN-SUFFIX, bimlibrary.com, PROXY
+    - DOMAIN-SUFFIX, bimseeker.com, PROXY
+    - DOMAIN-SUFFIX, bimsource.com, PROXY
+    - DOMAIN-SUFFIX, bimworld.com, PROXY
+    - DOMAIN-SUFFIX, bridgebim.com, PROXY
+    - DOMAIN-SUFFIX, brni.com, PROXY
+    - DOMAIN-SUFFIX, building3dcontent.com, PROXY
+    - DOMAIN-SUFFIX, cad-mep.com, PROXY
+    - DOMAIN-SUFFIX, cadcamsystemsinc.com, PROXY
+    - DOMAIN-SUFFIX, cadduct.com, PROXY
+    - DOMAIN-SUFFIX, cadmep.com, PROXY
+    - DOMAIN-SUFFIX, cadoverlay.com, PROXY
+    - DOMAIN-SUFFIX, cadren.com, PROXY
+    - DOMAIN-SUFFIX, caice.com, PROXY
+    - DOMAIN-SUFFIX, cam-duct.com, PROXY
+    - DOMAIN-SUFFIX, camduct.com, PROXY
+    - DOMAIN-SUFFIX, ceramics-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, cfd-tv.com, PROXY
+    - DOMAIN-SUFFIX, cfdesign.com, PROXY
+    - DOMAIN-SUFFIX, china-autodesk.com, PROXY
+    - DOMAIN-SUFFIX, citrixandautodesk.com, PROXY
+    - DOMAIN-SUFFIX, civil3d.com, PROXY
+    - DOMAIN-SUFFIX, civilcc.com, PROXY
+    - DOMAIN-SUFFIX, civilsoftware.net, PROXY
+    - DOMAIN-SUFFIX, climate-server.com, PROXY
+    - DOMAIN-SUFFIX, compass-system.com, PROXY
+    - DOMAIN-SUFFIX, compass-systems.com, PROXY
+    - DOMAIN-SUFFIX, constructware.com, PROXY
+    - DOMAIN-SUFFIX, contechacademy.com, PROXY
+    - DOMAIN-SUFFIX, crankplayer.com, PROXY
+    - DOMAIN-SUFFIX, createwhatsnext.com, PROXY
+    - DOMAIN-SUFFIX, creativepass.com, PROXY
+    - DOMAIN-SUFFIX, creatwhatsnext.com, PROXY
+    - DOMAIN-SUFFIX, darwindimensions.com, PROXY
+    - DOMAIN-SUFFIX, delcam-ams.com, PROXY
+    - DOMAIN-SUFFIX, delcam-electrode.com, PROXY
+    - DOMAIN-SUFFIX, delcam-na.com, PROXY
+    - DOMAIN-SUFFIX, delcam-robotics.com, PROXY
+    - DOMAIN-SUFFIX, delcam-services.com, PROXY
+    - DOMAIN-SUFFIX, delcam.com, PROXY
+    - DOMAIN-SUFFIX, delcamconsulting.com, PROXY
+    - DOMAIN-SUFFIX, delcamforsolidworks.com, PROXY
+    - DOMAIN-SUFFIX, delcamna.com, PROXY
+    - DOMAIN-SUFFIX, delcamtv.com, PROXY
+    - DOMAIN-SUFFIX, delcamuniversity.com, PROXY
+    - DOMAIN-SUFFIX, delcamusa.com, PROXY
+    - DOMAIN-SUFFIX, design-ledrev.com, PROXY
+    - DOMAIN-SUFFIX, design-ledrevolution.com, PROXY
+    - DOMAIN-SUFFIX, designledrevolution.com, PROXY
+    - DOMAIN-SUFFIX, designsformovement.com, PROXY
+    - DOMAIN-SUFFIX, designxml.com, PROXY
+    - DOMAIN-SUFFIX, designxml.net, PROXY
+    - DOMAIN-SUFFIX, destinationbim.com, PROXY
+    - DOMAIN-SUFFIX, digitalprototyping.com, PROXY
+    - DOMAIN-SUFFIX, discreet.com, PROXY
+    - DOMAIN-SUFFIX, dodv.com, PROXY
+    - DOMAIN-SUFFIX, drainage.com, PROXY
+    - DOMAIN-SUFFIX, drnastran.com, PROXY
+    - DOMAIN-SUFFIX, dwg.com, PROXY
+    - DOMAIN-SUFFIX, dwgtrueconvert.com, PROXY
+    - DOMAIN-SUFFIX, dwgtrueview.com, PROXY
+    - DOMAIN-SUFFIX, dynamobuilds.com, PROXY
+    - DOMAIN-SUFFIX, dynamopackages.com, PROXY
+    - DOMAIN-SUFFIX, dynamoreach.com, PROXY
+    - DOMAIN-SUFFIX, ecotect.com, PROXY
+    - DOMAIN-SUFFIX, ecotect.net, PROXY
+    - DOMAIN-SUFFIX, ecscad.com, PROXY
+    - DOMAIN-SUFFIX, ecspublisher.com, PROXY
+    - DOMAIN-SUFFIX, education-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, ember3dp.com, PROXY
+    - DOMAIN-SUFFIX, emberprinter.com, PROXY
+    - DOMAIN-SUFFIX, emergingsolutions.com, PROXY
+    - DOMAIN-SUFFIX, energystarbuildings.com, PROXY
+    - DOMAIN-SUFFIX, eraofconnection.com, PROXY
+    - DOMAIN-SUFFIX, esopworld.com, PROXY
+    - DOMAIN-SUFFIX, eueuropeansustainabledesign.net, PROXY
+    - DOMAIN-SUFFIX, eurocodesoftware.com, PROXY
+    - DOMAIN-SUFFIX, europeansustainabledesign.com, PROXY
+    - DOMAIN-SUFFIX, europeansustainabledesign.net, PROXY
+    - DOMAIN-SUFFIX, europeansustainabledesigncouncil.com, PROXY
+    - DOMAIN-SUFFIX, europeansustainabledesigncouncil.net, PROXY
+    - DOMAIN-SUFFIX, evalviewer.com, PROXY
+    - DOMAIN-SUFFIX, evolver.com, PROXY
+    - DOMAIN-SUFFIX, evolver3d.com, PROXY
+    - DOMAIN-SUFFIX, evolverpro.com, PROXY
+    - DOMAIN-SUFFIX, extensions4revit.com, PROXY
+    - DOMAIN-SUFFIX, fakeorfoto.com, PROXY
+    - DOMAIN-SUFFIX, fakeorphoto.com, PROXY
+    - DOMAIN-SUFFIX, feanonlinear.com, PROXY
+    - DOMAIN-SUFFIX, featurecam.com, PROXY
+    - DOMAIN-SUFFIX, five-d.com, PROXY
+    - DOMAIN-SUFFIX, flameunleashed.com, PROXY
+    - DOMAIN-SUFFIX, flowfront.com, PROXY
+    - DOMAIN-SUFFIX, flowfront.net, PROXY
+    - DOMAIN-SUFFIX, fluidfxapp.com, PROXY
+    - DOMAIN-SUFFIX, fmdesktop.com, PROXY
+    - DOMAIN-SUFFIX, followpype.com, PROXY
+    - DOMAIN-SUFFIX, footwear-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, formit360.com, PROXY
+    - DOMAIN-SUFFIX, formitfactory.com, PROXY
+    - DOMAIN-SUFFIX, freefbx.com, PROXY
+    - DOMAIN-SUFFIX, fusionlifecycle.com, PROXY
+    - DOMAIN-SUFFIX, fusionproductionapps.com, PROXY
+    - DOMAIN-SUFFIX, futureofbritishmanufacturing.com, PROXY
+    - DOMAIN-SUFFIX, futureofmaktingthings.com, PROXY
+    - DOMAIN-SUFFIX, gbxml.net, PROXY
+    - DOMAIN-SUFFIX, geneticconstructor.com, PROXY
+    - DOMAIN-SUFFIX, geospatialimaging.com, PROXY
+    - DOMAIN-SUFFIX, geospatialinfo.com, PROXY
+    - DOMAIN-SUFFIX, getbuzzsaw.com, PROXY
+    - DOMAIN-SUFFIX, givemebuzzsaw.com, PROXY
+    - DOMAIN-SUFFIX, gobuildx.net, PROXY
+    - DOMAIN-SUFFIX, governmentengineer.com, PROXY
+    - DOMAIN-SUFFIX, greenbuildingstudio.com, PROXY
+    - DOMAIN-SUFFIX, hmsxpress.com, PROXY
+    - DOMAIN-SUFFIX, homestylerapp.com, PROXY
+    - DOMAIN-SUFFIX, homestylernews.com, PROXY
+    - DOMAIN-SUFFIX, horizontal-llc.com, PROXY
+    - DOMAIN-SUFFIX, horizontal-systems.com, PROXY
+    - DOMAIN-SUFFIX, horizontalglue.com, PROXY
+    - DOMAIN-SUFFIX, horizontalsystems.com, PROXY
+    - DOMAIN-SUFFIX, hsm-works.com, PROXY
+    - DOMAIN-SUFFIX, hsm-xpress.com, PROXY
+    - DOMAIN-SUFFIX, hsmexpress.com, PROXY
+    - DOMAIN-SUFFIX, hsmworks.com, PROXY
+    - DOMAIN-SUFFIX, hsmxpress.com, PROXY
+    - DOMAIN-SUFFIX, idea-server.com, PROXY
+    - DOMAIN-SUFFIX, imagemodeler.com, PROXY
+    - DOMAIN-SUFFIX, imaginationsengine.com, PROXY
+    - DOMAIN-SUFFIX, impactdesignhub.com, PROXY
+    - DOMAIN-SUFFIX, infraworks.com, PROXY
+    - DOMAIN-SUFFIX, installbuzzsaw.com, PROXY
+    - DOMAIN-SUFFIX, intelisolve.com, PROXY
+    - DOMAIN-SUFFIX, inventor-certified.com, PROXY
+    - DOMAIN-SUFFIX, inventorfusion.com, PROXY
+    - DOMAIN-SUFFIX, inventorseries.com, PROXY
+    - DOMAIN-SUFFIX, istorytell.com, PROXY
+    - DOMAIN-SUFFIX, izmirautodeskegitimleri.com, PROXY
+    - DOMAIN-SUFFIX, jasa3dmax.com, PROXY
+    - DOMAIN-SUFFIX, jasaautocad.com, PROXY
+    - DOMAIN-SUFFIX, kaydara.com, PROXY
+    - DOMAIN-SUFFIX, keepyourcad.com, PROXY
+    - DOMAIN-SUFFIX, kynogon.com, PROXY
+    - DOMAIN-SUFFIX, lasersawapp.com, PROXY
+    - DOMAIN-SUFFIX, licenseparser.com, PROXY
+    - DOMAIN-SUFFIX, livesketchshare.com, PROXY
+    - DOMAIN-SUFFIX, lrfdsoftware.com, PROXY
+    - DOMAIN-SUFFIX, lunchwithpype.com, PROXY
+    - DOMAIN-SUFFIX, machine-dna.com, PROXY
+    - DOMAIN-SUFFIX, madewithmaya.com, PROXY
+    - DOMAIN-SUFFIX, madewithstudiotools.com, PROXY
+    - DOMAIN-SUFFIX, magestic.com, PROXY
+    - DOMAIN-SUFFIX, makeanything.com, PROXY
+    - DOMAIN-SUFFIX, makeitrealcontest.com, PROXY
+    - DOMAIN-SUFFIX, makingstartshere.com, PROXY
+    - DOMAIN-SUFFIX, map-software.com, PROXY
+    - DOMAIN-SUFFIX, mapguide.com, PROXY
+    - DOMAIN-SUFFIX, mappingonline.com, PROXY
+    - DOMAIN-SUFFIX, marinecadcam.com, PROXY
+    - DOMAIN-SUFFIX, markingmenus.com, PROXY
+    - DOMAIN-SUFFIX, matchmover.com, PROXY
+    - DOMAIN-SUFFIX, maxillofacial-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, mayacomplete.com, PROXY
+    - DOMAIN-SUFFIX, mayaconductors.com, PROXY
+    - DOMAIN-SUFFIX, mayafluideffects.com, PROXY
+    - DOMAIN-SUFFIX, mayaformotiongraphics.com, PROXY
+    - DOMAIN-SUFFIX, mayagames.com, PROXY
+    - DOMAIN-SUFFIX, mayamasters.com, PROXY
+    - DOMAIN-SUFFIX, mayamentor.net, PROXY
+    - DOMAIN-SUFFIX, mayamentors.com, PROXY
+    - DOMAIN-SUFFIX, mayamentors.net, PROXY
+    - DOMAIN-SUFFIX, mayaonlinux.com, PROXY
+    - DOMAIN-SUFFIX, mayaonmac.com, PROXY
+    - DOMAIN-SUFFIX, mayaonosx.com, PROXY
+    - DOMAIN-SUFFIX, mayapressbooks.com, PROXY
+    - DOMAIN-SUFFIX, mayasucks.com, PROXY
+    - DOMAIN-SUFFIX, mayaunlimited.com, PROXY
+    - DOMAIN-SUFFIX, mayauser.com, PROXY
+    - DOMAIN-SUFFIX, mayauser.net, PROXY
+    - DOMAIN-SUFFIX, mayavisualization.com, PROXY
+    - DOMAIN-SUFFIX, medicalimplants-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, meshmixer.com, PROXY
+    - DOMAIN-SUFFIX, meshmixerforum.com, PROXY
+    - DOMAIN-SUFFIX, mimistudio.com, PROXY
+    - DOMAIN-SUFFIX, mimistyler.com, PROXY
+    - DOMAIN-SUFFIX, mmmanual.com, PROXY
+    - DOMAIN-SUFFIX, moldflow.com, PROXY
+    - DOMAIN-SUFFIX, moldflowexpress.com, PROXY
+    - DOMAIN-SUFFIX, moleculardesigntoolkit.com, PROXY
+    - DOMAIN-SUFFIX, molecularsimulationtools.com, PROXY
+    - DOMAIN-SUFFIX, molecularviewer.com, PROXY
+    - DOMAIN-SUFFIX, molviewer.com, PROXY
+    - DOMAIN-SUFFIX, morewithautodesk.com, PROXY
+    - DOMAIN-SUFFIX, motiongraphicsandmore.com, PROXY
+    - DOMAIN-SUFFIX, mudbox3d.com, PROXY
+    - DOMAIN-SUFFIX, my1stflame.com, PROXY
+    - DOMAIN-SUFFIX, myautocad.com, PROXY
+    - DOMAIN-SUFFIX, myautodeskbenefits.com, PROXY
+    - DOMAIN-SUFFIX, myfirstflame.com, PROXY
+    - DOMAIN-SUFFIX, mymapportal.com, PROXY
+    - DOMAIN-SUFFIX, nastranincad.com, PROXY
+    - DOMAIN-SUFFIX, nastrannx.com, PROXY
+    - DOMAIN-SUFFIX, nastrantraining.com, PROXY
+    - DOMAIN-SUFFIX, nastranworldwide.com, PROXY
+    - DOMAIN-SUFFIX, navisworks.com, PROXY
+    - DOMAIN-SUFFIX, navisworks.net, PROXY
+    - DOMAIN-SUFFIX, neicad.com, PROXY
+    - DOMAIN-SUFFIX, neiexplicit.com, PROXY
+    - DOMAIN-SUFFIX, neifea.com, PROXY
+    - DOMAIN-SUFFIX, neimotion.com, PROXY
+    - DOMAIN-SUFFIX, neinastranincad.com, PROXY
+    - DOMAIN-SUFFIX, neisoftware.com, PROXY
+    - DOMAIN-SUFFIX, neisolutions.com, PROXY
+    - DOMAIN-SUFFIX, neiworks.com, PROXY
+    - DOMAIN-SUFFIX, nenastran.com, PROXY
+    - DOMAIN-SUFFIX, netzerobuildings.com, PROXY
+    - DOMAIN-SUFFIX, netzerobuildingstudio.com, PROXY
+    - DOMAIN-SUFFIX, new2fea.com, PROXY
+    - DOMAIN-SUFFIX, newtofea.com, PROXY
+    - DOMAIN-SUFFIX, nextgenerationcam.com, PROXY
+    - DOMAIN-SUFFIX, nonlinearnastran.com, PROXY
+    - DOMAIN-SUFFIX, objectarx.com, PROXY
+    - DOMAIN-SUFFIX, oneteamconference.com, PROXY
+    - DOMAIN-SUFFIX, openreality.com, PROXY
+    - DOMAIN-SUFFIX, opticore.com, PROXY
+    - DOMAIN-SUFFIX, orthopaedic-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, orthotics-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, packaging-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, packagingcadcam.com, PROXY
+    - DOMAIN-SUFFIX, partmaker.com, PROXY
+    - DOMAIN-SUFFIX, pi-vr.com, PROXY
+    - DOMAIN-SUFFIX, pixlr-o-matic.com, PROXY
+    - DOMAIN-SUFFIX, pixlromatic.com, PROXY
+    - DOMAIN-SUFFIX, plansondemand.com, PROXY
+    - DOMAIN-SUFFIX, plasticlabs.com, PROXY
+    - DOMAIN-SUFFIX, plastics-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, plug-into.com, PROXY
+    - DOMAIN-SUFFIX, portfoliowall.com, PROXY
+    - DOMAIN-SUFFIX, poweranimator.com, PROXY
+    - DOMAIN-SUFFIX, powerinspect.com, PROXY
+    - DOMAIN-SUFFIX, powermill.com, PROXY
+    - DOMAIN-SUFFIX, powermillna.com, PROXY
+    - DOMAIN-SUFFIX, powershape-e.com, PROXY
+    - DOMAIN-SUFFIX, powershape.com, PROXY
+    - DOMAIN-SUFFIX, profilemaster.com, PROXY
+    - DOMAIN-SUFFIX, projectpoint.com, PROXY
+    - DOMAIN-SUFFIX, projectpoint.net, PROXY
+    - DOMAIN-SUFFIX, projectshoreline.com, PROXY
+    - DOMAIN-SUFFIX, projectvasari.com, PROXY
+    - DOMAIN-SUFFIX, ps-exchange.com, PROXY
+    - DOMAIN-SUFFIX, rapidprototyping-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, reality-computing.com, PROXY
+    - DOMAIN-SUFFIX, realpeople-realprojects.com, PROXY
+    - DOMAIN-SUFFIX, realpeoplerealprojects.com, PROXY
+    - DOMAIN-SUFFIX, realviz.com, PROXY
+    - DOMAIN-SUFFIX, retimer.com, PROXY
+    - DOMAIN-SUFFIX, revit.com, PROXY
+    - DOMAIN-SUFFIX, revitcc.com, PROXY
+    - DOMAIN-SUFFIX, revitsucks.net, PROXY
+    - DOMAIN-SUFFIX, robobat.com, PROXY
+    - DOMAIN-SUFFIX, robotoffice.com, PROXY
+    - DOMAIN-SUFFIX, savoycomputing.com, PROXY
+    - DOMAIN-SUFFIX, scaleform.com, PROXY
+    - DOMAIN-SUFFIX, scpic.net, PROXY
+    - DOMAIN-SUFFIX, sculpoly.com, PROXY
+    - DOMAIN-SUFFIX, shotgridsoftware.com, PROXY
+    - DOMAIN-SUFFIX, shotgridstudio.com, PROXY
+    - DOMAIN-SUFFIX, shotguncloud.com, PROXY
+    - DOMAIN-SUFFIX, shotgunfx.com, PROXY
+    - DOMAIN-SUFFIX, shotgunlocalhost.com, PROXY
+    - DOMAIN-SUFFIX, shotgunsoftware.com, PROXY
+    - DOMAIN-SUFFIX, shotgunsoftware.net, PROXY
+    - DOMAIN-SUFFIX, shotgunstudio-test.com, PROXY
+    - DOMAIN-SUFFIX, shotgunstudio.com, PROXY
+    - DOMAIN-SUFFIX, shotgunvfx.com, PROXY
+    - DOMAIN-SUFFIX, simsquad.com, PROXY
+    - DOMAIN-SUFFIX, simulationsquad.com, PROXY
+    - DOMAIN-SUFFIX, sketchbookdesigner.com, PROXY
+    - DOMAIN-SUFFIX, sketchbookmobile.com, PROXY
+    - DOMAIN-SUFFIX, sketchbooknews.com, PROXY
+    - DOMAIN-SUFFIX, sketchbookpro.com, PROXY
+    - DOMAIN-SUFFIX, skymatter.com, PROXY
+    - DOMAIN-SUFFIX, smartfea.com, PROXY
+    - DOMAIN-SUFFIX, smartnastran.com, PROXY
+    - DOMAIN-SUFFIX, socailcam.com, PROXY
+    - DOMAIN-SUFFIX, socialcam.com, PROXY
+    - DOMAIN-SUFFIX, socialcammail.com, PROXY
+    - DOMAIN-SUFFIX, socialkam.com, PROXY
+    - DOMAIN-SUFFIX, squ1.com, PROXY
+    - DOMAIN-SUFFIX, squidplatform.com, PROXY
+    - DOMAIN-SUFFIX, ssttest.net, PROXY
+    - DOMAIN-SUFFIX, stingrayengine.com, PROXY
+    - DOMAIN-SUFFIX, studiopaint.com, PROXY
+    - DOMAIN-SUFFIX, studiosucks.com, PROXY
+    - DOMAIN-SUFFIX, submittal-log.com, PROXY
+    - DOMAIN-SUFFIX, sustainablebuildingstudio.com, PROXY
+    - DOMAIN-SUFFIX, sustainabledesigncouncil.com, PROXY
+    - DOMAIN-SUFFIX, sustainabledesigncouncil.net, PROXY
+    - DOMAIN-SUFFIX, suxiebu.com, PROXY
+    - DOMAIN-SUFFIX, swiss-machining.com, PROXY
+    - DOMAIN-SUFFIX, swiss-turn.com, PROXY
+    - DOMAIN-SUFFIX, t-splines.com, PROXY
+    - DOMAIN-SUFFIX, the-area.com, PROXY
+    - DOMAIN-SUFFIX, the123d.com, PROXY
+    - DOMAIN-SUFFIX, thedesignworkshop.com, PROXY
+    - DOMAIN-SUFFIX, thedesk.com, PROXY
+    - DOMAIN-SUFFIX, theinventionworks.com, PROXY
+    - DOMAIN-SUFFIX, theinventionworks.net, PROXY
+    - DOMAIN-SUFFIX, timefxapp.com, PROXY
+    - DOMAIN-SUFFIX, tinkerboxapp.com, PROXY
+    - DOMAIN-SUFFIX, tinkercad.com, PROXY
+    - DOMAIN-SUFFIX, tinkerentertainment.com, PROXY
+    - DOMAIN-SUFFIX, tinkerplay.net, PROXY
+    - DOMAIN-SUFFIX, tire-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, toolmaking-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, topobase.com, PROXY
+    - DOMAIN-SUFFIX, toy-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, toycadcam.com, PROXY
+    - DOMAIN-SUFFIX, truebim.com, PROXY
+    - DOMAIN-SUFFIX, truedwg.com, PROXY
+    - DOMAIN-SUFFIX, trunest.com, PROXY
+    - DOMAIN-SUFFIX, trusted-dwg.com, PROXY
+    - DOMAIN-SUFFIX, trusteddwg.com, PROXY
+    - DOMAIN-SUFFIX, tryalias.com, PROXY
+    - DOMAIN-SUFFIX, trydesign.com, PROXY
+    - DOMAIN-SUFFIX, tspline.com, PROXY
+    - DOMAIN-SUFFIX, tsplines.com, PROXY
+    - DOMAIN-SUFFIX, tweakadmin.com, PROXY
+    - DOMAIN-SUFFIX, tweakfilms.com, PROXY
+    - DOMAIN-SUFFIX, tweaksoftware.com, PROXY
+    - DOMAIN-SUFFIX, tyre-cadcam.com, PROXY
+    - DOMAIN-SUFFIX, tyrecadcam.com, PROXY
+    - DOMAIN-SUFFIX, upfrontcfd.com, PROXY
+    - DOMAIN-SUFFIX, upfrontfea.com, PROXY
+    - DOMAIN-SUFFIX, velaserver.com, PROXY
+    - DOMAIN-SUFFIX, velastaging.com, PROXY
+    - DOMAIN-SUFFIX, velasync.com, PROXY
+    - DOMAIN-SUFFIX, velasystems.com, PROXY
+    - DOMAIN-SUFFIX, velatest.com, PROXY
+    - DOMAIN-SUFFIX, viriondb.com, PROXY
+    - DOMAIN-SUFFIX, vortexmachining.com, PROXY
+    - DOMAIN-SUFFIX, vred-essentials.com, PROXY
+    - DOMAIN-SUFFIX, vredessentials.com, PROXY
+    - DOMAIN-SUFFIX, vredprofessional.com, PROXY
+    - DOMAIN-SUFFIX, vrnastran.com, PROXY
+    - DOMAIN-SUFFIX, xn--74q434dwff.com, PROXY
+    - DOMAIN-SUFFIX, xn--74q434dwff.net, PROXY
 
    # avaxhome
     # AvaxHome main site:
@@ -15717,9 +16647,12 @@ rules:
     - DOMAIN-SUFFIX, doclercdn.com, PROXY
 
    # aws
+    # include:aws-cn
+
     # All .aws domains
     - DOMAIN-KEYWORD, .aws, PROXY
 
+    # AWS
     - DOMAIN-SUFFIX, acmvalidations.com, PROXY
     - DOMAIN-SUFFIX, acmvalidationsaws.com, PROXY
     - DOMAIN-SUFFIX, aesworkshops.com, PROXY
@@ -15727,6 +16660,7 @@ rules:
     - DOMAIN-SUFFIX, amazonaws.co.uk, PROXY
     - DOMAIN-SUFFIX, amazonaws.com, PROXY
     - DOMAIN-SUFFIX, amazonaws.tv, PROXY
+    - DOMAIN-SUFFIX, amazonses.com, PROXY
     - DOMAIN-SUFFIX, amazonworkdocs.com, PROXY
     - DOMAIN-SUFFIX, amplifyapp.com, PROXY
     - DOMAIN-SUFFIX, amplifyframework.com, PROXY
@@ -15739,37 +16673,22 @@ rules:
     - DOMAIN-SUFFIX, awseducate.com, PROXY
     - DOMAIN-SUFFIX, awseducate.net, PROXY
     - DOMAIN-SUFFIX, awseducate.org, PROXY
+    - DOMAIN-SUFFIX, awsglobalaccelerator.com, PROXY
     - DOMAIN-SUFFIX, awsloft-johannesburg.com, PROXY
     - DOMAIN-SUFFIX, awsloft-stockholm.com, PROXY
     - DOMAIN-SUFFIX, awssecworkshops.com, PROXY
     - DOMAIN-SUFFIX, awsstatic.com, PROXY
     - DOMAIN-SUFFIX, awsthinkbox.com, PROXY
+    - DOMAIN-SUFFIX, awstrack.me, PROXY
     - DOMAIN-SUFFIX, cdkworkshop.com, PROXY
     - DOMAIN-SUFFIX, cloudfront.com, PROXY
     - DOMAIN-SUFFIX, cloudfront.net, PROXY
-    - DOMAIN-SUFFIX, cognito-identity.us-east-1.amazonaws.com, PROXY
     - DOMAIN-SUFFIX, containersonaws.com, PROXY
     - DOMAIN-SUFFIX, elasticbeanstalk.com, PROXY
-    - DOMAIN-SUFFIX, execute-api.us-east-1.amazonaws.com, PROXY
-    - DOMAIN-SUFFIX, mobileanalytics.us-east-1.amazonaws.com, PROXY
-    - DOMAIN-SUFFIX, s3-ap-northeast-1.amazonaws.com, PROXY
-    - DOMAIN-SUFFIX, s3-ap-southeast-2.amazonaws.com, PROXY
-    - DOMAIN-SUFFIX, s3.amazonaws.com, PROXY
     - DOMAIN-SUFFIX, thinkboxsoftware.com, PROXY
 
-    - DOMAIN-SUFFIX, tidal-cms.s3.amazonaws.com, PROXY
-    - DOMAIN, 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com, PROXY
-    - DOMAIN, s3-ap-southeast-1.amazonaws.com, PROXY
-
     # AWS DNS
-    # regexp:.+\.awsdns-[0-9][0-9]\.co\.uk$
-    # regexp:.+\.awsdns-[0-9][0-9]\.com$
-    # regexp:.+\.awsdns-[0-9][0-9]\.net$
-    # regexp:.+\.awsdns-[0-9][0-9]\.org$
-    # regexp:.+\.awsdns-cn-[0-9][0-9]\.biz$
-    # regexp:.+\.awsdns-cn-[0-9][0-9]\.cn$
-    # regexp:.+\.awsdns-cn-[0-9][0-9]\.com$
-    # regexp:.+\.awsdns-cn-[0-9][0-9]\.net$
+    # regexp:.+\.awsdns-[0-9][0-9]\.(co\.uk|com|net|org)$
 
    # aws-cn
 
@@ -18121,6 +19040,7 @@ rules:
     # include:collabora
     # include:dell
     # include:digitalocean
+    # include:drweb
     # include:duolingo
     # include:faronics
     # include:giffgaff
@@ -18164,6 +19084,7 @@ rules:
     # include:snap
     # include:sony
     # include:spacex
+    # include:spaceship
     # include:st
     # include:tailscale
     # include:theboringcompany
@@ -18289,6 +19210,7 @@ rules:
     # include:tipdm
     # include:ubuntukylin
     # include:xueyuanjun
+    # include:pingcap
 
    # category-documents-cn
     # include:doc88
@@ -18476,6 +19398,7 @@ rules:
     # include:ynoproject
 
     - DOMAIN-SUFFIX, fanatical.com, PROXY
+    - DOMAIN-SUFFIX, fitgirl-repacks.site, PROXY
     - DOMAIN-SUFFIX, humblebundle.com, PROXY
     - DOMAIN-SUFFIX, loverslab.com, PROXY
     - DOMAIN-SUFFIX, modrinth.com, PROXY
@@ -18535,6 +19458,7 @@ rules:
     # include:cabletv
     # include:cbs
     # include:cnbc
+    # include:cnbeta
     # include:cnn
     # include:dailymail
     # include:dw
@@ -18780,6 +19704,7 @@ rules:
     # include:cavporn
     # include:chatwhores
     # include:clips4sale
+    # include:cuinc
     # include:dlsite
     # include:dmm-porn
     # include:ehentai
@@ -18813,9 +19738,11 @@ rules:
     # include:picacg
     # include:playboy
     # include:pornpros
+    # include:sehuatang
     # include:shireyishunjian
     # include:smtiaojiaoshi
     # include:spankbang
+    # include:swag
     # include:theporndude
     # include:thescoregroup
     # include:tokyo-toshokan
@@ -19227,7 +20154,6 @@ rules:
     - DOMAIN-SUFFIX, aflamsex.net, PROXY
     - DOMAIN-SUFFIX, aflamsexhd.com, PROXY
     - DOMAIN-SUFFIX, afriboyz.com, PROXY
-    - DOMAIN-SUFFIX, aga-expo.com, PROXY
     - DOMAIN-SUFFIX, agag.tw, PROXY
     - DOMAIN-SUFFIX, agzy1.com, PROXY
     - DOMAIN-SUFFIX, ah-me.com, PROXY
@@ -19671,6 +20597,7 @@ rules:
     - DOMAIN-SUFFIX, bestxxxsites.com, PROXY
     - DOMAIN-SUFFIX, besuty99.com, PROXY
     - DOMAIN-SUFFIX, betterhdporn.com, PROXY
+    - DOMAIN-SUFFIX, between-legs.com, PROXY
     - DOMAIN-SUFFIX, beurettesvideo.com, PROXY
     - DOMAIN-SUFFIX, bffshd.com, PROXY
     - DOMAIN-SUFFIX, bhggn.xyz, PROXY
@@ -20034,7 +20961,6 @@ rules:
     - DOMAIN-SUFFIX, cuckwatchingwife.com, PROXY
     - DOMAIN-SUFFIX, cuckwimp.com, PROXY
     - DOMAIN-SUFFIX, cuebic.biz, PROXY
-    - DOMAIN-SUFFIX, cuinc.tw, PROXY
     - DOMAIN-SUFFIX, cultoferotica.com, PROXY
     - DOMAIN-SUFFIX, cultura-kolomna.ru, PROXY
     - DOMAIN-SUFFIX, cum4k.cc, PROXY
@@ -21571,6 +22497,14 @@ rules:
     - DOMAIN-SUFFIX, jimeng22.com, PROXY
     - DOMAIN-SUFFIX, jiuse.ai, PROXY
     - DOMAIN-SUFFIX, jiuse.icu, PROXY
+    - DOMAIN-SUFFIX, jiuse.io, PROXY
+    - DOMAIN-SUFFIX, jiuse.com.co, PROXY
+    - DOMAIN-SUFFIX, jiuse821.com, PROXY
+    - DOMAIN-SUFFIX, jiuse822.com, PROXY
+    - DOMAIN-SUFFIX, jiuse823.com, PROXY
+    - DOMAIN-SUFFIX, jstv51.com, PROXY
+    - DOMAIN-SUFFIX, jstv52.com, PROXY
+    - DOMAIN-SUFFIX, jstv53.com, PROXY
     - DOMAIN-SUFFIX, jiyou520.com, PROXY
     - DOMAIN-SUFFIX, jizzboom.com, PROXY
     - DOMAIN-SUFFIX, jizzbunker.com, PROXY
@@ -23171,7 +24105,6 @@ rules:
     - DOMAIN-SUFFIX, sego8.cc, PROXY
     - DOMAIN-SUFFIX, sego8.co, PROXY
     - DOMAIN-SUFFIX, sego8.xyz, PROXY
-    - DOMAIN-SUFFIX, sehuatang.net, PROXY
     - DOMAIN-SUFFIX, seiroganmania.com, PROXY
     - DOMAIN-SUFFIX, sejie80.com, PROXY
     - DOMAIN-SUFFIX, seksmet.nl, PROXY
@@ -23436,6 +24369,7 @@ rules:
     - DOMAIN-SUFFIX, shufflesex.com, PROXY
     - DOMAIN-SUFFIX, shymysex.com, PROXY
     - DOMAIN-SUFFIX, shywifeswap.com, PROXY
+    - DOMAIN-SUFFIX, sifangclub.com, PROXY
     - DOMAIN-SUFFIX, sigmoidoscopeexam.com, PROXY
     - DOMAIN-SUFFIX, sikiswap.com, PROXY
     - DOMAIN-SUFFIX, silkengirl.com, PROXY
@@ -23589,7 +24523,6 @@ rules:
     - DOMAIN-SUFFIX, svscomics.asia, PROXY
     - DOMAIN-SUFFIX, svscomics.com, PROXY
     - DOMAIN-SUFFIX, svsgames.org, PROXY
-    - DOMAIN-SUFFIX, swag.live, PROXY
     - DOMAIN-SUFFIX, swapsmut.com, PROXY
     - DOMAIN-SUFFIX, sweetadult-tube.com, PROXY
     - DOMAIN-SUFFIX, sweetsext.com, PROXY
@@ -24849,33 +25782,46 @@ rules:
 
    # category-pt
     - DOMAIN-SUFFIX, audiences.me, PROXY
+    - DOMAIN-SUFFIX, avistaz.to, PROXY
+    - DOMAIN-SUFFIX, beyond-hd.me, PROXY
+    - DOMAIN-SUFFIX, bibliotik.me, PROXY
     - DOMAIN-SUFFIX, bitpt.cn, PROXY
+    - DOMAIN-SUFFIX, blutopia.cc, PROXY
+    - DOMAIN-SUFFIX, broadcasthe.net, PROXY
+    - DOMAIN-SUFFIX, bt.byr.cn, PROXY
     - DOMAIN-SUFFIX, byr.pt, PROXY
     - DOMAIN-SUFFIX, ccfbits.org, PROXY
     - DOMAIN-SUFFIX, chdbits.co, PROXY
+    - DOMAIN-SUFFIX, cinemaz.to, PROXY
+    - DOMAIN-SUFFIX, dicmusic.com, PROXY
     - DOMAIN-SUFFIX, eastgame.org, PROXY
     - DOMAIN-SUFFIX, et8.org, PROXY
+    - DOMAIN-SUFFIX, exoticaz.to, PROXY
+    - DOMAIN-SUFFIX, filelist.io, PROXY
     - DOMAIN-SUFFIX, greatposterwall.com, PROXY
+    - DOMAIN-SUFFIX, hdbits.org, PROXY
     - DOMAIN-SUFFIX, hdchina.org, PROXY
     - DOMAIN-SUFFIX, hdcity.city, PROXY
     - DOMAIN-SUFFIX, hdfans.org, PROXY
     - DOMAIN-SUFFIX, hdhome.org, PROXY
     - DOMAIN-SUFFIX, hdsky.me, PROXY
     - DOMAIN-SUFFIX, hdtime.org, PROXY
+    - DOMAIN-SUFFIX, hhanclub.top, PROXY
     - DOMAIN-SUFFIX, hudbt.hust.edu.cn, PROXY
     - DOMAIN-SUFFIX, iptorrents.com, PROXY
     - DOMAIN-SUFFIX, jpopsuki.eu, PROXY
+    - DOMAIN-SUFFIX, jptv.club, PROXY
     - DOMAIN-SUFFIX, keepfrds.com, PROXY
     - DOMAIN-SUFFIX, lemonhd.org, PROXY
     - DOMAIN-SUFFIX, m-team.cc, PROXY
     - DOMAIN-SUFFIX, m-team.io, PROXY
+    - DOMAIN-SUFFIX, morethantv.me, PROXY
     - DOMAIN-SUFFIX, nanyangpt.com, PROXY
     - DOMAIN-SUFFIX, npupt.com, PROXY
     - DOMAIN-SUFFIX, open.cd, PROXY
     - DOMAIN-SUFFIX, ourbits.club, PROXY
-    - DOMAIN-SUFFIX, pterclub.com, PROXY
-    - DOMAIN-SUFFIX, pthome.net, PROXY
-    - DOMAIN-SUFFIX, ptsbao.club, PROXY
+    - DOMAIN-SUFFIX, passthepopcorn.me, PROXY
+    - DOMAIN-SUFFIX, privatehd.to, PROXY
     - DOMAIN-SUFFIX, pt.btschool.club, PROXY
     - DOMAIN-SUFFIX, pt.eastgame.org, PROXY
     - DOMAIN-SUFFIX, pt.hd4fans.org, PROXY
@@ -24884,12 +25830,20 @@ rules:
     - DOMAIN-SUFFIX, pt.sjtu.edu.cn, PROXY
     - DOMAIN-SUFFIX, pt.soulvoice.club, PROXY
     - DOMAIN-SUFFIX, pt.xauat.edu.cn, PROXY
+    - DOMAIN-SUFFIX, pterclub.com, PROXY
+    - DOMAIN-SUFFIX, pthome.net, PROXY
+    - DOMAIN-SUFFIX, ptsbao.club, PROXY
+    - DOMAIN-SUFFIX, share.ilolicon.com, PROXY
+    - DOMAIN-SUFFIX, sharkpt.net, PROXY
     - DOMAIN-SUFFIX, skyey2.com, PROXY
     - DOMAIN-SUFFIX, springsunday.net, PROXY
-    - DOMAIN-SUFFIX, tjupt.org, PROXY
     - DOMAIN-SUFFIX, tju.pt, PROXY
+    - DOMAIN-SUFFIX, tjupt.org, PROXY
+    - DOMAIN-SUFFIX, torrentleech.org, PROXY
     - DOMAIN-SUFFIX, totheglory.im, PROXY
     - DOMAIN-SUFFIX, u2.dmhy.org, PROXY
+    - DOMAIN-SUFFIX, uhdbits.org, PROXY
+    - DOMAIN-SUFFIX, zhuque.in, PROXY
 
    # category-public-tracker
     - DOMAIN, 10.rarbg.com, PROXY
@@ -26187,6 +27141,10 @@ rules:
     - DOMAIN-SUFFIX, tripcdn.com, PROXY
     - DOMAIN-SUFFIX, vipdlt.com, PROXY
 
+   # cuinc
+    - DOMAIN-SUFFIX, cuinc.oen.tw, PROXY
+    - DOMAIN-SUFFIX, cuinc.tw, PROXY
+
    # curseforge
     - DOMAIN-SUFFIX, curseforge.com, PROXY
     - DOMAIN-SUFFIX, forgecdn.net, PROXY
@@ -26601,6 +27559,19 @@ rules:
     - DOMAIN-SUFFIX, getdropbox.com, PROXY
 
     - DOMAIN, paper-attachments.s3.amazonaws.com, PROXY
+
+   # drweb
+    - DOMAIN-SUFFIX, drweb.by, PROXY
+    - DOMAIN-SUFFIX, drweb.cn, PROXY
+    - DOMAIN-SUFFIX, drweb.co.jp, PROXY
+    - DOMAIN-SUFFIX, drweb.com, PROXY
+    - DOMAIN-SUFFIX, drweb.fr, PROXY
+    - DOMAIN-SUFFIX, drweb.kz, PROXY
+    - DOMAIN-SUFFIX, drweb.uz, PROXY
+    - DOMAIN-SUFFIX, drweb-av.de, PROXY
+    - DOMAIN-SUFFIX, drweb-av.es, PROXY
+    - DOMAIN-SUFFIX, drweb-av.it, PROXY
+    - DOMAIN-SUFFIX, drweb-av.pl, PROXY
 
    # dslreports
     - DOMAIN-SUFFIX, broadbandreports.com, PROXY
@@ -27373,6 +28344,13 @@ rules:
 
     - DOMAIN, misa-prod.s3.ap-northeast-1.amazonaws.com, PROXY
 
+    # AGA Expo
+    - DOMAIN-SUFFIX, 2023aga.oen.tw, PROXY
+    - DOMAIN-SUFFIX, aga-expo.com, PROXY
+
+    # CosFans
+    - DOMAIN-SUFFIX, cosfans-tw.com, PROXY
+
    # electron
     - DOMAIN-SUFFIX, electronjs.org, PROXY
 
@@ -27497,6 +28475,7 @@ rules:
     - DOMAIN-SUFFIX, edninfo.com, PROXY
     - DOMAIN-SUFFIX, epoch.cloud, PROXY
     - DOMAIN-SUFFIX, epoch.org.il, PROXY
+    - DOMAIN-SUFFIX, epochbase.com, PROXY
     - DOMAIN-SUFFIX, epochbuy.com, PROXY
     - DOMAIN-SUFFIX, epochcar.com, PROXY
     - DOMAIN-SUFFIX, epochhk.com, PROXY
@@ -27626,8 +28605,6 @@ rules:
     - DOMAIN-SUFFIX, fdroid.org, PROXY
 
    # facebook
-    # include:facebook-ads
-
     - DOMAIN-SUFFIX, aboutfacebook.com, PROXY
     - DOMAIN-SUFFIX, accessfacebookfromschool.com, PROXY
     - DOMAIN-SUFFIX, acebooik.com, PROXY
@@ -30384,6 +31361,8 @@ rules:
 
   # i
    # ibm
+    # include:hashicorp
+
     # All .ibm domains
     - DOMAIN-KEYWORD, .ibm, PROXY
 
@@ -31238,6 +32217,7 @@ rules:
     - DOMAIN-SUFFIX, jetbrains.team, PROXY
     - DOMAIN-SUFFIX, datalore.io, PROXY
     - DOMAIN-SUFFIX, kotlinlang.org, PROXY
+    - DOMAIN-SUFFIX, jb.gg, PROXY
 
    # jetbrains-ai
     - DOMAIN-SUFFIX, grazie.ai, PROXY
@@ -31414,8 +32394,6 @@ rules:
     - DOMAIN-SUFFIX, laracasts.com, PROXY
 
    # lark
-    - DOMAIN-SUFFIX, larksuite.com, PROXY
-    - DOMAIN-SUFFIX, larksuitecdn.com, PROXY
 
    # launchpad
     - DOMAIN-SUFFIX, launchpad.net, PROXY
@@ -31991,6 +32969,7 @@ rules:
     # include:oculus
     # include:whatsapp
 
+    - DOMAIN-SUFFIX, meta.ai, PROXY
     - DOMAIN-SUFFIX, meta.com, PROXY
 
    # metart
@@ -33008,6 +33987,7 @@ rules:
    # nexon
     - DOMAIN-SUFFIX, nexon.co.jp, PROXY
     - DOMAIN-SUFFIX, nexon.com, PROXY
+    - DOMAIN-SUFFIX, nexon.io, PROXY
     - DOMAIN-SUFFIX, nexoncdn.co.kr, PROXY
 
    # nginx
@@ -34189,6 +35169,15 @@ rules:
     - DOMAIN-SUFFIX, pikpak.me, PROXY
     - DOMAIN-SUFFIX, pikpakdrive.com, PROXY
 
+   # pingcap
+    - DOMAIN-SUFFIX, asktug.com, PROXY
+    - DOMAIN-SUFFIX, pingcap.cn, PROXY
+    - DOMAIN-SUFFIX, pingcap.com, PROXY
+    - DOMAIN-SUFFIX, tidb.ai, PROXY
+    - DOMAIN-SUFFIX, tidb.net, PROXY
+    - DOMAIN-SUFFIX, tidbcloud.com, PROXY
+    - DOMAIN-SUFFIX, tikv.org, PROXY
+
    # pingpe
     - DOMAIN-SUFFIX, ping.pe, PROXY
 
@@ -34606,8 +35595,8 @@ rules:
 
    # razer
     - DOMAIN-SUFFIX, razer.com, PROXY
+    - DOMAIN-SUFFIX, razerofficial.com, PROXY
     - DOMAIN-SUFFIX, razersupport.com, PROXY
-    - DOMAIN-SUFFIX, razerzone.com, PROXY
     - DOMAIN-SUFFIX, razerzone.jp, PROXY
     - DOMAIN-SUFFIX, respawnbyrazer.com, PROXY
 
@@ -35079,6 +36068,10 @@ rules:
     - DOMAIN-SUFFIX, incommon-rsa.org, PROXY
     - DOMAIN-SUFFIX, netsolssl.com, PROXY
 
+   # sehuatang
+    - DOMAIN-SUFFIX, sehuatang.net, PROXY
+    - DOMAIN-SUFFIX, sehuatang.org, PROXY
+
    # setapp
     - DOMAIN-SUFFIX, setapp.com, PROXY
 
@@ -35439,6 +36432,14 @@ rules:
    # spacex
     - DOMAIN-SUFFIX, spacex.com, PROXY
 
+   # spacemail
+    - DOMAIN-SUFFIX, spacemail.com, PROXY
+
+   # spaceship
+    # include:spacemail
+
+    - DOMAIN-SUFFIX, spaceship.com, PROXY
+
    # spankbang
     - DOMAIN-SUFFIX, spankbang.com, PROXY
     - DOMAIN-SUFFIX, spankbang.party, PROXY
@@ -35770,6 +36771,11 @@ rules:
 
    # svp
     - DOMAIN-SUFFIX, svp-team.com, PROXY
+
+   # swag
+    - DOMAIN-SUFFIX, 5w.ag, PROXY
+    - DOMAIN-SUFFIX, swag-live.co, PROXY
+    - DOMAIN-SUFFIX, swag.live, PROXY
 
    # swift
     - DOMAIN-SUFFIX, appleswift.com, PROXY
@@ -39318,6 +40324,7 @@ rules:
     - DOMAIN-SUFFIX, singlelogin.re, PROXY
     - DOMAIN-SUFFIX, singlelogin.site, PROXY
     - DOMAIN-SUFFIX, z-lib.org, PROXY
+    - DOMAIN-SUFFIX, z-library.se, PROXY
     - DOMAIN-SUFFIX, zlib.life, PROXY
     - DOMAIN-SUFFIX, zlibcdn.com, PROXY
     - DOMAIN-SUFFIX, zlibcdn2.com, PROXY
@@ -39417,6 +40424,9 @@ rules:
     - DOMAIN-SUFFIX, zoom.com, PROXY
     - DOMAIN-SUFFIX, zoom.com.cn, PROXY
     - DOMAIN-SUFFIX, zoom.us, PROXY
+
+   # zte
+    - DOMAIN, ztedevices.com, PROXY
 
    # zuoyebang
 
