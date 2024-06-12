@@ -477,7 +477,8 @@ proxies:
       # path: /x
       # headers:
         # Host: your_server1
-# 
+  
+  ##
   # - name: userAccount2
     # type: vmess
     # server: your_server1
@@ -494,7 +495,8 @@ proxies:
       # path: /x
       # headers:
         # Host: your_server1
-# 
+  
+  ##
   # - name: userAccount3
     # type: vmess
     # server: your_server1
@@ -524,7 +526,8 @@ proxies:
     # skip-cert-verify: false
     # servername: your_server2
     # network: tcp
-# 
+  
+  ##
   # - name: userAccount2
     # type: vmess
     # server: your_server2
@@ -537,7 +540,8 @@ proxies:
     # skip-cert-verify: false
     # servername: your_server2
     # network: tcp
-# 
+  
+  ##
   # - name: userAccount3
     # type: vmess
     # server: your_server2
@@ -561,7 +565,8 @@ proxies:
     # udp: true
     # flow: xtls-rprx-vision
     # client-fingerprint: chrome
-# 
+
+  ##
   # - name: userAccount2
     # type: vless
     # server: your_server3
@@ -572,7 +577,8 @@ proxies:
     # udp: true
     # flow: xtls-rprx-vision
     # client-fingerprint: chrome
-# 
+
+  ##
   # - name: userAccount3
     # type: vless
     # server: your_server3
@@ -617,6 +623,72 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
+  - name: userAccount4
+    type: vless
+    server: your_domain
+    port: 443
+    uuid: your_UUID
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+
+  - name: userAccount5
+    type: vless
+    server: your_domain
+    port: 443
+    uuid: your_UUID
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+
+  - name: userAccount6
+    type: vless
+    server: your_domain
+    port: 443
+    uuid: your_UUID
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+
+  - name: userAccount7
+    type: vless
+    server: your_domain
+    port: 443
+    uuid: your_UUID
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+
+  - name: userAccount8
+    type: vless
+    server: your_domain
+    port: 443
+    uuid: your_UUID
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+
+  - name: userAccount9
+    type: vless
+    server: your_domain
+    port: 443
+    uuid: your_UUID
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+
 proxy-groups:
   - name: 🎯 General Mode (总模式)
     type: select
@@ -636,6 +708,12 @@ proxy-groups:
       - userAccount1
       - userAccount2
       - userAccount3
+      - userAccount4
+      - userAccount5
+      - userAccount6
+      - userAccount7
+      - userAccount8
+      - userAccount9
 
   - name: failure switch (故障切换)
     type: fallback
@@ -645,6 +723,12 @@ proxy-groups:
       - userAccount1
       - userAccount2
       - userAccount3
+      - userAccount4
+      - userAccount5
+      - userAccount6
+      - userAccount7
+      - userAccount8
+      - userAccount9
 
   - name: load balancing (负载均衡)
     type: load-balance
@@ -655,6 +739,12 @@ proxy-groups:
       - userAccount1
       - userAccount2
       - userAccount3
+      - userAccount4
+      - userAccount5
+      - userAccount6
+      - userAccount7
+      - userAccount8
+      - userAccount9
 
   - name: ♻️ Manual Switch (手动切换)
     type: select
@@ -662,15 +752,21 @@ proxy-groups:
       - userAccount1
       - userAccount2
       - userAccount3
+      - userAccount4
+      - userAccount5
+      - userAccount6
+      - userAccount7
+      - userAccount8
+      - userAccount9
       - DIRECT
       - REJECT
 
   - name: 🛑 AdBlock rules
     type: select
     proxies:
+      - REJECT
       - DIRECT
       - 🎯 General Mode (总模式)
-      - REJECT
       - load balancing (负载均衡)
       - lowest latency (最低延迟)
       - failure switch (故障切换)
@@ -686,11 +782,11 @@ proxy-groups:
       - ♻️ Manual Switch (手动切换)
       - DIRECT
 
-  - name: private
+  - name: PRIVATE
     type: select
     proxies:
-      - DIRECT
       - REJECT
+      - DIRECT
       - 🎯 General Mode (总模式)
       - ♻️ Manual Switch (手动切换)
 
@@ -698,11 +794,6 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - ♻️ Manual Switch (手动切换)
-      - 🎯 General Mode (总模式)
-      - load balancing (负载均衡)
-      - lowest latency (最低延迟)
-      - failure switch (故障切换)
 
 rules:
 
@@ -2734,57 +2825,6 @@ rules:
     - DOMAIN-SUFFIX, zyngaplayersupport.com, 🛑 AdBlock rules
 
  # REJECT added manually
-  # a
-
-  # b
-
-  # c
-
-  # d
-  
-  # e
-  
-  # f
-
-  # g
-
-  # h
-
-  # i
-
-  # j
-
-  # k
-
-  # l
-
-  # m
-
-  # n
-
-  # o
-
-  # p
-
-  # q
-
-  # r
-
-  # s
-
-  # t
-
-  # u
-
-  # v
-
-  # w
-
-  # x
-
-  # y
-
-  # z
 
  # DIRECT added manually
   # WARNING: Private, ISP have rules with "PRIVATE", 
@@ -2862,10 +2902,6 @@ rules:
     # - DOMAIN, play-edge.itunes.apple.com, DIRECT
 
   # b
-   # bluehost
-    # bluehost (extra)
-    - DOMAIN-SUFFIX, cn.bluehost.com, DIRECT
-    - DOMAIN-SUFFIX, bluehost.hk, DIRECT
 
   # c
    # chicago.china-consulate.gov.cn
@@ -2887,6 +2923,9 @@ rules:
 
    # goodwe.com
     - DOMAIN-SUFFIX, goodwe.com, DIRECT
+
+   # google.com (test)
+    - DOMAIN-SUFFIX, 1e100.net, DIRECT
 
   # h
 
@@ -2937,32 +2976,32 @@ rules:
     - DOMAIN, auth.orangebank.com.cn, DIRECT
     - DOMAIN, cdn.sdb.com.cn, DIRECT
 
-   # private
+   # PRIVATE
     # 本地/局域网地址
     # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
 
     # 本地/局域网地址
-    # - DOMAIN-SUFFIX, ip6-localhost, private
-    # - DOMAIN-SUFFIX, ip6-loopback, private
-    # - DOMAIN-SUFFIX, local, private
-    # - DOMAIN-SUFFIX, localhost, private
+    # - DOMAIN-SUFFIX, ip6-localhost, PRIVATE
+    # - DOMAIN-SUFFIX, ip6-loopback, PRIVATE
+    # - DOMAIN-SUFFIX, local, PRIVATE
+    # - DOMAIN-SUFFIX, localhost, PRIVATE
 
-    # - IP-CIDR, 10.0.0.0/8, private, no-resolve
-    # - IP-CIDR, 100.64.0.0/10, private, no-resolve
-    # - IP-CIDR, 127.0.0.0/8, private, no-resolve
-    # - IP-CIDR, 172.16.0.0/12, private, no-resolve
-    # - IP-CIDR, 192.168.0.0/16, private, no-resolve
+    # - IP-CIDR, 10.0.0.0/8, PRIVATE, no-resolve
+    # - IP-CIDR, 100.64.0.0/10, PRIVATE, no-resolve
+    # - IP-CIDR, 127.0.0.0/8, PRIVATE, no-resolve
+    # - IP-CIDR, 172.16.0.0/12, PRIVATE, no-resolve
+    # - IP-CIDR, 192.168.0.0/16, PRIVATE, no-resolve
     
    # IP-CIDR compared results
     # - IP-CIDR, 198.18.0.0/16, DIRECT, no-resolve
 
-    # - IP-CIDR6, ::1/128, private, no-resolve
-    # - IP-CIDR6, fc00::/7, private, no-resolve
-    # - IP-CIDR6, fe80::/10, private, no-resolve
-    # - IP-CIDR6, fd00::/8, private, no-resolve
+    # - IP-CIDR6, ::1/128, PRIVATE, no-resolve
+    # - IP-CIDR6, fc00::/7, PRIVATE, no-resolve
+    # - IP-CIDR6, fe80::/10, PRIVATE, no-resolve
+    # - IP-CIDR6, fd00::/8, PRIVATE, no-resolve
 
    # Router managed 路由器管理域名
-    # - DOMAIN-SUFFIX, p.to, private
+    # - DOMAIN-SUFFIX, p.to, PRIVATE
 
   # q
    # tencent qq
@@ -3074,6 +3113,9 @@ rules:
    # acipayonline
     - DOMAIN-SUFFIX, acipayonline.com, PROXY
 
+   # acuityscheduling
+    - DOMAIN-SUFFIX, acuityscheduling.com, PROXY
+
    # addepar
     - DOMAIN-SUFFIX, addepar.com, PROXY
 
@@ -3103,8 +3145,15 @@ rules:
     - DOMAIN-SUFFIX, hotpot.ai, PROXY
     - DOMAIN-SUFFIX, nightcafe.studio, PROXY
 
-   # acuityscheduling
-    - DOMAIN-SUFFIX, acuityscheduling.com, PROXY
+   # airasia
+    - DOMAIN-SUFFIX, airasia.ck123.io, PROXY
+    - DOMAIN-SUFFIX, airasia.com, PROXY
+    - DOMAIN-SUFFIX, airasia.gw-dv.vip, PROXY
+    - DOMAIN, payment.airasia.com, PROXY
+    - DOMAIN, payment.apiairasia.com, PROXY
+    - DOMAIN, sso-widget.airasia.com, PROXY
+    - DOMAIN, ssor.airasia.com, PROXY
+    - DOMAIN, static.airasia.com, PROXY
 
    # akamai technologies
     # AS16625 - Akamai Technologies, Inc.
@@ -3149,6 +3198,10 @@ rules:
     # - DOMAIN, feelinsonice-hrd.appspot.com, PROXY
     # - DOMAIN, feelinsonice.appspot.com, PROXY
     # - DOMAIN, sc-analytics.appspot.com, PROXY
+
+   # arkoselabs.com
+    - DOMAIN, client-api.arkoselabs.com, PROXY
+    - DOMAIN, iframe.arkoselabs.com, PROXY
 
    # art19.com
     - DOMAIN-SUFFIX, art19.com, PROXY
@@ -3232,14 +3285,15 @@ rules:
     - DOMAIN-SUFFIX, sourcepointcmp.bloomberg.com, PROXY
 
    # bluehost
-    # bluehost (extra)
-    - DOMAIN-SUFFIX, bluehost.com, PROXY
 
    # BMO
     - DOMAIN-SUFFIX, bmo.com, PROXY
 
    # bmwusa
     - DOMAIN, idresgraph.bmwusa.com, PROXY
+
+   # box.com
+    - DOMAIN-SUFFIX, box.com, PROXY
 
    # brazgovskaia
 
@@ -3276,6 +3330,9 @@ rules:
    # celcius network
     - DOMAIN-SUFFIX, celsius.network, PROXY
     - DOMAIN, g9zdov47b9.execute-api.us-east-1.amazonaws.com, PROXY
+
+   # celebsunmasked.com
+    - DOMAIN-SUFFIX, celebsunmasked.com, PROXY
 
    # character.ai
     - DOMAIN, beta.character.ai, PROXY
@@ -3377,6 +3434,9 @@ rules:
    # corehighered.com
     - DOMAIN-SUFFIX, corehighered.com, PROXY
 
+   # corelogic.com
+    - DOMAIN-SUFFIX, corelogic.com, PROXY
+
    # coze.com
     - DOMAIN-SUFFIX, coze.com, PROXY
 
@@ -3428,7 +3488,13 @@ rules:
     - DOMAIN-SUFFIX, dfas.mil, PROXY
     - DOMAIN-SUFFIX, mypay.dfas.mil, PROXY
 
+   # diamondbackonline.com
+    - DOMAIN-SUFFIX, diamondbackonline.com, PROXY
+
    # dingdatech
+
+   # dirtrab.cl
+    - DOMAIN-SUFFIX, dirtrab.cl, PROXY
 
    # discomax.com
     - DOMAIN-SUFFIX, discomax.com, PROXY
@@ -3702,6 +3768,9 @@ rules:
     # - DOMAIN, dl.google.com, PROXY
     # - DOMAIN, mtalk.google.com, PROXY
 
+   # gotquestions.org
+    - DOMAIN-SUFFIX, gotquestions.org, PROXY
+
    # gov.co
     - DOMAIN-SUFFIX, gov.co, PROXY
 
@@ -3826,9 +3895,6 @@ rules:
    # iscooterglobal.co.uk
     - DOMAIN-SUFFIX, iscooterglobal.co.uk, PROXY
 
-   # isd622.org (extra)
-    - DOMAIN-SUFFIX, isd622.org, PROXY
-
    # istockphoto.com
     - DOMAIN-SUFFIX, istockphoto.com, PROXY
 
@@ -3936,6 +4002,10 @@ rules:
     # - DOMAIN-SUFFIX, line-scdn.net, PROXY
     - DOMAIN-SUFFIX, tlanyan.me, PROXY
     - DOMAIN-SUFFIX, naver.jp, PROXY
+
+   # linkedin
+    - DOMAIN, lnkd.demdex.net, PROXY
+    - DOMAIN, static.licdn.com, PROXY
 
    # linktr
     - DOMAIN-SUFFIX, linktr.ee, PROXY
@@ -4154,6 +4224,9 @@ rules:
     # - DOMAIN-SUFFIX, storage.msn.com, PROXY
     # - DOMAIN, oneclient.sfx.ms, PROXY
 
+   # onehome.com
+    - DOMAIN-SUFFIX, onehome.com, PROXY
+
    # onenetglobal.com
     - DOMAIN-SUFFIX, onenetglobal.com, PROXY
 
@@ -4232,6 +4305,9 @@ rules:
 
     - DOMAIN, philippineairlinesprod.api.useinsider.com, PROXY
     - DOMAIN, zn6euonij6xwfajg5-philippineairlines.site, PROXY
+
+   # pixeldrain.com
+    - DOMAIN-SUFFIX, pixeldrain.com, PROXY
 
    # pmpmanage
     - DOMAIN-SUFFIX, pmpmanage.com, PROXY
@@ -4316,9 +4392,6 @@ rules:
 
    # resi
 
-   # respondus.com (extra)
-    - DOMAIN-SUFFIX, respondus.com, PROXY
-
    # rfihub.com
 
    # roblox
@@ -4375,6 +4448,9 @@ rules:
     # - DOMAIN-SUFFIX, skqsi-my.sharepoint.com, PROXY
 
    # sharethrough.com
+
+   # shodan.io
+    - DOMAIN-SUFFIX, shodan.io, PROXY
 
    # simplemining
     - DOMAIN-SUFFIX, simplemining.net, PROXY
@@ -4452,6 +4528,9 @@ rules:
    # skype.com
     # - DOMAIN-SUFFIX, twskype.com, PROXY
     # - DOMAIN, skype.com, PROXY
+
+   # synchronybank.com
+    - DOMAIN-SUFFIX, synchronybank.com, PROXY
 
   # t
    # taboola.com
@@ -4611,6 +4690,9 @@ rules:
     - DOMAIN-SUFFIX, tuya.com, PROXY
     - DOMAIN-SUFFIX, tuyain.com, PROXY
 
+   # tvlicensing.co.uk
+    - DOMAIN-SUFFIX, tvlicensing.co.uk, PROXY
+
    # tw.tomonews.ne
     - DOMAIN-SUFFIX, tw.tomonews.net, PROXY
 
@@ -4696,6 +4778,9 @@ rules:
 
    # whatsapp
     # - DOMAIN-KEYWORD, .whatsapp, PROXY
+
+   # whoer.net
+    - DOMAIN-SUFFIX, whoer.net, PROXY
 
    # wisconsinregisteredagent.net
     - DOMAIN-SUFFIX, wisconsinregisteredagent.net, PROXY
@@ -12102,207 +12187,207 @@ rules:
     - DOMAIN-SUFFIX, amazonprimevideo.cn, DIRECT
     - DOMAIN-SUFFIX, amazonprimevideo.com.cn, DIRECT
 
-   # private
+   # PRIVATE
     # References:
     # https://www.iana.org/assignments/special-use-domain-names/special-use-domain-names.xhtml
     # https://unix.stackexchange.com/questions/92441/whats-the-difference-between-local-home-and-lan
-    - DOMAIN-KEYWORD, .lan, private
-    - DOMAIN-KEYWORD, .localdomain, private 
+    - DOMAIN-KEYWORD, .lan, PRIVATE
+    - DOMAIN-KEYWORD, .localdomain, PRIVATE 
 
     # https://tools.ietf.org/html/rfc2606
     # https://tools.ietf.org/html/rfc6761
-    - DOMAIN-KEYWORD, .example, private
-    - DOMAIN-KEYWORD, .invalid, private
-    - DOMAIN-KEYWORD, .localhost, private
-    - DOMAIN-KEYWORD, .test, private
+    - DOMAIN-KEYWORD, .example, PRIVATE
+    - DOMAIN-KEYWORD, .invalid, PRIVATE
+    - DOMAIN-KEYWORD, .localhost, PRIVATE
+    - DOMAIN-KEYWORD, .test, PRIVATE
 
     # https://tools.ietf.org/html/rfc6762
-    - DOMAIN-KEYWORD, .local, private
+    - DOMAIN-KEYWORD, .local, PRIVATE
 
     # https://tools.ietf.org/html/rfc8375
-    - DOMAIN-KEYWORD, .home.arpa, private
+    - DOMAIN-KEYWORD, .home.arpa, PRIVATE
 
     # References: https://www.iana.org/assignments/locally-served-dns-zones/locally-served-dns-zones.xhtml
     # https://www.rfc-editor.org/rfc/rfc6303.html
-    - DOMAIN-SUFFIX, 10.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 16.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 17.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 18.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 19.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 20.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 21.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 22.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 23.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 24.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 25.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 26.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 27.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 28.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 29.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 30.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 31.172.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 168.192.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 0.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 127.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 254.169.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 2.0.192.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 100.51.198.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 113.0.203.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 255.255.255.255.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa, private
-    - DOMAIN-SUFFIX, 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa, private
-    - DOMAIN-SUFFIX, d.f.ip6.arpa, private
-    - DOMAIN-SUFFIX, 8.e.f.ip6.arpa, private
-    - DOMAIN-SUFFIX, 9.e.f.ip6.arpa, private
-    - DOMAIN-SUFFIX, a.e.f.ip6.arpa, private
-    - DOMAIN-SUFFIX, b.e.f.ip6.arpa, private
-    - DOMAIN-SUFFIX, 8.b.d.0.1.0.0.2.ip6.arpa, private
+    - DOMAIN-SUFFIX, 10.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 16.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 17.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 18.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 19.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 20.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 21.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 22.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 23.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 24.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 25.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 26.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 27.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 28.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 29.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 30.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 31.172.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 168.192.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 0.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 127.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 254.169.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 2.0.192.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 100.51.198.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 113.0.203.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 255.255.255.255.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa, PRIVATE
+    - DOMAIN-SUFFIX, d.f.ip6.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 8.e.f.ip6.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 9.e.f.ip6.arpa, PRIVATE
+    - DOMAIN-SUFFIX, a.e.f.ip6.arpa, PRIVATE
+    - DOMAIN-SUFFIX, b.e.f.ip6.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 8.b.d.0.1.0.0.2.ip6.arpa, PRIVATE
     
     # https://www.rfc-editor.org/rfc/rfc7793.html
-    - DOMAIN-SUFFIX, 64.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 65.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 66.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 67.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 68.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 69.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 70.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 71.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 72.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 73.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 74.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 75.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 76.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 77.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 78.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 79.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 80.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 81.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 82.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 83.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 84.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 85.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 86.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 87.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 88.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 89.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 90.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 91.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 92.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 93.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 94.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 95.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 96.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 97.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 98.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 99.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 100.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 101.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 102.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 103.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 104.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 105.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 106.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 107.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 108.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 109.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 110.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 111.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 112.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 113.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 114.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 115.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 116.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 117.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 118.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 119.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 120.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 121.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 122.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 123.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 124.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 125.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 126.100.in-addr.arpa, private
-    - DOMAIN-SUFFIX, 127.100.in-addr.arpa, private
+    - DOMAIN-SUFFIX, 64.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 65.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 66.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 67.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 68.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 69.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 70.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 71.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 72.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 73.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 74.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 75.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 76.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 77.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 78.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 79.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 80.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 81.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 82.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 83.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 84.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 85.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 86.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 87.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 88.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 89.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 90.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 91.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 92.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 93.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 94.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 95.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 96.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 97.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 98.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 99.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 100.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 101.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 102.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 103.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 104.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 105.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 106.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 107.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 108.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 109.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 110.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 111.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 112.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 113.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 114.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 115.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 116.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 117.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 118.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 119.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 120.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 121.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 122.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 123.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 124.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 125.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 126.100.in-addr.arpa, PRIVATE
+    - DOMAIN-SUFFIX, 127.100.in-addr.arpa, PRIVATE
 
     # Dotless domains
     # regexp:^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$
 
     # Aruba router
-    - DOMAIN, instant.arubanetworks.com, private
-    - DOMAIN, setmeup.arubanetworks.com, private
+    - DOMAIN, instant.arubanetworks.com, PRIVATE
+    - DOMAIN, setmeup.arubanetworks.com, PRIVATE
 
     # Apple
-    - DOMAIN-SUFFIX, captive.apple.com, private
+    - DOMAIN-SUFFIX, captive.apple.com, PRIVATE
 
     # Android
-    - DOMAIN-SUFFIX, connectivitycheck.gstatic.com, private
+    - DOMAIN-SUFFIX, connectivitycheck.gstatic.com, PRIVATE
 
     # ASUS router
     # Reference: https://www.asus.com/support/FAQ/1005263/
-    - DOMAIN, asusrouter.com, private
-    - DOMAIN, router.asus.com, private
-    - DOMAIN, www.asusrouter.com, private
+    - DOMAIN, asusrouter.com, PRIVATE
+    - DOMAIN, router.asus.com, PRIVATE
+    - DOMAIN, www.asusrouter.com, PRIVATE
 
     # Cloudflare
-    - DOMAIN, cp.cloudflare.com, private
+    - DOMAIN, cp.cloudflare.com, PRIVATE
 
     # Firefox
-    - DOMAIN, detectportal.firefox.com, private
+    - DOMAIN, detectportal.firefox.com, PRIVATE
 
     # KDE
-    - DOMAIN-SUFFIX, networkcheck.kde.org, private
+    - DOMAIN-SUFFIX, networkcheck.kde.org, PRIVATE
 
     # Mozilla Location Service
-    - DOMAIN-SUFFIX, location.services.mozilla.com, private
+    - DOMAIN-SUFFIX, location.services.mozilla.com, PRIVATE
 
     # Netgear router
     # Reference: https://kb.netgear.com/27199/I-can-t-access-my-router-what-do-I-do
     # https://www.netgear.com/business/services/aplogincom/
-    - DOMAIN, routerlogin.com, private
-    - DOMAIN, www.routerlogin.com, private
+    - DOMAIN, routerlogin.com, PRIVATE
+    - DOMAIN, www.routerlogin.com, PRIVATE
 
     # Other router
-    - DOMAIN-SUFFIX, hiwifi.com, private
-    - DOMAIN-SUFFIX, leike.cc, private
-    - DOMAIN-SUFFIX, my.router, private
-    - DOMAIN-SUFFIX, peiluyou.com, private
-    - DOMAIN-SUFFIX, phicomm.me, private
-    - DOMAIN-SUFFIX, router.ctc, private
+    - DOMAIN-SUFFIX, hiwifi.com, PRIVATE
+    - DOMAIN-SUFFIX, leike.cc, PRIVATE
+    - DOMAIN-SUFFIX, my.router, PRIVATE
+    - DOMAIN-SUFFIX, peiluyou.com, PRIVATE
+    - DOMAIN-SUFFIX, phicomm.me, PRIVATE
+    - DOMAIN-SUFFIX, router.ctc, PRIVATE
 
     # Plex Media Server
     # Reference: https://support.plex.tv/articles/206225077-how-to-use-secure-server-connections/
-    - DOMAIN-SUFFIX, plex.direct, private
+    - DOMAIN-SUFFIX, plex.direct, PRIVATE
 
     # QQ SSO for quick login
-    - DOMAIN-SUFFIX, localhost.sec.qq.com, private
-    - DOMAIN-SUFFIX, localhost.ptlogin2.qq.com, private
+    - DOMAIN-SUFFIX, localhost.sec.qq.com, PRIVATE
+    - DOMAIN-SUFFIX, localhost.ptlogin2.qq.com, PRIVATE
 
     # Steam Deck Game mode
-    - DOMAIN-SUFFIX, test.steampowered.com, private
+    - DOMAIN-SUFFIX, test.steampowered.com, PRIVATE
 
     # Tenda router
-    - DOMAIN-SUFFIX, tendawifi.com, private
+    - DOMAIN-SUFFIX, tendawifi.com, PRIVATE
 
     # TP-Link router
     # Reference: https://resource.tp-link.com.cn/m/productClass/product_document?id=1655112502304621
-    - DOMAIN-SUFFIX, tplinkwifi.net, private
-    - DOMAIN, tplogin.cn, private
+    - DOMAIN-SUFFIX, tplinkwifi.net, PRIVATE
+    - DOMAIN, tplogin.cn, PRIVATE
 
     # Windows
-    - DOMAIN-SUFFIX, msftconnecttest.com, private
-    - DOMAIN-SUFFIX, msftncsi.com, private
+    - DOMAIN-SUFFIX, msftconnecttest.com, PRIVATE
+    - DOMAIN-SUFFIX, msftncsi.com, PRIVATE
     
     # Xiaomi router
     # Reference: https://www1.miwifi.com/miwifi_faq.html
-    - DOMAIN, miwifi.com, private
-    - DOMAIN, www.miwifi.com, private
+    - DOMAIN, miwifi.com, PRIVATE
+    - DOMAIN, www.miwifi.com, PRIVATE
 
     # ZTE router
-    - DOMAIN-SUFFIX, zte.home, private
+    - DOMAIN-SUFFIX, zte.home, PRIVATE
 
     # Tailscale Magic DNS
     # Reference: https://tailscale.com/kb/1081/magicdns/#fully-qualified-domain-names-vs-machine-names
-    - DOMAIN-SUFFIX, ts.net, private
+    - DOMAIN-SUFFIX, ts.net, PRIVATE
 
    # projectsekai
 
@@ -35345,7 +35430,7 @@ rules:
     - DOMAIN-SUFFIX, primevideo.org, PROXY
     - DOMAIN-SUFFIX, primevideo.tv, PROXY
 
-   # private
+   # PRIVATE
 
    # projectsekai
     - DOMAIN-SUFFIX, sekai.colorfulpalette.org, PROXY
