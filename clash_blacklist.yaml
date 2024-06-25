@@ -2352,6 +2352,9 @@ rules:
    # chatgpt.com
     - DOMAIN-SUFFIX, chatgpt.com, PROXY
 
+   # charlestoncounty.org
+    - DOMAIN-SUFFIX, charlestoncounty.org, PROXY
+
    # chia
     - DOMAIN-SUFFIX, chia.net, PROXY
     - DOMAIN-SUFFIX, chiacalculator.com, PROXY
