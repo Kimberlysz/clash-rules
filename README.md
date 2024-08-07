@@ -20,8 +20,9 @@
 
 
 # domain rules xray:
-  该存储库主要针对使用Clash核心相关应用程序的用户，例如：Clash for Windows、Clash Verge、ClashX、ClashX.meta等，以及使用Shadowrocket的用户。这是一个域名规则存储库。
-  开始日期：2023年5月30日；仓库项目仍在进行中。
+  该存储库主要针对使用Clash核心相关应用程序的用户，例如：Clash for Windows、Clash meta for android, Clash Verge、ClashX、ClashX.meta、Shadowrocket的用户。这是一个域名规则存储库。
+  开始日期：2023年5月30日；
+  仓库项目状态：仓库项目仍在进行中。
       
   ### clash
   这是基于 Clash 核心的应用程序的配置内容。
