@@ -1,6 +1,7 @@
-# domainRules-xray:
-  This repository is mainly for people who use clash core related application, example: clash for windows, clash verge, clashX, clashX.meta etc and people who use shadowrocket. This is a domain rule repository.
-  Start date: 2023-05-30; the project is still undergoing now.
+# domain rules xray:
+  This repository is mainly for people who use applications related to clash core, example: clash for windows, clash meta for android, clash verge, clashX, clashX.meta, shadowrocket. This is a domain rule repository.
+  Start date: 2023-05-30; 
+  Project status: still undergoing now.
 
   ### clash
   this is the config contents for clash core based applications
