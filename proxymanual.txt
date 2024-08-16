@@ -1,7 +1,8 @@
 payload:
 
  # this file is for clash rule-providers:
-    - '+.aadrm.com'
+    # - '+.'
+    # - ''
  
  # PROXY added manually (test)
 
