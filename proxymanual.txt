@@ -1,4 +1,5 @@
 payload:
+ # this file is for clash rule-providers:
  # PROXY added manually (test)
 
    # Ⓜ️ 微软服务
