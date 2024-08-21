@@ -930,12 +930,8 @@ rules:
 
  # RULE-SET
     - RULE-SET, rejectmanual, 🛑 AdBlock rules
-    - RULE-SET, directmanual, DIRECT
-    - RULE-SET, proxymanual, PROXY
 
     - RULE-SET, rejectmanualrouter, 🛑 AdBlock rules
-    - RULE-SET, directmanualrouter, DIRECT
-    - RULE-SET, proxymanualrouter, PROXY
 
  # 🛑 AdBlock (domain-list-community)
   # #
@@ -1964,6 +1960,13 @@ rules:
    # zynga-ads
     - DOMAIN-SUFFIX, zynga.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, zyngaplayersupport.com, 🛑 AdBlock rules
+
+ # RULE-SET
+    - RULE-SET, directmanual, DIRECT
+    - RULE-SET, proxymanual, PROXY
+
+    - RULE-SET, directmanualrouter, DIRECT
+    - RULE-SET, proxymanualrouter, PROXY
 
  # DIRECT (domain-list-community)
   # #
@@ -38161,7 +38164,7 @@ rules:
  # GEOIP LAN
     # - GEOIP, LAN, DIRECT
 
- # GeoIP China
+ # GeoIP CN
     - GEOIP, CN, DIRECT
 
  # GEOIP !CN
