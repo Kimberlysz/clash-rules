@@ -84,38 +84,38 @@ experimental:
   # '.dev': 127.0.0.1
   # 'alpha.clash.dev': '::1'
 
-# hosts:
-  # 'localhost': 127.0.0.1
-  # 'router.asus.com': 10.0.0.1
-  # 'time.android.com': 203.107.6.88
-  # 'ipv6.msftconnecttest.com': '2a01:111:2003::52'
-  # 'www.msftconnecttest.com': 13.107.4.52
-  # 'cloudflare-dns.com': 1.0.0.1
-  # 'dns.alidns.com': 233.5.5.5
-  # 'doh.pub': 119.29.29.29
-  # 'dns.google': 8.8.8.8
-
-  # qqmail
+hosts:
+  'localhost': 127.0.0.1
+  'router.asus.com': 10.0.0.1
+  'time.android.com': 203.107.6.88
+  'ipv6.msftconnecttest.com': '2a01:111:2003::52'
+  'www.msftconnecttest.com': 13.107.4.52
+  'cloudflare-dns.com': 1.0.0.1
+  'dns.alidns.com': 233.5.5.5
+  'doh.pub': 119.29.29.29
+  'dns.google': 8.8.8.8
+ # qqmail
   # 'ssl.ptlogin2.mail.qq.com': 220.194.117.167
   # 'dns167.online.tj.cn': 220.194.117.167
   # 'sz.btfs.mail.ftn.qq.com': 112.90.80.187
 
-# profile:
+profile:
   # Store the `select` results in $HOME/.config/clash/.cache
   # set false If you don't want this behavior
   # when two different configurations have groups with the same name, the selected values are shared
+  
   # store-selected: true
-
   store-selected: false
 
   # persistence fakeip
-  # store-fake-ip: false
 
+  # store-fake-ip: false
   store-fake-ip: true
 
-# DNS server settings
-# This section is optional. When not present, the DNS server will be disabled.
 dns:
+  # DNS server settings
+  # This section is optional. When not present, the DNS server will be disabled.
+
   enable: true
   listen: 0.0.0.0:53
   # ipv6: false # when the false, response to AAAA questions will be empty
@@ -422,16 +422,18 @@ dns:
     #   ## 且 behavior 必须为 domain/classical，当为 classical 时仅会生效域名类规则
     #   # "rule-set:global, dns": 8.8.8.8
 
-hosts:
-  'localhost': 127.0.0.1
-  'router.asus.com': 10.0.0.1
-  'time.android.com': 203.107.6.88
-  'ipv6.msftconnecttest.com': '2a01:111:2003::52'
-  'www.msftconnecttest.com': 13.107.4.52
-  'cloudflare-dns.com': 1.0.0.1
-  'dns.alidns.com': 233.5.5.5
-  'doh.pub': 119.29.29.29
-  'dns.google': 8.8.8.8
+# tun:
+  # enable: true
+  # stack: system # or gvisor
+  # # dns-hijack:
+  # #   - 8.8.8.8:53
+  # #   - tcp://8.8.8.8:53
+  # #   - any:53
+  # #   - tcp://any:53
+  # auto-route: true
+  # auto-detect-interface: true
+
+
 
 # anchorA: clash meta rules
   # following contetns are based on clash meta rules
@@ -450,6 +452,15 @@ geox-url:
   geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
   geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
   mmdb: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb"
+
+  # asn: "https://fastly.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb"
+  # geoip: "https://fastly.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
+  # geosite: "https://fastly.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
+  # mmdb: "https://fastly.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb"
+
+  # geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+  # geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+  # mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
 
 # tls:
   # certificate: string # 证书 PEM 格式，或者 证书的路径
@@ -707,7 +718,7 @@ proxy-groups:
   - name: lowest latency (最低延迟)
     type: url-test
     url: https://www.google.com/generate_204
-    interval: 300
+    interval: 86400
     tolerance: 50
     proxies:
       - userAccount1
@@ -723,7 +734,7 @@ proxy-groups:
   - name: failure switch (故障切换)
     type: fallback
     url: https://www.google.com/generate_204
-    interval: 300
+    interval: 86400
     proxies:
       - userAccount1
       - userAccount2
@@ -739,7 +750,7 @@ proxy-groups:
     type: load-balance
     strategy: consistent-hashing
     url: https://www.google.com/generate_204
-    interval: 300
+    interval: 86400
     proxies:
       - userAccount1
       - userAccount2
@@ -889,49 +900,58 @@ rule-providers:
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/rejectManual.txt"
     path: ./ruleset/rejectmanual.yaml
-    interval: 86400
+    interval: 21600
 
   directmanual:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/directManual.txt"
     path: ./ruleset/directmanual.yaml
-    interval: 86400
+    interval: 21600
 
   proxymanual:
     type: http
     behavior: domain
+    # url: https://raw.githubusercontent.com/Kimberlysz/clash-rules/release/proxyManual.txt
     url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/proxyManual.txt"
     path: ./ruleset/proxymanual.yaml
-    interval: 86400
+    interval: 21600
 
   rejectmanualrouter:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/rejectManual.txt"
     path: ./rule_provider/rejectmanualrouter.yaml
-    interval: 86400
+    interval: 21600
 
   directmanualrouter:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/directManual.txt"
     path: ./rule_provider/directmanualrouter.yaml
-    interval: 86400
+    interval: 21600
 
   proxymanualrouter:
     type: http
     behavior: domain
+    # url: https://raw.githubusercontent.com/Kimberlysz/clash-rules/release/proxyManual.txt
     url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/proxyManual.txt"
     path: ./rule_provider/proxymanualrouter.yaml
-    interval: 86400
+    interval: 21600
 
 rules:
 
- # RULE-SET
+ # RULE-SET-clash
     - RULE-SET, rejectmanual, 🛑 AdBlock rules
-
     - RULE-SET, rejectmanualrouter, 🛑 AdBlock rules
+
+ # DOMAIN-SET-shadowrocket
+    # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/directDomainset.txt, direct
+    # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/proxyDomainset.txt, proxy, force-remote-dns
+
+ # RULE-SET-shadowrocket
+    # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/directRuleset.txt, direct
+    # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/proxyRuleset.txt, proxy, force-remote-dns
 
  # 🛑 AdBlock (domain-list-community)
   # #
@@ -1961,12 +1981,20 @@ rules:
     - DOMAIN-SUFFIX, zynga.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, zyngaplayersupport.com, 🛑 AdBlock rules
 
- # RULE-SET
+ # RULE-SET-clash
     - RULE-SET, directmanual, DIRECT
     - RULE-SET, proxymanual, PROXY
 
     - RULE-SET, directmanualrouter, DIRECT
     - RULE-SET, proxymanualrouter, PROXY
+
+ # DOMAIN-SET-shadowrocket
+    # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/directDomainset.txt, direct
+    # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/proxyDomainset.txt, proxy, force-remote-dns
+
+ # RULE-SET-shadowrocket
+    # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/directRuleset.txt, direct
+    # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/proxyRuleset.txt, proxy, force-remote-dns
 
  # DIRECT (domain-list-community)
   # #
@@ -2456,61 +2484,86 @@ rules:
     - DOMAIN-SUFFIX, apifox.com, DIRECT
 
    # apple
-    - DOMAIN-SUFFIX, apple.cn, DIRECT
-    - DOMAIN-SUFFIX, apple.com.cn, DIRECT
+    - DOMAIN, apple.cn, DIRECT
+    - DOMAIN, apple.com.cn, DIRECT
 
     # Apple Store
-    - DOMAIN-SUFFIX, apple-store.cn, DIRECT
-    - DOMAIN-SUFFIX, applestore.cn, DIRECT
-    - DOMAIN-SUFFIX, applestore.com.cn, DIRECT
+    - DOMAIN, apple-store.cn, DIRECT
+    - DOMAIN, applestore.cn, DIRECT
+    - DOMAIN, applestore.com.cn, DIRECT
 
     # App Store
-    - DOMAIN-SUFFIX, apple-appstore.cn, DIRECT
-    - DOMAIN-SUFFIX, appleappstore.cn, DIRECT
-    - DOMAIN-SUFFIX, appstoreapple.cn, DIRECT
+    - DOMAIN, apple-appstore.cn, DIRECT
+    - DOMAIN, appleappstore.cn, DIRECT
+    - DOMAIN, appstoreapple.cn, DIRECT
+
+    # iMac
+
+    # iPad
 
     # iPhone
-    - DOMAIN-SUFFIX, iphone-8.com.cn, DIRECT
+    - DOMAIN, iphone-8.com.cn, DIRECT
 
     # iPod
-    - DOMAIN-SUFFIX, ipod.com.cn, DIRECT
+    - DOMAIN, ipod.com.cn, DIRECT
 
     # MacBook
-    - DOMAIN-SUFFIX, macbookair.cn, DIRECT
-    - DOMAIN-SUFFIX, macbookair.com.cn, DIRECT
+    - DOMAIN, macbookair.cn, DIRECT
+    - DOMAIN, macbookair.com.cn, DIRECT
+
+    # Apple Watch
+
+    # Apple Music
+
+    # Apple News
 
     # Apple Pay
-    - DOMAIN-SUFFIX, applepaycash.cn, DIRECT
-    - DOMAIN-SUFFIX, applepaycash.com.cn, DIRECT
-    - DOMAIN-SUFFIX, applepaysupplies.cn, DIRECT
-    - DOMAIN-SUFFIX, applepaysupplies.com.cn, DIRECT
+    - DOMAIN, applepaycash.cn, DIRECT
+    - DOMAIN, applepaycash.com.cn, DIRECT
+    - DOMAIN, applepaysupplies.cn, DIRECT
+    - DOMAIN, applepaysupplies.com.cn, DIRECT
+
+    # iBook
+
+    # iPhoto
+
+    # iMovie
+
+    # Apple Care
+
+    # macOS
+
+    # Apple ID
 
     # Apple TV
-    - DOMAIN-SUFFIX, appletv4.cn, DIRECT
-    - DOMAIN-SUFFIX, appletv4.com.cn, DIRECT
+    - DOMAIN, appletv4.cn, DIRECT
+    - DOMAIN, appletv4.com.cn, DIRECT
+
+    # Apple One
+
+    # Shazam
 
     # Others
-    - DOMAIN-SUFFIX, apple-dns.cn, DIRECT
-    - DOMAIN-SUFFIX, apple-dns.com.cn, DIRECT
-    - DOMAIN-SUFFIX, apple-ibooks.cn, DIRECT
-    - DOMAIN-SUFFIX, apple-maps.cn, DIRECT
-    - DOMAIN-SUFFIX, applecenter.cn, DIRECT
-    - DOMAIN-SUFFIX, applecenter.com.cn, DIRECT
-    - DOMAIN-SUFFIX, applecomputer.cn, DIRECT
-    - DOMAIN-SUFFIX, applecomputer.com.cn, DIRECT
-    - DOMAIN-SUFFIX, appledns.cn, DIRECT
-    - DOMAIN-SUFFIX, appledns.com.cn, DIRECT
-    - DOMAIN-SUFFIX, applesiri.cn, DIRECT
-    - DOMAIN-SUFFIX, ecgapp.com.cn, DIRECT
-    - DOMAIN-SUFFIX, faceshift.cn, DIRECT
-    - DOMAIN-SUFFIX, homepod.cn, DIRECT
-    - DOMAIN-SUFFIX, insidear.cn, DIRECT
-    - DOMAIN-SUFFIX, livephotos.cn, DIRECT
-    - DOMAIN-SUFFIX, livephotos.com.cn, DIRECT
-    
-    - DOMAIN-SUFFIX, xn--czrs0t4phtr3a.cn, DIRECT # 苹果商店.cn
-    - DOMAIN-SUFFIX, xn--fiqs8sxootzz.cn, DIRECT # 苹果中国.cn
-    - DOMAIN-SUFFIX, xn--ohq11k7pl25iyo8a.cn, DIRECT # 苹果专卖店.cn
+    - DOMAIN, apple-dns.cn, DIRECT
+    - DOMAIN, apple-dns.com.cn, DIRECT
+    - DOMAIN, apple-ibooks.cn, DIRECT
+    - DOMAIN, apple-maps.cn, DIRECT
+    - DOMAIN, applecenter.cn, DIRECT
+    - DOMAIN, applecenter.com.cn, DIRECT
+    - DOMAIN, applecomputer.cn, DIRECT
+    - DOMAIN, applecomputer.com.cn, DIRECT
+    - DOMAIN, appledns.cn, DIRECT
+    - DOMAIN, appledns.com.cn, DIRECT
+    - DOMAIN, applesiri.cn, DIRECT
+    - DOMAIN, ecgapp.com.cn, DIRECT
+    - DOMAIN, faceshift.cn, DIRECT
+    - DOMAIN, homepod.cn, DIRECT
+    - DOMAIN, insidear.cn, DIRECT
+    - DOMAIN, livephotos.cn, DIRECT
+    - DOMAIN, livephotos.com.cn, DIRECT
+    - DOMAIN, xn--czrs0t4phtr3a.cn, DIRECT # 苹果商店.cn
+    - DOMAIN, xn--fiqs8sxootzz.cn, DIRECT # 苹果中国.cn
+    - DOMAIN, xn--ohq11k7pl25iyo8a.cn, DIRECT # 苹果专卖店.cn
 
     # Domains and services below are available in China mainland
     # Use in config file like this: "geosite:apple@cn"
@@ -2519,9 +2572,11 @@ rules:
     - DOMAIN, amp-api-edge.apps.apple.com, DIRECT
     - DOMAIN, amp-api-search-edge.apps.apple.com, DIRECT
     - DOMAIN, amp-api.apps.apple.com, DIRECT
+    - DOMAIN, amp-api.music.apple.com, DIRECT
     - DOMAIN, aod.itunes.apple.com, DIRECT
     - DOMAIN, api-edge.apps.apple.com, DIRECT
     - DOMAIN, apptrailers.itunes.apple.com, DIRECT
+    - DOMAIN, auth.music.apple.com, DIRECT
     - DOMAIN, bag.itunes.apple.com, DIRECT
     - DOMAIN, bookkeeper.itunes.apple.com, DIRECT
     - DOMAIN, client-api.itunes.apple.com, DIRECT
@@ -2536,16 +2591,21 @@ rules:
     - DOMAIN, inappcheck-cn.itunes-apple.com.akadns.net, DIRECT
     - DOMAIN, inappcheck-lb.itunes-apple.com.akadns.net, DIRECT
     - DOMAIN, inappcheck.itunes.apple.com, DIRECT
-    - DOMAIN, init.itunes.apple.com, DIRECT
     - DOMAIN, init.gc-lb.apple.com.akadns.net, DIRECT
     - DOMAIN, init.gc.apple.com, DIRECT
+    - DOMAIN, init.itunes.apple.com, DIRECT
     - DOMAIN, iosapps.itunes.apple.com, DIRECT
     - DOMAIN, js-cdn.music.apple.com, DIRECT
     - DOMAIN, km.support.apple.com, DIRECT
     - DOMAIN, maps.apple.com, DIRECT
+    - DOMAIN, misc-assets.itunes.apple.com, DIRECT
+    - DOMAIN, myapp.itunes.apple.com, DIRECT
+    - DOMAIN, np-edge.itunes.apple.com, DIRECT
     - DOMAIN, osxapps.itunes.apple.com, DIRECT
+    - DOMAIN, pd-nk.itunes.apple.com, DIRECT
     - DOMAIN, pd.itunes.apple.com, DIRECT
     - DOMAIN, play.itunes.apple.com, DIRECT
+    - DOMAIN, play.music.apple.com, DIRECT
     - DOMAIN, se-edge.itunes.apple.com, DIRECT
     - DOMAIN, se2.itunes.apple.com, DIRECT
     - DOMAIN, search.itunes.apple.com, DIRECT
@@ -2554,9 +2614,10 @@ rules:
     - DOMAIN, streamingaudio.itunes.apple.com, DIRECT
     - DOMAIN, su.itunes.apple.com, DIRECT
     - DOMAIN, sync.itunes.apple.com, DIRECT
+    - DOMAIN, tf-feedback.itunes.apple.com, DIRECT
     - DOMAIN, upp.itunes.apple.com, DIRECT
-    
-    # below are for match rules
+    - DOMAIN, www.support.apple.com, DIRECT
+
     # regexp:^a[1-5]\.mzstatic\.com$ @cn
     # regexp:^cdn(-cn)?[1-4]?\.apple-mapkit\.com$ @cn
     # regexp:^cl[1-5]-cdn\.origin-apple\.com\.akadns\.net$ @cn
@@ -2565,16 +2626,15 @@ rules:
     # regexp:^s[1-5]?\.mzstatic\.com$ @cn
 
     # The rules below are from https://github.com/felixonmars/dnsmasq-china-list/blob/master/apple.china.conf
-    # Revision: 8def8312efc8b0c22ca35658614fd63388ff56c7
+    # Revision: e54aa75ca9c6567ac5b67093e5471eb1c8041e86
     # Use in config file like this: "geosite:apple@cn"
-    # According to the consensus in #503, do not include the domain name apps.apple.com directly.
     - DOMAIN, a1.mzstatic.com, DIRECT
     - DOMAIN, a2.mzstatic.com, DIRECT
     - DOMAIN, a3.mzstatic.com, DIRECT
     - DOMAIN, a4.mzstatic.com, DIRECT
     - DOMAIN, a5.mzstatic.com, DIRECT
-    - DOMAIN, adcdownload.apple.com.akadns.net, DIRECT
     - DOMAIN, adcdownload.apple.com, DIRECT
+    - DOMAIN, adcdownload.apple.com.akadns.net, DIRECT
     - DOMAIN, amp-api.media.apple.com, DIRECT
     - DOMAIN, api-p-ap-c.smoot.apple.com, DIRECT
     - DOMAIN, api-p-ap-d.smoot.apple.com, DIRECT
@@ -2583,6 +2643,7 @@ rules:
     - DOMAIN, appldnld.apple.com, DIRECT
     - DOMAIN, appldnld.g.aaplimg.com, DIRECT
     - DOMAIN, appleid.cdn-apple.com, DIRECT
+    # According to the consensus in #503, do not include the domain name apps.apple.com directly.
     - DOMAIN, apps.mzstatic.com, DIRECT
     - DOMAIN, cdn-cn1.apple-mapkit.com, DIRECT
     - DOMAIN, cdn-cn2.apple-mapkit.com, DIRECT
@@ -2594,8 +2655,8 @@ rules:
     - DOMAIN, cdn3.apple-mapkit.com, DIRECT
     - DOMAIN, cdn4.apple-mapkit.com, DIRECT
     - DOMAIN, cds-cdn.v.aaplimg.com, DIRECT
-    - DOMAIN, cds.apple.com.akadns.net, DIRECT
     - DOMAIN, cds.apple.com, DIRECT
+    - DOMAIN, cds.apple.com.akadns.net, DIRECT
     - DOMAIN, cdsassets.apple.com, DIRECT
     - DOMAIN, cl1-cdn.origin-apple.com.akadns.net, DIRECT
     - DOMAIN, cl1.apple.com, DIRECT
@@ -2608,11 +2669,11 @@ rules:
     - DOMAIN, cl4.apple.com, DIRECT
     - DOMAIN, cl5-cdn.origin-apple.com.akadns.net, DIRECT
     - DOMAIN, cl5.apple.com, DIRECT
-    - DOMAIN, clientflow.apple.com.akadns.net, DIRECT
     - DOMAIN, clientflow.apple.com, DIRECT
+    - DOMAIN, clientflow.apple.com.akadns.net, DIRECT
     - DOMAIN, cn-smp-paymentservices.apple.com, DIRECT
-    - DOMAIN, configuration.apple.com.akadns.net, DIRECT
     - DOMAIN, configuration.apple.com, DIRECT
+    - DOMAIN, configuration.apple.com.akadns.net, DIRECT
     - DOMAIN, cstat.apple.com, DIRECT
     - DOMAIN, cstat.cdn-apple.com, DIRECT
     - DOMAIN, dd-cdn.origin-apple.com.akadns.net, DIRECT
@@ -2624,9 +2685,9 @@ rules:
     - DOMAIN, gsp10-ssl-cn.ls.apple.com, DIRECT
     - DOMAIN, gsp12-cn.ls.apple.com, DIRECT
     - DOMAIN, gsp13-cn.ls.apple.com, DIRECT
-    - DOMAIN, gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net, DIRECT
-    - DOMAIN, gsp4-cn.ls.apple.com.edgekey.net, DIRECT
     - DOMAIN, gsp4-cn.ls.apple.com, DIRECT
+    - DOMAIN, gsp4-cn.ls.apple.com.edgekey.net, DIRECT
+    - DOMAIN, gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net, DIRECT
     - DOMAIN, gsp5-cn.ls.apple.com, DIRECT
     - DOMAIN, gsp85-cn-ssl.ls.apple.com, DIRECT
     - DOMAIN, gspe19-2-cn-ssl.ls.apple.com, DIRECT
@@ -2640,12 +2701,12 @@ rules:
     - DOMAIN, guzzoni-apple-com.v.aaplimg.com, DIRECT
     - DOMAIN, guzzoni.apple.com, DIRECT
     - DOMAIN, guzzoni.smoot.apple.com, DIRECT
-    - DOMAIN, iadsdk.apple.com, DIRECT
+    #     - DOMAIN, iadsdk.apple.com has already been defined in apple-ads
     - DOMAIN, icloud-cdn.icloud.com.akadns.net, DIRECT
     - DOMAIN, icloud.cdn-apple.com, DIRECT
+    - DOMAIN, images.apple.com, DIRECT
     - DOMAIN, images.apple.com.akadns.net, DIRECT
     - DOMAIN, images.apple.com.edgekey.net.globalredir.akadns.net, DIRECT
-    - DOMAIN, images.apple.com, DIRECT
     - DOMAIN, init-kt.apple.com, DIRECT
     - DOMAIN, init-p01md-lb.push-apple.com.akadns.net, DIRECT
     - DOMAIN, init-p01md.apple.com, DIRECT
@@ -2678,6 +2739,7 @@ rules:
     - DOMAIN, music.apple.com, DIRECT
     - DOMAIN, ocsp-lb.apple.com.akadns.net, DIRECT
     - DOMAIN, ocsp.apple.com, DIRECT
+    - DOMAIN, ocsp2-lb.apple.com.akadns.net, DIRECT
     - DOMAIN, ocsp2.apple.com, DIRECT
     - DOMAIN, oscdn.apple.com, DIRECT
     - DOMAIN, oscdn.origin-apple.com.akadns.net, DIRECT
@@ -2700,9 +2762,9 @@ rules:
     - DOMAIN, static.gc.apple.com, DIRECT
     - DOMAIN, stocks-sparkline-lb.apple.com.akadns.net, DIRECT
     - DOMAIN, stocks-sparkline.apple.com, DIRECT
-    - DOMAIN, store.apple.com.edgekey.net.globalredir.akadns.net, DIRECT
-    - DOMAIN, store.apple.com.edgekey.net, DIRECT
     - DOMAIN, store.apple.com, DIRECT
+    - DOMAIN, store.apple.com.edgekey.net, DIRECT
+    - DOMAIN, store.apple.com.edgekey.net.globalredir.akadns.net, DIRECT
     - DOMAIN, store.storeimages.apple.com.akadns.net, DIRECT
     - DOMAIN, store.storeimages.cdn-apple.com, DIRECT
     - DOMAIN, support-china.apple-support.akadns.net, DIRECT
@@ -2713,25 +2775,25 @@ rules:
     - DOMAIN, swcatalog.apple.com, DIRECT
     - DOMAIN, swcdn.apple.com, DIRECT
     - DOMAIN, swcdn.g.aaplimg.com, DIRECT
-    - DOMAIN, swdist.apple.com.akadns.net, DIRECT
     - DOMAIN, swdist.apple.com, DIRECT
+    - DOMAIN, swdist.apple.com.akadns.net, DIRECT
     - DOMAIN, swscan-cdn.apple.com.akadns.net, DIRECT
     - DOMAIN, swscan.apple.com, DIRECT
     - DOMAIN, sylvan.apple.com, DIRECT
     - DOMAIN, tj-pod1-smp-device.apple.com, DIRECT
-    - DOMAIN, updates-http.cdn-apple.com.akadns.net, DIRECT
     - DOMAIN, updates-http.cdn-apple.com, DIRECT
+    - DOMAIN, updates-http.cdn-apple.com.akadns.net, DIRECT
     - DOMAIN, updates.cdn-apple.com, DIRECT
     - DOMAIN, valid.apple.com, DIRECT
     - DOMAIN, valid.origin-apple.com.akadns.net, DIRECT
-    - DOMAIN, weather-data.apple.com.akadns.net, DIRECT
     - DOMAIN, weather-data.apple.com, DIRECT
+    - DOMAIN, weather-data.apple.com.akadns.net, DIRECT
     - DOMAIN, weather-map.apple.com, DIRECT
     - DOMAIN, weather-map2.apple.com, DIRECT
     - DOMAIN, weatherkit.apple.com, DIRECT
-    - DOMAIN, www.apple.com.edgekey.net.globalredir.akadns.net, DIRECT
-    - DOMAIN, www.apple.com.edgekey.net, DIRECT
     - DOMAIN, www.apple.com, DIRECT
+    - DOMAIN, www.apple.com.edgekey.net, DIRECT
+    - DOMAIN, www.apple.com.edgekey.net.globalredir.akadns.net, DIRECT
     - DOMAIN, xp.apple.com, DIRECT
 
    # apple-dev
@@ -4250,7 +4312,7 @@ rules:
     # Use to make them direct connections so they open inside Iran
 
     # Iran TLDs
-    - DOMAIN-KEYWORD, .ir, DIRECT
+    # - DOMAIN-KEYWORD, .ir, DIRECT
     - DOMAIN-SUFFIX, xn--mgba3a4f16a, DIRECT # .ایران
     - DOMAIN-SUFFIX, xn--mgba3a4fra, DIRECT # .ايران
 
@@ -7717,6 +7779,7 @@ rules:
     - DOMAIN-SUFFIX, abhouses.com, DIRECT
     - DOMAIN-SUFFIX, agconnect.link, DIRECT
     - DOMAIN-SUFFIX, dbank.com, DIRECT
+    - DOMAIN-SUFFIX, dbankcdn.cn, DIRECT
     - DOMAIN-SUFFIX, dbankcdn.com, DIRECT
     - DOMAIN-SUFFIX, dbankcloud.com, DIRECT
     # - DOMAIN-SUFFIX, harmonyos.com, DIRECT
@@ -11457,6 +11520,7 @@ rules:
     - DOMAIN-SUFFIX, abema.io, PROXY
     - DOMAIN-SUFFIX, abema.tv, PROXY
     - DOMAIN-SUFFIX, abema-tv.com, PROXY
+    - DOMAIN-SUFFIX, abematv.co.jp, PROXY
     - DOMAIN-SUFFIX, adx.promo, PROXY
     - DOMAIN-SUFFIX, ameba.jp, PROXY
     - DOMAIN-SUFFIX, amebame.com, PROXY
@@ -12241,6 +12305,8 @@ rules:
     # include:swift
 
     # All .apple domains
+    # - DOMAIN-KEYWORD, .apple, PROXY
+
     - DOMAIN-SUFFIX, apple.ae, PROXY
     - DOMAIN-SUFFIX, apple.at, PROXY
     - DOMAIN-SUFFIX, apple.be, PROXY
@@ -12329,14 +12395,8 @@ rules:
     - DOMAIN-SUFFIX, apple.tw, PROXY
     - DOMAIN-SUFFIX, apple.uk, PROXY
     - DOMAIN-SUFFIX, apple.us, PROXY
-
-    # - DOMAIN-KEYWORD, .apple, PROXY
-
-    # apple.商标
-    - DOMAIN-SUFFIX, apple.xn--czr694b, PROXY
-    
-    # apple.中国
-    - DOMAIN-SUFFIX, apple.xn--fiqs8s, PROXY
+    - DOMAIN-SUFFIX, apple.xn--czr694b, PROXY # apple.商标
+    - DOMAIN-SUFFIX, apple.xn--fiqs8s, PROXY # apple.中国
     - DOMAIN-SUFFIX, apple.xyz, PROXY
 
     # Apple Store
@@ -12696,7 +12756,7 @@ rules:
     # Shazam
     - DOMAIN-SUFFIX, shazam.com, PROXY
 
-    # Apple Others
+    # Others
     - DOMAIN-SUFFIX, 1to1computing.com.au, PROXY
     - DOMAIN-SUFFIX, 1to1conference.com.au, PROXY
     - DOMAIN-SUFFIX, 5lml.com, PROXY
@@ -12729,7 +12789,7 @@ rules:
     - DOMAIN-SUFFIX, apple-expo.eu, PROXY
     - DOMAIN-SUFFIX, apple-hk.com, PROXY
     - DOMAIN-SUFFIX, apple-inc.net, PROXY
-    # - DOMAIN-SUFFIX, apple-livephotoskit.com, PROXY
+    - DOMAIN-SUFFIX, apple-livephotoskit.com, PROXY
     - DOMAIN-SUFFIX, apple-online.com, PROXY
     - DOMAIN-SUFFIX, apple-usa.net, PROXY
     - DOMAIN-SUFFIX, appleafrica.com, PROXY
@@ -12930,21 +12990,13 @@ rules:
     - DOMAIN-SUFFIX, wwwapple.com, PROXY
     - DOMAIN-SUFFIX, wwwapple.net, PROXY
     - DOMAIN-SUFFIX, wwwlapple.com, PROXY
-
-    # 苹果中国.网店
-    - DOMAIN-SUFFIX, xn--fiqs8sxootzz.xn--hxt814e, PROXY
-    # 苹果电脑.网店
-    - DOMAIN-SUFFIX, xn--gtvq61aiijy0b.xn--hxt814e, PROXY
-    # 苹果.wang
-    - DOMAIN-SUFFIX, xn--gtvz22d.wang, PROXY
-    # 苹果.网店
-    - DOMAIN-SUFFIX, xn--gtvz22d.xn--hxt814e, PROXY
-    # 苹果店.商标
-    - DOMAIN-SUFFIX, xn--hxtr4rozx.xn--czr694b, PROXY
-    # 苹果手机.网店
-    - DOMAIN-SUFFIX, xn--kput3imi374g.xn--hxt814e, PROXY
-    # 苹果保修.网店
-    - DOMAIN-SUFFIX, xn--ruq8a011kt6y.xn--hxt814e, PROXY
+    - DOMAIN-SUFFIX, xn--fiqs8sxootzz.xn--hxt814e, PROXY # 苹果中国.网店
+    - DOMAIN-SUFFIX, xn--gtvq61aiijy0b.xn--hxt814e, PROXY # 苹果电脑.网店
+    - DOMAIN-SUFFIX, xn--gtvz22d.wang, PROXY # 苹果.wang
+    - DOMAIN-SUFFIX, xn--gtvz22d.xn--hxt814e, PROXY # 苹果.网店
+    - DOMAIN-SUFFIX, xn--hxtr4rozx.xn--czr694b, PROXY # 苹果店.商标
+    - DOMAIN-SUFFIX, xn--kput3imi374g.xn--hxt814e, PROXY # 苹果手机.网店
+    - DOMAIN-SUFFIX, xn--ruq8a011kt6y.xn--hxt814e, PROXY # 苹果保修.网店
 
     - DOMAIN, apple.com.akadns.net, PROXY
     - DOMAIN, courier-push-apple.com.akadns.net, PROXY
@@ -16096,6 +16148,27 @@ rules:
     # Resource sharing
     - DOMAIN-SUFFIX, bowlroll.net, PROXY
 
+   # category-ai-chat-!cn
+    # include:anthropic
+    # include:google-gemini
+    # include:openai
+    # include:perplexity
+    # include:poe
+    # include:xai
+
+    # Jasper
+    - DOMAIN-SUFFIX, clipdrop.co, PROXY
+    - DOMAIN-SUFFIX, jasper.ai, PROXY
+
+    # NotebookLM
+    - DOMAIN-SUFFIX, notebooklm.google, PROXY
+    - DOMAIN-SUFFIX, notebooklm.google.com, PROXY
+
+    - DOMAIN-SUFFIX, dify.ai, PROXY
+    - DOMAIN-SUFFIX, gateway.ai.cloudflare.com, PROXY
+    - DOMAIN-SUFFIX, meta.ai, PROXY
+    - DOMAIN-SUFFIX, openart.ai, PROXY
+
    # category-anticensorship
     # include:category-ipfs
     # include:ceno
@@ -16266,6 +16339,7 @@ rules:
     # include:alibabacloud
     # include:amazon
     # include:amd
+    # include:anthropic
     # include:apple
     # include:asus
     # include:atlassian
@@ -16336,6 +16410,7 @@ rules:
     # include:vultr
     # include:westerndigital
     # include:wisekey
+    # include:xai
     # include:yahoo
     # include:yandex
 
@@ -23133,7 +23208,6 @@ rules:
     # include:mongodb
     # include:nginx
     # include:nixos
-    # include:openai
     # include:openwrt
     # include:osdn
     # include:perl
@@ -26752,6 +26826,9 @@ rules:
    # geolocation-!cn
     # This list contains domains that don't have access point in China mainland. This is opposite to geolocation-cn.
 
+    # AI Chat
+      # include:category-ai-chat-!cn
+
     # Anime, Comics & Games
       # include:category-acg
 
@@ -27223,7 +27300,7 @@ rules:
     # include:flutter
     # include:golang
     # include:google-ads
-    # include:google-gemini
+    # include:google-deepmind
     # include:google-registry
     # include:google-scholar
     # include:google-trust-services
@@ -27529,7 +27606,6 @@ rules:
     - DOMAIN-SUFFIX, dataliberation.org, PROXY
     - DOMAIN-SUFFIX, debug.com, PROXY
     - DOMAIN-SUFFIX, debugproject.com, PROXY
-    - DOMAIN-SUFFIX, deepmind.com, PROXY
     - DOMAIN-SUFFIX, devsitetest.how, PROXY
     - DOMAIN-SUFFIX, dialogflow.com, PROXY
     - DOMAIN-SUFFIX, digitalassetlinks.org, PROXY
@@ -27749,14 +27825,31 @@ rules:
     - DOMAIN-SUFFIX, xplr.co, PROXY
     - DOMAIN-SUFFIX, zukunftswerkstatt.de, PROXY
 
-   # google-gemini
-    # A list of domains for Google Gemini(or Google AI).
+   # google-deepmind
+    # Google DeepMind
+    - DOMAIN-SUFFIX, deepmind.com, PROXY
+    - DOMAIN-SUFFIX, deepmind.google, PROXY
 
-    - DOMAIN-SUFFIX, gemini.google.com, PROXY
-    - DOMAIN-SUFFIX, ai.google.dev, PROXY
-    - DOMAIN-SUFFIX, aistudio.google.com, PROXY
+    # Google Generative Language API
+    - DOMAIN-SUFFIX, geller-pa.googleapis.com, PROXY
     - DOMAIN-SUFFIX, generativelanguage.googleapis.com, PROXY
-    - DOMAIN-SUFFIX, alkalimakersuite-pa.clients6.google.com, PROXY
+    - DOMAIN-SUFFIX, proactivebackend-pa.googleapis.com, PROXY
+
+    # Google AI Studio
+    - DOMAIN, ai.google.dev, PROXY
+    - DOMAIN, alkalicore-pa.clients6.google.com, PROXY
+    - DOMAIN, alkalimakersuite-pa.clients6.google.com, PROXY
+    - DOMAIN-SUFFIX, generativeai.google, PROXY
+    - DOMAIN-SUFFIX, makersuite.google.com, PROXY
+
+    - DOMAIN-SUFFIX, aistudio.google.com, PROXY
+    - DOMAIN-SUFFIX, bard.google.com, PROXY
+    - DOMAIN-SUFFIX, gemini.google.com, PROXY
+
+   # google-gemini
+    # This list is for backward compatibility
+
+    # include:google-deepmind
 
    # google-registry
     - DOMAIN-SUFFIX, charlestonroadregistry.com, PROXY
@@ -28553,7 +28646,7 @@ rules:
     - DOMAIN-KEYWORD, .weatherchannel, PROXY
 
     # All .weather domains
-    - DOMAIN-KEYWORD, .weather, PROXY
+    # - DOMAIN-KEYWORD, .weather, PROXY
 
     - DOMAIN-SUFFIX, appdomain.cloud, PROXY
     - DOMAIN-SUFFIX, bluemix.com, PROXY
@@ -31967,6 +32060,7 @@ rules:
 
    # openai
     # Main domain
+    - DOMAIN-SUFFIX, ai.com, PROXY
     - DOMAIN-SUFFIX, chatgpt.com, PROXY
     - DOMAIN-SUFFIX, oaistatic.com, PROXY
     - DOMAIN-SUFFIX, oaiusercontent.com, PROXY
@@ -32697,6 +32791,10 @@ rules:
     - DOMAIN-SUFFIX, pca.st, PROXY
     - DOMAIN-SUFFIX, pocketcasts.com, PROXY
 
+   # poe
+    - DOMAIN-SUFFIX, poe.com, PROXY
+    - DOMAIN-SUFFIX, poecdn.net, PROXY
+
    # polymer
     - DOMAIN-SUFFIX, polymer-project.org, PROXY
     - DOMAIN-SUFFIX, polymerproject.org, PROXY
@@ -32937,8 +33035,8 @@ rules:
     - DOMAIN-SUFFIX, quipelements.com, PROXY
 
    # quora
-    - DOMAIN-SUFFIX, poe.com, PROXY
-    - DOMAIN-SUFFIX, poecdn.net, PROXY
+    # include:poe
+
     - DOMAIN-SUFFIX, qr.ae, PROXY
     - DOMAIN-SUFFIX, quora.com, PROXY
     - DOMAIN-SUFFIX, quoracdn.net, PROXY
@@ -34660,15 +34758,30 @@ rules:
     # https://icannwiki.org/Country_code_top-level_domain
     # https://www.101domain.com/branded_domains.htm
     
+    ## DO NOT RE-INTRODUCE!
+    ## refer to: https://domain.miit.gov.cn/managerdns/index
+    ## credit to @mayampi01
+    # asia  # Asia-Pacific region
+    # baby  # Baby
+    # chase  # JPMorgan Chase & Co.
+    # chat  # Chat
+    # hk  # Hong Kong
+    # jpmorgan  # JPMorgan Chase & Co.
+    # poker  # Poker
+    # quest  # Quest ION Limited
+    # saxo  # Saxo Bank A/S
+    # tv  # Tuvalu
+    # xn--j6w193g  # 香港 Hong Kong SAR, People's Republic of China
+
     # include:google-registry-tld
-    
+
     # Used by U.S. federal government
-    # - DOMAIN-KEYWORD, gov
+    # - DOMAIN-KEYWORD, .gov
     # Used by U.S. DoD.
-    # - DOMAIN-KEYWORD, mil
+    # - DOMAIN-KEYWORD, .mil
     # Used by U.S. Higher Education.
-    # - DOMAIN-KEYWORD, edu
-    
+    # - DOMAIN-KEYWORD, .edu
+
     # ccTLD
     # - DOMAIN-KEYWORD, .ac # Ascension Island
     # - DOMAIN-KEYWORD, .ad # Andorra
@@ -34759,7 +34872,6 @@ rules:
     # - DOMAIN-KEYWORD, .gu # Guam
     # - DOMAIN-KEYWORD, .gw # Guinea-Bissau
     # - DOMAIN-KEYWORD, .gy # Guyana
-    # - DOMAIN-KEYWORD, .hk # Hong Kong
     # - DOMAIN-KEYWORD, .hm # Heard Island and McDonald Islands
     # - DOMAIN-KEYWORD, .hn # Honduras
     # - DOMAIN-KEYWORD, .hr # Croatia
@@ -34891,7 +35003,6 @@ rules:
     # - DOMAIN-KEYWORD, .to # Tonga
     # - DOMAIN-KEYWORD, .tr # Turkey
     # - DOMAIN-KEYWORD, .tt # Trinidad & Tobago
-    # - DOMAIN-KEYWORD, .tv # Tuvalu
     # - DOMAIN-KEYWORD, .tw # Taiwan (Republic of China)
     # - DOMAIN-KEYWORD, .tz # Tanzania
     # - DOMAIN-KEYWORD, .ua # Ukraine
@@ -34914,14 +35025,14 @@ rules:
     # - DOMAIN-KEYWORD, .za # South Africa
     # - DOMAIN-KEYWORD, .zm # Zambia
     # - DOMAIN-KEYWORD, .zw # Zimbabwe
-    
+
     # Athletics Domains
     # - DOMAIN-KEYWORD, .afl # Australian Football League
     # - DOMAIN-KEYWORD, .mlb # MLB Advanced Media DH, LLC
     # - DOMAIN-KEYWORD, .nba # National Basketball Association
     # - DOMAIN-KEYWORD, .nfl # National Football League
     # - DOMAIN-KEYWORD, .nra # National Rifle Association
-    
+
     # Business Products & Services Domains
     # - DOMAIN-KEYWORD, .crs # Federated Co operatives Limited
     # - DOMAIN-KEYWORD, .dnp # Dai Nippon Printing Co., Ltd.
@@ -34937,7 +35048,7 @@ rules:
     # - DOMAIN-KEYWORD, .seek # Seek Limited
     # - DOMAIN-KEYWORD, .wtc # World Trade Centers Association, Inc.
     # - DOMAIN-KEYWORD, .xerox # Business Products Services Domains
-    
+
     # Fashion Domains
     # - DOMAIN-KEYWORD, .athleta # The Gap, Inc.
     # - DOMAIN-KEYWORD, .bloomberg # Bloomberg IP Holdings LLC
@@ -34954,19 +35065,18 @@ rules:
     # - DOMAIN-KEYWORD, .omega # The Swatch Group Ltd
     # - DOMAIN-KEYWORD, .redstone # Redstone Haute Couture Co., Ltd.
     # - DOMAIN-KEYWORD, .swatch # The Swatch Group Ltd
-    
+
     # Geographic top-level domains
-    
+
     ## Africa
     # - DOMAIN-KEYWORD, .africa     # Africa
     # - DOMAIN-KEYWORD, .capetown   # Cape Town, South Africa
     # - DOMAIN-KEYWORD, .durban     # Durban, South Africa
     # - DOMAIN-KEYWORD, .joburg     # Johannesburg, South Africa
-    
+
     ## Asia
     # - DOMAIN-KEYWORD, .abudhabi   # Abu Dhabi
     # - DOMAIN-KEYWORD, .arab       # Leagueof Arab States
-    # - DOMAIN-KEYWORD, .asia       # Asia-Pacific region
     # - DOMAIN-KEYWORD, .dubai      # Dubai
     # - DOMAIN-KEYWORD, .krd        # Kurdistan
     # - DOMAIN-KEYWORD, .kyoto      # Kyoto, Japan
@@ -34978,7 +35088,7 @@ rules:
     # - DOMAIN-KEYWORD, .tatar      # Tatar peoples and places
     # - DOMAIN-KEYWORD, .tokyo      # Tokyo, Japan
     # - DOMAIN-KEYWORD, .yokohama   # Yokohama, Japan
-    
+
     ## Europe
     # - DOMAIN-KEYWORD, .alsace     # Alsace, France
     # - DOMAIN-KEYWORD, .amsterdam  # Amsterdam, Netherlands
@@ -35017,23 +35127,23 @@ rules:
     # - DOMAIN-KEYWORD, .wales      # Wales, United Kingdom
     # - DOMAIN-KEYWORD, .wien       # Vienna, Austria
     # - DOMAIN-KEYWORD, .zuerich    # Zurich, Switzerland
-    
+
     ## North America
     # - DOMAIN-KEYWORD, .boston     # Boston, Massachusetts, United States of America
     # - DOMAIN-KEYWORD, .miami      # Miami, Florida, United States of America
     # - DOMAIN-KEYWORD, .nyc        # New York City, New York, United States of America
     # - DOMAIN-KEYWORD, .quebec     # Quebec, Canada
     # - DOMAIN-KEYWORD, .vegas      # Las Vegas, Nevada, United States of America
-    
+
     ## Oceania
     # - DOMAIN-KEYWORD, .kiwi       # New Zealanders
     # - DOMAIN-KEYWORD, .melbourne  # Melbourne, Australia
     # - DOMAIN-KEYWORD, .sydney     # Sydney, Australia
-    
+
     ## South America
     # - DOMAIN-KEYWORD, .lat        # Latin America
     # - DOMAIN-KEYWORD, .rio        # Rio de Janeiro, Brazil
-    
+
     # Health & Wellness Domains
     # - DOMAIN-KEYWORD, .aarp # Health Wellness Domains
     # - DOMAIN-KEYWORD, .abbott # Abbott Laboratories
@@ -35045,7 +35155,7 @@ rules:
     # - DOMAIN-KEYWORD, .fresenius # Fresenius Immobilien-Verwaltungs-GmbH
     # - DOMAIN-KEYWORD, .jnj # Johnson & Johnson Services, Inc.
     # - DOMAIN-KEYWORD, .sanofi # Health Wellness Domains
-    
+
     # Industrial Domains
     # - DOMAIN-KEYWORD, .aeg # Aktiebolaget Electrolux
     # - DOMAIN-KEYWORD, .airbus # Airbus S.A.S.
@@ -35086,18 +35196,16 @@ rules:
     # - DOMAIN-KEYWORD, .weir # Weir Group IP Limited
     # - DOMAIN-KEYWORD, .woodside # Woodside Petroleum Limited
     # - DOMAIN-KEYWORD, .zara # Inditex, SA
-    
+
     # Miscellaneous Domains
     # - DOMAIN-KEYWORD, .africamagic # Electronic Media Network Limited
     # - DOMAIN-KEYWORD, .agakhan # Aga Khan Foundation
     # - DOMAIN-KEYWORD, .akdn # Aga Khan Foundation
-    # - DOMAIN-KEYWORD, .baby # Baby
     # - DOMAIN-KEYWORD, .bar # A place which provide liquor
     # - DOMAIN-KEYWORD, .bharti # Bharti Enterprises
     # - DOMAIN-KEYWORD, .bingo # Bingo
     # - DOMAIN-KEYWORD, .casa # Casa (Home)
     # - DOMAIN-KEYWORD, .casino # Online Casino
-    # - DOMAIN-KEYWORD, .chat # Chat
     # - DOMAIN-KEYWORD, .dating # Dating
     # - DOMAIN-KEYWORD, .domains # Domain Name Register
     # - DOMAIN-KEYWORD, .extraspace # Extra Space Storage LLC
@@ -35110,7 +35218,6 @@ rules:
     # - DOMAIN-KEYWORD, .maif # Mutuelle Assurance Instituteur France (MAIF)
     # - DOMAIN-KEYWORD, .mattel # Mattel Sites, Inc.
     # - DOMAIN-KEYWORD, .moe # Japanese slang
-    # - DOMAIN-KEYWORD, .poker # Poker
     # - DOMAIN-KEYWORD, .sas # SAS institute
     # - DOMAIN-KEYWORD, .shell # Shell Information Technology International Inc
     # - DOMAIN-KEYWORD, .shia # Shia Muslim community
@@ -35124,13 +35231,13 @@ rules:
     # - DOMAIN-KEYWORD, .wine # Alcohol
     # - DOMAIN-KEYWORD, .wme # William Morris Endeavor Entertainment, LLC
     # - DOMAIN-KEYWORD, .wtf # What the fuck
-    
+
     # Religion
     # - DOMAIN-KEYWORD, .bible # Bible
     # - DOMAIN-KEYWORD, .catholic # Catholic
     # - DOMAIN-KEYWORD, .ismaili # a Shiite sect
     # - DOMAIN-KEYWORD, .xn--mgbi4ecexp # Arabic for Catholic
-    
+
     # Research & Science Domains
     # - DOMAIN-KEYWORD, .cern # European Organization for Nuclear Research
     # - DOMAIN-KEYWORD, .emerck # Merck
@@ -35145,21 +35252,21 @@ rules:
     # - DOMAIN-KEYWORD, .teva # Teva Pharmaceutical Industries Limited
     # - DOMAIN-KEYWORD, .toray # Toray Industries, Inc.
     # - DOMAIN-KEYWORD, .weather # The Weather Channel LLC
-    
+
     # Sex & Porn
     # - DOMAIN-KEYWORD, .adult # Adult content
     # - DOMAIN-KEYWORD, .porn # Pornographic website
     # - DOMAIN-KEYWORD, .sex # Sex
     # - DOMAIN-KEYWORD, .sexy # Sexy
     # - DOMAIN-KEYWORD, .xxx # Pornographic website
-    
+
     # Shipping & Delivery Domains
     # - DOMAIN-KEYWORD, .auspost # Australian Postal Corporation
     # - DOMAIN-KEYWORD, .dhl # Deutsche Post AG
     # - DOMAIN-KEYWORD, .fedex # Federal Express Corporation
-    
+
     # Top domain of Country or Region (Internationalized Domain Name)
-    
+
     # - DOMAIN-KEYWORD, .xn--lgbbat1ad8j  #  الجزائر Algeria
     # - DOMAIN-KEYWORD, .xn--y9a3aq  #  հայ Armenia
     # - DOMAIN-KEYWORD, .xn--mgbcpq6gpa1a  #  البحرين Bahrain
@@ -35171,7 +35278,6 @@ rules:
     # - DOMAIN-KEYWORD, .xn--qxa6a  #  ευ European Union
     # - DOMAIN-KEYWORD, .xn--node  #  გე Georgia
     # - DOMAIN-KEYWORD, .xn--qxam  #  ελ Greece
-    # - DOMAIN-KEYWORD, .xn--j6w193g  #  香港 Hong Kong SAR, People's Republic of China
     # - DOMAIN-KEYWORD, .xn--4dbrk0ce  #  ישראל Israel
     # - DOMAIN-KEYWORD, .xn--h2brj9c  #  भारत India
     # - DOMAIN-KEYWORD, .xn--mgbbh1a71e  #  بھارت India
@@ -35226,7 +35332,7 @@ rules:
     # - DOMAIN-KEYWORD, .xn--j1amh  #  укр Ukraine
     # - DOMAIN-KEYWORD, .xn--mgbaam7a8h  #  امارات United Arab Emirates
     # - DOMAIN-KEYWORD, .xn--mgb2ddes  #  اليمن Yemen
-    
+
     # Automotive Domains
     # - DOMAIN-KEYWORD, .aaa # American Automobile Association
     # - DOMAIN-KEYWORD, .audi # Automotive Domains
@@ -35259,7 +35365,7 @@ rules:
     # - DOMAIN-KEYWORD, .toyota # Automotive Domains
     # - DOMAIN-KEYWORD, .tvs # T V Sundram Iyengar & Sons Limited
     # - DOMAIN-KEYWORD, .volvo # Volvo Cars
-    
+
     # Computers & Electronics Domains
     # - DOMAIN-KEYWORD, .android # Google
     # - DOMAIN-KEYWORD, .apple # Apple Inc.
@@ -35280,7 +35386,7 @@ rules:
     # - DOMAIN-KEYWORD, .sony # Computers Electronics Domains
     # - DOMAIN-KEYWORD, .toshiba # Toshiba Corporation
     # - DOMAIN-KEYWORD, .yodobashi # Yodobashi Camera Co., LTD
-    
+
     # Financial Services Domains
     # - DOMAIN-KEYWORD, .allfinanz # Allfinanz Deutsche Vermögensberatung Aktiengesellschaft
     # - DOMAIN-KEYWORD, .ally # Ally Financial Inc.
@@ -35298,7 +35404,6 @@ rules:
     # - DOMAIN-KEYWORD, .capitalone # Capital One Financial Corporation
     # - DOMAIN-KEYWORD, .cba # Commonwealth Bank of Australia
     # - DOMAIN-KEYWORD, .cfa # CFA Institute
-    # - DOMAIN-KEYWORD, .chase # JPMorgan Chase & Co.
     # - DOMAIN-KEYWORD, .citadel # Citadel, LLC
     # - DOMAIN-KEYWORD, .citi # Citigroup Inc.
     # - DOMAIN-KEYWORD, .commbank # Commonwealth Bank of Australia
@@ -35311,7 +35416,6 @@ rules:
     # - DOMAIN-KEYWORD, .itau # Itau Unibanco Holding S.A.
     # - DOMAIN-KEYWORD, .jcb # JCB Co., Ltd.
     # - DOMAIN-KEYWORD, .jll # Jones Lang LaSalle Incorporated
-    # - DOMAIN-KEYWORD, .jpmorgan # JPMorgan Chase & Co.
     # - DOMAIN-KEYWORD, .kfh # Kuwait Finance House
     # - DOMAIN-KEYWORD, .kpmg # KPMG International Cooperative
     # - DOMAIN-KEYWORD, .lacaixa # La Caixa
@@ -35328,7 +35432,6 @@ rules:
     # - DOMAIN-KEYWORD, .prudential # Prudential Financial, Inc.
     # - DOMAIN-KEYWORD, .pru # Prudential Financial, Inc.
     # - DOMAIN-KEYWORD, .pwc # PwC Business Trust
-    # - DOMAIN-KEYWORD, .saxo # Saxo Bank A/S
     # - DOMAIN-KEYWORD, .sbi # State Bank of India
     # - DOMAIN-KEYWORD, .scb # The Siam Commercial Bank Public Company Limited
     # - DOMAIN-KEYWORD, .softbank # Softbank Corporation
@@ -35339,13 +35442,13 @@ rules:
     # - DOMAIN-KEYWORD, .vanguard # The Vanguard Group, Inc.
     # - DOMAIN-KEYWORD, .visa # Visa International Service Association
     # - DOMAIN-KEYWORD, .wolterskluwer # Wolters Kluwer N.V.
-    
+
     # Home & Garden Domains
     # - DOMAIN-KEYWORD, .aquarelle # Aquarelle.com
     # - DOMAIN-KEYWORD, .diy # Lifestyle Domain Holdings, Inc
     # - DOMAIN-KEYWORD, .homedepot # Homer TLC, Inc.
     # - DOMAIN-KEYWORD, .homegoods # The TJX Companies, Inc.
-    
+
     # Insurance Domains
     # - DOMAIN-KEYWORD, .aig # American International Group, Inc.
     # - DOMAIN-KEYWORD, .allstate # Allstate Fire and Casualty Insurance Company
@@ -35364,7 +35467,7 @@ rules:
     # - DOMAIN-KEYWORD, .travelers # Travelers TLD, LLC
     # - DOMAIN-KEYWORD, .trv # Travelers TLD, LLC
     # - DOMAIN-KEYWORD, .vig # Vienna Insurance Group
-    
+
     # Music & Entertainment Domains
     # - DOMAIN-KEYWORD, .beats # Beats Electronics, LLC
     # - DOMAIN-KEYWORD, .blockbuster # Dish DBS Corporation
@@ -35373,7 +35476,7 @@ rules:
     # - DOMAIN-KEYWORD, .tab # Tabcorp Holdings Limited
     # - DOMAIN-KEYWORD, .williamhill # William Hill Organization Limited
     # - DOMAIN-KEYWORD, .xbox # Microsoft
-    
+
     # Retail Domains
     # - DOMAIN-KEYWORD, .asda # Wal-Mart Stores, Inc.
     # - DOMAIN-KEYWORD, .george # Wal-Mart Stores, Inc.
@@ -35389,7 +35492,7 @@ rules:
     # - DOMAIN-KEYWORD, .tjx # The TJX Companies, Inc.
     # - DOMAIN-KEYWORD, .tkmaxx # The TJX Companies, Inc.
     # - DOMAIN-KEYWORD, .walmart # Wal-Mart Stores, Inc.
-    
+
     # Tech Domains
     # - DOMAIN-KEYWORD, .abb # ABB Ltd.
     # - DOMAIN-KEYWORD, .accenture # Accenture Global Services Limited
@@ -35455,7 +35558,6 @@ rules:
     # - DOMAIN-KEYWORD, .orange # Orange Brand Services Limited
     # - DOMAIN-KEYWORD, .ovh # OVH SAS
     # - DOMAIN-KEYWORD, .pccw # PCCW Enterprises Limited
-    # - DOMAIN-KEYWORD, .quest # Quest ION Limited
     # - DOMAIN-KEYWORD, .richardli # Pacific Century Asset Management (HK) Limited
     # - DOMAIN-KEYWORD, .ricoh # Ricoh Company, Ltd.
     # - DOMAIN-KEYWORD, .rogers # Rogers Communications Partnership
@@ -35485,7 +35587,7 @@ rules:
     # - DOMAIN-KEYWORD, .lamer # ELC Online Inc.
     # - DOMAIN-KEYWORD, .natura # Natura Cosmeticos S.A.
     # - DOMAIN-KEYWORD, .origins # ELC Online Inc.
-    
+
     # Consumables Domains
     # - DOMAIN-KEYWORD, .barefoot # Gallo Vineyards, Inc.
     # - DOMAIN-KEYWORD, .cuisinella # SALM S.A.S.
@@ -35494,7 +35596,7 @@ rules:
     # - DOMAIN-KEYWORD, .ferrero # Ferrero Trading Lux S.A.
     # - DOMAIN-KEYWORD, .food # Scripps Networks Interactive, Inc
     # - DOMAIN-KEYWORD, .gallo # Gallo Vineyards, Inc.
-    
+
     # Full - IDN Domains
     # - DOMAIN-KEYWORD, .xn--5su34j936bgsg # .香格里拉 Shangri-La International Hotel Management Limited
     # - DOMAIN-KEYWORD, .xn--b4w605ferd # .淡马锡 Temasek Holdings Limtied
@@ -35510,7 +35612,7 @@ rules:
     # - DOMAIN-KEYWORD, .xn--qcka1pmc # .グーグル Google
     # - DOMAIN-KEYWORD, .xn--w4r85el8fhu5dnra # .嘉里大酒店 Kerry Trading Co. Limited
     # - DOMAIN-KEYWORD, .xn--w4rs40l # .嘉里 Kerry Trading Co. Limited
-    
+
     # Hotel & Travel Domains
     # - DOMAIN-KEYWORD, .caravan # Caravan International, Inc.
     # - DOMAIN-KEYWORD, .cipriani # Hotel Cipriani
@@ -35525,13 +35627,13 @@ rules:
     # - DOMAIN-KEYWORD, .tui # TUI AG
     # - DOMAIN-KEYWORD, .viking # Viking River Cruises
     # - DOMAIN-KEYWORD, .virgin # Virgin Enterprises Limited
-    
+
     # Land & Buildings Domains
     # - DOMAIN-KEYWORD, .able # Able Inc.
     # - DOMAIN-KEYWORD, .cbre # CBRE, Inc.
     # - DOMAIN-KEYWORD, .chintai # Chintai Corporation
     # - DOMAIN-KEYWORD, .lefrak # LeFrak Organization, Inc.
-    
+
     # News & Media Domains
     # - DOMAIN-KEYWORD, .abc #  American Broadcasting Companies, Inc.
     # - DOMAIN-KEYWORD, .arte #  Association Relative à la Télévision Européenne
@@ -35550,7 +35652,7 @@ rules:
     # - DOMAIN-KEYWORD, .seven #  Seven West Media Ltd
     # - DOMAIN-KEYWORD, .sky #  Sky IP International Ltd
     # - DOMAIN-KEYWORD, .weatherchannel #  The Weather Channel, LLC
-    
+
     # School & Training Domains
     # - DOMAIN-KEYWORD, .bauhaus # Werkhaus GmbH
     # - DOMAIN-KEYWORD, .latrobe # La Trobe University
