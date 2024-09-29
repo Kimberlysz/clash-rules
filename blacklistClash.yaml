@@ -941,14 +941,20 @@ rule-providers:
 
 rules:
 
- # RULE-SET-clash
+ # RULE-SET (-clash)
+  # jsdelivr
+    - DOMAIN-SUFFIX, jsdelivr.net, PROXY
+
+  # RULE-SET-clash
     - RULE-SET, rejectmanual, 🛑 AdBlock rules
+
+  # RULE-SET-merlinclash
     - RULE-SET, rejectmanualrouter, 🛑 AdBlock rules
 
- # DOMAIN-SET-shadowrocket
+  # DOMAIN-SET-shadowrocket
     # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/rejectDomainset.txt, reject
 
- # RULE-SET-shadowrocket
+  # RULE-SET-shadowrocket
     # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/rejectRuleset.txt, reject
 
  # 🛑 AdBlock (domain-list-community)
@@ -1979,20 +1985,22 @@ rules:
     - DOMAIN-SUFFIX, zynga.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, zyngaplayersupport.com, 🛑 AdBlock rules
 
- # RULE-SET-clash
+ # RULE-SET (-clash)
+  # RULE-SET-clash
     - RULE-SET, directmanual, DIRECT
     - RULE-SET, proxymanual, PROXY
 
+  # RULE-SET-merlinclash
     - RULE-SET, directmanualrouter, DIRECT
     - RULE-SET, proxymanualrouter, PROXY
 
- # DOMAIN-SET-shadowrocket
+  # DOMAIN-SET-shadowrocket
     # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/directDomainset.txt, direct
-    # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/proxyDomainset.txt, proxy, force-remote-dns
+    # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/proxyDomainset.txt, proxy
 
- # RULE-SET-shadowrocket
+  # RULE-SET-shadowrocket
     # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/directRuleset.txt, direct
-    # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/proxyRuleset.txt, proxy, force-remote-dns
+    # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/proxyRuleset.txt, proxy
 
  # DIRECT (domain-list-community)
   # #
@@ -13010,7 +13018,7 @@ rules:
     - DOMAIN-SUFFIX, apple-cloudkit.com, PROXY
 
     # CUPS
-    - DOMAIN-SUFFIX, cups.org, PROXY, PROXY
+    - DOMAIN-SUFFIX, cups.org, PROXY
 
     # Developer
     - DOMAIN-SUFFIX, developer.apple.com, PROXY
