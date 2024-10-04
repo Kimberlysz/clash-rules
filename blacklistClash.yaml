@@ -900,14 +900,14 @@ rule-providers:
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/rejectManual.txt"
     path: ./ruleset/rejectmanual.yaml
-    interval: 21600
+    interval: 86400
 
   directmanual:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/directManual.txt"
     path: ./ruleset/directmanual.yaml
-    interval: 21600
+    interval: 86400
 
   proxymanual:
     type: http
@@ -915,21 +915,21 @@ rule-providers:
     # url: https://raw.githubusercontent.com/Kimberlysz/clash-rules/release/proxyManual.txt
     url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/proxyManual.txt"
     path: ./ruleset/proxymanual.yaml
-    interval: 21600
+    interval: 86400
 
   rejectmanualrouter:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/rejectManual.txt"
     path: ./rule_provider/rejectmanualrouter.yaml
-    interval: 21600
+    interval: 86400
 
   directmanualrouter:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/directManual.txt"
     path: ./rule_provider/directmanualrouter.yaml
-    interval: 21600
+    interval: 86400
 
   proxymanualrouter:
     type: http
@@ -937,7 +937,7 @@ rule-providers:
     # url: https://raw.githubusercontent.com/Kimberlysz/clash-rules/release/proxyManual.txt
     url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/proxyManual.txt"
     path: ./rule_provider/proxymanualrouter.yaml
-    interval: 21600
+    interval: 86400
 
 rules:
 
@@ -1146,7 +1146,9 @@ rules:
     - DOMAIN-SUFFIX, cpro.zhidao.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, cpro2.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, cpro2.baidustatic.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cpu.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, crs.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, cstm.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, datax.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, dd713.bj.bcebos.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, dl.client.baidu.com, 🛑 AdBlock rules
@@ -1155,11 +1157,13 @@ rules:
     - DOMAIN-SUFFIX, dl2.bav.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, dlsw.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, dlsw.br.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dlswbr.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, dl-vip.bav.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, dl-vip.pcfaster.baidu.co.th, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, download.bav.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, download.sd.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, drmcmm.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, duiwai.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, dup.baidustatic.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, dxp.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, dzl.baidu.com, 🛑 AdBlock rules
@@ -1168,6 +1172,7 @@ rules:
     - DOMAIN-SUFFIX, ecma.bdimg.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, ecmb.bdimg.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, ecmc.bdimg.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, eduad.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, eiv.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, em.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, entry.baidu.com, 🛑 AdBlock rules
@@ -1175,10 +1180,14 @@ rules:
     - DOMAIN-SUFFIX, f10.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, fc-feed.cdn.bcebos.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, fclick.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, fclog.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, feed.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, g.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, gimg.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, goutong.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gsp1.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, guanjia.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, hao123union.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, hc.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, hm.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, hmma.baidu.com, 🛑 AdBlock rules
@@ -1189,11 +1198,15 @@ rules:
     - DOMAIN-SUFFIX, ikcode.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, img.taotaosou.cn, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, img01.taotaosou.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, imgstat.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, iwanad.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, j.br.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, kstj.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, log.music.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, lxbjs.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, m1.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, ma.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, miao.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, mobads.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, mobads-logs.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, mpro.baidu.com, 🛑 AdBlock rules
@@ -1249,6 +1262,7 @@ rules:
     - DOMAIN-SUFFIX, weishi.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, wenku-cms.bj.bcebos.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, wisepush.video.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, wkctj.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, wm.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, znsv.baidu.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, zz.bdstatic.com, 🛑 AdBlock rules
@@ -1319,6 +1333,7 @@ rules:
     # include:openx-ads
     # include:pocoiq-ads
     # include:pubmatic-ads
+    # include:qihoo360-ads
     # include:segment-ads
     # include:sensorsdata-ads
     # include:sina-ads
@@ -1465,6 +1480,76 @@ rules:
     - DOMAIN-SUFFIX, tapsell.ir, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, yektanet.com, 🛑 AdBlock rules
 
+   # category-httpdns-cn
+    # Aliyun
+    - DOMAIN-SUFFIX, httpdns-api.aliyuncs.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns-sc.aliyuncs.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.alicdn.com, 🛑 AdBlock rules
+
+    # Baidu
+    - DOMAIN-SUFFIX, httpdns.baidu.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.baidubce.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.bcelive.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.n.shifen.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpsdns.baidu.com, 🛑 AdBlock rules
+
+    # Huawei Cloud
+    - DOMAIN-SUFFIX, httpdns-browser.platform.dbankcloud.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.c.cdnhwc2.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.huaweicloud.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.platform.dbankcloud.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.platform.dbankcloud.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns1.cc.cdnhwc5.com, 🛑 AdBlock rules
+
+    # iqiyi
+    - DOMAIN-SUFFIX, dns.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dns.qiyipic.iqiyi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, doh.iqiyi.com, 🛑 AdBlock rules
+
+    # Kuaishou
+    - DOMAIN-SUFFIX, hdns.ksyun.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, kuaishou.httpdns.pro, 🛑 AdBlock rules
+
+    # Meituan
+    - DOMAIN-SUFFIX, httpdns.meituan.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdnsvip.meituan.com, 🛑 AdBlock rules
+
+    # NetEase
+    - DOMAIN-SUFFIX, httpdns-sdk.n.netease.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.music.163.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.n.netease.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, lofter.httpdns.c.163.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, music.httpdns.c.163.com, 🛑 AdBlock rules
+
+    # Oppo
+    - DOMAIN-SUFFIX, httpdns.push.oppomobile.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.ocloud.oppomobile.com, 🛑 AdBlock rules
+
+    # Tencent
+    - DOMAIN-SUFFIX, dns.weixin.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dns.weixin.qq.com.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.kg.qq.com, 🛑 AdBlock rules
+
+    # HeyTap
+    - DOMAIN-SUFFIX, httpdns.ocloud.heytapmobi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.push.heytapmobi.com, 🛑 AdBlock rules
+
+    - DOMAIN-SUFFIX, apidns.kwd.inkuai.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dns.jd.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dns.weibo.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, doh.ptqy.gitv.tv, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, dotserver.douyucdn.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.bilivideo.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.browser.miui.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.cctv.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.danuoyi.tbcache.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.gslb.yy.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.kwd.inkuai.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.pro, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.volcengineapi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.yunxindns.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, httpdns.zybang.com, 🛑 AdBlock rules
+
    # clearbitjs-ads
     - DOMAIN-SUFFIX, x.clearbitjs.com, 🛑 AdBlock rules
 
@@ -1555,6 +1640,7 @@ rules:
     - DOMAIN-SUFFIX, googletraveladservices-cn.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, googletraveladservices.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, googlevads-cn.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mail-ads.google.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, marketingplatform.google.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, urchin.com, 🛑 AdBlock rules
 
@@ -1566,6 +1652,10 @@ rules:
     - DOMAIN-SUFFIX, assets.growingio.com, 🛑 AdBlock rules
 
   # h
+   # hetzner
+    # tracking
+    - DOMAIN, sentry.hetzner.company, 🛑 AdBlock rules
+
    # hiido-ads
     - DOMAIN-SUFFIX, mlog.hiido.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, ylog.hiido.com, 🛑 AdBlock rules
@@ -1709,6 +1799,17 @@ rules:
 
    # pubmatic-ads
     - DOMAIN-SUFFIX, ads.pubmatic.com, 🛑 AdBlock rules
+
+  # q
+   # qihoo360-ads
+    - DOMAIN-SUFFIX, fenxi.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, lianmeng.360.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mediav.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, mvad.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, qhupdate.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, s.360.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, s.so.360.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, s.union.360.cn, 🛑 AdBlock rules
 
   # s
    # segment-ads
@@ -1866,14 +1967,25 @@ rules:
     - DOMAIN-SUFFIX, adsview2.qq.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, adv.app.qq.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, adver.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, beacon.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, beaconcdn.qq.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, btrace.qq.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, e.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, gdt.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, isdspeed.qq.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, log.tbs.qq.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, mpush.qq.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, mtrace.qq.com, 🛑 AdBlock rules
-    - DOMAIN-SUFFIX, push.qq.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, pgdt.gtimg.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, pingjs.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, push.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, sngmta.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, stat.y.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tajs.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, tcss.qq.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, trace.qq.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, ugdtimg.com, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, wit.qq.com, 🛑 AdBlock rules
 
   # u
    # uberads-ads
@@ -2489,6 +2601,10 @@ rules:
     - DOMAIN-SUFFIX, apifox.cn, DIRECT
     - DOMAIN-SUFFIX, apifox.com, DIRECT
 
+   # apipost
+    - DOMAIN-SUFFIX, apipost.cn, DIRECT
+    - DOMAIN-SUFFIX, apipost.net, DIRECT
+
    # apple
     - DOMAIN, apple.cn, DIRECT
     - DOMAIN, apple.com.cn, DIRECT
@@ -2931,6 +3047,7 @@ rules:
 
     - DOMAIN-SUFFIX, 91.com, DIRECT
     - DOMAIN-SUFFIX, aipage.com, DIRECT
+    - DOMAIN-SUFFIX, antpcdn.com, DIRECT
     - DOMAIN-SUFFIX, apollo.auto, DIRECT
     - DOMAIN-SUFFIX, baidu.cn, DIRECT
     - DOMAIN-SUFFIX, baidu.com, DIRECT
@@ -3591,6 +3708,49 @@ rules:
     - DOMAIN-SUFFIX, iscas.ac.cn, DIRECT
     - DOMAIN-SUFFIX, las.ac.cn, DIRECT
 
+   # category-ai-cn
+    # RWKV
+    - DOMAIN-SUFFIX, rwkv.cn, DIRECT
+    - DOMAIN-SUFFIX, rwkv.com, DIRECT
+
+    # 通义千问
+    - DOMAIN-SUFFIX, tongyi.aliyun.com, DIRECT
+    - DOMAIN-SUFFIX, qianwen.aliyun.com, DIRECT
+
+    # 文心一言
+    - DOMAIN-SUFFIX, yiyan.baidu.com, DIRECT
+
+    # 天工AI
+    - DOMAIN-SUFFIX, tiangong.cn, DIRECT
+
+    # 豆包
+    - DOMAIN-SUFFIX, doubao.com, DIRECT
+    - DOMAIN-SUFFIX, marscode.cn, DIRECT
+
+    # 智谱清言
+    - DOMAIN-SUFFIX, chatglm.cn, DIRECT
+    - DOMAIN-SUFFIX, zhipuai.cn, DIRECT
+
+    # 月之暗面
+    - DOMAIN-SUFFIX, moonshot.cn, DIRECT
+
+    # 讯飞星火
+    - DOMAIN-SUFFIX, xinghuo.xfyun.cn, DIRECT
+
+    # MiniMax
+    - DOMAIN-SUFFIX, hailuoai.com, DIRECT
+    - DOMAIN-SUFFIX, minimaxi.com, DIRECT
+    - DOMAIN-SUFFIX, xingyeai.com, DIRECT
+
+    # 腾讯混元
+    - DOMAIN-SUFFIX, hunyuan.tencent.com, DIRECT
+
+    # 百川智能
+    - DOMAIN-SUFFIX, baichuan-ai.com, DIRECT
+
+    - DOMAIN-SUFFIX, botvip.cn, DIRECT
+    - DOMAIN-SUFFIX, liblib.art, DIRECT
+
    # category-bank-cn
     # include:boc
     # include:ccb
@@ -3760,10 +3920,26 @@ rules:
     - DOMAIN-SUFFIX, wallex.ir, DIRECT
 
    # category-collaborate-cn
+    # Remote Desktop
+    ## Oray
+    - DOMAIN-SUFFIX, oray.com, DIRECT
+    - DOMAIN-SUFFIX, oray.net, DIRECT
+    - DOMAIN-SUFFIX, orayer.com, DIRECT
+    - DOMAIN-SUFFIX, orayimg.com, DIRECT
+    - DOMAIN-SUFFIX, sunlogin.net, DIRECT
+
+    ## ToDesk
+    - DOMAIN-SUFFIX, todesk.com, DIRECT
+
+    # Tower 团队协作
+    - DOMAIN-SUFFIX, tower.im, DIRECT
+
     - DOMAIN-SUFFIX, shimo.im, DIRECT
     - DOMAIN-SUFFIX, yuque.com, DIRECT
 
    # category-education-cn
+    # include:category-mooc-cn
+
     # include:17zuoye
     # include:applysquare
     # include:hujiang
@@ -3775,42 +3951,75 @@ rules:
 
     # 雨课堂
     # include:yuketang
-    
-    # 雨豆课堂
+
+    ## 雨豆课堂
     - DOMAIN-SUFFIX, yudou.cn, DIRECT
-    
-    # 雨实验
+
+    ## 雨实验
     - DOMAIN-SUFFIX, yushiyan.net, DIRECT
-    
-    # 学堂在线
+
+    ## 学堂在线
     - DOMAIN-SUFFIX, xuetangx.com, DIRECT
-    
+
     # 时代行云
     - DOMAIN-SUFFIX, x-cloud.cc, DIRECT
-    
+
+    # 快对作业
+    - DOMAIN-SUFFIX, kuaiduizuoye.com, DIRECT
+
+    # 流利说
+    - DOMAIN-SUFFIX, liulishuo.com, DIRECT
+    - DOMAIN-SUFFIX, llsapp.com, DIRECT
+    - DOMAIN-SUFFIX, llscdn.com, DIRECT
+    - DOMAIN-SUFFIX, llsserver.com, DIRECT
+
+    # 百词斩
+    - DOMAIN-SUFFIX, baicizhan.com, DIRECT
+    - DOMAIN-SUFFIX, baicizhan.org, DIRECT
+    - DOMAIN-SUFFIX, bczcdn.com, DIRECT
+    - DOMAIN-SUFFIX, bczeducation.cn, DIRECT
+
+    # 小站教育
+    - DOMAIN-SUFFIX, zhan.com, DIRECT
+
+    # Burning Vocabulary
+    - DOMAIN-SUFFIX, burningvocabulary.cn, DIRECT
+    - DOMAIN-SUFFIX, burningvocabulary.com, DIRECT
+
     # 莞教通
     - DOMAIN-SUFFIX, dgjy.net, DIRECT
-    
+
     # 云校
     - DOMAIN-SUFFIX, 91yunxiao.com, DIRECT
-    
+
     # 爱云校/好分数
     - DOMAIN-SUFFIX, aiyunxiao.com, DIRECT
     - DOMAIN-SUFFIX, haofenshu.com, DIRECT
     - DOMAIN-SUFFIX, iyunxiao.com, DIRECT
     - DOMAIN-SUFFIX, yunxiao.com, DIRECT
-    
+
     # 课播云校
     - DOMAIN-SUFFIX, keboyunxiao.com, DIRECT
-    
+
     # 课堂派
     - DOMAIN-SUFFIX, ketangpai.com, DIRECT
-    
+
     # 批改网
     - DOMAIN-SUFFIX, pigai.org, DIRECT
-    
+
     # 未来云校
     - DOMAIN-SUFFIX, weilaiyunxiao.com, DIRECT
+
+    # 马哥教育
+    - DOMAIN-SUFFIX, magedu.com, DIRECT
+
+    # 老男孩教育
+    - DOMAIN-SUFFIX, oldboyedu.com, DIRECT
+
+    # 在职研究生教育信息网
+    - DOMAIN-SUFFIX, eduei.com, DIRECT
+
+    - DOMAIN-SUFFIX, edu.cn, DIRECT
 
    # category-education-ir
     # Iranian education and learning websites 
@@ -3839,9 +4048,64 @@ rules:
     
     - DOMAIN-SUFFIX, steampp.net, DIRECT
 
+   # category-entertainment-cn
+    # Entertainment & Videos & Games & Music & Podcasts
+    # include:3dm
+    # include:4399
+    # include:acfun
+    # include:acplay
+    # include:ali213
+    # include:bilibili
+    # include:ciweimao
+    # include:cowlevel
+    # include:dedao
+    # include:dmzj
+    # include:douyu
+    # include:duitang
+    # include:gamersky
+    # include:gcores
+    # include:gitv
+    # include:huya
+    # include:iqiyi
+    # include:jinjiang
+    # include:ku6
+    # include:kuaikan
+    # include:kuaishou
+    # include:kugou
+    # include:le
+    # include:lizhi
+    # include:mfuns
+    # include:miaopai
+    # include:mihoyo-cn
+    # include:muwai
+    # include:pptv
+    # include:qingtingfm
+    # include:sfacg
+    # include:taomee
+    # include:tgbus
+    # include:tiancity
+    # include:u17
+    # include:vgtime
+    # include:xd
+    # include:ximalaya
+    # include:youku
+    # include:zhanqi
+
+    # Enhance Gaming
+    - DOMAIN-SUFFIX, heavenlywind.cc, DIRECT
+    - DOMAIN-SUFFIX, steampp.net, DIRECT
+
+    # Android Emulator
+    - DOMAIN-SUFFIX, lsplayer.com, DIRECT
+    - DOMAIN-SUFFIX, yeshen.com, DIRECT
+
+    - DOMAIN-SUFFIX, ledu.com, DIRECT
+    - DOMAIN-SUFFIX, wo1wan.com, DIRECT
+
    # category-food-cn
     # include:bestore
     # include:heytea
+    # include:lkcoffee
 
     - DOMAIN-SUFFIX, 3songshu.com, DIRECT
     - DOMAIN-SUFFIX, haidilao.com, DIRECT
@@ -4268,27 +4532,8 @@ rules:
     # 运城同德医院 晋ICP备15008538号-1
     - DOMAIN-SUFFIX, yctdyy.com, DIRECT
 
-   # category-httpdns
-    - DOMAIN-SUFFIX, dns.jd.com, DIRECT
-    - DOMAIN-SUFFIX, dns.weibo.cn, DIRECT
-    - DOMAIN-SUFFIX, dns.weixin.qq.com, DIRECT
-    - DOMAIN-SUFFIX, dns.weixin.qq.com.cn, DIRECT
-    - DOMAIN-SUFFIX, httpdns-api.aliyuncs.com, DIRECT
-    - DOMAIN-SUFFIX, httpdns-sc.aliyuncs.com, DIRECT
-    - DOMAIN-SUFFIX, httpdns.alicdn.com, DIRECT
-    - DOMAIN-SUFFIX, httpdns.baidu.com, DIRECT
-    - DOMAIN-SUFFIX, httpdns.baidubce.com, DIRECT
-    - DOMAIN-SUFFIX, httpdns.bilivideo.com, DIRECT
-    - DOMAIN-SUFFIX, httpdns.c.cdnhwc2.com, DIRECT
-    - DOMAIN-SUFFIX, httpdns.meituan.com, DIRECT
-    - DOMAIN-SUFFIX, httpdns.music.163.com, DIRECT
-    - DOMAIN-SUFFIX, httpdns.n.netease.com, DIRECT
-    - DOMAIN-SUFFIX, httpdns.push.oppomobile.com, DIRECT
-    - DOMAIN-SUFFIX, httpdns.volcengineapi.com, DIRECT
-    - DOMAIN-SUFFIX, httpsdns.baidu.com, DIRECT
-    - DOMAIN-SUFFIX, kuaishou.httpdns.pro, DIRECT
-    - DOMAIN-SUFFIX, lofter.httpdns.c.163.com, DIRECT
-    - DOMAIN-SUFFIX, music.httpdns.c.163.com, DIRECT
+    # 南方医科大学深圳医院
+    - DOMAIN-SUFFIX, smuszh.com, DIRECT
 
    # category-insurance-ir
     # Iranian insurance websites
@@ -4623,6 +4868,26 @@ rules:
     - DOMAIN-SUFFIX, ntp.ntsc.ac.cn, DIRECT
     - DOMAIN-SUFFIX, ntp.org.cn, DIRECT
 
+   # category-olympiad-in-informatics
+    # LeetCode 中国站
+    - DOMAIN-SUFFIX, leetcode.cn, DIRECT
+    - DOMAIN-SUFFIX, leetcode-cn.com, DIRECT
+    - DOMAIN-SUFFIX, lingkou.xyz, DIRECT
+    - DOMAIN-SUFFIX, lingkou.com, DIRECT
+    - DOMAIN-SUFFIX, lingkou.cn, DIRECT
+
+    - DOMAIN-SUFFIX, 51nod.com, DIRECT
+    - DOMAIN-SUFFIX, acwing.com, DIRECT
+    - DOMAIN-SUFFIX, hihocoder.com, DIRECT
+    - DOMAIN-SUFFIX, jisuanke.com, DIRECT
+    - DOMAIN-SUFFIX, kidsccshow.com, DIRECT
+    - DOMAIN-SUFFIX, luogu.com.cn, DIRECT
+    - DOMAIN-SUFFIX, oi-wiki.com, DIRECT
+    - DOMAIN-SUFFIX, openjudge.cn, DIRECT
+    - DOMAIN-SUFFIX, rqnoj.cn, DIRECT
+    - DOMAIN-SUFFIX, uoj.ac, DIRECT
+    - DOMAIN-SUFFIX, vijos.org, DIRECT
+    
    # category-payment-ir
     # Iranian payment websites 
     - DOMAIN-SUFFIX, asanpardakht.com, DIRECT
@@ -4641,17 +4906,14 @@ rules:
     - DOMAIN-SUFFIX, zarinpal.com, DIRECT
 
    # category-pt
+    #TODO: add annotations
     - DOMAIN-SUFFIX, audiences.me, DIRECT
     - DOMAIN-SUFFIX, avistaz.to, DIRECT
     - DOMAIN-SUFFIX, beyond-hd.me, DIRECT
     - DOMAIN-SUFFIX, bibliotik.me, DIRECT
-    - DOMAIN-SUFFIX, bitpt.cn, DIRECT
     - DOMAIN-SUFFIX, blutopia.cc, DIRECT
     - DOMAIN-SUFFIX, broadcasthe.net, DIRECT
-    - DOMAIN-SUFFIX, bt.byr.cn, DIRECT
-    - DOMAIN-SUFFIX, byr.pt, DIRECT
     - DOMAIN-SUFFIX, ccfbits.org, DIRECT
-    - DOMAIN-SUFFIX, chdbits.co, DIRECT
     - DOMAIN-SUFFIX, cinemaz.to, DIRECT
     - DOMAIN-SUFFIX, dicmusic.com, DIRECT
     - DOMAIN-SUFFIX, eastgame.org, DIRECT
@@ -4660,51 +4922,57 @@ rules:
     - DOMAIN-SUFFIX, filelist.io, DIRECT
     - DOMAIN-SUFFIX, greatposterwall.com, DIRECT
     - DOMAIN-SUFFIX, hdbits.org, DIRECT
-    - DOMAIN-SUFFIX, hdchina.org, DIRECT
     - DOMAIN-SUFFIX, hdcity.city, DIRECT
     - DOMAIN-SUFFIX, hdfans.org, DIRECT
-    - DOMAIN-SUFFIX, hdhome.org, DIRECT
-    - DOMAIN-SUFFIX, hdsky.me, DIRECT
     - DOMAIN-SUFFIX, hdtime.org, DIRECT
     - DOMAIN-SUFFIX, hhanclub.top, DIRECT
-    - DOMAIN-SUFFIX, hudbt.hust.edu.cn, DIRECT
     - DOMAIN-SUFFIX, iptorrents.com, DIRECT
     - DOMAIN-SUFFIX, jpopsuki.eu, DIRECT
     - DOMAIN-SUFFIX, jptv.club, DIRECT
-    - DOMAIN-SUFFIX, keepfrds.com, DIRECT
     - DOMAIN-SUFFIX, lemonhd.org, DIRECT
-    - DOMAIN-SUFFIX, m-team.cc, DIRECT
-    - DOMAIN-SUFFIX, m-team.io, DIRECT
     - DOMAIN-SUFFIX, morethantv.me, DIRECT
-    - DOMAIN-SUFFIX, nanyangpt.com, DIRECT
-    - DOMAIN-SUFFIX, npupt.com, DIRECT
     - DOMAIN-SUFFIX, open.cd, DIRECT
-    - DOMAIN-SUFFIX, ourbits.club, DIRECT
     - DOMAIN-SUFFIX, passthepopcorn.me, DIRECT
     - DOMAIN-SUFFIX, privatehd.to, DIRECT
     - DOMAIN-SUFFIX, pt.btschool.club, DIRECT
     - DOMAIN-SUFFIX, pt.eastgame.org, DIRECT
     - DOMAIN-SUFFIX, pt.hd4fans.org, DIRECT
-    - DOMAIN-SUFFIX, pt.keepfrds.com, DIRECT
-    - DOMAIN-SUFFIX, pt.nwsuaf6.edu.cn, DIRECT
-    - DOMAIN-SUFFIX, pt.sjtu.edu.cn, DIRECT
     - DOMAIN-SUFFIX, pt.soulvoice.club, DIRECT
     - DOMAIN-SUFFIX, pt.xauat.edu.cn, DIRECT
-    - DOMAIN-SUFFIX, pterclub.com, DIRECT
     - DOMAIN-SUFFIX, pthome.net, DIRECT
     - DOMAIN-SUFFIX, ptsbao.club, DIRECT
     - DOMAIN-SUFFIX, share.ilolicon.com, DIRECT
     - DOMAIN-SUFFIX, sharkpt.net, DIRECT
-    - DOMAIN-SUFFIX, skyey2.com, DIRECT
-    - DOMAIN-SUFFIX, skyeysnow.com, DIRECT
-    - DOMAIN-SUFFIX, springsunday.net, DIRECT
-    - DOMAIN-SUFFIX, tju.pt, DIRECT
-    - DOMAIN-SUFFIX, tjupt.org, DIRECT
-    - DOMAIN-SUFFIX, torrentleech.org, DIRECT
-    - DOMAIN-SUFFIX, totheglory.im, DIRECT
-    - DOMAIN-SUFFIX, u2.dmhy.org, DIRECT
     - DOMAIN-SUFFIX, uhdbits.org, DIRECT
     - DOMAIN-SUFFIX, zhuque.in, DIRECT
+
+    # To the Chinese Users:
+    #    The following domains are supposed not to go through the proxy
+
+    # 北邮人
+    - DOMAIN-SUFFIX, bt.byr.cn, DIRECT
+    - DOMAIN-SUFFIX, byr.pt, DIRECT
+
+    # 北洋园PT
+    - DOMAIN-SUFFIX, tju.pt, DIRECT
+    - DOMAIN-SUFFIX, tjupt.org, DIRECT
+
+    - DOMAIN-SUFFIX, bitpt.cn, DIRECT
+    - DOMAIN-SUFFIX, chdbits.co, DIRECT
+    - DOMAIN-SUFFIX, hdchina.org, DIRECT
+    - DOMAIN-SUFFIX, hdhome.org, DIRECT
+    - DOMAIN-SUFFIX, hdsky.me, DIRECT
+    - DOMAIN-SUFFIX, hudbt.hust.edu.cn, DIRECT
+    - DOMAIN-SUFFIX, keepfrds.com, DIRECT
+    - DOMAIN-SUFFIX, nanyangpt.com, DIRECT
+    - DOMAIN-SUFFIX, neu6.edu.cn, DIRECT
+    - DOMAIN-SUFFIX, npupt.com, DIRECT
+    - DOMAIN-SUFFIX, ourbits.club, DIRECT
+    - DOMAIN-SUFFIX, pt.nwsuaf6.edu.cn, DIRECT
+    - DOMAIN-SUFFIX, pt.sjtu.edu.cn, DIRECT
+    - DOMAIN-SUFFIX, pterclub.com, DIRECT
+    - DOMAIN-SUFFIX, springsunday.net, DIRECT
+    - DOMAIN-SUFFIX, totheglory.im, DIRECT
 
    # category-scholar-cn
     # This list contains scholarly domains that have access point in China Mainland.
@@ -5081,14 +5349,15 @@ rules:
 
    # category-social-media-cn
     # This list contains social media platforms inside China mainland.
-    
+
     # include:bcy
     # include:douban
     # include:gracg
     # include:sina
     # include:xiaohongshu
+    # include:yy
     # include:zhihu
-    
+
     - DOMAIN-SUFFIX, tieba.baidu.com, DIRECT
     - DOMAIN-SUFFIX, tieba.com, DIRECT
 
@@ -5171,11 +5440,23 @@ rules:
     - DOMAIN-SUFFIX, tapsi.ir, DIRECT
 
    # category-wiki-cn
+    - DOMAIN-SUFFIX, fgo.wiki, DIRECT
+    - DOMAIN-SUFFIX, jikipedia.com, DIRECT
+    - DOMAIN-SUFFIX, mbalib.com, DIRECT
+    - DOMAIN-SUFFIX, qiuwen.wiki, DIRECT
+    - DOMAIN-SUFFIX, sec-wiki.com, DIRECT
+    - DOMAIN-SUFFIX, shidianbaike.com, DIRECT
 
+    # huijiwiki
     - DOMAIN-SUFFIX, huijistatic.com, DIRECT
     - DOMAIN-SUFFIX, huijiwiki.com, DIRECT
+
+    # moegirl
     - DOMAIN-SUFFIX, moegirl.org, DIRECT
     - DOMAIN-SUFFIX, moegirl.org.cn, DIRECT
+
+    # MC百科
+    - DOMAIN-SUFFIX, mcmod.cn, DIRECT
 
    # ccb
     - DOMAIN-SUFFIX, ccb-life.com.cn, DIRECT
@@ -5451,9 +5732,41 @@ rules:
     - DOMAIN-SUFFIX, cnki.com.cn, DIRECT
     - DOMAIN-SUFFIX, cnki.net, DIRECT
 
+    # 国际 DOI 中国注册与服务中心
+    - DOMAIN-SUFFIX, chndoi.org, DIRECT
+
    # colorfulclouds
     - DOMAIN-SUFFIX, caiyunai.com, DIRECT
     - DOMAIN-SUFFIX, caiyunapp.com, DIRECT
+
+   # connectivity-check
+    # ArchLinux
+    - DOMAIN-SUFFIX, ping.archlinux.org, DIRECT
+
+    # Apple
+    - DOMAIN-SUFFIX, captive.apple.com, DIRECT
+
+    # Android
+    - DOMAIN-SUFFIX, connectivitycheck.gstatic.com, DIRECT
+
+    # Cloudflare
+    - DOMAIN-SUFFIX, cp.cloudflare.com, DIRECT
+
+    # Debian
+    - DOMAIN-SUFFIX, network-test.debian.org, DIRECT
+
+    # Firefox
+    - DOMAIN-SUFFIX, detectportal.firefox.com, DIRECT
+
+    # KDE
+    - DOMAIN-SUFFIX, networkcheck.kde.org, DIRECT
+
+    # MIUI
+    - DOMAIN, connect.rom.miui.com, DIRECT
+
+    # Windows
+    - DOMAIN-SUFFIX, msftconnecttest.com, DIRECT
+    - DOMAIN-SUFFIX, msftncsi.com, DIRECT
 
    # coolapk
     - DOMAIN-SUFFIX, coolapk.com, DIRECT
@@ -5494,7 +5807,6 @@ rules:
     - DOMAIN-SUFFIX, tieyou.com, DIRECT
     - DOMAIN-SUFFIX, toptown.cn, DIRECT
     - DOMAIN-SUFFIX, toursbms.com, DIRECT
-    - DOMAIN-SUFFIX, tripcdn.com, DIRECT
     - DOMAIN-SUFFIX, vipdlt.com, DIRECT
 
    # cugbonline
@@ -5866,6 +6178,9 @@ rules:
     # include:jiguang
     # include:umeng
 
+    # AI
+    # include:category-ai-cn
+
     # Aviation
     # include:airchina # 中国国际航空
     # include:hainanairlines # 海南航空
@@ -5938,59 +6253,8 @@ rules:
     # include:youzan
     # include:ziroom
 
-    # Enhance Gaming
-    - DOMAIN-SUFFIX, heavenlywind.cc, DIRECT
-    - DOMAIN-SUFFIX, steampp.net, DIRECT
-
-    # Android Emulator
-    - DOMAIN-SUFFIX, lsplayer.com, DIRECT
-    - DOMAIN-SUFFIX, yeshen.com, DIRECT
-
     # Entertainment & Videos & Games & Music & Podcasts
-    # include:3dm
-    # include:4399
-    # include:acfun
-    # include:acplay
-    # include:ali213
-    # include:bilibili
-    # include:ciweimao
-    # include:cowlevel
-    # include:dedao
-    # include:dmzj
-    # include:douyu
-    # include:duitang
-    # include:gamersky
-    # include:gcores
-    # include:gitv
-    # include:huya
-    # include:iqiyi
-    # include:jinjiang
-    # include:ku6
-    # include:kuaikan
-    # include:kuaishou
-    # include:kugou
-    # include:le
-    # include:lizhi
-    # include:mfuns
-    # include:miaopai
-    # include:mihoyo-cn
-    # include:muwai
-    # include:pptv
-    # include:qingtingfm
-    # include:sfacg
-    # include:taomee
-    # include:tgbus
-    # include:tiancity
-    # include:u17
-    # include:vgtime
-    # include:xd
-    # include:xiaohongshu
-    # include:ximalaya
-    # include:youku
-    # include:yy
-    # include:zhanqi
-
-    - DOMAIN-SUFFIX, wo1wan.com, DIRECT
+    # include:category-entertainment-cn
 
     # Forums
     # include:chiphell
@@ -6019,8 +6283,8 @@ rules:
     # IP 定位网站
     # include:ipip
 
-    # HTTPDNS
-    # include:category-httpdns
+    # category-httpdns-cn is mainly for advertising purpose
+    # include:category-httpdns-cn
 
     # Infinity Pro
     - DOMAIN-SUFFIX, infinitynewtab.com, DIRECT
@@ -6028,28 +6292,6 @@ rules:
 
     - DOMAIN-SUFFIX, ip138.com, DIRECT
     - DOMAIN-SUFFIX, ipplus360.com, DIRECT # 豫ICP备17017462号-1 埃文科技
-
-    # 快对作业
-    - DOMAIN-SUFFIX, kuaiduizuoye.com, DIRECT
-
-    # 流利说
-    - DOMAIN-SUFFIX, liulishuo.com, DIRECT
-    - DOMAIN-SUFFIX, llsapp.com, DIRECT
-    - DOMAIN-SUFFIX, llscdn.com, DIRECT
-    - DOMAIN-SUFFIX, llsserver.com, DIRECT
-
-    # 百词斩
-    - DOMAIN-SUFFIX, baicizhan.com, DIRECT
-    - DOMAIN-SUFFIX, baicizhan.org, DIRECT
-    - DOMAIN-SUFFIX, bczcdn.com, DIRECT
-    - DOMAIN-SUFFIX, bczeducation.cn, DIRECT
-
-    # 小站教育
-    - DOMAIN-SUFFIX, zhan.com, DIRECT
-
-    # Burning Vocabulary
-    - DOMAIN-SUFFIX, burningvocabulary.cn, DIRECT
-    - DOMAIN-SUFFIX, burningvocabulary.com, DIRECT
 
     # 423Down
     - DOMAIN-SUFFIX, 423down.com, DIRECT
@@ -6059,9 +6301,6 @@ rules:
 
     # Logistics
     # include:sf-express
-
-    # MC百科
-    - DOMAIN-SUFFIX, mcmod.cn, DIRECT
 
     # Media & News & Press
     # include:category-media-cn
@@ -6085,12 +6324,8 @@ rules:
     # Organizations
     # include:category-hospital-cn
 
-    # 瑞幸咖啡
-    # include:lkcoffee
-
     # Science & Technology & Knowledge & Scholar & Press & E-learning & Education
     # include:category-education-cn
-    # include:category-mooc-cn
     # include:category-scholar-cn
     # include:category-wiki-cn
     # include:cugbonline
@@ -6137,6 +6372,7 @@ rules:
     # include:renren
     # include:tendcloud
     # include:vaptcha
+    # include:weathercn
     # include:wiwide
     # include:wjx
     # include:wolai
@@ -6145,9 +6381,6 @@ rules:
     # include:zhangtao
 
     - DOMAIN-SUFFIX, mihuashi.com, DIRECT # 米畫師
-
-    # Tower 团队协作
-    - DOMAIN-SUFFIX, tower.im, DIRECT
 
     # 沃丰科技
     - DOMAIN-SUFFIX, udesk.cn, DIRECT
@@ -6187,8 +6420,9 @@ rules:
     # include:xiaomi
     # include:xunlei
     # include:zte
-    
+
     - DOMAIN-SUFFIX, ezpro.pro, DIRECT # 小马路由
+    - DOMAIN-SUFFIX, 51togic.com, DIRECT # 泰捷WEBOX
 
     # Telecommunication
     # include:chinabroadnet
@@ -6196,29 +6430,8 @@ rules:
     # include:chinatelecom
     # include:chinaunicom
 
-    # Wiki
-    - DOMAIN-SUFFIX, jikipedia.com, DIRECT
-    - DOMAIN-SUFFIX, qiuwen.wiki, DIRECT
-    - DOMAIN-SUFFIX, shidianbaike.com, DIRECT
-
-    # 信息学
-    # include:51nod
-
-    - DOMAIN-SUFFIX, acwing.com, DIRECT
-    - DOMAIN-SUFFIX, hihocoder.com, DIRECT
-    - DOMAIN-SUFFIX, jisuanke.com, DIRECT
-    - DOMAIN-SUFFIX, luogu.com.cn, DIRECT
-    - DOMAIN-SUFFIX, oi-wiki.com, DIRECT
-    - DOMAIN-SUFFIX, openjudge.cn, DIRECT
-    - DOMAIN-SUFFIX, uoj.ac, DIRECT
-    - DOMAIN-SUFFIX, vijos.org, DIRECT
-
-    # LeetCode 中国站
-    - DOMAIN-SUFFIX, leetcode.cn, DIRECT
-    - DOMAIN-SUFFIX, leetcode-cn.com, DIRECT
-    - DOMAIN-SUFFIX, lingkou.xyz, DIRECT
-    - DOMAIN-SUFFIX, lingkou.com, DIRECT
-    - DOMAIN-SUFFIX, lingkou.cn, DIRECT
+    # OI
+    # include:category-olympiad-in-informatics
 
     # 语言能力测试
     # include:j-test
@@ -6238,7 +6451,9 @@ rules:
     # include:jibencaozuo
     # include:sinopec
     # include:category-enterprise-query-platform-cn
+    # include:gree
     # include:haier
+    # include:midea
 
     - DOMAIN-SUFFIX, winos.me, DIRECT # WINOS 精简社区
     - DOMAIN-SUFFIX, upe.net, DIRECT # 优启通官网
@@ -6289,6 +6504,7 @@ rules:
     # include:aisiku
     # 上海圆贝信息科技有限公司
     # include:yuanbei
+
 
     # The following domains are carried over from geosite:cn.
     # TODO: Decide how to deal with these domains
@@ -6486,7 +6702,6 @@ rules:
     - DOMAIN-SUFFIX, bojianger.com, DIRECT
     - DOMAIN-SUFFIX, bokecc.com, DIRECT
     - DOMAIN-SUFFIX, boosj.com, DIRECT
-    - DOMAIN-SUFFIX, btcfans.com, DIRECT
     - DOMAIN-SUFFIX, btgtravel.com, DIRECT
     - DOMAIN-SUFFIX, bthhotels.com, DIRECT
     - DOMAIN-SUFFIX, btime.com, DIRECT
@@ -6564,7 +6779,6 @@ rules:
     - DOMAIN-SUFFIX, cwxzx.com, DIRECT
     - DOMAIN-SUFFIX, cyagen.com, DIRECT
     - DOMAIN-SUFFIX, cybtc.com, DIRECT
-    - DOMAIN-SUFFIX, cyol.com, DIRECT
     - DOMAIN-SUFFIX, cyts.com, DIRECT
     - DOMAIN-SUFFIX, cztv.com, DIRECT
     - DOMAIN-SUFFIX, cztvcloud.com, DIRECT
@@ -6633,10 +6847,7 @@ rules:
     - DOMAIN-SUFFIX, eayyou.com, DIRECT
     - DOMAIN-SUFFIX, ebico.com, DIRECT
     - DOMAIN-SUFFIX, ebrun.com, DIRECT
-    - DOMAIN-SUFFIX, ecitic.com, DIRECT
     - DOMAIN-SUFFIX, ecjobhome.com, DIRECT
-    - DOMAIN-SUFFIX, edu.cn, DIRECT
-    - DOMAIN-SUFFIX, eduei.com, DIRECT
     - DOMAIN-SUFFIX, eeyy.com, DIRECT
     - DOMAIN-SUFFIX, eflycloud.com, DIRECT
     - DOMAIN-SUFFIX, elecfans.com, DIRECT
@@ -6659,7 +6870,6 @@ rules:
     - DOMAIN-SUFFIX, fengkongcloud.com, DIRECT
     - DOMAIN-SUFFIX, fengniao.com, DIRECT
     - DOMAIN-SUFFIX, fengxian110.com, DIRECT
-    - DOMAIN-SUFFIX, fenxi.com, DIRECT
     - DOMAIN-SUFFIX, fhldns.com, DIRECT
     - DOMAIN-SUFFIX, fimmu.com, DIRECT
     - DOMAIN-SUFFIX, finchina.com, DIRECT
@@ -6693,7 +6903,6 @@ rules:
     - DOMAIN-SUFFIX, gongxiangcj.com, DIRECT
     - DOMAIN-SUFFIX, goosail.com, DIRECT
     - DOMAIN-SUFFIX, goufw.com, DIRECT
-    - DOMAIN-SUFFIX, gree.com, DIRECT
     - DOMAIN-SUFFIX, greenxiazai.com, DIRECT
     - DOMAIN-SUFFIX, growingio.com, DIRECT
     - DOMAIN-SUFFIX, gtags.net, DIRECT
@@ -6790,7 +6999,6 @@ rules:
     - DOMAIN-SUFFIX, izuche.com, DIRECT
     - DOMAIN-SUFFIX, jandan.net, DIRECT
     - DOMAIN-SUFFIX, jb51.com, DIRECT
-    - DOMAIN-SUFFIX, jdair.net, DIRECT
     - DOMAIN-SUFFIX, jia.com, DIRECT
     - DOMAIN-SUFFIX, jiameng.com, DIRECT
     - DOMAIN-SUFFIX, jianbihua.com, DIRECT
@@ -6810,7 +7018,6 @@ rules:
     - DOMAIN-SUFFIX, jinse.com, DIRECT
     - DOMAIN-SUFFIX, jinti.com, DIRECT
     - DOMAIN-SUFFIX, jiqizhixin.com, DIRECT
-    - DOMAIN-SUFFIX, jisuanke.com, DIRECT
     - DOMAIN-SUFFIX, jisuxia.com, DIRECT
     - DOMAIN-SUFFIX, jiuzhilan.com, DIRECT
     - DOMAIN-SUFFIX, jj20.com, DIRECT
@@ -6864,7 +7071,6 @@ rules:
     - DOMAIN-SUFFIX, lawxp.com, DIRECT
     - DOMAIN-SUFFIX, leangoo.com, DIRECT
     - DOMAIN-SUFFIX, leanote.com, DIRECT
-    - DOMAIN-SUFFIX, ledu.com, DIRECT
     - DOMAIN-SUFFIX, leikeji.com, DIRECT
     - DOMAIN-SUFFIX, leiphone.com, DIRECT
     - DOMAIN-SUFFIX, leiting.com, DIRECT
@@ -6879,7 +7085,6 @@ rules:
     - DOMAIN-SUFFIX, lieyunwang.com, DIRECT
     - DOMAIN-SUFFIX, lightonus.com, DIRECT
     - DOMAIN-SUFFIX, likuso.com, DIRECT
-    - DOMAIN-SUFFIX, lingkou.com, DIRECT
     - DOMAIN-SUFFIX, linkvans.com, DIRECT
     - DOMAIN-SUFFIX, linsn.com, DIRECT
     - DOMAIN-SUFFIX, linuxidc.com, DIRECT
@@ -6897,7 +7102,6 @@ rules:
     - DOMAIN-SUFFIX, lotpc.com, DIRECT
     - DOMAIN-SUFFIX, loupan.com, DIRECT
     - DOMAIN-SUFFIX, lu.com, DIRECT
-    - DOMAIN-SUFFIX, luckyair.net, DIRECT
     - DOMAIN-SUFFIX, lufax.com, DIRECT
     - DOMAIN-SUFFIX, lufaxcdn.com, DIRECT
     - DOMAIN-SUFFIX, lunwengo.net, DIRECT
@@ -6905,7 +7109,6 @@ rules:
     - DOMAIN-SUFFIX, lvmama.com, DIRECT
     - DOMAIN-SUFFIX, lvsexitong.com, DIRECT # 陇ICP备15000477号-1 绿色系统
     - DOMAIN-SUFFIX, lxway.com, DIRECT
-    - DOMAIN-SUFFIX, magedu.com, DIRECT
     - DOMAIN-SUFFIX, maisanqi.com, DIRECT
     - DOMAIN-SUFFIX, mamecn.com, DIRECT
     - DOMAIN-SUFFIX, manhuatai.com, DIRECT
@@ -6916,7 +7119,6 @@ rules:
     - DOMAIN-SUFFIX, mcbang.com, DIRECT
     - DOMAIN-SUFFIX, mdpda.com, DIRECT
     - DOMAIN-SUFFIX, mechina.org, DIRECT
-    - DOMAIN-SUFFIX, mediav.com, DIRECT
     - DOMAIN-SUFFIX, meifang.com, DIRECT
     - DOMAIN-SUFFIX, meika360.com, DIRECT
     - DOMAIN-SUFFIX, meilishuo.com, DIRECT
@@ -6938,9 +7140,6 @@ rules:
     - DOMAIN-SUFFIX, mmbang.info, DIRECT
     - DOMAIN-SUFFIX, mofang.com, DIRECT
     - DOMAIN-SUFFIX, mofazhu.com, DIRECT
-    - DOMAIN-SUFFIX, mogu.com, DIRECT
-    - DOMAIN-SUFFIX, mogucdn.com, DIRECT
-    - DOMAIN-SUFFIX, mogujie.com, DIRECT
     - DOMAIN-SUFFIX, mokahr.com, DIRECT
     - DOMAIN-SUFFIX, moleecel.com, DIRECT
     - DOMAIN-SUFFIX, moocollege.com, DIRECT
@@ -6962,8 +7161,6 @@ rules:
     - DOMAIN-SUFFIX, newbandeng.com, DIRECT
     - DOMAIN-SUFFIX, newyx.net, DIRECT
     - DOMAIN-SUFFIX, noknok.cn, DIRECT
-    - DOMAIN-SUFFIX, nowcoder.com, DIRECT
-    - DOMAIN-SUFFIX, nowcoder.net, DIRECT
     - DOMAIN-SUFFIX, nowscore.com, DIRECT
     - DOMAIN-SUFFIX, nruan.com, DIRECT
     - DOMAIN-SUFFIX, ntalker.com, DIRECT
@@ -6978,7 +7175,6 @@ rules:
     - DOMAIN-SUFFIX, okooo.com, DIRECT
     - DOMAIN-SUFFIX, ol-cdn.com, DIRECT
     - DOMAIN-SUFFIX, ol-img.com, DIRECT
-    - DOMAIN-SUFFIX, oldboyedu.com, DIRECT
     - DOMAIN-SUFFIX, oneapm.com, DIRECT
     - DOMAIN-SUFFIX, onegreen.net, DIRECT
     - DOMAIN-SUFFIX, oneyac.com, DIRECT
@@ -6986,7 +7182,6 @@ rules:
     - DOMAIN-SUFFIX, onlinesjtu.com, DIRECT
     - DOMAIN-SUFFIX, onlylady.com, DIRECT
     - DOMAIN-SUFFIX, opdown.com, DIRECT
-    - DOMAIN-SUFFIX, oray.com, DIRECT
     - DOMAIN-SUFFIX, ottcn.com, DIRECT # 津ICP备12004891号-2
     - DOMAIN-SUFFIX, oupeng.com, DIRECT
     - DOMAIN-SUFFIX, p2peye.com, DIRECT
@@ -7053,7 +7248,6 @@ rules:
     - DOMAIN-SUFFIX, scoregg.com, DIRECT
     - DOMAIN-SUFFIX, sczsxx.com, DIRECT
     - DOMAIN-SUFFIX, sdo.com, DIRECT
-    - DOMAIN-SUFFIX, sec-wiki.com, DIRECT
     - DOMAIN-SUFFIX, sencdn.com, DIRECT
     - DOMAIN-SUFFIX, seniverse.com, DIRECT
     - DOMAIN-SUFFIX, senlinjimore.com, DIRECT # 鲁ICP备20001333号 森林集
@@ -7062,7 +7256,7 @@ rules:
     - DOMAIN-SUFFIX, shang360.com, DIRECT
     - DOMAIN-SUFFIX, shangc.net, DIRECT
     - DOMAIN-SUFFIX, shanghairc.com, DIRECT
-    - DOMAIN-SUFFIX, shangshi360.com, DIRECT # 桂ICP备14006138号-1
+    - DOMAIN-SUFFIX, shangshi360.com, DIRECT # 桂ICP备14006138号-1, DIRECT
     - DOMAIN-SUFFIX, shangzhibo.tv, DIRECT
     - DOMAIN-SUFFIX, shanshuihotel.com, DIRECT
     - DOMAIN-SUFFIX, sharejs.com, DIRECT
@@ -7096,7 +7290,6 @@ rules:
     - DOMAIN-SUFFIX, softwhy.com, DIRECT
     - DOMAIN-SUFFIX, sojson.com, DIRECT
     - DOMAIN-SUFFIX, somode.com, DIRECT
-    - DOMAIN-SUFFIX, soso.com, DIRECT
     - DOMAIN-SUFFIX, souqian.com, DIRECT
     - DOMAIN-SUFFIX, southmoney.com, DIRECT
     - DOMAIN-SUFFIX, sparkletour.com, DIRECT
@@ -7104,7 +7297,6 @@ rules:
     - DOMAIN-SUFFIX, ssports.com, DIRECT
     - DOMAIN-SUFFIX, starbaby.cc, DIRECT
     - DOMAIN-SUFFIX, starbaby.com, DIRECT
-    - DOMAIN-SUFFIX, stockstar.com, DIRECT
     - DOMAIN-SUFFIX, sun0769.com, DIRECT
     - DOMAIN-SUFFIX, sunrtb.com, DIRECT
     - DOMAIN-SUFFIX, supermap.com, DIRECT
@@ -7171,7 +7363,6 @@ rules:
     - DOMAIN-SUFFIX, veryzhun.com, DIRECT
     - DOMAIN-SUFFIX, vic18.com, DIRECT
     - DOMAIN-SUFFIX, videojj.com, DIRECT
-    - DOMAIN-SUFFIX, vijos.org, DIRECT
     - DOMAIN-SUFFIX, vip.com, DIRECT
     - DOMAIN-SUFFIX, vobao.com, DIRECT
     - DOMAIN-SUFFIX, vpgame.com, DIRECT
@@ -7184,7 +7375,6 @@ rules:
     - DOMAIN-SUFFIX, wdjimg.com, DIRECT
     - DOMAIN-SUFFIX, wdzj.com, DIRECT
     - DOMAIN-SUFFIX, weand.com, DIRECT
-    - DOMAIN-SUFFIX, webterren.com, DIRECT
     - DOMAIN-SUFFIX, weicaifu.com, DIRECT
     - DOMAIN-SUFFIX, weidian.com, DIRECT
     - DOMAIN-SUFFIX, weilaicaijing.com, DIRECT
@@ -7237,7 +7427,6 @@ rules:
     - DOMAIN-SUFFIX, xiayx.com, DIRECT
     - DOMAIN-SUFFIX, xiazaiba.com, DIRECT
     - DOMAIN-SUFFIX, xingjiesj.com, DIRECT
-    - DOMAIN-SUFFIX, xinhuanet.com, DIRECT
     - DOMAIN-SUFFIX, xinrenxinshi.com, DIRECT
     - DOMAIN-SUFFIX, xinshipu.com, DIRECT
     - DOMAIN-SUFFIX, xingtan001.com, DIRECT
@@ -7395,7 +7584,7 @@ rules:
 
     - DOMAIN-SUFFIX, hisensehitachi.com, DIRECT #海信日立官网
 
-    # 仟寻招聘
+    #  仟寻招聘
     - DOMAIN-SUFFIX, moseeker.com, DIRECT
 
     # 东郊到家
@@ -7586,7 +7775,6 @@ rules:
     - DOMAIN, redirector.c.chat.google.com, DIRECT
     - DOMAIN, redirector.c.mail.google.com, DIRECT
     - DOMAIN, redirector.c.pack.google.com, DIRECT
-    - DOMAIN, redirector.c.play.google.com, DIRECT
     - DOMAIN, redirector.c.youtubeeducation.com, DIRECT
     - DOMAIN, redirector.gcpcdn.gvt1.com, DIRECT
     - DOMAIN, redirector.gvt1.com, DIRECT
@@ -7665,6 +7853,9 @@ rules:
     - DOMAIN-SUFFIX, gvt1-cn.com, DIRECT
     - DOMAIN-SUFFIX, gvt2-cn.com, DIRECT
 
+   # google-play
+    - DOMAIN, redirector.c.play.google.com, DIRECT
+
    # google-trust-services
     - DOMAIN, pki-goog.l.google.com, DIRECT
 
@@ -7680,6 +7871,16 @@ rules:
    # gracg
     - DOMAIN-SUFFIX, gracg.com, DIRECT
     - DOMAIN-SUFFIX, procg.cn, DIRECT
+
+   # gree
+    # 珠海格力
+    - DOMAIN-SUFFIX, gree.cn, DIRECT
+    - DOMAIN-SUFFIX, gree.com, DIRECT
+    - DOMAIN-SUFFIX, gree.com.cn, DIRECT
+    - DOMAIN-SUFFIX, greeyun.com, DIRECT
+    - DOMAIN-SUFFIX, kinghomechina.com, DIRECT
+    - DOMAIN-SUFFIX, tosot.com.cn, DIRECT
+    - DOMAIN-SUFFIX, zhlyen.com, DIRECT
 
    # gucci
     - DOMAIN-SUFFIX, gucci.cn, DIRECT
@@ -7787,8 +7988,10 @@ rules:
     - DOMAIN-SUFFIX, dbank.com, DIRECT
     - DOMAIN-SUFFIX, dbankcdn.cn, DIRECT
     - DOMAIN-SUFFIX, dbankcdn.com, DIRECT
+    - DOMAIN-SUFFIX, dbankcloud.cn, DIRECT
     - DOMAIN-SUFFIX, dbankcloud.com, DIRECT
-    # - DOMAIN-SUFFIX, harmonyos.com, DIRECT
+    - DOMAIN-SUFFIX, dbankedge.cn, DIRECT
+    - DOMAIN-SUFFIX, dbankedge.net, DIRECT
     - DOMAIN-SUFFIX, hicloud.com, DIRECT
     - DOMAIN-SUFFIX, hihonor.com, DIRECT
     - DOMAIN-SUFFIX, honor.cn, DIRECT
@@ -9001,6 +9204,17 @@ rules:
    # microsoft-pki
     - DOMAIN, www.microsoft.com, DIRECT
 
+   # midea
+    - DOMAIN-SUFFIX, irsnp.com, DIRECT
+    - DOMAIN-SUFFIX, mdcdn.cn, DIRECT
+    - DOMAIN-SUFFIX, midea.cn, DIRECT
+    - DOMAIN-SUFFIX, midea.com, DIRECT
+    - DOMAIN-SUFFIX, midea.com.cn, DIRECT
+    - DOMAIN-SUFFIX, mideaepayuat.com, DIRECT
+    - DOMAIN-SUFFIX, msmartlife.cn, DIRECT
+    - DOMAIN-SUFFIX, msmartlife.com, DIRECT
+    - DOMAIN-SUFFIX, smartmidea.net, DIRECT
+
    # mihoyo
     # include:hoyoverse
     # include:mihoyo-cn
@@ -9175,6 +9389,12 @@ rules:
    # nist
     - DOMAIN-SUFFIX, nist.gov, DIRECT
     - DOMAIN-SUFFIX, time.gov, DIRECT
+
+   # nowcoder
+    - DOMAIN-SUFFIX, newcoder.com, DIRECT
+    - DOMAIN-SUFFIX, nowcoder.com, DIRECT
+    - DOMAIN-SUFFIX, nowcoder.net, DIRECT
+    - DOMAIN-SUFFIX, nowcoder.org, DIRECT
 
    # npmjs
     - DOMAIN-SUFFIX, npm.community, DIRECT
@@ -9450,18 +9670,9 @@ rules:
     # Dotless domains
     # regexp:^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$
 
-    # ArchLinux
-    - DOMAIN-SUFFIX, ping.archlinux.org, DIRECT
-
     # Aruba router
     - DOMAIN, instant.arubanetworks.com, DIRECT
     - DOMAIN, setmeup.arubanetworks.com, DIRECT
-
-    # Apple
-    - DOMAIN-SUFFIX, captive.apple.com, DIRECT
-
-    # Android
-    - DOMAIN-SUFFIX, connectivitycheck.gstatic.com, DIRECT
 
     # ASUS router
     # Reference: https://www.asus.com/support/FAQ/1005263/
@@ -9469,27 +9680,9 @@ rules:
     - DOMAIN, router.asus.com, DIRECT
     - DOMAIN, www.asusrouter.com, DIRECT
 
-    # Cloudflare
-    - DOMAIN-SUFFIX, cp.cloudflare.com, DIRECT
-
-    # Firefox
-    - DOMAIN-SUFFIX, detectportal.firefox.com, DIRECT
-
     # H3C
     # https://wwwsg.h3c.com/cn/d_202007/1316557_30005_0.htm#_Toc46214911
     - DOMAIN, oasisauth.h3c.com, DIRECT
-
-    # KDE
-    - DOMAIN-SUFFIX, networkcheck.kde.org, DIRECT
-
-    # MIUI
-    - DOMAIN, connect.rom.miui.com, DIRECT
-
-    # Mozilla Location Service
-    - DOMAIN-SUFFIX, location.services.mozilla.com, DIRECT
-
-    # Mozilla Push Service
-    - DOMAIN-SUFFIX, push.services.mozilla.com, DIRECT
 
     # Netgear router
     # Reference: https://kb.netgear.com/27199/I-can-t-access-my-router-what-do-I-do
@@ -9523,10 +9716,6 @@ rules:
     # Reference: https://resource.tp-link.com.cn/m/productClass/product_document?id=1655112502304621
     - DOMAIN-SUFFIX, tplinkwifi.net, DIRECT
     - DOMAIN, tplogin.cn, DIRECT
-
-    # Windows
-    - DOMAIN-SUFFIX, msftconnecttest.com, DIRECT
-    - DOMAIN-SUFFIX, msftncsi.com, DIRECT
 
     # Xiaomi router
     # Reference: https://www1.miwifi.com/miwifi_faq.html
@@ -9831,6 +10020,7 @@ rules:
 
    # qihoo360
     # include:75team
+    # include:qihoo360-ads
 
     - DOMAIN-SUFFIX, 360.cn, DIRECT
     - DOMAIN-SUFFIX, 360.com, DIRECT
@@ -9845,6 +10035,7 @@ rules:
     - DOMAIN-SUFFIX, 360kuai.com, DIRECT
     - DOMAIN-SUFFIX, 360os.com, DIRECT
     - DOMAIN-SUFFIX, 360panyun.cn, DIRECT
+    - DOMAIN-SUFFIX, 360qhcdn.com, DIRECT
     - DOMAIN-SUFFIX, 360safe.com, DIRECT
     - DOMAIN-SUFFIX, 360shouji.com, DIRECT
     - DOMAIN-SUFFIX, 360taojin.com, DIRECT
@@ -9854,6 +10045,8 @@ rules:
     - DOMAIN-SUFFIX, 360webcache.com, DIRECT
     - DOMAIN-SUFFIX, 360zqaq.com, DIRECT
     - DOMAIN-SUFFIX, anquanke.com, DIRECT
+    - DOMAIN-SUFFIX, appjiagu.com, DIRECT
+    - DOMAIN-SUFFIX, baomitu.com, DIRECT
     - DOMAIN-SUFFIX, haoso.com, DIRECT
     - DOMAIN-SUFFIX, haosou.com, DIRECT
     - DOMAIN-SUFFIX, haosou.com.cn, DIRECT
@@ -9862,6 +10055,7 @@ rules:
     - DOMAIN-SUFFIX, ludashi.com, DIRECT
     - DOMAIN-SUFFIX, nicaifu.com, DIRECT
     - DOMAIN-SUFFIX, nzwgs.com, DIRECT
+    - DOMAIN-SUFFIX, qhcdn.com, DIRECT
     - DOMAIN-SUFFIX, qhimg.com, DIRECT
     - DOMAIN-SUFFIX, qhimgs0.com, DIRECT
     - DOMAIN-SUFFIX, qhimgs1.com, DIRECT
@@ -9874,11 +10068,11 @@ rules:
     - DOMAIN-SUFFIX, qhres.com, DIRECT
     - DOMAIN-SUFFIX, qhres2.com, DIRECT
     - DOMAIN-SUFFIX, qhstatic.com, DIRECT
-    - DOMAIN-SUFFIX, qhupdate.com, DIRECT
-    - DOMAIN-SUFFIX, qihuapi.cn, DIRECT
-    - DOMAIN-SUFFIX, qihucdn.com, DIRECT
     - DOMAIN-SUFFIX, qihoo.com, DIRECT
     - DOMAIN-SUFFIX, qihoo.net, DIRECT
+    - DOMAIN-SUFFIX, qihuapi.cn, DIRECT
+    - DOMAIN-SUFFIX, qihucdn.com, DIRECT
+    - DOMAIN-SUFFIX, qiku.com, DIRECT
     - DOMAIN-SUFFIX, qikucdn.com, DIRECT
     - DOMAIN-SUFFIX, so.com, DIRECT
     - DOMAIN-SUFFIX, sou.com, DIRECT
@@ -11018,6 +11212,14 @@ rules:
    # wantmedia
 
    # watchout
+
+   # weathercn
+    # 华风爱科气象科技
+    - DOMAIN-SUFFIX, hf-aw.cn, DIRECT
+    - DOMAIN-SUFFIX, hf-aw.com, DIRECT
+    - DOMAIN-SUFFIX, huafeng-accuweather.cn, DIRECT
+    - DOMAIN-SUFFIX, huafengaw.com, DIRECT
+    - DOMAIN-SUFFIX, weathercn.com, DIRECT
 
    # webex
     - DOMAIN-SUFFIX, webex.com.cn, DIRECT
@@ -16036,10 +16238,11 @@ rules:
    # calltouch.ru
 
    # cambridge
+    - DOMAIN-SUFFIX, cam.ac.uk, PROXY
     - DOMAIN-SUFFIX, cambridge.org, PROXY
-    - DOMAIN-SUFFIX, cambridgeschoolshakespeare.com, PROXY
     - DOMAIN-SUFFIX, cambridgedigital.net, PROXY
     - DOMAIN-SUFFIX, cambridgemaths.org, PROXY
+    - DOMAIN-SUFFIX, cambridgeschoolshakespeare.com, PROXY
 
     # The Cambridge Structural Database
     - DOMAIN-SUFFIX, ccdc.cam.ac.uk, PROXY
@@ -16234,6 +16437,110 @@ rules:
 
    # category-bank-ir
 
+   # category-bank-jp
+    - DOMAIN-SUFFIX, 114bank.co.jp, PROXY # 株式会社百十四銀行
+    - DOMAIN-SUFFIX, 77bank.co.jp, PROXY # 株式会社七十七銀行
+    - DOMAIN-SUFFIX, 82bank.co.jp, PROXY # 株式会社八十二銀行
+    - DOMAIN-SUFFIX, a-bank.jp, PROXY # 株式会社青森銀行
+    - DOMAIN-SUFFIX, akita-bank.co.jp, PROXY # 株式会社秋田銀行
+    - DOMAIN-SUFFIX, ashikagabank.co.jp, PROXY # 株式会社足利銀行
+    - DOMAIN-SUFFIX, awabank.co.jp, PROXY # 株式会社阿波銀行
+    - DOMAIN-SUFFIX, bk.mufg.jp, PROXY # 株式会社三菱東京UFJ銀行
+    - DOMAIN-SUFFIX, boj.or.jp, PROXY # 日本銀行
+    - DOMAIN-SUFFIX, chibabank.co.jp, PROXY # 株式会社千葉銀行
+    - DOMAIN-SUFFIX, chibakogyo-bank.co.jp, PROXY # 株式会社千葉興業銀行
+    - DOMAIN-SUFFIX, chikubank.co.jp, PROXY # 株式会社筑邦銀行
+    - DOMAIN-SUFFIX, chugokubank.co.jp, PROXY # 株式会社中国銀行
+    - DOMAIN-SUFFIX, daiichibank.co.jp, PROXY # 株式会社第四銀行
+    - DOMAIN-SUFFIX, fukuibank.co.jp, PROXY # 株式会社福井銀行
+    - DOMAIN-SUFFIX, fukuokabank.co.jp, PROXY # 株式会社福岡銀行
+    - DOMAIN-SUFFIX, gunmabank.co.jp, PROXY # 株式会社群馬銀行
+    - DOMAIN-SUFFIX, higobank.co.jp, PROXY # 株式会社肥後銀行
+    - DOMAIN-SUFFIX, hiroshimabank.co.jp, PROXY # 株式会社広島銀行
+    - DOMAIN-SUFFIX, hokkoku.co.jp, PROXY # 株式会社北國銀行
+    - DOMAIN-SUFFIX, hokuetsubank.co.jp, PROXY # 株式会社北越銀行
+    - DOMAIN-SUFFIX, hokutobank.co.jp, PROXY # 株式会社北都銀行
+    - DOMAIN-SUFFIX, hokuyobank.co.jp, PROXY # 株式会社北海道銀行
+    - DOMAIN-SUFFIX, hyakugo.co.jp, PROXY # 株式会社百五銀行
+    - DOMAIN-SUFFIX, ikedashinsen.co.jp, PROXY # 株式会社池田泉州銀行
+    - DOMAIN-SUFFIX, iwatebank.co.jp, PROXY # 株式会社岩手銀行
+    - DOMAIN-SUFFIX, iyobank.co.jp, PROXY # 株式会社伊予銀行
+    - DOMAIN-SUFFIX, joyobank.co.jp, PROXY # 株式会社常陽銀行
+    - DOMAIN-SUFFIX, juhachibank.co.jp, PROXY # 株式会社十八銀行
+    - DOMAIN-SUFFIX, juroku.co.jp, PROXY # 株式会社十六銀行
+    - DOMAIN-SUFFIX, kagobank.co.jp, PROXY # 株式会社鹿児島銀行
+    - DOMAIN-SUFFIX, kinki.co.jp, PROXY # 株式会社近畿大阪銀行
+    - DOMAIN-SUFFIX, kitakyushubank.co.jp, PROXY # 株式会社北九州銀行
+    - DOMAIN-SUFFIX, kiyobank.co.jp, PROXY # 株式会社紀陽銀行
+    - DOMAIN-SUFFIX, kyotobank.co.jp, PROXY # 株式会社京都銀行
+    - DOMAIN-SUFFIX, michinokubank.co.jp, PROXY # 株式会社みちのく銀行
+    - DOMAIN-SUFFIX, mie.co.jp, PROXY # 株式会社三重銀行
+    - DOMAIN-SUFFIX, miyazakibank.co.jp, PROXY # 株式会社宮崎銀行
+    - DOMAIN-SUFFIX, mizuhobank.co.jp, PROXY # 株式会社みずほ銀行
+    - DOMAIN-SUFFIX, musashinobank.co.jp, PROXY # 株式会社武蔵野銀行
+    - DOMAIN-SUFFIX, nantobank.co.jp, PROXY # 株式会社南都銀行
+    - DOMAIN-SUFFIX, nishinipponbank.co.jp, PROXY # 株式会社西日本シティ銀行
+    - DOMAIN-SUFFIX, ogakikyoritsu.co.jp, PROXY # 株式会社大垣共立銀行
+    - DOMAIN-SUFFIX, oitabank.co.jp, PROXY # 株式会社大分銀行
+    - DOMAIN-SUFFIX, okinawabank.co.jp, PROXY # 株式会社沖縄銀行
+    - DOMAIN-SUFFIX, resonabank.co.jp, PROXY # 株式会社りそな銀行
+    - DOMAIN-SUFFIX, ryukyubank.co.jp, PROXY # 株式会社琉球銀行
+    - DOMAIN-SUFFIX, sagabank.co.jp, PROXY # 株式会社佐賀銀行
+    - DOMAIN-SUFFIX, saitama-resona.co.jp, PROXY # 株式会社埼玉りそな銀行
+    - DOMAIN-SUFFIX, saninbank.co.jp, PROXY # 株式会社山陰合同銀行
+    - DOMAIN-SUFFIX, shigagin.co.jp, PROXY # 株式会社滋賀銀行
+    - DOMAIN-SUFFIX, shikokubank.co.jp, PROXY # 株式会社四国銀行
+    - DOMAIN-SUFFIX, shimizubank.co.jp, PROXY # 株式会社清水銀行
+    - DOMAIN-SUFFIX, shinwabank.co.jp, PROXY # 株式会社親和銀行
+    - DOMAIN-SUFFIX, shizuokabank.co.jp, PROXY # 株式会社静岡銀行
+    - DOMAIN-SUFFIX, shonai.co.jp, PROXY # 株式会社荘内銀行
+    - DOMAIN-SUFFIX, smbc.co.jp, PROXY # 株式会社三井住友銀行
+    - DOMAIN-SUFFIX, surugabank.co.jp, PROXY # 株式会社スルガ銀行
+    - DOMAIN-SUFFIX, tajimabank.co.jp, PROXY # 株式会社但馬銀行
+    - DOMAIN-SUFFIX, tohobank.co.jp, PROXY # 株式会社東邦銀行
+    - DOMAIN-SUFFIX, tohoku-bank.co.jp, PROXY # 株式会社東北銀行
+    - DOMAIN-SUFFIX, tomibank.co.jp, PROXY # 株式会社東京都民銀行
+    - DOMAIN-SUFFIX, tottoribank.co.jp, PROXY # 株式会社鳥取銀行
+    - DOMAIN-SUFFIX, toyobank.co.jp, PROXY # 株式会社富山銀行
+    - DOMAIN-SUFFIX, tsukubabank.co.jp, PROXY # 株式会社筑波銀行
+    - DOMAIN-SUFFIX, yamagatabank.co.jp, PROXY # 株式会社山形銀行
+    - DOMAIN-SUFFIX, yamaguchibank.co.jp, PROXY # 株式会社山口銀行
+    - DOMAIN-SUFFIX, yamanashibank.co.jp, PROXY # 株式会社山梨中央銀行
+    - DOMAIN-SUFFIX, yokohamabank.co.jp, PROXY # 株式会社横浜銀行
+
+   # category-bank-mm
+    # Banking website in Myanmar
+    - DOMAIN-SUFFIX, abank.com.mm, PROXY
+    - DOMAIN-SUFFIX, ablmm.com, PROXY
+    - DOMAIN-SUFFIX, agdbank.com, PROXY
+    - DOMAIN-SUFFIX, ayabank.com, PROXY
+    - DOMAIN-SUFFIX, cbbank.com.mm, PROXY
+    - DOMAIN-SUFFIX, cbm.com.mm, PROXY
+    - DOMAIN-SUFFIX, chid.com.mm, PROXY
+    - DOMAIN-SUFFIX, firstprivatebank.com.mm, PROXY
+    - DOMAIN-SUFFIX, gbank.com.mm, PROXY
+    - DOMAIN-SUFFIX, kbzbank.com, PROXY
+    - DOMAIN-SUFFIX, kbzpay.com, PROXY
+    - DOMAIN-SUFFIX, mabbank.com, PROXY
+    - DOMAIN-SUFFIX, mcb.com.mm, PROXY
+    - DOMAIN-SUFFIX, mdbankpublic.com, PROXY
+    - DOMAIN-SUFFIX, meb.gov.mm, PROXY
+    - DOMAIN-SUFFIX, micb.gov.mm, PROXY
+    - DOMAIN-SUFFIX, mmbbank.com.mm, PROXY
+    - DOMAIN-SUFFIX, mmftb.gov.mm, PROXY
+    - DOMAIN-SUFFIX, mminsurance.gov.mm, PROXY
+    - DOMAIN-SUFFIX, mmtourismbank.com, PROXY
+    - DOMAIN-SUFFIX, mobmyanmar.com, PROXY
+    - DOMAIN-SUFFIX, mwdbank.com, PROXY
+    - DOMAIN-SUFFIX, nptsibinbank.com, PROXY
+    - DOMAIN-SUFFIX, shwebank.com, PROXY
+    - DOMAIN-SUFFIX, smedevelopmentbank.com.mm, PROXY
+    - DOMAIN-SUFFIX, tuncommercialbank.com, PROXY
+    - DOMAIN-SUFFIX, uab.com.mm, PROXY
+    - DOMAIN-SUFFIX, waveomoney.com.mm, PROXY
+    - DOMAIN-SUFFIX, yomabank.com, PROXY
+    - DOMAIN-SUFFIX, ysx-mm.com, PROXY
+
    # category-blog-cn
 
    # category-bourse-ir
@@ -16322,6 +16629,8 @@ rules:
     - DOMAIN-SUFFIX, trustcor.ca, PROXY
     - DOMAIN-SUFFIX, trustcor.com, PROXY
     - DOMAIN-SUFFIX, trustisfps.com, PROXY
+
+   # category-collaborate-cn
 
    # category-communication
     # include:clubhouse
@@ -16517,6 +16826,7 @@ rules:
    # category-dev-cn
     # include:aixcoder
     # include:apifox
+    # include:apipost
     # include:baltamatica
     # include:cnblogs
     # include:coding
@@ -16652,6 +16962,7 @@ rules:
     - DOMAIN-SUFFIX, bookeeper.itunes.apple.com, PROXY
 
    # category-finance
+    # category-bank-mm
     # include:hsbc
     # include:ifast
     # include:longbridge
@@ -23169,6 +23480,18 @@ rules:
 
    # category-pt
 
+    # 天雪论坛
+    - DOMAIN-SUFFIX, skyey2.com, PROXY
+    - DOMAIN-SUFFIX, skyeysnow.com, PROXY
+
+    # M-Team
+    - DOMAIN-SUFFIX, m-team.cc, PROXY
+    - DOMAIN-SUFFIX, m-team.io, PROXY
+
+    - DOMAIN-SUFFIX, myanonamouse.net, PROXY
+    - DOMAIN-SUFFIX, torrentleech.org, PROXY
+    - DOMAIN-SUFFIX, u2.dmhy.org, PROXY
+
    # category-android-app-download
     # include:apkcombo
     # include:apkmirror
@@ -23256,6 +23579,7 @@ rules:
     - DOMAIN-SUFFIX, cnpmjs.org, PROXY
     - DOMAIN-SUFFIX, cygwin.com, PROXY
     - DOMAIN-SUFFIX, cython.org, PROXY
+    - DOMAIN-SUFFIX, deno.com, PROXY
     - DOMAIN-SUFFIX, deno.land, PROXY
     - DOMAIN-SUFFIX, dev.to, PROXY
     - DOMAIN-SUFFIX, elixir-lang.org, PROXY
@@ -23591,13 +23915,13 @@ rules:
     # This list contains scholarly domains that don't have access point in China Mainland.
 
     # include:apa
-    # include:cambridge
+    # include:category-scholar-ir
+    # include:category-scholar-uk
     # include:clarivate
     # include:doi
     # include:elsevier
     # include:google-scholar
     # include:ieee
-    # include:imperialcollege
     # include:knovel
     # include:mit
     # include:oup
@@ -24313,6 +24637,7 @@ rules:
     - DOMAIN-SUFFIX, ctripbuy.hk, PROXY
     - DOMAIN-SUFFIX, hhtravel.com.tw, PROXY
     - DOMAIN-SUFFIX, trip.com, PROXY
+    - DOMAIN-SUFFIX, tripcdn.com, PROXY
 
    # cuinc
     - DOMAIN-SUFFIX, cuinc.oen.tw, PROXY
@@ -27307,6 +27632,8 @@ rules:
     # include:golang
     # include:google-ads
     # include:google-deepmind
+    # include:google-gemini
+    # include:google-play
     # include:google-registry
     # include:google-scholar
     # include:google-trust-services
@@ -27675,7 +28002,6 @@ rules:
     - DOMAIN-SUFFIX, googlemaps.com, PROXY
     - DOMAIN-SUFFIX, googlepagecreator.com, PROXY
     - DOMAIN-SUFFIX, googlephotos.com, PROXY
-    - DOMAIN-SUFFIX, googleplay.com, PROXY
     - DOMAIN-SUFFIX, googleplus.com, PROXY
     - DOMAIN-SUFFIX, googlesource.com, PROXY
     - DOMAIN-SUFFIX, googlestore.com, PROXY
@@ -27827,7 +28153,6 @@ rules:
     - DOMAIN-SUFFIX, xn--ggle-55da.com, PROXY   # gооgle.com
     - DOMAIN-SUFFIX, xn--gogl-0nd52e.com, PROXY # gοoglе.com
     - DOMAIN-SUFFIX, xn--gogl-1nd42e.com, PROXY # goοglе.com
-    - DOMAIN-SUFFIX, xn--ngstr-lra8j.com, PROXY # google play 应用下载时涉及
     - DOMAIN-SUFFIX, xplr.co, PROXY
     - DOMAIN-SUFFIX, zukunftswerkstatt.de, PROXY
 
@@ -27856,6 +28181,14 @@ rules:
     # This list is for backward compatibility
 
     # include:google-deepmind
+
+   # google-play
+    - DOMAIN-SUFFIX, play-fe.googleapis.com, PROXY
+    - DOMAIN-SUFFIX, play-games.googleusercontent.com, PROXY
+    - DOMAIN-SUFFIX, play-lh.googleusercontent.com, PROXY
+    - DOMAIN-SUFFIX, play.google.com, PROXY
+    - DOMAIN-SUFFIX, play.googleapis.com, PROXY
+    - DOMAIN-SUFFIX, xn--ngstr-lra8j.com, PROXY
 
    # google-registry
     - DOMAIN-SUFFIX, charlestonroadregistry.com, PROXY
@@ -27999,7 +28332,10 @@ rules:
     - DOMAIN, alt6-mtalk.google.com, PROXY
     - DOMAIN, alt7-mtalk.google.com, PROXY
     - DOMAIN, alt8-mtalk.google.com, PROXY
+    - DOMAIN, mtalk-dev.google.com, PROXY
+    - DOMAIN, mtalk-staging.google.com, PROXY
     - DOMAIN, mtalk.google.com, PROXY
+    - DOMAIN, mtalk4.google.com, PROXY
 
    # goproxy
     # go mod proxy
@@ -28164,6 +28500,7 @@ rules:
    # hetzner
     - DOMAIN-SUFFIX, hetzner.cloud, PROXY
     - DOMAIN-SUFFIX, hetzner.com, PROXY
+    - DOMAIN-SUFFIX, hetzner.company, PROXY
     - DOMAIN-SUFFIX, hetzner.de, PROXY
     - DOMAIN-SUFFIX, your-server.de, PROXY
 
@@ -31071,6 +31408,7 @@ rules:
    # mojang
     - DOMAIN-SUFFIX, callersbane.com, PROXY
     - DOMAIN-SUFFIX, minecraft.net, PROXY
+    - DOMAIN-SUFFIX, minecraftservices.com, PROXY
     - DOMAIN-SUFFIX, minecraftshop.com, PROXY
     - DOMAIN-SUFFIX, mojang.com, PROXY
 
@@ -31156,6 +31494,12 @@ rules:
 
     # Thunderbird
     - DOMAIN-SUFFIX, thunderbird.net, PROXY
+
+    # Mozilla Location Service
+    - DOMAIN-SUFFIX, location.services.mozilla.com, PROXY
+
+    # Mozilla Push Service
+    - DOMAIN-SUFFIX, push.services.mozilla.com, PROXY
 
    # msn
     - DOMAIN-SUFFIX, microsoftnews.cc, PROXY
@@ -31835,11 +32179,14 @@ rules:
     - DOMAIN-SUFFIX, nordstrommedia.com, PROXY
 
    # notion
+    - DOMAIN-SUFFIX, api.notion.com, PROXY
+    - DOMAIN-SUFFIX, img.notionusercontent.com, PROXY
     - DOMAIN-SUFFIX, notion-static.com, PROXY
     - DOMAIN-SUFFIX, notion.com, PROXY
     - DOMAIN-SUFFIX, notion.new, PROXY
     - DOMAIN-SUFFIX, notion.site, PROXY
     - DOMAIN-SUFFIX, notion.so, PROXY
+    - DOMAIN-SUFFIX, otionusercontent.com, PROXY
 
    # now
     - DOMAIN-SUFFIX, now.com, PROXY
@@ -32059,6 +32406,10 @@ rules:
     - DOMAIN-SUFFIX, speedtest.net, PROXY
     - DOMAIN-SUFFIX, speedtestcustom.com, PROXY
     - DOMAIN-SUFFIX, webtest.net, PROXY
+
+    - DOMAIN, www.speedtest.net.cdn.cloudflare.net, PROXY
+
+    # include:ookla-speedtest-ads
 
    # op
     - DOMAIN-SUFFIX, op.gg, PROXY
@@ -35700,6 +36051,8 @@ rules:
     - DOMAIN-SUFFIX, themoviedb.org, PROXY
     - DOMAIN-SUFFIX, tmdb.org, PROXY
 
+    - DOMAIN, tmdb-image-prod.b-cdn.net, PROXY
+
    # tmtpost
 
    # tokyo-sports
@@ -35791,10 +36144,37 @@ rules:
    # twitch
     - DOMAIN-SUFFIX, ext-twitch.tv, PROXY
     - DOMAIN-SUFFIX, jtvnw.net, PROXY
+    - DOMAIN-SUFFIX, live-video.net, PROXY
     - DOMAIN-SUFFIX, ttvnw.net, PROXY
     - DOMAIN-SUFFIX, twitch.tv, PROXY
     - DOMAIN-SUFFIX, twitchcdn.net, PROXY
     - DOMAIN-SUFFIX, twitchsvc.net, PROXY
+
+    - DOMAIN, d1g1f25tn8m2e6.cloudfront.net, PROXY
+    - DOMAIN, d1m7jfoe9zdc1j.cloudfront.net, PROXY
+    - DOMAIN, d1mhjrowxxagfy.cloudfront.net, PROXY
+    - DOMAIN, d1oca24q5dwo6d.cloudfront.net, PROXY
+    - DOMAIN, d1w2poirtb3as9.cloudfront.net, PROXY
+    - DOMAIN, d1xhnb4ptk05mw.cloudfront.net, PROXY
+    - DOMAIN, d1ymi26ma8va5x.cloudfront.net, PROXY
+    - DOMAIN, d2aba1wr3818hz.cloudfront.net, PROXY
+    - DOMAIN, d2dylwb3shzel1.cloudfront.net, PROXY
+    - DOMAIN, d2e2de1etea730.cloudfront.net, PROXY
+    - DOMAIN, d2nvs31859zcd8.cloudfront.net, PROXY
+    - DOMAIN, d2um2qdswy1tb0.cloudfront.net, PROXY
+    - DOMAIN, d2vjef5jvl6bfs.cloudfront.net, PROXY
+    - DOMAIN, d2xmjdvx03ij56.cloudfront.net, PROXY
+    - DOMAIN, d36nr0u3xmc4mm.cloudfront.net, PROXY
+    - DOMAIN, d3aqoihi2n8ty8.cloudfront.net, PROXY
+    - DOMAIN, d3c27h4odz752x.cloudfront.net, PROXY
+    - DOMAIN, d3vd9lfkzbru3h.cloudfront.net, PROXY
+    - DOMAIN, d6d4ismr40iw.cloudfront.net, PROXY
+    - DOMAIN, d6tizftlrpuof.cloudfront.net, PROXY
+    - DOMAIN, ddacn6pr5v0tl.cloudfront.net, PROXY
+    - DOMAIN, dgeft87wbj63p.cloudfront.net, PROXY
+    - DOMAIN, dqrpb9wgowsf5.cloudfront.net, PROXY
+    - DOMAIN, ds0h3roq6wcgc.cloudfront.net, PROXY
+    - DOMAIN, dykkng5hnh52u.cloudfront.net, PROXY
 
    # twitter
     - DOMAIN-SUFFIX, ads-twitter.com, PROXY
@@ -38148,7 +38528,7 @@ rules:
     - IP-CIDR, 220.181.174.162/32, PROXY, no-resolves
     - IP-CIDR, 220.181.174.226/32, PROXY, no-resolves
 
- # PROXY added manually IP-CIDR 
+ # PROXY added manually IP-CIDR
   # a
 
   # b
