@@ -296,23 +296,23 @@ payload:
     - '+.cnbetacdn.com'
 
    # cnn
-    - '+.collector.cdp.cnn.com'
-    - '+.edition.cnn.com'
-    - '+.lightning.cnn.com'
-    - '+.media.cnn.com'
-    - '+.registry.api.cnn.io'
-    - '+.smetrics.cnn.com'
-    - '+.i.cdn.cnn.com'
-    - '+.z.cdp-dev.cnn.com'
+    # - '+.collector.cdp.cnn.com'
+    # - '+.edition.cnn.com'
+    # - '+.lightning.cnn.com'
+    # - '+.media.cnn.com'
+    # - '+.registry.api.cnn.io'
+    # - '+.smetrics.cnn.com'
+    # - '+.i.cdn.cnn.com'
+    # - '+.z.cdp-dev.cnn.com'
 
-    - 'collector.cdp.cnn.com'
-    - 'edition.cnn.com'
-    - 'lightning.cnn.com'
-    - 'media.cnn.com'
-    - 'registry.api.cnn.io'
-    - 'smetrics.cnn.com'
-    - 'i.cdn.cnn.com'
-    - 'z.cdp-dev.cnn.com'
+    # - 'collector.cdp.cnn.com'
+    # - 'edition.cnn.com'
+    # - 'lightning.cnn.com'
+    # - 'media.cnn.com'
+    # - 'registry.api.cnn.io'
+    # - 'smetrics.cnn.com'
+    # - 'i.cdn.cnn.com'
+    # - 'z.cdp-dev.cnn.com'
 
    # co.uk
     - '+.co.uk'
@@ -990,6 +990,7 @@ payload:
 
    # makedreamwebsite.com
     - '+.makedreamwebsite.com'
+    - '+.makedreamwebsite.gumroad.com'
 
    # makeuseof.com
     - '+.makeuseof.com'
@@ -1077,6 +1078,9 @@ payload:
 
    # mwcbarcelona.com
     - 'register.mwcbarcelona.com'
+
+   # mycustomsoftware.com
+    - '+.mycustomsoftware.com'
 
    # myindigocard
     - '+.myindigocard.com'
@@ -1471,6 +1475,9 @@ payload:
     - 'publisher-assets.spot.im'
     - 'event-stream.spot.im'
 
+   # squarespace.com
+    - '+.squarespace.com'
+
    # starford.com
     - '+.starford.com'
     - '+.ford.com'
@@ -1607,10 +1614,13 @@ payload:
     - '+.sgpstatp.com'
     - '+.snapkit.com'
 
+    - '*-att.com' 
+    - '*-tiktokcdn-com'
+    - '+.app-analytics-services-att.com'
+    - '+.app-analytics-services.com'
     - '+.tiktokcdn-eu.com'
     - '+.tokopediax.com'
-
-    # - '+.-tiktokcdn-com'
+    - DOMAIN-KEYWORD, -att.com
 
     # - '+.TikTok*'
 
@@ -1641,6 +1651,9 @@ payload:
 
    # tonwhales.com
     - '+.tonwhales.com'
+
+   # tools.keycdn.com
+    - '+.tools.keycdn.com'
 
    # tradestockfund.com
     - '+.tradestockfund.com'
