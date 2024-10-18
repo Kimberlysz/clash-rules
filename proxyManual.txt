@@ -1,4 +1,4 @@
-#  the following few lines is for creating clasassetsh rule-providers:
+#  the following few lines is for creating clash rule-providers:
 # payload:
 # 
 #     - '+.'
