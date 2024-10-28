@@ -131,7 +131,7 @@ payload:
 
    # at-tps.org
     - '+.at-tps.org'
-    - '+.b-cdn.net'
+    - '+.tps-support.b-cdn.net'
 
    # atmeta.com
     - '+.atmeta.com'
@@ -141,6 +141,9 @@ payload:
     - '+.avg.com'
   
   # b
+   # b-cdn.net
+    - '+.b-cdn.net'
+
    # badoo
     - '+.badoocdn.com'
     - '+.badoo.com'
