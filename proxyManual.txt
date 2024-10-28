@@ -131,6 +131,7 @@ payload:
 
    # at-tps.org
     - '+.at-tps.org'
+    - '+.b-cdn.net'
 
    # atmeta.com
     - '+.atmeta.com'
