@@ -898,48 +898,46 @@ rule-providers:
     path: ./ruleset/tld-not-cn.yaml
     interval: 86400
 
-  rejectmanual:
+  directClash:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/rejectManual.txt"
-    path: ./ruleset/rejectmanual.yaml
+    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/release/directClash.txt"
+    path: ./ruleset/directClash.yaml
     interval: 86400
 
-  directmanual:
+  rejectClash:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/directManual.txt"
-    path: ./ruleset/directmanual.yaml
+    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/release/rejectClash.txt"
+    path: ./ruleset/rejectClash.yaml
     interval: 86400
 
-  proxymanual:
+  proxyClash:
     type: http
     behavior: domain
-    # url: https://raw.githubusercontent.com/Kimberlysz/clash-rules/release/proxyManual.txt
-    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/proxyManual.txt"
-    path: ./ruleset/proxymanual.yaml
+    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/release/proxyClash.txt"
+    path: ./ruleset/proxyClash.yaml
     interval: 86400
 
-  rejectmanualrouter:
+  directClashRouter:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/rejectManual.txt"
-    path: ./rule_provider/rejectmanualrouter.yaml
+    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/release/directClash.txt"
+    path: ./rule_provider/directClashRouter.yaml
     interval: 86400
 
-  directmanualrouter:
+  proxyClashRouter:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/directManual.txt"
-    path: ./rule_provider/directmanualrouter.yaml
+    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/release/proxyClash.txt"
+    path: ./rule_provider/proxyClashRouter.yaml
     interval: 86400
 
-  proxymanualrouter:
+  rejectClashRouter:
     type: http
     behavior: domain
-    # url: https://raw.githubusercontent.com/Kimberlysz/clash-rules/release/proxyManual.txt
-    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/proxyManual.txt"
-    path: ./rule_provider/proxymanualrouter.yaml
+    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/release/rejectClash.txt"
+    path: ./rule_provider/rejectClashRouter.yaml
     interval: 86400
 
 rules:
@@ -949,10 +947,10 @@ rules:
     - DOMAIN-SUFFIX, jsdelivr.net, PROXY
 
   # RULE-SET-clash
-    - RULE-SET, rejectmanual, 🛑 AdBlock rules
+    - RULE-SET, rejectClash, 🛑 AdBlock rules
 
   # RULE-SET-merlinclash
-    - RULE-SET, rejectmanualrouter, 🛑 AdBlock rules
+    - RULE-SET, rejectClashRouter, 🛑 AdBlock rules
 
   # DOMAIN-SET-shadowrocket
     # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/rejectDomainset.txt, reject
@@ -2102,12 +2100,12 @@ rules:
 
  # RULE-SET (-clash)
   # RULE-SET-clash
-    - RULE-SET, directmanual, DIRECT
-    - RULE-SET, proxymanual, PROXY
+    - RULE-SET, directClash, DIRECT
+    - RULE-SET, proxyClash, PROXY
 
   # RULE-SET-merlinclash
-    - RULE-SET, directmanualrouter, DIRECT
-    - RULE-SET, proxymanualrouter, PROXY
+    - RULE-SET, directClashRouter, DIRECT
+    - RULE-SET, proxyClashRouter, PROXY
 
   # DOMAIN-SET-shadowrocket
     # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/directDomainset.txt, direct
@@ -38746,6 +38744,10 @@ rules:
 
  # PROXY added manually IP-CIDR
   # a
+   # AS45102 Alibaba (US) Technology Co., Ltd.
+    # Alibaba Cloud - US (C06961510)
+    - IP-CIDR, 47.252.0.0/18, PROXY, no-resolve
+
    # AS7018 AT&T Services, Inc.
     # romania
     - IP-CIDR, 89.47.119.0/24, PROXY, no-resolve
