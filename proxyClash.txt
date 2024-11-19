@@ -156,6 +156,9 @@ payload:
     # - '+.64clouds'
     - '+.64clouds.com'
 
+   # bankaool.com
+    - '+.bankaool.com'
+
    # barnesandnoble
     - '+.barnesandnoble.com'
 
@@ -1228,6 +1231,9 @@ payload:
 
    # opensea
     - '+.opensea.io'
+
+   # openinventionnetwork.com
+    - '+.openinventionnetwork.com'
 
    # optimizely.com
     - '+.optimizely.com'
