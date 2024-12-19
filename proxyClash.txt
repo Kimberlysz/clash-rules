@@ -142,7 +142,7 @@ payload:
    # avg
     - '+.avcdn.com'
     - '+.avg.com'
-  
+
   # b
    # b-cdn.net
     - '+.b-cdn.net'
@@ -153,7 +153,7 @@ payload:
     - '+.badoo.app'
 
    # bandwagonhost
-    # - '+.64clouds'
+    - '+.64clouds'
     - '+.64clouds.com'
 
    # bankaool.com
@@ -170,7 +170,7 @@ payload:
     - '+.e-hentai.org'
 
    # beetalk
-    # - '+.beetalk'
+    - '+.beetalk'
 
    # behance.com
     - '+.behance.com'
@@ -314,7 +314,7 @@ payload:
     - '+.cnbeta.com.tw'
     - '+.cnbetacdn.com'
 
-   # cnn
+   # cnn (test)
     # - '+.collector.cdp.cnn.com'
     # - '+.edition.cnn.com'
     # - '+.lightning.cnn.com'
@@ -438,9 +438,6 @@ payload:
    # dirtrab.cl
     - '+.dirtrab.cl'
 
-   # discomax.com
-    - '+.discomax.com'
-
    # disneyplus
     # - '+.bam.nr-data.net'
     # - '+.cdn.registerdisney.go.com'
@@ -479,7 +476,7 @@ payload:
     - '+.exdynsrv.com'
     - '+.hwcdn.net'
 
-   # elmbrook.org
+   # elmbrook.org (test)
     - '+.cdn.pendo.io'
     - '+.onrealm.org'
     - '+.pay.acst.com'
@@ -602,6 +599,9 @@ payload:
    # genius.com
     - '+.genius.com'
 
+   # getcomics.info
+    - '+.getcomics.info'
+
    # getcourse.ru
     - 'fs-thb01.getcourse.ru'
     - 'fs-thb02.getcourse.ru'
@@ -627,13 +627,16 @@ payload:
    # github
     # AS36459 - GitHub, Inc.
 
-    # - '+.github'
+    - '+.github'
     # - '+.gist.github.com'
     # - '+.raw.githubusercontent.com'
     # - '+.rawgithub.com'
 
    # goddessdelivers
     - '+.goddessdelivers.com'
+
+   # gomovie.sx
+    - '+.gomovie.sx'
 
    # google
 
@@ -778,8 +781,9 @@ payload:
    # hashrate
     - '+.hashrate.to'
 
-   # hbomax
+   # hbomax (test)
     - '+.h264.io'
+    - '+.prd.api.max.com'
     - '+.warnermediacdn.com'
 
    # healthline
@@ -802,11 +806,11 @@ payload:
     - '+.hhdcb3office.org'
 
    # hindustantimes.com
-    - '+.hiveon.com'
-    - '+.hiveos.farm'
+    - '+.hindustantimes.com'
 
    # hiveos
-    - '+.hindustantimes.com'
+    - '+.hiveon.com'
+    - '+.hiveos.farm'
 
    # homegoods.com
     - '+.homegoods.com'
@@ -940,6 +944,9 @@ payload:
     - '+.kickasstorrents.to'
     - '+.thekickasstorrents.to'
 
+   # koinly.io
+    - '+.koinly.io'
+
    # kraken
     - '+.kraken.com'
 
@@ -951,7 +958,7 @@ payload:
     - '+.legkierody.ru'
 
    # letsvpn.world
-    - '+.letsvpn.world'
+    - 'letsvpn.world'
 
    # libbyapp.com
     - 'ic.od-cdn.com'
@@ -963,6 +970,9 @@ payload:
 
    # liberty.edu
     - '+.liberty.edu'
+
+   # libgen.rs
+    - '+.libgen.rs'
 
    # lido
     - '+.lido.fi'
@@ -1050,7 +1060,7 @@ payload:
    # microsoft
     # AS8075 - Microsoft Corporation
 
-    # - '+.onedrive'
+    - '+.onedrive'
     # - '+.aadrm.com'
     # - '+.acompli.com'
     # - '+.acompli.net'
@@ -1154,8 +1164,8 @@ payload:
    # netflix
     # - '+.Argo*'
 
-    # - '+.dualstack.apiproxy-'
-    # - '+.dualstack.ichnaea-web-'
+    - '+.dualstack.apiproxy-'
+    - '+.dualstack.ichnaea-web-'
     # - '+.netflixdnstest0.com'
 
    # newcannabisventures
@@ -1235,11 +1245,11 @@ payload:
    # openai
     - 'tcr9i.chat.openai.com'
 
-   # opensea
-    - '+.opensea.io'
-
    # openinventionnetwork.com
     - '+.openinventionnetwork.com'
+
+   # opensea
+    - '+.opensea.io'
 
    # optimizely.com
     - '+.optimizely.com'
@@ -1354,14 +1364,14 @@ payload:
     - '+.proshkola18.ru'
 
    # proxyium.com
-    - '+.proxyium.com'
+    - DOMAIN-SUFFIX'ium.com'
 
    # psi.org
     - '+.psi.org'
 
   # q
    # qiangwaikan.com
-    - '+.qiangwaikan.com'
+    - '+.qiangwaikan.com '
 
    # qodeinteractive.com
     - '+.qodeinteractive.com'
@@ -1512,7 +1522,7 @@ payload:
     - 'publisher-assets.spot.im'
     - 'event-stream.spot.im'
 
-   # squarespace.com
+   # squarespace.com (test)
     - '+.squarespace.com'
 
    # starford.com
@@ -1571,14 +1581,14 @@ payload:
     - '+.teamredminer.com'
 
    # techcrunch
-    # - '+.techcrunch'
+    - '+.techcrunch'
     # - '+.techcrunch.com'
 
    # tel.meet
     - '+.tel.meet'
 
    # telegram
-    # - '+.telegram'
+    - '+.telegram'
     # - '+.updates.tdesktop.com'
 
    # teleseer.com
@@ -1643,21 +1653,22 @@ payload:
     - '+.tibetoffice.org'
     - '+.tibetoffice.com.au'
 
-   # tiktok
+   # tiktok (test)
     - '+.appsflyer.com'
     - '+.bytegecko-i18n.com'
     - '+.ipstatp.com'
     - '+.pitaya-clientai.com'
     - '+.sgpstatp.com'
     - '+.snapkit.com'
-
-    - '*-att.com' 
-    - '*-tiktokcdn-com'
+    
+    # (test)
+    - DOMAIN-KEYWORD, -att.com'
+    - DOMAIN-KEYWORD, -tiktokcdn-com'
     - '+.app-analytics-services-att.com'
     - '+.app-analytics-services.com'
+    - '+.starling.tiktokv.eu'
     - '+.tiktokcdn-eu.com'
     - '+.tokopediax.com'
-    - DOMAIN-KEYWORD, -att.com
 
     # - '+.TikTok*'
 
@@ -1672,7 +1683,7 @@ payload:
     - '+.t-mobile.com'
 
     - 'tmobile.tt.omtrdc.net'
-  
+
    # todoist.com
     - '+.todoist.com'
     - 'todoist.b-cdn.net'
@@ -1840,7 +1851,7 @@ payload:
     - '+.whalestonpool.com'
 
    # whatsapp
-    # - '+.whatsapp'
+    - '+.whatsapp'
 
    # whoer.net
     - '+.whoer.net'
@@ -1877,7 +1888,7 @@ payload:
     - 'frontend.vh.yandex.ru'
 
    # yahoo
-    # - '+.yahoo'
+    - '+.yahoo'
 
     # - '+.blogs.yahoo.co.jp'
     # - '+.buy.yahoo.com.tw'
@@ -1917,7 +1928,7 @@ payload:
     # - '+.YouTube*'
     # - '+.YouTubeMusic*'
 
-   # yts.mx
+   # yts.mx (test 2024-09-14)
     - '+.yts.mx'
 
   # z

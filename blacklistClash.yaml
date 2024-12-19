@@ -13387,8 +13387,12 @@ rules:
 
     # Developer
     - DOMAIN-SUFFIX, developer.apple.com, PROXY
+    - DOMAIN-SUFFIX, developerservices2.apple.com, PROXY
     - DOMAIN-SUFFIX, devimages-cdn.apple.com, PROXY
     - DOMAIN-SUFFIX, devstreaming-cdn.apple.com, PROXY
+    - DOMAIN-SUFFIX, timestamp.apple.com, PROXY
+    - DOMAIN, notary-submissions-prod.s3-accelerate.amazonaws.com, PROXY
+    - DOMAIN, notary-submissions-prod.s3.us-west-2.amazonaws.com, PROXY
 
     # FoundationDB
     - DOMAIN-SUFFIX, foundationdb.org, PROXY
@@ -29249,6 +29253,7 @@ rules:
     - DOMAIN-SUFFIX, applemx-icloud.com, PROXY
     - DOMAIN-SUFFIX, icloud-content.com, PROXY
     - DOMAIN-SUFFIX, icloud-isupport.com, PROXY
+    - DOMAIN-SUFFIX, icloud-sandbox.com, PROXY
     - DOMAIN-SUFFIX, icloud.ch, PROXY
     - DOMAIN-SUFFIX, icloud.com, PROXY
     - DOMAIN-SUFFIX, icloud.de, PROXY
@@ -32616,9 +32621,11 @@ rules:
     # Main domain
     - DOMAIN-SUFFIX, ai.com, PROXY
     - DOMAIN-SUFFIX, chatgpt.com, PROXY
+    - DOMAIN-SUFFIX, chat.com, PROXY
     - DOMAIN-SUFFIX, oaistatic.com, PROXY
     - DOMAIN-SUFFIX, oaiusercontent.com, PROXY
     - DOMAIN-SUFFIX, openai.com, PROXY
+    - DOMAIN-SUFFIX, sora.com, PROXY
 
     # CDN & API
     - DOMAIN-SUFFIX, openai.com.cdn.cloudflare.net, PROXY
