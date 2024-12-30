@@ -6,7 +6,7 @@
   ### clash
   this is the config contents for clash core based applications
   #### clash client config download url: 
-    https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/releases/clash-rules/proxyClash.txt
+    https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/releases/blacklistClash.yaml
 
   ### reference sources
     https://github.com/v2fly/domain-list-community
@@ -20,7 +20,7 @@
   ### clash
   这是基于 Clash 核心的应用程序的配置内容。
   #### clash 客户端配置下载链接：
-    https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/releases/clash-rules/proxyClash.txt
+    https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/releases/blacklistClash.yaml
 
   ### 参考来源
     https://github.com/v2fly/domain-list-community
