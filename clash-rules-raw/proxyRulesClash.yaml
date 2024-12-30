@@ -395,8 +395,11 @@ rules:
    # crockblock
     - DOMAIN-SUFFIX, crocoblock.com, PROXY
 
-   # crunchyroll.com
-    - DOMAIN-SUFFIX, crunchyroll.com, PROXY
+   # crunchyroll.com (test)
+    - DOMAIN-SUFFIX, api64.ipify.org, PROXY
+    - DOMAIN-SUFFIX, e0vemjple0l1luii7h5vlu5no.litix.io, PROXY
+    - DOMAIN-SUFFIX, pbs.getpublica.com, PROXY
+    - DOMAIN-SUFFIX, vid.springserve.com, PROXY
 
    # cryptocompare
     - DOMAIN-SUFFIX, cryptocompare.com, PROXY
