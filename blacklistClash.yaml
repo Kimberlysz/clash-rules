@@ -902,42 +902,42 @@ rule-providers:
   directClash:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/release/directClash.txt"
+    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/releases/clash-rules/directClash.txt"
     path: ./ruleset/directClash.yaml
     interval: 86400
 
   rejectClash:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/release/rejectClash.txt"
+    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/releases/clash-rules/rejectClash.txt"
     path: ./ruleset/rejectClash.yaml
     interval: 86400
 
   proxyClash:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/release/proxyClash.txt"
+    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/releases/clash-rules/proxyClash.txt"
     path: ./ruleset/proxyClash.yaml
     interval: 86400
 
   directClashRouter:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/release/directClash.txt"
+    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/releases/clash-rules/directClash.txt"
     path: ./rule_provider/directClashRouter.yaml
     interval: 86400
 
   proxyClashRouter:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/release/proxyClash.txt"
+    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/releases/clash-rules/proxyClash.txt"
     path: ./rule_provider/proxyClashRouter.yaml
     interval: 86400
 
   rejectClashRouter:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/release/rejectClash.txt"
+    url: "https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@refs/heads/releases/clash-rules/rejectClash.txt"
     path: ./rule_provider/rejectClashRouter.yaml
     interval: 86400
 
@@ -954,10 +954,10 @@ rules:
     - RULE-SET, rejectClashRouter, 🛑 AdBlock rules
 
   # DOMAIN-SET-shadowrocket
-    # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/rejectDomainset.txt, reject
+    # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/domainset/rejectDomainset.txt, reject
 
   # RULE-SET-shadowrocket
-    # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/rejectRuleset.txt, reject
+    RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/ruleset/rejectRuleset.txt, reject
 
  # 🛑 AdBlock (domain-list-community)
   # #
@@ -2109,12 +2109,12 @@ rules:
     - RULE-SET, proxyClashRouter, PROXY
 
   # DOMAIN-SET-shadowrocket
-    # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/directDomainset.txt, direct
-    # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/proxyDomainset.txt, proxy
+    # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/domainset/directDomainset.txt, direct
+    # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/domainset/proxyDomainset.txt, proxy
 
   # RULE-SET-shadowrocket
-    # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/directRuleset.txt, direct
-    # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@release/proxyRuleset.txt, proxy
+    RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/ruleset/directRuleset.txt, direct
+    RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/ruleset/proxyRuleset.txt, proxy
 
  # DIRECT (domain-list-community)
   # #
