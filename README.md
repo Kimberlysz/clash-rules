@@ -1,26 +1,2 @@
-# domain rules xray:
-  This repository contains rules for clash core, example: clash for windows, clash meta for android, clash verge, clashX, clashX.meta. This is a domain rule repository.
-  Start date: 2023-05-30; 
-  Project status: still undergoing now.
-
-  ### clash
-  this is the config contents for clash core based applications
-  #### clash client config download url: 
-    https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/blacklistClash.yaml
-
-  ### reference sources
-    https://github.com/v2fly/domain-list-community
-
-
-# domain rules xray:
-  该存储库主要针对使用Clash核心相关应用程序的用户，例如：Clash for Windows、Clash meta for android, Clash Verge、ClashX、ClashX.meta的用户。这是一个域名规则存储库。
-  开始日期：2023年5月30日；
-  仓库项目状态：仓库项目仍在进行中。
-      
-  ### clash
-  这是基于 Clash 核心的应用程序的配置内容。
-  #### clash 客户端配置下载链接：
-    https://cdn.jsdelivr.net/gh/Kimberlysz/clash-rules@release/blacklistClash.yaml
-
-  ### 参考来源
-    https://github.com/v2fly/domain-list-community
+# About file updates
+We will update them at the beginning of every month.
