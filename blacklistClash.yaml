@@ -1,3 +1,6 @@
+# build by kim xie
+  # build time start from: 2023-05-31
+
 #: state the content
 ##: code written down
 # anchor
@@ -957,7 +960,7 @@ rules:
     # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/domainset/rejectDomainset.txt, reject
 
   # RULE-SET-shadowrocket
-    RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/ruleset/rejectRuleset.txt, reject
+    # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/ruleset/rejectRuleset.txt, reject
 
  # 🛑 AdBlock (domain-list-community)
   # #
@@ -1621,7 +1624,7 @@ rules:
     - DOMAIN-SUFFIX, doubleclick-cn.net, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, doubleclick.cn, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, doubleclick.com, 🛑 AdBlock rules
-    - DOMAIN-SUFFIX, doubleclick.net, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, doubleclick.net, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, google-analytics-cn.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, google-analytics.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, googleadapis.com, 🛑 AdBlock rules
@@ -1634,7 +1637,7 @@ rules:
     - DOMAIN-SUFFIX, googleoptimize-cn.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, googleoptimize.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, googlesyndication-cn.com, 🛑 AdBlock rules
-    - DOMAIN-SUFFIX, googlesyndication.com, 🛑 AdBlock rules
+    # - DOMAIN-SUFFIX, googlesyndication.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, googletagmanager-cn.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, googletagmanager.com, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, googletagservices-cn.com, 🛑 AdBlock rules
@@ -1649,6 +1652,10 @@ rules:
     - DOMAIN, analytics.google.com, 🛑 AdBlock rules
 
     # regexp:^adservice\.google\.([a-z]{2}|com?)(\.[a-z]{2})?$ @ads
+
+    # google-ads-test
+    - DOMAIN-SUFFIX, doubleclick.net, PROXY
+    - DOMAIN-SUFFIX, googlesyndication.com, PROXY
 
    # growingio-ads
     - DOMAIN-SUFFIX, assets.growingio.com, 🛑 AdBlock rules
@@ -2113,8 +2120,8 @@ rules:
     # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/domainset/proxyDomainset.txt, proxy
 
   # RULE-SET-shadowrocket
-    RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/ruleset/directRuleset.txt, direct
-    RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/ruleset/proxyRuleset.txt, proxy
+    # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/ruleset/directRuleset.txt, direct
+    # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/ruleset/proxyRuleset.txt, proxy
 
  # DIRECT (domain-list-community)
   # #
