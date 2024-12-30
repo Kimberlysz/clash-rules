@@ -1,5 +1,5 @@
 # domain rules xray:
-  This repository is mainly for people who use applications related to clash core, example: clash for windows, clash meta for android, clash verge, clashX, clashX.meta. This is a domain rule repository.
+  This repository contains rules for clash core, example: clash for windows, clash meta for android, clash verge, clashX, clashX.meta. This is a domain rule repository.
   Start date: 2023-05-30; 
   Project status: still undergoing now.
 
