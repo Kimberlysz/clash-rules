@@ -8,9 +8,7 @@
 
 payload:
  # proxy manual
-
   # #
-
    # 1800 flowers
     - '+.1800flowers.com'
 
@@ -66,6 +64,9 @@ payload:
     - '+.craiyon.com'
     - '+.hotpot.ai'
     - '+.nightcafe.studio'
+
+   # aicoin.com
+    - '+.aicoin.com'
 
    # airasia
     - '+.airasia.ck123.io'
@@ -156,7 +157,7 @@ payload:
     - '+.badoo.app'
 
    # bandwagonhost
-    - '+.64clouds'
+    # - '+.64clouds'
     - '+.64clouds.com'
 
    # bankaool.com
@@ -173,7 +174,7 @@ payload:
     - '+.e-hentai.org'
 
    # beetalk
-    - '+.beetalk'
+    # - '+.beetalk'
 
    # behance.com
     - '+.behance.com'
@@ -317,25 +318,6 @@ payload:
     - '+.cnbeta.com.tw'
     - '+.cnbetacdn.com'
 
-   # cnn (test)
-    # - '+.collector.cdp.cnn.com'
-    # - '+.edition.cnn.com'
-    # - '+.lightning.cnn.com'
-    # - '+.media.cnn.com'
-    # - '+.registry.api.cnn.io'
-    # - '+.smetrics.cnn.com'
-    # - '+.i.cdn.cnn.com'
-    # - '+.z.cdp-dev.cnn.com'
-
-    # - 'collector.cdp.cnn.com'
-    # - 'edition.cnn.com'
-    # - 'lightning.cnn.com'
-    # - 'media.cnn.com'
-    # - 'registry.api.cnn.io'
-    # - 'smetrics.cnn.com'
-    # - 'i.cdn.cnn.com'
-    # - 'z.cdp-dev.cnn.com'
-
    # co.uk
     - '+.co.uk'
 
@@ -396,6 +378,24 @@ payload:
 
    # crockblock
     - '+.crocoblock.com'
+
+   # crunchyroll (test)
+    - '+.crunchyrollcdn.com'
+    - '+.5af10.v.fwmrm.net'
+    - '+.a-vrv.akamaized.net'
+    - '+.api64.ipify.org'
+    - '+.e0vemjple0l1luii7h5vlu5no.litix.io'
+    - '+.p.placed.com'
+    - '+.p.tvpixel.com'
+    - '+.pbs.getpublica.com'
+    - '+.pi.ispot.tv'
+    - '+.secure.adnxs.com'
+    - '+.tapestry.tapad.com'
+    - '+.v.vrv.co'
+    - '+.vid.springserve.com'
+    - '+.adsrvr.org'
+    - '+.adsafeprotected.com'
+    - '+.trustarc.com'
 
    # cryptocompare
     - '+.cryptocompare.com'
@@ -570,6 +570,11 @@ payload:
    # findladders.com
     - '+.findladders.com'
 
+   # flixtor (test - partial works)
+    - '+.flixtor.nu'
+    - '+.flixtor.se'
+    - '+.flixtor.st'
+
    # footystats
     - '+.footystats.org'
 
@@ -630,7 +635,7 @@ payload:
    # github
     # AS36459 - GitHub, Inc.
 
-    - '+.github'
+    # - '+.github'
     # - '+.gist.github.com'
     # - '+.raw.githubusercontent.com'
     # - '+.rawgithub.com'
@@ -749,8 +754,17 @@ payload:
     # - 'dl.google.com'
     # - 'mtalk.google.com'
 
-    # other rules - test
+   # google-ads-test
+    - '+.beacons.gcp.gvt2.com'
+    # - '+.csi.gstatic.com'
+    - '+.doubleclick.net'
+    # - '+.googleadservices.com'
+    - '+.googlesyndication.com'
+    # - '+.googletagmanager.com'
+    # - '+.imasdk.googleapis.com'
     - '+.redirector.gvt1.com'
+    # - '+.ssl.gstatic.com'
+    # - '+.gstatic.com'
 
    # gotquestions.org
     - '+.gotquestions.org'
@@ -920,6 +934,9 @@ payload:
     - '+.jordandistrict.org'
     - '+.employment.jordandistrict.org'
 
+   # jotform.com  (test)
+    - '+.jotform.com '
+
    # justanswer.com
     - '+.justanswer.com'
 
@@ -962,6 +979,9 @@ payload:
   # l
    # larrainvial.com
     - '+.larrainvial.com'
+
+   # latestly.com (test)
+    - '+.latestly.com'
 
    # legkierody.ru
     - '+.legkierody.ru'
@@ -1069,7 +1089,7 @@ payload:
    # microsoft
     # AS8075 - Microsoft Corporation
 
-    - '+.onedrive'
+    # - '+.onedrive'
     # - '+.aadrm.com'
     # - '+.acompli.com'
     # - '+.acompli.net'
@@ -1173,8 +1193,8 @@ payload:
    # netflix
     # - '+.Argo*'
 
-    - '+.dualstack.apiproxy-'
-    - '+.dualstack.ichnaea-web-'
+    # - '+.dualstack.apiproxy-'
+    # - '+.dualstack.ichnaea-web-'
     # - '+.netflixdnstest0.com'
 
    # newcannabisventures
@@ -1182,6 +1202,9 @@ payload:
 
    # news18.com
     - '+.news18.com'
+
+   # news9live.com (test)
+    - '+.news9live.com'
 
    # nexusmods.com
     - 'data.nexusmods.com'
@@ -1372,11 +1395,14 @@ payload:
    # printmailsystems.com
     - '+.printmailsystems.com'
 
+   # promeai.pro (test)
+    - '+.promeai.pro'
+
    # proshkola
     - '+.proshkola18.ru'
 
    # proxyium.com
-    - DOMAIN-SUFFIX'ium.com'
+    - '+.proxyium.com'
 
    # psi.org
     - '+.psi.org'
@@ -1596,14 +1622,14 @@ payload:
     - '+.teamredminer.com'
 
    # techcrunch
-    - '+.techcrunch'
+    # - '+.techcrunch'
     # - '+.techcrunch.com'
 
    # tel.meet
     - '+.tel.meet'
 
    # telegram
-    - '+.telegram'
+    # - '+.telegram'
     # - '+.updates.tdesktop.com'
 
    # teleseer.com
@@ -1866,7 +1892,7 @@ payload:
     - '+.whalestonpool.com'
 
    # whatsapp
-    - '+.whatsapp'
+    # - '+.whatsapp'
 
    # whoer.net
     - '+.whoer.net'
@@ -1876,6 +1902,9 @@ payload:
 
    # wisconsinregisteredagent.net
     - '+.wisconsinregisteredagent.net'
+
+   # workspace.com(test)
+    - '+.workspace.com'
 
    # worldcat.org
     - '+.worldcat.org'
@@ -1903,7 +1932,7 @@ payload:
     - 'frontend.vh.yandex.ru'
 
    # yahoo
-    - '+.yahoo'
+    # - '+.yahoo'
 
     # - '+.blogs.yahoo.co.jp'
     # - '+.buy.yahoo.com.tw'

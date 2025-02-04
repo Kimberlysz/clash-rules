@@ -5,7 +5,7 @@
 #     - ''
 
 rules:
- # direct manual
+  # direct manual
   # a
    # agoda.cn
     - DOMAIN-SUFFIX, agoda.cn, DIRECT

@@ -6,9 +6,7 @@
 
 rules:
  # proxy manual
-
   # #
-
    # 1800 flowers
     - DOMAIN-SUFFIX, 1800flowers.com, PROXY
 
@@ -64,6 +62,9 @@ rules:
     - DOMAIN-SUFFIX, craiyon.com, PROXY
     - DOMAIN-SUFFIX, hotpot.ai, PROXY
     - DOMAIN-SUFFIX, nightcafe.studio, PROXY
+
+   # aicoin.com
+    - DOMAIN-SUFFIX, aicoin.com, PROXY
 
    # airasia
     - DOMAIN-SUFFIX, airasia.ck123.io, PROXY
@@ -315,25 +316,6 @@ rules:
     - DOMAIN-SUFFIX, cnbeta.com.tw, PROXY
     - DOMAIN-SUFFIX, cnbetacdn.com, PROXY
 
-   # cnn (test)
-    # - DOMAIN-SUFFIX, collector.cdp.cnn.com, PROXY
-    # - DOMAIN-SUFFIX, edition.cnn.com, PROXY
-    # - DOMAIN-SUFFIX, lightning.cnn.com, PROXY
-    # - DOMAIN-SUFFIX, media.cnn.com, PROXY
-    # - DOMAIN-SUFFIX, registry.api.cnn.io, PROXY
-    # - DOMAIN-SUFFIX, smetrics.cnn.com, PROXY
-    # - DOMAIN-SUFFIX, i.cdn.cnn.com, PROXY
-    # - DOMAIN-SUFFIX, z.cdp-dev.cnn.com, PROXY
-
-    # - DOMAIN, collector.cdp.cnn.com, PROXY
-    # - DOMAIN, edition.cnn.com, PROXY
-    # - DOMAIN, lightning.cnn.com, PROXY
-    # - DOMAIN, media.cnn.com, PROXY
-    # - DOMAIN, registry.api.cnn.io, PROXY
-    # - DOMAIN, smetrics.cnn.com, PROXY
-    # - DOMAIN, i.cdn.cnn.com, PROXY
-    # - DOMAIN, z.cdp-dev.cnn.com, PROXY
-
    # co.uk
     - DOMAIN-KEYWORD, .co.uk, PROXY
 
@@ -394,6 +376,24 @@ rules:
 
    # crockblock
     - DOMAIN-SUFFIX, crocoblock.com, PROXY
+
+   # crunchyroll (test)
+    - DOMAIN-SUFFIX, crunchyrollcdn.com, PROXY
+    - DOMAIN-SUFFIX, 5af10.v.fwmrm.net, PROXY
+    - DOMAIN-SUFFIX, a-vrv.akamaized.net, PROXY
+    - DOMAIN-SUFFIX, api64.ipify.org, PROXY
+    - DOMAIN-SUFFIX, e0vemjple0l1luii7h5vlu5no.litix.io, PROXY
+    - DOMAIN-SUFFIX, p.placed.com, PROXY
+    - DOMAIN-SUFFIX, p.tvpixel.com, PROXY
+    - DOMAIN-SUFFIX, pbs.getpublica.com, PROXY
+    - DOMAIN-SUFFIX, pi.ispot.tv, PROXY
+    - DOMAIN-SUFFIX, secure.adnxs.com, PROXY
+    - DOMAIN-SUFFIX, tapestry.tapad.com, PROXY
+    - DOMAIN-SUFFIX, v.vrv.co, PROXY
+    - DOMAIN-SUFFIX, vid.springserve.com, PROXY
+    - DOMAIN-SUFFIX, adsrvr.org, PROXY
+    - DOMAIN-SUFFIX, adsafeprotected.com, PROXY
+    - DOMAIN-SUFFIX, trustarc.com, PROXY
 
    # cryptocompare
     - DOMAIN-SUFFIX, cryptocompare.com, PROXY
@@ -567,6 +567,11 @@ rules:
 
    # findladders.com
     - DOMAIN-SUFFIX, findladders.com, PROXY
+
+   # flixtor (test - partial works)
+    - DOMAIN-SUFFIX, flixtor.nu, PROXY
+    - DOMAIN-SUFFIX, flixtor.se, PROXY
+    - DOMAIN-SUFFIX, flixtor.st, PROXY
 
    # footystats
     - DOMAIN-SUFFIX, footystats.org, PROXY
@@ -747,8 +752,17 @@ rules:
     # - DOMAIN, dl.google.com, PROXY
     # - DOMAIN, mtalk.google.com, PROXY
 
-    # other rules - test
+   # google-ads-test
+    - DOMAIN-SUFFIX, beacons.gcp.gvt2.com, PROXY
+    # - DOMAIN-SUFFIX, csi.gstatic.com, PROXY
+    - DOMAIN-SUFFIX, doubleclick.net, PROXY
+    # - DOMAIN-SUFFIX, googleadservices.com, PROXY
+    - DOMAIN-SUFFIX, googlesyndication.com, PROXY
+    # - DOMAIN-SUFFIX, googletagmanager.com, PROXY
+    # - DOMAIN-SUFFIX, imasdk.googleapis.com, PROXY
     - DOMAIN-SUFFIX, redirector.gvt1.com, PROXY
+    # - DOMAIN-SUFFIX, ssl.gstatic.com, PROXY
+    # - DOMAIN-SUFFIX, gstatic.com, PROXY
 
    # gotquestions.org
     - DOMAIN-SUFFIX, gotquestions.org, PROXY
@@ -918,6 +932,9 @@ rules:
     - DOMAIN-SUFFIX, jordandistrict.org, PROXY
     - DOMAIN-SUFFIX, employment.jordandistrict.org, PROXY
 
+   # jotform.com  (test)
+    - DOMAIN-SUFFIX, jotform.com , PROXY
+
    # justanswer.com
     - DOMAIN-SUFFIX, justanswer.com, PROXY
 
@@ -960,6 +977,9 @@ rules:
   # l
    # larrainvial.com
     - DOMAIN-SUFFIX, larrainvial.com, PROXY
+
+   # latestly.com (test)
+    - DOMAIN-SUFFIX, latestly.com, PROXY
 
    # legkierody.ru
     - DOMAIN-SUFFIX, legkierody.ru, PROXY
@@ -1181,6 +1201,9 @@ rules:
    # news18.com
     - DOMAIN-SUFFIX, news18.com, PROXY
 
+   # news9live.com (test)
+    - DOMAIN-SUFFIX, news9live.com, PROXY
+
    # nexusmods.com
     - DOMAIN, data.nexusmods.com, PROXY
     - DOMAIN, images.nexusmods.com, PROXY
@@ -1369,6 +1392,9 @@ rules:
 
    # printmailsystems.com
     - DOMAIN-SUFFIX, printmailsystems.com, PROXY
+
+   # promeai.pro (test)
+    - DOMAIN-SUFFIX, promeai.pro, PROXY
 
    # proshkola
     - DOMAIN-SUFFIX, proshkola18.ru, PROXY
@@ -1874,6 +1900,9 @@ rules:
 
    # wisconsinregisteredagent.net
     - DOMAIN-SUFFIX, wisconsinregisteredagent.net, PROXY
+
+   # workspace.com(test)
+    - DOMAIN-SUFFIX, workspace.com, PROXY
 
    # worldcat.org
     - DOMAIN-SUFFIX, worldcat.org, PROXY
