@@ -934,8 +934,8 @@ payload:
     - '+.jordandistrict.org'
     - '+.employment.jordandistrict.org'
 
-   # jotform.com  (test)
-    - '+.jotform.com '
+   # jotform.com (test)
+    - '+.jotform.com'
 
    # justanswer.com
     - '+.justanswer.com'
@@ -1409,7 +1409,7 @@ payload:
 
   # q
    # qiangwaikan.com
-    - '+.qiangwaikan.com '
+    - '+.qiangwaikan.com'
 
    # qodeinteractive.com
     - '+.qodeinteractive.com'
