@@ -1,8 +1,28 @@
-#  the following few lines is for creating clasassetsh rule-providers:
-# payload:
-# 
-#     - '+.'
-#     - ''
+# prompt
+ # rules for "rule-provider" 
+  # the following few lines is for creating clash rule-providers:
+  # payload:
+  #     - '+.'
+  #     - ''
+
+ # WARNING: The following domain names may be replaced incorrectly during the conversion process
+ # direct manual
+
+ # proxy manual
+  # d
+   # directenergy.com
+    ## - DOMAIN-SUFFIX, /* directenergy.com, /* PROXY # keywords: , /* direct
+      # search "energy.com" to correct back the domain and change it to "directenergy.com"
+
+  # p
+   # proxyium.com
+    ## - DOMAIN-SUFFIX, /* proxyium.com, /* PROXY # keywords: , /* proxy
+      # search "ium.com" to correct back the domain and change it to "proxyium.com"
+
+ # reject manual
+
+ # keywords change
+  # "rules:" will need to be replaced by "payload:"
 
 rules:
  # proxy manual
@@ -252,11 +272,18 @@ rules:
    # canyonsdistrict.org
     - DOMAIN-SUFFIX, canyonsdistrict.org, PROXY
 
+   # capcut
+    - DOMAIN-SUFFIX, capcut.com, PROXY
+    - DOMAIN-SUFFIX, capcutapi.com, PROXY
+
    # cars.com
     - DOMAIN-SUFFIX, cars.com, PROXY
 
    # carneysandoe.com
     - DOMAIN-SUFFIX, carneysandoe.com, PROXY
+
+   # cbex18.com
+    - DOMAIN-SUFFIX, cbex18.com, PROXY
 
    # cebupacificair.com
     - DOMAIN-SUFFIX, cebupacificair.com, PROXY
@@ -301,6 +328,9 @@ rules:
 
    # clash
     - DOMAIN-SUFFIX, clash.la, PROXY
+
+   # clickbank.com (test)
+    - DOMAIN-SUFFIX, clickbank.com, PROXY
 
    # cloudflare
     - DOMAIN, a.nel.cloudflare.com, PROXY
@@ -368,6 +398,10 @@ rules:
    # crazypool
     - DOMAIN-SUFFIX, crazypool.org, PROXY
 
+   # createaiasian.com
+    - DOMAIN-SUFFIX, api.createporn.com, PROXY
+    - DOMAIN-SUFFIX, imgpog.com, PROXY
+
    # creditkarma.com
     - DOMAIN-SUFFIX, creditkarma.com, PROXY
 
@@ -378,10 +412,14 @@ rules:
     - DOMAIN-SUFFIX, crocoblock.com, PROXY
 
    # crunchyroll (test)
-    - DOMAIN-SUFFIX, crunchyrollcdn.com, PROXY
     - DOMAIN-SUFFIX, 5af10.v.fwmrm.net, PROXY
     - DOMAIN-SUFFIX, a-vrv.akamaized.net, PROXY
+    - DOMAIN-SUFFIX, a.a47b.com, PROXY # test
+    - DOMAIN-SUFFIX, adsafeprotected.com, PROXY
+    - DOMAIN-SUFFIX, adsrvr.org, PROXY
     - DOMAIN-SUFFIX, api64.ipify.org, PROXY
+    - DOMAIN-SUFFIX, browser-intake-us5-datadoghq.com, PROXY # test
+    - DOMAIN-SUFFIX, crunchyrollcdn.com, PROXY
     - DOMAIN-SUFFIX, e0vemjple0l1luii7h5vlu5no.litix.io, PROXY
     - DOMAIN-SUFFIX, p.placed.com, PROXY
     - DOMAIN-SUFFIX, p.tvpixel.com, PROXY
@@ -389,11 +427,9 @@ rules:
     - DOMAIN-SUFFIX, pi.ispot.tv, PROXY
     - DOMAIN-SUFFIX, secure.adnxs.com, PROXY
     - DOMAIN-SUFFIX, tapestry.tapad.com, PROXY
+    - DOMAIN-SUFFIX, trustarc.com, PROXY
     - DOMAIN-SUFFIX, v.vrv.co, PROXY
     - DOMAIN-SUFFIX, vid.springserve.com, PROXY
-    - DOMAIN-SUFFIX, adsrvr.org, PROXY
-    - DOMAIN-SUFFIX, adsafeprotected.com, PROXY
-    - DOMAIN-SUFFIX, trustarc.com, PROXY
 
    # cryptocompare
     - DOMAIN-SUFFIX, cryptocompare.com, PROXY
@@ -752,7 +788,16 @@ rules:
     # - DOMAIN, dl.google.com, PROXY
     # - DOMAIN, mtalk.google.com, PROXY
 
-   # google-ads-test
+   # google2 (test)
+    # under global mode, dl.google.com redirects to https://google.com/chrome
+    # under rule mode, dl.google.com redirects to a 404 page
+    # - DOMAIN, dl.google.com, PROXY
+
+   # google-ads (test)
+    # these domains locates before reject rules ads
+    # it's for crunchyroll.com
+
+    - DOMAIN-SUFFIX, 2mdn.net, PROXY # test
     - DOMAIN-SUFFIX, beacons.gcp.gvt2.com, PROXY
     # - DOMAIN-SUFFIX, csi.gstatic.com, PROXY
     - DOMAIN-SUFFIX, doubleclick.net, PROXY
@@ -762,7 +807,7 @@ rules:
     # - DOMAIN-SUFFIX, imasdk.googleapis.com, PROXY
     - DOMAIN-SUFFIX, redirector.gvt1.com, PROXY
     # - DOMAIN-SUFFIX, ssl.gstatic.com, PROXY
-    # - DOMAIN-SUFFIX, gstatic.com, PROXY
+    - DOMAIN-SUFFIX, gstatic.com, PROXY # test
 
    # gotquestions.org
     - DOMAIN-SUFFIX, gotquestions.org, PROXY
@@ -857,6 +902,9 @@ rules:
    # hymnal.net
     - DOMAIN-SUFFIX, hymnal.net, PROXY
 
+   # hyperionherbs.com
+    - DOMAIN-SUFFIX, hyperionherbs.com, PROXY
+
   # i
    # id.me
     - DOMAIN-SUFFIX, id.me, PROXY
@@ -906,6 +954,9 @@ rules:
    # iscooterglobal.co.uk
     - DOMAIN-SUFFIX, iscooterglobal.co.uk, PROXY
 
+   # iscooterglobal.com
+    - DOMAIN-SUFFIX, iscooterglobal.com, PROXY
+
    # istockphoto.com
     - DOMAIN-SUFFIX, istockphoto.com, PROXY
 
@@ -925,15 +976,18 @@ rules:
     - DOMAIN-SUFFIX, ivpn.net, PROXY
 
   # j
-   # jkforum.net
+   # jkforum.net (test)
     - DOMAIN-SUFFIX, jkforum.net, PROXY
+    - DOMAIN-SUFFIX, mymypic.net, PROXY
+    # - DOMAIN-SUFFIX, mymyads.net, PROXY
+    # - DOMAIN-SUFFIX, mymyuc.net, PROXY
 
    # jordandistrict.org
     - DOMAIN-SUFFIX, jordandistrict.org, PROXY
     - DOMAIN-SUFFIX, employment.jordandistrict.org, PROXY
 
    # jotform.com  (test)
-    - DOMAIN-SUFFIX, jotform.com , PROXY
+    - DOMAIN-SUFFIX, jotform.com, PROXY
 
    # justanswer.com
     - DOMAIN-SUFFIX, justanswer.com, PROXY
@@ -983,6 +1037,9 @@ rules:
 
    # legkierody.ru
     - DOMAIN-SUFFIX, legkierody.ru, PROXY
+
+   # lendingtree.com
+    - DOMAIN-SUFFIX, lendingtree.com, PROXY
 
    # letsvpn.world
     - DOMAIN, letsvpn.world, PROXY
@@ -1123,6 +1180,14 @@ rules:
     - DOMAIN-SUFFIX, images-eds-ssl.xboxlive.com, PROXY
     - DOMAIN-SUFFIX, storeedgefd.dsx.mp.microsoft.com, PROXY
 
+    # teams (tests)
+    - DOMAIN-SUFFIX, cdn.office.net, PROXY
+    - DOMAIN-SUFFIX, teams.microsoft.com, PROXY
+    - DOMAIN-SUFFIX, teams.events.data.microsoft.com, PROXY
+    - DOMAIN-SUFFIX, presence.teams.live.com, PROXY
+    - DOMAIN-SUFFIX, mp.microsoft.com, PROXY
+    - DOMAIN-SUFFIX, teams.live.com, PROXY
+
    # mintmobile.com
     - DOMAIN-SUFFIX, mintmobile.com, PROXY
 
@@ -1132,6 +1197,9 @@ rules:
 
    # mojim.com
     - DOMAIN-SUFFIX, mojim.com, PROXY
+
+   # monica.im
+    - DOMAIN-SUFFIX, monica.im, PROXY
 
    # msn
     # msn rules originates from this yaml file
@@ -1227,7 +1295,7 @@ rules:
    # notepad++
     - DOMAIN-SUFFIX, notepad-plus-plus.org, PROXY
 
-   # noviosfalabella.com
+   # noviosfalabella.com (deprecated)
     - DOMAIN-SUFFIX, noviosfalabella.com, PROXY
 
    # nr-data.net
@@ -1346,6 +1414,9 @@ rules:
    # pcgamesn.com
     - DOMAIN-SUFFIX, pcgamesn.com, PROXY
 
+   # pephop.ai
+    - DOMAIN-SUFFIX, pephop.ai, PROXY
+
    # pexels.com
     - DOMAIN-SUFFIX, pexels.com, PROXY
 
@@ -1390,11 +1461,14 @@ rules:
    # previred.com
     - DOMAIN-SUFFIX, previred.com, PROXY
 
-   # printmailsystems.com
+   # printmailsystems.com (deprecated)
     - DOMAIN-SUFFIX, printmailsystems.com, PROXY
 
    # promeai.pro (test)
     - DOMAIN-SUFFIX, promeai.pro, PROXY
+
+   # prompthero.com
+    - DOMAIN-SUFFIX, prompthero.com, PROXY
 
    # proshkola
     - DOMAIN-SUFFIX, proshkola18.ru, PROXY
@@ -1407,7 +1481,7 @@ rules:
 
   # q
    # qiangwaikan.com
-    - DOMAIN-SUFFIX, qiangwaikan.com , PROXY
+    - DOMAIN-SUFFIX, qiangwaikan.com, PROXY
 
    # qodeinteractive.com
     - DOMAIN-SUFFIX, qodeinteractive.com, PROXY
@@ -1546,6 +1620,9 @@ rules:
    # socratic.org
     - DOMAIN-SUFFIX, socratic.org, PROXY
 
+   # sono.com
+    - DOMAIN-SUFFIX, sono.com, PROXY
+
    # soundraw
     - DOMAIN-SUFFIX, soundraw-storage.com, PROXY
 
@@ -1554,6 +1631,9 @@ rules:
 
    # special-ops.org
     - DOMAIN-SUFFIX, special-ops.org, PROXY
+
+   # spicychat.ai
+    - DOMAIN-SUFFIX, spicychat.ai, PROXY
 
    # spot.im
     - DOMAIN-SUFFIX, spot.im, PROXY
@@ -1597,6 +1677,9 @@ rules:
    # sugarfreemom.com
     - DOMAIN-SUFFIX, sugarfreemom.com, PROXY
 
+   # suno.com
+    - DOMAIN-SUFFIX, suno.com, PROXY
+
    # surfshark.com
     - DOMAIN-SUFFIX, surfshark.com, PROXY
 
@@ -1618,6 +1701,14 @@ rules:
 
    # teamredminer
     - DOMAIN-SUFFIX, teamredminer.com, PROXY
+
+   # teams
+    - DOMAIN-SUFFIX, cdn.office.net, PROXY
+    - DOMAIN-SUFFIX, mp.microsoft.com, PROXY
+    - DOMAIN-SUFFIX, presence.teams.live.com, PROXY
+    - DOMAIN-SUFFIX, teams.events.data.microsoft.com, PROXY
+    - DOMAIN-SUFFIX, teams.live.com, PROXY
+    - DOMAIN-SUFFIX, teams.microsoft.com, PROXY
 
    # techcrunch
     # - DOMAIN-KEYWORD, .techcrunch, PROXY
@@ -1710,6 +1801,9 @@ rules:
     - DOMAIN-SUFFIX, tokopediax.com, PROXY
 
     # USER-AGENT, TikTok*, PROXY
+
+   # tiktokglobalshop.com
+    - DOMAIN-SUFFIX, tiktokglobalshop.com, PROXY
 
    # tlsfingerprint
     - DOMAIN-SUFFIX, tlsfingerprint.io, PROXY
@@ -1809,6 +1903,11 @@ rules:
     - DOMAIN-SUFFIX, tymedigital.co.za, PROXY
 
   # u
+   # undress.cc
+    - DOMAIN-SUFFIX, undress.cc, PROXY
+
+   # undressai.tools
+    - DOMAIN-SUFFIX, undressai.tools, PROXY
 
    # unir.net
     - DOMAIN-SUFFIX, unir.net, PROXY

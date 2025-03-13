@@ -1,8 +1,45 @@
-#  the following few lines is for creating clash rule-providers:
-# payload:
-# 
-#     - '+.'
-#     - ''
+# prompt
+ # rules for "rule-provider" 
+  # the following few lines is for creating clash rule-providers:
+  # payload:
+  #     - '+.'
+  #     - ''
+
+ # WARNING: The following domain names may be replaced incorrectly during the conversion process
+ # direct manual
+
+ # proxy manual
+  # d
+   # directenergy.com
+    ## - DOMAIN-SUFFIX, /* directenergy.com, /* PROXY # keywords: , /* direct
+      # search "energy.com" to correct back the domain and change it to "directenergy.com"
+
+  # p
+   # proxyium.com
+    ## - DOMAIN-SUFFIX, /* proxyium.com, /* PROXY # keywords: , /* proxy
+      # search "ium.com" to correct back the domain and change it to "proxyium.com"
+
+ # reject manual
+
+ # keywords change
+  # "rules:" will need to be replaced by "payload:"
 
 rules:
- # 🛑 AdBlock manual
+ # reject manual
+  # g
+   # google-ads (test)
+    # these domains locates before reject rules ads
+    # it's for crunchyroll.com
+
+    - DOMAIN-SUFFIX, 2mdn.net, PROXY # test
+    - DOMAIN-SUFFIX, beacons.gcp.gvt2.com, PROXY
+    # - DOMAIN-SUFFIX, csi.gstatic.com, PROXY
+    - DOMAIN-SUFFIX, doubleclick.net, PROXY
+    # - DOMAIN-SUFFIX, googleadservices.com, PROXY
+    - DOMAIN-SUFFIX, googlesyndication.com, PROXY
+    # - DOMAIN-SUFFIX, googletagmanager.com, PROXY
+    # - DOMAIN-SUFFIX, imasdk.googleapis.com, PROXY
+    - DOMAIN-SUFFIX, redirector.gvt1.com, PROXY
+    # - DOMAIN-SUFFIX, ssl.gstatic.com, PROXY
+    - DOMAIN-SUFFIX, gstatic.com, PROXY # test
+

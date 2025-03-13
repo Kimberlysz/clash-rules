@@ -1,14 +1,31 @@
-#  the following few lines is for creating clash rule-providers:
-# payload:
-# 
-#     - '+.'
-#     - ''
+# prompt
+ # rules for "rule-provider" 
+  # the following few lines is for creating clash rule-providers:
+  # payload:
+  #     - '+.'
+  #     - ''
 
-# rules:
+ # WARNING: The following domain names may be replaced incorrectly during the conversion process
+ # direct manual
+
+ # proxy manual
+  # d
+   # directenergy.com
+    ## - DOMAIN-SUFFIX, /* directenergy.com, /* PROXY # keywords: , /* direct
+      # search "energy.com" to correct back the domain and change it to "directenergy.com"
+
+  # p
+   # proxyium.com
+    ## - DOMAIN-SUFFIX, /* proxyium.com, /* PROXY # keywords: , /* proxy
+      # search "ium.com" to correct back the domain and change it to "proxyium.com"
+
+ # reject manual
+
+ # keywords change
+  # "rules:" will need to be replaced by "payload:"
 
 payload:
  # direct manual
-
   # a
    # agoda.cn
     - '+.agoda.cn'
@@ -20,6 +37,8 @@ payload:
   # b
 
   # c
+   # cloudflare-cn
+    - '+.cloudflarestorage.com'
 
   # d
 
@@ -58,6 +77,12 @@ payload:
    # microsoft
     # - '+.msn.cn'
     # - 'microsoft.com'
+
+    # outlook
+    - '+.autodiscover-s.outlook.com'
+    - '+.dataservice.protection.outlook.com'
+    - '+.outlook.office.com'
+    - '+.outlook.office365.com'
 
   # n
 
