@@ -27,7 +27,7 @@
 rules:
  # proxy manual
   # #
-   # 1800 flowers
+   # 1800 flowers (test)
     - DOMAIN-SUFFIX, 1800flowers.com, PROXY
 
     - DOMAIN, 1800flowers.7ymy.net, PROXY
@@ -412,24 +412,26 @@ rules:
     - DOMAIN-SUFFIX, crocoblock.com, PROXY
 
    # crunchyroll (test)
-    - DOMAIN-SUFFIX, 5af10.v.fwmrm.net, PROXY
-    - DOMAIN-SUFFIX, a-vrv.akamaized.net, PROXY
-    - DOMAIN-SUFFIX, a.a47b.com, PROXY # test
-    - DOMAIN-SUFFIX, adsafeprotected.com, PROXY
-    - DOMAIN-SUFFIX, adsrvr.org, PROXY
-    - DOMAIN-SUFFIX, api64.ipify.org, PROXY
-    - DOMAIN-SUFFIX, browser-intake-us5-datadoghq.com, PROXY # test
-    - DOMAIN-SUFFIX, crunchyrollcdn.com, PROXY
-    - DOMAIN-SUFFIX, e0vemjple0l1luii7h5vlu5no.litix.io, PROXY
-    - DOMAIN-SUFFIX, p.placed.com, PROXY
-    - DOMAIN-SUFFIX, p.tvpixel.com, PROXY
-    - DOMAIN-SUFFIX, pbs.getpublica.com, PROXY
-    - DOMAIN-SUFFIX, pi.ispot.tv, PROXY
-    - DOMAIN-SUFFIX, secure.adnxs.com, PROXY
-    - DOMAIN-SUFFIX, tapestry.tapad.com, PROXY
-    - DOMAIN-SUFFIX, trustarc.com, PROXY
-    - DOMAIN-SUFFIX, v.vrv.co, PROXY
-    - DOMAIN-SUFFIX, vid.springserve.com, PROXY
+    # keep until: 2025-09-01
+
+    # - DOMAIN-SUFFIX, 5af10.v.fwmrm.net, PROXY
+    # - DOMAIN-SUFFIX, a-vrv.akamaized.net, PROXY
+    # - DOMAIN-SUFFIX, a.a47b.com, PROXY
+    # - DOMAIN-SUFFIX, adsafeprotected.com, PROXY
+    # - DOMAIN-SUFFIX, adsrvr.org, PROXY
+    # - DOMAIN-SUFFIX, api64.ipify.org, PROXY
+    # - DOMAIN-SUFFIX, browser-intake-us5-datadoghq.com, PROXY
+    # - DOMAIN-SUFFIX, crunchyrollcdn.com, PROXY
+    # - DOMAIN-SUFFIX, e0vemjple0l1luii7h5vlu5no.litix.io, PROXY
+    # - DOMAIN-SUFFIX, etp-prod.com, PROXY
+    # - DOMAIN-SUFFIX, p.placed.com, PROXY
+    # - DOMAIN-SUFFIX, p.tvpixel.com, PROXY
+    # - DOMAIN-SUFFIX, pbs.getpublica.com, PROXY
+    # - DOMAIN-SUFFIX, pi.ispot.tv, PROXY
+    # - DOMAIN-SUFFIX, tapestry.tapad.com, PROXY
+    # - DOMAIN-SUFFIX, trustarc.com, PROXY
+    # - DOMAIN-SUFFIX, v.vrv.co, PROXY
+    # - DOMAIN-SUFFIX, vid.springserve.com, PROXY
 
    # cryptocompare
     - DOMAIN-SUFFIX, cryptocompare.com, PROXY
@@ -793,22 +795,6 @@ rules:
     # under rule mode, dl.google.com redirects to a 404 page
     # - DOMAIN, dl.google.com, PROXY
 
-   # google-ads (test)
-    # these domains locates before reject rules ads
-    # it's for crunchyroll.com
-
-    - DOMAIN-SUFFIX, 2mdn.net, PROXY # test
-    - DOMAIN-SUFFIX, beacons.gcp.gvt2.com, PROXY
-    # - DOMAIN-SUFFIX, csi.gstatic.com, PROXY
-    - DOMAIN-SUFFIX, doubleclick.net, PROXY
-    # - DOMAIN-SUFFIX, googleadservices.com, PROXY
-    - DOMAIN-SUFFIX, googlesyndication.com, PROXY
-    # - DOMAIN-SUFFIX, googletagmanager.com, PROXY
-    # - DOMAIN-SUFFIX, imasdk.googleapis.com, PROXY
-    - DOMAIN-SUFFIX, redirector.gvt1.com, PROXY
-    # - DOMAIN-SUFFIX, ssl.gstatic.com, PROXY
-    - DOMAIN-SUFFIX, gstatic.com, PROXY # test
-
    # gotquestions.org
     - DOMAIN-SUFFIX, gotquestions.org, PROXY
 
@@ -845,6 +831,8 @@ rules:
     - DOMAIN-SUFFIX, hashrate.to, PROXY
 
    # hbomax (test)
+    # keep until: 2025-09-01
+
     - DOMAIN-SUFFIX, h264.io, PROXY
     - DOMAIN-SUFFIX, prd.api.max.com, PROXY
     - DOMAIN-SUFFIX, warnermediacdn.com, PROXY
@@ -977,17 +965,21 @@ rules:
 
   # j
    # jkforum.net (test)
-    - DOMAIN-SUFFIX, jkforum.net, PROXY
-    - DOMAIN-SUFFIX, mymypic.net, PROXY
-    # - DOMAIN-SUFFIX, mymyads.net, PROXY
-    # - DOMAIN-SUFFIX, mymyuc.net, PROXY
+    # keep until: 2025-09-01
+
+    # - DOMAIN-SUFFIX, jkforum.net, PROXY
+    # - DOMAIN-SUFFIX, mymypic.net, PROXY
+    # # - DOMAIN-SUFFIX, mymyads.net, PROXY
+    # # - DOMAIN-SUFFIX, mymyuc.net, PROXY
 
    # jordandistrict.org
     - DOMAIN-SUFFIX, jordandistrict.org, PROXY
     - DOMAIN-SUFFIX, employment.jordandistrict.org, PROXY
 
-   # jotform.com  (test)
-    - DOMAIN-SUFFIX, jotform.com, PROXY
+   # jotform.com (test)
+    # keep until: 2025-09-01
+
+    # - DOMAIN-SUFFIX, jotform.com, PROXY
 
    # justanswer.com
     - DOMAIN-SUFFIX, justanswer.com, PROXY
@@ -1188,6 +1180,9 @@ rules:
     - DOMAIN-SUFFIX, mp.microsoft.com, PROXY
     - DOMAIN-SUFFIX, teams.live.com, PROXY
 
+    # windows initial setup download
+    - DOMAIN-SUFFIX, tlu.dl.delivery.mp.microsoft.com, PROXY
+
    # mintmobile.com
     - DOMAIN-SUFFIX, mintmobile.com, PROXY
 
@@ -1313,6 +1308,9 @@ rules:
     - DOMAIN-SUFFIX, okcoin.com, PROXY
 
     - DOMAIN, static.okcoin.com, PROXY
+
+   # okcupid.com
+    - DOMAIN-SUFFIX, okcupid.com, PROXY
 
    # okx
     - DOMAIN-SUFFIX, okx.com, PROXY
@@ -1790,7 +1788,7 @@ rules:
     - DOMAIN-SUFFIX, pitaya-clientai.com, PROXY
     - DOMAIN-SUFFIX, sgpstatp.com, PROXY
     - DOMAIN-SUFFIX, snapkit.com, PROXY
-    
+
     # (test)
     - DOMAIN-KEYWORD, -att.com, PROXY
     - DOMAIN-KEYWORD, -tiktokcdn-com, PROXY
@@ -1917,6 +1915,9 @@ rules:
 
    # updraftplus
     - DOMAIN-SUFFIX, updraftplus.com, PROXY
+
+   # userbenchmark.com
+    - DOMAIN-SUFFIX, userbenchmark.com, PROXY
 
    # uspto.gov
     - DOMAIN, tmsearch.uspto.gov, PROXY

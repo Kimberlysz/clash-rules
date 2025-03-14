@@ -26,12 +26,18 @@
 
 rules:
  # reject manual
+  # c
+   # category-ads-all
+    # This file contains domains of all ads providers, including both the domains that serves ads, and the domains of providers themselves.
+    # this is for crunchyroll.com
+
+    - DOMAIN-SUFFIX, secure.adnxs.com, PROXY
+
   # g
    # google-ads (test)
     # these domains locates before reject rules ads
     # it's for crunchyroll.com
-
-    - DOMAIN-SUFFIX, 2mdn.net, PROXY # test
+    - DOMAIN-SUFFIX, 2mdn.net, PROXY
     - DOMAIN-SUFFIX, beacons.gcp.gvt2.com, PROXY
     # - DOMAIN-SUFFIX, csi.gstatic.com, PROXY
     - DOMAIN-SUFFIX, doubleclick.net, PROXY
@@ -41,5 +47,5 @@ rules:
     # - DOMAIN-SUFFIX, imasdk.googleapis.com, PROXY
     - DOMAIN-SUFFIX, redirector.gvt1.com, PROXY
     # - DOMAIN-SUFFIX, ssl.gstatic.com, PROXY
-    - DOMAIN-SUFFIX, gstatic.com, PROXY # test
+
 

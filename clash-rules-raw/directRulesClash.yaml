@@ -78,7 +78,7 @@ rules:
     # - DOMAIN-SUFFIX, msn.cn, DIRECT
     # - DOMAIN, microsoft.com, DIRECT
 
-    # outlook
+    # outlook (test)
     - DOMAIN-SUFFIX, autodiscover-s.outlook.com, DIRECT
     - DOMAIN-SUFFIX, dataservice.protection.outlook.com, DIRECT
     - DOMAIN-SUFFIX, outlook.office.com, DIRECT
