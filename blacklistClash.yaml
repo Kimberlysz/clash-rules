@@ -1,10 +1,68 @@
-# build by kim xie
+# general
+ # build
+  # build by Kim Xie / kimberlysz
   # build time start from: 2023-05-31
 
-#: state the content
-##: code written down
-# anchor
-  ## anchorA: clash meta rules
+ # keywords
+  # (cn): CN direct connect domains that's under "domain-list-community"
+
+  # (deprecated): domains that's not affected or needed anymore
+
+  # (revised): means domains that's included by v2fly-domain-rules but can directly connected in mainland China
+    # how to process theose domains?
+      # mark those domains
+
+    # (revised cn)
+
+    # (revised other regions)
+
+  # (test): domains that's under testing
+
+ # format
+  # rule clash (by using "rule-provider" configurations)
+    # rules for clash configuration file
+      # "rules:" will need to be replaced by "payload:"
+        # payload:
+        #     - '+.'
+        #     - ''
+
+  # rule shadowrocket
+    # rules for shadoworcket app
+      # "rules:" will need to be replaced by "[Rule]"
+
+    # rules for domain-set and rule-set
+      # "rules:" will need to be replaced by "payload:"
+
+# website domain conflicts and mis-replacement
+ # WARNING: The following domain names may be replaced incorrectly during the conversion process, or the following keyword might conflict with relevant websites
+ # direct manual
+
+ # proxy manual
+  # a
+   # aliyun (conflicts with)
+    # .al
+
+  # d
+   # directenergy.com
+    ## - DOMAIN-SUFFIX, /* directenergy.com, /* PROXY # keywords: , /* direct
+      # search "energy.com" to correct back the domain and change it to "directenergy.com"
+
+  # p
+   # pingan bank (conflicts with)
+    # .cl
+    # .sd
+    # .orange
+
+   # proxyium.com
+    ## - DOMAIN-SUFFIX, /* proxyium.com, /* PROXY # keywords: , /* proxy
+      # search "ium.com" to correct back the domain and change it to "proxyium.com"
+
+  # t
+   # tld-!cn
+   # tld-opennic
+
+ # reject manual
+
 
 # HTTP(S) and SOCKS4(A)/SOCKS5 server on the same port
 mixed-port: 1080
@@ -65,8 +123,8 @@ external-controller: 127.0.0.1:9090
 # Authenticate by spedifying HTTP header `Authorization: Bearer ${secret}`
 # ALWAYS set a secret if RESTful API is listening on 0.0.0.0
 # secret: ""
-secret: jiufDpHWgWK96fzvWhYXpJTRBuXhEbaqPqf5qFWA
-  # warning: change it to your secret (prevent merlinclash being used by WAN users)
+secret: 6JW6nG7CJCNrXZzzVM9WaUzmYHAf5HFE0xMLDZxA
+  # warning: !important, change it to your secret (prevent merlinclash being used by WAN users)
 
 # Outbound interface name
 # interface-name: en0 # might be en1
@@ -441,8 +499,9 @@ tun:
   auto-detect-interface: true
 
 
+
 # anchorA: clash meta rules
-  # following contetns are based on clash meta rules
+  # following contents are based on clash meta rules
 
 #  find-process-mode has 3 values:always, strict, off
 #  - always, 开启，强制匹配所有进程
@@ -477,6 +536,9 @@ geox-url:
 # 可选： "chrome","firefox","safari","ios","random","none" options.
 # Utls is currently support TLS transport in TCP/grpc/WS/HTTP for VLESS/Vmess and trojan.
 # global-client-fingerprint: chrome
+
+
+
 
 proxies:
   # cipher 支持：
@@ -805,7 +867,7 @@ proxy-groups:
       - ♻️ Manual Switch (手动切换)
       - DIRECT
 
-  - name: 🐟 Webs not included (漏网之鱼)
+  - name: 🐟 website domains not included (漏网之鱼)
     type: select
     proxies:
       - DIRECT
@@ -951,15 +1013,31 @@ rules:
     # - DOMAIN-SUFFIX, jsdelivr.net, PROXY
 
   # RULE-SET-clash
-    - RULE-SET, rejectClash, 🛑 AdBlock rules
+    # reject rule now is for overriding 🛑 AdBlock rules, and set it to PROXY
+    # this setting is for cruchyroll.com
+
+    - RULE-SET, rejectClash, PROXY
+    # - RULE-SET, rejectClash, 🛑 AdBlock rules
 
   # RULE-SET-merlinclash
-    - RULE-SET, rejectClashRouter, 🛑 AdBlock rules
+    # reject rule now is for overriding 🛑 AdBlock rules, and set it to PROXY
+    # this setting is for cruchyroll.com
+
+    - RULE-SET, rejectClashRouter, PROXY
+    # - RULE-SET, rejectClashRouter, 🛑 AdBlock rules
 
   # DOMAIN-SET-shadowrocket
+    # reject rule now is for overriding 🛑 AdBlock rules, and set it to PROXY
+    # this setting is for cruchyroll.com
+
+    # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/domainset/rejectDomainset.txt, proxy
     # DOMAIN-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/domainset/rejectDomainset.txt, reject
 
   # RULE-SET-shadowrocket
+    # reject rule now is for overriding 🛑 AdBlock rules, and set it to PROXY
+    # this setting is for cruchyroll.com
+
+    # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/ruleset/rejectRuleset.txt, proxy
     # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/ruleset/rejectRuleset.txt, reject
 
  # 🛑 AdBlock (domain-list-community)
@@ -1412,6 +1490,9 @@ rules:
     # 36Kr
     - DOMAIN-SUFFIX, adx.36kr.com, 🛑 AdBlock rules
 
+    # 12306
+    - DOMAIN-SUFFIX, ad.12306.cn, 🛑 AdBlock rules
+
     # AdHub
     - DOMAIN-SUFFIX, hubcloud.com.cn, 🛑 AdBlock rules
 
@@ -1424,6 +1505,16 @@ rules:
 
     # Caixin
     # regexp:^pinggai\d\.caixin\.com$
+    - DOMAIN, pinggai0.caixin.com, 🛑 AdBlock rules
+    - DOMAIN, pinggai1.caixin.com, 🛑 AdBlock rules
+    - DOMAIN, pinggai2.caixin.com, 🛑 AdBlock rules
+    - DOMAIN, pinggai3.caixin.com, 🛑 AdBlock rules
+    - DOMAIN, pinggai4.caixin.com, 🛑 AdBlock rules
+    - DOMAIN, pinggai5.caixin.com, 🛑 AdBlock rules
+    - DOMAIN, pinggai6.caixin.com, 🛑 AdBlock rules
+    - DOMAIN, pinggai7.caixin.com, 🛑 AdBlock rules
+    - DOMAIN, pinggai8.caixin.com, 🛑 AdBlock rules
+    - DOMAIN, pinggai9.caixin.com, 🛑 AdBlock rules
 
     # Chinaso
     - DOMAIN-SUFFIX, adq.chinaso.com, 🛑 AdBlock rules
@@ -1445,11 +1536,16 @@ rules:
     - DOMAIN-SUFFIX, telecome.cn, 🛑 AdBlock rules
     - DOMAIN-SUFFIX, unioncom.cc, 🛑 AdBlock rules
 
+    # 亿帆广告
+    - DOMAIN-SUFFIX, yfanads.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, yfanads.com, 🛑 AdBlock rules
+
     # 数字联盟(device ad id)
     - DOMAIN-SUFFIX, shuzilm.cn, 🛑 AdBlock rules
 
     # 卓信id
     - DOMAIN-SUFFIX, zxid-api.mobileservice.cn, 🛑 AdBlock rules
+    - DOMAIN-SUFFIX, zxid-m.mobileservice.cn, 🛑 AdBlock rules
 
    # category-ads-all
     # This file contains domains of all ads providers, including both the domains that serves ads, and the domains of providers themselves.
@@ -1757,6 +1853,9 @@ rules:
     # include:instagram-ads
     # include:whatsapp-ads
 
+   # microsoft
+    - DOMAIN-SUFFIX, nelreports.net, 🛑 AdBlock rules
+
    # mixpanel-ads
     - DOMAIN-SUFFIX, decide.mixpanel.com, 🛑 AdBlock rules
 
@@ -1916,6 +2015,7 @@ rules:
     - DOMAIN-SUFFIX, zymo.mps.weibo.com, 🛑 AdBlock rules
 
    # snap
+    # - DOMAIN-SUFFIX, snapads.com, 🛑 AdBlock rules
 
    # sohu-ads
     - DOMAIN-SUFFIX, adnet.sohu.com, 🛑 AdBlock rules
@@ -2141,10 +2241,9 @@ rules:
     # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/ruleset/directRuleset.txt, direct
     # RULE-SET, https://cdn.jsdelivr.net/gh/Kimberlysz/shadowrocket-rules@refs/heads/release/ruleset/proxyRuleset.txt, proxy
 
- # DIRECT (domain-list-community)
+ # domain-list-community (cn, DIRECT)
+  # DIRECT rules
   # #
-   # 0x0
-
    # 115
     - DOMAIN-SUFFIX, 115.com, DIRECT
 
@@ -2164,8 +2263,6 @@ rules:
     - DOMAIN-SUFFIX, x1337x.se, DIRECT
     - DOMAIN-SUFFIX, x1337x.ws, DIRECT
 
-   # 2kgames
-
    # 36kr
     - DOMAIN-SUFFIX, 36dianping.com, DIRECT
     - DOMAIN-SUFFIX, 36kr.com, DIRECT
@@ -2184,8 +2281,6 @@ rules:
     - DOMAIN-SUFFIX, 4399youpai.com, DIRECT
     - DOMAIN-SUFFIX, 5054399.com, DIRECT
     - DOMAIN-SUFFIX, img4399.com, DIRECT
-
-   # 4chan
 
    # 4paradigm.com
     - DOMAIN-SUFFIX, 4paradigm.com, DIRECT
@@ -2234,10 +2329,6 @@ rules:
     - DOMAIN-SUFFIX, matpool.com, DIRECT
     - DOMAIN-SUFFIX, matpool.net, DIRECT
 
-   # 928plus
-
-   # 9news
-
    # 9to5
     - DOMAIN-SUFFIX, spaceexplored.com, DIRECT
 
@@ -2253,8 +2344,6 @@ rules:
     # 舞推 (E舞成名)
     - DOMAIN-SUFFIX, singworld.net, DIRECT
 
-   # accuweather
-
    # acer
     - DOMAIN-SUFFIX, acer.com.cn, DIRECT
 
@@ -2266,12 +2355,6 @@ rules:
    # acplay
     - DOMAIN-SUFFIX, acplay.net, DIRECT
     - DOMAIN-SUFFIX, dandanplay.com, DIRECT
-
-   # adblock
-
-   # adblockplus
-
-   # addthis
 
    # addtoany
     - DOMAIN-SUFFIX, addtoany.com, DIRECT
@@ -2379,6 +2462,7 @@ rules:
     - DOMAIN-SUFFIX, alimama.com, DIRECT
     - DOMAIN-SUFFIX, alimebot.com, DIRECT
     - DOMAIN-SUFFIX, alimei.com, DIRECT
+    - DOMAIN-SUFFIX, alimmdn.com, DIRECT
     - DOMAIN-SUFFIX, alios.cn, DIRECT
     - DOMAIN-SUFFIX, alipay.cn, DIRECT
     - DOMAIN-SUFFIX, alipay.com, DIRECT
@@ -2502,12 +2586,14 @@ rules:
     - DOMAIN-SUFFIX, taopiaopiao.com, DIRECT
     - DOMAIN-SUFFIX, tb.cn, DIRECT
     - DOMAIN-SUFFIX, tbcache.com, DIRECT
+    - DOMAIN-SUFFIX, tbcdn.cn, DIRECT
     - DOMAIN-SUFFIX, tburl.in, DIRECT
     - DOMAIN-SUFFIX, tmall.com, DIRECT
     - DOMAIN-SUFFIX, tmalltv.com, DIRECT
     - DOMAIN-SUFFIX, tmjl.ai, DIRECT
 
-    # 夸克云盘
+    # 夸克
+    - DOMAIN-SUFFIX, cueme.cn, DIRECT
     - DOMAIN-SUFFIX, quark.cn, DIRECT
 
     # 飞猪
@@ -2640,10 +2726,6 @@ rules:
    # amp
     - DOMAIN, cdn.ampproject.org, DIRECT
 
-   # apa
-
-   # aparat
-
    # apifox
     - DOMAIN-SUFFIX, apifox.cn, DIRECT
     - DOMAIN-SUFFIX, apifox.com, DIRECT
@@ -2653,86 +2735,60 @@ rules:
     - DOMAIN-SUFFIX, apipost.net, DIRECT
 
    # apple
-    - DOMAIN, apple.cn, DIRECT
-    - DOMAIN, apple.com.cn, DIRECT
+    - DOMAIN-SUFFIX, apple.cn, DIRECT
+    - DOMAIN-SUFFIX, apple.com.cn, DIRECT
 
     # Apple Store
-    - DOMAIN, apple-store.cn, DIRECT
-    - DOMAIN, applestore.cn, DIRECT
-    - DOMAIN, applestore.com.cn, DIRECT
+    - DOMAIN-SUFFIX, apple-store.cn, DIRECT
+    - DOMAIN-SUFFIX, applestore.cn, DIRECT
+    - DOMAIN-SUFFIX, applestore.com.cn, DIRECT
 
     # App Store
-    - DOMAIN, apple-appstore.cn, DIRECT
-    - DOMAIN, appleappstore.cn, DIRECT
-    - DOMAIN, appstoreapple.cn, DIRECT
-
-    # iMac
-
-    # iPad
+    - DOMAIN-SUFFIX, apple-appstore.cn, DIRECT
+    - DOMAIN-SUFFIX, appleappstore.cn, DIRECT
+    - DOMAIN-SUFFIX, appstoreapple.cn, DIRECT
 
     # iPhone
-    - DOMAIN, iphone-8.com.cn, DIRECT
+    - DOMAIN-SUFFIX, iphone-8.com.cn, DIRECT
 
     # iPod
-    - DOMAIN, ipod.com.cn, DIRECT
+    - DOMAIN-SUFFIX, ipod.com.cn, DIRECT
 
     # MacBook
-    - DOMAIN, macbookair.cn, DIRECT
-    - DOMAIN, macbookair.com.cn, DIRECT
-
-    # Apple Watch
-
-    # Apple Music
-
-    # Apple News
+    - DOMAIN-SUFFIX, macbookair.cn, DIRECT
+    - DOMAIN-SUFFIX, macbookair.com.cn, DIRECT
 
     # Apple Pay
-    - DOMAIN, applepaycash.cn, DIRECT
-    - DOMAIN, applepaycash.com.cn, DIRECT
-    - DOMAIN, applepaysupplies.cn, DIRECT
-    - DOMAIN, applepaysupplies.com.cn, DIRECT
-
-    # iBook
-
-    # iPhoto
-
-    # iMovie
-
-    # Apple Care
-
-    # macOS
-
-    # Apple ID
+    - DOMAIN-SUFFIX, applepaycash.cn, DIRECT
+    - DOMAIN-SUFFIX, applepaycash.com.cn, DIRECT
+    - DOMAIN-SUFFIX, applepaysupplies.cn, DIRECT
+    - DOMAIN-SUFFIX, applepaysupplies.com.cn, DIRECT
 
     # Apple TV
-    - DOMAIN, appletv4.cn, DIRECT
-    - DOMAIN, appletv4.com.cn, DIRECT
-
-    # Apple One
-
-    # Shazam
+    - DOMAIN-SUFFIX, appletv4.cn, DIRECT
+    - DOMAIN-SUFFIX, appletv4.com.cn, DIRECT
 
     # Others
-    - DOMAIN, apple-dns.cn, DIRECT
-    - DOMAIN, apple-dns.com.cn, DIRECT
-    - DOMAIN, apple-ibooks.cn, DIRECT
-    - DOMAIN, apple-maps.cn, DIRECT
-    - DOMAIN, applecenter.cn, DIRECT
-    - DOMAIN, applecenter.com.cn, DIRECT
-    - DOMAIN, applecomputer.cn, DIRECT
-    - DOMAIN, applecomputer.com.cn, DIRECT
-    - DOMAIN, appledns.cn, DIRECT
-    - DOMAIN, appledns.com.cn, DIRECT
-    - DOMAIN, applesiri.cn, DIRECT
-    - DOMAIN, ecgapp.com.cn, DIRECT
-    - DOMAIN, faceshift.cn, DIRECT
-    - DOMAIN, homepod.cn, DIRECT
-    - DOMAIN, insidear.cn, DIRECT
-    - DOMAIN, livephotos.cn, DIRECT
-    - DOMAIN, livephotos.com.cn, DIRECT
-    - DOMAIN, xn--czrs0t4phtr3a.cn, DIRECT # 苹果商店.cn
-    - DOMAIN, xn--fiqs8sxootzz.cn, DIRECT # 苹果中国.cn
-    - DOMAIN, xn--ohq11k7pl25iyo8a.cn, DIRECT # 苹果专卖店.cn
+    - DOMAIN-SUFFIX, apple-dns.cn, DIRECT
+    - DOMAIN-SUFFIX, apple-dns.com.cn, DIRECT
+    - DOMAIN-SUFFIX, apple-ibooks.cn, DIRECT
+    - DOMAIN-SUFFIX, apple-maps.cn, DIRECT
+    - DOMAIN-SUFFIX, applecenter.cn, DIRECT
+    - DOMAIN-SUFFIX, applecenter.com.cn, DIRECT
+    - DOMAIN-SUFFIX, applecomputer.cn, DIRECT
+    - DOMAIN-SUFFIX, applecomputer.com.cn, DIRECT
+    - DOMAIN-SUFFIX, appledns.cn, DIRECT
+    - DOMAIN-SUFFIX, appledns.com.cn, DIRECT
+    - DOMAIN-SUFFIX, applesiri.cn, DIRECT
+    - DOMAIN-SUFFIX, ecgapp.com.cn, DIRECT
+    - DOMAIN-SUFFIX, faceshift.cn, DIRECT
+    - DOMAIN-SUFFIX, homepod.cn, DIRECT
+    - DOMAIN-SUFFIX, insidear.cn, DIRECT
+    - DOMAIN-SUFFIX, livephotos.cn, DIRECT
+    - DOMAIN-SUFFIX, livephotos.com.cn, DIRECT
+    - DOMAIN-SUFFIX, xn--czrs0t4phtr3a.cn, DIRECT # 苹果商店.cn
+    - DOMAIN-SUFFIX, xn--fiqs8sxootzz.cn, DIRECT # 苹果中国.cn
+    - DOMAIN-SUFFIX, xn--ohq11k7pl25iyo8a.cn, DIRECT # 苹果专卖店.cn
 
     # Domains and services below are available in China mainland
     # Use in config file like this: "geosite:apple@cn"
@@ -2788,11 +2844,57 @@ rules:
     - DOMAIN, www.support.apple.com, DIRECT
 
     # regexp:^a[1-5]\.mzstatic\.com$ @cn
+    - DOMAIN, a1.mzstatic.com, DIRECT
+    - DOMAIN, a2.mzstatic.com, DIRECT
+    - DOMAIN, a3.mzstatic.com, DIRECT
+    - DOMAIN, a4.mzstatic.com, DIRECT
+    - DOMAIN, a5.mzstatic.com, DIRECT
+
     # regexp:^cdn(-cn)?[1-4]?\.apple-mapkit\.com$ @cn
+    - DOMAIN, cdn.apple-mapkit.com, DIRECT
+    - DOMAIN, cdn1.apple-mapkit.com, DIRECT
+    - DOMAIN, cdn2.apple-mapkit.com, DIRECT
+    - DOMAIN, cdn3.apple-mapkit.com, DIRECT
+    - DOMAIN, cdn4.apple-mapkit.com, DIRECT
+    - DOMAIN, cdn-cn.apple-mapkit.com, DIRECT
+    - DOMAIN, cdn-cn1.apple-mapkit.com, DIRECT
+    - DOMAIN, cdn-cn2.apple-mapkit.com, DIRECT
+    - DOMAIN, cdn-cn3.apple-mapkit.com, DIRECT
+    - DOMAIN, cdn-cn4.apple-mapkit.com, DIRECT
+
     # regexp:^cl[1-5]-cdn\.origin-apple\.com\.akadns\.net$ @cn
+    - DOMAIN, cl1-cdn.origin-apple.com.akadns.net, DIRECT
+    - DOMAIN, cl2-cdn.origin-apple.com.akadns.net, DIRECT
+    - DOMAIN, cl3-cdn.origin-apple.com.akadns.net, DIRECT
+    - DOMAIN, cl4-cdn.origin-apple.com.akadns.net, DIRECT
+    - DOMAIN, cl5-cdn.origin-apple.com.akadns.net, DIRECT
+
     # regexp:^cl[1-5]\.apple\.com$ @cn
+    - DOMAIN, cl1.apple.com, DIRECT
+    - DOMAIN, cl2.apple.com, DIRECT
+    - DOMAIN, cl3.apple.com, DIRECT
+    - DOMAIN, cl4.apple.com, DIRECT
+    - DOMAIN, cl5.apple.com, DIRECT
+
     # regexp:^is[1-5](-ssl)?\.mzstatic\.com$ @cn
+    - DOMAIN, is1.mzstatic.com, DIRECT
+    - DOMAIN, is1-ssl.mzstatic.com, DIRECT
+    - DOMAIN, is2.mzstatic.com, DIRECT
+    - DOMAIN, is2-ssl.mzstatic.com, DIRECT
+    - DOMAIN, is3.mzstatic.com, DIRECT
+    - DOMAIN, is3-ssl.mzstatic.com, DIRECT
+    - DOMAIN, is4.mzstatic.com, DIRECT
+    - DOMAIN, is4-ssl.mzstatic.com, DIRECT
+    - DOMAIN, is5.mzstatic.com, DIRECT
+    - DOMAIN, is5-ssl.mzstatic.com, DIRECT
+
     # regexp:^s[1-5]?\.mzstatic\.com$ @cn
+    - DOMAIN, s.mzstatic.com, DIRECT
+    - DOMAIN, s1.mzstatic.com, DIRECT
+    - DOMAIN, s2.mzstatic.com, DIRECT
+    - DOMAIN, s3.mzstatic.com, DIRECT
+    - DOMAIN, s4.mzstatic.com, DIRECT
+    - DOMAIN, s5.mzstatic.com, DIRECT
 
     # The rules below are from https://github.com/felixonmars/dnsmasq-china-list/blob/master/apple.china.conf
     # Revision: e54aa75ca9c6567ac5b67093e5471eb1c8041e86
@@ -2870,7 +2972,7 @@ rules:
     - DOMAIN, guzzoni-apple-com.v.aaplimg.com, DIRECT
     - DOMAIN, guzzoni.apple.com, DIRECT
     - DOMAIN, guzzoni.smoot.apple.com, DIRECT
-    #     - DOMAIN, iadsdk.apple.com has already been defined in apple-ads
+    # full:iadsdk.apple.com has already been defined in apple-ads
     - DOMAIN, icloud-cdn.icloud.com.akadns.net, DIRECT
     - DOMAIN, icloud.cdn-apple.com, DIRECT
     - DOMAIN, images.apple.com, DIRECT
@@ -3016,6 +3118,11 @@ rules:
 
     # AWS CN DNS
     # regexp:.+\.amzndns-cn\.(biz|cn|com|net)$ @cn
+    - DOMAIN-SUFFIX, amzndns-cn.biz, DIRECT
+    - DOMAIN-SUFFIX, amzndns-cn.cn, DIRECT
+    - DOMAIN-SUFFIX, amzndns-cn.com, DIRECT
+    - DOMAIN-SUFFIX, amzndns-cn.net, DIRECT
+
     # regexp:.+\.awsdns-cn-[0-9][0-9]\.(biz|com|net|top)$ @cn
     # regexp:.+\.awsdns-cn-[0-9][a-e0-9]\.cn$ @cn
 
@@ -3037,7 +3144,6 @@ rules:
     - DOMAIN-SUFFIX, azure-automation.cn, DIRECT
     - DOMAIN-SUFFIX, azure-connectedvehicles-stage.cn, DIRECT
     - DOMAIN-SUFFIX, azure-connectedvehicles.cn, DIRECT
-    - DOMAIN-SUFFIX, azure-devices-int, DIRECT
     - DOMAIN-SUFFIX, azure-devices-provisioning.cn, DIRECT
     - DOMAIN-SUFFIX, azure-devices.cn, DIRECT
     - DOMAIN-SUFFIX, azure.cn, DIRECT
@@ -3078,11 +3184,40 @@ rules:
     - DOMAIN-SUFFIX, windowsazurestatus.cn, DIRECT
 
     # regexp:.+\.azchcdn[a-s]\.com$ @cn
+    - DOMAIN-SUFFIX, azchcdna.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdnb.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdnc.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdnd.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdne.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdnf.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdng.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdnh.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdni.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdnj.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdnk.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdnl.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdnm.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdnn.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdno.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdnp.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdnq.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdnr.com, DIRECT
+    - DOMAIN-SUFFIX, azchcdns.com, DIRECT
 
     # Azure DNS
     - DOMAIN-SUFFIX, azure-dns.cn, DIRECT
 
     # regexp:.+\.azure-dns-([1-9]|10)\.cn$ @cn
+    - DOMAIN-SUFFIX, azure-dns-1.cn, DIRECT
+    - DOMAIN-SUFFIX, azure-dns-2.cn, DIRECT
+    - DOMAIN-SUFFIX, azure-dns-3.cn, DIRECT
+    - DOMAIN-SUFFIX, azure-dns-4.cn, DIRECT
+    - DOMAIN-SUFFIX, azure-dns-5.cn, DIRECT
+    - DOMAIN-SUFFIX, azure-dns-6.cn, DIRECT
+    - DOMAIN-SUFFIX, azure-dns-7.cn, DIRECT
+    - DOMAIN-SUFFIX, azure-dns-8.cn, DIRECT
+    - DOMAIN-SUFFIX, azure-dns-9.cn, DIRECT
+    - DOMAIN-SUFFIX, azure-dns-10.cn, DIRECT
 
   # b
    # baidu
@@ -3286,8 +3421,6 @@ rules:
     - DOMAIN-SUFFIX, sqqnh.cn, DIRECT
     - DOMAIN-SUFFIX, sqqnh.org, DIRECT
 
-   # blizzard
-
    # bluearchive
     - DOMAIN, bluearchive-cn.com, DIRECT
 
@@ -3299,8 +3432,6 @@ rules:
    # bluepoch-games
     # From reverse 1999
     - DOMAIN-SUFFIX, sl916.com, DIRECT
-
-   # bluesky
 
    # bmw
     - DOMAIN-SUFFIX, bmw.com.cn, DIRECT
@@ -3773,6 +3904,9 @@ rules:
     - DOMAIN-SUFFIX, las.ac.cn, DIRECT
 
    # category-ai-cn
+    # DeepSeek
+    # include:deepseek
+
     # RWKV
     - DOMAIN-SUFFIX, rwkv.cn, DIRECT
     - DOMAIN-SUFFIX, rwkv.com, DIRECT
@@ -3780,6 +3914,8 @@ rules:
     # 通义千问
     - DOMAIN-SUFFIX, tongyi.aliyun.com, DIRECT
     - DOMAIN-SUFFIX, qianwen.aliyun.com, DIRECT
+    - DOMAIN-SUFFIX, qwen.ai, DIRECT
+    - DOMAIN-SUFFIX, qwenlm.ai, DIRECT
 
     # 文心一言
     - DOMAIN-SUFFIX, yiyan.baidu.com, DIRECT
@@ -3814,6 +3950,10 @@ rules:
 
     - DOMAIN-SUFFIX, botvip.cn, DIRECT
     - DOMAIN-SUFFIX, liblib.art, DIRECT
+
+    # 夸克 CueMe
+    - DOMAIN-SUFFIX, cueme.cn, DIRECT
+    - DOMAIN, cueme-api.quark.cn, DIRECT
 
    # category-bank-cn
     # include:boc
@@ -4013,6 +4153,7 @@ rules:
 
     # include:17zuoye
     # include:applysquare
+    # include:hugecore
     # include:hujiang
     # include:koolearn
     # include:shanbay
@@ -4133,6 +4274,7 @@ rules:
     # include:acfun
     # include:acplay
     # include:ali213
+    # include:bestv
     # include:bilibili
     # include:ciweimao
     # include:cowlevel
@@ -4168,6 +4310,7 @@ rules:
     # include:tiancity
     # include:u17
     # include:vgtime
+    # include:wasu
     # include:xd
     # include:ximalaya
     # include:youku
@@ -4971,11 +5114,17 @@ rules:
     - DOMAIN-SUFFIX, sharghdaily.ir, DIRECT
     - DOMAIN-SUFFIX, tehrantimes.com, DIRECT
 
-   # category-ntp
-
    # category-ntp-cn
     # Aliyun
     # regexp:^ntp([1-7])?\.aliyun\.com$ @cn
+    - DOMAIN, ntp.aliyun.com, DIRECT
+    - DOMAIN, ntp1.aliyun.com, DIRECT
+    - DOMAIN, ntp2.aliyun.com, DIRECT
+    - DOMAIN, ntp3.aliyun.com, DIRECT
+    - DOMAIN, ntp4.aliyun.com, DIRECT
+    - DOMAIN, ntp5.aliyun.com, DIRECT
+    - DOMAIN, ntp6.aliyun.com, DIRECT
+    - DOMAIN, ntp7.aliyun.com, DIRECT
 
     # Qualcomm
     - DOMAIN, time.izatcloud.net, DIRECT
@@ -4983,6 +5132,12 @@ rules:
 
     # Tencent
     # regexp:^ntp([1-5])?\.tencent\.com$ @cn
+    - DOMAIN, ntp.tencent.com, DIRECT
+    - DOMAIN, ntp1.tencent.com, DIRECT
+    - DOMAIN, ntp2.tencent.com, DIRECT
+    - DOMAIN, ntp3.tencent.com, DIRECT
+    - DOMAIN, ntp4.tencent.com, DIRECT
+    - DOMAIN, ntp5.tencent.com, DIRECT
 
     - DOMAIN-SUFFIX, cn.pool.ntp.org, DIRECT
     - DOMAIN-SUFFIX, ntp.neu.edu.cn, DIRECT
@@ -5552,6 +5707,7 @@ rules:
     - DOMAIN-SUFFIX, datisnetwork.com, DIRECT
     - DOMAIN-SUFFIX, download.ir, DIRECT
     - DOMAIN-SUFFIX, downloadly.ir, DIRECT
+    - DOMAIN-SUFFIX, farsroid.com, DIRECT
     - DOMAIN-SUFFIX, hiweb.ir, DIRECT
     - DOMAIN-SUFFIX, ipnumberia.com, DIRECT
     - DOMAIN-SUFFIX, irancell.ir, DIRECT
@@ -5899,14 +6055,13 @@ rules:
     - DOMAIN-SUFFIX, cmfunds.cn, DIRECT
     - DOMAIN-SUFFIX, test-cignacmb.com, DIRECT
 
+    # 招赢&玖盈
+    - DOMAIN-SUFFIX, joying.com, DIRECT
+
    # cn
     # This list is for backward compatibility of "geosite:cn" in V2Ray.
     # include:tld-cn
     # include:geolocation-cn
-
-   # cnbc
-
-   # cnbeta
 
    # cnki
     - DOMAIN-SUFFIX, cnki.com.cn, DIRECT
@@ -5938,6 +6093,12 @@ rules:
     # Firefox
     - DOMAIN-SUFFIX, detectportal.firefox.com, DIRECT
 
+    # Honor
+    - DOMAIN, connectivitycheck.platform.hihonorcloud.com, DIRECT
+
+    # Huawei
+    - DOMAIN, connectivitycheck.platform.hicloud.com, DIRECT
+
     # KDE
     - DOMAIN-SUFFIX, networkcheck.kde.org, DIRECT
 
@@ -5965,8 +6126,6 @@ rules:
    # csdn
     - DOMAIN-SUFFIX, csdn.net, DIRECT
     - DOMAIN-SUFFIX, csdnimg.cn, DIRECT
-
-   # ctexcel
 
    # ctrip
     - DOMAIN-SUFFIX, c-ctrip.com, DIRECT
@@ -6000,8 +6159,6 @@ rules:
    # dangdang
     - DOMAIN-SUFFIX, dangdang.com, DIRECT
     - DOMAIN-SUFFIX, ddimg.cn, DIRECT
-
-   # decryptipastore
 
    # dedao
     # 得到
@@ -6217,13 +6374,9 @@ rules:
    # familymart
     - DOMAIN-SUFFIX, familymart.com.cn, DIRECT
 
-   # fandom
-
    # fans66
     - DOMAIN-SUFFIX, fans66.tw, DIRECT
     - DOMAIN-SUFFIX, fansking.tw, DIRECT
-
-   # fansta
 
    # farfetch
     - DOMAIN-SUFFIX, farfetch.cn, DIRECT
@@ -6290,8 +6443,6 @@ rules:
    # finish
     - DOMAIN-SUFFIX, dishwashingexpert.com.cn, DIRECT
     - DOMAIN-SUFFIX, finish.com.cn, DIRECT
-
-   # firebase
 
    # flowus
     - DOMAIN-SUFFIX, allflow.cn, DIRECT
@@ -7078,6 +7229,7 @@ rules:
     - DOMAIN-SUFFIX, fangxiaoer.com, DIRECT
     - DOMAIN-SUFFIX, fanxian.com, DIRECT
     - DOMAIN-SUFFIX, fastapi.net, DIRECT
+    - DOMAIN-SUFFIX, fcbox.com, DIRECT
     - DOMAIN-SUFFIX, feihuo.com, DIRECT
     - DOMAIN-SUFFIX, feiniaomy.com, DIRECT
     - DOMAIN-SUFFIX, fengkongcloud.com, DIRECT
@@ -7866,6 +8018,38 @@ rules:
     # 范明明's Blog 蒙ICP备18004194号
     - DOMAIN-SUFFIX, fanmingming.com, DIRECT
 
+    # GUOO国欧物流 粤ICP备2020101377号
+    - DOMAIN-SUFFIX, guoocang, DIRECT
+ 
+    # 跨境巴士 粤ICP备18102556号
+    - DOMAIN-SUFFIX, kuajing84, DIRECT
+ 
+    # ozonbigsell 闽ICP备2023012501号-1
+    - DOMAIN-SUFFIX, ozonbigsell, DIRECT
+ 
+    # 深圳市金易桥科技有限公司 粤ICP备2023069807号
+    - DOMAIN-SUFFIX, ozonabc, DIRECT
+ 
+    # 青萍科技（北京）有限公司深圳分公司 粤ICP备19156805号-1
+    - DOMAIN-SUFFIX, qingping.co, DIRECT
+    - DOMAIN-SUFFIX, cleargrass, DIRECT
+ 
+    # 岩池科技 黑ICP备2024018807号-1
+    - DOMAIN-SUFFIX, bdmozon, DIRECT
+ 
+    # 无忧易售 粤ICP备18054020号
+    - DOMAIN-SUFFIX, 51selling, DIRECT
+ 
+    # Ru-seer 俄罗斯卖家助手 粤ICP备2023020424号
+    - DOMAIN-SUFFIX, ruseer, DIRECT
+ 
+    # 布丁猫 黑ICP备2024018807号-1
+    - DOMAIN-SUFFIX, bdmozon, DIRECT
+    - DOMAIN-SUFFIX,bdcat.top, DIRECT
+ 
+    # 宁停车 
+    - DOMAIN-SUFFIX, ningtingche, DIRECT
+
    # gigabyte
     - DOMAIN-SUFFIX, aoruszone.cn, DIRECT
     - DOMAIN-SUFFIX, gigabyte.cn, DIRECT
@@ -8112,6 +8296,8 @@ rules:
     # 北京 (2x3)、上海 (ni5)、广州 (j5o)
     # regexp:^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.xn--ngstr-lra8j\.com$ @cn
 
+    # the same but DNS pollution in China mainland.
+    # regexp:^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.googlevideo\.com$ @cn
     - DOMAIN, redirector.c.play.google.com, DIRECT
 
    # google-trust-services
@@ -8298,253 +8484,273 @@ rules:
     - DOMAIN-SUFFIX, teleows.com, DIRECT
     - DOMAIN-SUFFIX, saasops.tech, DIRECT
 
-   # huaweicloud
-    - DOMAIN-SUFFIX, aadcloud.cn, DIRECT
-    - DOMAIN-SUFFIX, aadcloud.com, DIRECT
-    - DOMAIN-SUFFIX, ami-alliance.org.cn, DIRECT
-    - DOMAIN-SUFFIX, b2bgo.com, DIRECT
-    - DOMAIN-SUFFIX, eduapaashwc.com, DIRECT
-    - DOMAIN-SUFFIX, hc-cdn.cn, DIRECT
-    - DOMAIN-SUFFIX, hc-cdn.com, DIRECT
-    - DOMAIN-SUFFIX, hc-sre.com, DIRECT
-    - DOMAIN-SUFFIX, huaweiapaas.cn, DIRECT
-    - DOMAIN-SUFFIX, huaweiapaas.com, DIRECT
-    - DOMAIN-SUFFIX, huaweicloud-dns.cn, DIRECT
-    - DOMAIN-SUFFIX, huaweicloud-dns.com, DIRECT
-    - DOMAIN-SUFFIX, huaweicloud-idme.cn, DIRECT
-    - DOMAIN-SUFFIX, huaweicloud-idme.com, DIRECT
-    - DOMAIN-SUFFIX, huaweicloud-smn.cn, DIRECT
-    - DOMAIN-SUFFIX, huaweicloud-smn.com, DIRECT
-    - DOMAIN-SUFFIX, huaweicloud-smn.net, DIRECT
-    - DOMAIN-SUFFIX, huaweicloud.cn, DIRECT
-    - DOMAIN-SUFFIX, huaweicloud.com, DIRECT
-    - DOMAIN-SUFFIX, huaweicloudapis.cn, DIRECT
-    - DOMAIN-SUFFIX, huaweicloudapis.com, DIRECT
-    - DOMAIN-SUFFIX, huaweicloudlive.com, DIRECT
-    - DOMAIN-SUFFIX, huaweicloudsite.cn, DIRECT
-    - DOMAIN-SUFFIX, huaweicloudsite.com, DIRECT
-    - DOMAIN-SUFFIX, huaweicloudwaf.cn, DIRECT
-    - DOMAIN-SUFFIX, huaweicloudwaf.com, DIRECT
-    - DOMAIN-SUFFIX, huaweioneaccess.cn, DIRECT
-    - DOMAIN-SUFFIX, huaweioneaccess.com, DIRECT
-    - DOMAIN-SUFFIX, huaweimarketplace.com, DIRECT
-    - DOMAIN-SUFFIX, huaweisafedns.cn, DIRECT
-    - DOMAIN-SUFFIX, huaweisafedns.com, DIRECT
-    - DOMAIN-SUFFIX, huaweisafehub.cn, DIRECT
-    - DOMAIN-SUFFIX, huaweisre.cn, DIRECT
-    - DOMAIN-SUFFIX, huaweisre.com, DIRECT
-    - DOMAIN-SUFFIX, huaweiyun.cn, DIRECT
-    - DOMAIN-SUFFIX, huaweiyun.com, DIRECT
-    - DOMAIN-SUFFIX, hwastro.cn, DIRECT
-    - DOMAIN-SUFFIX, hwastro.com, DIRECT
-    - DOMAIN-SUFFIX, hwcdnsre.cn, DIRECT
-    - DOMAIN-SUFFIX, hwcdnsre.com, DIRECT
-    - DOMAIN-SUFFIX, hwclouds-dns.cn, DIRECT
-    - DOMAIN-SUFFIX, hwclouds-dns.com, DIRECT
-    - DOMAIN-SUFFIX, hwclouds-dns.net, DIRECT
-    - DOMAIN-SUFFIX, hwclouds.cn, DIRECT
-    - DOMAIN-SUFFIX, hwclouds.com, DIRECT
-    - DOMAIN-SUFFIX, hwclouds.mobi, DIRECT
-    - DOMAIN-SUFFIX, hwclouds.org.cn, DIRECT
-    - DOMAIN-SUFFIX, hwcloudsite.cn, DIRECT
-    - DOMAIN-SUFFIX, hwcloudsite.com, DIRECT
-    - DOMAIN-SUFFIX, hwcloudvis.cn, DIRECT
-    - DOMAIN-SUFFIX, hwcloudvis.com, DIRECT
-    - DOMAIN-SUFFIX, hweventgrid.cn, DIRECT
-    - DOMAIN-SUFFIX, hweventgrid.com, DIRECT
-    - DOMAIN-SUFFIX, idonguapi.cn, DIRECT
-    - DOMAIN-SUFFIX, idonguapi.com, DIRECT
-    - DOMAIN-SUFFIX, imc-oneaccess.cn, DIRECT
-    - DOMAIN-SUFFIX, imcapptest.com, DIRECT
-    - DOMAIN-SUFFIX, inanguapi.cn, DIRECT
-    - DOMAIN-SUFFIX, inanguapi.com, DIRECT
-    - DOMAIN-SUFFIX, ixiguapi.com, DIRECT
-    - DOMAIN-SUFFIX, km6g.cn, DIRECT
-    - DOMAIN-SUFFIX, km7g.cn, DIRECT
-    - DOMAIN-SUFFIX, km8g.cn, DIRECT
-    - DOMAIN-SUFFIX, km9g.cn, DIRECT
-    - DOMAIN-SUFFIX, kmcb-cn-east-3.cn, DIRECT
-    - DOMAIN-SUFFIX, kmcb-cn-north-4.cn, DIRECT
-    - DOMAIN-SUFFIX, kmop-cn-east-3.cn, DIRECT
-    - DOMAIN-SUFFIX, kmop-cn-north-4.cn, DIRECT
-    - DOMAIN-SUFFIX, livehwc3.cn, DIRECT
-    - DOMAIN-SUFFIX, modelarts-infer.cn, DIRECT
-    - DOMAIN-SUFFIX, modelarts-infer.com, DIRECT
-    - DOMAIN-SUFFIX, myhuaweicloud-custom.cn, DIRECT
-    - DOMAIN-SUFFIX, myhuaweicloud-custom.com, DIRECT
-    - DOMAIN-SUFFIX, myhuaweicloud-koodrive.cn, DIRECT
-    - DOMAIN-SUFFIX, myhuaweicloud-koodrive.com, DIRECT
-    - DOMAIN-SUFFIX, myhuaweicloud-obs.cn, DIRECT
-    - DOMAIN-SUFFIX, myhuaweicloud-obs.com, DIRECT
-    - DOMAIN-SUFFIX, myhuaweicloud.cn, DIRECT
-    - DOMAIN-SUFFIX, myhwcdn.cn, DIRECT
-    - DOMAIN-SUFFIX, myhwcdn.com, DIRECT
-    - DOMAIN-SUFFIX, myhwcloudlive.com, DIRECT
-    - DOMAIN-SUFFIX, myhwclouds.cn, DIRECT
-    - DOMAIN-SUFFIX, myhwclouds.com, DIRECT
-    - DOMAIN-SUFFIX, myhwclouds.com.cn, DIRECT
-    - DOMAIN-SUFFIX, myhwclouds.net, DIRECT
-    - DOMAIN-SUFFIX, pagescube.cn, DIRECT
-    - DOMAIN-SUFFIX, pagescube.com, DIRECT
-    - DOMAIN-SUFFIX, powerapp.io, DIRECT
+   # huaweicloud (revised cn)
+    # - DOMAIN-SUFFIX, aadcloud.cn, PROXY
+    # - DOMAIN-SUFFIX, aadcloud.com, PROXY
+    # - DOMAIN-SUFFIX, ami-alliance.org.cn, PROXY
+    # - DOMAIN-SUFFIX, b2bgo.com, PROXY
+    # - DOMAIN-SUFFIX, eduapaashwc.com, PROXY
+    # - DOMAIN-SUFFIX, hc-cdn.cn, PROXY
+    # - DOMAIN-SUFFIX, hc-cdn.com, PROXY
+    # - DOMAIN-SUFFIX, hc-sre.com, PROXY
+    # - DOMAIN-SUFFIX, huaweiapaas.cn, PROXY
+    # - DOMAIN-SUFFIX, huaweiapaas.com, PROXY
+    # - DOMAIN-SUFFIX, huaweicloud-dns.cn, PROXY
+    # - DOMAIN-SUFFIX, huaweicloud-dns.com, PROXY
+    # - DOMAIN-SUFFIX, huaweicloud-idme.cn, PROXY
+    # - DOMAIN-SUFFIX, huaweicloud-idme.com, PROXY
+    # - DOMAIN-SUFFIX, huaweicloud-smn.cn, PROXY
+    # - DOMAIN-SUFFIX, huaweicloud-smn.com, PROXY
+    # - DOMAIN-SUFFIX, huaweicloud-smn.net, PROXY
+    # - DOMAIN-SUFFIX, huaweicloud.cn, PROXY
+    # - DOMAIN-SUFFIX, huaweicloud.com, PROXY
+    # - DOMAIN-SUFFIX, huaweicloudapis.cn, PROXY
+    # - DOMAIN-SUFFIX, huaweicloudapis.com, PROXY
+    # - DOMAIN-SUFFIX, huaweicloudlive.com, PROXY
+    # - DOMAIN-SUFFIX, huaweicloudsite.cn, PROXY
+    # - DOMAIN-SUFFIX, huaweicloudsite.com, PROXY
+    # - DOMAIN-SUFFIX, huaweicloudwaf.cn, PROXY
+    # - DOMAIN-SUFFIX, huaweicloudwaf.com, PROXY
+    # - DOMAIN-SUFFIX, huaweioneaccess.cn, PROXY
+    # - DOMAIN-SUFFIX, huaweioneaccess.com, PROXY
+    # - DOMAIN-SUFFIX, huaweimarketplace.com, PROXY
+    # - DOMAIN-SUFFIX, huaweisafedns.cn, PROXY
+    # - DOMAIN-SUFFIX, huaweisafedns.com, PROXY
+    # - DOMAIN-SUFFIX, huaweisafehub.cn, PROXY
+    # - DOMAIN-SUFFIX, huaweisre.cn, PROXY
+    # - DOMAIN-SUFFIX, huaweisre.com, PROXY
+    # - DOMAIN-SUFFIX, huaweiyun.cn, PROXY
+    # - DOMAIN-SUFFIX, huaweiyun.com, PROXY
+    # - DOMAIN-SUFFIX, hwastro.cn, PROXY
+    # - DOMAIN-SUFFIX, hwastro.com, PROXY
+    # - DOMAIN-SUFFIX, hwcdnsre.cn, PROXY
+    # - DOMAIN-SUFFIX, hwcdnsre.com, PROXY
+    # - DOMAIN-SUFFIX, hwclouds-dns.cn, PROXY
+    # - DOMAIN-SUFFIX, hwclouds-dns.com, PROXY
+    # - DOMAIN-SUFFIX, hwclouds-dns.net, PROXY
+    # - DOMAIN-SUFFIX, hwclouds.cn, PROXY
+    # - DOMAIN-SUFFIX, hwclouds.com, PROXY
+    # - DOMAIN-SUFFIX, hwclouds.mobi, PROXY
+    # - DOMAIN-SUFFIX, hwclouds.org.cn, PROXY
+    # - DOMAIN-SUFFIX, hwcloudsite.cn, PROXY
+    # - DOMAIN-SUFFIX, hwcloudsite.com, PROXY
+    # - DOMAIN-SUFFIX, hwcloudvis.cn, PROXY
+    # - DOMAIN-SUFFIX, hwcloudvis.com, PROXY
+    # - DOMAIN-SUFFIX, hweventgrid.cn, PROXY
+    # - DOMAIN-SUFFIX, hweventgrid.com, PROXY
+    # - DOMAIN-SUFFIX, idonguapi.cn, PROXY
+    # - DOMAIN-SUFFIX, idonguapi.com, PROXY
+    # - DOMAIN-SUFFIX, imc-oneaccess.cn, PROXY
+    # - DOMAIN-SUFFIX, imcapptest.com, PROXY
+    # - DOMAIN-SUFFIX, inanguapi.cn, PROXY
+    # - DOMAIN-SUFFIX, inanguapi.com, PROXY
+    # - DOMAIN-SUFFIX, ixiguapi.com, PROXY
+    # - DOMAIN-SUFFIX, km6g.cn, PROXY
+    # - DOMAIN-SUFFIX, km7g.cn, PROXY
+    # - DOMAIN-SUFFIX, km8g.cn, PROXY
+    # - DOMAIN-SUFFIX, km9g.cn, PROXY
+    # - DOMAIN-SUFFIX, kmcb-cn-east-3.cn, PROXY
+    # - DOMAIN-SUFFIX, kmcb-cn-north-4.cn, PROXY
+    # - DOMAIN-SUFFIX, kmop-cn-east-3.cn, PROXY
+    # - DOMAIN-SUFFIX, kmop-cn-north-4.cn, PROXY
+    # - DOMAIN-SUFFIX, livehwc3.cn, PROXY
+    # - DOMAIN-SUFFIX, modelarts-infer.cn, PROXY
+    # - DOMAIN-SUFFIX, modelarts-infer.com, PROXY
+    # - DOMAIN-SUFFIX, myhuaweicloud-custom.cn, PROXY
+    # - DOMAIN-SUFFIX, myhuaweicloud-custom.com, PROXY
+    # - DOMAIN-SUFFIX, myhuaweicloud-koodrive.cn, PROXY
+    # - DOMAIN-SUFFIX, myhuaweicloud-koodrive.com, PROXY
+    # - DOMAIN-SUFFIX, myhuaweicloud-obs.cn, PROXY
+    # - DOMAIN-SUFFIX, myhuaweicloud-obs.com, PROXY
+    # - DOMAIN-SUFFIX, myhuaweicloud.cn, PROXY
+    # - DOMAIN-SUFFIX, myhwcdn.cn, PROXY
+    # - DOMAIN-SUFFIX, myhwcdn.com, PROXY
+    # - DOMAIN-SUFFIX, myhwcloudlive.com, PROXY
+    # - DOMAIN-SUFFIX, myhwclouds.cn, PROXY
+    # - DOMAIN-SUFFIX, myhwclouds.com, PROXY
+    # - DOMAIN-SUFFIX, myhwclouds.com.cn, PROXY
+    # - DOMAIN-SUFFIX, myhwclouds.net, PROXY
+    # - DOMAIN-SUFFIX, pagescube.cn, PROXY
+    # - DOMAIN-SUFFIX, pagescube.com, PROXY
+    # - DOMAIN-SUFFIX, powerapp.io, PROXY
 
     # Huaweicloud Endpoint, source: https://developer.huaweicloud.com/endpoint
-    - DOMAIN-SUFFIX, cn-east-2.myhuaweicloud.com, DIRECT             #华东-上海二
-    - DOMAIN-SUFFIX, cn-east-3.myhuaweicloud.com, DIRECT             #华东-上海一
-    - DOMAIN-SUFFIX, cn-east-4.myhuaweicloud.com, DIRECT             #华东二
-    - DOMAIN-SUFFIX, cn-east-5.myhuaweicloud.com, DIRECT             #华东-青岛
-    - DOMAIN-SUFFIX, cn-north-1.myhuaweicloud.com, DIRECT            #华北-北京一
-    - DOMAIN-SUFFIX, cn-north-11.myhuaweicloud.com, DIRECT           #华北-乌兰察布-汽车一
-    - DOMAIN-SUFFIX, cn-north-2.myhuaweicloud.com, DIRECT            #华北-北京二
-    - DOMAIN-SUFFIX, cn-north-3.myhuaweicloud.com, DIRECT            #华北-北京三
-    - DOMAIN-SUFFIX, cn-north-4.myhuaweicloud.com, DIRECT            #华北-北京四
-    - DOMAIN-SUFFIX, cn-north-5.myhuaweicloud.com, DIRECT            #华北-乌兰察布二零一
-    - DOMAIN-SUFFIX, cn-north-6.myhuaweicloud.com, DIRECT            #华北-乌兰察布二零二
-    - DOMAIN-SUFFIX, cn-north-9.myhuaweicloud.com, DIRECT            #华北-乌兰察布一
-    - DOMAIN-SUFFIX, cn-northeast-1.myhuaweicloud.com, DIRECT        #东北-大连
-    - DOMAIN-SUFFIX, cn-south-1.myhuaweicloud.com, DIRECT            #华南-广州
-    - DOMAIN-SUFFIX, cn-south-2.myhuaweicloud.com, DIRECT            #华南-深圳
-    - DOMAIN-SUFFIX, cn-south-4.myhuaweicloud.com, DIRECT            #华南-广州-友好用户环境
-    - DOMAIN-SUFFIX, cn-southwest-2.myhuaweicloud.com, DIRECT        #西南-贵阳一
+    # - DOMAIN-SUFFIX, cn-east-2.myhuaweicloud.com, PROXY             #华东-上海二
+    # - DOMAIN-SUFFIX, cn-east-3.myhuaweicloud.com, PROXY             #华东-上海一
+    # - DOMAIN-SUFFIX, cn-east-4.myhuaweicloud.com, PROXY             #华东二
+    # - DOMAIN-SUFFIX, cn-east-5.myhuaweicloud.com, PROXY             #华东-青岛
+    # - DOMAIN-SUFFIX, cn-north-1.myhuaweicloud.com, PROXY            #华北-北京一
+    # - DOMAIN-SUFFIX, cn-north-11.myhuaweicloud.com, PROXY           #华北-乌兰察布-汽车一
+    # - DOMAIN-SUFFIX, cn-north-2.myhuaweicloud.com, PROXY            #华北-北京二
+    # - DOMAIN-SUFFIX, cn-north-3.myhuaweicloud.com, PROXY            #华北-北京三
+    # - DOMAIN-SUFFIX, cn-north-4.myhuaweicloud.com, PROXY            #华北-北京四
+    # - DOMAIN-SUFFIX, cn-north-5.myhuaweicloud.com, PROXY            #华北-乌兰察布二零一
+    # - DOMAIN-SUFFIX, cn-north-6.myhuaweicloud.com, PROXY            #华北-乌兰察布二零二
+    # - DOMAIN-SUFFIX, cn-north-9.myhuaweicloud.com, PROXY            #华北-乌兰察布一
+    # - DOMAIN-SUFFIX, cn-northeast-1.myhuaweicloud.com, PROXY        #东北-大连
+    # - DOMAIN-SUFFIX, cn-south-1.myhuaweicloud.com, PROXY            #华南-广州
+    # - DOMAIN-SUFFIX, cn-south-2.myhuaweicloud.com, PROXY            #华南-深圳
+    # - DOMAIN-SUFFIX, cn-south-4.myhuaweicloud.com, PROXY            #华南-广州-友好用户环境
+    # - DOMAIN-SUFFIX, cn-southwest-2.myhuaweicloud.com, PROXY        #西南-贵阳一
 
     # 华为云 CDN CNAME 域名，按 ICP 备案序号排列
-    - DOMAIN-SUFFIX, cdnhwchcg02.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcurq03.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwczba04.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwclxw05.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcupf06.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcxcy07.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcatq08.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcztu09.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcedi10.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcoem01.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcllh11.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcjog12.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcpsd13.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcqwg14.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcqir15.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcvix16.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcajk17.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcchh18.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcohm19.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwczjt20.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcggk22.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwczth23.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwctxz24.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcgrb01.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcyxb02.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcywp03.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwclkl04.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcjbj05.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwconz06.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcgqa21.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwckbw08.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcsjs09.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcjkl10.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwctmz11.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcrpp12.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcpqh13.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcxsi14.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcfzp15.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcgvs16.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcrgg07.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwceft18.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwccvo19.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcbvo20.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcdkd21.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcdvg22.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwclnh23.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwckfd24.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwczxh101.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcbzj102.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcjqv17.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcljk104.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwclxu105.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcbqs106.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwctnm107.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcbni108.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwczks109.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcick110.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcead111.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcjlg112.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwckon103.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwczmn114.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcqgw115.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwckfz116.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcqve117.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcgnc118.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcuim119.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcjsb120.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwccmz121.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcibv122.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcprh113.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcedt124.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcofl101.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwclrd102.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcurr103.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwczid104.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcqvk105.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwczoy106.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcuwd107.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcogx108.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcoph123.com, DIRECT
-    - DOMAIN-SUFFIX, cdnhwceod109.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcpcw110.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwczic111.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcozb112.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcqrr114.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcaoc115.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwctyd116.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcidu117.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwclsl119.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcsux118.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcbie120.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcuxc121.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcaip122.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcwqz113.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcojn124.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnhwcscc123.cn, DIRECT
+    # - DOMAIN-SUFFIX, cdnhwchcg02.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcurq03.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwczba04.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwclxw05.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcupf06.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcxcy07.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcatq08.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcztu09.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcedi10.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcoem01.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcllh11.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcjog12.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcpsd13.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcqwg14.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcqir15.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcvix16.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcajk17.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcchh18.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcohm19.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwczjt20.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcggk22.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwczth23.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwctxz24.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcgrb01.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcyxb02.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcywp03.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwclkl04.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcjbj05.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwconz06.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcgqa21.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwckbw08.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcsjs09.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcjkl10.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwctmz11.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcrpp12.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcpqh13.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcxsi14.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcfzp15.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcgvs16.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcrgg07.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwceft18.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwccvo19.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcbvo20.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcdkd21.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcdvg22.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwclnh23.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwckfd24.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwczxh101.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcbzj102.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcjqv17.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcljk104.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwclxu105.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcbqs106.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwctnm107.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcbni108.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwczks109.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcick110.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcead111.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcjlg112.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwckon103.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwczmn114.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcqgw115.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwckfz116.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcqve117.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcgnc118.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcuim119.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcjsb120.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwccmz121.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcibv122.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcprh113.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcedt124.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcofl101.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwclrd102.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcurr103.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwczid104.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcqvk105.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwczoy106.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcuwd107.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcogx108.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcoph123.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwceod109.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcpcw110.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwczic111.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcozb112.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcqrr114.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcaoc115.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwctyd116.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcidu117.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwclsl119.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcsux118.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcbie120.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcuxc121.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcaip122.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcwqz113.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcojn124.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwcscc123.cn, PROXY
 
     # 华为云关联域名，按 ICP 备案序号排列
-    - DOMAIN-SUFFIX, o7mu8.cn, DIRECT
-    - DOMAIN-SUFFIX, 59bob.cn, DIRECT
-    - DOMAIN-SUFFIX, tc3bl.cn, DIRECT
-    - DOMAIN-SUFFIX, hiu58.cn, DIRECT
-    - DOMAIN-SUFFIX, kfomn.cn, DIRECT
-    - DOMAIN-SUFFIX, azkr2.cn, DIRECT
-    - DOMAIN-SUFFIX, vm45e.cn, DIRECT
-    - DOMAIN-SUFFIX, buf35.cn, DIRECT
-    - DOMAIN-SUFFIX, uwtmy.cn, DIRECT
-    - DOMAIN-SUFFIX, fpxyo.cn, DIRECT
-    - DOMAIN-SUFFIX, tm2a8.cn, DIRECT
-    - DOMAIN-SUFFIX, r8zc9.cn, DIRECT
-    - DOMAIN-SUFFIX, 6ts7c.cn, DIRECT
-    - DOMAIN-SUFFIX, 2gkjr.cn, DIRECT
-    - DOMAIN-SUFFIX, ns95c.cn, DIRECT
-    - DOMAIN-SUFFIX, tm7sg.cn, DIRECT
-    - DOMAIN-SUFFIX, le5vb.cn, DIRECT
-    - DOMAIN-SUFFIX, y43f6.cn, DIRECT
-    - DOMAIN-SUFFIX, 8n82b.cn, DIRECT
-    - DOMAIN-SUFFIX, x9exk.cn, DIRECT
-    - DOMAIN-SUFFIX, ms2tg.cn, DIRECT
-    - DOMAIN-SUFFIX, ka9bv.cn, DIRECT
-    - DOMAIN-SUFFIX, acgab.cn, DIRECT
-    - DOMAIN-SUFFIX, mle5p.cn, DIRECT
-    - DOMAIN-SUFFIX, 26r9y.cn, DIRECT
-    - DOMAIN-SUFFIX, 9coof.cn, DIRECT
-    - DOMAIN-SUFFIX, tzygd.cn, DIRECT
-    - DOMAIN-SUFFIX, z95rr.cn, DIRECT
-    - DOMAIN-SUFFIX, 3ili6.cn, DIRECT
-    - DOMAIN-SUFFIX, vo6z2.cn, DIRECT
-    - DOMAIN-SUFFIX, lu1da.cn, DIRECT
-    - DOMAIN-SUFFIX, ivwi3.cn, DIRECT
-    - DOMAIN-SUFFIX, 7k2k1.cn, DIRECT
-    - DOMAIN-SUFFIX, cza84.cn, DIRECT
-    - DOMAIN-SUFFIX, 8gcdp.cn, DIRECT
-    - DOMAIN-SUFFIX, kma1g.cn, DIRECT
-    - DOMAIN-SUFFIX, 576nt.cn, DIRECT
+    # - DOMAIN-SUFFIX, o7mu8.cn, PROXY
+    # - DOMAIN-SUFFIX, 59bob.cn, PROXY
+    # - DOMAIN-SUFFIX, tc3bl.cn, PROXY
+    # - DOMAIN-SUFFIX, hiu58.cn, PROXY
+    # - DOMAIN-SUFFIX, kfomn.cn, PROXY
+    # - DOMAIN-SUFFIX, azkr2.cn, PROXY
+    # - DOMAIN-SUFFIX, vm45e.cn, PROXY
+    # - DOMAIN-SUFFIX, buf35.cn, PROXY
+    # - DOMAIN-SUFFIX, uwtmy.cn, PROXY
+    # - DOMAIN-SUFFIX, fpxyo.cn, PROXY
+    # - DOMAIN-SUFFIX, tm2a8.cn, PROXY
+    # - DOMAIN-SUFFIX, r8zc9.cn, PROXY
+    # - DOMAIN-SUFFIX, 6ts7c.cn, PROXY
+    # - DOMAIN-SUFFIX, 2gkjr.cn, PROXY
+    # - DOMAIN-SUFFIX, ns95c.cn, PROXY
+    # - DOMAIN-SUFFIX, tm7sg.cn, PROXY
+    # - DOMAIN-SUFFIX, le5vb.cn, PROXY
+    # - DOMAIN-SUFFIX, y43f6.cn, PROXY
+    # - DOMAIN-SUFFIX, 8n82b.cn, PROXY
+    # - DOMAIN-SUFFIX, x9exk.cn, PROXY
+    # - DOMAIN-SUFFIX, ms2tg.cn, PROXY
+    # - DOMAIN-SUFFIX, ka9bv.cn, PROXY
+    # - DOMAIN-SUFFIX, acgab.cn, PROXY
+    # - DOMAIN-SUFFIX, mle5p.cn, PROXY
+    # - DOMAIN-SUFFIX, 26r9y.cn, PROXY
+    # - DOMAIN-SUFFIX, 9coof.cn, PROXY
+    # - DOMAIN-SUFFIX, tzygd.cn, PROXY
+    # - DOMAIN-SUFFIX, z95rr.cn, PROXY
+    # - DOMAIN-SUFFIX, 3ili6.cn, PROXY
+    # - DOMAIN-SUFFIX, vo6z2.cn, PROXY
+    # - DOMAIN-SUFFIX, lu1da.cn, PROXY
+    # - DOMAIN-SUFFIX, ivwi3.cn, PROXY
+    # - DOMAIN-SUFFIX, 7k2k1.cn, PROXY
+    # - DOMAIN-SUFFIX, cza84.cn, PROXY
+    # - DOMAIN-SUFFIX, 8gcdp.cn, PROXY
+    # - DOMAIN-SUFFIX, kma1g.cn, PROXY
+    # - DOMAIN-SUFFIX, 576nt.cn, PROXY
 
     # regexp:.+\.cdnhwc([1-9]|10)\.(cn|com)$
+    # - DOMAIN-SUFFIX, cdnhwc1.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc2.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc3.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc4.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc5.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc6.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc7.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc8.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc9.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc10.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc1.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc2.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc3.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc4.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc5.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc6.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc7.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc8.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc9.com, PROXY
+    # - DOMAIN-SUFFIX, cdnhwc10.com, PROXY
 
    # hujiang
     - DOMAIN-SUFFIX, cctalk.com, DIRECT
@@ -8664,10 +8870,6 @@ rules:
 
    # intel-dev
     - DOMAIN-SUFFIX, clearlinux.cn, DIRECT
-   
-   # intercom
-
-   # ipip
 
    # iqiyi
     - DOMAIN-SUFFIX, 71.am, DIRECT
@@ -8690,8 +8892,6 @@ rules:
     - DOMAIN-SUFFIX, itunesradio.com.cn, DIRECT
 
   # j
-   # java
-
    # jd
     - DOMAIN-SUFFIX, 1huizhan.com, DIRECT
     - DOMAIN-SUFFIX, 3.cn, DIRECT
@@ -9078,8 +9278,6 @@ rules:
    # keep
     - DOMAIN-SUFFIX, gotokeep.com, DIRECT
     - DOMAIN-SUFFIX, keepcdn.com, DIRECT
-
-   # keybase
 
    # kindle
     - DOMAIN-SUFFIX, kindle.cn, DIRECT
@@ -9468,7 +9666,7 @@ rules:
    # miaopai
     - DOMAIN-SUFFIX, miaopai.com, DIRECT
 
-   # microsoft
+   # microsoft (cn)
     # Others
     - DOMAIN-SUFFIX, dcg.microsoft.com, DIRECT
     - DOMAIN-SUFFIX, dynamics.cn, DIRECT
@@ -9483,6 +9681,7 @@ rules:
     - DOMAIN-SUFFIX, microsoftonline-p.cn, DIRECT
     - DOMAIN-SUFFIX, microsoftonline-p.net.cn, DIRECT
     - DOMAIN-SUFFIX, microsoftonline.cn, DIRECT
+    - DOMAIN-SUFFIX, microsoftstore.com.cn, DIRECT
     - DOMAIN-SUFFIX, microsofttranslator-int.cn, DIRECT
     - DOMAIN-SUFFIX, msauth.cn, DIRECT
     - DOMAIN-SUFFIX, msauthimages.cn, DIRECT
@@ -9494,6 +9693,7 @@ rules:
     - DOMAIN-SUFFIX, o365files.cn, DIRECT
     - DOMAIN-SUFFIX, office365-net.cn, DIRECT
     - DOMAIN-SUFFIX, office365.cn, DIRECT
+    - DOMAIN-SUFFIX, officeplus.cn, DIRECT
     - DOMAIN-SUFFIX, officewebapps.cn, DIRECT
     - DOMAIN-SUFFIX, onmschina.cn, DIRECT
     - DOMAIN-SUFFIX, outlook.cn, DIRECT
@@ -9508,7 +9708,6 @@ rules:
     # Use in config file like this: "geosite:microsoft@cn"
     - DOMAIN-SUFFIX, dl.delivery.mp.microsoft.com, DIRECT
     - DOMAIN-SUFFIX, download.windowsupdate.com, DIRECT
-
     - DOMAIN, b.c2r.ts.cdn.office.net, DIRECT
     - DOMAIN, bg.v4.a.dl.ws.microsoft.com, DIRECT
     - DOMAIN, bg4.v4.a.dl.ws.microsoft.com, DIRECT
@@ -9773,8 +9972,6 @@ rules:
    # okx
     # OKC Browser
     - DOMAIN-SUFFIX, oklink.com, DIRECT
-
-   # onedrive
 
    # oneplus
     - DOMAIN-SUFFIX, oneplus.com, DIRECT
@@ -10099,294 +10296,303 @@ rules:
     # Reference: https://tailscale.com/kb/1081/magicdns/#fully-qualified-domain-names-vs-machine-names
     - DOMAIN-SUFFIX, ts.net, DIRECT
 
-   # projectsekai
-
-   # proquest
-
-   # protonmail
-
-   # pstorage
-
-   # ptt
-
   # q
    # qcc
     - DOMAIN-SUFFIX, qcc.com, DIRECT
     - DOMAIN-SUFFIX, qichacha.com, DIRECT
 
-   # qcloud
+   # qcloud (revised cn)
     # include:discuz
     # include:dnspod
 
-    - DOMAIN-SUFFIX, acctdns.com, DIRECT
-    - DOMAIN-SUFFIX, acctdns.net, DIRECT
-    - DOMAIN-SUFFIX, aitransfy.com, DIRECT
-    - DOMAIN-SUFFIX, apaas-zone-test.com, DIRECT
-    - DOMAIN-SUFFIX, apigwtencent.com, DIRECT
-    - DOMAIN-SUFFIX, bkapigw.com, DIRECT
-    - DOMAIN-SUFFIX, bkapps.com, DIRECT
-    - DOMAIN-SUFFIX, bkclouds.cc, DIRECT
-    - DOMAIN-SUFFIX, bktencent.com, DIRECT
-    - DOMAIN-SUFFIX, build9s.io, DIRECT
-    - DOMAIN-SUFFIX, byodonline.com, DIRECT
-    - DOMAIN-SUFFIX, cdn-go.cn, DIRECT
-    - DOMAIN-SUFFIX, cdndoctor.com, DIRECT
-    - DOMAIN-SUFFIX, cdngot.com, DIRECT
-    - DOMAIN-SUFFIX, cdntip.com, DIRECT
-    - DOMAIN-SUFFIX, cdntips.com, DIRECT
-    - DOMAIN-SUFFIX, cdntips.net, DIRECT
-    - DOMAIN-SUFFIX, cdnv1.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnv2.cn, DIRECT
-    - DOMAIN-SUFFIX, cdnv3.cn, DIRECT
-    - DOMAIN-SUFFIX, cloud-industry-delivery.site, DIRECT
-    - DOMAIN-SUFFIX, cloudbase.cn, DIRECT
-    - DOMAIN-SUFFIX, cloudbase.net, DIRECT
-    - DOMAIN-SUFFIX, cloudidaas.com, DIRECT
-    - DOMAIN-SUFFIX, cloudsite.vip, DIRECT
-    - DOMAIN-SUFFIX, cncqcloud.com, DIRECT
-    - DOMAIN-SUFFIX, computeinit.com, DIRECT
-    - DOMAIN-SUFFIX, coolsite.vip, DIRECT
-    - DOMAIN-SUFFIX, dnsv1.com, DIRECT
-    - DOMAIN-SUFFIX, dnsv1.com.cn, DIRECT
-    - DOMAIN-SUFFIX, dothework.cn, DIRECT
-    - DOMAIN-SUFFIX, ectencent.cn, DIRECT
-    - DOMAIN-SUFFIX, ectencent.com.cn, DIRECT
-    - DOMAIN-SUFFIX, edgeonedy1.com, DIRECT
-    - DOMAIN-SUFFIX, essurl.com, DIRECT
-    - DOMAIN-SUFFIX, exmailgz.com, DIRECT
-    - DOMAIN-SUFFIX, fsphere.cn, DIRECT
-    - DOMAIN-SUFFIX, gaapqcloud.com, DIRECT
-    - DOMAIN-SUFFIX, gitdrone.cn, DIRECT
-    - DOMAIN-SUFFIX, gmedev.cn, DIRECT
-    - DOMAIN-SUFFIX, govqcloud.com, DIRECT
-    - DOMAIN-SUFFIX, gsadds.com, DIRECT
-    - DOMAIN-SUFFIX, gtm.pub, DIRECT
-    - DOMAIN-SUFFIX, hr-welink.com, DIRECT
-    - DOMAIN-SUFFIX, idcgcloudcs.com, DIRECT
-    - DOMAIN-SUFFIX, iemiq.com, DIRECT
-    - DOMAIN-SUFFIX, igtm.pub, DIRECT
-    - DOMAIN-SUFFIX, isd.com, DIRECT
-    - DOMAIN-SUFFIX, ispqcloud.com, DIRECT
-    - DOMAIN-SUFFIX, itopsdk.com, DIRECT
-    - DOMAIN-SUFFIX, jrzk.net.cn, DIRECT
-    - DOMAIN-SUFFIX, my-qcloud.com, DIRECT
-    - DOMAIN-SUFFIX, myelasticsearch.com, DIRECT
-    - DOMAIN-SUFFIX, myqcloud.com, DIRECT
-    - DOMAIN-SUFFIX, onexmail.com, DIRECT
-    - DOMAIN-SUFFIX, openapp.run, DIRECT
-    - DOMAIN-SUFFIX, ovscdns.com, DIRECT
-    - DOMAIN-SUFFIX, ovscdns.net, DIRECT
-    - DOMAIN-SUFFIX, pn1waq.com, DIRECT
-    - DOMAIN-SUFFIX, qcloud-edumall.com, DIRECT
-    - DOMAIN-SUFFIX, qcloud.com, DIRECT
-    - DOMAIN-SUFFIX, qcloud.la, DIRECT
-    - DOMAIN-SUFFIX, qcloudapps.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudcdn.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudcdntest.cn, DIRECT
-    - DOMAIN-SUFFIX, qcloudclass.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudcos.cn, DIRECT
-    - DOMAIN-SUFFIX, qcloudcos.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudcos.com.cn, DIRECT
-    - DOMAIN-SUFFIX, qclouder.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudgme.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudimg.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudipv6.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudmarket.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudns.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudsmartiot.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudtcic.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudtiw.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudtrip.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudtt.com, DIRECT
-    - DOMAIN-SUFFIX, qcloudwaf.com, DIRECT
-    - DOMAIN-SUFFIX, qdwebim.com, DIRECT
-    - DOMAIN-SUFFIX, qeodns.com, DIRECT
-    - DOMAIN-SUFFIX, qeodns.net, DIRECT
-    - DOMAIN-SUFFIX, qqmra.cn, DIRECT
-    - DOMAIN-SUFFIX, qqmra.com, DIRECT
-    - DOMAIN-SUFFIX, qyunapp.com, DIRECT
-    - DOMAIN-SUFFIX, serverlesscloud.cn, DIRECT
-    - DOMAIN-SUFFIX, smtcdns.com, DIRECT
-    - DOMAIN-SUFFIX, smtcdns.net, DIRECT
-    - DOMAIN-SUFFIX, spcdntip.com, DIRECT
-    - DOMAIN-SUFFIX, spcdntipbak.com, DIRECT
-    - DOMAIN-SUFFIX, spcloudhw.com, DIRECT
-    - DOMAIN-SUFFIX, spcloudhw.net, DIRECT
-    - DOMAIN-SUFFIX, srmkp.cn, DIRECT
-    - DOMAIN-SUFFIX, starlakelab.com, DIRECT
-    - DOMAIN-SUFFIX, tamaegis.com, DIRECT
-    - DOMAIN-SUFFIX, tapd.cn, DIRECT
-    - DOMAIN-SUFFIX, tcdlive.com, DIRECT
-    - DOMAIN-SUFFIX, tcdnhw.com, DIRECT
-    - DOMAIN-SUFFIX, tcdnkcbak.com, DIRECT
-    - DOMAIN-SUFFIX, tcdnlive.com, DIRECT
-    - DOMAIN-SUFFIX, tcdnlivebak1.com, DIRECT
-    - DOMAIN-SUFFIX, tcdnlivebak2.com, DIRECT
-    - DOMAIN-SUFFIX, tcdnos.com, DIRECT
-    - DOMAIN-SUFFIX, tcdnos.net, DIRECT
-    - DOMAIN-SUFFIX, tcdntip.com, DIRECT
-    - DOMAIN-SUFFIX, tcdnvod.com, DIRECT
-    - DOMAIN-SUFFIX, tcdnvodbak.com, DIRECT
-    - DOMAIN-SUFFIX, tcloudbase.com, DIRECT
-    - DOMAIN-SUFFIX, tcloudbase.net, DIRECT
-    - DOMAIN-SUFFIX, tcloudbaseapp.com, DIRECT
-    - DOMAIN-SUFFIX, tcloudbi.com, DIRECT
-    - DOMAIN-SUFFIX, tclouddrive.com, DIRECT
-    - DOMAIN-SUFFIX, tcloudedu.com, DIRECT
-    - DOMAIN-SUFFIX, tcloudhw.com, DIRECT
-    - DOMAIN-SUFFIX, tcloudhw.net, DIRECT
-    - DOMAIN-SUFFIX, tcloudscdn.com, DIRECT
-    - DOMAIN-SUFFIX, tcloudscdn.net, DIRECT
-    - DOMAIN-SUFFIX, tdnsx1.com, DIRECT
-    - DOMAIN-SUFFIX, techo.chat, DIRECT
-    - DOMAIN-SUFFIX, tefscloud.com, DIRECT
-    - DOMAIN-SUFFIX, tefscloud.net, DIRECT
-    - DOMAIN-SUFFIX, tenant-zone-dev.com, DIRECT
-    - DOMAIN-SUFFIX, tencdns.net, DIRECT
-    - DOMAIN-SUFFIX, tencent-cloud.com, DIRECT
-    - DOMAIN-SUFFIX, tencent-cloud.net, DIRECT
-    - DOMAIN-SUFFIX, tencentapps.com, DIRECT
-    - DOMAIN-SUFFIX, tencentbyod.com, DIRECT
-    - DOMAIN-SUFFIX, tencentcdb.cn, DIRECT
-    - DOMAIN-SUFFIX, tencentcdb.com, DIRECT
-    - DOMAIN-SUFFIX, tencentcdb.com.cn, DIRECT
-    - DOMAIN-SUFFIX, tencentclb.com, DIRECT
-    - DOMAIN-SUFFIX, tencentcloud-aiot.com, DIRECT
-    - DOMAIN-SUFFIX, tencentcloudapi.com, DIRECT
-    - DOMAIN-SUFFIX, tencentcloudclub.com, DIRECT
-    - DOMAIN-SUFFIX, tencentcloudcr.com, DIRECT
-    - DOMAIN-SUFFIX, tencentcloudmarket.com, DIRECT
-    - DOMAIN-SUFFIX, tencentcloudns.com, DIRECT
-    - DOMAIN-SUFFIX, tencentcloudsec.com, DIRECT
-    - DOMAIN-SUFFIX, tencentcloudses.com, DIRECT
-    - DOMAIN-SUFFIX, tencentcos.cn, DIRECT
-    - DOMAIN-SUFFIX, tencentcos.com, DIRECT
-    - DOMAIN-SUFFIX, tencentcos.com.cn, DIRECT
-    - DOMAIN-SUFFIX, tencentcs.com, DIRECT
-    - DOMAIN-SUFFIX, tencentdayu.com, DIRECT
-    - DOMAIN-SUFFIX, tencentdb.com, DIRECT
-    - DOMAIN-SUFFIX, tencentdevices.com, DIRECT
-    - DOMAIN-SUFFIX, tencentdigitalassistant.com, DIRECT
-    - DOMAIN-SUFFIX, tencentdms.com, DIRECT
-    - DOMAIN-SUFFIX, tencenteiam.com, DIRECT
-    - DOMAIN-SUFFIX, tencentelasticsearch.com, DIRECT
-    - DOMAIN-SUFFIX, tencentid.com, DIRECT
-    - DOMAIN-SUFFIX, tencentidentity.com, DIRECT
-    - DOMAIN-SUFFIX, tencentproxy.com, DIRECT
-    - DOMAIN-SUFFIX, tencentrio.com, DIRECT
-    - DOMAIN-SUFFIX, tencenttid.com, DIRECT
-    - DOMAIN-SUFFIX, tencentwemeet.club, DIRECT
-    - DOMAIN-SUFFIX, tencentwepark.com, DIRECT
-    - DOMAIN-SUFFIX, tencentyun.com, DIRECT
-    - DOMAIN-SUFFIX, tendbcluster.com, DIRECT
-    - DOMAIN-SUFFIX, tendis.net, DIRECT
-    - DOMAIN-SUFFIX, testjrzk.net.cn, DIRECT
-    - DOMAIN-SUFFIX, testmeet.cn, DIRECT
-    - DOMAIN-SUFFIX, testwaf.com, DIRECT
-    - DOMAIN-SUFFIX, tgovcloud.com, DIRECT
-    - DOMAIN-SUFFIX, tidaas.com, DIRECT
-    - DOMAIN-SUFFIX, timatrix.com.cn, DIRECT
-    - DOMAIN-SUFFIX, timmerse.com, DIRECT
-    - DOMAIN-SUFFIX, tlivecdn.com, DIRECT
-    - DOMAIN-SUFFIX, tlivepush.com, DIRECT
-    - DOMAIN-SUFFIX, tlivesource.com, DIRECT
-    - DOMAIN-SUFFIX, tourismshow.cn, DIRECT
-    - DOMAIN-SUFFIX, tourismuser.cn, DIRECT
-    - DOMAIN-SUFFIX, tsparkling.com, DIRECT
-    - DOMAIN-SUFFIX, tx-exhibition.com, DIRECT
-    - DOMAIN-SUFFIX, txbyod.com, DIRECT
-    - DOMAIN-SUFFIX, txidc.wang, DIRECT
-    - DOMAIN-SUFFIX, txlivecdn.com, DIRECT
-    - DOMAIN-SUFFIX, txtyxg.com, DIRECT
-    - DOMAIN-SUFFIX, txyscdn.com, DIRECT
-    - DOMAIN-SUFFIX, txyscdn.net, DIRECT
-    - DOMAIN-SUFFIX, uncnn.cn, DIRECT
-    - DOMAIN-SUFFIX, vcloudstc.com, DIRECT
-    - DOMAIN-SUFFIX, vcloudstc.net, DIRECT
-    - DOMAIN-SUFFIX, vcloudvod.com, DIRECT
-    - DOMAIN-SUFFIX, vodtcbk.com, DIRECT
-    - DOMAIN-SUFFIX, vxo7tu.com, DIRECT
-    - DOMAIN-SUFFIX, wework-studio.com, DIRECT
-    - DOMAIN-SUFFIX, xqymuy.com, DIRECT
-    - DOMAIN-SUFFIX, yufuid.com, DIRECT
-    - DOMAIN-SUFFIX, yufuid.com.cn, DIRECT
-    - DOMAIN-SUFFIX, yufuid.net, DIRECT
-    - DOMAIN-SUFFIX, yunjitele.com, DIRECT
+    # - DOMAIN-SUFFIX, acctdns.com, PROXY
+    # - DOMAIN-SUFFIX, acctdns.net, PROXY
+    # - DOMAIN-SUFFIX, aitransfy.com, PROXY
+    # - DOMAIN-SUFFIX, apaas-zone-test.com, PROXY
+    # - DOMAIN-SUFFIX, apigwtencent.com, PROXY
+    # - DOMAIN-SUFFIX, bkapigw.com, PROXY
+    # - DOMAIN-SUFFIX, bkapps.com, PROXY
+    # - DOMAIN-SUFFIX, bkclouds.cc, PROXY
+    # - DOMAIN-SUFFIX, bktencent.com, PROXY
+    # - DOMAIN-SUFFIX, build9s.io, PROXY
+    # - DOMAIN-SUFFIX, byodonline.com, PROXY
+    # - DOMAIN-SUFFIX, cdn-go.cn, PROXY
+    # - DOMAIN-SUFFIX, cdndoctor.com, PROXY
+    # - DOMAIN-SUFFIX, cdngot.com, PROXY
+    # - DOMAIN-SUFFIX, cdntip.com, PROXY
+    # - DOMAIN-SUFFIX, cdntips.com, PROXY
+    # - DOMAIN-SUFFIX, cdntips.net, PROXY
+    # - DOMAIN-SUFFIX, cdnv1.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnv2.cn, PROXY
+    # - DOMAIN-SUFFIX, cdnv3.cn, PROXY
+    # - DOMAIN-SUFFIX, cloud-industry-delivery.site, PROXY
+    # - DOMAIN-SUFFIX, cloudbase.cn, PROXY
+    # - DOMAIN-SUFFIX, cloudbase.net, PROXY
+    # - DOMAIN-SUFFIX, cloudidaas.com, PROXY
+    # - DOMAIN-SUFFIX, cloudsite.vip, PROXY
+    # - DOMAIN-SUFFIX, cncqcloud.com, PROXY
+    # - DOMAIN-SUFFIX, computeinit.com, PROXY
+    # - DOMAIN-SUFFIX, coolsite.vip, PROXY
+    # - DOMAIN-SUFFIX, dnsv1.com, PROXY
+    # - DOMAIN-SUFFIX, dnsv1.com.cn, PROXY
+    # - DOMAIN-SUFFIX, dothework.cn, PROXY
+    # - DOMAIN-SUFFIX, ectencent.cn, PROXY
+    # - DOMAIN-SUFFIX, ectencent.com.cn, PROXY
+    # - DOMAIN-SUFFIX, edgeonedy1.com, PROXY
+    # - DOMAIN-SUFFIX, essurl.com, PROXY
+    # - DOMAIN-SUFFIX, exmailgz.com, PROXY
+    # - DOMAIN-SUFFIX, fsphere.cn, PROXY
+    # - DOMAIN-SUFFIX, gaapqcloud.com, PROXY
+    # - DOMAIN-SUFFIX, gitdrone.cn, PROXY
+    # - DOMAIN-SUFFIX, gmedev.cn, PROXY
+    # - DOMAIN-SUFFIX, govqcloud.com, PROXY
+    # - DOMAIN-SUFFIX, gsadds.com, PROXY
+    # - DOMAIN-SUFFIX, gtm.pub, PROXY
+    # - DOMAIN-SUFFIX, hr-welink.com, PROXY
+    # - DOMAIN-SUFFIX, idcgcloudcs.com, PROXY
+    # - DOMAIN-SUFFIX, iemiq.com, PROXY
+    # - DOMAIN-SUFFIX, igtm-meeting-tencent.com, PROXY
+    # - DOMAIN-SUFFIX, igtm.pub, PROXY
+    # - DOMAIN-SUFFIX, isd.com, PROXY
+    # - DOMAIN-SUFFIX, ispqcloud.com, PROXY
+    # - DOMAIN-SUFFIX, itopsdk.com, PROXY
+    # - DOMAIN-SUFFIX, jrzk.net.cn, PROXY
+    # - DOMAIN-SUFFIX, my-qcloud.com, PROXY
+    # - DOMAIN-SUFFIX, myelasticsearch.com, PROXY
+    # - DOMAIN-SUFFIX, myqcloud.com, PROXY
+    # - DOMAIN-SUFFIX, onexmail.com, PROXY
+    # - DOMAIN-SUFFIX, openapp.run, PROXY
+    # - DOMAIN-SUFFIX, ovscdns.com, PROXY
+    # - DOMAIN-SUFFIX, ovscdns.net, PROXY
+    # - DOMAIN-SUFFIX, pn1waq.com, PROXY
+    # - DOMAIN-SUFFIX, qcloud-edumall.com, PROXY
+    # - DOMAIN-SUFFIX, qcloud.com, PROXY
+    # - DOMAIN-SUFFIX, qcloud.la, PROXY
+    # - DOMAIN-SUFFIX, qcloudapps.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudcdn.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudcdntest.cn, PROXY
+    # - DOMAIN-SUFFIX, qcloudclass.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudcos.cn, PROXY
+    # - DOMAIN-SUFFIX, qcloudcos.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudcos.com.cn, PROXY
+    # - DOMAIN-SUFFIX, qclouder.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudgme.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudimg.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudipv6.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudmarket.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudns.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudsmartiot.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudtcic.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudtiw.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudtrip.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudtt.com, PROXY
+    # - DOMAIN-SUFFIX, qcloudwaf.com, PROXY
+    # - DOMAIN-SUFFIX, qdwebim.com, PROXY
+    # - DOMAIN-SUFFIX, qeodns.com, PROXY
+    # - DOMAIN-SUFFIX, qeodns.net, PROXY
+    # - DOMAIN-SUFFIX, qqmra.cn, PROXY
+    # - DOMAIN-SUFFIX, qqmra.com, PROXY
+    # - DOMAIN-SUFFIX, qyunapp.com, PROXY
+    # - DOMAIN-SUFFIX, serverlesscloud.cn, PROXY
+    # - DOMAIN-SUFFIX, smtcdns.com, PROXY
+    # - DOMAIN-SUFFIX, smtcdns.net, PROXY
+    # - DOMAIN-SUFFIX, spcdntip.com, PROXY
+    # - DOMAIN-SUFFIX, spcdntipbak.com, PROXY
+    # - DOMAIN-SUFFIX, spcloudhw.com, PROXY
+    # - DOMAIN-SUFFIX, spcloudhw.net, PROXY
+    # - DOMAIN-SUFFIX, srmkp.cn, PROXY
+    # - DOMAIN-SUFFIX, starlakelab.com, PROXY
+    # - DOMAIN-SUFFIX, tamaegis.com, PROXY
+    # - DOMAIN-SUFFIX, tapd.cn, PROXY
+    # - DOMAIN-SUFFIX, tcdlive.com, PROXY
+    # - DOMAIN-SUFFIX, tcdnhw.com, PROXY
+    # - DOMAIN-SUFFIX, tcdnkcbak.com, PROXY
+    # - DOMAIN-SUFFIX, tcdnlive.com, PROXY
+    # - DOMAIN-SUFFIX, tcdnlivebak1.com, PROXY
+    # - DOMAIN-SUFFIX, tcdnlivebak2.com, PROXY
+    # - DOMAIN-SUFFIX, tcdnos.com, PROXY
+    # - DOMAIN-SUFFIX, tcdnos.net, PROXY
+    # - DOMAIN-SUFFIX, tcdntip.com, PROXY
+    # - DOMAIN-SUFFIX, tcdnvod.com, PROXY
+    # - DOMAIN-SUFFIX, tcdnvodbak.com, PROXY
+    # - DOMAIN-SUFFIX, tcloudbase.com, PROXY
+    # - DOMAIN-SUFFIX, tcloudbase.net, PROXY
+    # - DOMAIN-SUFFIX, tcloudbaseapp.com, PROXY
+    # - DOMAIN-SUFFIX, tcloudbi.com, PROXY
+    # - DOMAIN-SUFFIX, tclouddrive.com, PROXY
+    # - DOMAIN-SUFFIX, tcloudedu.com, PROXY
+    # - DOMAIN-SUFFIX, tcloudhw.com, PROXY
+    # - DOMAIN-SUFFIX, tcloudhw.net, PROXY
+    # - DOMAIN-SUFFIX, tcloudscdn.com, PROXY
+    # - DOMAIN-SUFFIX, tcloudscdn.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsx1.com, PROXY
+    # - DOMAIN-SUFFIX, techo.chat, PROXY
+    # - DOMAIN-SUFFIX, tefscloud.com, PROXY
+    # - DOMAIN-SUFFIX, tefscloud.net, PROXY
+    # - DOMAIN-SUFFIX, tenant-zone-dev.com, PROXY
+    # - DOMAIN-SUFFIX, tencdns.net, PROXY
+    # - DOMAIN-SUFFIX, tencent-cloud.com, PROXY
+    # - DOMAIN-SUFFIX, tencent-cloud.net, PROXY
+    # - DOMAIN-SUFFIX, tencentapps.com, PROXY
+    # - DOMAIN-SUFFIX, tencentbyod.com, PROXY
+    # - DOMAIN-SUFFIX, tencentcdb.cn, PROXY
+    # - DOMAIN-SUFFIX, tencentcdb.com, PROXY
+    # - DOMAIN-SUFFIX, tencentcdb.com.cn, PROXY
+    # - DOMAIN-SUFFIX, tencentclb.com, PROXY
+    # - DOMAIN-SUFFIX, tencentcloud-aiot.com, PROXY
+    # - DOMAIN-SUFFIX, tencentcloudapi.com, PROXY
+    # - DOMAIN-SUFFIX, tencentcloudclub.com, PROXY
+    # - DOMAIN-SUFFIX, tencentcloudcr.com, PROXY
+    # - DOMAIN-SUFFIX, tencentcloudmarket.com, PROXY
+    # - DOMAIN-SUFFIX, tencentcloudns.com, PROXY
+    # - DOMAIN-SUFFIX, tencentcloudsec.com, PROXY
+    # - DOMAIN-SUFFIX, tencentcloudses.com, PROXY
+    # - DOMAIN-SUFFIX, tencentcos.cn, PROXY
+    # - DOMAIN-SUFFIX, tencentcos.com, PROXY
+    # - DOMAIN-SUFFIX, tencentcos.com.cn, PROXY
+    # - DOMAIN-SUFFIX, tencentcs.com, PROXY
+    # - DOMAIN-SUFFIX, tencentdayu.com, PROXY
+    # - DOMAIN-SUFFIX, tencentdb.com, PROXY
+    # - DOMAIN-SUFFIX, tencentdevices.com, PROXY
+    # - DOMAIN-SUFFIX, tencentdigitalassistant.com, PROXY
+    # - DOMAIN-SUFFIX, tencentdms.com, PROXY
+    # - DOMAIN-SUFFIX, tencenteiam.com, PROXY
+    # - DOMAIN-SUFFIX, tencentelasticsearch.com, PROXY
+    # - DOMAIN-SUFFIX, tencentid.com, PROXY
+    # - DOMAIN-SUFFIX, tencentidentity.com, PROXY
+    # - DOMAIN-SUFFIX, tencentproxy.com, PROXY
+    # - DOMAIN-SUFFIX, tencentrio.com, PROXY
+    # - DOMAIN-SUFFIX, tencenttid.com, PROXY
+    # - DOMAIN-SUFFIX, tencentwemeet.club, PROXY
+    # - DOMAIN-SUFFIX, tencentwepark.com, PROXY
+    # - DOMAIN-SUFFIX, tencentyun.com, PROXY
+    # - DOMAIN-SUFFIX, tendbcluster.com, PROXY
+    # - DOMAIN-SUFFIX, tendis.net, PROXY
+    # - DOMAIN-SUFFIX, testjrzk.net.cn, PROXY
+    # - DOMAIN-SUFFIX, testmeet.cn, PROXY
+    # - DOMAIN-SUFFIX, testwaf.com, PROXY
+    # - DOMAIN-SUFFIX, tgovcloud.com, PROXY
+    # - DOMAIN-SUFFIX, tidaas.com, PROXY
+    # - DOMAIN-SUFFIX, timatrix.com.cn, PROXY
+    # - DOMAIN-SUFFIX, timmerse.com, PROXY
+    # - DOMAIN-SUFFIX, tlivecdn.com, PROXY
+    # - DOMAIN-SUFFIX, tlivepush.com, PROXY
+    # - DOMAIN-SUFFIX, tlivesource.com, PROXY
+    # - DOMAIN-SUFFIX, tourismshow.cn, PROXY
+    # - DOMAIN-SUFFIX, tourismuser.cn, PROXY
+    # - DOMAIN-SUFFIX, tsparkling.com, PROXY
+    # - DOMAIN-SUFFIX, tx-exhibition.com, PROXY
+    # - DOMAIN-SUFFIX, txbyod.com, PROXY
+    # - DOMAIN-SUFFIX, txidc.wang, PROXY
+    # - DOMAIN-SUFFIX, txlivecdn.com, PROXY
+    # - DOMAIN-SUFFIX, txtyxg.com, PROXY
+    # - DOMAIN-SUFFIX, txyscdn.com, PROXY
+    # - DOMAIN-SUFFIX, txyscdn.net, PROXY
+    # - DOMAIN-SUFFIX, uncnn.cn, PROXY
+    # - DOMAIN-SUFFIX, vcloudstc.com, PROXY
+    # - DOMAIN-SUFFIX, vcloudstc.net, PROXY
+    # - DOMAIN-SUFFIX, vcloudvod.com, PROXY
+    # - DOMAIN-SUFFIX, vodtcbk.com, PROXY
+    # - DOMAIN-SUFFIX, vxo7tu.com, PROXY
+    # - DOMAIN-SUFFIX, wework-studio.com, PROXY
+    # - DOMAIN-SUFFIX, xqymuy.com, PROXY
+    # - DOMAIN-SUFFIX, yufuid.com, PROXY
+    # - DOMAIN-SUFFIX, yufuid.com.cn, PROXY
+    # - DOMAIN-SUFFIX, yufuid.net, PROXY
+    # - DOMAIN-SUFFIX, yunjitele.com, PROXY
 
-    # regexp:.+\.dnse[0-5]\.(cn|com)$, DIRECT
-    # regexp:.+\.tdnsv([1-9]|1[0-5])\.(com|net)$, DIRECT
+    # regexp:.+\.dnse[0-5]\.(cn|com)$
+    # - DOMAIN-SUFFIX, dnse0.cn, PROXY
+    # - DOMAIN-SUFFIX, dnse1.cn, PROXY
+    # - DOMAIN-SUFFIX, dnse2.cn, PROXY
+    # - DOMAIN-SUFFIX, dnse3.cn, PROXY
+    # - DOMAIN-SUFFIX, dnse4.cn, PROXY
+    # - DOMAIN-SUFFIX, dnse5.cn, PROXY
+    # - DOMAIN-SUFFIX, dnse0.com, PROXY
+    # - DOMAIN-SUFFIX, dnse1.com, PROXY
+    # - DOMAIN-SUFFIX, dnse2.com, PROXY
+    # - DOMAIN-SUFFIX, dnse3.com, PROXY
+    # - DOMAIN-SUFFIX, dnse4.com, PROXY
+    # - DOMAIN-SUFFIX, dnse5.com, PROXY
 
-    # myqcloud inside mainland China
-    #北京
-    # regexp:\.(.+-)?ap-beijing(-.+)?\.myqcloud\.com$, DIRECT
-    #南京
-    # regexp:\.(.+-)?ap-nanjing(-.+)?\.myqcloud\.com$, DIRECT
-    #上海
-    # regexp:\.(.+-)?ap-shanghai(-.+)?\.myqcloud\.com$, DIRECT
-    #广州
-    # regexp:\.(.+-)?ap-guangzhou(-.+)?\.myqcloud\.com$, DIRECT
-    #成都
-    # regexp:\.(.+-)?ap-chengdu(-.+)?\.myqcloud\.com$, DIRECT
-    #重庆
-    # regexp:\.(.+-)?ap-chongqing(-.+)?\.myqcloud\.com$, DIRECT
-    #深圳
-    # regexp:\.(.+-)?ap-shenzhen(-.+)?\.myqcloud\.com$, DIRECT
+    # # regexp:.+\.tdnsv([1-9]|1[0-5])\.(com|net)$
+    # - DOMAIN-SUFFIX, tdnsv1.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv2.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv3.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv4.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv5.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv6.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv7.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv8.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv9.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv10.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv11.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv12.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv13.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv14.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv15.com, PROXY
+    # - DOMAIN-SUFFIX, tdnsv1.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsv2.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsv3.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsv4.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsv5.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsv6.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsv7.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsv8.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsv9.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsv10.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsv11.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsv12.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsv13.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsv14.net, PROXY
+    # - DOMAIN-SUFFIX, tdnsv15.net, PROXY
+
+    # # myqcloud inside mainland China
+    # regexp:\.(.+-)?ap-beijing(-.+)?\.myqcloud\.com$             #北京
+    # regexp:\.(.+-)?ap-nanjing(-.+)?\.myqcloud\.com$             #南京
+    # regexp:\.(.+-)?ap-shanghai(-.+)?\.myqcloud\.com$            #上海
+    # regexp:\.(.+-)?ap-guangzhou(-.+)?\.myqcloud\.com$           #广州
+    # regexp:\.(.+-)?ap-chengdu(-.+)?\.myqcloud\.com$             #成都
+    # regexp:\.(.+-)?ap-chongqing(-.+)?\.myqcloud\.com$           #重庆
+    # regexp:\.(.+-)?ap-shenzhen(-.+)?\.myqcloud\.com$            #深圳
 
     # tencentcos inside mainland China
-    #北京
-    # regexp:\.(.+-)?ap-beijing(-.+)?\.tencentcos\.(cn|com(\.cn)?)$, DIRECT
-    #南京
-    # regexp:\.(.+-)?ap-nanjing(-.+)?\.tencentcos\.(cn|com(\.cn)?)$, DIRECT
-    #上海
-    # regexp:\.(.+-)?ap-shanghai(-.+)?\.tencentcos\.(cn|com(\.cn)?)$ DIRECT
-    #广州
-    # regexp:\.(.+-)?ap-guangzhou(-.+)?\.tencentcos\.(cn|com(\.cn)?)$, DIRECT
-    #成都
-    # regexp:\.(.+-)?ap-chengdu(-.+)?\.tencentcos\.(cn|com(\.cn)?)$ DIRECT
-    #重庆
-    # regexp:\.(.+-)?ap-chongqing(-.+)?\.tencentcos\.(cn|com(\.cn)?)$, DIRECT
-    #深圳
-    # regexp:\.(.+-)?ap-shenzhen(-.+)?\.tencentcos\.(cn|com(\.cn)?)$, DIRECT
+    # regexp:\.(.+-)?ap-beijing(-.+)?\.tencentcos\.(cn|com(\.cn)?)$   #北京
+    # regexp:\.(.+-)?ap-nanjing(-.+)?\.tencentcos\.(cn|com(\.cn)?)$   #南京
+    # regexp:\.(.+-)?ap-shanghai(-.+)?\.tencentcos\.(cn|com(\.cn)?)$  #上海
+    # regexp:\.(.+-)?ap-guangzhou(-.+)?\.tencentcos\.(cn|com(\.cn)?)$ #广州
+    # regexp:\.(.+-)?ap-chengdu(-.+)?\.tencentcos\.(cn|com(\.cn)?)$   #成都
+    # regexp:\.(.+-)?ap-chongqing(-.+)?\.tencentcos\.(cn|com(\.cn)?)$ #重庆
+    # regexp:\.(.+-)?ap-shenzhen(-.+)?\.tencentcos\.(cn|com(\.cn)?)$  #深圳
 
     # Formerly COS Download Domain
-    #北京一区（华北）
-    - DOMAIN-SUFFIX, costj.myqcloud.com, DIRECT
-    #北京
-    - DOMAIN-SUFFIX, cosbj.myqcloud.com, DIRECT
-    #上海（华东）
-    - DOMAIN-SUFFIX, cossh.myqcloud.com, DIRECT
-    #广州（华南）
-    - DOMAIN-SUFFIX, cosgz.myqcloud.com, DIRECT
-    #成都（西南）
-    - DOMAIN-SUFFIX, coscd.myqcloud.com, DIRECT
+    # - DOMAIN-SUFFIX, costj.myqcloud.com, PROXY                  #北京一区（华北）
+    # - DOMAIN-SUFFIX, cosbj.myqcloud.com, PROXY                  #北京
+    # - DOMAIN-SUFFIX, cossh.myqcloud.com, PROXY                  #上海（华东）
+    # - DOMAIN-SUFFIX, cosgz.myqcloud.com, PROXY                  #广州（华南）
+    # - DOMAIN-SUFFIX, coscd.myqcloud.com, PROXY                  #成都（西南）
 
     # Formerly COS Upload Domain
-      #北京一区（华北）
-    #北京一区（华北）
-    - DOMAIN-SUFFIX, tj.file.myqcloud.com, DIRECT
-    #北京
-    - DOMAIN-SUFFIX, bj.file.myqcloud.com, DIRECT
-    #上海（华东）
-    - DOMAIN-SUFFIX, sh.file.myqcloud.com, DIRECT
-    #广州（华南）
-    - DOMAIN-SUFFIX, gz.file.myqcloud.com, DIRECT
-    #成都（西南）
-    - DOMAIN-SUFFIX, cd.file.myqcloud.com, DIRECT
+    # - DOMAIN-SUFFIX, tj.file.myqcloud.com, PROXY                #北京一区（华北）
+    # - DOMAIN-SUFFIX, bj.file.myqcloud.com, PROXY                #北京
+    # - DOMAIN-SUFFIX, sh.file.myqcloud.com, PROXY                #上海（华东）
+    # - DOMAIN-SUFFIX, gz.file.myqcloud.com, PROXY                #广州（华南）
+    # - DOMAIN-SUFFIX, cd.file.myqcloud.com, PROXY                #成都（西南）
 
     # Oracle
-    - DOMAIN-SUFFIX, oracle-tencent.cn, DIRECT
-    - DOMAIN-SUFFIX, oracle-tencent.com, DIRECT
-    - DOMAIN-SUFFIX, oracle-tencent.com.cn, DIRECT
-    - DOMAIN-SUFFIX, oracle-tencent.net, DIRECT
-    - DOMAIN-SUFFIX, oracle-tencent.net.cn, DIRECT
+    # - DOMAIN-SUFFIX, oracle-tencent.cn, PROXY
+    # - DOMAIN-SUFFIX, oracle-tencent.com, PROXY
+    # - DOMAIN-SUFFIX, oracle-tencent.com.cn, PROXY
+    # - DOMAIN-SUFFIX, oracle-tencent.net, PROXY
+    # - DOMAIN-SUFFIX, oracle-tencent.net.cn, PROXY
 
     # 腾讯优码
-    - DOMAIN-SUFFIX, m1.run, DIRECT
-    - DOMAIN-SUFFIX, m6.run, DIRECT
-    - DOMAIN-SUFFIX, m9.run, DIRECT
-    - DOMAIN-SUFFIX, ma.run, DIRECT
-    - DOMAIN-SUFFIX, um.run, DIRECT
-    - DOMAIN-SUFFIX, ym.run, DIRECT
+    # - DOMAIN-SUFFIX, m1.run, PROXY
+    # - DOMAIN-SUFFIX, m6.run, PROXY
+    # - DOMAIN-SUFFIX, m9.run, PROXY
+    # - DOMAIN-SUFFIX, ma.run, PROXY
+    # - DOMAIN-SUFFIX, um.run, PROXY
+    # - DOMAIN-SUFFIX, ym.run, PROXY
 
    # qichamao
     - DOMAIN-SUFFIX, qichamao.com, DIRECT
@@ -10394,6 +10600,7 @@ rules:
    # qihoo360
     # include:75team
     # include:qihoo360-ads
+    # include:starworld
 
     - DOMAIN-SUFFIX, 360.cn, DIRECT
     - DOMAIN-SUFFIX, 360.com, DIRECT
@@ -10526,8 +10733,6 @@ rules:
 
    # reabble
     - DOMAIN-SUFFIX, reabble.cn, DIRECT
-
-   # redhat
 
    # renren
     - DOMAIN-SUFFIX, renren.com, DIRECT
@@ -10728,9 +10933,10 @@ rules:
     - DOMAIN, xz.pphimalayanrt.com, DIRECT
 
     # 蒸汽中国
-    - DOMAIN, steamchina.com, DIRECT
+    - DOMAIN-SUFFIX, steamchina.com, DIRECT
 
-   # steamunlocked
+    # 数云科技
+    - DOMAIN-SUFFIX, gstore.val.manlaxy.com, DIRECT
 
    # strepsils
     - DOMAIN-SUFFIX, strepsils.cn, DIRECT
@@ -10766,8 +10972,6 @@ rules:
     - DOMAIN-SUFFIX, suningholdings.com, DIRECT
     - DOMAIN-SUFFIX, Footer, DIRECT
 
-   # supersonic-ads
-
    # swift
     - DOMAIN-SUFFIX, swiftui.cn, DIRECT
     - DOMAIN-SUFFIX, swiftui.com.cn, DIRECT
@@ -10782,10 +10986,6 @@ rules:
     - DOMAIN-SUFFIX, synology.cn, DIRECT
 
   # t
-   # taboola
-
-   # tagtic-ads
-
    # taikang
     - DOMAIN-SUFFIX, taikang.com, DIRECT
     - DOMAIN-SUFFIX, taikanglife.com, DIRECT
@@ -10796,8 +10996,6 @@ rules:
     - DOMAIN-SUFFIX, 61.com, DIRECT
     - DOMAIN-SUFFIX, taomee.com, DIRECT
 
-   # tappx-ads
-
    # taptap
     - DOMAIN-SUFFIX, tapimg.com, DIRECT
     - DOMAIN-SUFFIX, tapimg.net, DIRECT
@@ -10806,10 +11004,6 @@ rules:
     - DOMAIN-SUFFIX, taptap.io, DIRECT
     - DOMAIN-SUFFIX, taptapdada.com, DIRECT
 
-   # target
- 
-   # taylorfrancis
-
    # teambition
     - DOMAIN-SUFFIX, teambition.com, DIRECT
     - DOMAIN-SUFFIX, teambition.net, DIRECT
@@ -10817,14 +11011,6 @@ rules:
 
    # teamviewer
     - DOMAIN-SUFFIX, teamviewer.cn, DIRECT
-
-   # techtimes
-
-   # ted
- 
-   # telegram
- 
-   # telekom
 
    # tencent
     # include:qcloud #腾讯云
@@ -10899,8 +11085,6 @@ rules:
     - DOMAIN-SUFFIX, fymallqa4.com, DIRECT
     - DOMAIN-SUFFIX, fymallqa7.com, DIRECT
     - DOMAIN-SUFFIX, fymallqa9.com, DIRECT
-
-   # tencent-ads
 
    # tencent-dev
     - DOMAIN-SUFFIX, weui.io, DIRECT
@@ -11029,37 +11213,15 @@ rules:
 
     - DOMAIN, tesla-cdn.thron.cn, DIRECT
 
-   # test
-
    # test-ipv6
     # 豫ICP备20004384号
     - DOMAIN-SUFFIX, testipv6.cn, DIRECT
 
-   # tex
-
    # tgbus
     - DOMAIN-SUFFIX, tgbus.com, DIRECT
 
-   # theboringcompany
-
-   # theguardian
- 
-   # theinitium
- 
-   # thelinuxfoundation
- 
-   # theporndude
-
-   # thescoregroup
- 
-   # thesun
- 
-   # thetimes
-
    # thetype
     - DOMAIN-SUFFIX, thetype.cloud, DIRECT
-
-   # thomsonreuters
 
    # tiancity
     - DOMAIN-SUFFIX, tiancity.com, DIRECT
@@ -11068,18 +11230,6 @@ rules:
    # tianyancha
     - DOMAIN-SUFFIX, jindidata.com, DIRECT
     - DOMAIN-SUFFIX, tianyancha.com, DIRECT
-
-   # tidal
- 
-   # tidelift
- 
-   # tiktok
- 
-   # tinyurl
- 
-   # tipdm
- 
-   # tld-!cn
 
    # tld-cn
     # Reference: https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains
@@ -11156,10 +11306,6 @@ rules:
     # .健康
     - DOMAIN-KEYWORD, .xn--nyqy26a, DIRECT
 
-   # tld-opennic
-
-   # tmdb
-
    # tmtpost
     # Domains belong to 北京灵动新程信息科技有限公司 (京ICP备13040123号)
 
@@ -11171,12 +11317,6 @@ rules:
     - DOMAIN-SUFFIX, tigeek.net.cn, DIRECT
     - DOMAIN-SUFFIX, tmtsmartlife.com, DIRECT
     - DOMAIN-SUFFIX, tmtsmartrun.com, DIRECT
-
-   # tokyo-sports
- 
-   # tokyo-toshokan
- 
-   # tonec
 
    # tongcheng
     - DOMAIN-SUFFIX, 40017.cn, DIRECT
@@ -11196,56 +11336,14 @@ rules:
     # 机械革命
     - DOMAIN-SUFFIX, mechrevo.com, DIRECT
 
-   # topcoder
- 
-   # tor
- 
-   # torproject
- 
-   # translatewiki
- 
-   # trello
- 
-   # trustwave
- 
-   # truyen-hentai
- 
-   # tsquare
- 
-   # tube8
- 
-   # tumblr
- 
-   # tutanota
-
    # tvb
     - DOMAIN-SUFFIX, tvbc.com.cn, DIRECT
-
-   # tvdb
- 
-   # tver
- 
-   # twca
- 
-   # twitch
- 
-   # twitter
- 
-   # typekit
- 
-   # typenetwork
- 
-   # typography
 
   # u
    # u17
     - DOMAIN-SUFFIX, u17.com, DIRECT
     - DOMAIN-SUFFIX, u17i.com, DIRECT
     - DOMAIN-SUFFIX, u17t.com, DIRECT
-   
-   # uber
-   
-   # uberads-ads
 
    # ubiquiti
     - DOMAIN-SUFFIX, amplifi.com.cn, DIRECT
@@ -11260,8 +11358,6 @@ rules:
     # Ubisoft Connect
     - DOMAIN, uplaypc-s-ubisoft.cdn.ubi.com, DIRECT
    
-   # ubuntu
-   
    # ubuntukylin
     - DOMAIN-SUFFIX, openkylin.top, DIRECT
     - DOMAIN-SUFFIX, ubuntukylin.com, DIRECT
@@ -11272,14 +11368,6 @@ rules:
     - DOMAIN-SUFFIX, ucweb.com, DIRECT
     - DOMAIN-SUFFIX, uczzd.cn, DIRECT
 
-   # ucloud
-   
-   # udacity
-   
-   # udemy
-   
-   # udn
-   
    # umeng
     # include:umeng-ads
     
@@ -11290,8 +11378,6 @@ rules:
     - DOMAIN-SUFFIX, umtrack.com, DIRECT
     - DOMAIN-SUFFIX, uyunad.com, DIRECT
     - DOMAIN-SUFFIX, whalecloud.com, DIRECT
-   
-   # umeng-ads
    
    # unionpay
     - DOMAIN-SUFFIX, 95516.com, DIRECT
@@ -11308,10 +11394,6 @@ rules:
     # UnionPay International
     - DOMAIN-SUFFIX, unionpayintl.cn, DIRECT
     - DOMAIN-SUFFIX, unionpayintl.com, DIRECT
-   
-   # unity
-   
-   # unity-ads
    
    # upai
     - DOMAIN-SUFFIX, aicdn.com, DIRECT
@@ -11346,10 +11428,6 @@ rules:
     - DOMAIN-SUFFIX, uux68.com, DIRECT
 
   # v
-   # v2ray
-
-   # v8
-
    # vancl
     - DOMAIN-SUFFIX, vancl.com, DIRECT
     - DOMAIN-SUFFIX, vanclimg.com, DIRECT
@@ -11358,17 +11436,9 @@ rules:
    # vanish
     - DOMAIN-SUFFIX, vanish.cn, DIRECT
 
-   # vaptcha
-
    # veet
     - DOMAIN-SUFFIX, veet.cn, DIRECT
     - DOMAIN-SUFFIX, veet.com.cn, DIRECT
-
-   # vercel
-
-   # verisign
-
-   # verizon
 
    # vgtime
     - DOMAIN-SUFFIX, vgtime.com, DIRECT
@@ -11384,10 +11454,6 @@ rules:
     - DOMAIN-SUFFIX, vilavpn6.xyz, DIRECT
     - DOMAIN-SUFFIX, vilavpn7.xyz, DIRECT
 
-   # vim
-
-   # vimeo
-
    # visa
     - DOMAIN-SUFFIX, visa.cn, DIRECT
     - DOMAIN-SUFFIX, visa.com.cn, DIRECT
@@ -11402,22 +11468,14 @@ rules:
     - DOMAIN-SUFFIX, visaplatinum.cn, DIRECT
     - DOMAIN-SUFFIX, visaplatinum.com.cn, DIRECT
 
-   # visualarts
-
-   # viu
-
    # vivo
+    - DOMAIN-SUFFIX, iqoo.com, DIRECT
+    - DOMAIN-SUFFIX, vivo.cn, DIRECT
     - DOMAIN-SUFFIX, vivo.com, DIRECT
     - DOMAIN-SUFFIX, vivo.com.cn, DIRECT
 
-   # vk
-
    # vmware
     - DOMAIN-SUFFIX, heptio.cn, DIRECT
-
-   # voanews
-
-   # vodafone
 
    # volcengine
     - DOMAIN-SUFFIX, aigc-cloud.com, DIRECT
@@ -11568,8 +11626,6 @@ rules:
     - DOMAIN-SUFFIX, zjytxp.cn, DIRECT
     - DOMAIN-SUFFIX, zvip.cn, DIRECT
 
-   # volmoe
-
    # volvo
     - DOMAIN-SUFFIX, vfsco.com.cn, DIRECT
     - DOMAIN-SUFFIX, volvo.cn, DIRECT
@@ -11578,16 +11634,10 @@ rules:
     - DOMAIN-SUFFIX, volvogroup.com.cn, DIRECT
     - DOMAIN-SUFFIX, volvotrucks.com.cn, DIRECT
 
-   # voxmedia
-
-   # vpngate
-
    # vultr
     - DOMAIN-SUFFIX, vultr.com, DIRECT
 
   # w
-   # w3schools
-
    # walmart
     - DOMAIN-SUFFIX, walmart.cn, DIRECT
 
@@ -11611,10 +11661,6 @@ rules:
     - DOMAIN-SUFFIX, wscdns.info, DIRECT
     - DOMAIN-SUFFIX, wscdns.org, DIRECT
 
-   # wantmedia
-
-   # watchout
-
    # weathercn
     # 华风爱科气象科技
     - DOMAIN-SUFFIX, hf-aw.cn, DIRECT
@@ -11626,12 +11672,8 @@ rules:
    # webex
     - DOMAIN-SUFFIX, webex.com.cn, DIRECT
 
-   # webflow
-
    # webnovel
     - DOMAIN-SUFFIX, webnovel.com, DIRECT
-
-   # webtype
 
    # weiphone
     - DOMAIN-SUFFIX, feng.com, DIRECT
@@ -11641,29 +11683,9 @@ rules:
    # westerndigital
     - DOMAIN-SUFFIX, sandisk.cn, DIRECT
 
-   # whatsapp
-
-   # wholefoodsmarket
-
-   # wikidot
-
-   # wikihow
-
-   # wikimedia
-
-   # windy
-
-   # wise
-
-   # wisekey
-
-   # wish
-
    # wiwide
     - DOMAIN-SUFFIX, wamawama.com, DIRECT
     - DOMAIN-SUFFIX, wiwide.com, DIRECT
-
-   # wix
 
    # wjx
     - DOMAIN-SUFFIX, sojump.com, DIRECT
@@ -11679,8 +11701,6 @@ rules:
    # woolite
     - DOMAIN-SUFFIX, woolite.cn, DIRECT
     - DOMAIN-SUFFIX, woolite.com.cn, DIRECT
-
-   # wordpress
 
    # wps
     - DOMAIN-SUFFIX, wps.cn, DIRECT
@@ -11712,12 +11732,6 @@ rules:
     # PDF
     - DOMAIN-SUFFIX, wpspdf.cn, DIRECT
 
-   # wsj
-
-   # wteam-ads
-
-   # wwe
-
    # wynd
     - DOMAIN-SUFFIX, wyndlabs.ai, DIRECT
     - DOMAIN-SUFFIX, wynd.network, DIRECT
@@ -11740,55 +11754,67 @@ rules:
     - DOMAIN-SUFFIX, xdcdn.net, DIRECT
     - DOMAIN-SUFFIX, xindong.com, DIRECT
 
-   # xda
-
-   # xdty
-
-   # xhamster
-
-   # xhamster-ads
-
    # xiaohongshu
     - DOMAIN-SUFFIX, xhscdn.com, DIRECT
     - DOMAIN-SUFFIX, xhscdn.net, DIRECT
     - DOMAIN-SUFFIX, xiaohongshu.com, DIRECT
 
-   # xiaomi
+   # xiaomi (revised cn)
     # include:xiaomi-ads
 
-    - DOMAIN-SUFFIX, mi-img.com, DIRECT
-    - DOMAIN-SUFFIX, mi.com, DIRECT
-    - DOMAIN-SUFFIX, mifile.cn, DIRECT
-    - DOMAIN-SUFFIX, migames.com, DIRECT
-    - DOMAIN-SUFFIX, mijia.tech, DIRECT
-    - DOMAIN-SUFFIX, miui.com, DIRECT
-    - DOMAIN-SUFFIX, miwifi.com, DIRECT
-    - DOMAIN-SUFFIX, xiaomi.cn, DIRECT
-    - DOMAIN-SUFFIX, xiaomi.com, DIRECT
-    - DOMAIN-SUFFIX, xiaomi.net, DIRECT
-    - DOMAIN-SUFFIX, xiaomiev.com, DIRECT
-    - DOMAIN-SUFFIX, xiaomimobile.com, DIRECT
-    - DOMAIN-SUFFIX, xiaomixiaoai.com, DIRECT
+    # - DOMAIN-SUFFIX, mi-img.com, PROXY
+    # - DOMAIN-SUFFIX, mi.com, PROXY
+    # - DOMAIN-SUFFIX, mifile.cn, PROXY
+    # - DOMAIN-SUFFIX, migames.com, PROXY
+    # - DOMAIN-SUFFIX, mijia.tech, PROXY
+    # - DOMAIN-SUFFIX, miui.com, PROXY
+    # - DOMAIN-SUFFIX, miwifi.com, PROXY
+    # - DOMAIN-SUFFIX, xiaomi.cn, PROXY
+    # - DOMAIN-SUFFIX, xiaomi.com, PROXY
+    # - DOMAIN-SUFFIX, xiaomi.net, PROXY
+    # - DOMAIN-SUFFIX, xiaomicp.com, PROXY
+    # - DOMAIN-SUFFIX, xiaomidns.cn, PROXY
+    # - DOMAIN-SUFFIX, xiaomidns.com, PROXY
+    # - DOMAIN-SUFFIX, xiaomidns.com.cn, PROXY
+    # - DOMAIN-SUFFIX, xiaomidns.net, PROXY
+    # - DOMAIN-SUFFIX, xiaomiev.com, PROXY
+    # - DOMAIN-SUFFIX, xiaomiev.com, PROXY
+    # - DOMAIN-SUFFIX, xiaomiinc.cn, PROXY
+    # - DOMAIN-SUFFIX, xiaomiinc.com, PROXY
+    # - DOMAIN-SUFFIX, xiaomiinc.com.cn, PROXY
+    # - DOMAIN-SUFFIX, xiaomiinc.net, PROXY
+    # - DOMAIN-SUFFIX, xiaomimobile.com, PROXY
+    # - DOMAIN-SUFFIX, xiaominr.com, PROXY
+    # - DOMAIN-SUFFIX, xiaomiprint.com, PROXY
+    # - DOMAIN-SUFFIX, xiaomisa.cn, PROXY
+    # - DOMAIN-SUFFIX, xiaomisa.com, PROXY
+    # - DOMAIN-SUFFIX, xiaomisa.net, PROXY
+    # - DOMAIN-SUFFIX, xiaomisa.org, PROXY
+    # - DOMAIN-SUFFIX, xiaomiwear.com, PROXY
+    # - DOMAIN-SUFFIX, xiaomixiaoai.com, PROXY
+
+    # 天星数科
+    # - DOMAIN-SUFFIX, airstarfinance.net, PROXY
+    # - DOMAIN-SUFFIX, mipay.com, PROXY
 
     # 多看
-    - DOMAIN-SUFFIX, duokan.com, DIRECT
+    # - DOMAIN-SUFFIX, duokan.com, PROXY
+    # - DOMAIN-SUFFIX, duokanbox.com, PROXY
 
-    # Xiaomi YouPin
-    - DOMAIN-SUFFIX, xiaomiyoupin.com, DIRECT
+    # 有品
+    # - DOMAIN-SUFFIX, xiaomiyoupin.com, PROXY
+    # - DOMAIN-SUFFIX, youpin.cn, PROXY
+    # - DOMAIN-SUFFIX, youpin.com.cn, PROXY
 
     # 紫米
-    - DOMAIN-SUFFIX, zmifi.com, DIRECT
+    # - DOMAIN-SUFFIX, zmifi.com, PROXY
 
     # AppStore CDN
-    - DOMAIN-SUFFIX, saxyit.com, DIRECT
-
-   # xiaomitv-ads
+    # - DOMAIN-SUFFIX, saxyit.com, PROXY
 
    # ximalaya
     - DOMAIN-SUFFIX, ximalaya.com, DIRECT
     - DOMAIN-SUFFIX, xmcdn.com, DIRECT
-
-   # ximalaya-ads
 
    # xingkongwuxianmedia
     - DOMAIN-SUFFIX, avstar01.me, DIRECT
@@ -11813,8 +11839,6 @@ rules:
 
    # xingrz
     - DOMAIN-SUFFIX, xingrz.me, DIRECT
-
-   # xnxx
 
    # xueersi
     - DOMAIN-SUFFIX, speiyou.com, DIRECT
@@ -11846,21 +11870,13 @@ rules:
     - DOMAIN-SUFFIX, xycloud.com, DIRECT
     - DOMAIN-SUFFIX, xycdn.com, DIRECT
 
-   # xvideos
-
   # y
    # yahoo
     - DOMAIN-SUFFIX, yahoo.cn, DIRECT
     - DOMAIN-SUFFIX, yahoo.com.cn, DIRECT
 
-   # yahoo-ads
-
    # yamibo
     - DOMAIN-SUFFIX, yamibo.com, DIRECT
-
-   # yandex
-
-   # ycombinator
 
    # yinxiang
     - DOMAIN-SUFFIX, yinxiang.com, DIRECT
@@ -11878,12 +11894,6 @@ rules:
     - DOMAIN-SUFFIX, ynet.com, DIRECT
     - DOMAIN-SUFFIX, ynet.com.cn, DIRECT
 
-   # ynoproject
-
-   # yomiuri
-
-   # youjizz
-
    # youku
     # youku uses some alicdn services, so this must use with domain list "alibaba"
 
@@ -11895,10 +11905,6 @@ rules:
 
     # youku video cdn
     - DOMAIN-SUFFIX, cibntv.net, DIRECT
-
-   # youku-ads
-
-   # youporn
 
    # youquan
     - DOMAIN-SUFFIX, aitcfw.com, DIRECT
@@ -11984,12 +11990,6 @@ rules:
     - DOMAIN-SUFFIX, yystatic.com, DIRECT
 
   # z
-   # z-library
-
-   # zaobao
-
-   # zb
-
    # zdns
     - DOMAIN-SUFFIX, zcmbc.com.cn, DIRECT
     - DOMAIN-SUFFIX, zdns.cn, DIRECT
@@ -12003,14 +12003,6 @@ rules:
     - DOMAIN-SUFFIX, zdnscloud.net, DIRECT
     - DOMAIN-SUFFIX, zdnscloud.net.cn, DIRECT
     - DOMAIN-SUFFIX, zdnscloud.org.cn, DIRECT
-
-   # zee
-
-   # zeetv
-
-   # zendesk
-
-   # zeplin
 
    # zhanqi
     - DOMAIN-SUFFIX, zhanqi.tv, DIRECT
@@ -12027,15 +12019,9 @@ rules:
    # zhihuishu
     - DOMAIN-SUFFIX, zhihuishu.com, DIRECT
 
-   # zhimeishe
-
    # ziroom
     - DOMAIN-SUFFIX, ziroom.com, DIRECT
     - DOMAIN-SUFFIX, ziroomapartment.com, DIRECT
-
-   # zoho
-
-   # zoom
 
    # zte
     - DOMAIN-SUFFIX, nubia.cn, DIRECT
@@ -12053,9 +12039,7 @@ rules:
     - DOMAIN-SUFFIX, zuoyebang.com, DIRECT
     - DOMAIN-SUFFIX, zybang.com, DIRECT
 
-   # zynga-ads
-
- # PROXY (domain-list-community)
+ # domain-list-community (PROXY)
   # #
    # 0x0
     - DOMAIN-SUFFIX, 0x0.st, PROXY
@@ -12076,6 +12060,10 @@ rules:
     - DOMAIN-SUFFIX, jmcomic1.me, PROXY
     - DOMAIN-SUFFIX, jmcomic1.mobi, PROXY
     - DOMAIN-SUFFIX, jmcomic2.moe, PROXY
+
+   # 2ch
+    - DOMAIN-SUFFIX, 2ch.hk, PROXY
+    - DOMAIN-SUFFIX, 2ch.life, PROXY
 
    # 2kgames
     - DOMAIN-SUFFIX, 2k.com, PROXY
@@ -12185,6 +12173,7 @@ rules:
 
    # adblock
     - DOMAIN-SUFFIX, getadblock.com, PROXY
+    # - DOMAIN-SUFFIX, adblockcdn.com, PROXY
 
    # adblockplus
     - DOMAIN-SUFFIX, adblockplus.org, PROXY
@@ -12193,8 +12182,6 @@ rules:
     - DOMAIN-SUFFIX, addthis.com, PROXY
     - DOMAIN-SUFFIX, addthiscdn.com, PROXY
     - DOMAIN-SUFFIX, addthisedge.com, PROXY
-
-   # addtoany
 
    # adidas
     - DOMAIN-SUFFIX, adidas.at, PROXY
@@ -12224,11 +12211,16 @@ rules:
     - DOMAIN-SUFFIX, adguard.org, PROXY
     - DOMAIN-SUFFIX, adtidy.net, PROXY
     - DOMAIN-SUFFIX, adtidy.org, PROXY
+    - DOMAIN-SUFFIX, agrd.eu, PROXY
     - DOMAIN-SUFFIX, agrd.io, PROXY
 
     # adguard dns
     - DOMAIN-SUFFIX, adguard-dns.com, PROXY
     - DOMAIN-SUFFIX, adguard-dns.io, PROXY
+
+    # adguard mail
+    - DOMAIN-SUFFIX, adguard-mail.com, PROXY
+    - DOMAIN-SUFFIX, mask.me, PROXY
 
     # adguard vpn
     - DOMAIN-SUFFIX, adguardvpn.com, PROXY
@@ -12378,6 +12370,14 @@ rules:
     - DOMAIN-SUFFIX, scene7.com, PROXY
 
    # adobe-activation
+    # https://github.com/v2fly/domain-list-community/issues/2394#issuecomment-2632716166
+    # This data source is meant to crack the license-validating of the Adobe software,
+    # which is no longer the interest of this project. One of the maintainers (@IceCodeNew)
+    # decided that this file should be frozen as an act of showing this project has nothing to do with piracy
+    
+    # This file is subject to any reasonable deletion request. Till then,
+    # this file will be remained to not disturb existing users.
+
     # Adobe online activation domains
     - DOMAIN, 3dns-1.adobe.com, PROXY
     - DOMAIN, 3dns-2.adobe.com, PROXY
@@ -12580,8 +12580,6 @@ rules:
     - DOMAIN-SUFFIX, airwickarabia.com, PROXY
     - DOMAIN-SUFFIX, vipoo.es, PROXY
 
-   # aisiku
-
    # akamai
     # Akamai Technologies, INC.
 
@@ -12654,8 +12652,6 @@ rules:
     - DOMAIN-SUFFIX, iamakamai.net, PROXY
     - DOMAIN-SUFFIX, soasta-dswb.com, PROXY
     - DOMAIN-SUFFIX, srtcdn.net, PROXY
-
-   # akiko
 
    # alibaba
     - DOMAIN-SUFFIX, alihealth.hk, PROXY
@@ -12882,6 +12878,11 @@ rules:
     # hidive
     - DOMAIN-SUFFIX, hidive.com, PROXY
 
+   # annas-archive
+    - DOMAIN-SUFFIX, annas-archive.li, PROXY
+    - DOMAIN-SUFFIX, annas-archive.org, PROXY
+    - DOMAIN-SUFFIX, annas-archive.se, PROXY
+
    # anon-v
     - DOMAIN-SUFFIX, anon-v.com, PROXY
     - DOMAIN-SUFFIX, anon-v.lol, PROXY
@@ -12913,8 +12914,6 @@ rules:
     - DOMAIN-SUFFIX, aparatkids.com, PROXY
     - DOMAIN-SUFFIX, aparatsport.com, PROXY
 
-   # apifox
-
    # apkcombo
     - DOMAIN-SUFFIX, apkcombo.com, PROXY
 
@@ -12939,7 +12938,7 @@ rules:
     # include:swift
 
     # All .apple domains
-    # - DOMAIN-KEYWORD, .apple, PROXY
+    - DOMAIN-KEYWORD, .apple, PROXY
 
     - DOMAIN-SUFFIX, apple.ae, PROXY
     - DOMAIN-SUFFIX, apple.at, PROXY
@@ -13696,6 +13695,11 @@ rules:
     - DOMAIN, appleworldwidedeveloper.hb-api.omtrdc.net, PROXY
     - DOMAIN, appleworldwidedeveloper.sc.omtrdc.net, PROXY
     - DOMAIN, p-events-delivery.akamaized.net, PROXY
+
+   # apple-intelligence
+    # ChatGPT Extension
+    - DOMAIN, apple-relay.mask.apple-dns.net, PROXY
+    - DOMAIN, apple-relay.apple.com, PROXY
 
    # apple-update
     # https://support.apple.com/en-us/HT210060
@@ -14605,14 +14609,18 @@ rules:
 
     # AWS DNS
     # regexp:.+\.amzndns\.(co\.uk|com|net|org)$
-    # regexp:.+\.awsdns-[0-9][0-9]\.(co\.uk|com|net|org)$
+    - DOMAIN-SUFFIX, amzndns.co.uk, PROXY
+    - DOMAIN-SUFFIX, amzndns.com, PROXY
+    - DOMAIN-SUFFIX, amzndns.net, PROXY
+    - DOMAIN-SUFFIX, amzndns.org, PROXY
 
-   # aws-cn
+    # regexp:.+\.awsdns-[0-9][0-9]\.(co\.uk|com|net|org)$
 
    # azure
     # All .azure domains
     - DOMAIN-KEYWORD, .azure, PROXY
 
+    - DOMAIN-SUFFIX, azure-devices-int.net, PROXY
     - DOMAIN-SUFFIX, azure-devices.net, PROXY
     - DOMAIN-SUFFIX, azure-mobile.net, PROXY
     - DOMAIN-SUFFIX, azure-sphere.com, PROXY
@@ -14699,6 +14707,11 @@ rules:
     - DOMAIN-SUFFIX, bwh88.net, PROXY
     - DOMAIN-SUFFIX, bwh89.net, PROXY
     - DOMAIN-SUFFIX, bwhstatus.com, PROXY
+
+   # bangumi (test)
+    - DOMAIN-SUFFIX, bangumi.tv, PROXY
+    - DOMAIN-SUFFIX, bgm.tv, PROXY
+    - DOMAIN-SUFFIX, chii.in, PROXY
 
    # barrons
     - DOMAIN-SUFFIX, barrons-advisor.com, PROXY
@@ -15540,6 +15553,16 @@ rules:
     - DOMAIN-SUFFIX, dealtree.org, PROXY
     - DOMAIN-SUFFIX, techliquidators.com, PROXY
 
+   # bestv (revised cn)
+    # 百视通
+    # - DOMAIN-SUFFIX, bbtv.cn, PROXY
+    # - DOMAIN-SUFFIX, bestv.com.cn, PROXY
+    # - DOMAIN-SUFFIX, bestvcdn.cn, PROXY
+    # - DOMAIN-SUFFIX, bestvcdn.com, PROXY
+    # - DOMAIN-SUFFIX, bestvcdn.com.cn, PROXY
+    # - DOMAIN-SUFFIX, bestvcdn.net, PROXY
+    # - DOMAIN-SUFFIX, smgbb.cn, PROXY
+
    # bethesda
     - DOMAIN-SUFFIX, beth.games, PROXY
     - DOMAIN-SUFFIX, bethesda.net, PROXY
@@ -15561,8 +15584,6 @@ rules:
     - DOMAIN-SUFFIX, dreamcast.hk, PROXY
 
     - DOMAIN, upos-hz-mirrorakam.akamaized.net, PROXY
-
-   # bilibili-game
 
    # bilibili2
     # bilibili2 is a pornographic website. Do not add bilibili domain in here.
@@ -15627,6 +15648,7 @@ rules:
     - DOMAIN-SUFFIX, bingvisualsearch.com, PROXY
     - DOMAIN-SUFFIX, bingworld.com, PROXY
     - DOMAIN-SUFFIX, bluehatnights.com, PROXY
+    - DOMAIN-SUFFIX, copilot.microsoft.com, PROXY
     - DOMAIN-SUFFIX, dictate.ms, PROXY
     - DOMAIN-SUFFIX, flipwithsurface.com, PROXY
     - DOMAIN-SUFFIX, masalladeloslimites.com, PROXY
@@ -15862,8 +15884,6 @@ rules:
 
    # bluepoch
     # include:bluepoch-games
-
-   # bluepoch-games
 
    # bluesky
     - DOMAIN-SUFFIX, bsky.app, PROXY
@@ -16681,8 +16701,6 @@ rules:
     - DOMAIN-SUFFIX, calgoncarbon.com, PROXY
     - DOMAIN-SUFFIX, calgonit.com, PROXY
 
-   # calltouch.ru
-
    # cambridge
     - DOMAIN-SUFFIX, cam.ac.uk, PROXY
     - DOMAIN-SUFFIX, cambridge.org, PROXY
@@ -16806,6 +16824,7 @@ rules:
    # category-ai-chat-!cn
     # include:anthropic
     # include:google-gemini
+    # include:groq
     # include:openai
     # include:perplexity
     # include:poe
@@ -16879,10 +16898,6 @@ rules:
     - DOMAIN-SUFFIX, wikileaks.org, PROXY
     - DOMAIN-SUFFIX, wireguard.com, PROXY
     - DOMAIN-SUFFIX, zeronet.io, PROXY
-
-   # category-bank-cn
-
-   # category-bank-ir
 
    # category-bank-jp
     - DOMAIN-SUFFIX, 114bank.co.jp, PROXY # 株式会社百十四銀行
@@ -16988,10 +17003,6 @@ rules:
     - DOMAIN-SUFFIX, yomabank.com, PROXY
     - DOMAIN-SUFFIX, ysx-mm.com, PROXY
 
-   # category-blog-cn
-
-   # category-bourse-ir
-
    # category-browser-!cn
     # include:ceno
     # include:epicbrowser
@@ -17077,8 +17088,6 @@ rules:
     - DOMAIN-SUFFIX, trustcor.com, PROXY
     - DOMAIN-SUFFIX, trustisfps.com, PROXY
 
-   # category-collaborate-cn
-
    # category-communication
     # include:clubhouse
     # include:discord
@@ -17124,6 +17133,7 @@ rules:
     # include:gigabyte
     # include:godaddy
     # include:google
+    # include:groq
     # include:hetzner
     # include:hinet
     # include:hkbn
@@ -17131,6 +17141,7 @@ rules:
     # include:hpe
     # include:hubblephone
     # include:ibm
+    # include:ibkr
     # include:inshot
     # include:intel
     # include:kakao
@@ -17143,6 +17154,7 @@ rules:
     # include:mindgeek
     # include:mozilla
     # include:musixmatch
+    # include:mxroute
     # include:naver
     # include:netcup
     # include:neuralink
@@ -17213,7 +17225,9 @@ rules:
     # include:ethereum
     # include:gateio
     # include:huobi
+    # include:kraken
     # include:localbitcoins
+    # include:nexo
     # include:okx
     # include:onekey
     # include:wisekey
@@ -17245,6 +17259,7 @@ rules:
     - DOMAIN-SUFFIX, coinmarketcap.com, PROXY
     - DOMAIN-SUFFIX, crypto.com, PROXY
     - DOMAIN-SUFFIX, cryptocompare.com, PROXY
+    - DOMAIN-SUFFIX, cryptomus.com, PROXY
     - DOMAIN-SUFFIX, curve.fi, PROXY
     - DOMAIN-SUFFIX, cyberx.com, PROXY
     - DOMAIN-SUFFIX, debank.com, PROXY
@@ -17260,7 +17275,6 @@ rules:
     - DOMAIN-SUFFIX, mexc.com, PROXY
     - DOMAIN-SUFFIX, mexcsensors.com, PROXY
     - DOMAIN-SUFFIX, mytokenapi.com, PROXY
-    - DOMAIN-SUFFIX, kraken.com, PROXY
     - DOMAIN-SUFFIX, opensea.io, PROXY
     - DOMAIN-SUFFIX, osl.com, PROXY
     - DOMAIN-SUFFIX, paxful.com, PROXY
@@ -17305,10 +17319,6 @@ rules:
     # include:doc88
     # include:docin
 
-   # category-education-cn
-
-   # category-education-ir
-
    # category-enterprise-query-platform-cn
     # include:aiqicha
     # include:hongdunwang
@@ -17329,6 +17339,7 @@ rules:
     # include:attwatchtv
     # include:bahamut
     # include:bandcamp
+    # include:bangumi
     # include:boomerang
     # include:catchplay
     # include:category-games
@@ -17439,6 +17450,7 @@ rules:
     # include:ptt
     # include:quora
     # include:reddit
+    # include:rutracker
     # include:yamibo
 
     - DOMAIN-SUFFIX, 18p2p.com, PROXY
@@ -17465,6 +17477,7 @@ rules:
     # include:cygames
     # include:ea
     # include:epicgames
+    # include:escapefromtarkov
     # include:garena
     # include:gog
     # include:illusion
@@ -17510,14 +17523,6 @@ rules:
     - DOMAIN-SUFFIX, quiltmc.org, PROXY
     - DOMAIN-SUFFIX, speedrun.com, PROXY
     - DOMAIN-SUFFIX, steamdb.info, PROXY
-
-   # category-gov-ir
-
-   # category-gov-ru
-
-   # category-hospital-cn
-
-   # category-insurance-ir
 
    # category-ipfs
     # Reference: https://ipfs.github.io/public-gateway-checker/
@@ -17722,8 +17727,6 @@ rules:
     - DOMAIN-SUFFIX, androidfilehost.com, PROXY
     - DOMAIN-SUFFIX, unlocktool.net, PROXY
 
-   # category-netdisk-cn
-
    # category-novel
     # This file contains domains of pirate chinese online novel sites that are blocked by GFW
     
@@ -17734,18 +17737,64 @@ rules:
    # category-ntp
     # Apple
     # regexp:^time(.euro)?.apple.com$
+    - DOMAIN, time.apple.com, PROXY
+    - DOMAIN, time.euro.apple.com, PROXY
 
     # Facebook
-    # regexp:^time([1-5])?.facebook.com$
+    # regexp:^time([1-5])?\.facebook\.com$
+    - DOMAIN, time.facebook.com, PROXY
+    - DOMAIN, time1.facebook.com, PROXY
+    - DOMAIN, time2.facebook.com, PROXY
+    - DOMAIN, time3.facebook.com, PROXY
+    - DOMAIN, time4.facebook.com, PROXY
+    - DOMAIN, time5.facebook.com, PROXY
 
     # Google
     # regexp:^time([1-4])?.google.com$
+    - DOMAIN, time.google.com, PROXY
+    - DOMAIN, time1.google.com, PROXY
+    - DOMAIN, time2.google.com, PROXY
+    - DOMAIN, time3.google.com, PROXY
+    - DOMAIN, time4.google.com, PROXY
 
     # NIST: https://tf.nist.gov/tf-cgi/servers.cgi
-    # regexp:^((((ut1-wwv)|(ntp\-(b|d|wwv))|(time(\-(([a-e]\-(g|b))|([a-e]\-wwv)))?)).nist.gov)|((ntp-c|ut1-time)|(utcnist(2|3)?)).colorado.edu)$
+    # regexp:^((((ut1-wwv)|(ntp\-(b|d|wwv))|(time(\-(([a-e]\-(g|b))|([a-e]\-wwv)))?))\.nist\.gov)|((ntp-c|ut1-time)|(utcnist(2|3)?))\.colorado\.edu)$
+    - DOMAIN, ut1-wwv.nist.gov, PROXY
+    - DOMAIN, ntp-b.nist.gov, PROXY
+    - DOMAIN, ntp-d.nist.gov, PROXY
+    - DOMAIN, ntp-wwv.nist.gov, PROXY
+    - DOMAIN, time.nist.gov, PROXY
+    - DOMAIN, time-a-g.nist.gov, PROXY
+    - DOMAIN, time-b-g.nist.gov, PROXY
+    - DOMAIN, time-c-g.nist.gov, PROXY
+    - DOMAIN, time-d-g.nist.gov, PROXY
+    - DOMAIN, time-e-g.nist.gov, PROXY
+    - DOMAIN, time-a-b.nist.gov, PROXY
+    - DOMAIN, time-b-b.nist.gov, PROXY
+    - DOMAIN, time-c-b.nist.gov, PROXY
+    - DOMAIN, time-d-b.nist.gov, PROXY
+    - DOMAIN, time-e-b.nist.gov, PROXY
+    - DOMAIN, time-a-wwv.nist.gov, PROXY
+    - DOMAIN, time-b-wwv.nist.gov, PROXY
+    - DOMAIN, time-c-wwv.nist.gov, PROXY
+    - DOMAIN, time-d-wwv.nist.gov, PROXY
+    - DOMAIN, time-e-wwv.nist.gov, PROXY
+    - DOMAIN, ntp-c.colorado.edu, PROXY
+    - DOMAIN, ut1-time.colorado.edu, PROXY
+    - DOMAIN, utcnist.colorado.edu, PROXY
+    - DOMAIN, utcnist2.colorado.edu, PROXY
+    - DOMAIN, utcnist3.colorado.edu, PROXY
 
     # NTP-servers: https://ntp-servers.net/servers.html
-    # regexp:^ntp[0-7].ntp-servers.net$
+    # regexp:^ntp[0-7]\.ntp-servers\.net$
+    - DOMAIN, ntp0.ntp-servers.net, PROXY
+    - DOMAIN, ntp1.ntp-servers.net, PROXY
+    - DOMAIN, ntp2.ntp-servers.net, PROXY
+    - DOMAIN, ntp3.ntp-servers.net, PROXY
+    - DOMAIN, ntp4.ntp-servers.net, PROXY
+    - DOMAIN, ntp5.ntp-servers.net, PROXY
+    - DOMAIN, ntp6.ntp-servers.net, PROXY
+    - DOMAIN, ntp7.ntp-servers.net, PROXY
 
     - DOMAIN-SUFFIX, clock.isc.org, PROXY
     - DOMAIN-SUFFIX, ntp.fiord.ru, PROXY
@@ -17761,8 +17810,6 @@ rules:
 
     # include:category-ntp-cn
     # include:category-ntp-jp
-
-   # category-ntp-cn
 
    # category-ntp-jp
     # アマノセキュアジャパン(e-timing): https://www.e-timing.ne.jp/product/timestamp/open-server/
@@ -17824,6 +17871,7 @@ rules:
     # include:emojipedia
     # include:f-droid
     # include:ieee
+    # include:metabrainz
     # include:nist
     # include:openstreetmap
     # include:paskoocheh
@@ -17866,6 +17914,7 @@ rules:
     # include:erolabs
     # include:fans66
     # include:fansta
+    # include:haitang
     # include:hentaivn
     # include:heyzo
     # include:hooligapps
@@ -17887,6 +17936,7 @@ rules:
     # include:lisiku
     # include:metart
     # include:mindgeek-porn
+    # include:missav
     # include:moxing
     # include:netflav
     # include:nudevista
@@ -17910,6 +17960,7 @@ rules:
     # include:youjizz
     # include:yunlaopo
     # include:zhimeishe
+
 
     # The top domains of the pornographic website.
 
@@ -17952,8 +18003,8 @@ rules:
     - DOMAIN-SUFFIX, 16fhgdty.xyz, PROXY
     - DOMAIN-SUFFIX, 16honeys.com, PROXY
     - DOMAIN-SUFFIX, 170.icu, PROXY
-    - DOMAIN-SUFFIX, 171xx.com, PROXY
     - DOMAIN-SUFFIX, 1717se.cc, PROXY
+    - DOMAIN-SUFFIX, 171xx.com, PROXY
     - DOMAIN-SUFFIX, 177picyy.com, PROXY
     - DOMAIN-SUFFIX, 179na.com, PROXY
     - DOMAIN-SUFFIX, 17lu.xyz, PROXY
@@ -18055,18 +18106,18 @@ rules:
     - DOMAIN-SUFFIX, 40momporntube.com, PROXY
     - DOMAIN-SUFFIX, 41maonn.com, PROXY
     - DOMAIN-SUFFIX, 444.coffee, PROXY
-    - DOMAIN-SUFFIX, 44yu.cc, PROXY
     - DOMAIN-SUFFIX, 445gei.com, PROXY
     - DOMAIN-SUFFIX, 445jun.com, PROXY
     - DOMAIN-SUFFIX, 445nan.com, PROXY
+    - DOMAIN-SUFFIX, 44yu.cc, PROXY
     - DOMAIN-SUFFIX, 4550.fun, PROXY
     - DOMAIN-SUFFIX, 45porn.com, PROXY
     - DOMAIN-SUFFIX, 4club.com, PROXY
     - DOMAIN-SUFFIX, 4ertik.live, PROXY
     - DOMAIN-SUFFIX, 4ertik.one, PROXY
     - DOMAIN-SUFFIX, 4greedy.com, PROXY
-    - DOMAIN-SUFFIX, 4hu.tv, PROXY
     - DOMAIN-SUFFIX, 4hu.one, PROXY
+    - DOMAIN-SUFFIX, 4hu.tv, PROXY
     - DOMAIN-SUFFIX, 4kporn.xxx, PROXY
     - DOMAIN-SUFFIX, 4ksex.me, PROXY
     - DOMAIN-SUFFIX, 4kup.net, PROXY
@@ -18085,14 +18136,14 @@ rules:
     - DOMAIN-SUFFIX, 51pincha.cc, PROXY
     - DOMAIN-SUFFIX, 520aa.tv, PROXY
     - DOMAIN-SUFFIX, 520avtv.com, PROXY
+    - DOMAIN-SUFFIX, 5238.me, PROXY
     - DOMAIN-SUFFIX, 5278.cc, PROXY
     - DOMAIN-SUFFIX, 52av.be, PROXY
     - DOMAIN-SUFFIX, 52av.com, PROXY
     - DOMAIN-SUFFIX, 52av.one, PROXY
-    - DOMAIN-SUFFIX, 52kmz.com, PROXY
     - DOMAIN-SUFFIX, 52fuliji.cc, PROXY
     - DOMAIN-SUFFIX, 52hyse.com, PROXY
-    - DOMAIN-SUFFIX, 5238.me, PROXY
+    - DOMAIN-SUFFIX, 52kmz.com, PROXY
     - DOMAIN-SUFFIX, 531tr.com, PROXY
     - DOMAIN-SUFFIX, 55dndn.com, PROXY
     - DOMAIN-SUFFIX, 567321.online, PROXY
@@ -18109,9 +18160,9 @@ rules:
     - DOMAIN-SUFFIX, 61jxbs42.xyz, PROXY
     - DOMAIN-SUFFIX, 62fh1bnj.me, PROXY
     - DOMAIN-SUFFIX, 634.tv, PROXY
+    - DOMAIN-SUFFIX, 66lu.link, PROXY
     - DOMAIN-SUFFIX, 66wwmm.com, PROXY
     - DOMAIN-SUFFIX, 66xing.cc, PROXY
-    - DOMAIN-SUFFIX, 66lu.link, PROXY
     - DOMAIN-SUFFIX, 67maoab.com, PROXY
     - DOMAIN-SUFFIX, 69-sexgames.com, PROXY
     - DOMAIN-SUFFIX, 69av.one, PROXY
@@ -18185,8 +18236,8 @@ rules:
     - DOMAIN-SUFFIX, 91moxiong.com, PROXY
     - DOMAIN-SUFFIX, 91oo.xyz, PROXY
     - DOMAIN-SUFFIX, 91pornplus.com, PROXY
-    - DOMAIN-SUFFIX, 91porny.store, PROXY
     - DOMAIN-SUFFIX, 91porny.com, PROXY
+    - DOMAIN-SUFFIX, 91porny.store, PROXY
     - DOMAIN-SUFFIX, 91qk41rf.com, PROXY
     - DOMAIN-SUFFIX, 91quanji.com, PROXY
     - DOMAIN-SUFFIX, 91rb.com, PROXY
@@ -19300,8 +19351,8 @@ rules:
     - DOMAIN-SUFFIX, drunkenstepfather.com, PROXY
     - DOMAIN-SUFFIX, drunkentop.com, PROXY
     - DOMAIN-SUFFIX, dsex.to, PROXY
-    - DOMAIN-SUFFIX, dsyiren.com, PROXY
     - DOMAIN-SUFFIX, dswz88.xyz, PROXY
+    - DOMAIN-SUFFIX, dsyiren.com, PROXY
     - DOMAIN-SUFFIX, dualeotruyen1s.com, PROXY
     - DOMAIN-SUFFIX, dubai-escort-list.com, PROXY
     - DOMAIN-SUFFIX, duckmovie.com, PROXY
@@ -20167,6 +20218,7 @@ rules:
     - DOMAIN-SUFFIX, hentaitokyo.com, PROXY
     - DOMAIN-SUFFIX, hentaitube.online, PROXY
     - DOMAIN-SUFFIX, hentaivideos.net, PROXY
+    - DOMAIN-SUFFIX, hentaivox.com, PROXY
     - DOMAIN-SUFFIX, hentaivvz.com, PROXY
     - DOMAIN-SUFFIX, hentaiworld.eu, PROXY
     - DOMAIN-SUFFIX, hentaiworld.tv, PROXY
@@ -20327,9 +20379,9 @@ rules:
     - DOMAIN-SUFFIX, hqtube.xxx, PROXY
     - DOMAIN-SUFFIX, hqxxxmovies.com, PROXY
     - DOMAIN-SUFFIX, hrecords.jp, PROXY
+    - DOMAIN-SUFFIX, hsex.icu, PROXY
     - DOMAIN-SUFFIX, hsex.men, PROXY
     - DOMAIN-SUFFIX, hsex.tv, PROXY
-    - DOMAIN-SUFFIX, hsex.icu, PROXY
     - DOMAIN-SUFFIX, hshsxkj.com, PROXY
     - DOMAIN-SUFFIX, hsxsp1.buzz, PROXY
     - DOMAIN-SUFFIX, hsyy.vip, PROXY
@@ -20485,8 +20537,8 @@ rules:
     - DOMAIN-SUFFIX, ixxx.com, PROXY
     - DOMAIN-SUFFIX, iyalc.com, PROXY
     - DOMAIN-SUFFIX, jabcomix.com, PROXY
-    - DOMAIN-SUFFIX, jable.org, PROXY
     - DOMAIN-SUFFIX, jable.one, PROXY
+    - DOMAIN-SUFFIX, jable.org, PROXY
     - DOMAIN-SUFFIX, jade-net-home.com, PROXY
     - DOMAIN-SUFFIX, jadult.net, PROXY
     - DOMAIN-SUFFIX, jambotube.com, PROXY
@@ -20520,6 +20572,7 @@ rules:
     - DOMAIN-SUFFIX, jav.wine, PROXY
     - DOMAIN-SUFFIX, jav01.cc, PROXY
     - DOMAIN-SUFFIX, jav101.com, PROXY
+    - DOMAIN-SUFFIX, jav123.com, PROXY
     - DOMAIN-SUFFIX, jav168.cc, PROXY
     - DOMAIN-SUFFIX, jav19.com, PROXY
     - DOMAIN-SUFFIX, jav223.com, PROXY
@@ -20670,16 +20723,13 @@ rules:
     - DOMAIN-SUFFIX, jilhub.com, PROXY
     - DOMAIN-SUFFIX, jimeng22.com, PROXY
     - DOMAIN-SUFFIX, jiuse.ai, PROXY
+    - DOMAIN-SUFFIX, jiuse.com.co, PROXY
     - DOMAIN-SUFFIX, jiuse.icu, PROXY
     - DOMAIN-SUFFIX, jiuse.io, PROXY
-    - DOMAIN-SUFFIX, jiuse.com.co, PROXY
     - DOMAIN-SUFFIX, jiuse6666.com, PROXY
     - DOMAIN-SUFFIX, jiuse821.com, PROXY
     - DOMAIN-SUFFIX, jiuse822.com, PROXY
     - DOMAIN-SUFFIX, jiuse823.com, PROXY
-    - DOMAIN-SUFFIX, jstv51.com, PROXY
-    - DOMAIN-SUFFIX, jstv52.com, PROXY
-    - DOMAIN-SUFFIX, jstv53.com, PROXY
     - DOMAIN-SUFFIX, jiyou520.com, PROXY
     - DOMAIN-SUFFIX, jizzboom.com, PROXY
     - DOMAIN-SUFFIX, jizzbunker.com, PROXY
@@ -20715,6 +20765,9 @@ rules:
     - DOMAIN-SUFFIX, jpg4.pw, PROXY
     - DOMAIN-SUFFIX, jpg4us.net, PROXY
     - DOMAIN-SUFFIX, jpvhub.com, PROXY
+    - DOMAIN-SUFFIX, jstv51.com, PROXY
+    - DOMAIN-SUFFIX, jstv52.com, PROXY
+    - DOMAIN-SUFFIX, jstv53.com, PROXY
     - DOMAIN-SUFFIX, jsz91.com, PROXY
     - DOMAIN-SUFFIX, jtube.space, PROXY
     - DOMAIN-SUFFIX, judeporn.com, PROXY
@@ -21046,6 +21099,7 @@ rules:
     - DOMAIN-SUFFIX, manyvids.com, PROXY
     - DOMAIN-SUFFIX, maomi-shipin.com, PROXY
     - DOMAIN-SUFFIX, maomiav.one, PROXY
+    - DOMAIN-SUFFIX, maomiav.top, PROXY
     - DOMAIN-SUFFIX, marranazas.com, PROXY
     - DOMAIN-SUFFIX, masalabin.com, PROXY
     - DOMAIN-SUFFIX, masaladesi.com, PROXY
@@ -21153,8 +21207,6 @@ rules:
     - DOMAIN-SUFFIX, minnano-av.com, PROXY
     - DOMAIN-SUFFIX, minuporno.com, PROXY
     - DOMAIN-SUFFIX, miohentai.com, PROXY
-    - DOMAIN-SUFFIX, missav.com, PROXY
-    - DOMAIN-SUFFIX, missav.uno, PROXY
     - DOMAIN-SUFFIX, misshotgirls.com, PROXY
     - DOMAIN-SUFFIX, mistresskym.com, PROXY
     - DOMAIN-SUFFIX, mitao.bar, PROXY
@@ -21246,8 +21298,8 @@ rules:
     - DOMAIN-SUFFIX, mulheresafoder.com, PROXY
     - DOMAIN-SUFFIX, mult34.com, PROXY
     - DOMAIN-SUFFIX, multporn.net, PROXY
-    - DOMAIN-SUFFIX, muramura.tv, PROXY
     - DOMAIN-SUFFIX, mundomais.com.br, PROXY
+    - DOMAIN-SUFFIX, muramura.tv, PROXY
     - DOMAIN-SUFFIX, muryouav.net, PROXY
     - DOMAIN-SUFFIX, musclegirlflix.com, PROXY
     - DOMAIN-SUFFIX, muycerdas.xxx, PROXY
@@ -22214,10 +22266,10 @@ rules:
     - DOMAIN-SUFFIX, rplay.live, PROXY
     - DOMAIN-SUFFIX, rrl28.buzz, PROXY
     - DOMAIN-SUFFIX, rrs1.xyz, PROXY
-    - DOMAIN-SUFFIX, rssing.com, PROXY
-    - DOMAIN-SUFFIX, rspao.com, PROXY
     - DOMAIN-SUFFIX, rs1024.com, PROXY
     - DOMAIN-SUFFIX, rs2022.com, PROXY
+    - DOMAIN-SUFFIX, rspao.com, PROXY
+    - DOMAIN-SUFFIX, rssing.com, PROXY
     - DOMAIN-SUFFIX, rude.com, PROXY
     - DOMAIN-SUFFIX, rukoebxx.com, PROXY
     - DOMAIN-SUFFIX, rulaisc-tv.buzz, PROXY
@@ -22241,6 +22293,7 @@ rules:
     - DOMAIN-SUFFIX, safebooru.org, PROXY
     - DOMAIN-SUFFIX, sakuralive.com, PROXY
     - DOMAIN-SUFFIX, sambaporno.com, PROXY
+    - DOMAIN-SUFFIX, sankakuapi.com, PROXY
     - DOMAIN-SUFFIX, sankakucomplex.com, PROXY
     - DOMAIN-SUFFIX, saobjpg.com, PROXY
     - DOMAIN-SUFFIX, saoni91.xyz, PROXY
@@ -23398,6 +23451,7 @@ rules:
     - DOMAIN-SUFFIX, xinlan995.xyz, PROXY
     - DOMAIN-SUFFIX, xinmeitulu.com, PROXY
     - DOMAIN-SUFFIX, xiuren.org, PROXY
+    - DOMAIN-SUFFIX, xj87ti.com, PROXY
     - DOMAIN-SUFFIX, xjavporn.com, PROXY
     - DOMAIN-SUFFIX, xkeezmovies.com, PROXY
     - DOMAIN-SUFFIX, xknoop.com, PROXY
@@ -23818,6 +23872,7 @@ rules:
     - DOMAIN, anime-rule34-world.b-cdn.net, PROXY
 
     # Internationalized Domain Name
+
     - DOMAIN-SUFFIX, xn--096-4g6em5t.com, PROXY
     - DOMAIN-SUFFIX, xn--201-4g6em5t.com, PROXY
     - DOMAIN-SUFFIX, xn--202-4g6em5t.com, PROXY
@@ -24020,6 +24075,7 @@ rules:
     # include:gemfury
     # include:gitbook
     # include:github
+    # include:github1s
     # include:gitlab
     # include:golang
     # include:hashicorp
@@ -24193,13 +24249,10 @@ rules:
     - DOMAIN-SUFFIX, readmoo.com, PROXY
     - DOMAIN-SUFFIX, redino.tw, PROXY
 
-   # category-education-cn
-
-   # category-education-ir
-
    # category-enhance-gaming
     # include:playcover
     # include:fflogs
+    # include:trackernetwork
 
     # Android Emulator
     - DOMAIN-SUFFIX, bluestacks.com, PROXY
@@ -24615,10 +24668,6 @@ rules:
     - DOMAIN, ulrichsweb.serialssolutions.com, PROXY
     - DOMAIN, wrds-www.wharton.upenn.edu, PROXY # Compustat 财务与价格数据库
 
-   # category-scholar-cn
-
-   # category-securities-cn
-
    # category-social-media-!cn
     # This list contains social media platforms outside China mainland.
 
@@ -24630,8 +24679,6 @@ rules:
     # include:threads
     # include:twitter
     # include:vk
-
-   # category-social-media-cn
 
    # category-tech-media
     # include:9to5
@@ -24698,8 +24745,6 @@ rules:
     - DOMAIN-SUFFIX, ssrpass.pw, PROXY
     - DOMAIN-SUFFIX, stc-server.com, PROXY
     - DOMAIN-SUFFIX, hutao.cloud, PROXY
-
-   # category-wiki-cn
 
    # cavporn
     - DOMAIN-SUFFIX, cavporn.com, PROXY
@@ -24781,8 +24826,6 @@ rules:
 
    # chatango
     - DOMAIN-SUFFIX, chatango.com, PROXY
-
-   # chatwhores
 
    # chegg
     - DOMAIN-SUFFIX, chegg.com, PROXY
@@ -24927,8 +24970,6 @@ rules:
     - DOMAIN-SUFFIX, citizenlab.ca, PROXY
     - DOMAIN-SUFFIX, citizenlab.org, PROXY
 
-   # ciweimao
-
    # ck101
     - DOMAIN-SUFFIX, ck101.com, PROXY
     - DOMAIN-SUFFIX, ckcdn.com, PROXY
@@ -24999,8 +25040,6 @@ rules:
     - DOMAIN-SUFFIX, videodelivery.net, PROXY
     - DOMAIN-SUFFIX, warp.plus, PROXY
     - DOMAIN-SUFFIX, workers.dev, PROXY
-
-   # cloudflare-cn
 
    # cloudflare-ipfs
     - DOMAIN-SUFFIX, cf-ipfs.com, PROXY
@@ -25223,14 +25262,14 @@ rules:
    # decryptipastore
     - DOMAIN-SUFFIX, decrypt.day, PROXY
 
-   # dedao
+   # deepseek (revised cn)
+    # Main domain
+    # - DOMAIN-SUFFIX, deepseek.com, PROXY
 
    # dell
     # include:vmware
-
     # All .dell domains
     - DOMAIN-KEYWORD, .dell, PROXY
-
     - DOMAIN-SUFFIX, dell-brand.com, PROXY
     - DOMAIN-SUFFIX, dell.com, PROXY
     - DOMAIN-SUFFIX, dellcdn.com, PROXY
@@ -25582,6 +25621,7 @@ rules:
     - DOMAIN-SUFFIX, drweb.com, PROXY
     - DOMAIN-SUFFIX, drweb.fr, PROXY
     - DOMAIN-SUFFIX, drweb.kz, PROXY
+    - DOMAIN-SUFFIX, drweb.ru, PROXY
     - DOMAIN-SUFFIX, drweb.uz, PROXY
     - DOMAIN-SUFFIX, drweb-av.de, PROXY
     - DOMAIN-SUFFIX, drweb-av.es, PROXY
@@ -26372,8 +26412,6 @@ rules:
    # electron
     - DOMAIN-SUFFIX, electronjs.org, PROXY
 
-   # eleme
-
    # elsevier
     # Elsevier's website,  One of the largest academic publishing companies
 
@@ -26558,16 +26596,21 @@ rules:
     - DOMAIN-SUFFIX, ero-labs.cloud, PROXY
     - DOMAIN-SUFFIX, ero-labs.com, PROXY
     - DOMAIN-SUFFIX, ero-labs.fun, PROXY
+    - DOMAIN-SUFFIX, ero-labs.io, PROXY
     - DOMAIN-SUFFIX, ero-labs.net, PROXY
+    - DOMAIN-SUFFIX, ero-labs.one, PROXY
     - DOMAIN-SUFFIX, ero-labs.online, PROXY
     - DOMAIN-SUFFIX, ero-labs.site, PROXY
     - DOMAIN-SUFFIX, erolabs.cloud, PROXY
     - DOMAIN-SUFFIX, erolabs.com, PROXY
-    - DOMAIN-SUFFIX, erolabs.fun, PROXY
-    - DOMAIN-SUFFIX, erolabs.game, PROXY
     - DOMAIN-SUFFIX, erolabs.net, PROXY
     - DOMAIN-SUFFIX, erolabs.online, PROXY
     - DOMAIN-SUFFIX, erolabsshare.xyz, PROXY
+
+   # escapefromtarkov
+    - DOMAIN-SUFFIX, tarkov.com, PROXY
+    - DOMAIN-SUFFIX, eft-store.com, PROXY
+    - DOMAIN-SUFFIX, escapefromtarkov.com, PROXY
 
    # espn
     - DOMAIN-SUFFIX, dtci.co, PROXY
@@ -27155,8 +27198,6 @@ rules:
     - DOMAIN-SUFFIX, wikia.nocookie.net, PROXY
     - DOMAIN, fandom.zendesk.com, PROXY
 
-   # fans66
-
    # farfetch
     - DOMAIN-SUFFIX, farfetch-apps.com, PROXY
     - DOMAIN-SUFFIX, farfetch-contents.com, PROXY
@@ -27213,8 +27254,6 @@ rules:
 
    # feedly
     - DOMAIN-SUFFIX, feedly.com, PROXY
-
-   # fengxing
 
    # fflogs
     - DOMAIN-SUFFIX, fflogs.com, PROXY
@@ -27337,6 +27376,8 @@ rules:
    # fox
     # All .fox domains
     - DOMAIN-KEYWORD, .fox, PROXY
+
+    # include:tubi
 
     - DOMAIN-SUFFIX, fox-corporation.com, PROXY
     - DOMAIN-SUFFIX, fox-news.com, PROXY
@@ -27587,8 +27628,6 @@ rules:
     - DOMAIN-SUFFIX, wogx.com, PROXY
 
     - DOMAIN, foxnewsplayer-a.akamaihd.net, PROXY
-
-   # fqnovel
 
    # freecodecamp
     - DOMAIN-SUFFIX, freecodecamp.org, PROXY
@@ -27958,6 +27997,9 @@ rules:
       # include:piratebay
       # include:rarbg
 
+    # User scripts
+    - DOMAIN-SUFFIX, greasyfork.org, PROXY
+
     # VPN services
       # include:category-vpnservices
 
@@ -28026,8 +28068,6 @@ rules:
    # gfycat
     - DOMAIN-SUFFIX, gfycat.com, PROXY
 
-   # ghproxy
-
    # giffgaff
     - DOMAIN-SUFFIX, giffgaff.com, PROXY
     - DOMAIN-SUFFIX, giffgaff.design, PROXY
@@ -28082,6 +28122,10 @@ rules:
     - DOMAIN, github-cloud.s3.amazonaws.com, PROXY
     
     # regexp:github-production-release-asset-[0-9a-zA-Z]{6}\.s3\.amazonaws\.com
+
+   # github1s (revised other regions)
+    # - DOMAIN-SUFFIX, github1s.com, PROXY
+    # - DOMAIN-SUFFIX, sourcegraph.com, PROXY
 
    # gitlab
     - DOMAIN-SUFFIX, gitlab.com, PROXY
@@ -28883,6 +28927,9 @@ rules:
     - DOMAIN-SUFFIX, pao-pao.net, PROXY
     - DOMAIN-SUFFIX, wikiunblocked.org, PROXY
 
+   # groq
+    - DOMAIN-SUFFIX, groq.com, PROXY
+
    # gucci
     # All .gucci domains
     - DOMAIN-KEYWORD, .gucci, PROXY
@@ -28920,6 +28967,27 @@ rules:
     - DOMAIN, himalaya-exchange.zendesk.com, PROXY
 
   # h
+   # haitang (revised cn)
+    # 海棠文化線上文學城
+
+    # - DOMAIN-SUFFIX, haitangbook.com, PROXY
+    # - DOMAIN-SUFFIX, haitbook.com, PROXY
+    # - DOMAIN-SUFFIX, htlvbooks.com, PROXY
+    # - DOMAIN-SUFFIX, htnewbooks.com, PROXY
+    # - DOMAIN-SUFFIX, htwhbook.com, PROXY
+    # - DOMAIN-SUFFIX, lmbooks.com, PROXY
+    # - DOMAIN-SUFFIX, lmebooks.com, PROXY
+    # - DOMAIN-SUFFIX, longmabook.com, PROXY
+    # - DOMAIN-SUFFIX, longmabookcn.com, PROXY
+    # - DOMAIN-SUFFIX, lovehtbooks.com, PROXY
+    # - DOMAIN-SUFFIX, lvhtebook.com, PROXY
+    # - DOMAIN-SUFFIX, mybookinlm.com, PROXY
+    # - DOMAIN-SUFFIX, myhtebook.com, PROXY
+    # - DOMAIN-SUFFIX, myhtebooks.com, PROXY
+    # - DOMAIN-SUFFIX, myhtlmebook.com, PROXY
+    # - DOMAIN-SUFFIX, newhtbook.com, PROXY
+    # - DOMAIN-SUFFIX, urhtbooks.com, PROXY
+
    # hamivideo
     - DOMAIN, apl-hamivideo.cdn.hinet.net, PROXY
     - DOMAIN, hamivideo.hinet.net, PROXY
@@ -29036,6 +29104,8 @@ rules:
     - DOMAIN-SUFFIX, second-ns.de, PROXY
     - DOMAIN-SUFFIX, your-objectstorage.com, PROXY
     - DOMAIN-SUFFIX, your-server.de, PROXY
+    - DOMAIN-SUFFIX, your-storagebox.de, PROXY
+    - DOMAIN-SUFFIX, your-storageshare.de, PROXY
 
    # heyzo
     - DOMAIN-SUFFIX, heydoga.com, PROXY
@@ -29094,8 +29164,6 @@ rules:
     - DOMAIN-SUFFIX, hkopentv.com, PROXY
     - DOMAIN-SUFFIX, fantv.hk, PROXY
 
-   # hkt
-
    # hm
     - DOMAIN-SUFFIX, hm.com, PROXY
 
@@ -29107,8 +29175,6 @@ rules:
    # homedepot
     - DOMAIN-SUFFIX, homedepot-static.com, PROXY
     - DOMAIN-SUFFIX, homedepot.com, PROXY
-
-   # hongdunwang
 
    # hongkongpost
     - DOMAIN-SUFFIX, hongkongpost.gov.hk, PROXY
@@ -29132,8 +29198,6 @@ rules:
     - DOMAIN-SUFFIX, hsprepack.akamaized.net, PROXY
 
     # regexp:^hses[1-7]?.akamaized.net$
-
-   # hoyoverse
 
    # hp
     # HP Development Company, L.P.
@@ -29389,31 +29453,29 @@ rules:
    # huanghuagang
     - DOMAIN-SUFFIX, huanghuagang.org, PROXY
 
-   # huawei
-
    # huaweicloud
     - DOMAIN-SUFFIX, huaweicloud-dns.net, PROXY
     - DOMAIN-SUFFIX, huaweicloud-dns.org, PROXY
 
     # Huaweicloud Endpoint, source: https://developer.huaweicloud.com/endpoint
-    - DOMAIN-SUFFIX, ae-ad-1.myhuaweicloud.com, PROXY        #中东-阿布扎比-OP5
-    - DOMAIN-SUFFIX, af-north-1.myhuaweicloud.com, PROXY     #非洲-开罗
-    - DOMAIN-SUFFIX, af-south-1.myhuaweicloud.com, PROXY     #非洲-约翰内斯堡
-    - DOMAIN-SUFFIX, ap-southeast-1.myhuaweicloud.com, PROXY #中国-香港
-    - DOMAIN-SUFFIX, ap-southeast-2.myhuaweicloud.com, PROXY #亚太-曼谷
-    - DOMAIN-SUFFIX, ap-southeast-3.myhuaweicloud.com, PROXY #亚太-新加坡
-    - DOMAIN-SUFFIX, ap-southeast-4.myhuaweicloud.com, PROXY #亚太-雅加达
-    - DOMAIN-SUFFIX, eu-west-0.myhuaweicloud.com, PROXY      #欧洲-巴黎
-    - DOMAIN-SUFFIX, eu-west-101.myhuaweicloud.com, PROXY    #欧洲-都柏林
-    - DOMAIN-SUFFIX, la-north-2.myhuaweicloud.com, PROXY     #拉美-墨西哥城二
-    - DOMAIN-SUFFIX, la-south-2.myhuaweicloud.com, PROXY     #拉美-圣地亚哥
-    - DOMAIN-SUFFIX, me-east-1.myhuaweicloud.com, PROXY      #中东-利雅得
+    - DOMAIN-SUFFIX, ae-ad-1.myhuaweicloud.com, PROXY          #中东-阿布扎比-OP5
+    - DOMAIN-SUFFIX, af-north-1.myhuaweicloud.com, PROXY       #非洲-开罗
+    - DOMAIN-SUFFIX, af-south-1.myhuaweicloud.com, PROXY       #非洲-约翰内斯堡
+    - DOMAIN-SUFFIX, ap-southeast-1.myhuaweicloud.com, PROXY   #中国-香港
+    - DOMAIN-SUFFIX, ap-southeast-2.myhuaweicloud.com, PROXY   #亚太-曼谷
+    - DOMAIN-SUFFIX, ap-southeast-3.myhuaweicloud.com, PROXY   #亚太-新加坡
+    - DOMAIN-SUFFIX, ap-southeast-4.myhuaweicloud.com, PROXY   #亚太-雅加达
+    - DOMAIN-SUFFIX, eu-west-0.myhuaweicloud.com, PROXY        #欧洲-巴黎
+    - DOMAIN-SUFFIX, eu-west-101.myhuaweicloud.com, PROXY      #欧洲-都柏林
+    - DOMAIN-SUFFIX, la-north-2.myhuaweicloud.com, PROXY       #拉美-墨西哥城二
+    - DOMAIN-SUFFIX, la-south-2.myhuaweicloud.com, PROXY       #拉美-圣地亚哥
+    - DOMAIN-SUFFIX, me-east-1.myhuaweicloud.com, PROXY        #中东-利雅得
     - DOMAIN-SUFFIX, my-kualalumpur-1.myhuaweicloud.com, PROXY #亚太-吉隆坡-OP6
-    - DOMAIN-SUFFIX, na-mexico-1.myhuaweicloud.com, PROXY    #拉美-墨西哥城一
-    - DOMAIN-SUFFIX, ru-moscow-1.myhuaweicloud.com, PROXY    #俄罗斯-莫斯科-OP4
-    - DOMAIN-SUFFIX, ru-northwest-2.myhuaweicloud.com, PROXY #俄罗斯-莫斯科二
-    - DOMAIN-SUFFIX, sa-brazil-1.myhuaweicloud.com, PROXY    #拉美-圣保罗一
-    - DOMAIN-SUFFIX, tr-west-1.myhuaweicloud.com, PROXY      #土耳其-伊斯坦布尔
+    - DOMAIN-SUFFIX, na-mexico-1.myhuaweicloud.com, PROXY      #拉美-墨西哥城一
+    - DOMAIN-SUFFIX, ru-moscow-1.myhuaweicloud.com, PROXY      #俄罗斯-莫斯科-OP4
+    - DOMAIN-SUFFIX, ru-northwest-2.myhuaweicloud.com, PROXY   #俄罗斯-莫斯科二
+    - DOMAIN-SUFFIX, sa-brazil-1.myhuaweicloud.com, PROXY      #拉美-圣保罗一
+    - DOMAIN-SUFFIX, tr-west-1.myhuaweicloud.com, PROXY        #土耳其-伊斯坦布尔
 
    # hubblephone
     - DOMAIN-SUFFIX, hubblephone.com, PROXY
@@ -29438,6 +29500,13 @@ rules:
     - DOMAIN-SUFFIX, huffpostarabi.com, PROXY
     - DOMAIN-SUFFIX, huffpostbrasil.com, PROXY
     - DOMAIN-SUFFIX, huffpostmaghreb.com, PROXY
+
+   # hugecore (revised cn)
+    # - DOMAIN-SUFFIX, hugecore.net, PROXY
+    # - DOMAIN-SUFFIX, shareintelli.com, PROXY
+
+    # MOJi辞書
+    # - DOMAIN-SUFFIX, mojidict.com, PROXY
 
    # hulu
     - DOMAIN-SUFFIX, 112263.com, PROXY
@@ -29506,6 +29575,19 @@ rules:
     - DOMAIN-SUFFIX, he.net, PROXY
 
   # i
+   # ibkr (revised other regions)
+    # - DOMAIN-SUFFIX, ibkr.com, PROXY
+    # - DOMAIN-SUFFIX, interactivebrokers.ca, PROXY
+    # - DOMAIN-SUFFIX, interactivebrokers.co.in, PROXY
+    # - DOMAIN-SUFFIX, interactivebrokers.co.jp, PROXY
+    # - DOMAIN-SUFFIX, interactivebrokers.co.uk, PROXY
+    # - DOMAIN-SUFFIX, interactivebrokers.com, PROXY
+    # - DOMAIN-SUFFIX, interactivebrokers.com.au, PROXY
+    # - DOMAIN-SUFFIX, interactivebrokers.com.hk, PROXY
+    # - DOMAIN-SUFFIX, interactivebrokers.com.sg, PROXY
+    # - DOMAIN-SUFFIX, interactivebrokers.eu, PROXY
+    # - DOMAIN-SUFFIX, interactivebrokers.ie, PROXY
+
    # ibm
     # include:hashicorp
 
@@ -30431,8 +30513,6 @@ rules:
    # jiyukobo
     - DOMAIN-SUFFIX, jiyu-kobo.co.jp, PROXY
 
-   # jkf
-
    # johren
     - DOMAIN-SUFFIX, johren.games, PROXY
     - DOMAIN-SUFFIX, johren.net, PROXY
@@ -30459,8 +30539,6 @@ rules:
     - DOMAIN-SUFFIX, justmysocks1.net, PROXY
     - DOMAIN-SUFFIX, justmysocks2.net, PROXY
     - DOMAIN-SUFFIX, justmysocks4.net, PROXY
-
-   # jwplayer
 
   # k
    # kaggle
@@ -30563,10 +30641,6 @@ rules:
     - DOMAIN-SUFFIX, vtvan.com, PROXY
     - DOMAIN-SUFFIX, watchinese.com, PROXY
 
-   # kechuang
-
-   # keep
-
    # kemono
     - DOMAIN-SUFFIX, cooer.su, PROXY
     - DOMAIN-SUFFIX, coomer.party, PROXY
@@ -30636,7 +30710,9 @@ rules:
     - DOMAIN-SUFFIX, konachan.com, PROXY
     - DOMAIN-SUFFIX, konachan.net, PROXY
 
-   # ku6
+   # kraken
+    - DOMAIN-SUFFIX, kraken.com, PROXY
+    - DOMAIN-SUFFIX, kraken.onl, PROXY
 
    # kubakuba
     - DOMAIN-SUFFIX, kubakuba.global, PROXY
@@ -30668,10 +30744,6 @@ rules:
 
    # laracasts
     - DOMAIN-SUFFIX, laracasts.com, PROXY
-
-   # lark
-
-   # lark-global
 
    # launchpad
     - DOMAIN-SUFFIX, launchpad.net, PROXY
@@ -30832,8 +30904,6 @@ rules:
    # londonreal
     - DOMAIN-SUFFIX, freedomplatform.tv, PROXY
     - DOMAIN-SUFFIX, londonreal.tv, PROXY
-
-   # longbridge
 
    # lowiro
     - DOMAIN-SUFFIX, lowiro.com, PROXY
@@ -31125,7 +31195,9 @@ rules:
 
    # matrix
     - DOMAIN-SUFFIX, arewereadyyet.com, PROXY
+    - DOMAIN-SUFFIX, cinny.in, PROXY
     - DOMAIN-SUFFIX, element.io, PROXY
+    - DOMAIN-SUFFIX, fluffychat.im, PROXY
     - DOMAIN-SUFFIX, matrix.org, PROXY
     - DOMAIN-SUFFIX, matrix.to, PROXY
     - DOMAIN-SUFFIX, modular.im, PROXY
@@ -31287,6 +31359,16 @@ rules:
     - DOMAIN-SUFFIX, meta.ai, PROXY
     - DOMAIN-SUFFIX, meta.com, PROXY
 
+   # metabrainz (revised other regions)
+    # - DOMAIN-SUFFIX, acousticbrainz.org, PROXY
+    # - DOMAIN-SUFFIX, bookbrainz.org, PROXY
+    # - DOMAIN-SUFFIX, coverartarchive.org, PROXY
+    # - DOMAIN-SUFFIX, critiquebrainz.org, PROXY
+    # - DOMAIN-SUFFIX, listenbrainz.org, PROXY
+    # - DOMAIN-SUFFIX, messybrainz.org, PROXY
+    # - DOMAIN-SUFFIX, metabrainz.org, PROXY
+    # - DOMAIN-SUFFIX, musicbrainz.org, PROXY
+
    # metart
     - DOMAIN-SUFFIX, metart.com, PROXY
     - DOMAIN-SUFFIX, metartnetwork.com, PROXY
@@ -31310,9 +31392,6 @@ rules:
     # All .microsoft domains
     - DOMAIN-KEYWORD, .microsoft, PROXY
 
-    # All .azure domains
-    # - DOMAIN-KEYWORD, .azure, PROXY
-
     # All .hotmail domains
     - DOMAIN-KEYWORD, .hotmail, PROXY
 
@@ -31324,9 +31403,6 @@ rules:
 
     # All .windows domains
     - DOMAIN-KEYWORD, .windows, PROXY
-
-    # All .xbox domains
-    # - DOMAIN-KEYWORD, .xbox, PROXY
 
     - DOMAIN-SUFFIX, microsoft.az, PROXY
     - DOMAIN-SUFFIX, microsoft.be, PROXY
@@ -31372,7 +31448,6 @@ rules:
     - DOMAIN-SUFFIX, m12.vc, PROXY
 
     # Others
-
     - DOMAIN-SUFFIX, a-msedge.net, PROXY
     - DOMAIN-SUFFIX, aka.ms, PROXY
     - DOMAIN-SUFFIX, ankarazirvesi2018.com, PROXY
@@ -31383,8 +31458,10 @@ rules:
     - DOMAIN-SUFFIX, aspnetcdn.com, PROXY
     - DOMAIN-SUFFIX, binads.com, PROXY
     - DOMAIN-SUFFIX, bluehatil.com, PROXY
+    - DOMAIN-SUFFIX, boswp.com, PROXY
     - DOMAIN-SUFFIX, brazilpartneruniversity.com, PROXY
     - DOMAIN-SUFFIX, breakdown.me, PROXY
+    - DOMAIN-SUFFIX, c-msedge.net, PROXY
     - DOMAIN-SUFFIX, centralvalidation.com, PROXY
     - DOMAIN-SUFFIX, ch9.ms, PROXY
     - DOMAIN-SUFFIX, charticulator.com, PROXY
@@ -31397,8 +31474,8 @@ rules:
     - DOMAIN-SUFFIX, crossborderexpansion.com, PROXY
     - DOMAIN-SUFFIX, docs.com, PROXY
     - DOMAIN-SUFFIX, dynamics.com, PROXY
-    - DOMAIN-SUFFIX, efproject.net, PROXY
     - DOMAIN-SUFFIX, edgesuite.net, PROXY
+    - DOMAIN-SUFFIX, efproject.net, PROXY
     - DOMAIN-SUFFIX, fasttrackreadysupport.com, PROXY
     - DOMAIN-SUFFIX, fluidpreview.com, PROXY
     - DOMAIN-SUFFIX, footprintdns.com, PROXY
@@ -31415,18 +31492,19 @@ rules:
     - DOMAIN-SUFFIX, hotmail.net, PROXY
     - DOMAIN-SUFFIX, hotmail.org, PROXY
     - DOMAIN-SUFFIX, hummingbird.ms, PROXY
-    - DOMAIN-SUFFIX, ie8.co, PROXY
-    - DOMAIN-SUFFIX, ie9.com, PROXY
     - DOMAIN-SUFFIX, ie10.com, PROXY
     - DOMAIN-SUFFIX, ie11.com, PROXY
-    - DOMAIN-SUFFIX, internetexplorer.co, PROXY
-    - DOMAIN-SUFFIX, internetexplorer.com, PROXY
+    - DOMAIN-SUFFIX, ie8.co, PROXY
+    - DOMAIN-SUFFIX, ie9.com, PROXY
     - DOMAIN-SUFFIX, imaginecup.pl, PROXY
     - DOMAIN-SUFFIX, ingads.com, PROXY
+    - DOMAIN-SUFFIX, internetexplorer.co, PROXY
+    - DOMAIN-SUFFIX, internetexplorer.com, PROXY
     - DOMAIN-SUFFIX, intunewiki.com, PROXY
     - DOMAIN-SUFFIX, iotinactionevents.com, PROXY
     - DOMAIN-SUFFIX, kidgrid.tv, PROXY
     - DOMAIN-SUFFIX, kumo.com, PROXY
+    - DOMAIN-SUFFIX, l-msedge.net, PROXY
     - DOMAIN-SUFFIX, latampartneruniversity.com, PROXY
     - DOMAIN-SUFFIX, live.com, PROXY
     - DOMAIN-SUFFIX, live.com.au, PROXY
@@ -31438,6 +31516,7 @@ rules:
     - DOMAIN-SUFFIX, meetfasttrack.com, PROXY
     - DOMAIN-SUFFIX, meetyourdevices.com, PROXY
     - DOMAIN-SUFFIX, mepn.com, PROXY
+    - DOMAIN-SUFFIX, microsoftedgeinsider.com, PROXY
     - DOMAIN-SUFFIX, microsoft-falcon.io, PROXY
     - DOMAIN-SUFFIX, microsoft-int.com, PROXY
     - DOMAIN-SUFFIX, microsoft-ppe.com, PROXY
@@ -31462,6 +31541,7 @@ rules:
     - DOMAIN-SUFFIX, microsoftonline-p.com, PROXY
     - DOMAIN-SUFFIX, microsoftonline.com, PROXY
     - DOMAIN-SUFFIX, microsoftpartnercommunity.com, PROXY
+    - DOMAIN-SUFFIX, microsoftpersonalcontent.com, PROXY
     - DOMAIN-SUFFIX, microsoftready.com, PROXY
     - DOMAIN-SUFFIX, microsoftsiteselection.com, PROXY
     - DOMAIN-SUFFIX, microsoftstore.com, PROXY
@@ -31484,7 +31564,9 @@ rules:
     - DOMAIN-SUFFIX, msft.info, PROXY
     - DOMAIN-SUFFIX, msft.net, PROXY
     - DOMAIN-SUFFIX, msftauth.net, PROXY
+    - DOMAIN-SUFFIX, msftconnecttest.com, PROXY
     - DOMAIN-SUFFIX, msfteducation.ca, PROXY
+    - DOMAIN-SUFFIX, msftncsi.com, PROXY
     - DOMAIN-SUFFIX, msftnet.org, PROXY
     - DOMAIN-SUFFIX, msgamesresearch.com, PROXY
     - DOMAIN-SUFFIX, msocdn.com, PROXY
@@ -31529,6 +31611,7 @@ rules:
     - DOMAIN-SUFFIX, skype.net, PROXY
     - DOMAIN-SUFFIX, skypeassets.com, PROXY
     - DOMAIN-SUFFIX, skypeassets.net, PROXY
+    - DOMAIN-SUFFIX, spo-msedge.net, PROXY
     - DOMAIN-SUFFIX, staffhub.ms, PROXY
     - DOMAIN-SUFFIX, successwithteams.com, PROXY
     - DOMAIN-SUFFIX, surface.com, PROXY
@@ -31536,10 +31619,10 @@ rules:
     - DOMAIN-SUFFIX, sway-cdn.com, PROXY
     - DOMAIN-SUFFIX, sway.com, PROXY
     - DOMAIN-SUFFIX, sysinternals.com, PROXY
+    - DOMAIN-SUFFIX, t-msedge.net, PROXY
     - DOMAIN-SUFFIX, tailwindtraders.com, PROXY
     - DOMAIN-SUFFIX, techhub.ms, PROXY
     - DOMAIN-SUFFIX, tfsallin.net, PROXY
-    # - DOMAIN-SUFFIX, trafficmanager.net, PROXY
     - DOMAIN-SUFFIX, translatetheweb.com, PROXY
     - DOMAIN-SUFFIX, unlocklimitlesslearning.com, PROXY
     - DOMAIN-SUFFIX, userpxt.io, PROXY
@@ -31565,7 +31648,6 @@ rules:
     - DOMAIN-SUFFIX, yammer.com, PROXY
 
     # Skype CDN
-    - DOMAIN-SUFFIX, edge-skype-com.s-0001.s-msedge.net, PROXY
     - DOMAIN-SUFFIX, skype-edf.akadns.net, PROXY
     - DOMAIN-SUFFIX, skypedata.akadns.net, PROXY
 
@@ -31655,17 +31737,11 @@ rules:
     - DOMAIN, ocsp.microsoft.com, PROXY
     - DOMAIN, oneocsp.microsoft.com, PROXY
 
-   # mihoyo
-
    # mikrotik
     - DOMAIN-SUFFIX, mikrotik.com, PROXY
     - DOMAIN-SUFFIX, mt.lv, PROXY
     - DOMAIN-SUFFIX, mynetname.net, PROXY
     - DOMAIN-SUFFIX, routerboard.com, PROXY
-
-   # mindgeek
-
-   # mindgeek-porn
 
    # mini
     # All .mini domains
@@ -31924,6 +32000,13 @@ rules:
    # miraheze
     - DOMAIN-SUFFIX, miraheze.org, PROXY
 
+   # missav
+    - DOMAIN-SUFFIX, missav.ai, PROXY
+    - DOMAIN-SUFFIX, missav.com, PROXY
+    - DOMAIN-SUFFIX, missav.uno, PROXY
+    - DOMAIN-SUFFIX, missav.vip, PROXY
+    - DOMAIN-SUFFIX, missav.ws, PROXY
+
    # misskey
     - DOMAIN-SUFFIX, misskey.io, PROXY
     - DOMAIN-SUFFIX, misskeyusercontent.jp, PROXY
@@ -32140,6 +32223,13 @@ rules:
    # muwai
     - DOMAIN-SUFFIX, muwai.com, PROXY
 
+   # mxroute
+    - DOMAIN-SUFFIX, mxlogin.com, PROXY
+    - DOMAIN-SUFFIX, mxroute.com, PROXY
+    - DOMAIN-SUFFIX, mxroutedocs.com, PROXY
+    - DOMAIN-SUFFIX, mxroutehelp.com, PROXY
+    - DOMAIN-SUFFIX, mxrouting.net, PROXY
+
    # mydirtyhobby
     - DOMAIN-SUFFIX, mydirtyhobby.com, PROXY
 
@@ -32253,12 +32343,20 @@ rules:
 
    # netcup
     - DOMAIN-SUFFIX, customercontrolpanel.de, PROXY
+    - DOMAIN-SUFFIX, dnsserver1.de, PROXY
+    - DOMAIN-SUFFIX, dnsserver2.de, PROXY
+    - DOMAIN-SUFFIX, luckysrv.de, PROXY
+    - DOMAIN-SUFFIX, netcup.cafe, PROXY
     - DOMAIN-SUFFIX, netcup.com, PROXY
     - DOMAIN-SUFFIX, netcup.de, PROXY
     - DOMAIN-SUFFIX, netcup.eu, PROXY
     - DOMAIN-SUFFIX, netcup.net, PROXY
     - DOMAIN-SUFFIX, netcup-news.de, PROXY
     - DOMAIN-SUFFIX, netcup-sonderangebote.de, PROXY
+    - DOMAIN-SUFFIX, netcup-wiki.de, PROXY
+    - DOMAIN-SUFFIX, servercontrolpanel.de, PROXY
+    - DOMAIN-SUFFIX, supersrv.de, PROXY
+    - DOMAIN-SUFFIX, yourvserver.net, PROXY
 
    # netflav
     - DOMAIN-SUFFIX, netflav.com, PROXY
@@ -32394,6 +32492,10 @@ rules:
     - DOMAIN-SUFFIX, nexitally.com, PROXY
     - DOMAIN-SUFFIX, nexitallysafe.com, PROXY
     - DOMAIN-SUFFIX, nexitcore.com, PROXY
+
+   # nexo
+    - DOMAIN-SUFFIX, nexo.com, PROXY
+    - DOMAIN-SUFFIX, nexo.io, PROXY
 
    # nexon
     - DOMAIN-SUFFIX, nexon.co.jp, PROXY
@@ -33005,7 +33107,6 @@ rules:
 
    # openai
     # Main domain
-    - DOMAIN-SUFFIX, ai.com, PROXY
     - DOMAIN-SUFFIX, chatgpt.com, PROXY
     - DOMAIN-SUFFIX, chat.com, PROXY
     - DOMAIN-SUFFIX, oaistatic.com, PROXY
@@ -33064,10 +33165,6 @@ rules:
    # openwrt
     - DOMAIN-SUFFIX, openwrt.org, PROXY
     - DOMAIN-SUFFIX, lede-project.org, PROXY
-
-   # openx-ads
-
-   # oppo
 
    # oracle
     # All .oracle domains
@@ -33157,6 +33254,11 @@ rules:
     - DOMAIN-SUFFIX, ukwhoswho.com, PROXY
     - DOMAIN-SUFFIX, universitypressscholarship.com, PROXY
     - DOMAIN-SUFFIX, veryshortintroductions.com, PROXY
+
+   # ozon (revised other regions)
+    # - DOMAIN-SUFFIX, ozon.ru, PROXY
+    # - DOMAIN-SUFFIX, ozone.ru, PROXY
+    # - DOMAIN-SUFFIX, ozonusercontent.com, PROXY
 
   # p
    # pagecdn
@@ -33445,8 +33547,6 @@ rules:
    # pbs
     - DOMAIN-SUFFIX, pbs.org, PROXY
 
-   # pccw
-
    # pchome
     - DOMAIN-SUFFIX, ecimg.tw, PROXY
     - DOMAIN-SUFFIX, pchome.com.tw, PROXY
@@ -33572,6 +33672,9 @@ rules:
 
    # perplexity
     - DOMAIN-SUFFIX, perplexity.ai, PROXY
+    - DOMAIN-SUFFIX, pplx.ai, PROXY
+ 
+    - DOMAIN, pplx-res.cloudinary.com, PROXY
 
    # picacg
     - DOMAIN-SUFFIX, bikaa.xyz, PROXY
@@ -33698,10 +33801,13 @@ rules:
    # pixiv
     - DOMAIN-SUFFIX, booth.pm, PROXY
     - DOMAIN-SUFFIX, fanbox.cc, PROXY
+    - DOMAIN-SUFFIX, pixiv.co.jp, PROXY
+    - DOMAIN-SUFFIX, pixiv.help, PROXY
+    - DOMAIN-SUFFIX, pixiv.me, PROXY
     - DOMAIN-SUFFIX, pixiv.net, PROXY
     - DOMAIN-SUFFIX, pixiv.org, PROXY
-    - DOMAIN-SUFFIX, pixiv.co.jp, PROXY
-    - DOMAIN-SUFFIX, pixiv.me, PROXY
+    - DOMAIN-SUFFIX, pixiv-recommend.net, PROXY
+    - DOMAIN-SUFFIX, pixivision.net, PROXY
     - DOMAIN-SUFFIX, pximg.net, PROXY
 
    # pixnet
@@ -33782,8 +33888,6 @@ rules:
     - DOMAIN-SUFFIX, primevideo.org, PROXY
     - DOMAIN-SUFFIX, primevideo.tv, PROXY
 
-   # private
-
    # projectsekai
     - DOMAIN-SUFFIX, sekai.colorfulpalette.org, PROXY
 
@@ -33797,6 +33901,10 @@ rules:
     - DOMAIN-SUFFIX, protonmail.ch, PROXY
     - DOMAIN-SUFFIX, protonmail.com, PROXY
     - DOMAIN-SUFFIX, protonstatus.com, PROXY
+    - DOMAIN-SUFFIX, protontech.ch, PROXY
+    - DOMAIN-SUFFIX, protonvpn.ch, PROXY
+    - DOMAIN-SUFFIX, protonvpn.com, PROXY
+    - DOMAIN-SUFFIX, protonweb.com, PROXY
 
    # pstorage
     - DOMAIN-SUFFIX, pstorage.space, PROXY
@@ -33846,80 +33954,97 @@ rules:
     - DOMAIN-SUFFIX, intltencentcos.com, PROXY
 
     # COS 使用到的非中国大陆的地域与可用区，参见 https://cloud.tencent.com/document/product/436/6224
-    #中国香港
-    - DOMAIN-SUFFIX, ap-hongkong.myqcloud.com, PROXY
-    #新加坡
-    - DOMAIN-SUFFIX, ap-singapore.myqcloud.com, PROXY
-    #孟买
-    - DOMAIN-SUFFIX, ap-mumbai.myqcloud.com, PROXY
-    #雅加达
-    - DOMAIN-SUFFIX, ap-jakarta.myqcloud.com, PROXY
-    #首尔
-    - DOMAIN-SUFFIX, ap-seoul.myqcloud.com, PROXY
-    #曼谷
-    - DOMAIN-SUFFIX, ap-bangkok.myqcloud.com, PROXY
-    #东京
-    - DOMAIN-SUFFIX, ap-tokyo.myqcloud.com, PROXY
-    #硅谷（美西）
-    - DOMAIN-SUFFIX, na-siliconvalley.myqcloud.com, PROXY
-    #弗吉尼亚（美东）
-    - DOMAIN-SUFFIX, na-ashburn.myqcloud.com, PROXY
-    #多伦多
-    - DOMAIN-SUFFIX, na-toronto.myqcloud.com, PROXY
-    #圣保罗
-    - DOMAIN-SUFFIX, sa-saopaulo.myqcloud.com, PROXY
-    #法兰克福
-    - DOMAIN-SUFFIX, eu-frankfurt.myqcloud.com, PROXY
-    #莫斯科
-    - DOMAIN-SUFFIX, eu-moscow.myqcloud.com, PROXY
+    - DOMAIN-SUFFIX, ap-hongkong.myqcloud.com, PROXY       #中国香港
+    - DOMAIN-SUFFIX, ap-singapore.myqcloud.com, PROXY      #新加坡
+    - DOMAIN-SUFFIX, ap-mumbai.myqcloud.com, PROXY         #孟买
+    - DOMAIN-SUFFIX, ap-jakarta.myqcloud.com, PROXY        #雅加达
+    - DOMAIN-SUFFIX, ap-seoul.myqcloud.com, PROXY          #首尔
+    - DOMAIN-SUFFIX, ap-bangkok.myqcloud.com, PROXY        #曼谷
+    - DOMAIN-SUFFIX, ap-tokyo.myqcloud.com, PROXY          #东京
+    - DOMAIN-SUFFIX, na-siliconvalley.myqcloud.com, PROXY  #硅谷（美西）
+    - DOMAIN-SUFFIX, na-ashburn.myqcloud.com, PROXY        #弗吉尼亚（美东）
+    - DOMAIN-SUFFIX, na-toronto.myqcloud.com, PROXY        #多伦多
+    - DOMAIN-SUFFIX, sa-saopaulo.myqcloud.com, PROXY       #圣保罗
+    - DOMAIN-SUFFIX, eu-frankfurt.myqcloud.com, PROXY      #法兰克福
+    - DOMAIN-SUFFIX, eu-moscow.myqcloud.com, PROXY         #莫斯科
 
     # tencentcos outside mainland China
-    #中国香港
-    # regexp:.+\.ap-hongkong\.tencentcos\.(cn|com(\.cn)?)$, PROXY
-    #新加坡
-    # regexp:.+\.ap-singapore\.tencentcos\.(cn|com(\.cn)?)$, PROXY
-    #孟买
-    # regexp:.+\.ap-mumbai\.tencentcos\.(cn|com(\.cn)?)$, PROXY
-    #雅加达
-    # regexp:.+\.ap-jakarta\.tencentcos\.(cn|com(\.cn)?)$, PROXY
-    #首尔
-    # regexp:.+\.ap-seoul\.tencentcos\.(cn|com(\.cn)?)$, PROXY
-    #曼谷
-    # regexp:.+\.ap-bangkok\.tencentcos\.(cn|com(\.cn)?)$, PROXY
-    #东京
-    # regexp:.+\.ap-tokyo\.tencentcos\.(cn|com(\.cn)?)$, PROXY
-    #硅谷（美西）
-    # regexp:.+\.na-siliconvalley\.tencentcos\.(cn|com(\.cn)?)$, PROXY
-    #弗吉尼亚（美东）
-    # regexp:.+\.na-ashburn\.tencentcos\.(cn|com(\.cn)?)$, PROXY
-    #多伦多
-    # regexp:.+\.na-toronto\.tencentcos\.(cn|com(\.cn)?)$, PROXY
-    #圣保罗
-    # regexp:.+\.sa-saopaulo\.tencentcos\.(cn|com(\.cn)?)$, PROXY
-    #法兰克福
-    # regexp:.+\.eu-frankfurt\.tencentcos\.(cn|com(\.cn)?)$, PROXY
-    #莫斯科
-    # regexp:.+\.eu-moscow\.tencentcos\.(cn|com(\.cn)?)$, PROXY
+    # regexp:.+\.ap-hongkong\.tencentcos\.(cn|com(\.cn)?)$ @!cn       #中国香港
+    - DOMAIN-SUFFIX, ap-hongkong.tencentcos.cn, PROXY
+    - DOMAIN-SUFFIX, ap-hongkong.tencentcos.com, PROXY
+    - DOMAIN-SUFFIX, ap-hongkong.tencentcos.com.cn, PROXY
+
+    # regexp:.+\.ap-singapore\.tencentcos\.(cn|com(\.cn)?)$ @!cn      #新加坡
+    - DOMAIN-SUFFIX, ap-singapore.tencentcos.cn, PROXY
+    - DOMAIN-SUFFIX, ap-singapore.tencentcos.com, PROXY
+    - DOMAIN-SUFFIX, ap-singapore.tencentcos.com.cn, PROXY
+
+    # regexp:.+\.ap-mumbai\.tencentcos\.(cn|com(\.cn)?)$ @!cn         #孟买
+    - DOMAIN-SUFFIX, ap-mumbai.tencentcos.cn, PROXY
+    - DOMAIN-SUFFIX, ap-mumbai.tencentcos.com, PROXY
+    - DOMAIN-SUFFIX, ap-mumbai.tencentcos.com.cn, PROXY
+
+    # regexp:.+\.ap-jakarta\.tencentcos\.(cn|com(\.cn)?)$ @!cn        #雅加达
+    - DOMAIN-SUFFIX, ap-jakarta.tencentcos.cn, PROXY
+    - DOMAIN-SUFFIX, ap-jakarta.tencentcos.com, PROXY
+    - DOMAIN-SUFFIX, ap-jakarta.tencentcos.com.cn, PROXY
+
+    # regexp:.+\.ap-seoul\.tencentcos\.(cn|com(\.cn)?)$ @!cn          #首尔
+    - DOMAIN-SUFFIX, ap-seoul.tencentcos.cn, PROXY
+    - DOMAIN-SUFFIX, ap-seoul.tencentcos.com, PROXY
+    - DOMAIN-SUFFIX, ap-seoul.tencentcos.com.cn, PROXY
+
+    # regexp:.+\.ap-bangkok\.tencentcos\.(cn|com(\.cn)?)$ @!cn        #曼谷
+    - DOMAIN-SUFFIX, ap-bangkok.tencentcos.cn, PROXY
+    - DOMAIN-SUFFIX, ap-bangkok.tencentcos.com, PROXY
+    - DOMAIN-SUFFIX, ap-bangkok.tencentcos.com.cn, PROXY
+
+    # regexp:.+\.ap-tokyo\.tencentcos\.(cn|com(\.cn)?)$ @!cn          #东京
+    - DOMAIN-SUFFIX, ap-tokyo.tencentcos.cn, PROXY
+    - DOMAIN-SUFFIX, ap-tokyo.tencentcos.com, PROXY
+    - DOMAIN-SUFFIX, ap-tokyo.tencentcos.com.cn, PROXY
+
+    # regexp:.+\.na-siliconvalley\.tencentcos\.(cn|com(\.cn)?)$ @!cn  #硅谷（美西）
+    - DOMAIN-SUFFIX, na-siliconvalley.tencentcos.cn, PROXY
+    - DOMAIN-SUFFIX, na-siliconvalley.tencentcos.com, PROXY
+    - DOMAIN-SUFFIX, na-siliconvalley.tencentcos.com.cn, PROXY
+
+    # regexp:.+\.na-ashburn\.tencentcos\.(cn|com(\.cn)?)$ @!cn        #弗吉尼亚（美东）
+    - DOMAIN-SUFFIX, na-ashburn.tencentcos.cn, PROXY
+    - DOMAIN-SUFFIX, na-ashburn.tencentcos.com, PROXY
+    - DOMAIN-SUFFIX, na-ashburn.tencentcos.com.cn, PROXY
+
+    # regexp:.+\.na-toronto\.tencentcos\.(cn|com(\.cn)?)$ @!cn        #多伦多
+    - DOMAIN-SUFFIX, na-toronto.tencentcos.cn, PROXY
+    - DOMAIN-SUFFIX, na-toronto.tencentcos.com, PROXY
+    - DOMAIN-SUFFIX, na-toronto.tencentcos.com.cn, PROXY
+
+    # regexp:.+\.sa-saopaulo\.tencentcos\.(cn|com(\.cn)?)$ @!cn       #圣保罗
+    - DOMAIN-SUFFIX, sa-saopaulo.tencentcos.cn, PROXY
+    - DOMAIN-SUFFIX, sa-saopaulo.tencentcos.com, PROXY
+    - DOMAIN-SUFFIX, sa-saopaulo.tencentcos.com.cn, PROXY
+
+    # regexp:.+\.eu-frankfurt\.tencentcos\.(cn|com(\.cn)?)$ @!cn      #法兰克福
+    - DOMAIN-SUFFIX, eu-frankfurt.tencentcos.cn, PROXY
+    - DOMAIN-SUFFIX, eu-frankfurt.tencentcos.com, PROXY
+    - DOMAIN-SUFFIX, eu-frankfurt.tencentcos.com.cn, PROXY
+
+    # regexp:.+\.eu-moscow\.tencentcos\.(cn|com(\.cn)?)$ @!cn         #莫斯科
+    - DOMAIN-SUFFIX, eu-moscow.tencentcos.cn, PROXY
+    - DOMAIN-SUFFIX, eu-moscow.tencentcos.com, PROXY
+    - DOMAIN-SUFFIX, eu-moscow.tencentcos.com.cn, PROXY
 
     # Formerly COS Download Domain
-    #中国香港
-    - DOMAIN-SUFFIX, coshk.myqcloud.com, PROXY
-    #新加坡
-    - DOMAIN-SUFFIX, cossgp.myqcloud.com, PROXY
-    #多伦多
-    - DOMAIN-SUFFIX, cosca.myqcloud.com, PROXY
-    #法兰克福
-    - DOMAIN-SUFFIX, cosger.myqcloud.com, PROXY
+    - DOMAIN-SUFFIX, coshk.myqcloud.com, PROXY             #中国香港
+    - DOMAIN-SUFFIX, cossgp.myqcloud.com, PROXY            #新加坡
+    - DOMAIN-SUFFIX, cosca.myqcloud.com, PROXY             #多伦多
+    - DOMAIN-SUFFIX, cosger.myqcloud.com, PROXY            #法兰克福
 
     # Formerly COS Upload Domain
-    #中国香港
-    - DOMAIN-SUFFIX, hk.file.myqcloud.com, PROXY
-    #新加坡
-    - DOMAIN-SUFFIX, sgp.file.myqcloud.com, PROXY
-    #多伦多
-    - DOMAIN-SUFFIX, ca.file.myqcloud.com, PROXY
-    #法兰克福
-    - DOMAIN-SUFFIX, ger.file.myqcloud.com, PROXY
+    - DOMAIN-SUFFIX, hk.file.myqcloud.com, PROXY           #中国香港
+    - DOMAIN-SUFFIX, sgp.file.myqcloud.com, PROXY          #新加坡
+    - DOMAIN-SUFFIX, ca.file.myqcloud.com, PROXY           #多伦多
+    - DOMAIN-SUFFIX, ger.file.myqcloud.com, PROXY          #法兰克福
 
    # qnap
     # Global
@@ -33997,8 +34122,6 @@ rules:
     - DOMAIN-SUFFIX, qwant.de, PROXY
     - DOMAIN-SUFFIX, qwant.fr, PROXY
     - DOMAIN-SUFFIX, qwant.it, PROXY
-
-   # qweather
 
   # r
    # rakuten
@@ -34357,6 +34480,16 @@ rules:
    # ruten
     - DOMAIN-SUFFIX, rimg.com.tw, PROXY
     - DOMAIN-SUFFIX, ruten.com.tw, PROXY
+
+   # rutracker
+    - DOMAIN-SUFFIX, maintracker.org, PROXY
+    - DOMAIN-SUFFIX, rutracker.cc, PROXY
+    - DOMAIN-SUFFIX, rutracker.cr, PROXY
+    - DOMAIN-SUFFIX, rutracker.me, PROXY
+    - DOMAIN-SUFFIX, rutracker.nl, PROXY
+    - DOMAIN-SUFFIX, rutracker.org, PROXY
+    - DOMAIN-SUFFIX, rutrecker.net, PROXY
+    - DOMAIN-SUFFIX, rutrk.org, PROXY
 
   # s
    # salesforce
@@ -34739,8 +34872,6 @@ rules:
     - DOMAIN-SUFFIX, valuegb.com, PROXY
     - DOMAIN-SUFFIX, wise-research.com, PROXY
 
-   # smtiaojiaoshi
-
    # snap
     - DOMAIN-SUFFIX, sc-cdn.net, PROXY
     - DOMAIN-SUFFIX, snap-dev.net, PROXY
@@ -35040,8 +35171,13 @@ rules:
     - DOMAIN-SUFFIX, stackoverflow.co, PROXY
     - DOMAIN-SUFFIX, stackoverflow.com, PROXY
     - DOMAIN-SUFFIX, stackoverflow.email, PROXY
+    - DOMAIN-SUFFIX, stackoverflow.help, PROXY
+    - DOMAIN-SUFFIX, stackoverflow.net, PROXY
     - DOMAIN-SUFFIX, stackoverflowbusiness.com, PROXY
     - DOMAIN-SUFFIX, stackoverflowcareers.com, PROXY
+    - DOMAIN-SUFFIX, stackoverflowjobs.com, PROXY
+    - DOMAIN-SUFFIX, stackoverflowsolutions.com, PROXY
+    - DOMAIN-SUFFIX, stackoverflowteams.com, PROXY
     - DOMAIN-SUFFIX, stacksnippets.net, PROXY
     - DOMAIN-SUFFIX, superuser.com, PROXY
     - DOMAIN-SUFFIX, tex-talk.net, PROXY
@@ -35137,6 +35273,34 @@ rules:
    # startpage
     - DOMAIN-SUFFIX, startpage.com, PROXY
     - DOMAIN-SUFFIX, ixquick.com, PROXY
+
+   # starworld (revised cn)
+    # StarWorld Games is a wholly owned subsidiary of Qihoo 360
+    # - DOMAIN-SUFFIX, 360-api.cn, PROXY
+    # - DOMAIN-SUFFIX, 360-g.cn, PROXY
+    # - DOMAIN-SUFFIX, 360-g.net, PROXY
+    # - DOMAIN-SUFFIX, 360-game.net, PROXY
+    # - DOMAIN-SUFFIX, 360pay.cn, PROXY
+    # - DOMAIN-SUFFIX, 360sjyh.cn, PROXY
+    # - DOMAIN-SUFFIX, gamepack.cn, PROXY
+    # - DOMAIN-SUFFIX, qftexpay.cn, PROXY
+    # - DOMAIN-SUFFIX, qikoo.com, PROXY
+    # - DOMAIN-SUFFIX, qiku.com, PROXY
+    # - DOMAIN-SUFFIX, qikucdn.com, PROXY
+    # - DOMAIN-SUFFIX, starworldgames.com, PROXY
+    # - DOMAIN-SUFFIX, theworld.cn, PROXY
+    # - DOMAIN-SUFFIX, warsaga.cn, PROXY
+    # - DOMAIN-SUFFIX, wggames.cn, PROXY
+    # - DOMAIN-SUFFIX, worldofship.cn, PROXY
+    # - DOMAIN-SUFFIX, worldoftank.cn, PROXY
+    # - DOMAIN-SUFFIX, worldoftanks.cn, PROXY
+    # - DOMAIN-SUFFIX, worldoftanks.com.cn, PROXY
+    # - DOMAIN-SUFFIX, wotgame.cn, PROXY
+    # - DOMAIN-SUFFIX, wowsgame.cn, PROXY
+    # - DOMAIN-SUFFIX, woxihuan.com, PROXY
+    # - DOMAIN-SUFFIX, wztsy.cn, PROXY
+    # - DOMAIN-SUFFIX, wztsy.com, PROXY
+    # - DOMAIN-SUFFIX, yiwanzhushou.com, PROXY
 
    # staticfile
     - DOMAIN-SUFFIX, staticfile.net, PROXY
@@ -35261,18 +35425,28 @@ rules:
    # substack
     - DOMAIN-SUFFIX, substack.com, PROXY
 
-   # suishouji
-
-   # sumkoo
-
-   # suning
-
    # supercell
+    - DOMAIN-SUFFIX, boombeach.com, PROXY
+    - DOMAIN-SUFFIX, brawlstars.com, PROXY
+    - DOMAIN-SUFFIX, brawlstarsgame.com, PROXY
+    - DOMAIN-SUFFIX, clash.com, PROXY
+    - DOMAIN-SUFFIX, clashmini.com, PROXY
+    - DOMAIN-SUFFIX, clashofclans.com, PROXY
+    - DOMAIN-SUFFIX, clashroyale.com, PROXY
+    - DOMAIN-SUFFIX, clashroyaleapp.com, PROXY
+    - DOMAIN-SUFFIX, gamesfirsthelsinki.com, PROXY
+    - DOMAIN-SUFFIX, hayday.com, PROXY
+    - DOMAIN-SUFFIX, haydaygame.com, PROXY
+    - DOMAIN-SUFFIX, mo.co, PROXY
+    - DOMAIN-SUFFIX, seeurlpcl.com, PROXY
+    - DOMAIN-SUFFIX, squadbusters.com, PROXY
     - DOMAIN-SUFFIX, supercell.com, PROXY
-    - DOMAIN-SUFFIX, supercell.net, PROXY
     - DOMAIN-SUFFIX, supercell.helpshift.com, PROXY
-
-   # supersonic-ads
+    - DOMAIN-SUFFIX, supercell.net, PROXY
+    - DOMAIN-SUFFIX, supercellcreators.com, PROXY
+    - DOMAIN-SUFFIX, supercellgames.com, PROXY
+    - DOMAIN-SUFFIX, supercellid.com, PROXY
+    - DOMAIN-SUFFIX, supercellstore.com, PROXY
 
    # surflite
     - DOMAIN-SUFFIX, surflite.co, PROXY
@@ -35346,10 +35520,6 @@ rules:
     # Blocking the following domain will prevent taboola ads from displaying,
     # but also cut the connection to Taboola website.
     - DOMAIN-SUFFIX, taboola.com, PROXY
- 
-   # tagtic-ads
- 
-   # taikang
 
    # tailscale
     - DOMAIN-SUFFIX, tailscale.com, PROXY
@@ -35359,10 +35529,6 @@ rules:
    # taomee
     - DOMAIN-SUFFIX, 61.com, PROXY
     - DOMAIN-SUFFIX, taomee.com, PROXY
-
-   # tappx-ads
-
-   # taptap
 
    # target
     # All .target domains
@@ -35376,8 +35542,6 @@ rules:
     - DOMAIN-SUFFIX, tandfonline.com, PROXY
     - DOMAIN-SUFFIX, taylorandfrancis.com, PROXY
     - DOMAIN-SUFFIX, taylorfrancis.com, PROXY
-
-   # teambition
 
    # teamviewer
     - DOMAIN-SUFFIX, teamviewer.com, PROXY
@@ -35428,8 +35592,6 @@ rules:
 
     - DOMAIN, wetv.qq.com, PROXY
 
-   # tencent-ads
-
    # tencent-dev
     - DOMAIN-SUFFIX, openmidas.com, PROXY
     - DOMAIN-SUFFIX, qq.design, PROXY
@@ -35444,8 +35606,6 @@ rules:
    # tencent-games
     # Supercell
     - DOMAIN-SUFFIX, supercell.com, PROXY
-
-   # tendcloud
 
    # termux
     - DOMAIN-SUFFIX, termux.com, PROXY
@@ -35702,12 +35862,6 @@ rules:
     - DOMAIN-SUFFIX, tmsnrt.rs, PROXY
     - DOMAIN-SUFFIX, tr.com, PROXY
 
-   # threads
-
-   # tiancity
- 
-   # tianyancha
-
    # tidal
     - DOMAIN-SUFFIX, tidal.com, PROXY
     - DOMAIN-SUFFIX, tidalhifi.com, PROXY
@@ -35727,12 +35881,15 @@ rules:
     - DOMAIN-SUFFIX, tiktokcdn.com, PROXY
     - DOMAIN-SUFFIX, tiktokd.net, PROXY
     - DOMAIN-SUFFIX, tiktokd.org, PROXY
+    - DOMAIN-SUFFIX, tiktokeu-cdn.com, PROXY
+    - DOMAIN-SUFFIX, tiktokrow-cdn.com, PROXY
     - DOMAIN-SUFFIX, tiktokv.com, PROXY
     - DOMAIN-SUFFIX, tiktokv.eu, PROXY
     - DOMAIN-SUFFIX, tiktokv.us, PROXY
     - DOMAIN-SUFFIX, tiktokw.eu, PROXY
     - DOMAIN-SUFFIX, tiktokw.us, PROXY
     - DOMAIN-SUFFIX, ttlivecdn.com, PROXY
+    - DOMAIN-SUFFIX, ttoverseaus.net, PROXY
     - DOMAIN-SUFFIX, ttwstatic.com, PROXY
 
     - DOMAIN, p16-tiktokcdn-com.akamaized.net, PROXY
@@ -36648,8 +36805,6 @@ rules:
     # - DOMAIN-KEYWORD, .latrobe # La Trobe University
     # - DOMAIN-KEYWORD, .monash # Monash University
 
-   # tld-cn
-
    # tld-opennic
     # - DOMAIN-KEYWORD, bazar, PROXY
     # - DOMAIN-KEYWORD, bbs, PROXY
@@ -36686,8 +36841,6 @@ rules:
 
     - DOMAIN, tmdb-image-prod.b-cdn.net, PROXY
 
-   # tmtpost
-
    # tokyo-sports
     - DOMAIN-SUFFIX, tokyo-sports.co.jp, PROXY
     - DOMAIN-SUFFIX, tospo-keiba.jp, PROXY
@@ -36702,8 +36855,6 @@ rules:
     - DOMAIN-SUFFIX, registeridm.com, PROXY
     - DOMAIN-SUFFIX, tonec.com, PROXY
 
-   # tongcheng
-
    # topcoder
     - DOMAIN-SUFFIX, topcoder.com, PROXY
 
@@ -36715,6 +36866,11 @@ rules:
 
    # torproject
     - DOMAIN-SUFFIX, torproject.org, PROXY
+
+   # trackernetwork
+    # - DOMAIN-SUFFIX, thetrackernetwork.com, PROXY
+    # - DOMAIN-SUFFIX, tracker.gg, PROXY
+    # - DOMAIN-SUFFIX, tracker.network, PROXY
 
    # translatewiki
     - DOMAIN-SUFFIX, translatewiki.net, PROXY
@@ -36739,12 +36895,20 @@ rules:
     - DOMAIN-SUFFIX, tube8.com, PROXY
     - DOMAIN-SUFFIX, tube8.fr, PROXY
 
+   # tubi
+    - DOMAIN-SUFFIX, tubi.io, PROXY
+    - DOMAIN-SUFFIX, tubitv.com, PROXY
+
    # tumblr
     - DOMAIN-SUFFIX, tumblr.com, PROXY
 
-   # tutanota
-    - DOMAIN-SUFFIX, tuta.io, PROXY
-    - DOMAIN-SUFFIX, tutanota.com, PROXY
+   # tutanota (revised other regions)
+    # - DOMAIN-SUFFIX, keemail.me, PROXY
+    # - DOMAIN-SUFFIX, tuta.com, PROXY
+    # - DOMAIN-SUFFIX, tuta.io, PROXY
+    # - DOMAIN-SUFFIX, tutamail.com, PROXY
+    # - DOMAIN-SUFFIX, tutanota.com, PROXY
+    # - DOMAIN-SUFFIX, tutanota.de, PROXY
 
    # tvb
     # include:mytvsuper
@@ -36822,6 +36986,7 @@ rules:
     - DOMAIN-SUFFIX, twitter.biz, PROXY
     - DOMAIN-SUFFIX, twitter.com, PROXY
     - DOMAIN-SUFFIX, twitter.jp, PROXY
+    - DOMAIN-SUFFIX, twitter.map.fastly.net, PROXY
     - DOMAIN-SUFFIX, twittercommunity.com, PROXY
     - DOMAIN-SUFFIX, twitterflightschool.com, PROXY
     - DOMAIN-SUFFIX, twitterinc.com, PROXY
@@ -36849,14 +37014,10 @@ rules:
     - DOMAIN-SUFFIX, typography.com, PROXY
 
   # u
-   # u17
-
    # uber
     - DOMAIN-SUFFIX, uber-assets.com, PROXY
     - DOMAIN-SUFFIX, uber.com, PROXY
     - DOMAIN-SUFFIX, ubereats.com, PROXY
-
-   # uberads-ads
 
    # ubiquiti
     - DOMAIN-SUFFIX, amplifi.com, PROXY
@@ -36883,10 +37044,6 @@ rules:
     - DOMAIN-SUFFIX, ubuntu.net, PROXY
     - DOMAIN-SUFFIX, ubuntuforums.org, PROXY
     - DOMAIN-SUFFIX, ubuntu-touch.io, PROXY
-
-   # ubuntukylin
-
-   # uc
 
    # ucloud
     - DOMAIN-SUFFIX, apimkt.net, PROXY
@@ -36957,23 +37114,11 @@ rules:
     - DOMAIN-SUFFIX, udndata.com, PROXY
     - DOMAIN-SUFFIX, udnfunlife.com, PROXY
 
-   # umeng
-
-   # umeng-ads
-
-   # unionpay
-
    # unity
     - DOMAIN-SUFFIX, unity.com, PROXY
     - DOMAIN-SUFFIX, unity3d.com, PROXY
     
     # include:unity-ads
-
-   # unity-ads
-
-   # upai
-
-   # uu-chat
 
   # v
    # v2ray
@@ -37169,10 +37314,6 @@ rules:
 
     # PKI
     - DOMAIN-SUFFIX, omniroot.com, PROXY
-
-   # vgtime
-
-   # vilavpn
 
    # vim
     - DOMAIN-SUFFIX, vim.org, PROXY
@@ -37390,25 +37531,36 @@ rules:
    # vk
     - DOMAIN-SUFFIX, mvk.com, PROXY
     - DOMAIN-SUFFIX, userapi.com, PROXY
+    - DOMAIN-SUFFIX, vk-apps.com, PROXY
+    - DOMAIN-SUFFIX, vk-apps.ru, PROXY
     - DOMAIN-SUFFIX, vk-cdn.me, PROXY
     - DOMAIN-SUFFIX, vk-cdn.net, PROXY
     - DOMAIN-SUFFIX, vk-portal.net, PROXY
     - DOMAIN-SUFFIX, vk.cc, PROXY
     - DOMAIN-SUFFIX, vk.com, PROXY
+    - DOMAIN-SUFFIX, vk.company, PROXY
     - DOMAIN-SUFFIX, vk.design, PROXY
     - DOMAIN-SUFFIX, vk.link, PROXY
     - DOMAIN-SUFFIX, vk.me, PROXY
     - DOMAIN-SUFFIX, vk.ru, PROXY
+    - DOMAIN-SUFFIX, vk.team, PROXY
     - DOMAIN-SUFFIX, vkcache.com, PROXY
     - DOMAIN-SUFFIX, vkgo.app, PROXY
     - DOMAIN-SUFFIX, vklive.app, PROXY
-    - DOMAIN-SUFFIX, vkmessenger.com, PROXY
     - DOMAIN-SUFFIX, vkmessenger.app, PROXY
+    - DOMAIN-SUFFIX, vkmessenger.com, PROXY
     - DOMAIN-SUFFIX, vkontakte.ru, PROXY
+    - DOMAIN-SUFFIX, vkuser.net, PROXY
     - DOMAIN-SUFFIX, vkuseraudio.com, PROXY
+    - DOMAIN-SUFFIX, vkuseraudio.net, PROXY
+    - DOMAIN-SUFFIX, vkuseraudio.ru, PROXY
+    - DOMAIN-SUFFIX, vkusercdn.ru, PROXY
     - DOMAIN-SUFFIX, vkuserlive.net, PROXY
+    - DOMAIN-SUFFIX, vkuserphoto.ru, PROXY
     - DOMAIN-SUFFIX, vkuservideo.com, PROXY
     - DOMAIN-SUFFIX, vkuservideo.net, PROXY
+    - DOMAIN-SUFFIX, vkuservideo.ru, PROXY
+    - DOMAIN-SUFFIX, vkvideo.ru, PROXY
 
    # vmware
     - DOMAIN-SUFFIX, cfblob.com, PROXY
@@ -37597,8 +37749,6 @@ rules:
     - DOMAIN-SUFFIX, vodafone.com.tr, PROXY
     - DOMAIN-SUFFIX, vodafone.de, PROXY
     - DOMAIN-SUFFIX, vodafone.it, PROXY
-
-   # volcengine
 
    # volmoe
     - DOMAIN-SUFFIX, mox.moe, PROXY
@@ -37838,8 +37988,6 @@ rules:
     - DOMAIN-SUFFIX, vpngate.jp, PROXY
     - DOMAIN-SUFFIX, vpngate.net, PROXY
 
-   # vultr
-
   # w
    # w3schools
     - DOMAIN-SUFFIX, w3schools.com, PROXY
@@ -37856,10 +38004,6 @@ rules:
     - DOMAIN-SUFFIX, walmart.pharmacy, PROXY
     - DOMAIN-SUFFIX, walmartimages.com, PROXY
     - DOMAIN-SUFFIX, wmt.co, PROXY
-
-   # wanfang
-
-   # wangsu
 
    # wantmedia
     - DOMAIN-SUFFIX, want-media.com, PROXY
@@ -37892,6 +38036,15 @@ rules:
     - DOMAIN-SUFFIX, loveparents.org, PROXY
     - DOMAIN-SUFFIX, superstation.com.tw, PROXY
 
+   # wasu (revised cn)
+    # 华数传媒
+    # - DOMAIN-SUFFIX, aichongzoo.cn, PROXY
+    # - DOMAIN-SUFFIX, hzdtv.tv, PROXY
+    # - DOMAIN-SUFFIX, hzman.net, PROXY
+    # - DOMAIN-SUFFIX, wasu.cn, PROXY
+    # - DOMAIN-SUFFIX, wasu.tv, PROXY
+    # - DOMAIN-SUFFIX, wasumedia.cn, PROXY
+
    # watchout
     - DOMAIN-SUFFIX, watchout.tw, PROXY
     - DOMAIN-SUFFIX, waa.tw, PROXY
@@ -37916,12 +38069,8 @@ rules:
    # webflow
     - DOMAIN-SUFFIX, webflow.com, PROXY
 
-   # webnovel
-
    # webtype
     - DOMAIN-SUFFIX, webtype.com, PROXY
-
-   # weiphone
 
    # westerndigital
     - DOMAIN-SUFFIX, g-technology.com, PROXY
@@ -38020,8 +38169,6 @@ rules:
     - DOMAIN-SUFFIX, wistia.com, PROXY
     - DOMAIN-SUFFIX, wistia.net, PROXY
 
-   # wiwide
-
    # wix
     - DOMAIN-SUFFIX, editorx.com, PROXY
     - DOMAIN-SUFFIX, parastorage.com, PROXY
@@ -38032,10 +38179,6 @@ rules:
     - DOMAIN-SUFFIX, wixmp.com, PROXY
     - DOMAIN-SUFFIX, wixsite.com, PROXY
     - DOMAIN-SUFFIX, wixstatic.com, PROXY
-
-   # wjx
-
-   # wolai
 
    # woolite
     - DOMAIN-SUFFIX, woolite.ca, PROXY
@@ -38054,8 +38197,6 @@ rules:
     - DOMAIN-SUFFIX, wp.com, PROXY
     - DOMAIN-SUFFIX, wpvip.com, PROXY
 
-   # wps
-
    # wsj
     - DOMAIN-SUFFIX, careerjournal.com, PROXY
     - DOMAIN-SUFFIX, collegejournal.com, PROXY
@@ -38070,8 +38211,6 @@ rules:
     - DOMAIN-SUFFIX, wsjshop.com, PROXY
     - DOMAIN-SUFFIX, wsjwine.com, PROXY
 
-   # wteam-ads
-
    # wwe
     - DOMAIN-SUFFIX, wwe.com, PROXY
     - DOMAIN-SUFFIX, wwe9.com, PROXY
@@ -38081,9 +38220,8 @@ rules:
     # include:twitter
     # include:xai
 
-   # x315
-
    # xai
+    - DOMAIN-SUFFIX, grok.com, PROXY
     - DOMAIN-SUFFIX, x.ai, PROXY
 
    # xbox
@@ -38124,6 +38262,7 @@ rules:
     - DOMAIN-SUFFIX, xda-cdn.com, PROXY
     - DOMAIN-SUFFIX, xda-developers.com, PROXY
     - DOMAIN-SUFFIX, xdaforums.com, PROXY
+    - DOMAIN-SUFFIX, xdaimages.com, PROXY
 
    # xdty
     - DOMAIN-SUFFIX, xdty.org, PROXY
@@ -38142,24 +38281,10 @@ rules:
     # xhamsterlive thumbnails
     - DOMAIN, widgets.stripst.com, PROXY
 
-   # xhamster-ads
-
-   # xiaohongshu
-
    # xiaomi
     # Overseas only
     - DOMAIN-SUFFIX, c.mi.com, PROXY
     - DOMAIN-SUFFIX, global.market.xiaomi.com, PROXY
-
-   # xiaomitv-ads
-
-   # ximalaya
-
-   # ximalaya-ads
-
-   # xingkongwuxianmedia
-
-   # xingrz
 
    # xnxx
     - DOMAIN-SUFFIX, xnxx-cdn.com, PROXY
@@ -38167,14 +38292,6 @@ rules:
     - DOMAIN-SUFFIX, xnxx.net, PROXY
     - DOMAIN-SUFFIX, xnxx.tv, PROXY
     - DOMAIN-SUFFIX, xnxx3.com, PROXY
-
-   # xueersi
-
-   # xueqiu
-
-   # xueyuanjun
-
-   # xunlei
 
    # xvideos
     - DOMAIN-SUFFIX, xvideos-cdn.com, PROXY
@@ -38356,8 +38473,6 @@ rules:
 
     - DOMAIN, cdn.js7k.com, PROXY
 
-   # yahoo-ads
-
    # yandex
     # All .yandex domains
     - DOMAIN-KEYWORD, .yandex, PROXY
@@ -38405,10 +38520,6 @@ rules:
     - DOMAIN-SUFFIX, startupschool.org, PROXY
     - DOMAIN-SUFFIX, ycombinator.com, PROXY
 
-   # yinxiang
-
-   # ynet
-
    # ynoproject
     - DOMAIN-SUFFIX, ynoproject.net, PROXY
 
@@ -38430,10 +38541,6 @@ rules:
    # youjizz
     - DOMAIN-SUFFIX, yjcontentdelivery.com, PROXY
     - DOMAIN-SUFFIX, youjizz.com, PROXY
-
-   # youku
-
-   # youku-ads
 
    # youporn
     - DOMAIN-SUFFIX, extremetube.com, PROXY
@@ -38626,20 +38733,6 @@ rules:
     - DOMAIN-SUFFIX, yt.be, PROXY
     - DOMAIN-SUFFIX, ytimg.com, PROXY
 
-   # youzan
-
-   # yuanfudao
-
-   # yuewen
-
-   # yuketang
-
-   # yunfanjiasu
-
-   # yunlaopo
-
-   # yy
-
   # z
    # z-library
     - DOMAIN-SUFFIX, 1lib.cloud, PROXY
@@ -38700,8 +38793,6 @@ rules:
     - DOMAIN-SUFFIX, zb.io, PROXY
     - DOMAIN-SUFFIX, zb.live, PROXY
 
-   # zdns
-
    # zee
     - DOMAIN-SUFFIX, bgr.in, PROXY
     - DOMAIN-SUFFIX, bollywoodlife.com, PROXY
@@ -38750,20 +38841,12 @@ rules:
     - DOMAIN-SUFFIX, zeplin.dev, PROXY
     - DOMAIN-SUFFIX, zeplin.io, PROXY
 
-   # zhanqi
-
-   # zhihu
-
-   # zhihuishu
-
    # zhimeishe
     - DOMAIN-SUFFIX, 168sex.top, PROXY
     - DOMAIN-SUFFIX, a7sex.com, PROXY
     - DOMAIN-SUFFIX, ctotires.com, PROXY
     - DOMAIN-SUFFIX, ferryclean.com, PROXY
     - DOMAIN-SUFFIX, zhimeishe888.com, PROXY
-
-   # ziroom
 
    # zoho
     - DOMAIN-SUFFIX, zoho.com, PROXY
@@ -38787,10 +38870,6 @@ rules:
 
    # zte
     - DOMAIN, ztedevices.com, PROXY
-
-   # zuoyebang
-
-   # zynga-ads
 
  # 🛑 AdBlock added manually IP-CIDR (test)
    # 🍃 应用净化, no-resolve
@@ -39179,15 +39258,29 @@ rules:
 
  # PROXY added manually IP-CIDR
   # a
+   # AS7018 AT&T Services, Inc.
+    # AT&T Services, Inc. / romania
+    - IP-CIDR, 89.47.119.0/24, PROXY, no-resolve
+
+    # IPXO-MNT / belgium
+    - IP-CIDR, 78.24.122.0/24, PROXY, no-resolve
+
+    # IPXO-MNT / romania
+    - IP-CIDR, 89.34.224.0/23, PROXY, no-resolve
+
+    # IPXO-MNT / ukraine
+    - IP-CIDR, 81.22.129.0/24, PROXY, no-resolve
+
+    # Private Customer / serbia
+    - IP-CIDR, 89.23.87.0/24, PROXY, no-resolve
+
+   # AS10753 Level 3 Parent, LLC
+    # TRINITY TELECOM LLC / ukraine
+    - IP-CIDR, 217.67.68.0/22, PROXY, no-resolve
+
    # AS45102 Alibaba (US) Technology Co., Ltd.
     # Alibaba Cloud - US (C06961510)
     - IP-CIDR, 47.252.0.0/18, PROXY, no-resolve
-
-   # AS7018 AT&T Services, Inc.
-    # romania
-    - IP-CIDR, 89.47.119.0/24, PROXY, no-resolve
-    # ukraine
-    - IP-CIDR, 81.22.129.0/24, PROXY, no-resolve
 
   # b
 
@@ -39317,22 +39410,4 @@ rules:
     # - GEOIP, !CN, PROXY
 
  # MATCH rules
-    - MATCH, 🐟 Webs not included (漏网之鱼)
-
-# Appendix
- # WARNING: the following keyword might conflict with relevant websites
-  # check those domain rules often
-
-  # a
-   # aliyun (clash with)
-    # .al
-   
-  # p
-   # pingan bank (clash with)
-    # .cl
-    # .sd
-    # .orange
-
-  # t
-   # tld-!cn (geosite, clash with)
-   # tld-opennic (geosite, clash with)
+    - MATCH, 🐟 website domains not included (漏网之鱼)
