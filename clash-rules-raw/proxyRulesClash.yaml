@@ -1,31 +1,73 @@
-# prompt
- # rules for "rule-provider" 
-  # the following few lines is for creating clash rule-providers:
-  # payload:
-  #     - '+.'
-  #     - ''
+# general
+ # build
+  # build by Kim Xie / kimberlysz
+  # build time start from: 2023-05-31
 
- # WARNING: The following domain names may be replaced incorrectly during the conversion process
+ # keywords
+  # (cn): CN direct connect domains that's under "domain-list-community"
+
+  # (deprecated): domains that's not affected or needed anymore
+
+  # (revised): means domains that's included by v2fly-domain-rules but can directly connected in mainland China
+    # how to process theose domains?
+      # mark those domains
+
+    # (revised cn)
+
+    # (revised ir)
+
+    # (revised ru)
+
+    # (revised other regions)
+
+  # (test): domains that's under testing
+
+ # format
+  # rule clash (by using "rule-provider" configurations)
+    # rules for clash configuration file
+      # "rules:" will need to be replaced by "payload:"
+        # payload:
+        #     - '+.'
+        #     - ''
+
+  # rule shadowrocket
+    # rules for shadoworcket app
+      # "rules:" will need to be replaced by "[Rule]"
+
+    # rules for domain-set and rule-set
+      # "rules:" will need to be replaced by "payload:"
+
+# website domain conflicts and mis-replacement
+ # WARNING: The following domain names may be replaced incorrectly during the conversion process, or the following keyword might conflict with relevant websites
  # direct manual
 
  # proxy manual
+  # a
+   # aliyun (conflicts with)
+    # .al
+
   # d
    # directenergy.com
     ## - DOMAIN-SUFFIX, /* directenergy.com, /* PROXY # keywords: , /* direct
       # search "energy.com" to correct back the domain and change it to "directenergy.com"
 
   # p
+   # pingan bank (conflicts with)
+    # .cl
+    # .sd
+    # .orange
+
    # proxyium.com
     ## - DOMAIN-SUFFIX, /* proxyium.com, /* PROXY # keywords: , /* proxy
       # search "ium.com" to correct back the domain and change it to "proxyium.com"
 
+  # t
+   # tld-!cn
+   # tld-opennic
+
  # reject manual
 
- # keywords change
-  # "rules:" will need to be replaced by "payload:"
-
 rules:
- # proxy manual
   # #
    # 1800 flowers (test)
     - DOMAIN-SUFFIX, 1800flowers.com, PROXY
@@ -43,12 +85,15 @@ rules:
    # 2miners
     - DOMAIN-SUFFIX, 2miners.com, PROXY
 
-   # 1password
-    - DOMAIN-SUFFIX, 1password.com, PROXY
+   # 4k video downloader
+    - DOMAIN-SUFFIX, 4kdownload.com, PROXY
 
   # a
    # aaos
     - DOMAIN-SUFFIX, aaos.org, PROXY
+
+   # abc.net.au
+    - DOMAIN-SUFFIX, abc.net.au, PROXY
 
    # abeka.com
     - DOMAIN-SUFFIX, abeka.com, PROXY
@@ -114,9 +159,6 @@ rules:
 
    # aniview.com
     - DOMAIN-SUFFIX, aniview.com, PROXY
-
-   # annas-archive
-    - DOMAIN-SUFFIX, annas-archive.org, PROXY
 
    # apkpure
     - DOMAIN-SUFFIX, apkpure.net, PROXY
@@ -214,6 +256,7 @@ rules:
     - DOMAIN-SUFFIX, app.link, PROXY
 
    # bice
+    - DOMAIN-SUFFIX, banco.bice.cl, PROXY
     - DOMAIN-SUFFIX, bice.cl, PROXY
     - DOMAIN-SUFFIX, modyocdn.com, PROXY
 
@@ -255,7 +298,6 @@ rules:
     - DOMAIN-SUFFIX, broadbandgenie.co.uk, PROXY
 
   # c
-
    # ca.gov
     - DOMAIN-SUFFIX, dmv.ca.gov, PROXY
     - DOMAIN-SUFFIX, sa.dmv.ca.gov, PROXY
@@ -316,6 +358,19 @@ rules:
    # chia
     - DOMAIN-SUFFIX, chia.net, PROXY
     - DOMAIN-SUFFIX, chiacalculator.com, PROXY
+
+   # chinababe.net (test)
+    - DOMAIN-SUFFIX, akumachi.com, PROXY
+    - DOMAIN-SUFFIX, blcdog.com, PROXY
+    - DOMAIN-SUFFIX, chaseherbalpasty.com, PROXY
+    - DOMAIN-SUFFIX, chinababe.net, PROXY
+    - DOMAIN-SUFFIX, img.doppiocdn.com, PROXY
+    - DOMAIN-SUFFIX, media.daly2024.com, PROXY
+    - DOMAIN-SUFFIX, paupsoborofoow.net, PROXY
+    - DOMAIN-SUFFIX, sfuyxpozfv.cdn-centaurus.com, PROXY
+    - DOMAIN-SUFFIX, streamwish.to, PROXY
+    - DOMAIN-SUFFIX, swiftplayers.com, PROXY
+    - DOMAIN-SUFFIX, ww2.chinababe.net, PROXY
 
    # chunman4.com
     - DOMAIN-SUFFIX, chunman4.com, PROXY
@@ -622,6 +677,9 @@ rules:
    # foresters.com
     - DOMAIN-SUFFIX, foresters.com, PROXY
 
+   # fosshub
+    - DOMAIN-SUFFIX, download.fosshub.com, PROXY
+
    # freedesktop.timedate1
     - DOMAIN-SUFFIX, org.freedesktop.timedate1, PROXY
 
@@ -675,6 +733,15 @@ rules:
     # - DOMAIN-SUFFIX, gist.github.com, PROXY
     # - DOMAIN-SUFFIX, raw.githubusercontent.com, PROXY
     # - DOMAIN-SUFFIX, rawgithub.com, PROXY
+
+   # gmjd1.org
+    - DOMAIN-SUFFIX, gmjd1.org, PROXY
+
+   # go.cr
+    - DOMAIN-SUFFIX, atv.hacienda.go.cr, PROXY
+
+   # gob.cl
+    - DOMAIN-SUFFIX, donacionesley21440.gob.cl, PROXY
 
    # goddessdelivers
     - DOMAIN-SUFFIX, goddessdelivers.com, PROXY
@@ -1014,9 +1081,6 @@ rules:
    # koinly.io
     - DOMAIN-SUFFIX, koinly.io, PROXY
 
-   # kraken
-    - DOMAIN-SUFFIX, kraken.com, PROXY
-
    # ktar.com
     - DOMAIN-SUFFIX, ktar.com, PROXY
 
@@ -1095,7 +1159,6 @@ rules:
     - DOMAIN-SUFFIX, luxor.tech, PROXY
 
   # m
-
    # ma.ne
     - DOMAIN-SUFFIX, hu.ma.ne, PROXY
 
@@ -1196,10 +1259,17 @@ rules:
    # monica.im
     - DOMAIN-SUFFIX, monica.im, PROXY
 
+   # moxfield
+    - DOMAIN-SUFFIX, assets.moxfield.net, PROXY
+    - DOMAIN-SUFFIX, moxfield.com, PROXY
+
    # msn
     # msn rules originates from this yaml file
     # - DOMAIN-SUFFIX, news.hk.msn.com, PROXY
     # - DOMAIN-SUFFIX, news.msn.com.tw, PROXY
+
+   # mujeresconpoder.com (test)
+    - DOMAIN-SUFFIX, acceso.mujeresconpoder.com, PROXY
 
    # mullvad
     - DOMAIN-SUFFIX, mullvad.net, PROXY
@@ -1252,7 +1322,7 @@ rules:
     - DOMAIN-SUFFIX, nelnet.com, PROXY
 
    # netflix
-    # USER-AGENT, Argo*, PROXY
+    # - USER-AGENT, Argo*, PROXY
 
     # - DOMAIN-KEYWORD, .dualstack.apiproxy-, PROXY
     # - DOMAIN-KEYWORD, .dualstack.ichnaea-web-, PROXY
@@ -1737,8 +1807,17 @@ rules:
    # thechinaproject.com
     - DOMAIN-SUFFIX, thechinaproject.com, PROXY
 
+   # thechosen.tv
+    - DOMAIN-SUFFIX, api.frontrow.cc, PROXY
+    - DOMAIN-SUFFIX, fastly.frontrowcdn.com, PROXY
+    - DOMAIN-SUFFIX, thechosen.tv, PROXY
+    - DOMAIN, frontrowbiuzef.dataplane.rudderstack.com, PROXY
+
    # thedroidguy.com
     - DOMAIN-SUFFIX, thedroidguy.com, PROXY
+
+   # thegreatcourses.com
+    - DOMAIN-SUFFIX, thegreatcourses.com, PROXY
 
    # thepennyhoarder.com
     - DOMAIN-SUFFIX, thepennyhoarder.com, PROXY
@@ -1798,7 +1877,7 @@ rules:
     - DOMAIN-SUFFIX, tiktokcdn-eu.com, PROXY
     - DOMAIN-SUFFIX, tokopediax.com, PROXY
 
-    # USER-AGENT, TikTok*, PROXY
+    # - USER-AGENT, TikTok*, PROXY
 
    # tiktokglobalshop.com
     - DOMAIN-SUFFIX, tiktokglobalshop.com, PROXY
@@ -1943,6 +2022,9 @@ rules:
 
    # viber
     - DOMAIN-SUFFIX, viber.com, PROXY
+
+   # vidiq.com
+    - DOMAIN-SUFFIX, vidiq.com, PROXY
 
    # visaguide.world
     - DOMAIN-SUFFIX, visaguide.world, PROXY
