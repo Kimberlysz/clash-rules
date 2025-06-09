@@ -552,9 +552,6 @@ rules:
    # dpsk12.org
     - DOMAIN-SUFFIX, dpsk12.org, PROXY
 
-   # dt.gob.cl
-    - DOMAIN-SUFFIX, dt.gob.cl, PROXY
-
   # e
    # ecosia.org
     - DOMAIN-SUFFIX, ecosia.org, PROXY
@@ -743,7 +740,10 @@ rules:
     - DOMAIN-SUFFIX, atv.hacienda.go.cr, PROXY
 
    # gob.cl
-    - DOMAIN-SUFFIX, donacionesley21440.gob.cl, PROXY
+    - DOMAIN-SUFFIX, gob.cl, PROXY
+    # - DOMAIN-SUFFIX, donacionesley21440.gob.cl, PROXY
+    # - DOMAIN-SUFFIX, dt.gob.cl, PROXY
+    # - DOMAIN-SUFFIX, ine.gob.cl, PROXY
 
    # goddessdelivers
     - DOMAIN-SUFFIX, goddessdelivers.com, PROXY
