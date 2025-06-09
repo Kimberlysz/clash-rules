@@ -308,6 +308,9 @@ rules:
    # callannie.ai
     - DOMAIN-SUFFIX, callannie.ai, PROXY
 
+   # candy.ai
+    - DOMAIN-SUFFIX, candy.ai, PROXY
+
    # canva.com
     - DOMAIN-SUFFIX, canva.com, PROXY
 
@@ -1003,6 +1006,9 @@ rules:
    # intuit.com
     - DOMAIN-SUFFIX, intuit.com, PROXY
 
+   # invideo.io
+    - DOMAIN-SUFFIX, invideo.io, PROXY
+
    # ipinfo
     - DOMAIN-SUFFIX, ipinfo.io, PROXY
 
@@ -1029,6 +1035,9 @@ rules:
 
    # ivpn.net
     - DOMAIN-SUFFIX, ivpn.net, PROXY
+
+   # iyf
+    - DOMAIN-SUFFIX, yfsp.tv, PROXY
 
   # j
    # jkforum.net (test)
@@ -1274,6 +1283,9 @@ rules:
    # mullvad
     - DOMAIN-SUFFIX, mullvad.net, PROXY
 
+   # mux (revised other regions)
+    - DOMAIN-SUFFIX, mux.com, PROXY
+
    # mwcbarcelona.com
     - DOMAIN, register.mwcbarcelona.com, PROXY
 
@@ -1386,6 +1398,9 @@ rules:
     - DOMAIN-SUFFIX, okx.com, PROXY
 
     - DOMAIN, static.okx.com, PROXY
+
+   # oldmapsonline.org (revised other regions)
+    - DOMAIN-SUFFIX, oldmapsonline.org, PROXY
 
    # omny.fm
     - DOMAIN-SUFFIX, omny.fm, PROXY
@@ -1548,6 +1563,9 @@ rules:
     - DOMAIN-SUFFIX, psi.org, PROXY
 
   # q
+   # qbittorrent.org
+    - DOMAIN-SUFFIX, qbittorrent.org, PROXY
+
    # qiangwaikan.com
     - DOMAIN-SUFFIX, qiangwaikan.com, PROXY
 
@@ -2141,6 +2159,10 @@ rules:
     # - DOMAIN-SUFFIX, tw.yahoo.com, PROXY
     # - DOMAIN-SUFFIX, upcoming.yahoo.com, PROXY
     # - DOMAIN-SUFFIX, video.yahoo.com, PROXY
+
+   # yourversion.com
+    - DOMAIN-SUFFIX, yourversion.com, PROXY
+    - DOMAIN-SUFFIX, yourversionapi.com, PROXY
 
    # youtube
     # - DOMAIN-SUFFIX, studio.youtube.com, PROXY
