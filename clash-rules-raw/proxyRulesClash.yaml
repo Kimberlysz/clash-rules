@@ -251,7 +251,6 @@ rules:
     - DOMAIN-SUFFIX, betterplan.cl, PROXY
 
    # bible
-    - DOMAIN-SUFFIX, youversion.com, PROXY
     - DOMAIN-SUFFIX, bible.com, PROXY
     - DOMAIN-SUFFIX, app.link, PROXY
 
@@ -2160,9 +2159,9 @@ rules:
     # - DOMAIN-SUFFIX, upcoming.yahoo.com, PROXY
     # - DOMAIN-SUFFIX, video.yahoo.com, PROXY
 
-   # yourversion.com
-    - DOMAIN-SUFFIX, yourversion.com, PROXY
-    - DOMAIN-SUFFIX, yourversionapi.com, PROXY
+   # youversion.com
+    - DOMAIN-SUFFIX, youversion.com, PROXY
+    - DOMAIN-SUFFIX, youversionapi.com, PROXY
 
    # youtube
     # - DOMAIN-SUFFIX, studio.youtube.com, PROXY
