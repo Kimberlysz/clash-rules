@@ -147,6 +147,9 @@ rules:
    # alchemer.com
     - DOMAIN-SUFFIX, alchemer.com, PROXY
 
+   # allsetlearning.com (revised other regions)
+    - DOMAIN-SUFFIX, allsetlearning.com, PROXY
+
    # alpineschools.org
     - DOMAIN-SUFFIX, alpineschools.org, PROXY
 
