@@ -1283,7 +1283,7 @@ payload:
     - '+.nelnet.com'
 
    # netflix
-    # - USER-AGENT, Argo*'
+    # - '+.Argo*'
 
     # - '+.dualstack.apiproxy-'
     # - '+.dualstack.ichnaea-web-'
@@ -1856,7 +1856,7 @@ payload:
     - '+.tiktokcdn-eu.com'
     - '+.tokopediax.com'
 
-    # - USER-AGENT, TikTok*'
+    # - '+.TikTok*'
 
    # tiktokglobalshop.com
     - '+.tiktokglobalshop.com'
@@ -2133,10 +2133,10 @@ payload:
 
     # - '+.yt3.ggpht.com'
     # - 'yt3.ggpht.com'
-    # - USER-AGENT, com.google.ios.youtube*'
-    # - USER-AGENT, com.google.ios.youtubemusic*'
-    # - USER-AGENT, YouTube*'
-    # - USER-AGENT, YouTubeMusic*'
+    # - '+.com.google.ios.youtube*'
+    # - '+.com.google.ios.youtubemusic*'
+    # - '+.YouTube*'
+    # - '+.YouTubeMusic*'
 
    # yts.mx (test 2024-09-14)
     - '+.yts.mx'
