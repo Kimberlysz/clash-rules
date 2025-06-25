@@ -509,6 +509,9 @@ rules:
     - DOMAIN-SUFFIX, curtin.edu.au, PROXY
     - DOMAIN-SUFFIX, pcdn.co, PROXY
 
+   # cutout.pro
+    - DOMAIN-SUFFIX, cutout.pro, PROXY
+
    # cvs
     - DOMAIN-SUFFIX, cvs.com, PROXY
 
@@ -681,6 +684,9 @@ rules:
 
    # fosshub
     - DOMAIN-SUFFIX, download.fosshub.com, PROXY
+
+   # fotor.com
+    - DOMAIN-SUFFIX, fotor.com, PROXY
 
    # freedesktop.timedate1
     - DOMAIN-SUFFIX, org.freedesktop.timedate1, PROXY
@@ -902,9 +908,7 @@ rules:
    # hashrate
     - DOMAIN-SUFFIX, hashrate.to, PROXY
 
-   # hbomax (test)
-    # keep until: 2025-09-01
-
+   # hbomax (revised other regions)
     - DOMAIN-SUFFIX, h264.io, PROXY
     - DOMAIN-SUFFIX, prd.api.max.com, PROXY
     - DOMAIN-SUFFIX, warnermediacdn.com, PROXY
@@ -937,6 +941,9 @@ rules:
 
    # homegoods.com
     - DOMAIN-SUFFIX, homegoods.com, PROXY
+
+   # homer.sii.cl (revised other regions)
+    - DOMAIN-SUFFIX, homer.sii.cl, PROXY
 
    # hostinger
     - DOMAIN-SUFFIX, hostinger.com, PROXY
@@ -1005,6 +1012,9 @@ rules:
    # interactivebrokers.com.hk
     - DOMAIN-SUFFIX, interactivebrokers.com.hk, PROXY
 
+   # intermixonline.com
+    - DOMAIN-SUFFIX, intermixonline.com, PROXY
+
    # intuit.com
     - DOMAIN-SUFFIX, intuit.com, PROXY
 
@@ -1047,8 +1057,8 @@ rules:
 
     # - DOMAIN-SUFFIX, jkforum.net, PROXY
     # - DOMAIN-SUFFIX, mymypic.net, PROXY
-    # # - DOMAIN-SUFFIX, mymyads.net, PROXY
-    # # - DOMAIN-SUFFIX, mymyuc.net, PROXY
+    # - DOMAIN-SUFFIX, mymyads.net, PROXY
+    # - DOMAIN-SUFFIX, mymyuc.net, PROXY
 
    # jordandistrict.org
     - DOMAIN-SUFFIX, jordandistrict.org, PROXY
@@ -1075,12 +1085,18 @@ rules:
 
     - DOMAIN, cdn-useast1.kapwing.com, PROXY
 
+   # kaze.ai
+    - DOMAIN-SUFFIX, kaze.ai, PROXY
+
    # keatinggroup.com
     - DOMAIN-SUFFIX, keatinggroup.com, PROXY
 
    # keepsolid
     - DOMAIN-SUFFIX, keepsolid.com, PROXY
     - DOMAIN, sentry.keepsolid.com, PROXY
+
+   # klingai.com (revised other regions)
+    - DOMAIN-SUFFIX, klingai.com, PROXY
 
    # kevinwilsonconnection.org
     - DOMAIN-SUFFIX, kevinwilsonconnection.org, PROXY
@@ -1404,6 +1420,9 @@ rules:
    # oldmapsonline.org (revised other regions)
     - DOMAIN-SUFFIX, oldmapsonline.org, PROXY
 
+   # olx.co.id
+    - DOMAIN-SUFFIX, olx.co.id, PROXY
+
    # omny.fm
     - DOMAIN-SUFFIX, omny.fm, PROXY
 
@@ -1427,6 +1446,9 @@ rules:
 
    # openai
     - DOMAIN, tcr9i.chat.openai.com, PROXY
+
+   # openart.ai
+    - DOMAIN-SUFFIX, openart.ai, PROXY
 
    # openinventionnetwork.com
     - DOMAIN-SUFFIX, openinventionnetwork.com, PROXY
@@ -1513,6 +1535,9 @@ rules:
 
    # philo.com
     - DOMAIN-SUFFIX, philo.com, PROXY
+
+   # picsart.com
+    - DOMAIN-SUFFIX, picsart.com, PROXY
 
    # pixeldrain.com
     - DOMAIN-SUFFIX, pixeldrain.com, PROXY
@@ -1821,6 +1846,9 @@ rules:
 
     - DOMAIN, media.tenor.com, PROXY
 
+   # theartofeducation.edu (revised other regions)
+    - DOMAIN-SUFFIX, theartofeducation.edu, PROXY
+
    # thedesk
     - DOMAIN-SUFFIX, thedesk.net, PROXY
 
@@ -2033,6 +2061,9 @@ rules:
 
    # vapezoo
     - DOMAIN-SUFFIX, vapezoo.com, PROXY
+
+   # veed.io
+    - DOMAIN-SUFFIX, veed.io, PROXY
 
    # veritaspress.com
     - DOMAIN-SUFFIX, veritaspress.com, PROXY

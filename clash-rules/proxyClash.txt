@@ -440,6 +440,9 @@ payload:
     - '+.curtin.edu.au'
     - '+.pcdn.co'
 
+   # cutout.pro
+    - '+.cutout.pro'
+
    # cvs
     - '+.cvs.com'
 
@@ -613,6 +616,9 @@ payload:
    # fosshub
     - '+.download.fosshub.com'
 
+   # fotor.com
+    - '+.fotor.com'
+
    # freedesktop.timedate1
     - '+.org.freedesktop.timedate1'
 
@@ -675,6 +681,9 @@ payload:
 
    # gob.cl
     - '+.gob.cl'
+    # - '+.donacionesley21440.gob.cl'
+    # - '+.dt.gob.cl'
+    # - '+.ine.gob.cl'
 
    # goddessdelivers
     - '+.goddessdelivers.com'
@@ -830,9 +839,7 @@ payload:
    # hashrate
     - '+.hashrate.to'
 
-   # hbomax (test)
-    # keep until: 2025-09-01
-
+   # hbomax (revised other regions)
     - '+.h264.io'
     - '+.prd.api.max.com'
     - '+.warnermediacdn.com'
@@ -865,6 +872,9 @@ payload:
 
    # homegoods.com
     - '+.homegoods.com'
+
+   # homer.sii.cl (revised other regions)
+    - '+.homer.sii.cl'
 
    # hostinger
     - '+.hostinger.com'
@@ -932,6 +942,9 @@ payload:
 
    # interactivebrokers.com.hk
     - '+.interactivebrokers.com.hk'
+
+   # intermixonline.com
+    - '+.intermixonline.com'
 
    # intuit.com
     - '+.intuit.com'
@@ -1003,12 +1016,18 @@ payload:
 
     - 'cdn-useast1.kapwing.com'
 
+   # kaze.ai
+    - '+.kaze.ai'
+
    # keatinggroup.com
     - '+.keatinggroup.com'
 
    # keepsolid
     - '+.keepsolid.com'
     - 'sentry.keepsolid.com'
+
+   # klingai.com (revised other regions)
+    - '+.klingai.com'
 
    # kevinwilsonconnection.org
     - '+.kevinwilsonconnection.org'
@@ -1264,7 +1283,7 @@ payload:
     - '+.nelnet.com'
 
    # netflix
-    # - '+.Argo*'
+    # - USER-AGENT, Argo*'
 
     # - '+.dualstack.apiproxy-'
     # - '+.dualstack.ichnaea-web-'
@@ -1332,6 +1351,9 @@ payload:
    # oldmapsonline.org (revised other regions)
     - '+.oldmapsonline.org'
 
+   # olx.co.id
+    - '+.olx.co.id'
+
    # omny.fm
     - '+.omny.fm'
 
@@ -1355,6 +1377,9 @@ payload:
 
    # openai
     - 'tcr9i.chat.openai.com'
+
+   # openart.ai
+    - '+.openart.ai'
 
    # openinventionnetwork.com
     - '+.openinventionnetwork.com'
@@ -1442,6 +1467,9 @@ payload:
    # philo.com
     - '+.philo.com'
 
+   # picsart.com
+    - '+.picsart.com'
+
    # pixeldrain.com
     - '+.pixeldrain.com'
 
@@ -1487,7 +1515,7 @@ payload:
     - '+.proshkola18.ru'
 
    # proxyium.com
-    - '+.proxyium.com'
+    - DOMAIN-SUFFIX'ium.com'
 
    # psi.org
     - '+.psi.org'
@@ -1749,6 +1777,9 @@ payload:
 
     - 'media.tenor.com'
 
+   # theartofeducation.edu (revised other regions)
+    - '+.theartofeducation.edu'
+
    # thedesk
     - '+.thedesk.net'
 
@@ -1825,7 +1856,7 @@ payload:
     - '+.tiktokcdn-eu.com'
     - '+.tokopediax.com'
 
-    # - '+.TikTok*'
+    # - USER-AGENT, TikTok*'
 
    # tiktokglobalshop.com
     - '+.tiktokglobalshop.com'
@@ -1961,6 +1992,9 @@ payload:
 
    # vapezoo
     - '+.vapezoo.com'
+
+   # veed.io
+    - '+.veed.io'
 
    # veritaspress.com
     - '+.veritaspress.com'
@@ -2099,10 +2133,10 @@ payload:
 
     # - '+.yt3.ggpht.com'
     # - 'yt3.ggpht.com'
-    # - '+.com.google.ios.youtube*'
-    # - '+.com.google.ios.youtubemusic*'
-    # - '+.YouTube*'
-    # - '+.YouTubeMusic*'
+    # - USER-AGENT, com.google.ios.youtube*'
+    # - USER-AGENT, com.google.ios.youtubemusic*'
+    # - USER-AGENT, YouTube*'
+    # - USER-AGENT, YouTubeMusic*'
 
    # yts.mx (test 2024-09-14)
     - '+.yts.mx'
