@@ -150,6 +150,9 @@ rules:
    # allsetlearning.com (revised other regions)
     - DOMAIN-SUFFIX, allsetlearning.com, PROXY
 
+   # aloyoga.com
+    - DOMAIN-SUFFIX, aloyoga.com, PROXY
+
    # alpineschools.org
     - DOMAIN-SUFFIX, alpineschools.org, PROXY
 
@@ -471,6 +474,10 @@ rules:
    # crockblock
     - DOMAIN-SUFFIX, crocoblock.com, PROXY
 
+   # crplay (revised other regions)
+    - DOMAIN-SUFFIX, crplay.tv, PROXY
+    - DOMAIN-SUFFIX, crplaytv.com, PROXY
+
    # crunchyroll (test)
     # keep until: 2025-09-01
 
@@ -656,6 +663,15 @@ rules:
    # fastly
     # AS54113 - Fastly, Inc.
 
+   # feiyu-tech.com (revised other regions)
+    - DOMAIN-SUFFIX, feiyu-tech.com, PROXY
+
+   # figshare.com
+    - DOMAIN-SUFFIX, figshare.com, PROXY
+
+   # findladders.com
+    - DOMAIN-SUFFIX, findladders.com, PROXY
+
    # firebase
     - DOMAIN, firebase-settings.crashlytics.com, PROXY
 
@@ -663,10 +679,7 @@ rules:
     - DOMAIN-SUFFIX, fiverr.com, PROXY
     - DOMAIN-SUFFIX, fiverrcdn.com, PROXY
 
-   # findladders.com
-    - DOMAIN-SUFFIX, findladders.com, PROXY
-
-   # flixtor (test - partial works)
+   # flixtor (revised other regions)
     - DOMAIN-SUFFIX, flixtor.nu, PROXY
     - DOMAIN-SUFFIX, flixtor.se, PROXY
     - DOMAIN-SUFFIX, flixtor.st, PROXY
@@ -727,6 +740,9 @@ rules:
     - DOMAIN, fs16.getcourse.ru, PROXY
     - DOMAIN, fs17.getcourse.ru, PROXY
     - DOMAIN, gcfs04.getcourse.ru, PROXY
+
+   # getliner.com
+    - DOMAIN-SUFFIX, getliner.com, PROXY
 
    # ghostlifestyle.com
     - DOMAIN-SUFFIX, ghostlifestyle.com, PROXY
@@ -894,6 +910,9 @@ rules:
 
    # gptstore.ai
     - DOMAIN-SUFFIX, gptstore.ai, PROXY
+
+   # groupme.com (revised other regions)
+    - DOMAIN-SUFFIX, groupme.com, PROXY
 
    # gtk.pw
     - DOMAIN-SUFFIX, gtk.pw, PROXY
@@ -1181,6 +1200,9 @@ rules:
 
    # lookah
     - DOMAIN-SUFFIX, lookah.com, PROXY
+
+   # lowclassic.com
+    - DOMAIN-SUFFIX, lowclassic.com, PROXY
 
    # luxor.tech
     - DOMAIN-SUFFIX, luxor.tech, PROXY
@@ -1873,6 +1895,9 @@ rules:
    # theplusaddons.com
     - DOMAIN-SUFFIX, theplusaddons.com, PROXY
 
+   # therow.com
+    - DOMAIN-SUFFIX, therow.com, PROXY
+
    # thesaurus.com
     - DOMAIN-SUFFIX, thesaurus.com, PROXY
 
@@ -2152,6 +2177,9 @@ rules:
     - DOMAIN-SUFFIX, xboxab.net, PROXY
     - DOMAIN-SUFFIX, xboxservice.com, PROXY
     - DOMAIN-SUFFIX, gamepass.com, PROXY
+
+   # xiaoyakankan.com
+    - DOMAIN-SUFFIX, xiaoyakankan.com, PROXY
 
   # y
    # yandex

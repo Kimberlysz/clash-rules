@@ -48,7 +48,7 @@
 
   # d
    # directenergy.com
-    ## - DOMAIN-SUFFIX, /* directenergy.com, /* PROXY # keywords: , /* direct
+    # - DOMAIN-SUFFIX, /* directenergy.com, /* PROXY # keywords: , /* direct
       # search "energy.com" to correct back the domain and change it to "directenergy.com"
 
   # p
@@ -58,7 +58,7 @@
     # .orange
 
    # proxyium.com
-    ## - DOMAIN-SUFFIX, /* proxyium.com, /* PROXY # keywords: , /* proxy
+    # - DOMAIN-SUFFIX, /* proxyium.com, /* PROXY # keywords: , /* proxy
       # search "ium.com" to correct back the domain and change it to "proxyium.com"
 
   # t
@@ -179,228 +179,33 @@ dns: # DNS server settings
   # This section is optional. When not present, the DNS server will be disabled.
 
  # dns fake-ip
-  # enable: true
-  # listen: 0.0.0.0:53
-  # ipv6: false # when false, response to AAAA questions will be empty
-
-  # These nameservers are used to resolve the DNS nameserver hostnames below.
-  # default-nameserver: # Specify IP addresses only
-    # - 233.5.5.5
-    # - 119.29.29.29
-
-  # Supports UDP, TCP, DoT, DoH, DoQ. You can specify the port to connect to.
-  # All DNS questions are sent directly to the nameserver, without proxies involved. Clash answers the DNS question with the first result gathered.
-  # nameserver: # DNS 主要域名配置
-    # - 119.29.29.29
-    # - 233.5.5.5
-    # - 8.8.8.8
-
-  # enhanced-mode: fake-ip
-  # fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
-  # fake-ip-filter-mode: blacklist
-  # use-hosts: true # lookup hosts and return IP record
-
-  # fake-ip-filter: 
-  # # Hostnames in this list will not be resolved with fake IPs, i.e. questions to these domain names will always be answered with their real IP addresses
-  # # fakeip 过滤，以下地址不会下发 fakeip 映射用于连接
-   # # - "+.* " // return back to redir-host mode
-    # - '*.lan' # - '*.lan'
-    # - '*.linksys.com'
-    # - '*.linksyssmartwifi.com'
-   # # aliyun
-    # - '+.aliyun.com'
-    # - '*.aliyun.com'
-   # # Apple
-    # - 'swscan.apple.com'
-    # - 'mesu.apple.com'
-    # - 'swquery.apple.com'
-    # - 'swdownload.apple.com'
-    # - 'swcdn.apple.com'
-    # - 'swdist.apple.com'
-   # # Game Service
-    # - '+.stun.*.*'
-    # - '+.stun.*.*.*'
-    # - '+.stun.*.*.*.*'
-    # - '+.stun.*.*.*.*.*'
-    # - '+.srv.nintendo.net'
-    # - '*.n.n.srv.nintendo.net'
-    # - '+.stun.playstation.net'
-    # - '+.battlenet.com.cn'
-    # - '+.wotgame.cn'
-    # - '+.wggames.cn'
-    # - '+.wowsgame.cn'
-    # - '+.wargaming.net'
-    # - '*.square-enix.com'
-    # - '*.finalfantasyxiv.com'
-    # - '*.ffxiv.com'
-    # - '*.ff14.sdo.com'
-    # - 'ff.dorado.sdo.com'
-   # # Google
-    # - 'lens.l.google.com'
-   # # Microsoft Service
-    # - '*.msftconnecttest.com'
-    # - '*.msftncsi.com'
-    # - 'xbox.*.microsoft.com'
-    # - 'xbox.*.*.microsoft.com'
-    # - '+.xboxlive.com'
-   # # Music Service
-    # - '+.music.163.com'
-    # - '+.126.net'
-    # - 'musicapi.taihe.com'
-    # - 'music.taihe.com'
-    # - 'songsearch.kugou.com'
-    # - 'trackercdn.kugou.com'
-    # - '*.kuwo.cn'
-    # - 'api-jooxtt.sanook.com'
-    # - 'api.joox.com'
-    # - 'joox.com'
-    # - '+.y.qq.com'
-    # - '+.music.tc.qq.com'
-    # - 'aqqmusic.tc.qq.com'
-    # - '+.stream.qqmusic.qq.com'
-    # - '+.xiami.com'
-    # - '+.music.migu.cn'
-   # # NTP Service
-    # - 'time.*.com'
-    # - 'time.*.gov'
-    # - 'time.*.edu.cn'
-    # - 'time.*.apple.com'
-    # - 'time1.*.com'
-    # - 'time2.*.com'
-    # - 'time3.*.com'
-    # - 'time4.*.com'
-    # - 'time5.*.com'
-    # - 'time6.*.com'
-    # - 'time7.*.com'
-    # - 'ntp.*.com'
-    # - 'ntp1.*.com'
-    # - 'ntp2.*.com'
-    # - 'ntp3.*.com'
-    # - 'ntp4.*.com'
-    # - 'ntp5.*.com'
-    # - 'ntp6.*.com'
-    # - 'ntp7.*.com'
-    # - '*.time.edu.cn'
-    # - '*.ntp.org.cn'
-    # - '+.pool.ntp.org'
-    # - 'time1.cloud.tencent.com'
-   # # Other
-    # - 'localhost.ptlogin2.qq.com' # - localhost.ptlogin2.qq.com
-    # - 'localhost.sec.qq.com'
-    # - 'proxy.golang.org'
-    # - '+.qq.com'
-    # - '+.baidu.com'
-    # - '+.163.com'
-    # - '+.126.net'
-    # - '+.taobao.com'
-    # - '+.jd.com'
-    # - '+.tmall.com'
-    # - '*.mcdn.bilivideo.cn'
-    # - '+.nvidia.com'
-    # - '+.nvidia.cn'
-    # - '+.nvgs.nvidia.com'
-    # - '+.nvgs.nvidia.cn'
-    # - 'shark007.net'
-   # # xbox
-    # - 'xncsi.xboxlive.com'
-    # - 'xncsi.xboxlive.cn'
-    # # - '*.msftconnecttest.com'
-    # # - '*.msftncsi.com'
-    # - 'xbox.ipv6.microsoft.com'
-    # - 'x1ds.xboxlive.com'
-
- # dns redir-host
   enable: true
-  # cache-algorithm: arc
-  # prefer-h3: false # 开启 DoH 支持 HTTP/3，将并发尝试
-  use-hosts: true # lookup hosts and return IP record
-  # use-system-hosts: true
-  # respect-rules: false
   listen: 0.0.0.0:53
   ipv6: false # when false, response to AAAA questions will be empty
 
-  # default-nameserver: / fallback: / nameserver: / nameserver-policy: / proxy-server-nameserver:
-  default-nameserver: # These nameservers are used to resolve the DNS nameserver hostnames below.
+  # These nameservers are used to resolve the DNS nameserver hostnames below.
+  default-nameserver: # Specify IP addresses only
     - 233.5.5.5
     - 119.29.29.29
-    - 8.8.8.8
-
-  enhanced-mode: redir-host
-
-  # nameserver-policy: # 指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询
-    # '+.arpa': '10.0.0.1'
-    # 'rule-set:cn':
-      # - https://doh.pub/dns-query
-      # - https://dns.alidns.com/dns-query
-    # 'www.baidu.com': '114.114.114.114'
-    # '+.internal.crop.com': '10.0.0.1'
-    # "+.steampowered.com": 
-      # - "1.0.0.1"
-    # "geosite:cn":
-      # - 233.5.5.5
-      # - 119.29.29.29
-    # "geosite:cn,private,apple":
-      # - https://doh.pub/dns-query
-      # - https://dns.alidns.com/dns-query
-    # "geosite:category-ads-all": rcode://success
-    # "www.baidu.com,+.google.cn": [223.5.5.5, https://dns.alidns.com/dns-query]
-    # "rule-set:global,dns": 8.8.8.8  # rule-set:global，dns 为 rule-providers 中的名为 global 和 dns 规则订阅，且 behavior 必须为 domain/classical，当为 classical 时仅会生效域名类规则
 
   # Supports UDP, TCP, DoT, DoH, DoQ. You can specify the port to connect to.
   # All DNS questions are sent directly to the nameserver, without proxies involved. Clash answers the DNS question with the first result gathered.
   nameserver: # DNS 主要域名配置
     - 119.29.29.29
     - 233.5.5.5
-    - 8.8.8.8
-    # - 8.8.8.8
-    # - 114.114.114.114
-    # - 180.76.76.76
-    # - https://dns.alidns.com/dns-query
-    # - https://doh.pub/dns-query
-    # - tls://1.12.12.12:853
-    # - tls://223.5.5.5:853
 
-  fallback:
+
+
+
+  # <!-------------------------
+  # import dns redir-host settings
+  fallback: 
     # When `fallback` is present, the DNS server will send concurrent requests to the servers in this section along with servers in `nameservers`.
     # The answers from fallback servers are used when the GEOIP country is not `CN`.
     # 后备域名解析服务器，一般情况下使用境外 DNS, 保证结果可信，配置 fallback后默认启用 fallback-filter,geoip-code为 cn
 
-    # - '8.8.8.8#en0' # 兼容指定 DNS 出口网卡
-    # - 'tcp://1.1.1.1#ProxyGroupName' # 指定 DNS 过代理查询，ProxyGroupName 为策略组名或节点名，过代理配置优先于配置出口网卡，当找不到策略组或节点名则设置为出口网卡 # - 'tcp://1.1.1.1#en0'
-    # - 8.8.8.8 # default value
-    # - 9.9.9.11
-    # - 114.114.114.114 # default value
-    # - 149.112.112.11
-    # - dhcp://en0 # dns from dhcp
-    # - https://[2001:4860:4860::64]/dns-query
-    # - https://[2001:4860:4860::6464]/dns-query
-    # - https://[2001:4860:4860::8844]/dns-query
-    # - https://[2001:4860:4860::8888]/dns-query
-    # - https://[2606:4700:4700::1001]/dns-query
-    # - https://[2606:4700:4700::1111]/dns-query
-    # - https://1.0.0.1/dns-query # DNS over HTTPS, DoH
-    # - https://1.1.1.1/dns-query
-    # - https://dns.alidns.com/dns-query#h3=true # 强制 HTTP/3，与 perfer-h3 无关，强制开启 DoH 的 HTTP/3 支持，若不支持将无法使用
-    # - https://dns.cloudflare.com/dns-query
-    # - https://dns.csaonline.de/dns-query
-    # - https://dns.google/dns-query
-    # - https://dns11.quad9.net/dns-query
-    # - https://doh.dns.sb/dns-query
-    # - https://doh.opendns.com/dns-query
-    # - https://doh.pub/dns-query
-    # - https://mozilla.cloudflare-dns.com/dns-query#DNS&h3=true # 指定策略组和使用 HTTP/3
-    # - quic://dns.adguard.com:784 # DNS over QUIC
-    # - tcp://1.1.1.1
-    # - tcp://208.67.222.222:443
-    # - tls://1.1.1.1
-    # - tls://8.8.4.4
-    # - tls://223.5.5.5 # DNS over TLS
-    # - tls://223.5.5.5:853 # DNS over TLS
-    # - tls://dns.google
-    # - tls://dns.rubyfish.cn:853 # DNS over TLS
-    # - tls://jp01.dns4me.net
-    # - tls://unfiltered.adguard-dns.com
-
+    # dns example (test)
+      # robert H has problem with his work place network
     - https://dns.csaonline.de/dns-query
     - https://dns.google/dns-query
     - https://public.dns.iij.jp/dns-query
@@ -413,26 +218,22 @@ dns: # DNS server settings
     - https://doh.pub/dns-query
     - https://223.5.5.5/dns-query
     - 1.0.0.1
-    - 119.29.29.29
-    - 233.5.5.5
+    # - 119.29.29.29
+    # - 233.5.5.5
     - tls://223.5.5.5:853
 
-  proxy-server-nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-    - tls://223.5.5.5:853
-  direct-nameserver:
-    - system
-  direct-nameserver-follow-policy: false
-
-  fallback-filter: 
+  # import dns redir-host settings
+  fallback-filter:
     # If IP addresses resolved with servers in `nameservers` are in the specified subnets below, they are considered invalid and results from `fallback` servers are used instead.
     # 后备域名解析服务器筛选，满足条件的将使用 fallback结果或只使用 fallback解析
 
     geoip: true # 是否启用 geoip 判断
       # `nameserver` is used to resolve IP address: 
-        # - `fallback-filter.geoip` is true && 'fallback-filter.geoip-code' is CN 
+        # - `fallback-filter.geoip` is true && 'fallback-filter.geoip-code' is CN
         # - `fallback-filter.geoip` is false && 'fallback-filter.ipcidr' is not matched
+
+        # 当 `fallback-filter.geoip` 为 true 且 IP 地址的 GEOIP 为 `CN` 时, 将使用 `nameservers` 服务器解析的 IP 地址.
+        # 当 `fallback-filter.geoip` 为 false, 且不匹配 `fallback-filter.ipcidr`, 将使用 `nameservers` 服务器解析的 IP 地址.
 
       # `fallback` is used to resolve IP address: 
         # - `fallback-filter.geoip` is false && 'fallback-filter.ipcidr' is matched
@@ -445,17 +246,17 @@ dns: # DNS server settings
       # geoip-code 配置的国家的结果会直接采用，否则将采用 fallback结果
       # 即，当 nameserver 域名的 IP 查询 geoip 库为 CN 时，不使用 fallback 中的 DNS 查询结果
 
-    geosite:
+    # geosite:
       # 可选值为对于的 geosite 内包含的集合
       # geosite 列表的内容被视为已污染，匹配到 geosite 的域名，将只使用 fallback解析，不去使用 nameserver
-      - gfw
+      # - gfw
 
     ipcidr: # 如果不匹配 ipcidr 则使用 nameservers 中的结果
       # 书写内容为 IP/掩码
       # 这些网段的结果会被视为污染，nameserver解析出这些结果时将会采用 fallback的解析结果
       - 240.0.0.0/4
 
-    domain: 
+    domain:
       # 这些网段的结果会被视为污染，nameserver解析出这些结果时将会采用 fallback的解析结果
       - '+.google.com'
       - '+.facebook.com'
@@ -489,13 +290,509 @@ dns: # DNS server settings
 
       # proxy
       - '+.lookah.com'
-      - '+.mgmplus.com'
       - '+.renzhe.cloud'
-      - '+.starz.com'
+  # ------------------------->
+
+
+
+
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
+  # fake-ip-filter-mode: blacklist
+  use-hosts: true # lookup hosts and return IP record
+
+  fake-ip-filter: 
+  # Hostnames in this list will not be resolved with fake IPs, i.e. questions to these domain names will always be answered with their real IP addresses
+  # fakeip 过滤，以下地址不会下发 fakeip 映射用于连接
+    # adguard
+    - 'adguardteam.github.io'
+    - 'adrules.top'
+    - 'anti-ad.net'
+    - 'local.adguard.org'
+    - 'static.adtidy.org'
+    # apple software update service
+    - 'mesu.apple.com'
+    - 'swcdn.apple.com'
+    - 'swdist.apple.com'
+    - 'swdownload.apple.com'
+    - 'swquery.apple.com'
+    - 'swscan.apple.com'
+    # bilibili
+    - '*.mcdn.bilivideo.cn'
+    # china merchants bank 招商银行
+    - '+.cmbchina.com'
+    - '+.cmbimg.com'
+    # disneyplus
+    - '+.media.dssott.com'
+    # finalfantasy xiv worldwide server & cn server
+    - '*.ff14.sdo.com'
+    - '*.ffxiv.com'
+    - '*.finalfantasyxiv.com'
+    - '*.square-enix.com'
+    - 'ff.dorado.sdo.com'
+    # game service
+    - '*.*.xboxlive.com'
+    - '*.n.n.srv.nintendo.net'
+    - '+.battle.net'
+    - '+.battlenet.com.cn'
+    - '+.cdn.nintendo.net'
+    - '+.srv.nintendo.net'
+    - '+.steamcontent.com'
+    - '+.stun.playstation.net'
+    - '+.wargaming.net'
+    - '+.wggames.cn'
+    - '+.wotgame.cn'
+    - '+.wowsgame.cn'
+    - 'xbox.*.*.microsoft.com'
+    - 'xbox.*.microsoft.com'
+    - 'xnotify.xboxlive.com'
+    # golang
+    - 'proxy.golang.org'
+    # google
+    - 'lens.l.google.com'
+    - 'na.b.g-tun.com'
+    - 'stun.l.google.com'
+    # lan
+    - '*.direct'
+    - '*.example'
+    - '*.home.arpa'
+    - '*.invalid'
+    - '*.lan'
+    - '*.local'
+    - '*.localdomain'
+    - '*.localhost'
+    - '*.test'
+    # league of legends gaming voice comm LOL语音
+    - '+.gcloudcs.com'
+    - '+.gcloudsdk.com'
+    # music 音乐
+    - '*.126.net'
+    - '*.kuwo.cn'
+    - '*.music.migu.cn'
+    - '*.xiami.com'
+    - '+.music.163.com'
+    - '+.y.qq.com'
+    - 'amobile.music.tc.qq.com'
+    - 'api-jooxtt.sanook.com'
+    - 'api.joox.com'
+    - 'aqqmusic.tc.qq.com'
+    - 'dl.stream.qqmusic.qq.com'
+    - 'isure.stream.qqmusic.qq.com'
+    - 'joox.com'
+    - 'mobileoc.music.tc.qq.com'
+    - 'music.migu.cn'
+    - 'music.taihe.com'
+    - 'musicapi.taihe.com'
+    - 'songsearch.kugou.com'
+    - 'streamoc.music.tc.qq.com'
+    - 'trackercdn.kugou.com'
+    # netflix
+    - '+.nflxvideo.net'
+    # ntp service
+    - '*.ntp.org.cn'
+    - '*.time.edu.cn'
+    - '+.pool.ntp.org'
+    - 'ntp.*.com'
+    - 'ntp1.*.com'
+    - 'ntp2.*.com'
+    - 'ntp3.*.com'
+    - 'ntp4.*.com'
+    - 'ntp5.*.com'
+    - 'ntp6.*.com'
+    - 'ntp7.*.com'
+    - 'time-ios.apple.com'
+    - 'time.*.apple.com'
+    - 'time.*.com'
+    - 'time.*.edu.cn'
+    - 'time.*.gov'
+    - 'time1.*.com'
+    - 'time1.cloud.tencent.com'
+    - 'time2.*.com'
+    - 'time3.*.com'
+    - 'time4.*.com'
+    - 'time5.*.com'
+    - 'time6.*.com'
+    - 'time7.*.com'
+    # oray remote control 向日葵远程控制
+    - '+.oray.com'
+    - '+.orayimg.com'
+    # router
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - '*.router.asus.com'
+    - 'heartbeat.belkin.com'
+    # shark007 codecs
+    - 'shark007.net'
+    # stun (Session Traversal Utilities for NAT)
+      # In networking, STUN (Session Traversal Utilities for NAT) is a protocol that helps devices behind Network Address Translators (NATs) discover their public IP address and the type of NAT they are behind. This information is crucial for establishing direct peer-to-peer connections in applications like VoIP, video conferencing, and online gaming, especially when firewalls are involved. 
+    - '+.stun.*.*.*.*.*'
+    - '+.stun.*.*.*.*'
+    - '+.stun.*.*.*'
+    - '+.stun.*.*'
+    - 'stun.*.*.*'
+    - 'stun.*.*'
+    # t-mobile and ultra mobile wifi calling
+    - '+.3gppnetwork.org'
+    # tencent login 腾讯登录
+    - 'localhost.*.weixin.qq.com'
+    - 'localhost.ptlogin2.qq.com'
+    - 'localhost.sec.qq.com'
+    # uu plugin
+    - '+.uu.163.com'
+    - 'ps.res.netease.com'
+    # windows local connection test windows 本地连接检测
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    # xiaomi
+    # mijia cloud
+    - '+.market.xiaomi.com'
+    # xunlei 迅雷
+    - '+.n0808.com'
+    - '+.sandai.net'
+    # league of legends (test)
+    - '+.lol.qq.com'
+
+
+
+
+  # <!-------------------------
+  #  # - "+.* " // return back to redir-host mode
+  #   - '*.lan' # - '*.lan'
+  #   - '*.linksys.com'
+  #   - '*.linksyssmartwifi.com'
+  #  # aliyun
+  #   - '+.aliyun.com'
+  #   - '*.aliyun.com'
+  #  # Apple
+  #   - 'mesu.apple.com'
+  #   - 'swcdn.apple.com'
+  #   - 'swdist.apple.com'
+  #   - 'swdownload.apple.com'
+  #   - 'swquery.apple.com'
+  #   - 'swscan.apple.com'
+  #  # Game Service
+  #   - '*.ff14.sdo.com'
+  #   - '*.ffxiv.com'
+  #   - '*.finalfantasyxiv.com'
+  #   - '*.n.n.srv.nintendo.net'
+  #   - '*.square-enix.com'
+  #   - '+.battlenet.com.cn'
+  #   - '+.srv.nintendo.net'
+  #   - '+.stun.*.*.*.*.*'
+  #   - '+.stun.*.*.*.*'
+  #   - '+.stun.*.*.*'
+  #   - '+.stun.*.*'
+  #   - '+.stun.playstation.net'
+  #   - '+.wargaming.net'
+  #   - '+.wggames.cn'
+  #   - '+.wotgame.cn'
+  #   - '+.wowsgame.cn'
+  #   - 'ff.dorado.sdo.com'
+  #  # Google
+  #   - 'lens.l.google.com'
+  #  # Microsoft Service
+  #   - '*.msftconnecttest.com'
+  #   - '*.msftncsi.com'
+  #   - '+.xboxlive.com'
+  #   - 'xbox.*.*.microsoft.com'
+  #   - 'xbox.*.microsoft.com'
+  #  # Music Service
+  #   - '*.kuwo.cn'
+  #   - '+.126.net'
+  #   - '+.music.163.com'
+  #   - '+.music.migu.cn'
+  #   - '+.music.tc.qq.com'
+  #   - '+.stream.qqmusic.qq.com'
+  #   - '+.xiami.com'
+  #   - '+.y.qq.com'
+  #   - 'api-jooxtt.sanook.com'
+  #   - 'api.joox.com'
+  #   - 'aqqmusic.tc.qq.com'
+  #   - 'joox.com'
+  #   - 'music.taihe.com'
+  #   - 'musicapi.taihe.com'
+  #   - 'songsearch.kugou.com'
+  #   - 'trackercdn.kugou.com'
+  #  # NTP Service
+  #   - '*.ntp.org.cn'
+  #   - '*.time.edu.cn'
+  #   - '+.pool.ntp.org'
+  #   - 'ntp.*.com'
+  #   - 'ntp1.*.com'
+  #   - 'ntp2.*.com'
+  #   - 'ntp3.*.com'
+  #   - 'ntp4.*.com'
+  #   - 'ntp5.*.com'
+  #   - 'ntp6.*.com'
+  #   - 'ntp7.*.com'
+  #   - 'time.*.apple.com'
+  #   - 'time.*.com'
+  #   - 'time.*.edu.cn'
+  #   - 'time.*.gov'
+  #   - 'time1.*.com'
+  #   - 'time1.cloud.tencent.com'
+  #   - 'time2.*.com'
+  #   - 'time3.*.com'
+  #   - 'time4.*.com'
+  #   - 'time5.*.com'
+  #   - 'time6.*.com'
+  #   - 'time7.*.com'
+  #  # Other
+  #   - '*.mcdn.bilivideo.cn'
+  #   - '+.163.com'
+  #   - '+.baidu.com'
+  #   - '+.jd.com'
+  #   - '+.nvgs.nvidia.cn'
+  #   - '+.nvgs.nvidia.com'
+  #   - '+.nvidia.cn'
+  #   - '+.nvidia.com'
+  #   - '+.qq.com'
+  #   - '+.taobao.com'
+  #   - '+.tmall.com'
+  #   - 'localhost.ptlogin2.qq.com' # - localhost.ptlogin2.qq.com
+  #   - 'localhost.sec.qq.com'
+  #   - 'proxy.golang.org'
+  #   - 'shark007.net'
+  #  # xbox
+  #   - 'x1ds.xboxlive.com'
+  #   - 'xbox.ipv6.microsoft.com'
+  #   - 'xncsi.xboxlive.cn'
+  #   - 'xncsi.xboxlive.com'
+  #   # - '*.msftconnecttest.com'
+  #   # - '*.msftncsi.com'
+  # ------------------------->
+
+
+
+  # <!-------------------------
+    # domains not included
+    # - '*.aliyun.com'
+    # - '+.aliyun.com'
+    # - '+.baidu.com'
+    # - '+.jd.com'
+    # - '+.music.163.com'
+    # - '+.music.migu.cn'
+    # - '+.music.tc.qq.com'
+    # - '+.nvgs.nvidia.cn'
+    # - '+.nvgs.nvidia.com'
+    # - '+.nvidia.cn'
+    # - '+.nvidia.com'
+    # - '+.qq.com'
+    # - '+.stream.qqmusic.qq.com'
+    # - '+.taobao.com'
+    # - '+.tmall.com'
+    # - '+.xboxlive.com'
+    # - '+.xiami.com'
+    # - '+.y.qq.com'
+    # - 'x1ds.xboxlive.com'
+    # - 'xbox.ipv6.microsoft.com'
+    # - 'xncsi.xboxlive.cn'
+    # - 'xncsi.xboxlive.com'
+    # - '*.msftconnecttest.com'
+  # ------------------------->
+
+
+
+ # dns redir-host
+  # enable: true
+  # cache-algorithm: arc
+  # prefer-h3: false # 开启 DoH 支持 HTTP/3，将并发尝试
+  # use-hosts: true # lookup hosts and return IP record
+  # use-system-hosts: true
+  # respect-rules: false
+  # listen: 0.0.0.0:53
+  # ipv6: false # when false, response to AAAA questions will be empty
+
+  # default-nameserver: / fallback: / nameserver: / nameserver-policy: / proxy-server-nameserver:
+  # default-nameserver: # These nameservers are used to resolve the DNS nameserver hostnames below.
+    # - 233.5.5.5
+    # - 119.29.29.29
+    # - 8.8.8.8
+
+  # enhanced-mode: redir-host
+
+  # nameserver-policy: # 指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询
+    # '+.arpa': '10.0.0.1'
+    # 'rule-set:cn':
+      # - https://doh.pub/dns-query
+      # - https://dns.alidns.com/dns-query
+    # 'www.baidu.com': '114.114.114.114'
+    # '+.internal.crop.com': '10.0.0.1'
+    # "+.steampowered.com": 
+      # - "1.0.0.1"
+    # "geosite:cn":
+      # - 233.5.5.5
+      # - 119.29.29.29
+    # "geosite:cn,private,apple":
+      # - https://doh.pub/dns-query
+      # - https://dns.alidns.com/dns-query
+    # "geosite:category-ads-all": rcode://success
+    # "www.baidu.com,+.google.cn": [223.5.5.5, https://dns.alidns.com/dns-query]
+    # "rule-set:global,dns": 8.8.8.8  # rule-set:global，dns 为 rule-providers 中的名为 global 和 dns 规则订阅，且 behavior 必须为 domain/classical，当为 classical 时仅会生效域名类规则
+
+  # Supports UDP, TCP, DoT, DoH, DoQ. You can specify the port to connect to.
+  # All DNS questions are sent directly to the nameserver, without proxies involved. Clash answers the DNS question with the first result gathered.
+  # nameserver: # DNS 主要域名配置
+    # - 119.29.29.29
+    # - 233.5.5.5
+    # - 8.8.8.8
+
+    # - 8.8.8.8
+    # - 114.114.114.114
+    # - 180.76.76.76
+    # - https://dns.alidns.com/dns-query
+    # - https://doh.pub/dns-query
+    # - tls://1.12.12.12:853
+    # - tls://223.5.5.5:853
+
+  # fallback:
+    # When `fallback` is present, the DNS server will send concurrent requests to the servers in this section along with servers in `nameservers`.
+    # The answers from fallback servers are used when the GEOIP country is not `CN`.
+    # 后备域名解析服务器，一般情况下使用境外 DNS, 保证结果可信，配置 fallback后默认启用 fallback-filter,geoip-code为 cn
+
+    # dns example (test)
+    # - https://dns.csaonline.de/dns-query
+    # - https://dns.google/dns-query
+    # - https://public.dns.iij.jp/dns-query
+    # - tls://dns.google
+    # - tls://jp01.dns4me.net
+    # - tls://unfiltered.adguard-dns.com
+    # - https://1.0.0.1/dns-query
+    # - tcp://208.67.222.222:443
+    # - https://dns.alidns.com/dns-query
+    # - https://doh.pub/dns-query
+    # - https://223.5.5.5/dns-query
+    # - 1.0.0.1
+    # - 119.29.29.29
+    # - 233.5.5.5
+    # - tls://223.5.5.5:853
+
+  # proxy-server-nameserver:
+    # - https://doh.pub/dns-query
+    # - https://dns.alidns.com/dns-query
+    # - tls://223.5.5.5:853
+  # direct-nameserver:
+    # - system
+  # direct-nameserver-follow-policy: false
+
+  # fallback-filter:
+    # If IP addresses resolved with servers in `nameservers` are in the specified subnets below, they are considered invalid and results from `fallback` servers are used instead.
+    # 后备域名解析服务器筛选，满足条件的将使用 fallback结果或只使用 fallback解析
+
+    # geoip: true # 是否启用 geoip 判断
+      # `nameserver` is used to resolve IP address: 
+        # - `fallback-filter.geoip` is true && 'fallback-filter.geoip-code' is CN
+        # - `fallback-filter.geoip` is false && 'fallback-filter.ipcidr' is not matched
+
+        # 当 `fallback-filter.geoip` 为 true 且 IP 地址的 GEOIP 为 `CN` 时, 将使用 `nameservers` 服务器解析的 IP 地址.
+        # 当 `fallback-filter.geoip` 为 false, 且不匹配 `fallback-filter.ipcidr`, 将使用 `nameservers` 服务器解析的 IP 地址.
+
+      # `fallback` is used to resolve IP address: 
+        # - `fallback-filter.geoip` is false && 'fallback-filter.ipcidr' is matched
+
+      # This is a countermeasure against DNS pollution attacks.
+
+    # geoip-code: CN 
+      # 可选值为 国家缩写，默认值为 CN
+      # 除了 geoip-code 配置的国家 IP, 其他的 IP 结果会被视为污染
+      # geoip-code 配置的国家的结果会直接采用，否则将采用 fallback结果
+      # 即，当 nameserver 域名的 IP 查询 geoip 库为 CN 时，不使用 fallback 中的 DNS 查询结果
+
+    # geosite:
+      # 可选值为对于的 geosite 内包含的集合
+      # geosite 列表的内容被视为已污染，匹配到 geosite 的域名，将只使用 fallback解析，不去使用 nameserver
+      # - gfw
+
+    # ipcidr: # 如果不匹配 ipcidr 则使用 nameservers 中的结果
+      # 书写内容为 IP/掩码
+      # 这些网段的结果会被视为污染，nameserver解析出这些结果时将会采用 fallback的解析结果
+      # - 240.0.0.0/4
+
+    # domain:
+      # 这些网段的结果会被视为污染，nameserver解析出这些结果时将会采用 fallback的解析结果
+      # - '+.google.com'
+      # - '+.facebook.com'
+      # - '+.youtube.com'
+ 
+      # linkedin
+      # - '+.linkedin.com'
+      # - '+.licdn.com'
+
+      # netflix
+      # - '+.netflix.com.edgesuite.net'
+      # - '+.fast.com'
+      # - '+.netflix.com'
+      # - '+.netflix.net'
+      # - '+.netflixdnstest0.com'
+      # - '+.netflixdnstest1.com'
+      # - '+.netflixdnstest2.com'
+      # - '+.netflixdnstest3.com'
+      # - '+.netflixdnstest4.com'
+      # - '+.netflixdnstest5.com'
+      # - '+.netflixdnstest6.com'
+      # - '+.netflixdnstest7.com'
+      # - '+.netflixdnstest8.com'
+      # - '+.netflixdnstest9.com'
+      # - '+.netflixdnstest10.com'
+      # - '+.nflxext.com'
+      # - '+.nflximg.com'
+      # - '+.nflximg.net'
+      # - '+.nflxso.net'
+      # - '+.nflxvideo.net'
+
+      # proxy
+      # - '+.lookah.com'
+      # - '+.renzhe.cloud'
+
+ # dns references
+  # fallback:
+    # - '8.8.8.8#en0' # 兼容指定 DNS 出口网卡
+    # - 'tcp://1.1.1.1#ProxyGroupName' # 指定 DNS 过代理查询，ProxyGroupName 为策略组名或节点名，过代理配置优先于配置出口网卡，当找不到策略组或节点名则设置为出口网卡 # - 'tcp://1.1.1.1#en0'
+    # - 1.0.0.1
+    # - 8.8.8.8 # default value
+    # - 9.9.9.11
+    # - 114.114.114.114 # default value
+    # - 119.29.29.29
+    # - 149.112.112.11
+    # - 233.5.5.5
+    # - dhcp://en0 # dns from dhcp
+    # - https://[2001:4860:4860::64]/dns-query
+    # - https://[2001:4860:4860::6464]/dns-query
+    # - https://[2001:4860:4860::8844]/dns-query
+    # - https://[2001:4860:4860::8888]/dns-query
+    # - https://[2606:4700:4700::1001]/dns-query
+    # - https://[2606:4700:4700::1111]/dns-query
+    # - https://1.0.0.1/dns-query
+    # - https://1.0.0.1/dns-query # DNS over HTTPS, DoH
+    # - https://1.1.1.1/dns-query
+    # - https://223.5.5.5/dns-query
+    # - https://dns.alidns.com/dns-query
+    # - https://dns.alidns.com/dns-query#h3=true # 强制 HTTP/3，与 perfer-h3 无关，强制开启 DoH 的 HTTP/3 支持，若不支持将无法使用
+    # - https://dns.cloudflare.com/dns-query
+    # - https://dns.csaonline.de/dns-query
+    # - https://dns.google/dns-query
+    # - https://dns11.quad9.net/dns-query
+    # - https://doh.dns.sb/dns-query
+    # - https://doh.opendns.com/dns-query
+    # - https://doh.pub/dns-query
+    # - https://mozilla.cloudflare-dns.com/dns-query#DNS&h3=true # 指定策略组和使用 HTTP/3
+    # - https://public.dns.iij.jp/dns-query
+    # - quic://dns.adguard.com:784 # DNS over QUIC
+    # - tcp://1.1.1.1
+    # - tcp://208.67.222.222:443
+    # - tls://1.1.1.1
+    # - tls://8.8.4.4
+    # - tls://223.5.5.5 # DNS over TLS
+    # - tls://223.5.5.5:853
+    # - tls://223.5.5.5:853 # DNS over TLS
+    # - tls://dns.google
+    # - tls://dns.rubyfish.cn:853 # DNS over TLS
+    # - tls://jp01.dns4me.net
+    # - tls://unfiltered.adguard-dns.com
 
 tun:
   enable: true
-  stack: system # gvisor, mixed
+  stack: gvisor # mixed, system
   # dns-hijack:
     # - 8.8.8.8:53
     # - tcp://8.8.8.8:53
@@ -540,6 +837,7 @@ find-process-mode: off
 # 可选： "chrome","firefox","safari","ios","random","none" options.
 # Utls is currently support TLS transport in TCP/grpc/WS/HTTP for VLESS/Vmess and trojan.
 # global-client-fingerprint: chrome
+global-client-fingerprint: random
 
 proxies:
   # cipher 支持：
@@ -685,7 +983,7 @@ proxies:
     tls: true
     udp: true
     flow: xtls-rprx-vision
-    client-fingerprint: chrome
+    # client-fingerprint: chrome
 
   - name: userAccount2
     type: vless
@@ -696,7 +994,7 @@ proxies:
     tls: true
     udp: true
     flow: xtls-rprx-vision
-    client-fingerprint: chrome
+    # client-fingerprint: chrome
 
   - name: userAccount3
     type: vless
@@ -707,7 +1005,7 @@ proxies:
     tls: true
     udp: true
     flow: xtls-rprx-vision
-    client-fingerprint: chrome
+    # client-fingerprint: chrome
 
   - name: userAccount4
     type: vless
@@ -718,7 +1016,7 @@ proxies:
     tls: true
     udp: true
     flow: xtls-rprx-vision
-    client-fingerprint: chrome
+    # client-fingerprint: chrome
 
   - name: userAccount5
     type: vless
@@ -729,7 +1027,7 @@ proxies:
     tls: true
     udp: true
     flow: xtls-rprx-vision
-    client-fingerprint: chrome
+    # client-fingerprint: chrome
 
   - name: userAccount6
     type: vless
@@ -740,7 +1038,7 @@ proxies:
     tls: true
     udp: true
     flow: xtls-rprx-vision
-    client-fingerprint: chrome
+    # client-fingerprint: chrome
 
   - name: userAccount7
     type: vless
@@ -751,7 +1049,7 @@ proxies:
     tls: true
     udp: true
     flow: xtls-rprx-vision
-    client-fingerprint: chrome
+    # client-fingerprint: chrome
 
   - name: userAccount8
     type: vless
@@ -762,7 +1060,7 @@ proxies:
     tls: true
     udp: true
     flow: xtls-rprx-vision
-    client-fingerprint: chrome
+    # client-fingerprint: chrome
 
   - name: userAccount9
     type: vless
@@ -773,7 +1071,7 @@ proxies:
     tls: true
     udp: true
     flow: xtls-rprx-vision
-    client-fingerprint: chrome
+    # client-fingerprint: chrome
 
 proxy-groups:
   - name: 🎯 General Mode (总模式)
@@ -4180,7 +4478,6 @@ rules:
     - DOMAIN, gog-cdn.akamaized.net, DIRECT
 
    # google
-   # google
     - DOMAIN-SUFFIX, google.cn, DIRECT
 
     # Others
@@ -4363,6 +4660,13 @@ rules:
     - DOMAIN, crl.pki.goog, DIRECT
     - DOMAIN, crls.pki.goog, DIRECT
     - DOMAIN, ocsp.pki.goog, DIRECT
+
+   # googlefcm (revised cn)
+    # - DOMAIN, alt7-mtalk.google.com, PROXY
+    # - DOMAIN, alt8-mtalk.google.com, PROXY
+    # - DOMAIN, mtalk-dev.google.com, PROXY
+    # - DOMAIN, mtalk-staging.google.com, PROXY
+    # - DOMAIN, mtalk4.google.com, PROXY
 
    # gucci
     - DOMAIN-SUFFIX, gucci.cn, DIRECT
@@ -5670,6 +5974,7 @@ rules:
     # - DOMAIN-SUFFIX, idqqimg.com, PROXY
     # - DOMAIN-SUFFIX, imqq.com, PROXY
     # - DOMAIN-SUFFIX, myapp.com, PROXY
+    # - DOMAIN-SUFFIX, qlivecdn.com, PROXY
     # - DOMAIN-SUFFIX, qlogo.cn, PROXY
     # - DOMAIN-SUFFIX, qpic.cn, PROXY
     # - DOMAIN-SUFFIX, qq.cn.com, PROXY
@@ -8047,23 +8352,25 @@ rules:
    # apple-update
     # https://support.apple.com/en-us/HT210060
     - DOMAIN-SUFFIX, appldnld.apple.com, PROXY
+    - DOMAIN-SUFFIX, configuration.apple.com, PROXY
+    - DOMAIN-SUFFIX, fcs-keys-pub-prod.cdn-apple.com, PROXY
+    - DOMAIN-SUFFIX, gdmf-ados.apple.com, PROXY
+    - DOMAIN-SUFFIX, gdmf.apple.com, PROXY
     - DOMAIN-SUFFIX, gg.apple.com, PROXY
-    - DOMAIN-SUFFIX, gnf-mdn.apple.com, PROXY
-    - DOMAIN-SUFFIX, gnf-mr.apple.com, PROXY
     - DOMAIN-SUFFIX, gs.apple.com, PROXY
+    - DOMAIN-SUFFIX, gsra.apple.com, PROXY
     - DOMAIN-SUFFIX, ig.apple.com, PROXY
     - DOMAIN-SUFFIX, mesu.apple.com, PROXY
-    - DOMAIN-SUFFIX, ns.itunes.apple.com, PROXY
     - DOMAIN-SUFFIX, oscdn.apple.com, PROXY
     - DOMAIN-SUFFIX, osrecovery.apple.com, PROXY
     - DOMAIN-SUFFIX, skl.apple.com, PROXY
     - DOMAIN-SUFFIX, swcdn.apple.com, PROXY
     - DOMAIN-SUFFIX, swdist.apple.com, PROXY
     - DOMAIN-SUFFIX, swdownload.apple.com, PROXY
-    - DOMAIN-SUFFIX, swpost.apple.com, PROXY
     - DOMAIN-SUFFIX, swscan.apple.com, PROXY
     - DOMAIN-SUFFIX, updates-http.cdn-apple.com, PROXY
     - DOMAIN-SUFFIX, updates.cdn-apple.com, PROXY
+    - DOMAIN-SUFFIX, wkms-public.apple.com, PROXY
     - DOMAIN-SUFFIX, xp.apple.com, PROXY
 
    # appledaily
@@ -11732,6 +12039,7 @@ rules:
     # - DOMAIN-SUFFIX, 4thworkshop.cn, PROXY
 
     # - DOMAIN-SUFFIX, fanmingming.com, PROXY # 范明明's Blog 蒙ICP备18004194号
+    # - DOMAIN-SUFFIX, zway.top, PROXY # longjuan's Blog 粤ICP备2020094784号-1
 
    # category-bourse-ir (revised ir)
     # Iranian stock exchange websites 
@@ -12766,6 +13074,9 @@ rules:
    # category-entertainment
     # This list contains services related to entertainment & games & music & podcasts & videos outside China mainland.
 
+    # include:category-games-!cn
+    # include:category-novel
+
     # include:abema
     # include:amc
     # include:anime
@@ -12777,8 +13088,6 @@ rules:
     # include:bangumi
     # include:boomerang
     # include:catchplay
-    # include:category-games
-    # include:category-novel
     # include:dailymotion
     # include:dandanzan
     # include:dazn
@@ -12828,6 +13137,7 @@ rules:
     # include:visualarts
     # include:viu
     # include:volmoe
+    # include:wallhaven
     # include:webnovel
     # include:wwe
     # include:youtube
@@ -12862,8 +13172,10 @@ rules:
 
    # category-entertainment-cn (revised cn)
     # Entertainment & Videos & Games & Music & Podcasts
+
+    # include:category-games-cn
+
     # include:3dm
-    # include:4399
     # include:acfun
     # include:acplay
     # include:ali213
@@ -12871,7 +13183,6 @@ rules:
     # include:bilibili
     # include:ciweimao
     # include:copymanga
-    # include:cowlevel
     # include:dedao
     # include:dmzj
     # include:douyu
@@ -12893,7 +13204,6 @@ rules:
     # include:lizhi
     # include:mfuns
     # include:miaopai
-    # include:mihoyo-cn
     # include:muwai
     # include:pptv
     # include:qimao
@@ -12901,38 +13211,20 @@ rules:
     # include:sakurafrp
     # include:sfacg
     # include:taomee
-    # include:tgbus
-    # include:tiancity
     # include:u17
-    # include:vgtime
-    # include:vrzwk
     # include:wasu
-    # include:xd
     # include:ximalaya
     # include:youku
     # include:zhanqi
-
-    # Enhance Gaming
-    # - DOMAIN-SUFFIX, heavenlywind.cc, PROXY
-    # - DOMAIN-SUFFIX, steampp.net, PROXY
 
     # Android Emulator
     # - DOMAIN-SUFFIX, lsplayer.com, PROXY
     # - DOMAIN-SUFFIX, yeshen.com, PROXY
 
-    # 九九互动 粤ICP备19068416号
-    # - DOMAIN-SUFFIX, forevernine.com, PROXY
-
-    # 沪ICP备18041304号-1
-    # - DOMAIN-SUFFIX, tgpro.top, PROXY
-    # - DOMAIN-SUFFIX, tgprocs.net, PROXY
-
     # B站空降助手 鲁ICP备2024098956号-1
     # - DOMAIN-SUFFIX, bsbsb.top, PROXY
 
-    # - DOMAIN-SUFFIX, ledu.com, PROXY
     # - DOMAIN-SUFFIX, pearvideo.com, PROXY
-    # - DOMAIN-SUFFIX, wo1wan.com, PROXY
 
    # category-finance
     # DONOT include:category-bank-cn
@@ -13601,11 +13893,13 @@ rules:
     - DOMAIN, edge.steam-dns.top.comcast.net, PROXY
 
    # category-games
+    # include:category-games-cn
+    # include:category-games-!cn
+
+   # category-games-!cn
     # include:2kgames
-    # include:bilibili-game
     # include:blizzard
     # include:bluearchive
-    # include:bluepoch-games
     # include:curseforge
     # include:cygames
     # include:ea
@@ -13613,11 +13907,10 @@ rules:
     # include:escapefromtarkov
     # include:garena
     # include:gog
+    # include:hoyoverse
     # include:illusion
     # include:itchio
-    # include:kurogames
     # include:lowiro
-    # include:mihoyo
     # include:nexon
     # include:nikke
     # include:nintendo
@@ -13634,7 +13927,6 @@ rules:
     # include:steam
     # include:steamunlocked
     # include:supercell
-    # include:tencent-games
     # include:ubisoft
     # include:xbox
     # include:ynoproject
@@ -13657,6 +13949,35 @@ rules:
     - DOMAIN-SUFFIX, quiltmc.org, PROXY
     - DOMAIN-SUFFIX, speedrun.com, PROXY
     - DOMAIN-SUFFIX, steamdb.info, PROXY
+
+   # category-games-cn
+    # include:4399
+    # include:bilibili-game
+    # include:bluepoch-games
+    # include:cowlevel
+    # include:kurogames
+    # include:mihoyo-cn
+    # include:tencent-games
+    # include:tgbus
+    # include:tiancity
+    # include:vgtime
+    # include:vrzwk
+    # include:xd
+
+    # 《异象回声》游戏官网 沪ICP备2023010411号-1
+    # - DOMAIN-SUFFIX, astral-vector.com, PROXY
+    # 九九互动 粤ICP备19068416号
+    # - DOMAIN-SUFFIX, forevernine.com, PROXY
+    # 乐都网 浙ICP备2024091002号-2
+    # - DOMAIN-SUFFIX, ledu.com, PROXY
+    # Enhance Gaming
+    # - DOMAIN-SUFFIX, heavenlywind.cc, PROXY
+    # - DOMAIN-SUFFIX, steampp.net, PROXY
+    # 沪ICP备18041304号-1
+    # - DOMAIN-SUFFIX, tgpro.top, PROXY
+    # - DOMAIN-SUFFIX, tgprocs.net, PROXY
+    # 畅玩空间 冀ICP备20019223号
+    # - DOMAIN-SUFFIX, wo1wan.com, PROXY
 
    # category-gov-ir (revised ir)
     # Iranian governmental websites
@@ -14382,8 +14703,8 @@ rules:
     # include:sspai
     # include:tmtpost
     # include:weiphone
-    # include:ynet
     # include:xueqiu
+    # include:ynet
 
     # 证券时报网
     # - DOMAIN-SUFFIX, stcn.com, PROXY
@@ -14467,6 +14788,13 @@ rules:
 
     # 封面新闻
     # - DOMAIN-SUFFIX, thecover.cn, PROXY
+
+    # 参考消息
+    # - DOMAIN-SUFFIX, cankaoxiaoxi.com, PROXY
+    # - DOMAIN-SUFFIX, ckxx.net, PROXY
+
+    # 大公网（大公报）
+    # - DOMAIN-SUFFIX, takungpao.com, PROXY
 
     # 超能网
     # - DOMAIN-SUFFIX, expreview.com, PROXY
@@ -27458,7 +27786,7 @@ rules:
 
     # Fund Sales 基金销售公司
     # - DOMAIN-SUFFIX, 5ifund.com, PROXY
-    # # - DOMAIN-SUFFIX, fund123.cn, PROXY
+    # - DOMAIN-SUFFIX, fund123.cn, PROXY
     # - DOMAIN-SUFFIX, howbuy.com, PROXY
     # - DOMAIN-SUFFIX, lufunds.com, PROXY
     # - DOMAIN-SUFFIX, zlfund.cn, PROXY
@@ -31413,6 +31741,9 @@ rules:
       # include:category-ntp
       # include:decryptipastore # iOS
  
+      # include:rsshub
+      # include:rsshub-3rd
+
       # include:accuweather
       # include:adblock
       # include:adblockplus
@@ -34027,12 +34358,7 @@ rules:
     - DOMAIN, alt4-mtalk.google.com, PROXY
     - DOMAIN, alt5-mtalk.google.com, PROXY
     - DOMAIN, alt6-mtalk.google.com, PROXY
-    - DOMAIN, alt7-mtalk.google.com, PROXY
-    - DOMAIN, alt8-mtalk.google.com, PROXY
-    - DOMAIN, mtalk-dev.google.com, PROXY
-    - DOMAIN, mtalk-staging.google.com, PROXY
     - DOMAIN, mtalk.google.com, PROXY
-    - DOMAIN, mtalk4.google.com, PROXY
 
    # goproxy
     # go mod proxy
@@ -36346,18 +36672,22 @@ rules:
     # - DOMAIN-SUFFIX, kuaikanmanhua.com, PROXY
 
    # kuaishou (revised cn)
-    # Beijing Kuaishou Technology Co., Ltd.
+    # include:kuaishou-ads
 
+    # - DOMAIN-SUFFIX, ecukwai.com, PROXY
     # - DOMAIN-SUFFIX, gifshow.com, PROXY
     # - DOMAIN-SUFFIX, inkwai.com, PROXY
     # - DOMAIN-SUFFIX, ksapisrv.com, PROXY
+    # - DOMAIN-SUFFIX, kskwai.com, PROXY
     # - DOMAIN-SUFFIX, kuaishou.com, PROXY
-    # - DOMAIN-SUFFIX, kwaizt.com, PROXY
+    # - DOMAIN-SUFFIX, kuaishouapps.com, PROXY
+    # - DOMAIN-SUFFIX, kuaishoupay.com, PROXY
     # - DOMAIN-SUFFIX, kuaishouzt.com, PROXY
+    # - DOMAIN-SUFFIX, kwaicdn.com, PROXY
+    # - DOMAIN-SUFFIX, kwaizt.com, PROXY
     # - DOMAIN-SUFFIX, kwimgs.com, PROXY
+    # - DOMAIN-SUFFIX, wsukwai.com, PROXY
     # - DOMAIN-SUFFIX, yximgs.com, PROXY
-
-    # include:kuaishou-ads
 
    # kubakuba
     - DOMAIN-SUFFIX, kubakuba.global, PROXY
@@ -41032,6 +41362,27 @@ rules:
    # rsshub
     - DOMAIN-SUFFIX, rsshub.app, PROXY
 
+   # rsshub-3rd
+    - DOMAIN, holoxx.f5.si, PROXY
+    - DOMAIN, hub.slarker.me, PROXY
+    - DOMAIN, rss.4040940.xyz, PROXY
+    - DOMAIN, rss.datuan.dev, PROXY
+    - DOMAIN, rss.littlebaby.life, PROXY
+    - DOMAIN, rss.owo.nz, PROXY
+    - DOMAIN, rss.wudifeixue.com, PROXY
+    - DOMAIN, rsshub.asailor.org, PROXY
+    - DOMAIN, rsshub.email-once.com, PROXY
+    - DOMAIN, rsshub.henry.wang, PROXY
+    - DOMAIN, rsshub.isrss.com, PROXY
+    - DOMAIN, rsshub.ktachibana.party, PROXY
+    - DOMAIN, rsshub.pseudoyu.com, PROXY
+    - DOMAIN, rsshub.rss.tips, PROXY
+    - DOMAIN, rsshub.rssforever.com, PROXY
+    - DOMAIN, rsshub.umzzz.com, PROXY
+    - DOMAIN, rsshub.woodland.cafe, PROXY
+    - DOMAIN, rsshub2.asailor.org, PROXY
+    - DOMAIN, yangzhi.app, PROXY
+
    # rthk
     - DOMAIN-SUFFIX, etvonline.hk, PROXY
     - DOMAIN-SUFFIX, rthk.hk, PROXY
@@ -45273,6 +45624,10 @@ rules:
   # w
    # w3schools
     - DOMAIN-SUFFIX, w3schools.com, PROXY
+
+   # wallhaven
+    - DOMAIN-SUFFIX, wallhaven.cc, PROXY
+    - DOMAIN-SUFFIX, whvn.cc, PROXY
 
    # walmart
     # All .walmart domains
