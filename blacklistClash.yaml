@@ -126,8 +126,7 @@ external-controller: 127.0.0.1:9090
 # Authenticate by spedifying HTTP header `Authorization: Bearer ${secret}`
 # ALWAYS set a secret if RESTful API is listening on 0.0.0.0
 # secret: "your_secret" # warning: !important, change it to your secret (prevent merlinclash being used by WAN users)
-# secret: "input_your_secret"
-secret: "9o9nFoQyWKLPpGd6yXztVPRCZ4QFRyAvVKQ3xr54"
+secret: "input_your_secret"
 
 # Outbound interface name
 # interface-name: en0 # might be en1
