@@ -12,15 +12,15 @@
     # how to process theose domains?
       # mark those domains
 
-    # (revised cn)
+    # (@cn)
 
-    # (revised ir)
+    # (@ir)
 
-    # (revised ru)
+    # (@ru)
 
-    # (revised other regions)
+    # (@!cn)
 
-  # (test): domains that's under testing
+  # (@!cn): domains that's under testing
 
  # format
   # rule clash (by using "rule-provider" configurations)
@@ -39,33 +39,31 @@
 
 # website domain conflicts and mis-replacement
  # WARNING: The following domain names may be replaced incorrectly during the conversion process, or the following keyword might conflict with relevant websites
- # direct manual
+ # direct
 
- # proxy manual
-  # a
+ # proxy
    # aliyun (conflicts with)
     # .al
 
-  # d
    # directenergy.com
-    ## - DOMAIN-SUFFIX, /* directenergy.com, /* PROXY # keywords: , /* direct
-      # search "energy.com" to correct back the domain and change it to "directenergy.com"
+    # '- DOMAIN-SUFFIX, \directenergy.com, \PROXY'
+      # 1. keyword is '\direct'
+      # 2. search "energy.com" and change it back to 'directenergy.com'
 
-  # p
-   # pingan bank (conflicts with)
-    # .cl
-    # .sd
-    # .orange
+   # 'geosite:pingan bank' conflict with
+    # 1. .cl
+    # 2. .sd
+    # 3. .orange
 
    # proxyium.com
-    ## - DOMAIN-SUFFIX, /* proxyium.com, /* PROXY # keywords: , /* proxy
-      # search "ium.com" to correct back the domain and change it to "proxyium.com"
+    # '- DOMAIN-SUFFIX, \proxyium.com, \PROXY'
+      # (1) keyword is '\proxy'
+      # (2) search 'ium.com' and change it back to 'proxyium.com'
 
-  # t
    # tld-!cn
    # tld-opennic
 
- # reject manual
+ # reject
 
 rules:
   # c
