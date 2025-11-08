@@ -211,10 +211,6 @@ rules:
    # atmeta
     - DOMAIN-SUFFIX, atmeta.com, PROXY
 
-   # avg
-    - DOMAIN-SUFFIX, avcdn.com, PROXY
-    - DOMAIN-SUFFIX, avg.com, PROXY
-
   # b
    # b-cdn.net
     - DOMAIN-SUFFIX, b-cdn.net, PROXY
@@ -458,8 +454,10 @@ rules:
    # creditkarma
     - DOMAIN-SUFFIX, creditkarma.com, PROXY
 
-   # creditone
+   # creditone bank
     - DOMAIN-SUFFIX, creditone.com, PROXY
+    - DOMAIN-SUFFIX, creditonebank.com, PROXY
+    - DOMAIN-SUFFIX, getcreditone.com, PROXY
 
    # crockblock
     - DOMAIN-SUFFIX, crocoblock.com, PROXY
@@ -537,6 +535,9 @@ rules:
     - DOMAIN-SUFFIX, dpsk12.org, PROXY
 
   # e
+   # eastasiaforum
+    - DOMAIN-SUFFIX, eastasiaforum.org, PROXY
+
    # ecosia.org
     - DOMAIN-SUFFIX, ecosia.org, PROXY
 
@@ -938,6 +939,9 @@ rules:
    # homer.sii.cl (@!cn)
     - DOMAIN-SUFFIX, homer.sii.cl, PROXY
 
+   # hongxingyunmovie.vip (@!cn)
+    - DOMAIN-SUFFIX, hongxingyunmovie.vip, PROXY
+
    # hostinger
     - DOMAIN-SUFFIX, hostinger.com, PROXY
     - DOMAIN-SUFFIX, hpanel.hostinger.com, PROXY
@@ -945,6 +949,9 @@ rules:
 
    # hotjar
     - DOMAIN-SUFFIX, hotjar.com, PROXY
+
+   # hotstar.com (@!cn)
+    - DOMAIN-SUFFIX, hotstar.com, PROXY
 
    # hubspot
     - DOMAIN-SUFFIX, hubspot.com, PROXY
@@ -966,6 +973,9 @@ rules:
     - DOMAIN-SUFFIX, hyperionherbs.com, PROXY
 
   # i
+   # icy-veins (@!cn)
+    - DOMAIN-SUFFIX, icy-veins.com, PROXY
+
    # id.me
     - DOMAIN-SUFFIX, id.me, PROXY
 
@@ -1277,6 +1287,9 @@ rules:
    # mintmobile
     - DOMAIN-SUFFIX, mintmobile.com, PROXY
 
+   # mnews
+    - DOMAIN-SUFFIX, mnews.tw
+
    # mo.gov
     - DOMAIN-SUFFIX, dese.mo.gov, PROXY
     - DOMAIN-SUFFIX, mo.gov, PROXY
@@ -1491,6 +1504,9 @@ rules:
     - DOMAIN, pancake-trading-fee-rebate-api.pancakeswap.com, PROXY
     - DOMAIN, strapi-cms.pancakeswap.ai, PROXY
 
+   # pandora
+    - DOMAIN-SUFFIX, pandora.net, PROXY
+
    # paramount plus (@!cn)
     # - DOMAIN-SUFFIX, pplusstatic.com, PROXY
 
@@ -1539,6 +1555,9 @@ rules:
 
    # picsart
     - DOMAIN-SUFFIX, picsart.com, PROXY
+
+   # pipecdn.vip
+    - DOMAIN-SUFFIX, pipecdn.vip, PROXY
 
    # pixeldrain
     - DOMAIN-SUFFIX, pixeldrain.com, PROXY
@@ -1695,6 +1714,9 @@ rules:
 
    # sdge
     - DOMAIN-SUFFIX, sdge.com, PROXY
+
+   # shadowfly
+    - DOMAIN-SUFFIX, shadowfly.org, PROXY
 
    # sharepoint
     # - DOMAIN-SUFFIX, blog.pathtosharepoint.com, PROXY
@@ -2032,6 +2054,9 @@ rules:
     - DOMAIN-SUFFIX, tymedigital.co.za, PROXY
 
   # u
+   # ultramobile (@!cn)
+    - DOMAIN-SUFFIX, ultramobile.com, PROXY
+
    # undress.cc
     - DOMAIN-SUFFIX, undress.cc, PROXY
 
@@ -2087,6 +2112,9 @@ rules:
    # visaguide.world
     - DOMAIN-SUFFIX, visaguide.world, PROXY
 
+   # visitmexico
+    - DOMAIN-SUFFIX, visitmexico.com, PROXY
+
    # vista
     - DOMAIN-SUFFIX, vista.com, PROXY
 
@@ -2105,6 +2133,9 @@ rules:
   # w
    # wakenbakery
     - DOMAIN-SUFFIX, wakenbakery.net, PROXY
+
+   # wallmama
+    - DOMAIN-SUFFIX, wallmama.com, PROXY
 
    # washoecountylibrary.us
     - DOMAIN-SUFFIX, washoecountylibrary.us, PROXY
@@ -2140,6 +2171,9 @@ rules:
    # whoer.net
     - DOMAIN-SUFFIX, whoer.net, PROXY
 
+   # winscp.net
+    - DOMAIN-SUFFIX, cdn.winscp.net, PROXY
+
    # wisconsindot.gov
     - DOMAIN-SUFFIX, wisconsindot.gov, PROXY
 
@@ -2154,6 +2188,9 @@ rules:
 
    # worldwidephotowalk
     - DOMAIN-SUFFIX, worldwidephotowalk.com, PROXY
+
+   # wowhead.com (@!cn)
+    - DOMAIN-SUFFIX, wowhead.com, PROXY
 
    # wsimg
     - DOMAIN, img1.wsimg.com, PROXY
@@ -2235,3 +2272,6 @@ rules:
    # zillow
     - DOMAIN-SUFFIX, zillow.com, PROXY
     - DOMAIN-SUFFIX, zillowstatic.com, PROXY
+
+   # zoominfo
+    - DOMAIN-SUFFIX, zoominfo.com, PROXY
