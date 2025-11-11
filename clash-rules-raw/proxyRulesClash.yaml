@@ -910,6 +910,9 @@ rules:
    # healthline
     - DOMAIN-SUFFIX, healthline.com, PROXY
 
+   # headfi (@!cn)
+    - DOMAIN-SUFFIX, head-fi.org, PROXY
+
    # helloandroid
     - DOMAIN-SUFFIX, helloandroid.com, PROXY
 
@@ -1071,6 +1074,9 @@ rules:
     # keep until: 2025-09-01
 
     # - DOMAIN-SUFFIX, jotform.com, PROXY
+
+   # jupas (@!cn)
+    - DOMAIN-SUFFIX, jupas.edu.hk, PROXY
 
    # justanswer
     - DOMAIN-SUFFIX, justanswer.com, PROXY
@@ -1296,6 +1302,10 @@ rules:
 
    # mojim
     - DOMAIN-SUFFIX, mojim.com, PROXY
+
+   # monarch
+    - DOMAIN-SUFFIX, monarch.com, PROXY
+    - DOMAIN-SUFFIX, monarchmoney.com, PROXY
 
    # monica.im
     - DOMAIN-SUFFIX, monica.im, PROXY
@@ -2269,8 +2279,10 @@ rules:
    # z-lib.io
     - DOMAIN-SUFFIX, z-lib.io, PROXY
 
-   # zillow
+   # zillow (@!cn)
     - DOMAIN-SUFFIX, zillow.com, PROXY
+    - DOMAIN-SUFFIX, zillow.net, PROXY
+    - DOMAIN-SUFFIX, zillowgroup.com, PROXY
     - DOMAIN-SUFFIX, zillowstatic.com, PROXY
 
    # zoominfo

@@ -127,7 +127,7 @@ external-controller: 127.0.0.1:9090
 # ALWAYS set a secret if RESTful API is listening on 0.0.0.0
 # secret: "your_secret" # warning: !important, change it to your secret (prevent merlinclash being used by WAN users)
 # secret: "input_your_secret"
-secret: "input_your_secret"
+secret: "4aEkhzgTNW7uEAQfw75vKzmYVAgzkWgDqXc3WapX"
 
 # Outbound interface name
 # interface-name: en0 # might be en1
