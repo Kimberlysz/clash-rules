@@ -98,6 +98,9 @@ payload:
     # 2025-11-01
     - '+.amplitude.com'
 
+   # anikai
+    - '+.anikai.to'
+
    # aniview
     - '+.aniview.com'
 
@@ -329,7 +332,10 @@ payload:
     - '+.cnbetacdn.com'
 
    # co.uk
-    - '+.co.uk'
+    - DOMAIN-KEYWORD, .co.uk'
+
+   # cochyi
+    - '+.ouchyi.support'
 
    # coinbase
     - '+.coinbasecdn.net'
@@ -407,6 +413,9 @@ payload:
 
    # csl.edu
     - '+.csl.edu'
+
+   # cults3d (@!cn)
+    - '+.cults3d.com'
 
    # culturalvistas.org
     - '+.culturalvistas.org'
@@ -574,6 +583,9 @@ payload:
    # feiyu-tech (@!cn)
     - '+.feiyu-tech.com'
 
+   # fidelitasvirtual (@!cn)
+    - '+.fidelitasvirtual.org'
+
    # figshare
     - '+.figshare.com'
 
@@ -591,6 +603,19 @@ payload:
     - '+.flixtor.nu'
     - '+.flixtor.se'
     - '+.flixtor.st'
+
+   # fmovies (@!cn)
+    - '+.fmovies.co'
+    - '+.jwpcdn.com'
+    - '+.jwpltx.com'
+    - '+.netusa.xyz'
+    - '+.netusa.xyz'
+
+    - 'astream-5-1.voxzer.org'
+    - 'prd.jwpltx.com'
+    - 'ssl.p.jwpcdn.com'
+    - 'voxzer.org'
+    - 'ww4.fmovies.co'
 
    # footystats
     - '+.footystats.org'
@@ -1009,6 +1034,7 @@ payload:
     # - '+.jotform.com'
 
    # jupas (@!cn)
+    - '+.jupas.com.hk'
     - '+.jupas.edu.hk'
 
    # justanswer
@@ -1021,6 +1047,9 @@ payload:
    # kagyuoffice
     - '+.kagyuoffice.org'
     - '+.kagyuoffice.org.tw'
+
+   # kaido
+    - '+.kaido.to'
 
    # kapwing (@!cn)
     # - '+.amplitude.com'
@@ -1355,6 +1384,9 @@ payload:
 
     - '+.bam-cell.nr-data.net'
 
+   # ntbus.com.tw
+    - '+.ntbus.com.tw'
+
   # o
    # oculus
     - 'developer.oculus.com'
@@ -1547,7 +1579,7 @@ payload:
     - '+.proshkola18.ru'
 
    # proxyium
-    - DOMAIN-SUFFIX'ium.com'
+    - '+.proxyium.com'
 
    # psi.org
     - '+.psi.org'
@@ -1772,6 +1804,9 @@ payload:
     - '+.synchronybank.com'
 
   # t
+   # taiwanobsessed.com
+    - '+.taiwanobsessed.com'
+
    # teachers-teachers
     - '+.teachers-teachers.com'
 
@@ -1855,6 +1890,9 @@ payload:
     - '+.thetradedesk.com'
 
     - 'pages.thetradedesk.com'
+
+   # thingiverse.com (@!cn)
+    - '+.thingiverse.com'
 
    # threads
     - '+.threads.net'
@@ -2190,6 +2228,9 @@ payload:
 
    # ybtour.co.kr
     - '+.ybtour.co.kr'
+
+   # yeggi (@!cn)
+    - '+.yeggi.com'
 
    # youversion
     - '+.youversion.com'

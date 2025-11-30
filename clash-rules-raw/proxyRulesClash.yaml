@@ -165,6 +165,9 @@ rules:
     # 2025-11-01
     - DOMAIN-SUFFIX, amplitude.com, PROXY
 
+   # anikai
+    - DOMAIN-SUFFIX, anikai.to, PROXY
+
    # aniview
     - DOMAIN-SUFFIX, aniview.com, PROXY
 
@@ -398,6 +401,9 @@ rules:
    # co.uk
     - DOMAIN-KEYWORD, .co.uk, PROXY
 
+   # cochyi
+    - DOMAIN-SUFFIX, ouchyi.support, PROXY
+
    # coinbase
     - DOMAIN-SUFFIX, coinbasecdn.net, PROXY
 
@@ -474,6 +480,9 @@ rules:
 
    # csl.edu
     - DOMAIN-SUFFIX, csl.edu, PROXY
+
+   # cults3d (@!cn)
+    - DOMAIN-SUFFIX, cults3d.com, PROXY
 
    # culturalvistas.org
     - DOMAIN-SUFFIX, culturalvistas.org, PROXY
@@ -641,6 +650,9 @@ rules:
    # feiyu-tech (@!cn)
     - DOMAIN-SUFFIX, feiyu-tech.com, PROXY
 
+   # fidelitasvirtual (@!cn)
+    - DOMAIN-SUFFIX, fidelitasvirtual.org, PROXY
+
    # figshare
     - DOMAIN-SUFFIX, figshare.com, PROXY
 
@@ -658,6 +670,19 @@ rules:
     - DOMAIN-SUFFIX, flixtor.nu, PROXY
     - DOMAIN-SUFFIX, flixtor.se, PROXY
     - DOMAIN-SUFFIX, flixtor.st, PROXY
+
+   # fmovies (@!cn)
+    - DOMAIN-SUFFIX, fmovies.co, PROXY
+    - DOMAIN-SUFFIX, jwpcdn.com, PROXY
+    - DOMAIN-SUFFIX, jwpltx.com, PROXY
+    - DOMAIN-SUFFIX, netusa.xyz, PROXY
+    - DOMAIN-SUFFIX, netusa.xyz, PROXY
+
+    - DOMAIN, astream-5-1.voxzer.org, PROXY
+    - DOMAIN, prd.jwpltx.com, PROXY
+    - DOMAIN, ssl.p.jwpcdn.com, PROXY
+    - DOMAIN, voxzer.org, PROXY
+    - DOMAIN, ww4.fmovies.co, PROXY
 
    # footystats
     - DOMAIN-SUFFIX, footystats.org, PROXY
@@ -1076,6 +1101,7 @@ rules:
     # - DOMAIN-SUFFIX, jotform.com, PROXY
 
    # jupas (@!cn)
+    - DOMAIN-SUFFIX, jupas.com.hk, PROXY
     - DOMAIN-SUFFIX, jupas.edu.hk, PROXY
 
    # justanswer
@@ -1088,6 +1114,9 @@ rules:
    # kagyuoffice
     - DOMAIN-SUFFIX, kagyuoffice.org, PROXY
     - DOMAIN-SUFFIX, kagyuoffice.org.tw, PROXY
+
+   # kaido
+    - DOMAIN-SUFFIX, kaido.to, PROXY
 
    # kapwing (@!cn)
     # - DOMAIN-SUFFIX, amplitude.com, PROXY
@@ -1421,6 +1450,9 @@ rules:
     - DOMAIN, bam-cell.nr-data.net, PROXY
 
     - DOMAIN-SUFFIX, bam-cell.nr-data.net, PROXY
+
+   # ntbus.com.tw
+    - DOMAIN-SUFFIX, ntbus.com.tw, PROXY
 
   # o
    # oculus
@@ -1839,6 +1871,9 @@ rules:
     - DOMAIN-SUFFIX, synchronybank.com, PROXY
 
   # t
+   # taiwanobsessed.com
+    - DOMAIN-SUFFIX, taiwanobsessed.com, PROXY
+
    # teachers-teachers
     - DOMAIN-SUFFIX, teachers-teachers.com, PROXY
 
@@ -1922,6 +1957,9 @@ rules:
     - DOMAIN-SUFFIX, thetradedesk.com, PROXY
 
     - DOMAIN, pages.thetradedesk.com, PROXY
+
+   # thingiverse.com (@!cn)
+    - DOMAIN-SUFFIX, thingiverse.com, PROXY
 
    # threads
     - DOMAIN-SUFFIX, threads.net, PROXY
@@ -2257,6 +2295,9 @@ rules:
 
    # ybtour.co.kr
     - DOMAIN-SUFFIX, ybtour.co.kr, PROXY
+
+   # yeggi (@!cn)
+    - DOMAIN-SUFFIX, yeggi.com, PROXY
 
    # youversion
     - DOMAIN-SUFFIX, youversion.com, PROXY

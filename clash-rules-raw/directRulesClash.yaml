@@ -118,6 +118,12 @@ rules:
     # - DOMAIN-SUFFIX, msn.cn, DIRECT
     # - DOMAIN, microsoft.com, DIRECT
 
+    # (@!cn)
+    - DOMAIN-SUFFIX, login.live.com, DIRECT
+    - DOMAIN-SUFFIX, login.microsoftonline.com, DIRECT
+    - DOMAIN, aadcdn.msftauth.net, DIRECT
+    - DOMAIN, browser.events.data.microsoft.com, DIRECT
+
     # outlook (test)
     - DOMAIN-SUFFIX, autodiscover-s.outlook.com, DIRECT
     - DOMAIN-SUFFIX, dataservice.protection.outlook.com, DIRECT
