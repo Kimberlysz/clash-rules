@@ -80,6 +80,10 @@ rules:
   
     - DOMAIN, gray-wfie-prod.cdn.arcpublishing.com, PROXY
 
+   # 2048.info
+    - DOMAIN-SUFFIX, 2048.info, PROXY
+    - DOMAIN-SUFFIX, img.2048.spa, PROXY
+
    # 2miners
     - DOMAIN-SUFFIX, 2miners.com, PROXY
 
@@ -164,6 +168,9 @@ rules:
    # amplitude (@!cn)
     # 2025-11-01
     - DOMAIN-SUFFIX, amplitude.com, PROXY
+
+   # ancestry.co.uk
+    - DOMAIN-SUFFIX, ancestry.co.uk, PROXY
 
    # anikai
     - DOMAIN-SUFFIX, anikai.to, PROXY
@@ -260,6 +267,12 @@ rules:
    # bible
     - DOMAIN-SUFFIX, bible.com, PROXY
     - DOMAIN-SUFFIX, app.link, PROXY
+
+   # bibleproject (@!cn)
+    - DOMAIN-SUFFIX, bibleproject.com, PROXY
+    - DOMAIN-SUFFIX, imagekit.io, PROXY
+    - DOMAIN-SUFFIX, mux.com, PROXY
+    - DOMAIN, ik.imagekit.io, PROXY
 
    # bice
     - DOMAIN-SUFFIX, banco.bice.cl, PROXY
@@ -358,6 +371,9 @@ rules:
    # charlestoncounty.org
     - DOMAIN-SUFFIX, charlestoncounty.org, PROXY
 
+   # chatbotapp.ai (@!cn)
+    - DOMAIN-SUFFIX, chatbotapp.ai, PROXY
+
    # cherryvpn.net
     - DOMAIN-SUFFIX, cherryvpn.net, PROXY
 
@@ -446,6 +462,9 @@ rules:
 
    # corelogic
     - DOMAIN-SUFFIX, corelogic.com, PROXY
+
+   # coveredca.com (@!cn)
+    - DOMAIN-SUFFIX, coveredca.com, PROXY
 
    # coze
     - DOMAIN-SUFFIX, coze.com, PROXY
@@ -636,6 +655,11 @@ rules:
    # f2pool
     - DOMAIN-SUFFIX, f2pool.com, PROXY
 
+   # facebook (@!cn)
+    - DOMAIN-SUFFIX, graph.facebook.com, PROXY
+    - DOMAIN-SUFFIX, m.facebook.com, PROXY
+    - DOMAIN, star.c10r.facebook.com, PROXY
+
    # faithlife
     - DOMAIN-SUFFIX, faithlife.com, PROXY
     - DOMAIN-SUFFIX, logos.com, PROXY
@@ -776,9 +800,77 @@ rules:
    # gomovie.sx
     - DOMAIN-SUFFIX, gomovie.sx, PROXY
 
-   # google
+   # google_4(@!cn)
+    # close at (2026-12-31)
 
-    # Others part2, Google
+    # All .and domains
+    # and (TLD application withdrawn by Google)
+
+    # All .chrome domains
+    - DOMAIN-KEYWORD, .chrome, PROXY
+
+    # All .dclk domains
+    - DOMAIN-KEYWORD, .dclk, PROXY
+
+    # All .gbiz domains
+    - DOMAIN-KEYWORD, .gbiz, PROXY
+
+    # All .gle domains
+    - DOMAIN-KEYWORD, .gle, PROXY
+
+    # All .gmail domains
+    - DOMAIN-KEYWORD, .gmail, PROXY
+
+    # All .goo domains
+    - DOMAIN-KEYWORD, .goo, PROXY
+
+    # All .goog domains
+    - DOMAIN-KEYWORD, .goog, PROXY
+
+    # All .google domains
+    - DOMAIN-KEYWORD, .google, PROXY
+
+    # All .guge domains
+    - DOMAIN-KEYWORD, .guge, PROXY
+
+    # All .hangout domains
+    - DOMAIN-KEYWORD, .hangout, PROXY
+
+    # All .nexus domains
+    - DOMAIN-KEYWORD, .nexus, PROXY
+
+    # All .谷歌 domains
+    - DOMAIN-KEYWORD, .xn--flw351e, PROXY
+
+    # All .グーグル domains
+    - DOMAIN-KEYWORD, .xn--qcka1pmc, PROXY
+
+   # google_3 (@!cn)
+    # gstatic.com
+    - DOMAIN-SUFFIX, gstatic.com, PROXY
+    - DOMAIN-SUFFIX, www.gstatic.com, PROXY
+
+    # # google-analytics.com
+    # - DOMAIN-SUFFIX, google-analytics.com, PROXY
+    # - DOMAIN-SUFFIX, www.google-analytics.com, PROXY
+
+    # # googletagmanager.com
+    # - DOMAIN-SUFFIX, googletagmanager.com, PROXY
+    # - DOMAIN-SUFFIX, www.googletagmanager.com, PROXY
+
+    # # googleadservices.com
+    # - DOMAIN-SUFFIX, googleadservices.com, PROXY
+
+    # googleapis.com
+    - DOMAIN-SUFFIX, fonts.googleapis.com, PROXY
+    - DOMAIN-SUFFIX, googleapis.com, PROXY
+
+   # google2 (@!cn)
+    # under global mode, dl.google.com redirects to https://google.com/chrome
+    # under rule mode, dl.google.com redirects to a 404 page
+    # - DOMAIN, dl.google.com, PROXY
+
+   # google_1
     # google store
     # - DOMAIN-SUFFIX, store.google.com, PROXY
 
@@ -787,7 +879,7 @@ rules:
     # - DOMAIN-SUFFIX, notifications.googleapis.com, PROXY
     # - DOMAIN-SUFFIX, families.google.com, PROXY
 
-    # bunch of google rules
+    # Others, google
     # - DOMAIN-SUFFIX, 265.com, PROXY
     # - DOMAIN-SUFFIX, about.google, PROXY
     # - DOMAIN-SUFFIX, accounts.google.com, PROXY
@@ -860,7 +952,8 @@ rules:
 
     # - DOMAIN, youtubei.googleapis.com, PROXY
 
-    # other rules
+   # google_0
+    # Others, google
     # - DOMAIN-SUFFIX, c.android.clients.google.com, PROXY
     # - DOMAIN-SUFFIX, cache.pack.google.com, PROXY
     # - DOMAIN-SUFFIX, clickserve.dartsearch.net, PROXY
@@ -884,10 +977,9 @@ rules:
     # - DOMAIN, dl.google.com, PROXY
     # - DOMAIN, mtalk.google.com, PROXY
 
-   # google2 (@!cn)
-    # under global mode, dl.google.com redirects to https://google.com/chrome
-    # under rule mode, dl.google.com redirects to a 404 page
-    # - DOMAIN, dl.google.com, PROXY
+   # googleapis.com
+    - DOMAIN-SUFFIX, fonts.googleapis.com, PROXY
+    - DOMAIN-SUFFIX, googleapis.com, PROXY
 
    # gotquestions.org
     - DOMAIN-SUFFIX, gotquestions.org, PROXY
@@ -1305,16 +1397,19 @@ rules:
     # - DOMAIN-SUFFIX, wunderlist.com, PROXY
     # - DOMAIN-SUFFIX, yammerusercontent.com, PROXY
 
-    - DOMAIN-SUFFIX, images-eds-ssl.xboxlive.com, PROXY
-    - DOMAIN-SUFFIX, storeedgefd.dsx.mp.microsoft.com, PROXY
+    # - DOMAIN-SUFFIX, images-eds-ssl.xboxlive.com, PROXY
+    # - DOMAIN-SUFFIX, storeedgefd.dsx.mp.microsoft.com, PROXY
 
-    # teams (@!cn)
-    - DOMAIN-SUFFIX, cdn.office.net, PROXY
-    - DOMAIN-SUFFIX, teams.microsoft.com, PROXY
-    - DOMAIN-SUFFIX, teams.events.data.microsoft.com, PROXY
-    - DOMAIN-SUFFIX, presence.teams.live.com, PROXY
-    - DOMAIN-SUFFIX, mp.microsoft.com, PROXY
-    - DOMAIN-SUFFIX, teams.live.com, PROXY
+    # microsoft 365
+    - DOMAIN-SUFFIX, clipchamp.com, PROXY
+
+    # Others, outlook, teams (@!cn)
+    # - DOMAIN-SUFFIX, cdn.office.net, PROXY
+    # - DOMAIN-SUFFIX, mp.microsoft.com, PROXY
+    # - DOMAIN-SUFFIX, presence.teams.live.com, PROXY
+    # - DOMAIN-SUFFIX, teams.events.data.microsoft.com, PROXY
+    # - DOMAIN-SUFFIX, teams.live.com, PROXY
+    # - DOMAIN-SUFFIX, teams.microsoft.com, PROXY
 
     # windows initial setup download
     - DOMAIN-SUFFIX, tlu.dl.delivery.mp.microsoft.com, PROXY
@@ -1353,9 +1448,6 @@ rules:
 
    # mullvad
     - DOMAIN-SUFFIX, mullvad.net, PROXY
-
-   # mux (@!cn)
-    - DOMAIN-SUFFIX, mux.com, PROXY
 
    # mwcbarcelona
     - DOMAIN, register.mwcbarcelona.com, PROXY
@@ -1611,6 +1703,10 @@ rules:
    # podbean
     - DOMAIN-SUFFIX, podbean.com, PROXY
 
+   # pokemon
+    - DOMAIN-SUFFIX, nianticlabs.com, PROXY
+    - DOMAIN-SUFFIX, pokemongo.com, PROXY
+
    # pokerstarsVR
     - DOMAIN-SUFFIX, backtrace.io, PROXY
     - DOMAIN-SUFFIX, luckyvr.net, PROXY
@@ -1849,6 +1945,9 @@ rules:
     - DOMAIN-SUFFIX, stremio.com, PROXY
     - DOMAIN-SUFFIX, stremio.net, PROXY
 
+   # studentaid.gov
+    - DOMAIN-SUFFIX, studentaid.gov, PROXY
+
    # studentclearinghouse.org
     - DOMAIN-SUFFIX, studentclearinghouse.org, PROXY
 
@@ -1877,19 +1976,17 @@ rules:
    # teachers-teachers
     - DOMAIN-SUFFIX, teachers-teachers.com, PROXY
 
+   # teacherspayteachers.com
+    - DOMAIN-SUFFIX, teacherspayteachers.com, PROXY
+
    # teacherstestprep
     - DOMAIN-SUFFIX, teacherstestprep.com, PROXY
 
    # teamredminer
     - DOMAIN-SUFFIX, teamredminer.com, PROXY
 
-   # teams
-    - DOMAIN-SUFFIX, cdn.office.net, PROXY
-    - DOMAIN-SUFFIX, mp.microsoft.com, PROXY
-    - DOMAIN-SUFFIX, presence.teams.live.com, PROXY
-    - DOMAIN-SUFFIX, teams.events.data.microsoft.com, PROXY
-    - DOMAIN-SUFFIX, teams.live.com, PROXY
-    - DOMAIN-SUFFIX, teams.microsoft.com, PROXY
+   # techbang.com
+    - DOMAIN-SUFFIX, techbang.com, PROXY
 
    # techcrunch
     # - DOMAIN-KEYWORD, .techcrunch, PROXY
@@ -2325,6 +2422,9 @@ rules:
     - DOMAIN-SUFFIX, zillow.net, PROXY
     - DOMAIN-SUFFIX, zillowgroup.com, PROXY
     - DOMAIN-SUFFIX, zillowstatic.com, PROXY
+
+   # zoom (@!cn)
+    - DOMAIN-SUFFIX, quibblezoomfable.com, PROXY
 
    # zoominfo
     - DOMAIN-SUFFIX, zoominfo.com, PROXY

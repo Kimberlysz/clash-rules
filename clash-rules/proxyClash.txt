@@ -13,6 +13,10 @@ payload:
   
     - 'gray-wfie-prod.cdn.arcpublishing.com'
 
+   # 2048.info
+    - '+.2048.info'
+    - '+.img.2048.spa'
+
    # 2miners
     - '+.2miners.com'
 
@@ -97,6 +101,9 @@ payload:
    # amplitude (@!cn)
     # 2025-11-01
     - '+.amplitude.com'
+
+   # ancestry.co.uk
+    - '+.ancestry.co.uk'
 
    # anikai
     - '+.anikai.to'
@@ -193,6 +200,12 @@ payload:
    # bible
     - '+.bible.com'
     - '+.app.link'
+
+   # bibleproject (@!cn)
+    - '+.bibleproject.com'
+    - '+.imagekit.io'
+    - '+.mux.com'
+    - 'ik.imagekit.io'
 
    # bice
     - '+.banco.bice.cl'
@@ -291,6 +304,9 @@ payload:
    # charlestoncounty.org
     - '+.charlestoncounty.org'
 
+   # chatbotapp.ai (@!cn)
+    - '+.chatbotapp.ai'
+
    # cherryvpn.net
     - '+.cherryvpn.net'
 
@@ -379,6 +395,9 @@ payload:
 
    # corelogic
     - '+.corelogic.com'
+
+   # coveredca.com (@!cn)
+    - '+.coveredca.com'
 
    # coze
     - '+.coze.com'
@@ -569,6 +588,11 @@ payload:
    # f2pool
     - '+.f2pool.com'
 
+   # facebook (@!cn)
+    - '+.graph.facebook.com'
+    - '+.m.facebook.com'
+    - 'star.c10r.facebook.com'
+
    # faithlife
     - '+.faithlife.com'
     - '+.logos.com'
@@ -709,9 +733,77 @@ payload:
    # gomovie.sx
     - '+.gomovie.sx'
 
-   # google
+   # google_4(@!cn)
+    # close at (2026-12-31)
 
-    # Others part2, Google
+    # All .and domains
+    # and (TLD application withdrawn by Google)
+
+    # All .chrome domains
+    - DOMAIN-KEYWORD, .chrome'
+
+    # All .dclk domains
+    - DOMAIN-KEYWORD, .dclk'
+
+    # All .gbiz domains
+    - DOMAIN-KEYWORD, .gbiz'
+
+    # All .gle domains
+    - DOMAIN-KEYWORD, .gle'
+
+    # All .gmail domains
+    - DOMAIN-KEYWORD, .gmail'
+
+    # All .goo domains
+    - DOMAIN-KEYWORD, .goo'
+
+    # All .goog domains
+    - DOMAIN-KEYWORD, .goog'
+
+    # All .google domains
+    - DOMAIN-KEYWORD, .google'
+
+    # All .guge domains
+    - DOMAIN-KEYWORD, .guge'
+
+    # All .hangout domains
+    - DOMAIN-KEYWORD, .hangout'
+
+    # All .nexus domains
+    - DOMAIN-KEYWORD, .nexus'
+
+    # All .谷歌 domains
+    - DOMAIN-KEYWORD, .xn--flw351e'
+
+    # All .グーグル domains
+    - DOMAIN-KEYWORD, .xn--qcka1pmc'
+
+   # google_3 (@!cn)
+    # gstatic.com
+    - '+.gstatic.com'
+    - '+.www.gstatic.com'
+
+    # # google-analytics.com
+    # - '+.google-analytics.com'
+    # - '+.www.google-analytics.com'
+
+    # # googletagmanager.com
+    # - '+.googletagmanager.com'
+    # - '+.www.googletagmanager.com'
+
+    # # googleadservices.com
+    # - '+.googleadservices.com'
+
+    # googleapis.com
+    - '+.fonts.googleapis.com'
+    - '+.googleapis.com'
+
+   # google2 (@!cn)
+    # under global mode, dl.google.com redirects to https://google.com/chrome
+    # under rule mode, dl.google.com redirects to a 404 page
+    # - 'dl.google.com'
+
+   # google_1
     # google store
     # - '+.store.google.com'
 
@@ -720,7 +812,7 @@ payload:
     # - '+.notifications.googleapis.com'
     # - '+.families.google.com'
 
-    # bunch of google rules
+    # Others, google
     # - '+.265.com'
     # - '+.about.google'
     # - '+.accounts.google.com'
@@ -793,7 +885,8 @@ payload:
 
     # - 'youtubei.googleapis.com'
 
-    # other rules
+   # google_0
+    # Others, google
     # - '+.c.android.clients.google.com'
     # - '+.cache.pack.google.com'
     # - '+.clickserve.dartsearch.net'
@@ -817,10 +910,9 @@ payload:
     # - 'dl.google.com'
     # - 'mtalk.google.com'
 
-   # google2 (@!cn)
-    # under global mode, dl.google.com redirects to https://google.com/chrome
-    # under rule mode, dl.google.com redirects to a 404 page
-    # - 'dl.google.com'
+   # googleapis.com
+    - '+.fonts.googleapis.com'
+    - '+.googleapis.com'
 
    # gotquestions.org
     - '+.gotquestions.org'
@@ -1238,16 +1330,19 @@ payload:
     # - '+.wunderlist.com'
     # - '+.yammerusercontent.com'
 
-    - '+.images-eds-ssl.xboxlive.com'
-    - '+.storeedgefd.dsx.mp.microsoft.com'
+    # - '+.images-eds-ssl.xboxlive.com'
+    # - '+.storeedgefd.dsx.mp.microsoft.com'
 
-    # teams (@!cn)
-    - '+.cdn.office.net'
-    - '+.teams.microsoft.com'
-    - '+.teams.events.data.microsoft.com'
-    - '+.presence.teams.live.com'
-    - '+.mp.microsoft.com'
-    - '+.teams.live.com'
+    # microsoft 365
+    - '+.clipchamp.com'
+
+    # Others, outlook, teams (@!cn)
+    # - '+.cdn.office.net'
+    # - '+.mp.microsoft.com'
+    # - '+.presence.teams.live.com'
+    # - '+.teams.events.data.microsoft.com'
+    # - '+.teams.live.com'
+    # - '+.teams.microsoft.com'
 
     # windows initial setup download
     - '+.tlu.dl.delivery.mp.microsoft.com'
@@ -1286,9 +1381,6 @@ payload:
 
    # mullvad
     - '+.mullvad.net'
-
-   # mux (@!cn)
-    - '+.mux.com'
 
    # mwcbarcelona
     - 'register.mwcbarcelona.com'
@@ -1544,6 +1636,10 @@ payload:
    # podbean
     - '+.podbean.com'
 
+   # pokemon
+    - '+.nianticlabs.com'
+    - '+.pokemongo.com'
+
    # pokerstarsVR
     - '+.backtrace.io'
     - '+.luckyvr.net'
@@ -1782,6 +1878,9 @@ payload:
     - '+.stremio.com'
     - '+.stremio.net'
 
+   # studentaid.gov
+    - '+.studentaid.gov'
+
    # studentclearinghouse.org
     - '+.studentclearinghouse.org'
 
@@ -1810,19 +1909,17 @@ payload:
    # teachers-teachers
     - '+.teachers-teachers.com'
 
+   # teacherspayteachers.com
+    - '+.teacherspayteachers.com'
+
    # teacherstestprep
     - '+.teacherstestprep.com'
 
    # teamredminer
     - '+.teamredminer.com'
 
-   # teams
-    - '+.cdn.office.net'
-    - '+.mp.microsoft.com'
-    - '+.presence.teams.live.com'
-    - '+.teams.events.data.microsoft.com'
-    - '+.teams.live.com'
-    - '+.teams.microsoft.com'
+   # techbang.com
+    - '+.techbang.com'
 
    # techcrunch
     # - '+.techcrunch'
@@ -2258,6 +2355,9 @@ payload:
     - '+.zillow.net'
     - '+.zillowgroup.com'
     - '+.zillowstatic.com'
+
+   # zoom (@!cn)
+    - '+.quibblezoomfable.com'
 
    # zoominfo
     - '+.zoominfo.com'

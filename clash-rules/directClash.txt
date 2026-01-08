@@ -47,21 +47,38 @@ payload:
   # l
 
   # m
-   # microsoft
+   # microsoft (@cn)
+    # close at (2026-12-31)
+
+    # # All .microsoft domains
+    # - '+.microsoft'
+
+    # # All .hotmail domains
+    # - '+.hotmail'
+
+    # # All .office domains
+    # - '+.office'
+
+    # # All .skype domains
+    # - '+.skype'
+
+    # # All .windows domains
+    # - '+.windows'
+
+    # Others, outlook, teams (@!cn)
+    # - '+.autodiscover-s.outlook.com'
+    # - '+.dataservice.protection.outlook.com'
+    # - '+.login.live.com'
     # - '+.msn.cn'
+    # - '+.outlook.office.com'
+    # - '+.outlook.office365.com'
+    # - 'aadcdn.msftauth.net'
     # - 'microsoft.com'
 
-    # (@!cn)
-    - '+.login.live.com'
-    - '+.login.microsoftonline.com'
-    - 'aadcdn.msftauth.net'
-    - 'browser.events.data.microsoft.com'
-
-    # outlook (test)
-    - '+.autodiscover-s.outlook.com'
-    - '+.dataservice.protection.outlook.com'
-    - '+.outlook.office.com'
-    - '+.outlook.office365.com'
+    # Others, outlook, teams (@!cn)
+      # changed these from direct to proxy
+    # - 'browser.events.data.microsoft.com'
+    # - '+.login.microsoftonline.com'
 
   # n
 

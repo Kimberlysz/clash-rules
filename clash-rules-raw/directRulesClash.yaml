@@ -114,21 +114,38 @@ rules:
   # l
 
   # m
-   # microsoft
+   # microsoft (@cn)
+    # close at (2026-12-31)
+
+    # # All .microsoft domains
+    # - DOMAIN-KEYWORD, .microsoft, DIRECT
+
+    # # All .hotmail domains
+    # - DOMAIN-KEYWORD, .hotmail, DIRECT
+
+    # # All .office domains
+    # - DOMAIN-KEYWORD, .office, DIRECT
+
+    # # All .skype domains
+    # - DOMAIN-KEYWORD, .skype, DIRECT
+
+    # # All .windows domains
+    # - DOMAIN-KEYWORD, .windows, DIRECT
+
+    # Others, outlook, teams (@!cn)
+    # - DOMAIN-SUFFIX, autodiscover-s.outlook.com, DIRECT
+    # - DOMAIN-SUFFIX, dataservice.protection.outlook.com, DIRECT
+    # - DOMAIN-SUFFIX, login.live.com, DIRECT
     # - DOMAIN-SUFFIX, msn.cn, DIRECT
+    # - DOMAIN-SUFFIX, outlook.office.com, DIRECT
+    # - DOMAIN-SUFFIX, outlook.office365.com, DIRECT
+    # - DOMAIN, aadcdn.msftauth.net, DIRECT
     # - DOMAIN, microsoft.com, DIRECT
 
-    # (@!cn)
-    - DOMAIN-SUFFIX, login.live.com, DIRECT
-    - DOMAIN-SUFFIX, login.microsoftonline.com, DIRECT
-    - DOMAIN, aadcdn.msftauth.net, DIRECT
-    - DOMAIN, browser.events.data.microsoft.com, DIRECT
-
-    # outlook (test)
-    - DOMAIN-SUFFIX, autodiscover-s.outlook.com, DIRECT
-    - DOMAIN-SUFFIX, dataservice.protection.outlook.com, DIRECT
-    - DOMAIN-SUFFIX, outlook.office.com, DIRECT
-    - DOMAIN-SUFFIX, outlook.office365.com, DIRECT
+    # Others, outlook, teams (@!cn)
+      # changed these from direct to proxy
+    # - DOMAIN, browser.events.data.microsoft.com, DIRECT
+    # - DOMAIN-SUFFIX, login.microsoftonline.com, DIRECT
 
   # n
 
