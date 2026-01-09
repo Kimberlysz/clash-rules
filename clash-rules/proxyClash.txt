@@ -102,8 +102,9 @@ payload:
     # 2025-11-01
     - '+.amplitude.com'
 
-   # ancestry.co.uk
+   # ancestry
     - '+.ancestry.co.uk'
+    - '+.ancestry.com'
 
    # anikai
     - '+.anikai.to'
@@ -130,9 +131,9 @@ payload:
     - '+.applitrack.com'
 
    # appspot, Others
-    # - 'feelinsonice-hrd.appspot.com'
-    # - 'feelinsonice.appspot.com'
-    # - 'sc-analytics.appspot.com'
+    # - DOMAIN, feelinsonice-hrd.appspot.com'
+    # - DOMAIN, feelinsonice.appspot.com'
+    # - DOMAIN, sc-analytics.appspot.com'
 
    # arkoselabs
     - 'client-api.arkoselabs.com'
@@ -801,7 +802,7 @@ payload:
    # google2 (@!cn)
     # under global mode, dl.google.com redirects to https://google.com/chrome
     # under rule mode, dl.google.com redirects to a 404 page
-    # - 'dl.google.com'
+    # - DOMAIN, dl.google.com'
 
    # google_1
     # google store
@@ -883,7 +884,7 @@ payload:
     # - '+.telephony.goog'
     # - '+.waveprotocol.org'
 
-    # - 'youtubei.googleapis.com'
+    # - DOMAIN, youtubei.googleapis.com'
 
    # google_0
     # Others, google
@@ -907,12 +908,8 @@ payload:
     # - '+.www-google-analytics.l.google.com'
     # - '+.www-googletagmanager.l.google.com'
     # - '+.gstatic.com'
-    # - 'dl.google.com'
-    # - 'mtalk.google.com'
-
-   # googleapis.com
-    - '+.fonts.googleapis.com'
-    - '+.googleapis.com'
+    # - DOMAIN, dl.google.com'
+    # - DOMAIN, mtalk.google.com'
 
    # gotquestions.org
     - '+.gotquestions.org'
@@ -1295,6 +1292,35 @@ payload:
     - '+.mgmplus.com'
 
    # microsoft
+    # All .microsoft domains
+    - DOMAIN-KEYWORD, .microsoft'
+
+    # All .hotmail domains
+    - DOMAIN-KEYWORD, .hotmail'
+
+    # All .office domains
+    - DOMAIN-KEYWORD, .office'
+
+    # All .skype domains
+    - DOMAIN-KEYWORD, .skype'
+
+    # All .windows domains
+    - DOMAIN-KEYWORD, .windows'
+
+    # microsoft 365
+    - '+.clipchamp.com'
+
+    # Others, outlook, teams (@!cn)
+    # - '+.cdn.office.net'
+    # - '+.mp.microsoft.com'
+    # - '+.presence.teams.live.com'
+    # - '+.teams.events.data.microsoft.com'
+    # - '+.teams.live.com'
+    # - '+.teams.microsoft.com'
+
+    # windows initial setup download
+    - '+.tlu.dl.delivery.mp.microsoft.com'
+
     # AS8075 - Microsoft Corporation
 
     # - '+.onedrive'
@@ -1332,20 +1358,6 @@ payload:
 
     # - '+.images-eds-ssl.xboxlive.com'
     # - '+.storeedgefd.dsx.mp.microsoft.com'
-
-    # microsoft 365
-    - '+.clipchamp.com'
-
-    # Others, outlook, teams (@!cn)
-    # - '+.cdn.office.net'
-    # - '+.mp.microsoft.com'
-    # - '+.presence.teams.live.com'
-    # - '+.teams.events.data.microsoft.com'
-    # - '+.teams.live.com'
-    # - '+.teams.microsoft.com'
-
-    # windows initial setup download
-    - '+.tlu.dl.delivery.mp.microsoft.com'
 
    # mintmobile
     - '+.mintmobile.com'
@@ -1511,7 +1523,7 @@ payload:
     # onedrive rules originates from this yaml file
     # - '+.blob.core.windows.net'
     # - '+.storage.msn.com'
-    # - 'oneclient.sfx.ms'
+    # - DOMAIN, oneclient.sfx.ms'
 
    # onehome
     - '+.onehome.com'
@@ -1805,7 +1817,7 @@ payload:
 
    # skype
     # - '+.twskype.com'
-    # - 'skype.com'
+    # - DOMAIN, skype.com'
 
    # smartdnsproxy
     - '+.smartdnsproxy.com'
@@ -2101,12 +2113,12 @@ payload:
    # tunein
     # - '+.tunein.com'
 
-    # - 'api.tunein.com'
-    # - 'cdn-cms.tunein.com'
-    # - 'cdn-web.tunein.com'
-    # - 'event.platform.tunein.com'
-    # - 'gotie.tunein.com'
-    # - 'reports.tunein.com'
+    # - DOMAIN, api.tunein.com'
+    # - DOMAIN, cdn-cms.tunein.com'
+    # - DOMAIN, cdn-web.tunein.com'
+    # - DOMAIN, event.platform.tunein.com'
+    # - DOMAIN, gotie.tunein.com'
+    # - DOMAIN, reports.tunein.com'
 
    # turner
     - 's.cdn.turner.com'
@@ -2337,7 +2349,7 @@ payload:
     # - '+.studio.youtube.com'
 
     # - '+.yt3.ggpht.com'
-    # - 'yt3.ggpht.com'
+    # - DOMAIN, yt3.ggpht.com'
     # - '+.com.google.ios.youtube*'
     # - '+.com.google.ios.youtubemusic*'
     # - '+.YouTube*'

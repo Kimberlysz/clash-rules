@@ -169,8 +169,9 @@ rules:
     # 2025-11-01
     - DOMAIN-SUFFIX, amplitude.com, PROXY
 
-   # ancestry.co.uk
+   # ancestry
     - DOMAIN-SUFFIX, ancestry.co.uk, PROXY
+    - DOMAIN-SUFFIX, ancestry.com, PROXY
 
    # anikai
     - DOMAIN-SUFFIX, anikai.to, PROXY
@@ -977,10 +978,6 @@ rules:
     # - DOMAIN, dl.google.com, PROXY
     # - DOMAIN, mtalk.google.com, PROXY
 
-   # googleapis.com
-    - DOMAIN-SUFFIX, fonts.googleapis.com, PROXY
-    - DOMAIN-SUFFIX, googleapis.com, PROXY
-
    # gotquestions.org
     - DOMAIN-SUFFIX, gotquestions.org, PROXY
 
@@ -1362,6 +1359,36 @@ rules:
     - DOMAIN-SUFFIX, mgmplus.com, PROXY
 
    # microsoft
+    # (close at 2026-12-31)
+    # All .microsoft domains
+    - DOMAIN-KEYWORD, .microsoft, PROXY
+
+    # All .hotmail domains
+    - DOMAIN-KEYWORD, .hotmail, PROXY
+
+    # All .office domains
+    - DOMAIN-KEYWORD, .office, PROXY
+
+    # All .skype domains
+    - DOMAIN-KEYWORD, .skype, PROXY
+
+    # All .windows domains
+    - DOMAIN-KEYWORD, .windows, PROXY
+
+    # microsoft 365
+    - DOMAIN-SUFFIX, clipchamp.com, PROXY
+
+    # Others, outlook, teams (@!cn)
+    # - DOMAIN-SUFFIX, cdn.office.net, PROXY
+    # - DOMAIN-SUFFIX, mp.microsoft.com, PROXY
+    # - DOMAIN-SUFFIX, presence.teams.live.com, PROXY
+    # - DOMAIN-SUFFIX, teams.events.data.microsoft.com, PROXY
+    # - DOMAIN-SUFFIX, teams.live.com, PROXY
+    # - DOMAIN-SUFFIX, teams.microsoft.com, PROXY
+
+    # windows initial setup download
+    - DOMAIN-SUFFIX, tlu.dl.delivery.mp.microsoft.com, PROXY
+
     # AS8075 - Microsoft Corporation
 
     # - DOMAIN-KEYWORD, .onedrive, PROXY
@@ -1399,20 +1426,6 @@ rules:
 
     # - DOMAIN-SUFFIX, images-eds-ssl.xboxlive.com, PROXY
     # - DOMAIN-SUFFIX, storeedgefd.dsx.mp.microsoft.com, PROXY
-
-    # microsoft 365
-    - DOMAIN-SUFFIX, clipchamp.com, PROXY
-
-    # Others, outlook, teams (@!cn)
-    # - DOMAIN-SUFFIX, cdn.office.net, PROXY
-    # - DOMAIN-SUFFIX, mp.microsoft.com, PROXY
-    # - DOMAIN-SUFFIX, presence.teams.live.com, PROXY
-    # - DOMAIN-SUFFIX, teams.events.data.microsoft.com, PROXY
-    # - DOMAIN-SUFFIX, teams.live.com, PROXY
-    # - DOMAIN-SUFFIX, teams.microsoft.com, PROXY
-
-    # windows initial setup download
-    - DOMAIN-SUFFIX, tlu.dl.delivery.mp.microsoft.com, PROXY
 
    # mintmobile
     - DOMAIN-SUFFIX, mintmobile.com, PROXY
