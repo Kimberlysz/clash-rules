@@ -1,0 +1,41 @@
+# general
+  # build history
+    # build by Kim Xie / kimberlysz
+    # build time start from: 2023-05-31
+
+  # keywords
+    # '@!cn': Domains serving non-China regions
+    # '@cn': Domains serving China
+    # '@ir': Domains serving Iran
+    # '@ru': Domains serving Russia
+    # '@test': Domains to be tested and verified
+
+  # Others
+    # (1) tlds are too powerful to use, rules are marked
+
+rules:
+  # c
+   # category-ads-all
+    # This file contains domains of all ads providers, including both the domains that serves ads, and the domains of providers themselves.
+    # this is for crunchyroll.com
+
+    - DOMAIN-SUFFIX, secure.adnxs.com, PROXY
+
+  # g
+   # google-ads (test)
+    # these domains locates before reject rules ads
+    # it's for crunchyroll.com
+    - DOMAIN-SUFFIX, 2mdn.net, PROXY
+    - DOMAIN-SUFFIX, beacons.gcp.gvt2.com, PROXY
+    # - DOMAIN-SUFFIX, csi.gstatic.com, PROXY
+    - DOMAIN-SUFFIX, doubleclick.net, PROXY
+    # - DOMAIN-SUFFIX, googleadservices.com, PROXY
+    - DOMAIN-SUFFIX, googlesyndication.com, PROXY
+    # - DOMAIN-SUFFIX, googletagmanager.com, PROXY
+    # - DOMAIN-SUFFIX, imasdk.googleapis.com, PROXY
+    - DOMAIN-SUFFIX, redirector.gvt1.com, PROXY
+    # - DOMAIN-SUFFIX, ssl.gstatic.com, PROXY
+
+  # t
+   # tiktok
+    - DOMAIN-SUFFIX, ads.tiktok.com, PROXY
