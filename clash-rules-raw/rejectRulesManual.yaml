@@ -35,3 +35,7 @@ rules:
     # - DOMAIN-SUFFIX, imasdk.googleapis.com, PROXY
     - DOMAIN-SUFFIX, redirector.gvt1.com, PROXY
     # - DOMAIN-SUFFIX, ssl.gstatic.com, PROXY
+
+  # t
+   # tiktok
+    - DOMAIN-SUFFIX, ads.tiktok.com, PROXY

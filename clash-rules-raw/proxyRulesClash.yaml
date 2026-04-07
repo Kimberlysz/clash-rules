@@ -91,6 +91,9 @@ rules:
     - DOMAIN, ssor.airasia.com, PROXY
     - DOMAIN, static.airasia.com, PROXY
 
+   # airbyte
+    - DOMAIN-SUFFIX, airbyte.com, PROXY
+
    # akamai technologies
     # AS16625 - Akamai Technologies, Inc.
 
@@ -113,6 +116,9 @@ rules:
     - DOMAIN-SUFFIX, amcplus.com, PROXY
     - DOMAIN-SUFFIX, e5a6ae085b6c43020dea230eb0c0ecc33a188227507da97b8ecc05eb8beace6.us-east-1.prod.service.minerva.devices.a2z.com, PROXY
 
+   # americanexpress.com (@test)
+    - DOMAIN-SUFFIX, americanexpress.com, PROXY
+
    # amplitude (@!cn)
     # 2025-11-01
     - DOMAIN-SUFFIX, amplitude.com, PROXY
@@ -121,6 +127,10 @@ rules:
     - DOMAIN-SUFFIX, ancestry.co.uk, PROXY
     - DOMAIN-SUFFIX, ancestry.com, PROXY
     - DOMAIN-SUFFIX, ancestrycdn.com, PROXY
+
+   # annas-archive
+    - DOMAIN-SUFFIX, annas-archive.li, PROXY
+    - DOMAIN-KEYWORD, .annas-archive, PROXY
 
    # anikai
     - DOMAIN-SUFFIX, anikai.to, PROXY
@@ -151,6 +161,9 @@ rules:
     # - DOMAIN, feelinsonice.appspot.com, PROXY
     # - DOMAIN, sc-analytics.appspot.com, PROXY
 
+   # archiveofourown (@test)
+    - DOMAIN-SUFFIX, archiveofourown.org, PROXY
+
    # arkoselabs
     - DOMAIN, client-api.arkoselabs.com, PROXY
     - DOMAIN, iframe.arkoselabs.com, PROXY
@@ -161,6 +174,9 @@ rules:
    # ashleymadison
     - DOMAIN-SUFFIX, ashleymadison.com, PROXY
 
+   # asinsight (@test)
+    - DOMAIN-SUFFIX, asinsight.com, PROXY
+
    # astrill
     - DOMAIN-SUFFIX, astrill.com, PROXY
 
@@ -170,6 +186,9 @@ rules:
 
    # atmeta
     - DOMAIN-SUFFIX, atmeta.com, PROXY
+
+   # aviationa2z.com (@test)
+    - DOMAIN-SUFFIX, aviationa2z.com, PROXY
 
   # b
    # b-cdn.net
@@ -254,8 +273,10 @@ rules:
     - DOMAIN-SUFFIX, personalization.bloomberg.com, PROXY
     - DOMAIN-SUFFIX, sourcepointcmp.bloomberg.com, PROXY
 
-   # BMO
+   # BMO (@test)
+    - DOMAIN-SUFFIX, apptentive.com, PROXY
     - DOMAIN-SUFFIX, bmo.com, PROXY
+    - DOMAIN-SUFFIX, bmofinancial.demdex.net, PROXY
 
    # bmwusa
     - DOMAIN, idresgraph.bmwusa.com, PROXY
@@ -265,6 +286,9 @@ rules:
 
    # broadbandgenie.co.uk
     - DOMAIN-SUFFIX, broadbandgenie.co.uk, PROXY
+
+   # bun (@test)
+    - DOMAIN-SUFFIX, bun.com, PROXY
 
   # c
    # ca.gov
@@ -321,6 +345,9 @@ rules:
    # charlestoncounty.org
     - DOMAIN-SUFFIX, charlestoncounty.org, PROXY
 
+   # chase (@test)
+    - DOMAIN-SUFFIX, chase.com, PROXY
+
    # chatbotapp.ai (@!cn)
     - DOMAIN-SUFFIX, chatbotapp.ai, PROXY
 
@@ -349,6 +376,10 @@ rules:
 
    # clickbank (@!cn)
     - DOMAIN-SUFFIX, clickbank.com, PROXY
+
+   # clickup
+    - DOMAIN-SUFFIX, clickup.com, PROXY
+    - DOMAIN-SUFFIX, app.clickup.com, PROXY
 
    # cloudflare
     - DOMAIN, a.nel.cloudflare.com, PROXY
@@ -412,6 +443,9 @@ rules:
 
    # corelogic
     - DOMAIN-SUFFIX, corelogic.com, PROXY
+
+   # coupang (@test)
+    - DOMAIN-SUFFIX, coupang.com, PROXY
 
    # coveredca.com (@!cn)
     - DOMAIN-SUFFIX, coveredca.com, PROXY
@@ -478,8 +512,15 @@ rules:
     - DOMAIN-SUFFIX, cyberspatial.com, PROXY
 
   # d
+   # datarova (@test)
+    - DOMAIN-SUFFIX, datarova.com, PROXY
+
    # deadline
     - DOMAIN-SUFFIX, deadline.com, PROXY
+
+   # deepmind
+    # alphafold
+    - DOMAIN-SUFFIX, alphafoldserver.com, PROXY
 
    # dfas.mil
     - DOMAIN-SUFFIX, dfas.mil, PROXY
@@ -505,6 +546,9 @@ rules:
 
    # disney.demdex.net
     - DOMAIN-SUFFIX, disney.demdex.net, PROXY
+
+   # diyibanzhu
+    - DOMAIN-SUFFIX, diyibanzhu.me, PROXY
 
    # donacionesley21440.cl
     - DOMAIN-SUFFIX, donacionesley21440.cl, PROXY
@@ -802,7 +846,6 @@ rules:
 
    # google_3 (@!cn)
     # gstatic.com
-    - DOMAIN-SUFFIX, gstatic.com, PROXY
     - DOMAIN-SUFFIX, www.gstatic.com, PROXY
 
     # google-analytics.com (@!cn)
@@ -818,7 +861,6 @@ rules:
 
     # googleapis.com
     - DOMAIN-SUFFIX, fonts.googleapis.com, PROXY
-    - DOMAIN-SUFFIX, googleapis.com, PROXY
 
    # google2 (@!cn)
     # under global mode, dl.google.com redirects to https://google.com/chrome
@@ -1039,6 +1081,9 @@ rules:
    # howtogeek
     - DOMAIN-SUFFIX, howtogeek.com, PROXY
 
+   # huaren
+    - DOMAIN-SUFFIX, huaren.us, PROXY
+
    # hubspot
     - DOMAIN-SUFFIX, hubspot.com, PROXY
 
@@ -1112,6 +1157,9 @@ rules:
 
    # ipinfo
     - DOMAIN-SUFFIX, ipinfo.io, PROXY
+
+   # irishgenealogy
+    - DOMAIN-SUFFIX, irishgenealogy.ie, PROXY
 
    # iscooterglobal.co.uk
     - DOMAIN-SUFFIX, iscooterglobal.co.uk, PROXY
@@ -1187,6 +1235,9 @@ rules:
 
    # keatinggroup
     - DOMAIN-SUFFIX, keatinggroup.com, PROXY
+
+   # keeper (@test)
+    - DOMAIN-SUFFIX, keeper.ai, PROXY
 
    # keepsolid
     - DOMAIN-SUFFIX, keepsolid.com, PROXY
@@ -1288,9 +1339,12 @@ rules:
    # lookah
     - DOMAIN-SUFFIX, lookah.com, PROXY
 
+   # loom (@test)
+    - DOMAIN-SUFFIX, loom.com, PROXY
+
    # lovart
     - DOMAIN-SUFFIX, flowith.io, PROXY
-    - DOMAIN-SUFFIX, lovart.ai, PROXY
+    # - DOMAIN-SUFFIX, lovart.ai, PROXY # included in the main file
 
    # lowclassic
     - DOMAIN-SUFFIX, lowclassic.com, PROXY
@@ -1433,6 +1487,12 @@ rules:
    # moxfield
     - DOMAIN-SUFFIX, assets.moxfield.net, PROXY
     - DOMAIN-SUFFIX, moxfield.com, PROXY
+
+   # mpfill
+    - DOMAIN-SUFFIX, mpfill.com, PROXY
+
+   # mpcfill (@test)
+    - DOMAIN-SUFFIX, mpcfill.com, PROXY
 
    # msn
     # msn rules originates from this yaml file
@@ -1960,8 +2020,12 @@ rules:
    # sugarfreemom
     - DOMAIN-SUFFIX, sugarfreemom.com, PROXY
 
-   # suno
+   # suno (@test)
     - DOMAIN-SUFFIX, suno.com, PROXY
+    - DOMAIN-SUFFIX, suno.ai, PROXY
+
+   # supabase (@test)
+    - DOMAIN-SUFFIX, supabase.com, PROXY
 
    # surfshark
     - DOMAIN-SUFFIX, surfshark.com, PROXY
@@ -1976,6 +2040,10 @@ rules:
     - DOMAIN-SUFFIX, synchronybank.com, PROXY
 
   # t
+   # tabbitbrowser
+    # - DOMAIN-SUFFIX, tabbit-ai.com, PROXY
+    - DOMAIN-SUFFIX, tabbitbrowser.com, PROXY
+
    # taiwanobsessed.com
     - DOMAIN-SUFFIX, taiwanobsessed.com, PROXY
 
@@ -2232,6 +2300,9 @@ rules:
    # uspto.gov
     - DOMAIN, tmsearch.uspto.gov, PROXY
 
+   # usvisascheduling (@test)
+    - DOMAIN-SUFFIX, usvisascheduling.com, PROXY
+
    # utorrent
     - DOMAIN-SUFFIX, utorrent.com, PROXY
 
@@ -2295,6 +2366,9 @@ rules:
     - DOMAIN-SUFFIX, dwin1.com, PROXY
     - DOMAIN-SUFFIX, waterstones.co.uk, PROXY
     - DOMAIN-SUFFIX, waterstones.com, PROXY
+
+   # wconcept
+    - DOMAIN-SUFFIX, wconcept.co.kr, PROXY
 
    # wd.bible
     - DOMAIN-SUFFIX, endao.app, PROXY
@@ -2361,6 +2435,9 @@ rules:
 
    # xiaoyakankan
     - DOMAIN-SUFFIX, xiaoyakankan.com, PROXY
+
+   # xiranjayzhao
+    - DOMAIN-SUFFIX, xiranjayzhao.com, PROXY
 
   # y
    # yandex

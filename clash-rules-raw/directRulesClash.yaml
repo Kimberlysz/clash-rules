@@ -60,8 +60,12 @@ rules:
     # - DOMAIN-SUFFIX, github.io, DIRECT
     # - DOMAIN-SUFFIX, raw.githubusercontent.com, DIRECT
 
-   # goodwe.com
+   # goodwe
     - DOMAIN-SUFFIX, goodwe.com, DIRECT
+
+   # goofish
+    - DOMAIN-SUFFIX, goofish.com, DIRECT
+    - DOMAIN-SUFFIX, acs.m.goofish.com, DIRECT
 
   # h
 
@@ -139,6 +143,8 @@ rules:
     - DOMAIN-SUFFIX, steamcontent.com, DIRECT
 
   # t
+   # tabbitbrowser
+    # - DOMAIN-SUFFIX, tabbit-ai.com, PROXY
 
   # u
  
