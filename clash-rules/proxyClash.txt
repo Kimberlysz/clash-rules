@@ -1,4 +1,19 @@
-payload:
+# general
+  # build history
+    # build by Kim Xie / kimberlysz
+    # build time start from: 2023-05-31
+
+  # keywords
+    # '@!cn': Domains serving non-China regions
+    # '@cn': Domains serving China
+    # '@ir': Domains serving Iran
+    # '@ru': Domains serving Russia
+    # '@test': Domains to be tested and verified
+
+  # Others
+    # (1) tlds are too powerful to use, rules are marked
+
+rules:
   # #
    # 1800 flowers (@!cn)
     - '+.1800flowers.com'
@@ -114,8 +129,11 @@ payload:
     - '+.ancestrycdn.com'
 
    # annas-archive
-    - '+.annas-archive.li'
     - '+..annas-archive'
+    - '+.annas-archive.gd'
+    - '+.annas-archive.gl'
+    - '+.annas-archive.li'
+    - '+.annas-archive.pk'
 
    # anikai
     - '+.anikai.to'
