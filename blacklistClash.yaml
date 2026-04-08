@@ -72,7 +72,7 @@ external-controller: 127.0.0.1:9090
 # Authenticate by spedifying HTTP header `Authorization: Bearer ${secret}`
 # ALWAYS set a secret if RESTful API is listening on 0.0.0.0
 # secret: "your_secret" # warning: !important, change it to your secret (prevent merlinclash being used by WAN users)
-secret: "7wZ5YgyEA5W7ef7Gy9JZCEYXLKJXfeCc73wq8QiFDBKwDv1veJihabuNQaZV4bYL" # WARNING: every time when this file is applied, a password is needed to be changed. (!important)
+secret: "e2k7mT5kuyLwcCrBJp1Y35taFTjQ4WHX2qG5v2V3DYQJTheF35qotpg5mBK2mqpr" # WARNING: every time when this file is applied, a password is needed to be changed. (!important)
 
 # Outbound interface name
 # interface-name: en0 # might be en1
