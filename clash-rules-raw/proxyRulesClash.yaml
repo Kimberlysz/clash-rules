@@ -129,8 +129,11 @@ rules:
     - DOMAIN-SUFFIX, ancestrycdn.com, PROXY
 
    # annas-archive
-    - DOMAIN-SUFFIX, annas-archive.li, PROXY
     - DOMAIN-KEYWORD, .annas-archive, PROXY
+    - DOMAIN-SUFFIX, annas-archive.gd, PROXY
+    - DOMAIN-SUFFIX, annas-archive.gl, PROXY
+    - DOMAIN-SUFFIX, annas-archive.li, PROXY
+    - DOMAIN-SUFFIX, annas-archive.pk, PROXY
 
    # anikai
     - DOMAIN-SUFFIX, anikai.to, PROXY
