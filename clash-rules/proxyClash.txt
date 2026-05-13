@@ -1,19 +1,4 @@
-# general
-  # build history
-    # build by Kim Xie / kimberlysz
-    # build time start from: 2023-05-31
-
-  # keywords
-    # '@!cn': Domains serving non-China regions
-    # '@cn': Domains serving China
-    # '@ir': Domains serving Iran
-    # '@ru': Domains serving Russia
-    # '@test': Domains to be tested and verified
-
-  # Others
-    # (1) tlds are too powerful to use, rules are marked
-
-rules:
+payload:
   # #
    # 1800 flowers (@!cn)
     - '+.1800flowers.com'
@@ -294,9 +279,6 @@ rules:
     - '+.bun.com'
 
   # c
-   # ca.gov
-    - '+.dmv.ca.gov'
-    - '+.sa.dmv.ca.gov'
 
    # caliva
     - '+.caliva.com'
@@ -317,6 +299,9 @@ rules:
     - '+.capcut.com'
     - '+.capcutapi.com'
 
+   # cargurus
+    - '+.cargurus.com'
+
    # cars
     - '+.cars.com'
 
@@ -325,6 +310,9 @@ rules:
 
    # cbex18
     - '+.cbex18.com'
+
+   # cdw
+    - '+.cdw.com'
 
    # cebupacificair
     - '+.cebupacificair.com'
@@ -433,9 +421,6 @@ rules:
     - '+.complio.com'
 
     - 'liberty.complio.com'
-
-   # cookcountyclerkil.gov
-    - '+.cookcountyclerkil.gov'
 
    # copilot.microsoft
     - '+.copilot.microsoft.com'
@@ -569,9 +554,6 @@ rules:
    # echostar
     - '+.echostar'
 
-   # ed.gov
-    - '+.eric.ed.gov'
-
    # elementor
     - '+.elementor.cloud'
     - '+.elementor.com'
@@ -692,6 +674,11 @@ rules:
     - '+.flixtor.se'
     - '+.flixtor.st'
 
+   # flowith
+    - '+.flowith.featurebase.app'
+    - '+.flowith.io'
+    - '+.flowith.net'
+
    # fmovies (@!cn)
     - '+.fmovies.co'
     - '+.jwpcdn.com'
@@ -733,8 +720,14 @@ rules:
    # frontlineeducation
     - '+.frontlineeducation.com'
 
+   # fubon
+    - '+.fbs.com.tw'
+
    # fullcompass
     - '+.fullcompass.com'
+
+   # fuxin.tv
+    - '+.api.fuxunapi.com'
 
   # g
    # gammaplatform
@@ -980,6 +973,51 @@ rules:
    # gotquestions.org
     - '+.gotquestions.org'
 
+   # gov
+    # ca.gov
+    - '+.dmv.ca.gov'
+    - '+.sa.dmv.ca.gov'
+
+    # cookcountyclerkil.gov
+    - '+.cookcountyclerkil.gov'
+
+    # ed.gov
+    - '+.eric.ed.gov'
+
+    # maine.gov
+    - '+.maine.gov'
+
+    # nasa.gov
+    - '+.spaceplace.nasa.gov'
+
+    # nationsreportcard.gov
+    - '+.nationsreportcard.gov'
+
+    # nces.ed.gov
+    - '+.nces.ed.gov'
+
+    # nh.gov
+    - '+.nh.gov'
+
+    # mo.gov
+    - '+.dese.mo.gov'
+    - '+.mo.gov'
+
+    # sandiego.gov
+    - '+.sandiego.gov'
+
+    # studentaid.gov
+    - '+.studentaid.gov'
+
+    # uspto.gov
+    - 'tmsearch.uspto.gov'
+
+    # wisconsindot.gov
+    - '+.wisconsindot.gov'
+
+    # war.gov
+    - '+.war.gov'
+
    # gov.co
     - '+.gov.co'
 
@@ -1124,6 +1162,10 @@ rules:
     - 'assets-prd.ignimgs.com'
     - 'kraken.ignimgs.com'
 
+   # il
+    # e-vrit.co.il
+    - '+.e-vrit.co.il'
+
    # indeed
     - 't.indeed.com'
     - 'secure.indeed.com'
@@ -1157,6 +1199,9 @@ rules:
 
    # invideo.io
     - '+.invideo.io'
+
+   # ipdeep
+    - '+.ipdeep.com'
 
    # ipinfo
     - '+.ipinfo.io'
@@ -1266,6 +1311,9 @@ rules:
     - '+.ktar.com'
 
   # l
+   # lamborghiniwashington
+    - '+.lamborghiniwashington.com'
+
    # larrainvial
     - '+.larrainvial.com'
 
@@ -1361,9 +1409,6 @@ rules:
   # m
    # ma.ne
     - '+.hu.ma.ne'
-
-   # maine.gov
-    - '+.maine.gov'
 
    # makedreamwebsite
     - '+.makedreamwebsite.com'
@@ -1470,12 +1515,12 @@ rules:
    # mintmobile
     - '+.mintmobile.com'
 
+   # mil
+    # aaro.mil
+    - '+.aaro.mil'
+
    # mnews
     - DOMAIN-SUFFIX, mnews.tw
-
-   # mo.gov
-    - '+.dese.mo.gov'
-    - '+.mo.gov'
 
    # mojim
     - '+.mojim.com'
@@ -1530,12 +1575,6 @@ rules:
    # napster
     - '+.napster.com'
 
-   # nasa.gov
-    - '+.spaceplace.nasa.gov'
-
-   # nationsreportcard.gov
-    - '+.nationsreportcard.gov'
-
    # navyfederal
     - '+.navyfederal.org'
 
@@ -1543,9 +1582,6 @@ rules:
     - 'dm-assets.navyfederal.org'
     - 'liveengage.navyfederal.org'
     - 'navyfederalcu.tt.omtrdc.net'
-
-   # nces.ed.gov
-    - '+.nces.ed.gov'
 
    # nelnet
     - 'secure.nelnet.com'
@@ -1578,9 +1614,6 @@ rules:
     - 'staticdelivery.nexusmods.com'
     - 'staticstats.nexusmods.com'
     - 'unleash-edge.nexusmods.com'
-
-   # nh.gov
-    - '+.nh.gov'
 
    # nicusa
     - '+.nicusa.com'
@@ -1765,6 +1798,10 @@ rules:
    # pizzint (@test)
     - '+.pizzint.watch'
 
+   # placer
+    - '+.analytics.placer.ai'
+    - '+.placer.ai'
+
    # pmpmanage
     - '+.pmpmanage.com'
     - '+.pmprollc.com'
@@ -1806,6 +1843,9 @@ rules:
 
    # prompthero
     - '+.prompthero.com'
+
+   # proofcentral
+    - '+.proofcentral.com'
 
    # proshkola
     - '+.proshkola18.ru'
@@ -1870,6 +1910,9 @@ rules:
    # remove.bg
     - '+.remove.bg'
 
+   # rm
+    - '+.Ib.assessor.rm.com'
+
    # roblox
     - '+.roblox.com'
 
@@ -1891,9 +1934,6 @@ rules:
 
    # sandbox.game
     - '+.sandbox.game'
-
-   # sandiego.gov
-    - '+.sandiego.gov'
 
    # sandyliang.info
     - '+.sandyliang.info'
@@ -1924,6 +1964,9 @@ rules:
 
    # shadowfly
     - '+.shadowfly.org'
+
+   # shaneco
+    - '+.shaneco.com'
 
    # sharepoint
     # - '+.blog.pathtosharepoint.com'
@@ -1975,6 +2018,9 @@ rules:
    # special-ops.org
     - '+.special-ops.org'
 
+   # spectrum
+    - '+.spectrum.net'
+
    # spicychat.ai
     - '+.spicychat.ai'
 
@@ -2014,14 +2060,14 @@ rules:
     - '+.stremio.com'
     - '+.stremio.net'
 
-   # studentaid.gov
-    - '+.studentaid.gov'
-
    # studentclearinghouse.org
     - '+.studentclearinghouse.org'
 
    # sugarfreemom
     - '+.sugarfreemom.com'
+
+   # sundayguardianlive
+    - '+.sundayguardianlive.com'
 
    # suno (@test)
     - '+.suno.com'
@@ -2087,6 +2133,9 @@ rules:
     - '+.tenor.com'
 
     - 'media.tenor.com'
+
+   # terafab
+    - '+.terafab.ai'
 
    # theartofeducation.edu (@!cn)
     - '+.theartofeducation.edu'
@@ -2155,6 +2204,9 @@ rules:
     - '+.tibetoffice.eu'
     - '+.tibetoffice.org'
     - '+.tibetoffice.com.au'
+
+   # tidal
+    - '+.tidal.com'
 
    # tiktok (@!cn)
     - '+.appsflyer.com'
@@ -2300,9 +2352,6 @@ rules:
    # userbenchmark
     - '+.userbenchmark.com'
 
-   # uspto.gov
-    - 'tmsearch.uspto.gov'
-
    # usvisascheduling (@test)
     - '+.usvisascheduling.com'
 
@@ -2401,9 +2450,6 @@ rules:
 
    # winscp.net
     - '+.cdn.winscp.net'
-
-   # wisconsindot.gov
-    - '+.wisconsindot.gov'
 
    # wisconsinregisteredagent.net
     - '+.wisconsinregisteredagent.net'
