@@ -294,9 +294,6 @@ rules:
     - DOMAIN-SUFFIX, bun.com, PROXY
 
   # c
-   # ca.gov
-    - DOMAIN-SUFFIX, dmv.ca.gov, PROXY
-    - DOMAIN-SUFFIX, sa.dmv.ca.gov, PROXY
 
    # caliva
     - DOMAIN-SUFFIX, caliva.com, PROXY
@@ -317,6 +314,9 @@ rules:
     - DOMAIN-SUFFIX, capcut.com, PROXY
     - DOMAIN-SUFFIX, capcutapi.com, PROXY
 
+   # cargurus
+    - DOMAIN-SUFFIX, cargurus.com, PROXY
+
    # cars
     - DOMAIN-SUFFIX, cars.com, PROXY
 
@@ -325,6 +325,9 @@ rules:
 
    # cbex18
     - DOMAIN-SUFFIX, cbex18.com, PROXY
+
+   # cdw
+    - DOMAIN-SUFFIX, cdw.com, PROXY
 
    # cebupacificair
     - DOMAIN-SUFFIX, cebupacificair.com, PROXY
@@ -433,9 +436,6 @@ rules:
     - DOMAIN-SUFFIX, complio.com, PROXY
 
     - DOMAIN, liberty.complio.com, PROXY
-
-   # cookcountyclerkil.gov
-    - DOMAIN-SUFFIX, cookcountyclerkil.gov, PROXY
 
    # copilot.microsoft
     - DOMAIN-SUFFIX, copilot.microsoft.com, PROXY
@@ -569,9 +569,6 @@ rules:
    # echostar
     - DOMAIN-SUFFIX, echostar, PROXY
 
-   # ed.gov
-    - DOMAIN-SUFFIX, eric.ed.gov, PROXY
-
    # elementor
     - DOMAIN-SUFFIX, elementor.cloud, PROXY
     - DOMAIN-SUFFIX, elementor.com, PROXY
@@ -692,6 +689,11 @@ rules:
     - DOMAIN-SUFFIX, flixtor.se, PROXY
     - DOMAIN-SUFFIX, flixtor.st, PROXY
 
+   # flowith
+    - DOMAIN-SUFFIX, flowith.featurebase.app, PROXY
+    - DOMAIN-SUFFIX, flowith.io, PROXY
+    - DOMAIN-SUFFIX, flowith.net, PROXY
+
    # fmovies (@!cn)
     - DOMAIN-SUFFIX, fmovies.co, PROXY
     - DOMAIN-SUFFIX, jwpcdn.com, PROXY
@@ -733,8 +735,14 @@ rules:
    # frontlineeducation
     - DOMAIN-SUFFIX, frontlineeducation.com, PROXY
 
+   # fubon
+    - DOMAIN-SUFFIX, fbs.com.tw, PROXY
+
    # fullcompass
     - DOMAIN-SUFFIX, fullcompass.com, PROXY
+
+   # fuxin.tv
+    - DOMAIN-SUFFIX, api.fuxunapi.com, PROXY
 
   # g
    # gammaplatform
@@ -980,6 +988,51 @@ rules:
    # gotquestions.org
     - DOMAIN-SUFFIX, gotquestions.org, PROXY
 
+   # gov
+    # ca.gov
+    - DOMAIN-SUFFIX, dmv.ca.gov, PROXY
+    - DOMAIN-SUFFIX, sa.dmv.ca.gov, PROXY
+
+    # cookcountyclerkil.gov
+    - DOMAIN-SUFFIX, cookcountyclerkil.gov, PROXY
+
+    # ed.gov
+    - DOMAIN-SUFFIX, eric.ed.gov, PROXY
+
+    # maine.gov
+    - DOMAIN-SUFFIX, maine.gov, PROXY
+
+    # nasa.gov
+    - DOMAIN-SUFFIX, spaceplace.nasa.gov, PROXY
+
+    # nationsreportcard.gov
+    - DOMAIN-SUFFIX, nationsreportcard.gov, PROXY
+
+    # nces.ed.gov
+    - DOMAIN-SUFFIX, nces.ed.gov, PROXY
+
+    # nh.gov
+    - DOMAIN-SUFFIX, nh.gov, PROXY
+
+    # mo.gov
+    - DOMAIN-SUFFIX, dese.mo.gov, PROXY
+    - DOMAIN-SUFFIX, mo.gov, PROXY
+
+    # sandiego.gov
+    - DOMAIN-SUFFIX, sandiego.gov, PROXY
+
+    # studentaid.gov
+    - DOMAIN-SUFFIX, studentaid.gov, PROXY
+
+    # uspto.gov
+    - DOMAIN, tmsearch.uspto.gov, PROXY
+
+    # wisconsindot.gov
+    - DOMAIN-SUFFIX, wisconsindot.gov, PROXY
+
+    # war.gov
+    - DOMAIN-SUFFIX, war.gov, PROXY
+
    # gov.co
     - DOMAIN-SUFFIX, gov.co, PROXY
 
@@ -1124,6 +1177,10 @@ rules:
     - DOMAIN, assets-prd.ignimgs.com, PROXY
     - DOMAIN, kraken.ignimgs.com, PROXY
 
+   # il
+    # e-vrit.co.il
+    - DOMAIN-SUFFIX, e-vrit.co.il, PROXY
+
    # indeed
     - DOMAIN, t.indeed.com, PROXY
     - DOMAIN, secure.indeed.com, PROXY
@@ -1157,6 +1214,9 @@ rules:
 
    # invideo.io
     - DOMAIN-SUFFIX, invideo.io, PROXY
+
+   # ipdeep
+    - DOMAIN-SUFFIX, ipdeep.com, PROXY
 
    # ipinfo
     - DOMAIN-SUFFIX, ipinfo.io, PROXY
@@ -1266,6 +1326,9 @@ rules:
     - DOMAIN-SUFFIX, ktar.com, PROXY
 
   # l
+   # lamborghiniwashington
+    - DOMAIN-SUFFIX, lamborghiniwashington.com, PROXY
+
    # larrainvial
     - DOMAIN-SUFFIX, larrainvial.com, PROXY
 
@@ -1361,9 +1424,6 @@ rules:
   # m
    # ma.ne
     - DOMAIN-SUFFIX, hu.ma.ne, PROXY
-
-   # maine.gov
-    - DOMAIN-SUFFIX, maine.gov, PROXY
 
    # makedreamwebsite
     - DOMAIN-SUFFIX, makedreamwebsite.com, PROXY
@@ -1470,12 +1530,12 @@ rules:
    # mintmobile
     - DOMAIN-SUFFIX, mintmobile.com, PROXY
 
+   # mil
+    # aaro.mil
+    - DOMAIN-SUFFIX, aaro.mil, PROXY
+
    # mnews
     - DOMAIN-SUFFIX, mnews.tw
-
-   # mo.gov
-    - DOMAIN-SUFFIX, dese.mo.gov, PROXY
-    - DOMAIN-SUFFIX, mo.gov, PROXY
 
    # mojim
     - DOMAIN-SUFFIX, mojim.com, PROXY
@@ -1530,12 +1590,6 @@ rules:
    # napster
     - DOMAIN-SUFFIX, napster.com, PROXY
 
-   # nasa.gov
-    - DOMAIN-SUFFIX, spaceplace.nasa.gov, PROXY
-
-   # nationsreportcard.gov
-    - DOMAIN-SUFFIX, nationsreportcard.gov, PROXY
-
    # navyfederal
     - DOMAIN-SUFFIX, navyfederal.org, PROXY
 
@@ -1543,9 +1597,6 @@ rules:
     - DOMAIN, dm-assets.navyfederal.org, PROXY
     - DOMAIN, liveengage.navyfederal.org, PROXY
     - DOMAIN, navyfederalcu.tt.omtrdc.net, PROXY
-
-   # nces.ed.gov
-    - DOMAIN-SUFFIX, nces.ed.gov, PROXY
 
    # nelnet
     - DOMAIN, secure.nelnet.com, PROXY
@@ -1578,9 +1629,6 @@ rules:
     - DOMAIN, staticdelivery.nexusmods.com, PROXY
     - DOMAIN, staticstats.nexusmods.com, PROXY
     - DOMAIN, unleash-edge.nexusmods.com, PROXY
-
-   # nh.gov
-    - DOMAIN-SUFFIX, nh.gov, PROXY
 
    # nicusa
     - DOMAIN-SUFFIX, nicusa.com, PROXY
@@ -1765,6 +1813,10 @@ rules:
    # pizzint (@test)
     - DOMAIN-SUFFIX, pizzint.watch, PROXY
 
+   # placer
+    - DOMAIN-SUFFIX, analytics.placer.ai, PROXY
+    - DOMAIN-SUFFIX, placer.ai, PROXY
+
    # pmpmanage
     - DOMAIN-SUFFIX, pmpmanage.com, PROXY
     - DOMAIN-SUFFIX, pmprollc.com, PROXY
@@ -1806,6 +1858,9 @@ rules:
 
    # prompthero
     - DOMAIN-SUFFIX, prompthero.com, PROXY
+
+   # proofcentral
+    - DOMAIN-SUFFIX, proofcentral.com, PROXY
 
    # proshkola
     - DOMAIN-SUFFIX, proshkola18.ru, PROXY
@@ -1870,6 +1925,9 @@ rules:
    # remove.bg
     - DOMAIN-SUFFIX, remove.bg, PROXY
 
+   # rm
+    - DOMAIN-SUFFIX, Ib.assessor.rm.com, PROXY
+
    # roblox
     - DOMAIN-SUFFIX, roblox.com, PROXY
 
@@ -1891,9 +1949,6 @@ rules:
 
    # sandbox.game
     - DOMAIN-SUFFIX, sandbox.game, PROXY
-
-   # sandiego.gov
-    - DOMAIN-SUFFIX, sandiego.gov, PROXY
 
    # sandyliang.info
     - DOMAIN-SUFFIX, sandyliang.info, PROXY
@@ -1924,6 +1979,9 @@ rules:
 
    # shadowfly
     - DOMAIN-SUFFIX, shadowfly.org, PROXY
+
+   # shaneco
+    - DOMAIN-SUFFIX, shaneco.com, PROXY
 
    # sharepoint
     # - DOMAIN-SUFFIX, blog.pathtosharepoint.com, PROXY
@@ -1975,6 +2033,9 @@ rules:
    # special-ops.org
     - DOMAIN-SUFFIX, special-ops.org, PROXY
 
+   # spectrum
+    - DOMAIN-SUFFIX, spectrum.net, PROXY
+
    # spicychat.ai
     - DOMAIN-SUFFIX, spicychat.ai, PROXY
 
@@ -2014,15 +2075,18 @@ rules:
     - DOMAIN-SUFFIX, stremio.com, PROXY
     - DOMAIN-SUFFIX, stremio.net, PROXY
 
-   # studentaid.gov
-    - DOMAIN-SUFFIX, studentaid.gov, PROXY
-
    # studentclearinghouse.org
     - DOMAIN-SUFFIX, studentclearinghouse.org, PROXY
 
    # sugarfreemom
     - DOMAIN-SUFFIX, sugarfreemom.com, PROXY
 
+<<<<<<< HEAD
+=======
+   # sundayguardianlive
+    - DOMAIN-SUFFIX, sundayguardianlive.com, PROXY
+
+>>>>>>> releases
    # suno (@test)
     - DOMAIN-SUFFIX, suno.com, PROXY
     - DOMAIN-SUFFIX, suno.ai, PROXY
@@ -2087,6 +2151,9 @@ rules:
     - DOMAIN-SUFFIX, tenor.com, PROXY
 
     - DOMAIN, media.tenor.com, PROXY
+
+   # terafab
+    - DOMAIN-SUFFIX, terafab.ai, PROXY
 
    # theartofeducation.edu (@!cn)
     - DOMAIN-SUFFIX, theartofeducation.edu, PROXY
@@ -2155,6 +2222,9 @@ rules:
     - DOMAIN-SUFFIX, tibetoffice.eu, PROXY
     - DOMAIN-SUFFIX, tibetoffice.org, PROXY
     - DOMAIN-SUFFIX, tibetoffice.com.au, PROXY
+
+   # tidal
+    - DOMAIN-SUFFIX, tidal.com, PROXY
 
    # tiktok (@!cn)
     - DOMAIN-SUFFIX, appsflyer.com, PROXY
@@ -2300,8 +2370,8 @@ rules:
    # userbenchmark
     - DOMAIN-SUFFIX, userbenchmark.com, PROXY
 
-   # uspto.gov
-    - DOMAIN, tmsearch.uspto.gov, PROXY
+   # usvisascheduling (@test)
+    - DOMAIN-SUFFIX, usvisascheduling.com, PROXY
 
    # usvisascheduling (@test)
     - DOMAIN-SUFFIX, usvisascheduling.com, PROXY
@@ -2401,9 +2471,6 @@ rules:
 
    # winscp.net
     - DOMAIN-SUFFIX, cdn.winscp.net, PROXY
-
-   # wisconsindot.gov
-    - DOMAIN-SUFFIX, wisconsindot.gov, PROXY
 
    # wisconsinregisteredagent.net
     - DOMAIN-SUFFIX, wisconsinregisteredagent.net, PROXY
