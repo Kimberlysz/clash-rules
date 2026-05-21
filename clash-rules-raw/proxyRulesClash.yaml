@@ -32,6 +32,9 @@ rules:
     - DOMAIN-SUFFIX, 2048.info, PROXY
     - DOMAIN-SUFFIX, img.2048.spa, PROXY
 
+   # 21st.dev
+    - DOMAIN-SUFFIX, 21st.dev, PROXY
+
    # 2miners
     - DOMAIN-SUFFIX, 2miners.com, PROXY
 
@@ -294,7 +297,6 @@ rules:
     - DOMAIN-SUFFIX, bun.com, PROXY
 
   # c
-
    # caliva
     - DOMAIN-SUFFIX, caliva.com, PROXY
 
@@ -379,6 +381,9 @@ rules:
 
    # clash
     - DOMAIN-SUFFIX, clash.la, PROXY
+
+   # clemson university
+    - DOMAIN-SUFFIX, clemson.edu, PROXY
 
    # clickbank (@!cn)
     - DOMAIN-SUFFIX, clickbank.com, PROXY
@@ -510,6 +515,9 @@ rules:
     - DOMAIN-SUFFIX, cwtv.com, PROXY
 
     - DOMAIN, images.cwtv.com, PROXY
+
+   # cyberbackgroundchecks
+    - DOMAIN-SUFFIX, cyberbackgroundchecks.com, PROXY
 
    # cyberspatial
     - DOMAIN-SUFFIX, cyberspatial.com, PROXY
@@ -662,8 +670,14 @@ rules:
    # farmers
     - DOMAIN-SUFFIX, farmers.com, PROXY
 
+   # fastbackgroundcheck
+    - DOMAIN-SUFFIX, fastbackgroundcheck.com, PROXY
+
    # fastly
     # AS54113 - Fastly, Inc.
+
+   # fastpeoplesearch
+    - DOMAIN-SUFFIX, fastpeoplesearch.com, PROXY
 
    # feiyu-tech (@!cn)
     - DOMAIN-SUFFIX, feiyu-tech.com, PROXY
@@ -995,6 +1009,9 @@ rules:
 
     # cookcountyclerkil.gov
     - DOMAIN-SUFFIX, cookcountyclerkil.gov, PROXY
+
+    # defense.gov
+    - DOMAIN-SUFFIX, defense.gov, PROXY
 
     # ed.gov
     - DOMAIN-SUFFIX, eric.ed.gov, PROXY
@@ -1547,6 +1564,14 @@ rules:
    # monica.im
     - DOMAIN-SUFFIX, monica.im, PROXY
 
+   # moonpay
+    - DOMAIN-SUFFIX, moonpay.com, PROXY
+    - DOMAIN-SUFFIX, otel-collector.moonpaycloud.com, PROXY
+    - DOMAIN-SUFFIX, moonpay.onelink.me, PROXY
+
+   # motion.dev
+    - DOMAIN-SUFFIX, motion.dev, PROXY
+
    # moxfield
     - DOMAIN-SUFFIX, assets.moxfield.net, PROXY
     - DOMAIN-SUFFIX, moxfield.com, PROXY
@@ -1589,6 +1614,9 @@ rules:
 
    # napster
     - DOMAIN-SUFFIX, napster.com, PROXY
+
+   # nationalpublicdata
+    - DOMAIN-SUFFIX, nationalpublicdata.com, PROXY
 
    # navyfederal
     - DOMAIN-SUFFIX, navyfederal.org, PROXY
@@ -1991,6 +2019,9 @@ rules:
    # shodan.io
     - DOMAIN-SUFFIX, shodan.io, PROXY
 
+   # shutterstock
+    - DOMAIN-SUFFIX, shutterstock.com, PROXY
+
    # siena.edu
     - DOMAIN-SUFFIX, siena.edu, PROXY
 
@@ -2046,6 +2077,9 @@ rules:
     - DOMAIN, publisher-assets.spot.im, PROXY
     - DOMAIN, event-stream.spot.im, PROXY
 
+   # spotify
+    - DOMAIN-SUFFIX, withspotify.com, PROXY
+
    # squarespace (@!cn)
     - DOMAIN-SUFFIX, squarespace.com, PROXY
 
@@ -2081,12 +2115,9 @@ rules:
    # sugarfreemom
     - DOMAIN-SUFFIX, sugarfreemom.com, PROXY
 
-<<<<<<< HEAD
-=======
    # sundayguardianlive
     - DOMAIN-SUFFIX, sundayguardianlive.com, PROXY
 
->>>>>>> releases
    # suno (@test)
     - DOMAIN-SUFFIX, suno.com, PROXY
     - DOMAIN-SUFFIX, suno.ai, PROXY
@@ -2369,9 +2400,6 @@ rules:
 
    # userbenchmark
     - DOMAIN-SUFFIX, userbenchmark.com, PROXY
-
-   # usvisascheduling (@test)
-    - DOMAIN-SUFFIX, usvisascheduling.com, PROXY
 
    # usvisascheduling (@test)
     - DOMAIN-SUFFIX, usvisascheduling.com, PROXY

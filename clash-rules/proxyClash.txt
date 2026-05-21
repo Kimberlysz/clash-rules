@@ -1,19 +1,4 @@
-# general
-  # build history
-    # build by Kim Xie / kimberlysz
-    # build time start from: 2023-05-31
-
-  # keywords
-    # '@!cn': Domains serving non-China regions
-    # '@cn': Domains serving China
-    # '@ir': Domains serving Iran
-    # '@ru': Domains serving Russia
-    # '@test': Domains to be tested and verified
-
-  # Others
-    # (1) tlds are too powerful to use, rules are marked
-
-rules:
+payload:
   # #
    # 1800 flowers (@!cn)
     - '+.1800flowers.com'
@@ -31,6 +16,9 @@ rules:
    # 2048.info
     - '+.2048.info'
     - '+.img.2048.spa'
+
+   # 21st.dev
+    - '+.21st.dev'
 
    # 2miners
     - '+.2miners.com'
@@ -294,7 +282,6 @@ rules:
     - '+.bun.com'
 
   # c
-
    # caliva
     - '+.caliva.com'
 
@@ -379,6 +366,9 @@ rules:
 
    # clash
     - '+.clash.la'
+
+   # clemson university
+    - '+.clemson.edu'
 
    # clickbank (@!cn)
     - '+.clickbank.com'
@@ -510,6 +500,9 @@ rules:
     - '+.cwtv.com'
 
     - 'images.cwtv.com'
+
+   # cyberbackgroundchecks
+    - '+.cyberbackgroundchecks.com'
 
    # cyberspatial
     - '+.cyberspatial.com'
@@ -662,8 +655,14 @@ rules:
    # farmers
     - '+.farmers.com'
 
+   # fastbackgroundcheck
+    - '+.fastbackgroundcheck.com'
+
    # fastly
     # AS54113 - Fastly, Inc.
+
+   # fastpeoplesearch
+    - '+.fastpeoplesearch.com'
 
    # feiyu-tech (@!cn)
     - '+.feiyu-tech.com'
@@ -995,6 +994,9 @@ rules:
 
     # cookcountyclerkil.gov
     - '+.cookcountyclerkil.gov'
+
+    # defense.gov
+    - '+.defense.gov'
 
     # ed.gov
     - '+.eric.ed.gov'
@@ -1547,6 +1549,14 @@ rules:
    # monica.im
     - '+.monica.im'
 
+   # moonpay
+    - '+.moonpay.com'
+    - '+.otel-collector.moonpaycloud.com'
+    - '+.moonpay.onelink.me'
+
+   # motion.dev
+    - '+.motion.dev'
+
    # moxfield
     - '+.assets.moxfield.net'
     - '+.moxfield.com'
@@ -1589,6 +1599,9 @@ rules:
 
    # napster
     - '+.napster.com'
+
+   # nationalpublicdata
+    - '+.nationalpublicdata.com'
 
    # navyfederal
     - '+.navyfederal.org'
@@ -1991,6 +2004,9 @@ rules:
    # shodan.io
     - '+.shodan.io'
 
+   # shutterstock
+    - '+.shutterstock.com'
+
    # siena.edu
     - '+.siena.edu'
 
@@ -2046,6 +2062,9 @@ rules:
     - 'publisher-assets.spot.im'
     - 'event-stream.spot.im'
 
+   # spotify
+    - '+.withspotify.com'
+
    # squarespace (@!cn)
     - '+.squarespace.com'
 
@@ -2081,12 +2100,9 @@ rules:
    # sugarfreemom
     - '+.sugarfreemom.com'
 
-<<<<<<< HEAD
-=======
    # sundayguardianlive
     - '+.sundayguardianlive.com'
 
->>>>>>> releases
    # suno (@test)
     - '+.suno.com'
     - '+.suno.ai'
@@ -2369,9 +2385,6 @@ rules:
 
    # userbenchmark
     - '+.userbenchmark.com'
-
-   # usvisascheduling (@test)
-    - '+.usvisascheduling.com'
 
    # usvisascheduling (@test)
     - '+.usvisascheduling.com'

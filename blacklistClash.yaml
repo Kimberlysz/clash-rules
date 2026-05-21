@@ -72,7 +72,7 @@ external-controller: 127.0.0.1:9090
 # Authenticate by spedifying HTTP header `Authorization: Bearer ${secret}`
 # ALWAYS set a secret if RESTful API is listening on 0.0.0.0
 # secret: "your_secret" # warning: !important, change it to your secret (prevent merlinclash being used by WAN users)
-secret: "e2k7mT5kuyLwcCrBJp1Y35taFTjQ4WHX2qG5v2V3DYQJTheF35qotpg5mBK2mqpr" # WARNING: every time when this file is applied, a password is needed to be changed. (!important)
+secret: "t4Ub2gnKWVPiFq1GErckymVga3gwUVXtJ3w84UG2f7juGQZQBXgJHTFR02g7ynyF" # WARNING: every time when this file is applied, a password is needed to be changed. (!important)
 
 # Outbound interface name
 # interface-name: en0 # might be en1
@@ -145,6 +145,7 @@ dns: # DNS server settings
     # - 202.96.128.86
     - 233.5.5.5
     - 119.29.29.29
+
 
   # # <!-------------------------
   # # import dns redir-host settings
@@ -605,7 +606,24 @@ dns: # DNS server settings
 
 tun:
   enable: true
-  stack: gvisor # mixed, system
+  stack: mixed  # 或 system / gvisor
+    # - system
+    #   直接调用操作系统的 TCP/IP 协议栈
+    #   性能最高, 延迟最低
+    #   但对某些程序 (尤其是 UDP) 兼容性略差
+    #   Linux 下表现最佳, Windows 下偶有问题
+
+    # - gvisor
+    #   使用用户态协议栈 (Google gVisor) 
+    #   兼容性最好, 行为最可预测
+    #   性能相对最低, CPU 占用稍高
+    #   适合出现奇怪网络问题时排查
+
+    # - mixed ← 官方推荐默认值
+    #   TCP 走 system (性能好) 
+    #   UDP 走 gvisor (兼容性好) 
+    #   两者优点结合, 适合绝大多数场景
+
   auto-route: true
   auto-redirect: true
   auto-detect-interface: true
@@ -667,6 +685,49 @@ tun:
   #   - 192.168.0.0/16
   #   inet6-route-exclude-address:
   #   - fc00::/7
+
+  route-excluded-address:
+    # 避免回环问题
+    - 127.0.0.0/8
+
+    # 广播
+    - 255.255.255.255/32
+
+    # IANA 保留 / 特殊用途
+    - 192.0.0.0/24
+    - 192.88.99.0/24
+
+    # 局域网直连
+    - 10.0.0.0/8
+    - 172.16.0.0/12
+    - 192.168.0.0/16
+
+    # 链路本地地址 (APIPA)
+    - 169.254.0.0/16
+
+    # VPN 内网地址
+    - 10.8.0.0/24
+
+    # 文档/测试专用 (不可用于实际网络)
+    - 192.0.2.0/24
+    - 198.51.100.0/24
+    - 203.0.113.0/24
+
+    # 运营商级 NAT (CGNAT)
+    - 100.64.0.0/10
+
+    # 组播 / 多播
+    - 224.0.0.0/4
+    - 240.0.0.0/4
+
+    - 239.255.255.250/32
+
+    # route-excluded-address: clash verge
+      # 10.0.0.0/8, 10.8.0.0/24, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 239.255.255.250/32, 240.0.0.0/4, 255.255.255.255/32
+
+    # windows proxy settings
+      # localhost;127.*;255.255.255.255;192.0.0.*;192.88.99.*;10.*;172.16.*;172.17.*;172.18.*;172.19.*;172.20.*;172.21.*;172.22.*;172.23.*;172.24.*;172.25.*;172.26.*;172.27.*;172.28.*;172.29.*;172.30.*;172.31.*;192.168.*;169.254.*;10.8.0.*;192.0.2.*;198.51.100.*;203.0.113.*;100.64.*;100.65.*;100.66.*;100.67.*;100.68.*;100.69.*;100.70.*;100.71.*;100.72.*;100.73.*;100.74.*;100.75.*;100.76.*;100.77.*;100.78.*;100.79.*;100.80.*;100.81.*;100.82.*;100.83.*;100.84.*;100.85.*;100.86.*;100.87.*;100.88.*;100.89.*;100.90.*;100.91.*;100.92.*;100.93.*;100.94.*;100.95.*;100.96.*;100.97.*;100.98.*;100.99.*;100.100.*;100.101.*;100.102.*;100.103.*;100.104.*;100.105.*;100.106.*;100.107.*;100.108.*;100.109.*;100.110.*;100.111.*;100.112.*;100.113.*;100.114.*;100.115.*;100.116.*;100.117.*;100.118.*;100.119.*;100.120.*;100.121.*;100.122.*;100.123.*;100.124.*;100.125.*;100.126.*;100.127.*;224.*;225.*;226.*;227.*;228.*;229.*;230.*;231.*;232.*;233.*;234.*;235.*;236.*;237.*;238.*;239.*;240.*;241.*;242.*;243.*;244.*;245.*;246.*;247.*;248.*;249.*;250.*;251.*;252.*;253.*;254.*;255.*;239.255.255.250
+      # localhost;127.*;192.168.*;10.*;172.16.*;172.17.*;172.18.*;172.19.*;172.20.*;172.21.*;172.22.*;172.23.*;172.24.*;172.25.*;172.26.*;172.27.*;172.28.*;172.29.*;172.30.*;172.31.*
 
 #  find-process-mode has 3 values: always, strict, off
 #  - always, 开启，强制匹配所有进程
@@ -3737,10 +3798,7 @@ rules:
     - DOMAIN, cdn-qc.content.steamchina.com, DIRECT
 
    # category-ip-geo-detect
-<<<<<<< HEAD
-=======
     - DOMAIN-SUFFIX, ipify.cn, DIRECT
->>>>>>> releases
     - DOMAIN-SUFFIX, iplark.com, DIRECT
     - DOMAIN-SUFFIX, ipw.cn, DIRECT
 
@@ -5595,9 +5653,7 @@ rules:
     - DOMAIN-SUFFIX, paypalcommunity.cn, DIRECT
     - DOMAIN-SUFFIX, paypalhere.cn, DIRECT
     - DOMAIN-SUFFIX, paypalhere.com.cn, DIRECT
-
     - DOMAIN-SUFFIX, xn--bnq297cix3a.cn, DIRECT # 易付通.cn
-
     # Xoom
     - DOMAIN-SUFFIX, xoom.net.cn, DIRECT
 
@@ -12128,27 +12184,6 @@ rules:
     # Resource sharing
     - DOMAIN-SUFFIX, bowlroll.net, PROXY
 
-<<<<<<< HEAD
-   # category-ai-!cn
-    # include:anthropic
-    # include:bytedance-ai-!cn
-    # include:cerebras
-    # include:comfy
-    # include:cursor
-    # include:elevenlabs
-    # include:github-copilot
-    # include:google-deepmind
-    # include:groq
-    # include:huggingface
-    # include:liveperson
-    # include:manus
-    # include:openai
-    # include:perplexity
-    # include:poe
-    # include:windsurf
-    # include:xai
-    # include:youmind
-=======
    # category-ai-!cn (@!cn)
     # include: anthropic
     # include: bytedance-ai-!cn
@@ -12169,7 +12204,6 @@ rules:
     # include: windsurf
     # include: xai
     # include: youmind
->>>>>>> releases
 
     # CodeRabbit
     - DOMAIN-SUFFIX, coderabbit.ai, PROXY
@@ -12197,11 +12231,8 @@ rules:
     - DOMAIN-SUFFIX, gateway.ai.cloudflare.com, PROXY
     - DOMAIN-SUFFIX, h2o.ai, PROXY
     - DOMAIN-SUFFIX, kiro.dev, PROXY
-<<<<<<< HEAD
-=======
     - DOMAIN-SUFFIX, langchain.com, PROXY
     - DOMAIN-SUFFIX, lmstudio.ai, PROXY
->>>>>>> releases
     - DOMAIN-SUFFIX, lovart.ai, PROXY
     - DOMAIN-SUFFIX, meta.ai, PROXY
     - DOMAIN-SUFFIX, minimax.io, PROXY
@@ -12210,11 +12241,8 @@ rules:
     - DOMAIN-SUFFIX, openart.ai, PROXY
     - DOMAIN-SUFFIX, openclaw.ai, PROXY
     - DOMAIN-SUFFIX, openrouter.ai, PROXY
-<<<<<<< HEAD
-=======
     - DOMAIN-SUFFIX, openspec.dev, PROXY
     - DOMAIN-SUFFIX, plannotator.ai, PROXY
->>>>>>> releases
     - DOMAIN-SUFFIX, spicywriter.com, PROXY
 
    # category-ai-chat-!cn
@@ -12312,8 +12340,6 @@ rules:
     # - DOMAIN-SUFFIX, dui.ai, PROXY
     # - DOMAIN-SUFFIX, duiopen.com, PROXY
 
-<<<<<<< HEAD
-=======
     # ClawHub 中国官方镜像站 (bytedance)
     # - DOMAIN-SUFFIX, clawhub-mirror.com, PROXY
 
@@ -12326,7 +12352,6 @@ rules:
     # 智合 AI 沪ICP备2024060320号-4
     # - DOMAIN-SUFFIX, zhiexa.com, PROXY
 
->>>>>>> releases
    # category-android-app-download
     # include: apkcombo
     # include: apkmirror
@@ -12681,14 +12706,6 @@ rules:
    # category-bank-ru (@ru)
     # Alfa Bank
     - DOMAIN-SUFFIX, alfabank.ru, PROXY
-<<<<<<< HEAD
-
-    # GazpromBank
-    - DOMAIN-SUFFIX, gazprombank.ru, PROXY
-    - DOMAIN-SUFFIX, gpb.ru, PROXY
-
-    # Mts dengi
-=======
     - DOMAIN-SUFFIX, alfabank.st, PROXY
     - DOMAIN-SUFFIX, alfadirect.ru, PROXY
     - DOMAIN-SUFFIX, myapelsin.ru, PROXY
@@ -12710,25 +12727,15 @@ rules:
     - DOMAIN-SUFFIX, mkb.ru, PROXY
 
     # MTS Dengi
->>>>>>> releases
     - DOMAIN-SUFFIX, dbo-dengi.online, PROXY
     - DOMAIN-SUFFIX, mtsdengi.ru, PROXY
 
     # PSB Bank
-<<<<<<< HEAD
-    - DOMAIN-SUFFIX, psbank.ru, PROXY
-
-    # RosBank
-    - DOMAIN-SUFFIX, bankline.ru, PROXY
-    - DOMAIN-SUFFIX, rosbank.ru, PROXY
-
-=======
     - DOMAIN-SUFFIX, payment.ru, PROXY
     - DOMAIN-SUFFIX, psb-ocenka.ru, PROXY
     - DOMAIN-SUFFIX, psb.ru, PROXY
     - DOMAIN-SUFFIX, psbank.ru, PROXY
 
->>>>>>> releases
     # RUSSIA Bank
     - DOMAIN-SUFFIX, abr.ru, PROXY
 
@@ -12736,31 +12743,16 @@ rules:
     - DOMAIN-SUFFIX, rshb.ru, PROXY
 
     # SberBank
-<<<<<<< HEAD
-    - DOMAIN-SUFFIX, sber.ru, PROXY
-    - DOMAIN-SUFFIX, sberbank.com, PROXY
-    - DOMAIN-SUFFIX, sberbank.ru, PROXY
-
-    # T-Bank (Tinkoff)
-    - DOMAIN-SUFFIX, cdn-tinkoff.ru, PROXY
-    - DOMAIN-SUFFIX, tbank-online.com, PROXY
-    - DOMAIN-SUFFIX, tbank.ru, PROXY
-=======
     # include: sber
 
     # T-Bank (Tinkoff) and RosBank
     # include: tbank-ru
->>>>>>> releases
 
     # Tochka bank
     - DOMAIN-SUFFIX, tochka-tech.com, PROXY
     - DOMAIN-SUFFIX, tochka.com, PROXY
 
     # VTB Bank
-<<<<<<< HEAD
-    - DOMAIN-SUFFIX, vtb.ru, PROXY
-
-=======
     - DOMAIN-SUFFIX, pochtabank.ru, PROXY #subsidiary
     - DOMAIN-SUFFIX, vtb.ru, PROXY
 
@@ -12770,7 +12762,6 @@ rules:
     # include: ligastavok
     # include: winline
 
->>>>>>> releases
    # category-blog-cn (@cn)
     # List of all blog domains that have access point in China mainland
 
@@ -13121,10 +13112,7 @@ rules:
     # include: panasonic
     # include: pccw
     # include: plex
-<<<<<<< HEAD
-=======
     # include: progress
->>>>>>> releases
     # include: qnap
     # include: qualcomm
     # include: qwant
@@ -13988,11 +13976,8 @@ rules:
     # 菁优网
     # - DOMAIN-SUFFIX, jyeoo.com, PROXY
     # - DOMAIN-SUFFIX, jyeoo.net, PROXY
-<<<<<<< HEAD
-=======
     # 中山市纪雅学校智慧消费平台
     # - DOMAIN-SUFFIX, jzagile.com, PROXY
->>>>>>> releases
     # 课播云校
     # - DOMAIN-SUFFIX, keboyunxiao.com, PROXY
     # 课堂派
@@ -15629,12 +15614,9 @@ rules:
     # - DOMAIN-SUFFIX, arcaea.cn, PROXY
     # 《异象回声》游戏官网 沪ICP备2023010411号-1
     # - DOMAIN-SUFFIX, astral-vector.com, PROXY
-<<<<<<< HEAD
-=======
     # 终末地-协议终端
     # - DOMAIN, end-api.shallow.ink, PROXY
     # - DOMAIN, end.shallow.ink, PROXY
->>>>>>> releases
     # 飞火游戏
     # - DOMAIN-SUFFIX, feihuo.com, PROXY
     # 九九互动 粤ICP备19068416号
@@ -15730,10 +15712,7 @@ rules:
     - DOMAIN-SUFFIX, mil.ru, PROXY          # Ministry of Defense of the Russian Federation
     - DOMAIN-SUFFIX, nalog.ru, PROXY        # Federal Tax Service
     - DOMAIN-SUFFIX, xn--80ajghhoc2aj1c8b.xn--p1ai, PROXY # Honest Sign - State Labeling System
-<<<<<<< HEAD
-=======
     - DOMAIN-SUFFIX, xn--b1afabzvcegckfhg.xn--p1ai, PROXY # Military Registration Register
->>>>>>> releases
 
     #
     # Regional sites and Public Services
@@ -15753,10 +15732,6 @@ rules:
     - DOMAIN-SUFFIX, mosreg.ru, PROXY       # Moscow Region
     - DOMAIN-SUFFIX, spb.ru, PROXY          # St. Petersburg
     - DOMAIN-SUFFIX, sevastopol.ru, PROXY   # Sevastopol
-<<<<<<< HEAD
-    - DOMAIN-SUFFIX, sev.ru, PROXY          # Sevastopol
-=======
->>>>>>> releases
 
     # Republics
     - DOMAIN-SUFFIX, adygeya.ru, PROXY      # Republic of Adygea
@@ -15951,18 +15926,12 @@ rules:
     - DOMAIN-SUFFIX, greip.io, PROXY
     - DOMAIN-SUFFIX, hackertarget.com, PROXY
     - DOMAIN-SUFFIX, httpbin.org, PROXY
-<<<<<<< HEAD
-=======
     - DOMAIN-SUFFIX, i.pn, PROXY
->>>>>>> releases
     - DOMAIN-SUFFIX, icanhazip.com, PROXY
     - DOMAIN-SUFFIX, ident.me, PROXY
     - DOMAIN-SUFFIX, ifconfig.co, PROXY
     - DOMAIN-SUFFIX, ifconfig.es, PROXY
-<<<<<<< HEAD
-=======
     - DOMAIN-SUFFIX, ifconfig.io, PROXY
->>>>>>> releases
     - DOMAIN-SUFFIX, ifconfig.me, PROXY
     - DOMAIN-SUFFIX, ip-adress.com, PROXY
     - DOMAIN-SUFFIX, ip-api.com, PROXY
@@ -16009,20 +15978,14 @@ rules:
     - DOMAIN-SUFFIX, iproyal.com, PROXY
     - DOMAIN-SUFFIX, ipstack.com, PROXY
     - DOMAIN-SUFFIX, ipverify.com, PROXY
-<<<<<<< HEAD
-=======
     - DOMAIN-SUFFIX, ipwho.is, PROXY
->>>>>>> releases
     - DOMAIN-SUFFIX, ipwhois.io, PROXY
     - DOMAIN-SUFFIX, ipxapi.com, PROXY
     - DOMAIN-SUFFIX, l2.io, PROXY
     - DOMAIN-SUFFIX, maxmind.com, PROXY
     - DOMAIN-SUFFIX, mon-ip.com, PROXY
     - DOMAIN-SUFFIX, monip.org, PROXY
-<<<<<<< HEAD
-=======
     - DOMAIN-SUFFIX, my-ip.io, PROXY
->>>>>>> releases
     - DOMAIN-SUFFIX, my.ipinfo.app, PROXY
     - DOMAIN-SUFFIX, myexternalip.com, PROXY
     - DOMAIN-SUFFIX, myip.com, PROXY
@@ -16033,10 +15996,7 @@ rules:
     - DOMAIN-SUFFIX, myipaddress.com, PROXY
     - DOMAIN-SUFFIX, myiplookup.com, PROXY
     - DOMAIN-SUFFIX, mylocation.org, PROXY
-<<<<<<< HEAD
-=======
     - DOMAIN-SUFFIX, nodedata.io, PROXY
->>>>>>> releases
     - DOMAIN-SUFFIX, osint.sh, PROXY
     - DOMAIN-SUFFIX, proxycheck.io, PROXY
     - DOMAIN-SUFFIX, realip.cc, PROXY
@@ -16069,27 +16029,16 @@ rules:
 
     # Subdomains/internal api used for ip-geo-detect
     - DOMAIN, checkip.amazonaws.com, PROXY
-<<<<<<< HEAD
-    - DOMAIN, ipv4-check-perf.radar.cloudflare.com, PROXY
-    - DOMAIN, ipv6-check-perf.radar.cloudflare.com, PROXY
-=======
     - DOMAIN, checkip.dyndns.org, PROXY
     - DOMAIN, checkip.dyn.com, PROXY
     - DOMAIN, ip.comss.net, PROXY
     - DOMAIN, ipv4-check-perf.radar.cloudflare.com, PROXY
     - DOMAIN, ipv6-check-perf.radar.cloudflare.com, PROXY
     - DOMAIN, whatismyip.akamai.com, PROXY
->>>>>>> releases
     - DOMAIN-SUFFIX, geoip.noc.gov.ru, PROXY
     - DOMAIN-SUFFIX, ip.hetzner.com, PROXY
     - DOMAIN-SUFFIX, ip.mail.ru, PROXY
     - DOMAIN-SUFFIX, ip.nic.ru, PROXY
-<<<<<<< HEAD
-    - DOMAIN-SUFFIX, ip.tyk.nu, PROXY
-    - DOMAIN-SUFFIX, ipgeo.vercel.app, PROXY
-    - DOMAIN-SUFFIX, ipv4-internet.yandex.net, PROXY
-    - DOMAIN-SUFFIX, ipv6-internet.yandex.net, PROXY
-=======
     - DOMAIN-SUFFIX, ip.pe.kr, PROXY
     - DOMAIN-SUFFIX, ip.tyk.nu, PROXY
     - DOMAIN-SUFFIX, ipgeo.vercel.app, PROXY
@@ -16097,7 +16046,6 @@ rules:
     - DOMAIN-SUFFIX, ipv4.internet.yandex.net, PROXY
     - DOMAIN-SUFFIX, ipv6-internet.yandex.net, PROXY
     - DOMAIN-SUFFIX, ipv6.internet.yandex.net, PROXY
->>>>>>> releases
 
    # category-ipfs
     # Reference: https://ipfs.github.io/public-gateway-checker/
@@ -16399,20 +16347,19 @@ rules:
     - DOMAIN-SUFFIX, zoomingin.tv, PROXY
 
    # category-media-cn (@cn)
-
-    # - DOMAIN-SUFFIX, 36kr, PROXY
-    # - DOMAIN-SUFFIX, cctv, PROXY
-    # - DOMAIN-SUFFIX, chinanews, PROXY
-    # - DOMAIN-SUFFIX, ifanr, PROXY
-    # - DOMAIN-SUFFIX, jiemian, PROXY
-    # - DOMAIN-SUFFIX, landian, PROXY
-    # - DOMAIN-SUFFIX, phoenix, PROXY
-    # - DOMAIN-SUFFIX, ruanmei, PROXY
-    # - DOMAIN-SUFFIX, sohu, PROXY
-    # - DOMAIN-SUFFIX, tmtpost, PROXY
-    # - DOMAIN-SUFFIX, weiphone, PROXY
-    # - DOMAIN-SUFFIX, xueqiu, PROXY
-    # - DOMAIN-SUFFIX, ynet, PROXY
+    # include: 36kr
+    # include: cctv
+    # include: chinanews
+    # include: ifanr
+    # include: jiemian
+    # include: landian
+    # include: phoenix
+    # include: ruanmei
+    # include: sohu
+    # include: tmtpost
+    # include: weiphone
+    # include: xueqiu
+    # include: ynet
 
     # 21世纪经济报
     # - DOMAIN-SUFFIX, 21jingji.com, PROXY
@@ -16841,31 +16788,6 @@ rules:
     - DOMAIN-SUFFIX, zasekin.ru, PROXY
     - DOMAIN-SUFFIX, zerkalo.io, PROXY
     - DOMAIN-SUFFIX, zona.media, PROXY
-
-   # category-medicine-ru (@ru)
-    # BudZdorov
-    - DOMAIN-SUFFIX, klinikabudzdorov.ru, PROXY
-
-    # Emias
-    - DOMAIN-SUFFIX, emias.ru, PROXY
-    - DOMAIN-SUFFIX, emias.info, PROXY
-
-    # Medsi
-    - DOMAIN-SUFFIX, medsi.com, PROXY
-    - DOMAIN-SUFFIX, medsi.pro, PROXY
-    - DOMAIN-SUFFIX, medsi.ru, PROXY
-    - DOMAIN-SUFFIX, medsi-premium.ru, PROXY
-    - DOMAIN-SUFFIX, smartmed.pro, PROXY
-
-    # Mosru-based/government
-    - DOMAIN-SUFFIX, mosgorzdrav.ru, PROXY
-    - DOMAIN-SUFFIX, lk.emias.mos.ru, PROXY
-
-    # Polyclinika-ru
-    - DOMAIN-SUFFIX, polyclinika.ru, PROXY
-
-    # Vipmed
-    - DOMAIN-SUFFIX, vipmed.ru, PROXY
 
    # category-medicine-ru (@ru)
     # BudZdorov
@@ -17322,10 +17244,7 @@ rules:
     # - DOMAIN-SUFFIX, zarinpal.com, PROXY
 
    # category-porn
-<<<<<<< HEAD
-=======
 
->>>>>>> releases
     # include: 18comic
     # include: 54647
     # include: anon-v
@@ -24102,10 +24021,7 @@ rules:
     # include: category-ecommerce-ru
     # include: category-entertainment-ru
     # include: category-gov-ru
-<<<<<<< HEAD
-=======
     # include: category-media-ru
->>>>>>> releases
     # include: category-medicine-ru
     # include: category-retail-ru
     # include: category-travel-ru
@@ -24139,17 +24055,10 @@ rules:
     ## Credit History Bureaus
     - DOMAIN-SUFFIX, credistory.ru, PROXY
     - DOMAIN-SUFFIX, nbki.ru, PROXY
-<<<<<<< HEAD
-    # Currency and stock exchanges
-    - DOMAIN-SUFFIX, moex.com, PROXY   # Moscow Stock Exchange
-    - DOMAIN-SUFFIX, spvb.ru, PROXY    # Saint-Petersburg Stock Exchange
-    # Financial marketplace
-=======
     ## Currency and stock exchanges
     - DOMAIN-SUFFIX, moex.com, PROXY   # Moscow Stock Exchange
     - DOMAIN-SUFFIX, spvb.ru, PROXY    # Saint-Petersburg Stock Exchange
     ## Financial marketplace
->>>>>>> releases
     - DOMAIN-SUFFIX, banki.ru, PROXY
     - DOMAIN-SUFFIX, finuslugi.ru, PROXY
     ## Investment
@@ -24171,19 +24080,6 @@ rules:
     - DOMAIN-SUFFIX, beeline.ru, PROXY
     - DOMAIN-SUFFIX, dom.ru, PROXY
 
-<<<<<<< HEAD
-    # Other domains
-    - DOMAIN-SUFFIX, gazfond-pn.ru, PROXY  # Non-state pension fund GAZFOND pension savings
-    - DOMAIN-SUFFIX, litres.ru, PROXY      # E-book and audiobook service
-    - DOMAIN-SUFFIX, meteoinfo.ru, PROXY   # Hydrometeorological Center of Russia
-    - DOMAIN-SUFFIX, ngenix.net, PROXY     # NGENIX is a Russian provider of acceleration and security services for public web resources
-    - DOMAIN-SUFFIX, pochta.ru, PROXY      # Russian post
-    - DOMAIN-SUFFIX, qms.ru, PROXY         # Russian internet speed testing service
-    - DOMAIN-SUFFIX, rustore.ru, PROXY     # RuStore is a Russian mobile app store for Android
-    - DOMAIN-SUFFIX, t1.cloud, PROXY       # Russian cloud storage provider
-    - DOMAIN-SUFFIX, taxsee.com, PROXY     # Taxi for business (self-employed drivers)
-    - DOMAIN-SUFFIX, yclients.com, PROXY   # Russian SaaS platform for online booking and business automation for service companies
-=======
     # Other services
     - DOMAIN-SUFFIX, 3ebra.net, PROXY          # Zebra Net Bureau, web development agency
     - DOMAIN-SUFFIX, apptrackpets.com, PROXY   # Pet GPS tracker service (Yandex Cloud, reg.ru)
@@ -24204,7 +24100,6 @@ rules:
     ## Planeta Zdorov'ya pharmacy
     - DOMAIN-SUFFIX, planetazdorovo.ru, PROXY
     - DOMAIN-SUFFIX, pz.help, PROXY
->>>>>>> releases
 
    # category-scholar-!cn
     # This list contains scholarly domains that don't have access point in China Mainland.
@@ -24709,10 +24604,6 @@ rules:
     # include: facebook
     # include: instagram
     # include: linkedin
-<<<<<<< HEAD
-    # include: mailru
-=======
->>>>>>> releases
     # include: misskey
     # include: mixi
     # include: ok
@@ -25004,15 +24895,10 @@ rules:
     # Ostrovok
     - DOMAIN-SUFFIX, ostrovok.ru, PROXY
 
-<<<<<<< HEAD
-    # Othello from 2GIS
-    - DOMAIN-SUFFIX, otello.ru, PROXY
-=======
     # Othello / Otello from 2GIS and Sber
     - DOMAIN-SUFFIX, 2gis.ru, PROXY
     - DOMAIN-SUFFIX, otello.ru, PROXY
     - DOMAIN-SUFFIX, sber.ru, PROXY
->>>>>>> releases
 
     # Public transport and ticketing
     # include: mosmetro
@@ -25023,10 +24909,6 @@ rules:
     - DOMAIN, transport.mos.ru, PROXY
     - DOMAIN-SUFFIX, gorodpay.ru, PROXY
     - DOMAIN-SUFFIX, rrtp.ru, PROXY
-<<<<<<< HEAD
-    - DOMAIN-SUFFIX, sbertroika.ru, PROXY
-=======
->>>>>>> releases
 
     # Russian Railways
     - DOMAIN-SUFFIX, rzd-bonus.ru, PROXY
@@ -25040,10 +24922,7 @@ rules:
 
     # Yandex Taxi
     - DOMAIN, taxi.yandex.ru, PROXY
-<<<<<<< HEAD
-=======
     - DOMAIN-SUFFIX, fasten.ru, PROXY
->>>>>>> releases
 
    # category-urlshortner
     # include:bitly
@@ -29835,13 +29714,10 @@ rules:
     # - DOMAIN-SUFFIX, nmc.cn, PROXY
     ## 中国互联网联合辟谣平台
     # - DOMAIN-SUFFIX, piyao.org.cn, PROXY
-<<<<<<< HEAD
-=======
     ## 中国红十字会
     # - DOMAIN-SUFFIX, redcross.org.cn, PROXY
     ## 中国殡葬网
     # - DOMAIN-SUFFIX, zgbznet.com.cn, PROXY
->>>>>>> releases
 
     # Public transportation
     ## 中国国际航空
@@ -30158,11 +30034,6 @@ rules:
     # - DOMAIN-SUFFIX, huanleguang.com, PROXY
     # - DOMAIN-SUFFIX, ttxsapp.com.cn, PROXY
     # - DOMAIN-SUFFIX, xsbapp.cn, PROXY
-<<<<<<< HEAD
-    # 凯迪仕
-    # - DOMAIN-SUFFIX, juziwulian.com, PROXY
-    # - DOMAIN-SUFFIX, kaadas.com, PROXY
-=======
     ## 凯迪仕
     # - DOMAIN-SUFFIX, juziwulian.com, PROXY
     # - DOMAIN-SUFFIX, kaadas.com, PROXY
@@ -30172,7 +30043,6 @@ rules:
     # - DOMAIN-SUFFIX, shellpub.com, PROXY
     # - DOMAIN-SUFFIX, threatbook.cn, PROXY
     # - DOMAIN-SUFFIX, threatbook.com, PROXY
->>>>>>> releases
 
     # Telecommunication
     # include: chinabroadnet
@@ -30391,10 +30261,7 @@ rules:
     # - DOMAIN-SUFFIX, aplaybox.com, PROXY
     # - DOMAIN-SUFFIX, appchina.com, PROXY
     # - DOMAIN-SUFFIX, arpun.com, PROXY
-<<<<<<< HEAD
-=======
     # - DOMAIN-SUFFIX, awstme.top, PROXY # 浙ICP备2024120639号
->>>>>>> releases
     # - DOMAIN-SUFFIX, babytree.com, PROXY
     # - DOMAIN-SUFFIX, babytreeimg.com, PROXY
     # - DOMAIN-SUFFIX, baidufree.com, PROXY
@@ -31193,10 +31060,7 @@ rules:
     # - DOMAIN-SUFFIX, yupoo.com, PROXY
     # - DOMAIN-SUFFIX, yuzua.com, PROXY
     # - DOMAIN-SUFFIX, yxbao.com, PROXY
-<<<<<<< HEAD
-=======
     # - DOMAIN-SUFFIX, yyshub.top, PROXY # 浙ICP备2023017032号-2
->>>>>>> releases
     # - DOMAIN-SUFFIX, yytcdn.com, PROXY
     # - DOMAIN-SUFFIX, z-tek.com, PROXY # 粤ICP备2023022083号-1
     # - DOMAIN-SUFFIX, z28j.com, PROXY # 鄂ICP备20002930号-1
@@ -31617,10 +31481,7 @@ rules:
     - DOMAIN-SUFFIX, gmoask.jp, PROXY
     - DOMAIN-SUFFIX, gmobb.jp, PROXY
     - DOMAIN-SUFFIX, gmocloud.com, PROXY
-<<<<<<< HEAD
-=======
     - DOMAIN-SUFFIX, gmopg.jp, PROXY
->>>>>>> releases
     - DOMAIN-SUFFIX, gmosign.com, PROXY
     - DOMAIN-SUFFIX, gmossp.jp, PROXY
     - DOMAIN-SUFFIX, good-apps.jp, PROXY
@@ -35655,13 +35516,8 @@ rules:
     # include: mailru-group
 
    # mailru-group (@ru)
-<<<<<<< HEAD
-    # include: dzen
-    # include: mailru
-=======
     # VK Group, formerly known as Mail.ru Group, a Russian technology company
     # include: dzen
->>>>>>> releases
     # include: ok
     # include: vk
 
@@ -35670,18 +35526,6 @@ rules:
     - DOMAIN-SUFFIX, boom.ru, PROXY
     - DOMAIN-SUFFIX, boosty.to, PROXY
     - DOMAIN-SUFFIX, donationalerts.com, PROXY
-<<<<<<< HEAD
-    - DOMAIN-SUFFIX, max.ru, PROXY
-    - DOMAIN-SUFFIX, memealerts.com, PROXY
-    - DOMAIN-SUFFIX, oneme.ru, PROXY
-    - DOMAIN-SUFFIX, tamtam.chat, PROXY
-    - DOMAIN-SUFFIX, telega.info, PROXY
-    - DOMAIN-SUFFIX, telega.me, PROXY
-    - DOMAIN-SUFFIX, youla.io, PROXY
-    - DOMAIN-SUFFIX, youla.ru, PROXY
-
-    - DOMAIN, youla-web-static.mrgcdn.ru, PROXY
-=======
     - DOMAIN-SUFFIX, hrtek.ru, PROXY
     - DOMAIN-SUFFIX, koddobra.ru, PROXY
     - DOMAIN-SUFFIX, lovina.app, PROXY
@@ -35935,7 +35779,6 @@ rules:
     ## Youla
     - DOMAIN-SUFFIX, youla.io, PROXY
     - DOMAIN-SUFFIX, youla.ru, PROXY
->>>>>>> releases
 
    # mainichi
     - DOMAIN-SUFFIX, machigoto.jp, PROXY
@@ -37341,13 +37184,10 @@ rules:
     # Mozilla Push Service
     # * Overrided by above `mozilla.com`
     #push.services.mozilla.com
-<<<<<<< HEAD
-=======
 
    # msi (@cn)
     # - DOMAIN-SUFFIX, msi.cn, PROXY
     # - DOMAIN-SUFFIX, msi.com, PROXY
->>>>>>> releases
 
    # msn
     - DOMAIN-SUFFIX, microsoftnews.cc, PROXY
@@ -38410,9 +38250,6 @@ rules:
     - DOMAIN, st-ok-pts.cdn-vk.ru, PROXY
     - DOMAIN, st-ok.cdn-vk.ru, PROXY
 
-    - DOMAIN, st-ok-pts.cdn-vk.ru, PROXY
-    - DOMAIN, st-ok.cdn-vk.ru, PROXY
-
    # okaapps
     - DOMAIN-SUFFIX, okaapps.com, PROXY
     # domain:okaapps.com
@@ -38656,13 +38493,10 @@ rules:
 
     # - DOMAIN-SUFFIX, oschina.net, PROXY
 
-<<<<<<< HEAD
-=======
    # oskelly
     - DOMAIN-SUFFIX, oskelly.co, PROXY
     - DOMAIN-SUFFIX, oskelly.ru, PROXY
 
->>>>>>> releases
    # osu
     - DOMAIN, a.ppy.sh, PROXY
     - DOMAIN, assets.ppy.sh, PROXY
@@ -38708,8 +38542,6 @@ rules:
     - DOMAIN-SUFFIX, veryshortintroductions.com, PROXY
 
    # ozon (@ru)
-<<<<<<< HEAD
-=======
     - DOMAIN-SUFFIX, ewisdom.us.kg, PROXY
     - DOMAIN-SUFFIX, o3.ru, PROXY
     - DOMAIN-SUFFIX, o3t.ru, PROXY
@@ -38719,19 +38551,10 @@ rules:
     - DOMAIN-SUFFIX, ozon-dostavka.ru, PROXY
     - DOMAIN-SUFFIX, ozon-credit.ru, PROXY
     - DOMAIN-SUFFIX, ozon-tech.ru, PROXY
->>>>>>> releases
     - DOMAIN-SUFFIX, ozon.by, PROXY
     - DOMAIN-SUFFIX, ozon.com, PROXY
     - DOMAIN-SUFFIX, ozon.com.by, PROXY
     - DOMAIN-SUFFIX, ozon.com.kz, PROXY
-<<<<<<< HEAD
-    - DOMAIN-SUFFIX, ozon.kz, PROXY
-    - DOMAIN-SUFFIX, ozon.ru, PROXY
-    - DOMAIN-SUFFIX, ozon.tm, PROXY
-    - DOMAIN-SUFFIX, ozone.ru, PROXY
-    - DOMAIN-SUFFIX, ozonru.me, PROXY
-    - DOMAIN-SUFFIX, ozonusercontent.com, PROXY
-=======
     - DOMAIN-SUFFIX, ozon.dev, PROXY
     - DOMAIN-SUFFIX, ozon.express, PROXY
     - DOMAIN-SUFFIX, ozon.kz, PROXY
@@ -38763,7 +38586,6 @@ rules:
     - DOMAIN-SUFFIX, xn----8sbahiqzthbd0bn.xn--p1ai, PROXY # озон-доставка.рф
     - DOMAIN-SUFFIX, xn--80aafgovrgbc7am.xn--p1ai, PROXY # озондоставка.рф
     - DOMAIN-SUFFIX, xn--e1adjldbbpv.xn--90ais, PROXY # озонрокет.бел
->>>>>>> releases
 
   # p
    # pagecdn
@@ -39860,8 +39682,6 @@ rules:
     # 前端性能监控
     - DOMAIN-SUFFIX, rumt-sg.com, PROXY        #新加坡s
     - DOMAIN-SUFFIX, rumt-us.com, PROXY        #硅谷s
-<<<<<<< HEAD
-=======
 
    # qianxin (@cn)
     # 奇安信 奇安信科技集团股份有限公司 京ICP备16020626号
@@ -39872,7 +39692,6 @@ rules:
     # - DOMAIN-SUFFIX, qianxincdn.com, PROXY
     # - DOMAIN-SUFFIX, seclab.online, PROXY # SecLab
     # - DOMAIN-SUFFIX, tianshucup.com, PROXY # 天枢杯
->>>>>>> releases
 
    # qihoo360 (@cn)
     # include:starworld
@@ -42758,14 +42577,11 @@ rules:
     - DOMAIN-SUFFIX, tildaapi.com, PROXY
     - DOMAIN-SUFFIX, tildacdn.com, PROXY
 
-<<<<<<< HEAD
-=======
    # timeweb (@ru)
     - DOMAIN-SUFFIX, timeweb.cloud, PROXY
     - DOMAIN-SUFFIX, timeweb.com, PROXY
     - DOMAIN-SUFFIX, twcstorage.ru, PROXY
 
->>>>>>> releases
    # tinyurl
     - DOMAIN-SUFFIX, tinyurl.com, PROXY
 
@@ -46276,11 +46092,8 @@ rules:
     # - DOMAIN-SUFFIX, yamibo.com, PROXY
 
    # yandex (@ru)
-<<<<<<< HEAD
-=======
     # include: kinopoisk
 
->>>>>>> releases
     # All .yandex domains
     # - DOMAIN-KEYWORD, .yandex, PROXY
 
@@ -46350,12 +46163,8 @@ rules:
     - DOMAIN-SUFFIX, yandexadexchange.net, PROXY
     - DOMAIN-SUFFIX, yandexcloud.net, PROXY
     - DOMAIN-SUFFIX, yandexcom.net, PROXY
-<<<<<<< HEAD
-    - DOMAIN-SUFFIX, yandexmetrica.com, PROXY
-=======
     - DOMAIN-SUFFIX, yandexgo.com, PROXY
     - DOMAIN-SUFFIX, yandexlyceum.ru, PROXY
->>>>>>> releases
     - DOMAIN-SUFFIX, yandexwebcache.net, PROXY
     - DOMAIN-SUFFIX, yandexwebcache.org, PROXY
     - DOMAIN-SUFFIX, yango-b2b.com, PROXY
@@ -47445,6 +47254,13 @@ rules:
   # b
 
   # c
+   # AS12148 Clemson University
+    - IP-CIDR, 130.127.0.0/16, PROXY, no-resolve
+    - IP-CIDR, 192.5.219.0/24, PROXY, no-resolve
+    - IP-CIDR, 192.42.3.0/24, PROXY, no-resolve
+    - IP-CIDR, 198.21.128.0/17, PROXY, no-resolve
+    - IP-CIDR, 2620:103:a000::/44, PROXY, no-resolve
+    - IP-CIDR, 2620:103:a00a::/48, PROXY, no-resolve
 
   # d
 
