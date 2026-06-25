@@ -190,6 +190,9 @@ rules:
     - DOMAIN-SUFFIX, at-tps.org, PROXY
     - DOMAIN-SUFFIX, tps-support.b-cdn.net, PROXY
 
+   # atlas-games
+    - DOMAIN-SUFFIX, atlas-games.com, PROXY
+
    # atmeta
     - DOMAIN-SUFFIX, atmeta.com, PROXY
 
@@ -279,7 +282,7 @@ rules:
     - DOMAIN-SUFFIX, personalization.bloomberg.com, PROXY
     - DOMAIN-SUFFIX, sourcepointcmp.bloomberg.com, PROXY
 
-   # BMO (@test)
+   # BMO
     - DOMAIN-SUFFIX, apptentive.com, PROXY
     - DOMAIN-SUFFIX, bmo.com, PROXY
     - DOMAIN-SUFFIX, bmofinancial.demdex.net, PROXY
@@ -287,11 +290,18 @@ rules:
    # bmwusa
     - DOMAIN, idresgraph.bmwusa.com, PROXY
 
+   # boo.world
+    - DOMAIN-SUFFIX, boo.world, PROXY
+
    # box
     - DOMAIN-SUFFIX, box.com, PROXY
 
    # broadbandgenie.co.uk
     - DOMAIN-SUFFIX, broadbandgenie.co.uk, PROXY
+
+   # bulbagarden.net
+    - DOMAIN-SUFFIX, bulbagarden.net, PROXY
+    - DOMAIN-SUFFIX, bulbapedia.bulbagarden.net, PROXY
 
    # bun (@test)
     - DOMAIN-SUFFIX, bun.com, PROXY
@@ -382,6 +392,9 @@ rules:
    # clash
     - DOMAIN-SUFFIX, clash.la, PROXY
 
+   # claudemcpcontent
+    - DOMAIN-SUFFIX, claudemcpcontent.com, PROXY
+
    # clemson university
     - DOMAIN-SUFFIX, clemson.edu, PROXY
 
@@ -412,6 +425,9 @@ rules:
    # cochyi
     - DOMAIN-SUFFIX, ouchyi.support, PROXY
 
+   # codepen
+    - DOMAIN-SUFFIX, codepen.io, PROXY
+
    # coinbase
     - DOMAIN-SUFFIX, coinbasecdn.net, PROXY
 
@@ -436,6 +452,9 @@ rules:
    # coinmarketcap
     - DOMAIN-SUFFIX, coinwarz.com, PROXY
     - DOMAIN-SUFFIX, coinmarketcap.com, PROXY
+
+   # companiesmarketcap (@test)
+    - DOMAIN-SUFFIX, companiesmarketcap.com, PROXY
 
    # complio
     - DOMAIN-SUFFIX, complio.com, PROXY
@@ -498,6 +517,9 @@ rules:
    # culturalvistas.org
     - DOMAIN-SUFFIX, culturalvistas.org, PROXY
 
+   # culture.tw
+    - DOMAIN-SUFFIX, culture.tw, PROXY
+
    # curtin university
     - DOMAIN-SUFFIX, curtin.edu.au, PROXY
     - DOMAIN-SUFFIX, pcdn.co, PROXY
@@ -523,6 +545,9 @@ rules:
     - DOMAIN-SUFFIX, cyberspatial.com, PROXY
 
   # d
+   # dailysports
+    - DOMAIN-SUFFIX, dailysports.net, PROXY
+
    # datarova (@test)
     - DOMAIN-SUFFIX, datarova.com, PROXY
 
@@ -561,11 +586,17 @@ rules:
    # diyibanzhu
     - DOMAIN-SUFFIX, diyibanzhu.me, PROXY
 
+   # dnb
+    - DOMAIN-SUFFIX, dnb.com, PROXY
+
    # donacionesley21440.cl
     - DOMAIN-SUFFIX, donacionesley21440.cl, PROXY
 
    # dpsk12.org
     - DOMAIN-SUFFIX, dpsk12.org, PROXY
+
+   # dropout
+    - DOMAIN-SUFFIX, dropout.tv, PROXY
 
   # e
    # eastasiaforum
@@ -576,6 +607,9 @@ rules:
 
    # echostar
     - DOMAIN-SUFFIX, echostar, PROXY
+
+   # edwardjones
+    - DOMAIN-SUFFIX, edwardjones.com, PROXY
 
    # elementor
     - DOMAIN-SUFFIX, elementor.cloud, PROXY
@@ -679,6 +713,13 @@ rules:
    # fastpeoplesearch
     - DOMAIN-SUFFIX, fastpeoplesearch.com, PROXY
 
+   # fboxtv
+    - DOMAIN-SUFFIX, fboxtv.com, PROXY
+
+   # featurebase
+    - DOMAIN-SUFFIX, 21st.featurebase.app, PROXY
+    - DOMAIN-SUFFIX, featurebase.app, PROXY
+
    # feiyu-tech (@!cn)
     - DOMAIN-SUFFIX, feiyu-tech.com, PROXY
 
@@ -769,6 +810,9 @@ rules:
     - DOMAIN-SUFFIX, genius.com, PROXY
     - DOMAIN-SUFFIX, live.primis.tech, PROXY
     - DOMAIN-SUFFIX, primis.tech, PROXY
+
+   # getbutton
+    - DOMAIN-SUFFIX, getbutton.io, PROXY
 
    # getcomics.info
     - DOMAIN-SUFFIX, getcomics.info, PROXY
@@ -1304,6 +1348,9 @@ rules:
    # kaido
     - DOMAIN-SUFFIX, kaido.to, PROXY
 
+   # kalshi
+    - DOMAIN-SUFFIX, kalshi.com, PROXY
+
    # kapwing (@!cn)
     # - DOMAIN-SUFFIX, amplitude.com, PROXY
     - DOMAIN-SUFFIX, kapwing.com, PROXY
@@ -1363,6 +1410,9 @@ rules:
 
    # lendingtree
     - DOMAIN-SUFFIX, lendingtree.com, PROXY
+
+   # leonardo ai
+    - DOMAIN-SUFFIX, Leonardo.ai, PROXY
 
    # letsvpn.world
     - DOMAIN, letsvpn.world, PROXY
@@ -1463,6 +1513,11 @@ rules:
    # mbusa
     - DOMAIN-SUFFIX, mbusa.com, PROXY
 
+   # mpcautofill.com
+    - DOMAIN-SUFFIX, cdn.mpcautofill.com, PROXY
+    - DOMAIN-SUFFIX, img.mpcautofill.com, PROXY
+    - DOMAIN-SUFFIX, mpcautofill.com, PROXY
+
    # memberpress
      # url: memberpress.com
 
@@ -1556,6 +1611,9 @@ rules:
 
    # mojim
     - DOMAIN-SUFFIX, mojim.com, PROXY
+
+   # moltbook
+    - DOMAIN-SUFFIX, moltbook.com, PROXY
 
    # monarch
     - DOMAIN-SUFFIX, monarch.com, PROXY
@@ -1817,6 +1875,9 @@ rules:
    # pephop.ai
     - DOMAIN-SUFFIX, pephop.ai, PROXY
 
+   # personality.co
+    - DOMAIN-SUFFIX, personality.co, PROXY
+
    # pexels
     - DOMAIN-SUFFIX, pexels.com, PROXY
 
@@ -1828,6 +1889,9 @@ rules:
 
    # philo
     - DOMAIN-SUFFIX, philo.com, PROXY
+
+   # piclumen
+    - DOMAIN-SUFFIX, piclumen.com, PROXY
 
    # picsart
     - DOMAIN-SUFFIX, picsart.com, PROXY
@@ -1959,6 +2023,9 @@ rules:
    # roblox
     - DOMAIN-SUFFIX, roblox.com, PROXY
 
+   # roboflow
+    - DOMAIN-SUFFIX, roboflow.com, PROXY
+
    # runescape
     - DOMAIN, cdn.runescape.com, PROXY
     - DOMAIN, play.runescape.com, PROXY
@@ -1971,6 +2038,9 @@ rules:
   # s
    # s-onetag
     - DOMAIN-SUFFIX, s-onetag.com, PROXY
+
+   # sakana
+    - DOMAIN-SUFFIX, sakana.ai, PROXY
 
    # salesforce
     - DOMAIN-SUFFIX, trailhead.salesforce.com, PROXY
@@ -1986,6 +2056,9 @@ rules:
 
    # scdmvonline
     - DOMAIN-SUFFIX, scdmvonline.com, PROXY
+
+   # schema
+    - DOMAIN-SUFFIX, schema.org, PROXY
 
    # screenrant
     - DOMAIN-SUFFIX, screenrant.com, PROXY
@@ -2051,6 +2124,9 @@ rules:
 
    # socratic.org
     - DOMAIN-SUFFIX, socratic.org, PROXY
+
+   # songkick
+    - DOMAIN-SUFFIX, songkick.com, PROXY
 
    # sono
     - DOMAIN-SUFFIX, sono.com, PROXY
@@ -2356,6 +2432,9 @@ rules:
     # - DOMAIN, gotie.tunein.com, PROXY
     # - DOMAIN, reports.tunein.com, PROXY
 
+   # turkish123
+    - DOMAIN-SUFFIX, turkish123.website, PROXY
+
    # turner
     - DOMAIN, s.cdn.turner.com, PROXY
 
@@ -2407,6 +2486,9 @@ rules:
    # utorrent
     - DOMAIN-SUFFIX, utorrent.com, PROXY
 
+   # uwf
+    - DOMAIN-SUFFIX, uwf.edu, PROXY
+
   # v
    # v2fly.org
     - DOMAIN-SUFFIX, v2fly.org, PROXY
@@ -2431,6 +2513,9 @@ rules:
 
    # vidiq
     - DOMAIN-SUFFIX, vidiq.com, PROXY
+
+   # vimeo
+    - DOMAIN-SUFFIX, vimeo.tv, PROXY
 
    # visaguide.world
     - DOMAIN-SUFFIX, visaguide.world, PROXY
@@ -2497,8 +2582,14 @@ rules:
    # whoer.net
     - DOMAIN-SUFFIX, whoer.net, PROXY
 
+   # whosampled
+    - DOMAIN-SUFFIX, whosampled.com, PROXY
+
    # winscp.net
     - DOMAIN-SUFFIX, cdn.winscp.net, PROXY
+
+   # wise (@test)
+    - DOMAIN-SUFFIX, wise.com, PROXY
 
    # wisconsinregisteredagent.net
     - DOMAIN-SUFFIX, wisconsinregisteredagent.net, PROXY
