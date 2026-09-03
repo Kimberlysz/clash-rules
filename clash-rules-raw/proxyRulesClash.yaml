@@ -51,6 +51,9 @@ rules:
    # abeka
     - DOMAIN-SUFFIX, abeka.com, PROXY
 
+   # soton.ac.uk
+    - DOMAIN-SUFFIX, student-selfservice.soton.ac.uk, PROXY
+
    # acast
     - DOMAIN-SUFFIX, acast.com, PROXY
 
@@ -84,6 +87,9 @@ rules:
    # aicoin
     - DOMAIN-SUFFIX, aicoin.com, PROXY
 
+   # airalo
+    - DOMAIN-SUFFIX, airalo.com, PROXY
+
    # airasia
     - DOMAIN-SUFFIX, airasia.ck123.io, PROXY
     - DOMAIN-SUFFIX, airasia.com, PROXY
@@ -102,6 +108,9 @@ rules:
 
    # alchemer
     - DOMAIN-SUFFIX, alchemer.com, PROXY
+
+   # allegroningers
+    - DOMAIN-SUFFIX, allegroningers.nl, PROXY
 
    # allsetlearning (@!cn)
     - DOMAIN-SUFFIX, allsetlearning.com, PROXY
@@ -182,6 +191,9 @@ rules:
 
    # asinsight (@test)
     - DOMAIN-SUFFIX, asinsight.com, PROXY
+
+   # asterdex
+    - DOMAIN-SUFFIX, asterdex.com, PROXY
 
    # astrill
     - DOMAIN-SUFFIX, astrill.com, PROXY
@@ -303,6 +315,9 @@ rules:
     - DOMAIN-SUFFIX, bulbagarden.net, PROXY
     - DOMAIN-SUFFIX, bulbapedia.bulbagarden.net, PROXY
 
+   # buly
+    - DOMAIN-SUFFIX, buly.kr, PROXY
+
    # bun (@test)
     - DOMAIN-SUFFIX, bun.com, PROXY
 
@@ -413,6 +428,9 @@ rules:
 
     # cloudflare IP-CIDR
     # AS13335 - Cloudflare, Inc.
+
+   # cmtassociation
+    - DOMAIN-SUFFIX, cmtassociation.org, PROXY
 
    # cnbeta
     - DOMAIN-SUFFIX, cnbeta.com, PROXY
@@ -558,6 +576,9 @@ rules:
     # alphafold
     - DOMAIN-SUFFIX, alphafoldserver.com, PROXY
 
+   # dexscreener
+    - DOMAIN-SUFFIX, dexscreener.com, PROXY
+
    # dfas.mil
     - DOMAIN-SUFFIX, dfas.mil, PROXY
     - DOMAIN-SUFFIX, mypay.dfas.mil, PROXY
@@ -608,6 +629,9 @@ rules:
    # echostar
     - DOMAIN-SUFFIX, echostar, PROXY
 
+   # ecologyandsociety
+    - DOMAIN-SUFFIX, ecologyandsociety.org, PROXY
+
    # edwardjones
     - DOMAIN-SUFFIX, edwardjones.com, PROXY
 
@@ -648,6 +672,9 @@ rules:
 
    # equifax
     - DOMAIN-SUFFIX, equifax.com, PROXY
+
+   # eslite
+    - DOMAIN-SUFFIX, eslite.com, PROXY
 
    # etsy
     - DOMAIN-SUFFIX, etsy.com, PROXY
@@ -700,6 +727,9 @@ rules:
     - DOMAIN-SUFFIX, faithlife.com, PROXY
     - DOMAIN-SUFFIX, logos.com, PROXY
     - DOMAIN-SUFFIX, logoscdn.com, PROXY
+
+   # fakejournal
+    - DOMAIN-SUFFIX, fakejournal.org, PROXY
 
    # farmers
     - DOMAIN-SUFFIX, farmers.com, PROXY
@@ -1116,9 +1146,6 @@ rules:
    # gptstore.ai
     - DOMAIN-SUFFIX, gptstore.ai, PROXY
 
-   # grokipedia
-    - DOMAIN-SUFFIX, grokipedia.com, PROXY
-
    # ground.news (!cn)
     - DOMAIN-SUFFIX, ground.news, PROXY
 
@@ -1164,6 +1191,9 @@ rules:
 
    # hhdcb3office
     - DOMAIN-SUFFIX, hhdcb3office.org, PROXY
+
+   # higgsfield
+    - DOMAIN-SUFFIX, higgsfield.ai, PROXY
 
    # hindustantimes
     - DOMAIN-SUFFIX, hindustantimes.com, PROXY
@@ -1431,6 +1461,9 @@ rules:
    # libgen.rs
     - DOMAIN-SUFFIX, libgen.rs, PROXY
 
+   # libkey
+    - DOMAIN-SUFFIX, libkey.io, PROXY
+
    # lido
     - DOMAIN-SUFFIX, lido.fi, PROXY
 
@@ -1492,6 +1525,10 @@ rules:
    # ma.ne
     - DOMAIN-SUFFIX, hu.ma.ne, PROXY
 
+   # magic
+    - DOMAIN-SUFFIX, wizards.com, PROXY
+    - DOMAIN-SUFFIX, mtgarena.com, PROXY
+
    # makedreamwebsite
     - DOMAIN-SUFFIX, makedreamwebsite.com, PROXY
     - DOMAIN-SUFFIX, makedreamwebsite.gumroad.com, PROXY
@@ -1529,6 +1566,9 @@ rules:
    # mgmplus
     - DOMAIN-SUFFIX, assets.epix.com, PROXY
     - DOMAIN-SUFFIX, mgmplus.com, PROXY
+
+   # mgstage
+    - DOMAIN-SUFFIX, mgstage.com, PROXY
 
    # microsoft
     # (close at 2026-12-31)
@@ -1616,6 +1656,7 @@ rules:
     - DOMAIN-SUFFIX, moltbook.com, PROXY
 
    # monarch
+    - DOMAIN-SUFFIX, app.monarch.com, PROXY
     - DOMAIN-SUFFIX, monarch.com, PROXY
     - DOMAIN-SUFFIX, monarchmoney.com, PROXY
 
@@ -1725,6 +1766,9 @@ rules:
    # northwest
     - DOMAIN-SUFFIX, onlinebanking.northwest.bank, PROXY
 
+   # note
+    - DOMAIN-SUFFIX, note.com, PROXY
+
    # notepad++
     - DOMAIN-SUFFIX, notepad-plus-plus.org, PROXY
 
@@ -1770,6 +1814,9 @@ rules:
 
    # omny.fm
     - DOMAIN-SUFFIX, omny.fm, PROXY
+
+   # ondo
+    - DOMAIN-SUFFIX, ondo.finance, PROXY
 
    # onedrive
     # onedrive rules originates from this yaml file
@@ -2017,6 +2064,9 @@ rules:
    # remove.bg
     - DOMAIN-SUFFIX, remove.bg, PROXY
 
+   # rexresearch1
+    - DOMAIN-SUFFIX, rexresearch1.com, PROXY
+
    # rm
     - DOMAIN-SUFFIX, Ib.assessor.rm.com, PROXY
 
@@ -2176,6 +2226,9 @@ rules:
     - DOMAIN, auth.starz.com, PROXY
     - DOMAIN, playdata.starz.com, PROXY
 
+   # stocktwits
+    - DOMAIN-SUFFIX, stocktwits.com, PROXY
+
    # stremio
     - DOMAIN-SUFFIX, api.strem.io, PROXY
     - DOMAIN-SUFFIX, blog.stremio.com, PROXY
@@ -2206,6 +2259,9 @@ rules:
 
    # svc.ms
     # - DOMAIN-SUFFIX, centralus1.mediap.svc.ms, PROXY
+
+   # svvoice
+    - DOMAIN-SUFFIX, svvoice.com, PROXY
 
    # swarovski
     - DOMAIN-SUFFIX, swarovski.com, PROXY
@@ -2262,6 +2318,9 @@ rules:
    # terafab
     - DOMAIN-SUFFIX, terafab.ai, PROXY
 
+   # texstyle
+    - DOMAIN-SUFFIX, texstyle.dk, PROXY
+
    # theartofeducation.edu (@!cn)
     - DOMAIN-SUFFIX, theartofeducation.edu, PROXY
 
@@ -2282,6 +2341,9 @@ rules:
 
    # thegreatcourses
     - DOMAIN-SUFFIX, thegreatcourses.com, PROXY
+
+   # thenaf
+    - DOMAIN-SUFFIX, thenaf.net, PROXY
 
    # thepennyhoarder
     - DOMAIN-SUFFIX, thepennyhoarder.com, PROXY
@@ -2308,6 +2370,9 @@ rules:
 
    # thingiverse.com (@!cn)
     - DOMAIN-SUFFIX, thingiverse.com, PROXY
+
+   # thirdiron
+    - DOMAIN-SUFFIX, thirdiron.com, PROXY
 
    # threads
     - DOMAIN-SUFFIX, threads.net, PROXY
@@ -2419,6 +2484,9 @@ rules:
    # trimirror
     - DOMAIN-SUFFIX, trimirror.com, PROXY
 
+   # tron.network
+    - DOMAIN-SUFFIX, developers.tron.network, PROXY
+
    # trustwallet
     - DOMAIN-SUFFIX, trustwallet.com, PROXY
 
@@ -2459,6 +2527,9 @@ rules:
     - DOMAIN-SUFFIX, tymedigital.co.za, PROXY
 
   # u
+   # uaf
+    - DOMAIN-SUFFIX, uaf.cl, PROXY
+
    # ultramobile (@!cn)
     - DOMAIN-SUFFIX, ultramobile.com, PROXY
 
@@ -2567,6 +2638,9 @@ rules:
    # webassign.net
     - DOMAIN-SUFFIX, webassign.net, PROXY
 
+   # wenxuecity
+    - DOMAIN-SUFFIX, wenxuecity.com, PROXY
+
    # wes.org
     - DOMAIN-SUFFIX, applications.wes.org, PROXY
 
@@ -2597,6 +2671,9 @@ rules:
    # workspace(@!cn)
     - DOMAIN-SUFFIX, workspace.com, PROXY
 
+   # worldcat
+    - DOMAIN-SUFFIX, worldcat.org, PROXY
+
    # world-monitor (@test)
     - DOMAIN-SUFFIX, world-monitor.com, PROXY
 
@@ -2621,6 +2698,9 @@ rules:
     - DOMAIN-SUFFIX, xboxab.net, PROXY
     - DOMAIN-SUFFIX, xboxservice.com, PROXY
     - DOMAIN-SUFFIX, gamepass.com, PROXY
+
+   # xhpro
+    - DOMAIN-SUFFIX, xhpro.live, PROXY
 
    # xiaoyakankan
     - DOMAIN-SUFFIX, xiaoyakankan.com, PROXY
@@ -2706,3 +2786,9 @@ rules:
 
    # zoominfo
     - DOMAIN-SUFFIX, zoominfo.com, PROXY
+
+   # zrr
+    - DOMAIN-SUFFIX, zrr.kr, PROXY
+
+   # zz9
+    - DOMAIN-SUFFIX, zz9.org, PROXY
