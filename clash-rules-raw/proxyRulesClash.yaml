@@ -121,6 +121,9 @@ rules:
    # alpineschools.org
     - DOMAIN-SUFFIX, alpineschools.org, PROXY
 
+   # amagi
+    - DOMAIN-SUFFIX, amagi.tv, PROXY
+
    # amc
     - DOMAIN-SUFFIX, amc.com, PROXY
     - DOMAIN-SUFFIX, amcn.com, PROXY
@@ -276,6 +279,9 @@ rules:
    # bisepinnovations
     - DOMAIN-SUFFIX, bisepinnovations.com, PROXY
 
+   # bitcointalk
+    - DOMAIN-SUFFIX, bitcointalk.org, PROXY
+
    # bitmain
     - DOMAIN-SUFFIX, bitmain.com, PROXY
 
@@ -314,6 +320,9 @@ rules:
    # bulbagarden.net
     - DOMAIN-SUFFIX, bulbagarden.net, PROXY
     - DOMAIN-SUFFIX, bulbapedia.bulbagarden.net, PROXY
+
+   # bullish
+    - DOMAIN-SUFFIX, bullish.com, PROXY
 
    # buly
     - DOMAIN-SUFFIX, buly.kr, PROXY
@@ -762,6 +771,9 @@ rules:
    # findladders
     - DOMAIN-SUFFIX, findladders.com, PROXY
 
+   # finet
+    - DOMAIN-SUFFIX, finet.hk, PROXY
+
    # firebase
     - DOMAIN, firebase-settings.crashlytics.com, PROXY
 
@@ -808,6 +820,9 @@ rules:
 
    # fotor
     - DOMAIN-SUFFIX, fotor.com, PROXY
+
+   # four.meme
+    - DOMAIN-SUFFIX, four.meme, PROXY
 
    # freedesktop.timedate1
     - DOMAIN-SUFFIX, org.freedesktop.timedate1, PROXY
@@ -1522,9 +1537,6 @@ rules:
     - DOMAIN-SUFFIX, luxor.tech, PROXY
 
   # m
-   # ma.ne
-    - DOMAIN-SUFFIX, hu.ma.ne, PROXY
-
    # magic
     - DOMAIN-SUFFIX, wizards.com, PROXY
     - DOMAIN-SUFFIX, mtgarena.com, PROXY
@@ -1559,6 +1571,9 @@ rules:
      # url: memberpress.com
 
     - DOMAIN-SUFFIX, memberpress.com, PROXY
+
+   # meshy
+    - DOMAIN-SUFFIX, meshy.ai, PROXY
 
    # metacareers
     - DOMAIN-SUFFIX, metacareers.com, PROXY
@@ -1724,6 +1739,10 @@ rules:
     - DOMAIN, dm-assets.navyfederal.org, PROXY
     - DOMAIN, liveengage.navyfederal.org, PROXY
     - DOMAIN, navyfederalcu.tt.omtrdc.net, PROXY
+
+   # ne
+    # ma.ne
+    - DOMAIN-SUFFIX, hu.ma.ne, PROXY
 
    # nelnet
     - DOMAIN, secure.nelnet.com, PROXY
@@ -1901,6 +1920,9 @@ rules:
     - DOMAIN, c15.patreon.com, PROXY
     - DOMAIN, c5.patreon.com, PROXY
 
+   # paxos
+    - DOMAIN-SUFFIX, paxos.com, PROXY
+
    # pay1040
     - DOMAIN-SUFFIX, pay1040.com, PROXY
 
@@ -1956,6 +1978,9 @@ rules:
     - DOMAIN-SUFFIX, analytics.placer.ai, PROXY
     - DOMAIN-SUFFIX, placer.ai, PROXY
 
+   # pluto tv
+    - DOMAIN-SUFFIX, plutostatic.tv, PROXY
+
    # pmpmanage
     - DOMAIN-SUFFIX, pmpmanage.com, PROXY
     - DOMAIN-SUFFIX, pmprollc.com, PROXY
@@ -1988,6 +2013,9 @@ rules:
 
    # previred
     - DOMAIN-SUFFIX, previred.com, PROXY
+
+   # printables
+    - DOMAIN-SUFFIX, printables.com, PROXY
 
    # printmailsystems (deprecated)
     - DOMAIN-SUFFIX, printmailsystems.com, PROXY
@@ -2513,6 +2541,10 @@ rules:
    # tvlicensing.co.uk
     - DOMAIN-SUFFIX, tvlicensing.co.uk, PROXY
 
+   # tw
+    # fbs.com.tw
+    - DOMAIN-SUFFIX, fbs.com.tw, PROXY
+
    # tw.tomonews.ne
     - DOMAIN-SUFFIX, tw.tomonews.net, PROXY
 
@@ -2521,6 +2553,9 @@ rules:
 
    # twitonmsn
     - DOMAIN-SUFFIX, twitonmsn.com, PROXY
+
+   # twstalker
+    - DOMAIN-SUFFIX, w.twstalker.com, PROXY
 
    # tymebank.co.za
     - DOMAIN-SUFFIX, tymebank.co.za, PROXY
@@ -2547,6 +2582,10 @@ rules:
 
    # updraftplus
     - DOMAIN-SUFFIX, updraftplus.com, PROXY
+
+   # us
+    # ma
+    - DOMAIN-SUFFIX, ma.us, PROXY
 
    # userbenchmark
     - DOMAIN-SUFFIX, userbenchmark.com, PROXY
@@ -2616,6 +2655,9 @@ rules:
    # wallmama
     - DOMAIN-SUFFIX, wallmama.com, PROXY
 
+   # warframe
+    - DOMAIN-SUFFIX, warframe.com, PROXY
+
    # washoecountylibrary.us
     - DOMAIN-SUFFIX, washoecountylibrary.us, PROXY
 
@@ -2637,6 +2679,9 @@ rules:
 
    # webassign.net
     - DOMAIN-SUFFIX, webassign.net, PROXY
+
+   # weebly
+    - DOMAIN-SUFFIX, weebly.com, PROXY
 
    # wenxuecity
     - DOMAIN-SUFFIX, wenxuecity.com, PROXY
@@ -2667,6 +2712,9 @@ rules:
 
    # wisconsinregisteredagent.net
     - DOMAIN-SUFFIX, wisconsinregisteredagent.net, PROXY
+
+   # workos
+    - DOMAIN-SUFFIX, workos.com, PROXY
 
    # workspace(@!cn)
     - DOMAIN-SUFFIX, workspace.com, PROXY
@@ -2772,8 +2820,8 @@ rules:
     - DOMAIN-SUFFIX, yts.mx, PROXY
 
   # z
-   # z-lib.io
-    - DOMAIN-SUFFIX, z-lib.io, PROXY
+   # z-lib
+    - DOMAIN-SUFFIX, z-lib.co, PROXY
 
    # zillow (@!cn)
     - DOMAIN-SUFFIX, zillow.com, PROXY

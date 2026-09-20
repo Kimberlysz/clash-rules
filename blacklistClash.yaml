@@ -72,7 +72,7 @@ external-controller: 127.0.0.1:9090
 # Authenticate by spedifying HTTP header `Authorization: Bearer ${secret}`
 # ALWAYS set a secret if RESTful API is listening on 0.0.0.0
 # secret: "your_secret" # warning: !important, change it to your secret (prevent merlinclash being used by WAN users)
-secret: "fwA6yrCLBVEKDNmUFcLEJfE3xxD7WVHjRZ63bTLGp8Xaf2HnEGvGWaZBHWCVMAVs" # WARNING: every time when this file is applied, a password is needed to be changed. (!important)
+secret: "PHtCDd9XcDmNnQxEPhLi4MXNqiGNqHVy" # WARNING: every time when this file is applied, a password is needed to be changed. (!important)
 
 # Outbound interface name
 # interface-name: en0 # might be en1
@@ -49502,6 +49502,13 @@ rules:
     #   - IP-CIDR, 198.21.128.0/17, PROXY, no-resolve
     #   - IP-CIDR, 2620:103:a000::/44, PROXY, no-resolve
     #   - IP-CIDR, 2620:103:a00a::/48, PROXY, no-resolve
+
+   # coupang
+    # AS152229 Coupang Inc
+    - IP-CIDR, 115.92.28.0/24, PROXY, no-resolve
+    - IP-CIDR, 139.150.233.0/24, PROXY, no-resolve
+    - IP-CIDR, 139.150.234.0/24, PROXY, no-resolve
+    - IP-CIDR, 211.181.187.0/24, PROXY, no-resolve
 
   # d
 
